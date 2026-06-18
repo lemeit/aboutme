@@ -19,7 +19,7 @@ Ingeniero en Vialidad (DVBA Zona VI) y docente técnico en Saladillo, Buenos Air
 Trabajo en proyectos de monitoreo ambiental, herramientas educativas y GIS vial.
 """
 
-  [[params.socialIcons]]
+[[params.socialIcons]]
     name = "github"
     url = "https://github.com/lemeit"
 
@@ -30,6 +30,14 @@ Trabajo en proyectos de monitoreo ambiental, herramientas educativas y GIS vial.
   [[params.socialIcons]]
     name = "x"
     url = "https://x.com/lemeit"
+
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/llamaita/"
+
+  [[params.socialIcons]]
+    name = "bluesky"
+    url = "https://bsky.app/profile/lemeit.bsky.social"
 
 [menu]
   [[menu.main]]

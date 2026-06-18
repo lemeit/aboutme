@@ -34,4 +34,4 @@ Tecnología · DIY/IoT · Calidad del aire · Inteligencia artificial · Softwar
 - X: [@lemeit](https://twitter.com/lemeit)
 - Bluesky: [lemeit.bsky.social](https://bskp.app/profile/lemeit.bsky.social)
 - Instagram: [@lemeitok](https://instagram.com/lemeitok)
-- OpenAQ: [perfil](https://openaq.org/about/people/luciano_lamaita/)
+- OpenAQ: [perfil](https://ambassadors.openaq.org/people/luciano_lamaita)

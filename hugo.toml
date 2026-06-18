@@ -1,3 +1,46 @@
-baseURL = 'https://example.org/'
-locale = 'en-us'
-title = 'My New Hugo Project'
+baseURL = "https://luciano.lemeit.ar/"
+languageCode = "es-AR"
+title = "Luciano Lamaita"
+theme = "PaperMod"
+
+[params]
+  author = "Luciano Lamaita"
+  description = "Ingeniero | Docente | Saladillo, Buenos Aires"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+
+  [params.homeInfoParams]
+    Title = "Hola, soy Luciano 👋"
+    Content = """
+Ingeniero en Vialidad (DVBA Zona VI) y docente técnico en Saladillo, Buenos Aires.
+Trabajo en proyectos de monitoreo ambiental, herramientas educativas y GIS vial.
+"""
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/lemeit"
+
+  [[params.socialIcons]]
+    name = "instagram"
+    url = "https://instagram.com/lemeitok"
+
+  [[params.socialIcons]]
+    name = "x"
+    url = "https://x.com/lemeit"
+
+[menu]
+  [[menu.main]]
+    name = "Proyectos"
+    url = "/projects/"
+    weight = 1
+  [[menu.main]]
+    name = "Notas"
+    url = "/notes/"
+    weight = 2
+  [[menu.main]]
+    name = "Sobre mí"
+    url = "/about/"
+    weight = 3

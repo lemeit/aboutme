@@ -4,7 +4,7 @@ layout = 'single'
 draft = false
 +++
 
-Hola, soy Luciano. Padre de dos hijes, vivo en Saladillo, Buenos Aires, Argentina.
+Hola, soy Luciano. Padre de dos hijos, vivo en Saladillo, Buenos Aires, Argentina.
 
 Soy entusiasta de la tecnología, DIY/IoT, calidad del aire, IA, software libre y la educación. Me interesa la innovación y las ciencias naturales.
 

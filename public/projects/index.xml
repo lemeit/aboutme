@@ -6,6 +6,28 @@
     <description>Recent content in Proyectos on Luciano Lamaita</description>
     <generator>Hugo</generator>
     <language>es-AR</language>
+    <lastBuildDate>Thu, 18 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EUREKA AI</title>
+      <link>http://localhost:1313/projects/eureka-ai/</link>
+      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/eureka-ai/</guid>
+      <description>Tutor de física, química y matemática con método socrático.</description>
+    </item>
+    <item>
+      <title>GIS Vial — DVBA Zona VI</title>
+      <link>http://localhost:1313/projects/dvba-gis/</link>
+      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/dvba-gis/</guid>
+      <description>Herramientas GIS para la gestión de la red vial provincial en Zona VI Saladillo.</description>
+    </item>
+    <item>
+      <title>Red EMA Saladillo</title>
+      <link>http://localhost:1313/projects/ema-saladillo/</link>
+      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/ema-saladillo/</guid>
+      <description>Red de estaciones meteorológicas automáticas para la EEST N°1 de Saladillo.</description>
+    </item>
   </channel>
 </rss>

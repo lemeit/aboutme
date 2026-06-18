@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Luciano Lamaita</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Luciano Lamaita</description>
+    <generator>Hugo</generator>
+    <language>es-AR</language>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sobre mí</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;Soy Luciano Lamaita, ingeniero y docente radicado en Saladillo, Buenos Aires.&lt;/p&gt;
+&lt;h2 id=&#34;rol-profesional&#34;&gt;Rol profesional&lt;/h2&gt;
+&lt;p&gt;Trabajo en la &lt;strong&gt;Dirección de Vialidad de la Provincia de Buenos Aires&lt;/strong&gt; (DVBA),
+Zona Departamental VI Saladillo, donde me desempeño en relevamiento,
+análisis y gestión de la red vial provincial.&lt;/p&gt;
+&lt;h2 id=&#34;docencia&#34;&gt;Docencia&lt;/h2&gt;
+&lt;p&gt;Soy docente en la &lt;strong&gt;EEST N°1 &amp;ldquo;Gral. Savio&amp;rdquo;&lt;/strong&gt; de Saladillo, donde dicto
+&lt;em&gt;Laboratorio de Industrias&lt;/em&gt; en 7° Año Técnico Químico, y en el
+&lt;strong&gt;Colegio Madre Teresa&lt;/strong&gt;, donde enseño &lt;em&gt;Introducción a la Física&lt;/em&gt; en 4° año.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

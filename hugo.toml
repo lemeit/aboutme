@@ -1,5 +1,5 @@
 baseURL = "https://profe.lemeit.ar/"
-languageCode = "es-AR"
+locale = "es-AR"
 title = "Luciano Lamaita"
 theme = "PaperMod"
 
@@ -11,6 +11,7 @@ theme = "PaperMod"
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
+  math = true
 
   [params.homeInfoParams]
     Title = "Hola, soy Luciano 👋"
@@ -19,7 +20,7 @@ Ingeniero en Vialidad (DVBA Zona VI) y docente técnico en Saladillo, Buenos Air
 Trabajo en proyectos de monitoreo ambiental, herramientas educativas y GIS vial.
 """
 
-[[params.socialIcons]]
+  [[params.socialIcons]]
     name = "github"
     url = "https://github.com/lemeit"
 

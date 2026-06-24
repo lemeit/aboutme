@@ -201,11 +201,11 @@ $$\text{E.R.} = \frac{\text{incertidumbre}}{\text{valor medido}} = \frac{0{,}1}{
 
 **Conversiones de unidades:**
 
-1. $2{,}5 \text{ m} = \text{\_\_\_\_} \text{ cm}$
-2. $18 \text{ mL} = \text{\_\_\_\_} \text{ L}$
-3. $68 \text{ kJ} = \text{\_\_\_\_} \text{ J}$
-4. $6\,500 \text{ mg} = \text{\_\_\_\_} \text{ kg}$
-5. $325 \text{ ms} = \text{\_\_\_\_} \text{ s}$
+1. $2{,}5 \text{ m} = \underline{\hspace{2cm}} \text{ cm}$
+2. $18 \text{ mL} = \underline{\hspace{2cm}} \text{ L}$
+3. $68 \text{ kJ} = \underline{\hspace{2cm}} \text{ J}$
+4. $6{.}500 \text{ mg} = \underline{\hspace{2cm}} \text{ kg}$
+5. $325 \text{ ms} = \underline{\hspace{2cm}} \text{ s}$
 
 **Notación científica:**
 

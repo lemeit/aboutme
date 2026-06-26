@@ -1,0 +1,10 @@
+/* Paleta X-Wing Poe — negro + naranja */
+:root {
+  --primary: #E8650A;
+  --secondary: #A84800;
+}
+
+.dark {
+  --primary: #F07820;
+  --secondary: #E8650A;
+}

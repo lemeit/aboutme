@@ -23,6 +23,7 @@ Al finalizar esta sección, vas a poder:
 > **"Toda fuerza de acción produce una fuerza de reacción igual en módulo, opuesta en dirección, y del mismo tipo."**
 
 $$\vec{F_{12}} = -\vec{F_{21}}$$
+$$\vec{F}_{A \to B} = -\vec{F}_{B \to A}$$
 
 Las fuerzas de acción y reacción:
 - Tienen el **mismo módulo**

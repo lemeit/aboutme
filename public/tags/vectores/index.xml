@@ -6,7 +6,7 @@
     <description>Recent content in Vectores on Luciano Lamaita</description>
     <generator>Hugo</generator>
     <language>es-AR</language>
-    <lastBuildDate>Mon, 22 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/vectores/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introducción a los vectores</title>
@@ -14,6 +14,13 @@
       <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/fisica-4to/u1-generalidades/vectores-intro/</guid>
       <description>Qué es un vector, diferencia con magnitudes escalares, representación gráfica, suma vectorial y descomposición en componentes.</description>
+    </item>
+    <item>
+      <title>Tiro Oblicuo (Movimiento Proyectil)</title>
+      <link>http://localhost:1313/notes/fisica-4to/u2-cinematica/tiro-oblicuo/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/fisica-4to/u2-cinematica/tiro-oblicuo/</guid>
+      <description>Movimiento en dos dimensiones: componentes horizontal y vertical independientes.</description>
     </item>
   </channel>
 </rss>

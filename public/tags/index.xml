@@ -6,20 +6,83 @@
     <description>Recent content in Tags on Luciano Lamaita</description>
     <generator>Hugo</generator>
     <language>es-AR</language>
-    <lastBuildDate>Mon, 22 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Cifras Significativas</title>
-      <link>http://localhost:1313/tags/cifras-significativas/</link>
-      <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cifras-significativas/</guid>
+      <title>Caída Libre</title>
+      <link>http://localhost:1313/tags/ca%C3%ADda-libre/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ca%C3%ADda-libre/</guid>
       <description></description>
     </item>
     <item>
       <title>Cinemática</title>
       <link>http://localhost:1313/tags/cinem%C3%A1tica/</link>
-      <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/cinem%C3%A1tica/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gravedad</title>
+      <link>http://localhost:1313/tags/gravedad/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/gravedad/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lanzamiento Vertical</title>
+      <link>http://localhost:1313/tags/lanzamiento-vertical/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/lanzamiento-vertical/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Movimiento 2D</title>
+      <link>http://localhost:1313/tags/movimiento-2d/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/movimiento-2d/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MRUV</title>
+      <link>http://localhost:1313/tags/mruv/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mruv/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Proyectil</title>
+      <link>http://localhost:1313/tags/proyectil/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/proyectil/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tiro Oblicuo</title>
+      <link>http://localhost:1313/tags/tiro-oblicuo/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/tiro-oblicuo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>U2</title>
+      <link>http://localhost:1313/tags/u2/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/u2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vectores</title>
+      <link>http://localhost:1313/tags/vectores/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/vectores/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cifras Significativas</title>
+      <link>http://localhost:1313/tags/cifras-significativas/</link>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cifras-significativas/</guid>
       <description></description>
     </item>
     <item>
@@ -128,24 +191,10 @@
       <description></description>
     </item>
     <item>
-      <title>U2</title>
-      <link>http://localhost:1313/tags/u2/</link>
-      <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/u2/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Unidades</title>
       <link>http://localhost:1313/tags/unidades/</link>
       <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/unidades/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Vectores</title>
-      <link>http://localhost:1313/tags/vectores/</link>
-      <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/vectores/</guid>
       <description></description>
     </item>
     <item>

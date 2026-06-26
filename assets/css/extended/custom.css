@@ -10,10 +10,10 @@
 }
 
 /* Acento negro en bordes y títulos */
-.page-header h1 {
+/*.page-header h1 {
   border-left: 5px solid #111;
   padding-left: 0.75rem;
-}
+}*/
 
 /* Botones y links activos */
 a { color: var(--primary); }
@@ -22,4 +22,9 @@ a:hover { color: var(--secondary); }
 /* Header del sitio — franja negra sutil */
 header.header {
   border-bottom: 2px solid #111;
+}
+
+nav .notes-link,
+ul .notes-link {
+  color: var(--content) !important;
 }

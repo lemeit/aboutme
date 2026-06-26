@@ -3,7 +3,7 @@ locale = "es-AR"
 title = "Luciano Lamaita"
 theme = "PaperMod"
 
-mainSections = ["notes"]
+mainSections = []
 
 [params]
   author = "Luciano Lamaita"
@@ -21,11 +21,11 @@ mainSections = ["notes"]
     favicon32x32 = "/favicon.svg"
 
   [params.homeInfoParams]
-    Title = "📚 Notas de Física — 4° año"
-    Content = """
-Bienvenidos. Acá van a encontrar los apuntes, guías y recursos de la materia.
-Navegá por **Notas** para acceder al material de cada unidad.
-"""
+      Title = "Hola, soy Luciano 👋"
+      Content = """
+    Ingeniero en la DVBA y docente de Física y Química en Saladillo, Buenos Aires.
+    Este sitio reúne los materiales de mis clases y algunos proyectos técnicos.
+    """
 
   [[params.socialIcons]]
     name = "github"

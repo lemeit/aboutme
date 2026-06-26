@@ -1,0 +1,41 @@
+{{- with site.Params.homeInfoParams }}
+<article class="first-entry home-info">
+  <header class="entry-header">
+    <h1>{{ .Title | markdownify }}</h1>
+  </header>
+  <section class="entry-content">
+    <p>{{ .Content | markdownify }}</p>
+  </section>
+
+  <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+    <a href="/notes/fisica-4to/" style="
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        background: var(--primary);
+        color: var(--theme);
+        border-radius: 6px;
+        font-weight: 700;
+        font-size: 1.05rem;
+        text-decoration: none;">
+      📖 Física 4° año
+    </a>
+    <a href="/notes/fisica-4to/u2-cinematica/" style="
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        border: 2px solid var(--primary);
+        color: var(--primary);
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 1rem;
+        text-decoration: none;">
+      ▶ Última unidad: Cinemática
+    </a>
+  </div>
+
+  {{- with site.Params.socialIcons }}
+  <div style="margin-top: 1.5rem;">
+    {{- partial "social_icons.html" . -}}
+  </div>
+  {{- end }}
+</article>
+{{- end }}

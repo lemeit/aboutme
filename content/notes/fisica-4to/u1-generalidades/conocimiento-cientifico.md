@@ -1,162 +1,130 @@
 +++
 title = "¿Qué es la Física? El conocimiento científico"
-date = "2026-06-22"
+date = "2026-06-26"
 draft = false
+math = true
 weight = 1
-description = "Introducción a la Física, el método científico, y las diferencias entre teorías, leyes e hipótesis."
-tags = ["U1", "método científico", "teoría", "ley", "hipótesis"]
+description = "Ramas de la Física, método científico, teoría, ley, hipótesis y lenguaje de la ciencia."
+tags = ["U1", "Física", "método científico", "teoría", "ley", "hipótesis", "conocimiento científico"]
 +++
 
 ## Objetivos de aprendizaje
 
-Al finalizar esta unidad, vas a poder:
+Al finalizar esta sección, vas a poder:
 
 - Explicar qué estudia la Física y cuáles son sus ramas principales.
 - Distinguir entre observación, hipótesis, teoría y ley científica.
-- Describir el método científico como una forma de pensar, no como una receta de pasos fijos.
-- Identificar diferencias entre el uso cotidiano y el uso científico de palabras como *teoría*, *ley* o *error*.
+- Describir el método científico como una forma de pensar, no como una receta de pasos.
+- Usar correctamente el vocabulario científico: teoría, ley, modelo, hecho, evidencia.
 
 ---
 
 ## ¿Qué es la Física?
 
-La **Física** es el estudio de la naturaleza y las propiedades de la materia y la energía, y las relaciones entre ellas.
+La **Física** es el estudio de la naturaleza y propiedades de la materia y la energía, y las relaciones entre ellas.
 
-Si en Química estudiamos la composición de la materia y cómo se transforma, en Física estudiamos *cómo se comporta* esa materia y la energía en el mundo.
+> Si la Química estudia la composición y transformación de la materia, la Física estudia cómo se mueve, interactúa y transforma la energía.
 
 ### Ramas de la Física
 
 | Rama | Qué estudia |
-|---|---|
-| **Mecánica** | Movimiento, fuerzas, gravedad, energía cinética |
-| **Termodinámica** | Energía en forma de calor, temperatura, procesos térmicos |
-| **Ondas y óptica** | Sonido, luz, propagación de energía |
-| **Electromagnetismo** | Electricidad, magnetismo, campos |
-| **Física Moderna** | Átomos, partículas, mecánica cuántica |
-| **Astrofísica** | Universo, estrellas, galaxias, fenómenos de alta energía |
+|------|-------------|
+| **Mecánica** | Movimiento, fuerzas, gravedad y energía cinética |
+| **Física térmica** | Energía almacenada y transferida como calor |
+| **Ondas** (óptica y acústica) | Transferencia de energía a través de un medio |
+| **Electricidad y magnetismo** | Fuerzas e interacciones entre partículas cargadas |
+| **Física atómica y cuántica** | Partículas subatómicas e interacciones |
+| **Física nuclear** | Fuerzas en el núcleo atómico |
+| **Astrofísica** | Universo: galaxias, estrellas, planetas |
 
-La Física es también la base de la **ingeniería**: el diseño y construcción de tecnología, máquinas y estructuras.
-
-> 💡 En este curso (4° año) nos enfocamos principalmente en **mecánica** (cinemática y dinámica) y **energía**. Las ramas de electricidad y termodinámica se abordan de manera introductoria.
+La Física es también la base de la **ingeniería**: diseño, construcción y uso de tecnología.
 
 ---
 
 ## ¿Por qué la Física puede ser difícil?
 
-La Física es una **ciencia matemática**. Esto significa que las relaciones entre los fenómenos se expresan con ecuaciones y gráficos.
+La Física es una ciencia matemática. Las matemáticas son el lenguaje con el que describimos las leyes del universo — la Física es esas leyes en acción.
 
-Pero el objetivo no es memorizar fórmulas: es **entender los procesos** y saber cuándo y cómo aplicarlos.
+> "La matemática es el estudio de las reglas que gobiernan el universo; la Física es el estudio de esas reglas en acción." — Bigler
 
-> *"No es la fórmula lo que importa, sino entender qué describe esa fórmula."*
-
-### Matemática necesaria para este curso
-
-- Álgebra básica: despejar variables, ecuaciones lineales y cuadráticas.
-- Lectura e interpretación de gráficos cartesianos.
-- Funciones lineales y cuadráticas.
-- Trigonometría básica (seno, coseno, tangente) para vectores y tiro oblicuo.
-- Notación científica y conversión de unidades.
+Nivel matemático necesario:
+- **Introducción a la Física (4° año):** álgebra, geometría, algo de trigonometría básica.
+- **Física superior (universitaria):** cálculo diferencial e integral, álgebra lineal, ecuaciones diferenciales.
 
 ---
 
 ## El método científico
 
-### No es una receta, es una forma de pensar
+El **método científico** no es una lista de pasos fijos — es una **forma de pensar**: dejar que la naturaleza hable por sí misma, en lugar de decidir de antemano qué debe pasar.
 
-El **método científico** es una manera de responder preguntas sobre el mundo *dejando que la naturaleza hable*: en lugar de discutir o suponer qué debería pasar, hacemos experimentos y observamos qué pasa realmente.
+En la Edad Media, los "científicos" eran filósofos que decidían qué era correcto debatiendo entre ellos. Durante el Renacimiento, científicos como **Galileo Galilei** y **Leonardo da Vinci** empezaron a usar experimentos en lugar de argumentos para descubrir cómo funciona el mundo.
 
-Históricamente, en la Edad Media los "filósofos naturales" decidían lo que era correcto mediante el debate y la autoridad. Durante el Renacimiento, científicos como **Galileo Galilei** empezaron a usar experimentos en vez de argumentos para comprender el mundo.
+### El método científico como red, no como receta
 
-### Los elementos del pensamiento científico
+El método científico se parece más a una red de procesos interconectados que a una secuencia lineal. La experimentación está en el centro, pero el proceso puede entrar por cualquier punto:
 
-Cuando un científico investiga algo, generalmente trabaja con estos elementos:
+> 📷 *Imagen: diagrama del método científico como red — Bigler pág. 29 (capturar de PDF)*
 
-**Afirmación (*claim*):** una declaración sobre algo que ocurre, o que ocurrirá si se cumplen ciertas condiciones. Puede incluir o no una explicación del *por qué*.
-
-**Evidencia:** observaciones y resultados experimentales que respaldan la afirmación.
-
-**Razonamiento:** explicación lógica de cómo la evidencia sostiene la afirmación. Es como una demostración matemática, pero en palabras.
-
-> El esquema **afirmación → evidencia → razonamiento** es el corazón del pensamiento científico, y lo usaremos durante todo el curso.
-
-### Revisión por pares (*peer review*)
-
-Antes de que una afirmación científica sea aceptada, otros científicos intentan:
-- Refutarla directamente.
-- Cuestionar cómo se obtuvo la evidencia.
-- Demostrar que el razonamiento no sostiene la conclusión.
-
-Esto no es un ataque: es una **señal de respeto científico**. Si alguien intenta refutar una afirmación, generalmente es porque la considera lo suficientemente interesante como para someterla a mayor escrutinio.
+Cada nodo de esa red representa un área amplia con muchos procesos posibles: hacer preguntas, observar, experimentar, comunicar, revisar.
 
 ---
 
-## Teorías, leyes e hipótesis — diferencias clave
+## Afirmaciones científicas: claim → evidence → reasoning
 
-Estas palabras tienen un significado **muy distinto** en ciencia que en el lenguaje cotidiano.
+Cuando un científico descubre algo importante, lo expresa como una **afirmación** (*claim*):
 
-### En el lenguaje cotidiano vs. en ciencia
+| Componente | Definición |
+|-----------|-----------|
+| **Claim** (afirmación) | Enunciado sobre algo que ocurre, o que ocurrirá bajo ciertas condiciones |
+| **Evidence** (evidencia) | Observaciones y resultados experimentales que respaldan la afirmación |
+| **Reasoning** (razonamiento) | Explicación de cómo la evidencia sostiene la afirmación |
 
-| Término | Uso cotidiano | Uso científico |
-|---|---|---|
-| **Teoría** | Suposición, corazonada | Explicación que nunca fue refutada, con alto poder predictivo |
-| **Ley** | Norma impuesta con sanción | Descripción de lo que siempre ocurre, sin explicar el *por qué* |
-| **Hipótesis** | Idea sin confirmar | Propuesta testeable basada en observaciones previas |
-| **Hecho** | Verdad absoluta | Afirmación ampliamente confirmada (provisional: nueva evidencia puede modificarla) |
-| **Error** | Equivocación | Rango de confianza de una medición |
-| **Modelo** | Réplica a escala | Representación conceptual que ayuda a entender o predecir |
-
-### Definiciones precisas
-
-**Hipótesis:** propuesta provisional que puede ser puesta a prueba mediante experimentos. No toda investigación científica requiere una hipótesis explícita.
-
-**Teoría:** afirmación que:
-- Nunca fue refutada.
-- Explica un conjunto de observaciones.
-- Permite predecir resultados de experimentos.
-
-> Ejemplo: la **Teoría de la Relatividad** de Einstein nunca ha fallado en predecir resultados experimentales. No es "una suposición de Einstein" — es una de las teorías más confirmadas de la historia.
-
-**Ley:** afirmación que:
-- Nunca fue refutada.
-- Describe *qué* ocurre y permite predecirlo.
-- **No** intenta explicar el *por qué* ni el *cómo*.
-
-> Ejemplo: la **Ley de Gravitación Universal** de Newton describe cómo los cuerpos se atraen según sus masas y distancias. Es una ley porque no explica *por qué* las masas se atraen — eso lo hace la Relatividad General.
-
-**Modelo:** tipo de teoría que representa relaciones entre conceptos. Sirve para visualizar o razonar sobre fenómenos que no podemos observar directamente.
-
-> Ejemplo: el **modelo atómico** representa al átomo con núcleo y electrones. No podemos "ver" un átomo, pero el modelo nos permite explicar propiedades de la materia.
-
-### ¿Puede una teoría convertirse en ley?
-
-**No.** Una teoría no puede convertirse en ley por la misma razón que una definición no puede convertirse en una medición. Son cosas distintas:
-- La **ley** describe *qué* pasa.
-- La **teoría** explica *por qué* pasa.
-
-Ambas tienen igual validez científica. Una teoría no es "menos segura" que una ley.
+Antes de ser aceptada, cualquier afirmación pasa por la **revisión de pares** (*peer review*): otros científicos intentan refutarla, cuestionar la evidencia o encontrar fallas en el razonamiento. Esto no es un ataque — es un proceso que fortalece el conocimiento.
 
 ---
 
-## Ramas de la ciencia y sus objetos de estudio
+## Teoría, ley, modelo e hipótesis
 
-La Física se relaciona con otras ciencias:
+Estos términos tienen significados **distintos** en ciencia y en el lenguaje cotidiano:
 
-- **Química** → composición y propiedades de la materia.
-- **Biología** → seres vivos y sus procesos.
-- **Física** → energía, movimiento y las leyes que gobiernan la materia.
-- **Ingeniería** → aplicación de principios físicos para diseñar y construir.
-- **Ciencias Ambientales** → interacción entre sistemas físicos, químicos y biológicos del entorno.
+| Término | En ciencia | En el lenguaje cotidiano |
+|---------|-----------|--------------------------|
+| **Teoría** | Explicación que nunca ha sido refutada, que explica observaciones y predice experimentos | Suposición, conjetura |
+| **Ley** | Descripción de algo que siempre ocurre y puede predecirse, sin necesidad de explicar el *por qué* | Norma con castigo |
+| **Modelo** | Representación que ayuda a visualizar o entender algo | Copia exacta a escala menor |
+| **Hecho** | Afirmación extensamente confirmada por la comunidad científica (provisional; nueva evidencia puede modificarlo) | Verdad inmutable |
+| **Hipótesis** | Predicción concreta y testeable sobre el resultado de un experimento | Idea inicial, "corazonada" |
 
-En este curso vamos a ver constantemente cómo la Física aparece en contextos cotidianos, ambientales y tecnológicos — desde el movimiento de un cuerpo hasta la generación de energía eléctrica.
+### Teoría vs. Ley — ¿cuál es "mejor"?
+
+Ninguna. Son cosas distintas:
+- Una **ley** describe *qué* ocurre sin explicar *por qué*. Ejemplo: la Ley de la Gravitación Universal describe cómo se atraen los cuerpos según sus masas y distancias, pero no explica *por qué* se atraen.
+- Una **teoría** explica *por qué* y *cómo* ocurre algo. Ejemplo: la Teoría Atómica explica las propiedades de los materiales a partir de la estructura de sus átomos.
+
+> Una teoría **no puede convertirse en ley**, del mismo modo que una definición no puede convertirse en una medición.
+
+Si un experimento reproducible contradice una teoría y pasa la revisión de pares, la teoría debe modificarse o descartarse.
+
+---
+
+## El lenguaje de la ciencia
+
+| Término | Significado en ciencia | ≠ Uso cotidiano |
+|---------|----------------------|-----------------|
+| **Opinión** | Juicios basados en evidencia y experiencia | Preferencias subjetivas |
+| **Escepticismo** | Evaluar una afirmación según la calidad de la evidencia | Negativismo o negacionismo |
+| **Consenso** | Amplio acuerdo basado en extensa evidencia | Opinión popular |
+| **Error** | Incertidumbre medida o calculada (no una equivocación) | Mistake, equivocación |
+| **Incertidumbre** | Rango de confianza en un resultado | "No estar seguro" |
 
 ---
 
 ## Para pensar
 
-1. ¿Cuál es la diferencia entre decir "tengo una teoría" en una conversación y decir "la Teoría Evolutiva" en biología?
-2. La Ley de Ohm dice que la corriente en un conductor es proporcional al voltaje. ¿Explica *por qué* ocurre eso? ¿O solo describe *qué* ocurre?
-3. ¿En qué se diferencia la revisión por pares de simplemente "criticar" el trabajo de alguien?
+1. ¿Por qué la Teoría de la Evolución sigue siendo una "teoría" si lleva más de 150 años sin ser refutada?
+2. La Ley de Ohm describe la relación entre voltaje, corriente y resistencia. ¿Por qué es una ley y no una teoría?
+3. ¿Qué significa que la ciencia sea "provisional"? ¿Eso la hace menos confiable?
 
 ---
 
-*Adaptado de [Bigler, J. — Class Notes for Physics 1: Mechanics in Plain English](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf) (CC BY-NC-SA 4.0). Traducción, adaptación al Diseño Curricular DGCyE e integración pedagógica: Prof. Ing. Luciano Lamaita, 2026.*
+*Adaptado de [Jeff Bigler — Physics 1: Mechanics in Plain English](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf), licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Traducción y adaptación al Diseño Curricular DGCyE: Prof. Ing. Luciano Lamaita, 2026.*

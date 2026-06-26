@@ -3,6 +3,8 @@ locale = "es-AR"
 title = "Luciano Lamaita"
 theme = "PaperMod"
 
+mainSections = ["notes"]
+
 [params]
   author = "Luciano Lamaita"
   description = "Ingeniero | Docente | Saladillo, Buenos Aires"
@@ -11,7 +13,6 @@ theme = "PaperMod"
   ShowPostNavLinks = false
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
-  ShowAllPagesInSection = true
   math = true
 
   [params.assets]
@@ -20,10 +21,10 @@ theme = "PaperMod"
     favicon32x32 = "/favicon.svg"
 
   [params.homeInfoParams]
-    Title = "Hola, soy Luciano 👋"
+    Title = "📚 Notas de Física — 4° año"
     Content = """
-Ingeniero en Vialidad (DVBA Zona VI) y docente técnico en Saladillo, Buenos Aires.
-Trabajo en proyectos de monitoreo ambiental, herramientas educativas y GIS vial.
+Bienvenidos. Acá van a encontrar los apuntes, guías y recursos de la materia.
+Navegá por **Notas** para acceder al material de cada unidad.
 """
 
   [[params.socialIcons]]

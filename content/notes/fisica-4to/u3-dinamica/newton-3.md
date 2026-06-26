@@ -85,7 +85,7 @@ Para identificar un par acción-reacción correctamente:
 |-----|-----------|----------|
 | 1ª | Sin fuerza neta, no hay cambio de movimiento | $\vec{F}_{neta} = 0 \Rightarrow \vec{a} = 0$ |
 | 2ª | La fuerza neta produce aceleración | $\vec{F}_{neta} = m\vec{a}$ |
-| 3ª | Toda acción tiene una reacción igual y opuesta | $\hat{F}_{AB} = -\hat{F}_{BA}$ |
+| 3ª | Toda acción tiene una reacción igual y opuesta | $\vec{F}_{A\to B} = -\vec{F}_{B\to A}$ |
 
 ---
 

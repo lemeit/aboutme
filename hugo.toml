@@ -23,8 +23,8 @@ mainSections = []
   [params.homeInfoParams]
       Title = "Hola, soy Luciano 👋"
       Content = """
-    Ingeniero en la DVBA y docente de Física y Química en Saladillo, Buenos Aires.
-    Este sitio reúne los materiales de mis clases y algunos proyectos técnicos.
+  Ingeniero en la DVBA y docente de Física y Química en Saladillo, Buenos Aires.
+  Este sitio reúne los materiales de mis clases y algunos proyectos técnicos.
     """
 
   [[params.socialIcons]]

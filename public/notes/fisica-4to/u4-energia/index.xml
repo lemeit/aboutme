@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Unidad 4 — Energía on Luciano Lamaita</title>
+    <link>http://localhost:1313/notes/fisica-4to/u4-energia/</link>
+    <description>Recent content in Unidad 4 — Energía on Luciano Lamaita</description>
+    <generator>Hugo</generator>
+    <language>es-AR</language>
+    <lastBuildDate>Mon, 22 Jun 2026 11:42:49 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/notes/fisica-4to/u4-energia/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Conservacion</title>
+      <link>http://localhost:1313/notes/fisica-4to/u4-energia/conservacion/</link>
+      <pubDate>Mon, 22 Jun 2026 11:42:49 -0300</pubDate>
+      <guid>http://localhost:1313/notes/fisica-4to/u4-energia/conservacion/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Energias Alternativas</title>
+      <link>http://localhost:1313/notes/fisica-4to/u4-energia/energias-alternativas/</link>
+      <pubDate>Mon, 22 Jun 2026 11:42:49 -0300</pubDate>
+      <guid>http://localhost:1313/notes/fisica-4to/u4-energia/energias-alternativas/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Trabajo Energia</title>
+      <link>http://localhost:1313/notes/fisica-4to/u4-energia/trabajo-energia/</link>
+      <pubDate>Mon, 22 Jun 2026 11:42:49 -0300</pubDate>
+      <guid>http://localhost:1313/notes/fisica-4to/u4-energia/trabajo-energia/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

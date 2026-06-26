@@ -1,5 +1,6 @@
 +++
-date = '2026-06-22T11:42:56-03:00'
-draft = true
-title = 'U5 Electricidad'
+title = 'Unidad 5 — Electricidad y Magnetismo'
+weight = 5
+draft = false
+description = 'Circuitos, ley de Ohm, electromagnetismo.'
 +++

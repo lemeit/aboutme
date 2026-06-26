@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Movimiento Rectilíneo Uniformemente Variado (MRUV) | Luciano Lamaita</title>
+<meta name="keywords" content="">
+<meta name="description" content="Aceleración constante, ecuaciones de movimiento y resolución de problemas.">
+<meta name="author" content="Luciano Lamaita">
+<link rel="canonical" href="http://localhost:1313/notes/fisica-4to/u2-cinematica/mruv/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.cd28c2355a1d376700a06be1756d279701d6ca89f3eb448e9b83a04d43d98c05.css" integrity="sha256-zSjCNVodN2cAoGvhdW0nlwHWyonz60SOm4OgTUPZjAU=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.svg">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon.svg">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/fisica-4to/u2-cinematica/mruv/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '$', right: '$', display: false}
+    ]
+  });"></script>
+
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Luciano Lamaita (Alt + H)">Luciano Lamaita</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/projects/" title="Proyectos">
+                    <span>Proyectos</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/notes/" title="Notas">
+                    <span>Notas</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="Sobre mí">
+                    <span>Sobre mí</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/notes/">Notas</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/notes/fisica-4to/">Introducción a la Física — 4° año</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/notes/fisica-4to/u2-cinematica/">Unidad 2 — Cinemática</a>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+</nav>
+    <h1 class="post-title entry-hint-parent">
+      Movimiento Rectilíneo Uniformemente Variado (MRUV)
+    </h1>
+    <div class="post-description">
+      Aceleración constante, ecuaciones de movimiento y resolución de problemas.
+    </div>
+    <div class="post-meta">
+
+<span title='2026-06-25 00:00:00 +0000 UTC'>25 de junio de 2026</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>Luciano Lamaita</span>
+
+</div>
+  </header> 
+  <div class="post-content md-content"><h2 id="objetivos-de-aprendizaje">Objetivos de aprendizaje<a hidden class="anchor" aria-hidden="true" href="#objetivos-de-aprendizaje">#</a></h2>
+<p>Al finalizar esta sección, vas a poder:</p>
+<ul>
+<li>Definir aceleración y calcularla a partir de velocidades inicial, final y tiempo.</li>
+<li>Reconocer la diferencia entre velocidad constante (MRU) y aceleración constante (MRUV).</li>
+<li>Aplicar las ecuaciones de movimiento para resolver problemas en una dimensión.</li>
+<li>Identificar situaciones de caída libre como caso particular del MRUV.</li>
+</ul>
+<hr>
+<h2 id="qué-es-la-aceleración">¿Qué es la aceleración?<a hidden class="anchor" aria-hidden="true" href="#qué-es-la-aceleración">#</a></h2>
+<p>En el MRU la velocidad no cambia. En el <strong>MRUV</strong>, la velocidad cambia, y lo hace a una <strong>tasa constante</strong>: esa tasa es la <strong>aceleración</strong>.</p>
+<p>$$a = \frac{\Delta v}{t} = \frac{v - v_0}{t}$$</p>
+<table>
+	<thead>
+			<tr>
+					<th>Símbolo</th>
+					<th>Cantidad</th>
+					<th>Unidad SI</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>$v_0$</td>
+					<td>velocidad inicial</td>
+					<td>m/s</td>
+			</tr>
+			<tr>
+					<td>$v$</td>
+					<td>velocidad final</td>
+					<td>m/s</td>
+			</tr>
+			<tr>
+					<td>$a$</td>
+					<td>aceleración</td>
+					<td>m/s²</td>
+			</tr>
+			<tr>
+					<td>$t$</td>
+					<td>tiempo</td>
+					<td>s</td>
+			</tr>
+			<tr>
+					<td>$d$</td>
+					<td>desplazamiento</td>
+					<td>m</td>
+			</tr>
+	</tbody>
+</table>
+<blockquote>
+<p><strong>Cómo leer m/s²:</strong> &ldquo;metros por segundo, por segundo&rdquo;. Si $a = 5\ \text{m/s}^2$, la velocidad aumenta $5\ \text{m/s}$ cada segundo.</p>
+</blockquote>
+<h3 id="aceleración-signo-y-dirección">Aceleración: signo y dirección<a hidden class="anchor" aria-hidden="true" href="#aceleración-signo-y-dirección">#</a></h3>
+<p>La aceleración es un <strong>vector</strong>. Su signo indica si la velocidad está aumentando o disminuyendo en la dirección positiva elegida.</p>
+<ul>
+<li>$a &gt; 0$: la velocidad se vuelve más positiva (objeto acelerando en dirección positiva, o frenando en dirección negativa).</li>
+<li>$a &lt; 0$: la velocidad se vuelve más negativa (objeto frenando en dirección positiva, o acelerando en dirección negativa).</li>
+</ul>
+<blockquote>
+<p><strong>Importante:</strong> en Física no usamos la palabra &ldquo;desaceleración&rdquo;. Un objeto que frena tiene aceleración negativa (si va en dirección positiva). La aceleración siempre se describe con su signo.</p>
+</blockquote>
+<h3 id="ejemplo">Ejemplo<a hidden class="anchor" aria-hidden="true" href="#ejemplo">#</a></h3>
+<p>Un auto parte de $v_0 = +15\ \text{m/s}$ y llega a $v = +40\ \text{m/s}$ en $t = 5\ \text{s}$.</p>
+<p>$$a = \frac{v - v_0}{t} = \frac{40 - 15}{5} = \frac{25}{5} = +5\ \text{m/s}^2$$</p>
+<p>La velocidad en cada segundo sería:</p>
+<table>
+	<thead>
+			<tr>
+					<th>$t$ (s)</th>
+					<th>0</th>
+					<th>1</th>
+					<th>2</th>
+					<th>3</th>
+					<th>4</th>
+					<th>5</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>$v$ (m/s)</td>
+					<td>+15</td>
+					<td>+20</td>
+					<td>+25</td>
+					<td>+30</td>
+					<td>+35</td>
+					<td>+40</td>
+			</tr>
+	</tbody>
+</table>
+<hr>
+<h2 id="las-ecuaciones-de-movimiento">Las ecuaciones de movimiento<a hidden class="anchor" aria-hidden="true" href="#las-ecuaciones-de-movimiento">#</a></h2>
+<p>Para un objeto con <strong>aceleración constante</strong>, existen cuatro ecuaciones que relacionan posición, velocidad, aceleración y tiempo. Solo hace falta saber tres de las cinco variables ($v_0$, $v$, $a$, $t$, $d$) para encontrar las otras dos.</p>
+<h3 id="derivación-cómo-se-obtienen">Derivación (cómo se obtienen)<a hidden class="anchor" aria-hidden="true" href="#derivación-cómo-se-obtienen">#</a></h3>
+<p>Partimos de la definición de velocidad media y aceleración:</p>
+<p>$$v_{med} = \frac{d}{t} \qquad a = \frac{v - v_0}{t}$$</p>
+<p>Con aceleración constante, la velocidad media es el promedio de la inicial y la final:</p>
+<p>$$v_{med} = \frac{v_0 + v}{2}$$</p>
+<p>Combinando estas relaciones se obtienen las cuatro ecuaciones:</p>
+<h3 id="tabla-de-ecuaciones">Tabla de ecuaciones<a hidden class="anchor" aria-hidden="true" href="#tabla-de-ecuaciones">#</a></h3>
+<table>
+	<thead>
+			<tr>
+					<th>Ecuación</th>
+					<th>Forma</th>
+					<th>Variables (falta)</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Velocidad media</td>
+					<td>$\dfrac{d}{t} = \dfrac{v_0 + v}{2}$</td>
+					<td>$a$</td>
+			</tr>
+			<tr>
+					<td>Definición de $a$</td>
+					<td>$v - v_0 = at$</td>
+					<td>$d$</td>
+			</tr>
+			<tr>
+					<td>Posición con $a$</td>
+					<td>$d = v_0 t + \tfrac{1}{2}at^2$</td>
+					<td>$v$</td>
+			</tr>
+			<tr>
+					<td>Sin tiempo</td>
+					<td>$v^2 - v_0^2 = 2ad$</td>
+					<td>$t$</td>
+			</tr>
+	</tbody>
+</table>
+<h3 id="cómo-elegir-la-ecuación">¿Cómo elegir la ecuación?<a hidden class="anchor" aria-hidden="true" href="#cómo-elegir-la-ecuación">#</a></h3>
+<p>Hacé una tabla con lo que <strong>sabés</strong> y lo que <strong>buscás</strong>. Elegí la ecuación que contenga la incógnita y en la que todas las demás variables sean conocidas.</p>
+<blockquote>
+<p>Casos especiales:</p>
+<ul>
+<li>&ldquo;parte del reposo&rdquo; → $v_0 = 0$</li>
+<li>&ldquo;se detiene&rdquo; → $v = 0$</li>
+<li>&ldquo;velocidad constante&rdquo; → $a = 0$</li>
+<li>&ldquo;caída libre&rdquo; → $a = g \approx 10\ \text{m/s}^2$ hacia abajo</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="caída-libre">Caída libre<a hidden class="anchor" aria-hidden="true" href="#caída-libre">#</a></h2>
+<p>La <strong>caída libre</strong> es el caso particular del MRUV en que la aceleración es la gravedad terrestre:</p>
+<p>$$g \approx 9{,}8\ \text{m/s}^2 \approx 10\ \text{m/s}^2 \text{ (valor de trabajo)}$$</p>
+<p>La gravedad siempre actúa <strong>hacia abajo</strong>. Si elegimos el positivo hacia arriba, entonces $a = -10\ \text{m/s}^2$.</p>
+<h3 id="situaciones-típicas">Situaciones típicas<a hidden class="anchor" aria-hidden="true" href="#situaciones-típicas">#</a></h3>
+<table>
+	<thead>
+			<tr>
+					<th>Situación</th>
+					<th>Condición inicial</th>
+					<th>Condición final / clave</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Caída desde el reposo</td>
+					<td>$v_0 = 0$</td>
+					<td>$a = g$ hacia abajo</td>
+			</tr>
+			<tr>
+					<td>Lanzamiento vertical hacia arriba</td>
+					<td>$v_0 &gt; 0$ (hacia arriba)</td>
+					<td>En el punto más alto: $v = 0$</td>
+			</tr>
+			<tr>
+					<td>Sube y vuelve al punto inicial</td>
+					<td>$d = 0$</td>
+					<td>$|v| = |v_0|$, dirección opuesta</td>
+			</tr>
+	</tbody>
+</table>
+<blockquote>
+<p><strong>Aclaración:</strong> un objeto que baja por una rampa no está en caída libre, aunque la gravedad sea la causa del movimiento. La rampa restringe su trayectoria.</p>
+</blockquote>
+<hr>
+<h2 id="ejemplos-resueltos">Ejemplos resueltos<a hidden class="anchor" aria-hidden="true" href="#ejemplos-resueltos">#</a></h2>
+<h3 id="ejemplo-1--frenada">Ejemplo 1 — Frenada<a hidden class="anchor" aria-hidden="true" href="#ejemplo-1--frenada">#</a></h3>
+<p>Un auto viaja a $v_0 = 30\ \text{m/s}$ y frena uniformemente hasta detenerse en $t = 6\ \text{s}$.
+¿Cuánto espacio recorre hasta detenerse?</p>
+<p><strong>Datos:</strong> $v_0 = 30\ \text{m/s}$, $v = 0$, $t = 6\ \text{s}$, busco $d$.</p>
+<p>Uso $\dfrac{d}{t} = \dfrac{v_0 + v}{2}$:</p>
+<p>$$d = t \cdot \frac{v_0 + v}{2} = 6 \cdot \frac{30 + 0}{2} = 6 \cdot 15 = 90\ \text{m}$$</p>
+<hr>
+<h3 id="ejemplo-2--caída-libre">Ejemplo 2 — Caída libre<a hidden class="anchor" aria-hidden="true" href="#ejemplo-2--caída-libre">#</a></h3>
+<p>Un gato salta desde una heladera de $1{,}8\ \text{m}$ de altura. ¿Con qué velocidad llega al suelo?</p>
+<p><strong>Datos:</strong> $d = 1{,}8\ \text{m}$, $v_0 = 0$, $a = g = +10\ \text{m/s}^2$ (abajo = positivo), busco $v$.</p>
+<p>Uso $v^2 - v_0^2 = 2ad$:</p>
+<p>$$v^2 = 2 \cdot 10 \cdot 1{,}8 = 36 \implies v = 6\ \text{m/s}$$</p>
+<hr>
+<h3 id="ejemplo-3--lanzamiento-hacia-arriba">Ejemplo 3 — Lanzamiento hacia arriba<a hidden class="anchor" aria-hidden="true" href="#ejemplo-3--lanzamiento-hacia-arriba">#</a></h3>
+<p>Se lanza una pelota hacia arriba con $v_0 = 15\ \text{m/s}$. ¿A qué altura máxima llega?</p>
+<p><strong>Datos:</strong> $v_0 = +15\ \text{m/s}$ (positivo = arriba), $v = 0$ (máxima altura), $a = -10\ \text{m/s}^2$, busco $d$.</p>
+<p>$$d = \frac{v^2 - v_0^2}{2a} = \frac{0 - 225}{2 \cdot (-10)} = \frac{-225}{-20} = 11{,}25\ \text{m}$$</p>
+<hr>
+<h2 id="actividad-de-campo--carrera-en-el-patio">Actividad de campo — Carrera en el patio<a hidden class="anchor" aria-hidden="true" href="#actividad-de-campo--carrera-en-el-patio">#</a></h2>
+<p>Usarás la app <strong>Tracker</strong> para filmar a un compañero corriendo desde el reposo y medir la aceleración.</p>
+<ol>
+<li>Filmá a alguien saliendo desde el reposo y acelerando 10–15 metros.</li>
+<li>Cargá el video en Tracker y marcá la posición en cada cuadro.</li>
+<li>Graficá $v(t)$: si el movimiento es MRUV, el gráfico debe ser una <strong>recta con pendiente</strong> $a$.</li>
+<li>Calculá la aceleración media desde la pendiente.</li>
+<li>Compará con el valor obtenido de las ecuaciones usando $v_0$, $v$ final y $t$.</li>
+</ol>
+<blockquote>
+<p><strong>Pregunta guía:</strong> ¿es la aceleración de una persona al saltar desde el reposo constante durante toda la carrera, o solo en algún tramo?</p>
+</blockquote>
+<hr>
+<h2 id="para-pensar">Para pensar<a hidden class="anchor" aria-hidden="true" href="#para-pensar">#</a></h2>
+<ol>
+<li>Un objeto tiene velocidad positiva y aceleración negativa. ¿Está acelerando o frenando? ¿Puede cambiar de dirección?</li>
+<li>En el punto más alto de un lanzamiento vertical, $v = 0$. ¿La aceleración también es cero en ese instante? ¿Por qué?</li>
+<li>Dos objetos se dejan caer desde la misma altura: uno pesa 1 kg y el otro 10 kg. ¿Cuál llega primero al suelo?</li>
+</ol>
+<hr>
+<p><em>Adaptado de <a href="https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf">Jeff Bigler — Physics 1: Mechanics in Plain English</a>, licencia <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. Traducción y adaptación al Diseño Curricular DGCyE: Prof. Ing. Luciano Lamaita.</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">Luciano Lamaita</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

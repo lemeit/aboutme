@@ -1,9 +1,6 @@
 +++
 title = 'Física Clásica y Moderna — 6° año'
+weight = 3
 draft = false
-description = 'Notas y recursos para 6° año. Instituto Niño Jesús.'
+description = 'Diseño Curricular DGCyE · Ciclo Superior'
 +++
-
-<img src="/images/logos/inj.png" alt="Instituto Niño Jesús" width="70">
-
-Materia del Instituto Niño Jesús. *(Contenido en preparación.)*

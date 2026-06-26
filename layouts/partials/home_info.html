@@ -1,41 +1,48 @@
 {{- with site.Params.homeInfoParams }}
 <article class="first-entry home-info">
   <header class="entry-header">
-    <h1>{{ .Title | markdownify }}</h1>
+    <h1 style="font-family:inherit;">{{ .Title | markdownify }}</h1>
   </header>
-  <section class="entry-content">
+  <section class="entry-content" style="font-family:inherit;">
     <p>{{ .Content | markdownify }}</p>
   </section>
-
-  <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-    <a href="/notes/fisica-4to/" style="
-        display: inline-block;
-        padding: 0.75rem 1.5rem;
-        background: var(--primary);
-        color: var(--theme);
-        border-radius: 6px;
-        font-weight: 700;
-        font-size: 1.05rem;
-        text-decoration: none;">
-      📖 Física 4° año
-    </a>
-    <a href="/notes/fisica-4to/u2-cinematica/" style="
-        display: inline-block;
-        padding: 0.75rem 1.5rem;
-        border: 2px solid var(--primary);
-        color: var(--primary);
-        border-radius: 6px;
-        font-weight: 600;
-        font-size: 1rem;
-        text-decoration: none;">
-      ▶ Última unidad: Cinemática
-    </a>
-  </div>
-
   {{- with site.Params.socialIcons }}
-  <div style="margin-top: 1.5rem;">
-    {{- partial "social_icons.html" . -}}
+  <div style="margin-top:1rem;">
+    {{- partial "social_icons.html" (dict "align" "left" "socialIcons" .) }}
   </div>
   {{- end }}
 </article>
+{{- end }}
+
+{{/* Últimas notas publicadas */}}
+{{- $notas := where site.RegularPages "Section" "notes" }}
+{{- $notas = where $notas "Draft" false }}
+{{- $notas = first 4 (sort $notas "Date" "desc") }}
+{{- if $notas }}
+<div style="margin-top:2.5rem;">
+  <h2 style="font-size:1rem; font-weight:700; color:var(--secondary);
+             text-transform:uppercase; letter-spacing:0.05em;
+             margin-bottom:1rem; font-family:inherit;">
+    Últimas notas publicadas
+  </h2>
+  <ul style="list-style:none; padding:0; margin:0;">
+    {{- range $notas }}
+    <li style="border-bottom:1px solid var(--border); padding:0.65rem 0;
+               display:flex; justify-content:space-between; align-items:baseline; gap:1rem;">
+      <a href="{{ .RelPermalink }}" style="text-decoration:none; font-family:inherit;
+                                           font-weight:500;">
+        {{ .Title }}
+      </a>
+      <span style="color:var(--secondary); font-size:0.8rem; white-space:nowrap; font-family:inherit;">
+        {{ .Date.Format "02 Jan 2006" }}
+      </span>
+    </li>
+    {{- end }}
+  </ul>
+  <p style="margin-top:1rem;">
+    <a href="/notes/" style="font-size:0.9rem; font-family:inherit;">
+      Ver todas las notas →
+    </a>
+  </p>
+</div>
 {{- end }}

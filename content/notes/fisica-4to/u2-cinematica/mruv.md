@@ -3,6 +3,7 @@ title = "Movimiento Rectilíneo Uniformemente Variado (MRUV)"
 date = "2026-06-25"
 draft = false
 math = true
+weight = 3
 description = "Aceleración constante, ecuaciones de movimiento y resolución de problemas."
 +++
 

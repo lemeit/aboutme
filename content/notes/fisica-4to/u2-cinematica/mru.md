@@ -5,6 +5,7 @@ draft = false
 description = "Movimiento con velocidad constante: ecuación, gráficos x(t) y v(t), y resolución de problemas."
 tags = ["U2", "cinemática", "MRU", "gráficos", "velocidad constante"]
 math = true
+weight = 2
 +++
 
 ## Objetivos de aprendizaje

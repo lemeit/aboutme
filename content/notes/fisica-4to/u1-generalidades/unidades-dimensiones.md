@@ -5,6 +5,7 @@ draft = false
 description = "El Sistema Internacional de Unidades, prefijos métricos, notación científica y cifras significativas."
 tags = ["U1", "SI", "unidades", "notación científica", "cifras significativas", "medición"]
 math = true
+weight = 2
 +++
 
 ## Objetivos de aprendizaje

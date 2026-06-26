@@ -2,8 +2,164 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/notes/fisica-4to/</loc>
+    <lastmod>2026-06-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/</loc>
+    <lastmod>2026-06-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/fisica-4to/u1-generalidades/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/fisica-4to/u2-cinematica/</loc>
+    <lastmod>2026-06-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/fisica-5to/</loc>
+  </url><url>
+    <loc>http://localhost:1313/notes/fisica-4to/u3-dinamica/</loc>
+    <lastmod>2026-06-22T11:42:42-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/fisica-6to/</loc>
+  </url><url>
+    <loc>http://localhost:1313/notes/fisica-4to/u4-energia/</loc>
+    <lastmod>2026-06-22T11:42:49-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/lab-industrias-7mo/</loc>
+  </url><url>
+    <loc>http://localhost:1313/notes/fisica-4to/u5-electricidad/</loc>
+    <lastmod>2026-06-22T11:42:57-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/fisica-4to/u6-energia-termica/</loc>
+    <lastmod>2026-06-22T11:43:03-03:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-06-19T13:08:03-03:00</lastmod>
+    <lastmod>2026-06-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/fisica-4to/u2-cinematica/mruv/</loc>
+    <lastmod>2026-06-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/fisica-4to/u6-energia-termica/temperatura-escalas/</loc>
+    <lastmod>2026-06-22T11:43:03-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/fisica-4to/u6-energia-termica/termodinamica/</loc>
+    <lastmod>2026-06-22T11:43:03-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/fisica-4to/u5-electricidad/electromagnetismo/</loc>
+    <lastmod>2026-06-22T11:42:57-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/fisica-4to/u5-electricidad/circuitos/</loc>
+    <lastmod>2026-06-22T11:42:56-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/fisica-4to/u5-electricidad/ley-ohm/</loc>
+    <lastmod>2026-06-22T11:42:56-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/fisica-4to/u4-energia/conservacion/</loc>
+    <lastmod>2026-06-22T11:42:49-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/fisica-4to/u4-energia/energias-alternativas/</loc>
+    <lastmod>2026-06-22T11:42:49-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/fisica-4to/u4-energia/trabajo-energia/</loc>
+    <lastmod>2026-06-22T11:42:49-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/fisica-4to/u3-dinamica/newton-3/</loc>
+    <lastmod>2026-06-22T11:42:42-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/fisica-4to/u3-dinamica/newton-1/</loc>
+    <lastmod>2026-06-22T11:42:41-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/fisica-4to/u3-dinamica/newton-2/</loc>
+    <lastmod>2026-06-22T11:42:41-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/fisica-4to/u2-cinematica/tiro-oblicuo/</loc>
+    <lastmod>2026-06-22T11:42:35-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/fisica-4to/u2-cinematica/caida-libre/</loc>
+    <lastmod>2026-06-22T11:42:34-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/fisica-4to/u1-generalidades/conocimiento-cientifico/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/cifras-significativas/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/cinem%C3%A1tica/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/desplazamiento/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/escalares/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/gr%C3%A1ficos/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/hip%C3%B3tesis/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/fisica-4to/u1-generalidades/vectores-intro/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ley/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/medici%C3%B3n/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/m%C3%A9todo-cient%C3%ADfico/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/fisica-4to/u2-cinematica/mru/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/mru/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/notaci%C3%B3n-cient%C3%ADfica/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/posici%C3%B3n/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/si/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/sistemas-de-referencia/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/fisica-4to/u2-cinematica/sistemas-referencia/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/teor%C3%ADa/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/trigonometr%C3%ADa/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/u1/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/u2/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/unidades/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/fisica-4to/u1-generalidades/unidades-dimensiones/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/vectores/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/velocidad/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/velocidad-constante/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/propuestas/</loc>
     <lastmod>2026-06-19T13:08:03-03:00</lastmod>
@@ -53,9 +209,6 @@
     <loc>http://localhost:1313/tags/supabase/</loc>
     <lastmod>2026-06-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-06-18T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/vialidad/</loc>
     <lastmod>2026-06-18T00:00:00+00:00</lastmod>
   </url><url>
@@ -63,16 +216,6 @@
     <lastmod>2026-06-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-  </url><url>
-    <loc>http://localhost:1313/notes/fisica-5to/</loc>
-  </url><url>
-    <loc>http://localhost:1313/notes/fisica-6to/</loc>
-  </url><url>
-    <loc>http://localhost:1313/notes/fisica-4to/</loc>
-  </url><url>
-    <loc>http://localhost:1313/notes/lab-industrias-7mo/</loc>
-  </url><url>
-    <loc>http://localhost:1313/notes/</loc>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url>

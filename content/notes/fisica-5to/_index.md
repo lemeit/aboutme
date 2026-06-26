@@ -1,9 +1,6 @@
 +++
 title = 'Física — 5° año'
+weight = 2
 draft = false
-description = 'Notas y recursos para 5° año. Instituto Niño Jesús.'
+description = 'Diseño Curricular DGCyE · Ciclo Superior'
 +++
-
-<img src="/images/logos/inj.png" alt="Instituto Niño Jesús" width="70">
-
-Materia del Instituto Niño Jesús. *(Contenido en preparación.)*

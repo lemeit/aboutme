@@ -1,6 +1,6 @@
 +++
-date = '2026-06-22T11:42:33-03:00'
-draft = false
 title = 'Unidad 2 — Cinemática'
+weight = 2
+draft = false
 description = 'Sistemas de referencia, MRU, MRUV y Caída Libre.'
 +++

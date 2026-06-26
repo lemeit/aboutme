@@ -2,6 +2,7 @@
 title = "¿Qué es la Física? El conocimiento científico"
 date = "2026-06-22"
 draft = false
+weight = 1
 description = "Introducción a la Física, el método científico, y las diferencias entre teorías, leyes e hipótesis."
 tags = ["U1", "método científico", "teoría", "ley", "hipótesis"]
 +++

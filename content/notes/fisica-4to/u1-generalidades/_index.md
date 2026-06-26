@@ -1,5 +1,6 @@
 +++
-date = '2026-06-22T11:42:25-03:00'
+title = 'Unidad 1 — Generalidades'
+weight = 1
 draft = false
-title = 'Unidad 1 Generalidades'
+description = 'Conocimiento científico, unidades y medición, vectores.'
 +++

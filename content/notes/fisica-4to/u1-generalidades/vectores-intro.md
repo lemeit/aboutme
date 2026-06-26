@@ -5,6 +5,7 @@ draft = false
 description = "Qué es un vector, diferencia con magnitudes escalares, representación gráfica, suma vectorial y descomposición en componentes."
 tags = ["U1", "vectores", "escalares", "trigonometría"]
 math = true
+weight = 3
 +++
 
 ## Objetivos de aprendizaje

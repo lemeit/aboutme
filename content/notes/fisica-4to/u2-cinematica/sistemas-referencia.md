@@ -5,6 +5,7 @@ draft = false
 description = "Cómo describir la posición de un objeto. Diferencia entre distancia recorrida y desplazamiento. Velocidad escalar y velocidad vectorial."
 tags = ["U2", "cinemática", "posición", "desplazamiento", "velocidad", "sistemas de referencia"]
 math = true
+weight = 1
 +++
 
 ## Objetivos de aprendizaje

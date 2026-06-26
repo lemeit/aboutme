@@ -23,7 +23,6 @@ Al finalizar esta sección, vas a poder:
 > **"Toda fuerza de acción produce una fuerza de reacción igual en módulo, opuesta en dirección, y del mismo tipo."**
 
 $$\vec{F_{12}} = -\vec{F_{21}}$$
-$$\vec{F}_{A \to B} = -\vec{F}_{B \to A}$$
 
 Las fuerzas de acción y reacción:
 - Tienen el **mismo módulo**
@@ -86,7 +85,7 @@ Para identificar un par acción-reacción correctamente:
 |-----|-----------|----------|
 | 1ª | Sin fuerza neta, no hay cambio de movimiento | $\vec{F}_{neta} = 0 \Rightarrow \vec{a} = 0$ |
 | 2ª | La fuerza neta produce aceleración | $\vec{F}_{neta} = m\vec{a}$ |
-| 3ª | Toda acción tiene una reacción igual y opuesta | $\vec{F}_{A\to B} = -\vec{F}_{B\to A}$ |
+| 3ª | Toda acción tiene una reacción igual y opuesta | $F_{AB} = -F_{BA}$ |
 
 ---
 

@@ -58,3 +58,10 @@ Trabajo en proyectos de monitoreo ambiental, herramientas educativas y GIS vial.
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[params]
+  ...
+  ShowAllPagesInSection = true
+  favicon = "/favicon.svg"
+  favicon16x16 = "/favicon.svg"
+  favicon32x32 = "/favicon.svg"

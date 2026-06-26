@@ -1,0 +1,41 @@
+{{- define "main" }}
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{- if .Description }}
+  <div class="post-description">{{ .Description }}</div>
+  {{- end }}
+</header>
+
+{{/* Mostrar contenido del _index.md si existe */}}
+{{- if .Content }}
+<div class="post-content">{{ .Content }}</div>
+{{- end }}
+
+{{/* Listar sub-secciones */}}
+{{- $subsections := .Sections }}
+{{- if $subsections }}
+<div style="margin: 1.5rem 0;">
+  <ul style="list-style:none; padding:0;">
+    {{- range $subsections }}
+    <li style="margin: 0.5rem 0; padding: 0.6rem 1rem; border-left: 3px solid var(--primary); background: var(--entry);">
+      <a href="{{ .RelPermalink }}" style="font-weight:600; font-size:1.05rem;">{{ .Title }}</a>
+      {{- if .Description }}<span style="color:var(--secondary); font-size:0.9rem;"> — {{ .Description }}</span>{{- end }}
+    </li>
+    {{- end }}
+  </ul>
+</div>
+{{- end }}
+
+{{/* Listar páginas directas */}}
+{{- $pages := where .RegularPages "Draft" false }}
+{{- if $pages }}
+<ul style="list-style:none; padding:0;">
+  {{- range $pages }}
+  <li style="margin: 0.4rem 0; padding: 0.5rem 1rem; border-left: 3px solid var(--secondary); background: var(--entry);">
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </li>
+  {{- end }}
+</ul>
+{{- end }}
+
+{{- end }}

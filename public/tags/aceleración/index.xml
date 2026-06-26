@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Aceleración on Luciano Lamaita</title>
+    <link>http://localhost:1313/tags/aceleraci%C3%B3n/</link>
+    <description>Recent content in Aceleración on Luciano Lamaita</description>
+    <generator>Hugo</generator>
+    <language>es-AR</language>
+    <lastBuildDate>Fri, 26 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/aceleraci%C3%B3n/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Segunda Ley de Newton — Fuerza y aceleración</title>
+      <link>http://localhost:1313/notes/fisica-4to/u3-dinamica/newton-2/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/fisica-4to/u3-dinamica/newton-2/</guid>
+      <description>La fuerza neta sobre un objeto produce una aceleración proporcional a su masa.</description>
+    </item>
+  </channel>
+</rss>

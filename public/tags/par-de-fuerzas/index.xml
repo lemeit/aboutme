@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Par De Fuerzas on Luciano Lamaita</title>
+    <link>http://localhost:1313/tags/par-de-fuerzas/</link>
+    <description>Recent content in Par De Fuerzas on Luciano Lamaita</description>
+    <generator>Hugo</generator>
+    <language>es-AR</language>
+    <lastBuildDate>Fri, 26 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/par-de-fuerzas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tercera Ley de Newton — Acción y reacción</title>
+      <link>http://localhost:1313/notes/fisica-4to/u3-dinamica/newton-3/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/fisica-4to/u3-dinamica/newton-3/</guid>
+      <description>Toda fuerza de acción produce una fuerza de reacción igual y opuesta.</description>
+    </item>
+  </channel>
+</rss>

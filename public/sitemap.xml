@@ -8,6 +8,9 @@
     <loc>http://localhost:1313/notes/</loc>
     <lastmod>2026-06-26T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/notes/fisica-4to/u3-dinamica/newton-1/</loc>
+    <lastmod>2026-06-26T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/notes/fisica-4to/u1-generalidades/conocimiento-cientifico/</loc>
     <lastmod>2026-06-22T00:00:00+00:00</lastmod>
   </url><url>
@@ -16,6 +19,9 @@
   </url><url>
     <loc>http://localhost:1313/notes/fisica-4to/u1-generalidades/</loc>
     <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/fisica-4to/u3-dinamica/newton-2/</loc>
+    <lastmod>2026-06-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/notes/fisica-4to/u2-cinematica/</loc>
     <lastmod>2026-06-26T00:00:00+00:00</lastmod>
@@ -28,11 +34,14 @@
   </url><url>
     <loc>http://localhost:1313/notes/fisica-5to/</loc>
   </url><url>
-    <loc>http://localhost:1313/notes/fisica-4to/u2-cinematica/mruv/</loc>
-    <lastmod>2026-06-25T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/notes/fisica-4to/u3-dinamica/newton-3/</loc>
+    <lastmod>2026-06-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/notes/fisica-4to/u3-dinamica/</loc>
-    <lastmod>2026-06-22T11:42:42-03:00</lastmod>
+    <lastmod>2026-06-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/fisica-4to/u2-cinematica/mruv/</loc>
+    <lastmod>2026-06-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/notes/fisica-4to/u1-generalidades/vectores-intro/</loc>
     <lastmod>2026-06-22T00:00:00+00:00</lastmod>
@@ -56,13 +65,34 @@
     <loc>http://localhost:1313/notes/fisica-4to/u6-energia-termica/</loc>
     <lastmod>2026-06-22T11:43:03-03:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/acci%C3%B3n/</loc>
+    <lastmod>2026-06-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/aceleraci%C3%B3n/</loc>
+    <lastmod>2026-06-26T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/ca%C3%ADda-libre/</loc>
     <lastmod>2026-06-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/cinem%C3%A1tica/</loc>
     <lastmod>2026-06-26T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/diagrama-cuerpo-libre/</loc>
+    <lastmod>2026-06-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/din%C3%A1mica/</loc>
+    <lastmod>2026-06-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/equilibrio/</loc>
+    <lastmod>2026-06-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/fuerza-neta/</loc>
+    <lastmod>2026-06-26T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/gravedad/</loc>
+    <lastmod>2026-06-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/inercia/</loc>
     <lastmod>2026-06-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/lanzamiento-vertical/</loc>
@@ -71,13 +101,25 @@
     <loc>http://localhost:1313/</loc>
     <lastmod>2026-06-26T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/masa/</loc>
+    <lastmod>2026-06-26T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/movimiento-2d/</loc>
     <lastmod>2026-06-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/mruv/</loc>
     <lastmod>2026-06-26T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/newton/</loc>
+    <lastmod>2026-06-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/par-de-fuerzas/</loc>
+    <lastmod>2026-06-26T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/proyectil/</loc>
+    <lastmod>2026-06-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/reacci%C3%B3n/</loc>
     <lastmod>2026-06-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
@@ -87,6 +129,9 @@
     <lastmod>2026-06-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/u2/</loc>
+    <lastmod>2026-06-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/u3/</loc>
     <lastmod>2026-06-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/vectores/</loc>
@@ -115,15 +160,6 @@
   </url><url>
     <loc>http://localhost:1313/notes/fisica-4to/u4-energia/trabajo-energia/</loc>
     <lastmod>2026-06-22T11:42:49-03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/notes/fisica-4to/u3-dinamica/newton-3/</loc>
-    <lastmod>2026-06-22T11:42:42-03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/notes/fisica-4to/u3-dinamica/newton-1/</loc>
-    <lastmod>2026-06-22T11:42:41-03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/notes/fisica-4to/u3-dinamica/newton-2/</loc>
-    <lastmod>2026-06-22T11:42:41-03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/cifras-significativas/</loc>
     <lastmod>2026-06-22T00:00:00+00:00</lastmod>

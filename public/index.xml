@@ -9,6 +9,13 @@
     <lastBuildDate>Fri, 26 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Primera Ley de Newton — Inercia</title>
+      <link>http://localhost:1313/notes/fisica-4to/u3-dinamica/newton-1/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/fisica-4to/u3-dinamica/newton-1/</guid>
+      <description>Todo cuerpo mantiene su estado de movimiento si no actúa una fuerza neta.</description>
+    </item>
+    <item>
       <title>¿Qué es la Física? El conocimiento científico</title>
       <link>http://localhost:1313/notes/fisica-4to/u1-generalidades/conocimiento-cientifico/</link>
       <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
@@ -23,6 +30,13 @@
       <description>Cómo describir la posición de un objeto. Diferencia entre distancia recorrida y desplazamiento. Velocidad escalar y velocidad vectorial.</description>
     </item>
     <item>
+      <title>Segunda Ley de Newton — Fuerza y aceleración</title>
+      <link>http://localhost:1313/notes/fisica-4to/u3-dinamica/newton-2/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/fisica-4to/u3-dinamica/newton-2/</guid>
+      <description>La fuerza neta sobre un objeto produce una aceleración proporcional a su masa.</description>
+    </item>
+    <item>
       <title>Movimiento Rectilíneo Uniforme (MRU)</title>
       <link>http://localhost:1313/notes/fisica-4to/u2-cinematica/mru/</link>
       <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
@@ -35,6 +49,13 @@
       <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/fisica-4to/u1-generalidades/unidades-dimensiones/</guid>
       <description>El Sistema Internacional de Unidades, prefijos métricos, notación científica y cifras significativas.</description>
+    </item>
+    <item>
+      <title>Tercera Ley de Newton — Acción y reacción</title>
+      <link>http://localhost:1313/notes/fisica-4to/u3-dinamica/newton-3/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/fisica-4to/u3-dinamica/newton-3/</guid>
+      <description>Toda fuerza de acción produce una fuerza de reacción igual y opuesta.</description>
     </item>
     <item>
       <title>Movimiento Rectilíneo Uniformemente Variado (MRUV)</title>
@@ -118,27 +139,6 @@
       <link>http://localhost:1313/notes/fisica-4to/u4-energia/trabajo-energia/</link>
       <pubDate>Mon, 22 Jun 2026 11:42:49 -0300</pubDate>
       <guid>http://localhost:1313/notes/fisica-4to/u4-energia/trabajo-energia/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Newton 3</title>
-      <link>http://localhost:1313/notes/fisica-4to/u3-dinamica/newton-3/</link>
-      <pubDate>Mon, 22 Jun 2026 11:42:42 -0300</pubDate>
-      <guid>http://localhost:1313/notes/fisica-4to/u3-dinamica/newton-3/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Newton 1</title>
-      <link>http://localhost:1313/notes/fisica-4to/u3-dinamica/newton-1/</link>
-      <pubDate>Mon, 22 Jun 2026 11:42:41 -0300</pubDate>
-      <guid>http://localhost:1313/notes/fisica-4to/u3-dinamica/newton-1/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Newton 2</title>
-      <link>http://localhost:1313/notes/fisica-4to/u3-dinamica/newton-2/</link>
-      <pubDate>Mon, 22 Jun 2026 11:42:41 -0300</pubDate>
-      <guid>http://localhost:1313/notes/fisica-4to/u3-dinamica/newton-2/</guid>
       <description></description>
     </item>
     <item>

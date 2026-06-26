@@ -22,7 +22,7 @@ Al finalizar esta sección, vas a poder:
 
 > **"Toda fuerza de acción produce una fuerza de reacción igual en módulo, opuesta en dirección, y del mismo tipo."**
 
-$$\vec{F}_{\text{A sobre B}} = -\vec{F}_{\text{B sobre A}}$$
+$$F = ma$$
 
 Las fuerzas de acción y reacción:
 - Tienen el **mismo módulo**

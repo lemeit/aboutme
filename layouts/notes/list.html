@@ -2,37 +2,42 @@
 <header class="page-header">
   <h1>{{ .Title }}</h1>
   {{- if .Description }}
-  <div class="post-description">{{ .Description }}</div>
+  <div class="post-description" style="color:var(--secondary); margin-bottom:1rem;">
+    {{ .Description }}
+  </div>
   {{- end }}
 </header>
 
-{{/* Mostrar contenido del _index.md si existe */}}
 {{- if .Content }}
-<div class="post-content">{{ .Content }}</div>
-{{- end }}
-
-{{/* Listar sub-secciones */}}
-{{- $subsections := .Sections }}
-{{- if $subsections }}
-<div style="margin: 1.5rem 0;">
-  <ul style="list-style:none; padding:0;">
-    {{- range $subsections }}
-    <li style="margin: 0.5rem 0; padding: 0.6rem 1rem; border-left: 3px solid var(--primary); background: var(--entry);">
-      <a href="{{ .RelPermalink }}" style="font-weight:600; font-size:1.05rem;">{{ .Title }}</a>
-      {{- if .Description }}<span style="color:var(--secondary); font-size:0.9rem;"> — {{ .Description }}</span>{{- end }}
-    </li>
-    {{- end }}
-  </ul>
+<div class="post-content md-content" style="margin-bottom:1.5rem;">
+  {{ .Content }}
 </div>
 {{- end }}
 
-{{/* Listar páginas directas */}}
-{{- $pages := where .RegularPages "Draft" false }}
+{{- $subsections := .Sections }}
+{{- if $subsections }}
+<nav style="margin-bottom:1.5rem;">
+  <ul style="list-style:none; padding:0; margin:0;">
+    {{- range $subsections }}
+    <li style="border-bottom:1px solid var(--border); padding:0.55rem 0;">
+      <a href="{{ .RelPermalink }}" style="font-weight:600; text-decoration:none;">
+        {{ .Title }}
+      </a>
+      {{- if .Description }}
+      <span style="color:var(--secondary); font-size:0.88rem;"> — {{ .Description }}</span>
+      {{- end }}
+    </li>
+    {{- end }}
+  </ul>
+</nav>
+{{- end }}
+
+{{- $pages := where .RegularPages "Params.draft" false }}
 {{- if $pages }}
-<ul style="list-style:none; padding:0;">
+<ul style="list-style:none; padding:0; margin:0;">
   {{- range $pages }}
-  <li style="margin: 0.4rem 0; padding: 0.5rem 1rem; border-left: 3px solid var(--secondary); background: var(--entry);">
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  <li style="border-bottom:1px solid var(--border); padding:0.55rem 0;">
+    <a href="{{ .RelPermalink }}" style="text-decoration:none;">{{ .Title }}</a>
   </li>
   {{- end }}
 </ul>

@@ -76,7 +76,7 @@ $$v_{med} = \frac{d}{t} \implies t = \frac{d}{v_{med}} = \frac{320}{1{,}25} = 25
 
 ---
 
-## Actividad con Tracker
+## Actividad con Tracker[^tracker]
 
 1. Filmá un objeto moviéndose a velocidad aproximadamente constante.
 2. Graficá $x$ vs. $t$ — debe ser una recta.
@@ -92,5 +92,7 @@ $$v_{med} = \frac{d}{t} \implies t = \frac{d}{v_{med}} = \frac{320}{1{,}25} = 25
 3. ¿Qué representa la pendiente en un gráfico $x(t)$?
 
 ---
+
+[^tracker]: 🔬 **Nota:** Tracker no forma parte del texto original de Bigler. Es una adaptación propia para trabajar los conceptos en clase con análisis de video. [**Tracker Online**](https://opensourcephysics.github.io/tracker-online/) es una herramienta gratuita desarrollada por Douglas Brown (Cabrillo College) y el proyecto [Open Source Physics](https://www.compadre.org/osp/).
 
 *Adaptado de [Jeff Bigler — Physics 1: Mechanics in Plain English](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf), licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Traducción y adaptación: Prof. Ing. Luciano Lamaita, 2026.*

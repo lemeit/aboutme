@@ -103,9 +103,9 @@ $$\text{pendiente de } \frac{y}{x} = \frac{\Delta y}{\Delta x} \qquad \text{áre
 
 ---
 
-## Actividad con Tracker
+## Actividad con Tracker[^tracker]
 
-1. Cargá un video de movimiento en Tracker.
+1. Cargá un video de movimiento en Tracker[^tracker].
 2. Obtené la tabla de $x$ vs. $t$.
 3. Graficá $x(t)$ — ¿es recta (MRU) o parábola (MRUV)?
 4. Graficá $v(t)$ — calculá la pendiente → aceleración.
@@ -120,5 +120,7 @@ $$\text{pendiente de } \frac{y}{x} = \frac{\Delta y}{\Delta x} \qquad \text{áre
 3. ¿Por qué no se puede determinar la posición de un objeto a partir de un gráfico $v(t)$ solo?
 
 ---
+
+[^tracker]: 🔬 **Nota:** Tracker no forma parte del texto original de Bigler. Es una adaptación propia para trabajar los conceptos en clase con análisis de video. [**Tracker Online**](https://opensourcephysics.github.io/tracker-online/) es una herramienta gratuita desarrollada por Douglas Brown (Cabrillo College) y el proyecto [Open Source Physics](https://www.compadre.org/osp/).
 
 *Adaptado de [Jeff Bigler — Physics 1: Mechanics in Plain English](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf), licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Traducción y adaptación: Prof. Ing. Luciano Lamaita, 2026.*

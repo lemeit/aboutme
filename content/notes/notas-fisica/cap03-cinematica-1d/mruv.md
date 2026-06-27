@@ -181,7 +181,7 @@ $$0 - 6400 = 2(-4)\Delta x \implies \Delta x = \frac{6400}{8} = 800\ \text{m}$$
 
 ---
 
-## Actividad con Tracker
+## Actividad con Tracker[^tracker]
 
 1. Filmá un objeto que acelera (pelota rodando por una rampa, carrito con peso colgante).
 2. Graficá $x(t)$ — debe ser una parábola.
@@ -197,5 +197,7 @@ $$0 - 6400 = 2(-4)\Delta x \implies \Delta x = \frac{6400}{8} = 800\ \text{m}$$
 3. En el gráfico $v(t)$ de un MRUV, ¿qué significa que la recta cruce el eje horizontal?
 
 ---
+
+[^tracker]: 🔬 **Nota:** Tracker no forma parte del texto original de Bigler. Es una adaptación propia para trabajar los conceptos en clase con análisis de video. [**Tracker Online**](https://opensourcephysics.github.io/tracker-online/) es una herramienta gratuita desarrollada por Douglas Brown (Cabrillo College) y el proyecto [Open Source Physics](https://www.compadre.org/osp/).
 
 *Adaptado de [Jeff Bigler — Physics 1: Mechanics in Plain English](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf), licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Traducción y adaptación al Diseño Curricular DGCyE: Prof. Ing. Luciano Lamaita, 2026.*

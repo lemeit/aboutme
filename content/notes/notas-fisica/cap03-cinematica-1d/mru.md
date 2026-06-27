@@ -118,7 +118,7 @@ Un auto da una vuelta completa a una pista circular de radio 100 m a velocidad c
 
 ---
 
-## Actividad con Tracker
+## Actividad con Tracker[^tracker]
 
 1. Filmá un objeto moviéndose a velocidad aproximadamente constante (por ejemplo, un carrito rodando en una superficie plana).
 2. Marcá la posición cuadro a cuadro.
@@ -135,5 +135,7 @@ Un auto da una vuelta completa a una pista circular de radio 100 m a velocidad c
 3. Esbozá el gráfico $x(t)$ entre $t = 0$ y $t = 8\ \text{min}$ y el gráfico $v(t)$ correspondiente.
 
 ---
+
+[^tracker]: 🔬 **Nota:** Tracker no forma parte del texto original de Bigler. Es una adaptación propia para trabajar los conceptos en clase con análisis de video. [**Tracker Online**](https://opensourcephysics.github.io/tracker-online/) es una herramienta gratuita desarrollada por Douglas Brown (Cabrillo College) y el proyecto [Open Source Physics](https://www.compadre.org/osp/).
 
 *Adaptado de [Jeff Bigler — Physics 1: Mechanics in Plain English](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf), licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Traducción y adaptación al Diseño Curricular DGCyE: Prof. Ing. Luciano Lamaita, 2026.*

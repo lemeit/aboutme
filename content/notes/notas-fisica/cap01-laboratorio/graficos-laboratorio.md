@@ -98,9 +98,9 @@ Si usás Desmos, Excel o una calculadora científica:
 
 ---
 
-## Actividad — Tracker + gráficos
+## Actividad — Tracker[^tracker] + gráficos
 
-En experimentos con Tracker:
+En experimentos con Tracker[^tracker]:
 
 1. Obtenés la tabla de posición $x$ vs. tiempo $t$.
 2. Para MRU: graficás $x$ vs. $t$ → recta → pendiente = velocidad.
@@ -116,5 +116,7 @@ En experimentos con Tracker:
 3. ¿Por qué una línea de mejor ajuste da un resultado más confiable que un promedio de dos mediciones?
 
 ---
+
+[^tracker]: 🔬 **Nota:** Tracker no forma parte del texto original de Bigler. Es una adaptación propia para trabajar los conceptos en clase con análisis de video. [**Tracker Online**](https://opensourcephysics.github.io/tracker-online/) es una herramienta gratuita desarrollada por Douglas Brown (Cabrillo College) y el proyecto [Open Source Physics](https://www.compadre.org/osp/).
 
 *Adaptado de [Jeff Bigler — Physics 1: Mechanics in Plain English](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf), licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Traducción y adaptación al Diseño Curricular DGCyE: Prof. Ing. Luciano Lamaita, 2026.*

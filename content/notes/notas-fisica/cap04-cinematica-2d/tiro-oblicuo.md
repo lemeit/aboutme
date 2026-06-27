@@ -95,10 +95,10 @@ que es la ecuación de una parábola.
 
 ---
 
-## Actividad de campo — Tracker
+## Actividad de campo — Tracker[^tracker]
 
 1. Filmá una pelota lanzada horizontalmente desde una mesa (o lanzada con ángulo desde el suelo).
-2. En Tracker marcá la posición en cada cuadro.
+2. En Tracker[^tracker] marcá la posición en cada cuadro.
 3. Graficá $x(t)$ y $y(t)$ por separado.
 4. Verificá que $x(t)$ es una recta (MRU) y $y(t)$ es una parábola (MRUV).
 5. Calculá $v_x$ desde la pendiente de $x(t)$ y $g$ desde la curvatura de $y(t)$.
@@ -114,5 +114,7 @@ que es la ecuación de una parábola.
 3. Un arquero apunta directo al blanco (horizontalmente). ¿La flecha llega al blanco, por encima o por debajo? ¿Por qué?
 
 ---
+
+[^tracker]: 🔬 **Nota:** Tracker no forma parte del texto original de Bigler. Es una adaptación propia para trabajar los conceptos en clase con análisis de video. [**Tracker Online**](https://opensourcephysics.github.io/tracker-online/) es una herramienta gratuita desarrollada por Douglas Brown (Cabrillo College) y el proyecto [Open Source Physics](https://www.compadre.org/osp/).
 
 *Adaptado de [Jeff Bigler — Physics 1: Mechanics in Plain English](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf), licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Traducción y adaptación al Diseño Curricular DGCyE: Prof. Ing. Luciano Lamaita, 2026.*

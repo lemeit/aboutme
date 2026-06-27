@@ -88,7 +88,7 @@ Toda conclusión científica debe tener tres componentes:
 
 - Crear y usar modelos matemáticos para representar fenómenos.
 - Aplicar álgebra, funciones y proporciones.
-- Usar herramientas digitales (Tracker, Desmos, planillas) para análisis.
+- Usar herramientas digitales (Tracker[^tracker], Desmos, planillas) para análisis.
 - Verificar expresiones con casos límite: ¿tiene sentido el resultado cuando una variable se hace cero o muy grande?
 
 ---
@@ -120,7 +120,7 @@ Toda conclusión científica debe tener tres componentes:
 
 ## Las prácticas en tu curso
 
-A lo largo del año, vas a usar estas prácticas en los trabajos de laboratorio con Tracker y en los informes. Cada experimento requiere al menos:
+A lo largo del año, vas a usar estas prácticas en los trabajos de laboratorio con Tracker[^tracker] y en los informes. Cada experimento requiere al menos:
 
 1. **Representar** la situación (diagrama, tabla de datos).
 2. **Diseñar** el procedimiento (variables, qué medir, cómo).
@@ -128,5 +128,7 @@ A lo largo del año, vas a usar estas prácticas en los trabajos de laboratorio 
 4. **Argumentar** la conclusión (claim → evidence → reasoning).
 
 ---
+
+[^tracker]: 🔬 **Nota:** Tracker no forma parte del texto original de Bigler. Es una adaptación propia para trabajar los conceptos en clase con análisis de video. [**Tracker Online**](https://opensourcephysics.github.io/tracker-online/) es una herramienta gratuita desarrollada por Douglas Brown (Cabrillo College) y el proyecto [Open Source Physics](https://www.compadre.org/osp/).
 
 *Adaptado de [Jeff Bigler — Physics 1: Mechanics in Plain English](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf), licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Traducción y adaptación al Diseño Curricular DGCyE: Prof. Ing. Luciano Lamaita, 2026.*

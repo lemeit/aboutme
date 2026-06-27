@@ -64,7 +64,7 @@ El experimento clásico usa una **cinta de papel** que pasa por un contador de t
 3. Medís las distancias entre puntos → calculás velocidades en cada intervalo.
 4. Graficás velocidad vs. tiempo → pendiente = aceleración.
 
-Con Tracker podés lograr el mismo resultado digitalmente, marcando la posición cuadro a cuadro en un video.
+Con Tracker[^tracker] podés lograr el mismo resultado digitalmente, marcando la posición cuadro a cuadro en un video.
 
 ---
 
@@ -75,5 +75,7 @@ Con Tracker podés lograr el mismo resultado digitalmente, marcando la posición
 3. Si los puntos de un diagrama están cada vez más juntos hasta desaparecer, ¿qué está haciendo el objeto?
 
 ---
+
+[^tracker]: 🔬 **Nota:** Tracker no forma parte del texto original de Bigler. Es una adaptación propia para trabajar los conceptos en clase con análisis de video. [**Tracker Online**](https://opensourcephysics.github.io/tracker-online/) es una herramienta gratuita desarrollada por Douglas Brown (Cabrillo College) y el proyecto [Open Source Physics](https://www.compadre.org/osp/).
 
 *Adaptado de [Jeff Bigler — Physics 1: Mechanics in Plain English](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf), licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Traducción y adaptación: Prof. Ing. Luciano Lamaita, 2026.*

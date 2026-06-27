@@ -37,7 +37,7 @@ En este curso, la mayoría de los trabajos escritos serán informes internos.
 
 El título debe ser una frase descriptiva (generalmente sin verbo) que dé información sobre el propósito del experimento.
 
-**Ejemplo:** *Determinación de la aceleración de un cuerpo en caída libre mediante análisis de video con Tracker*
+**Ejemplo:** *Determinación de la aceleración de un cuerpo en caída libre mediante análisis de video con Tracker[^tracker]*
 
 ### 2. Objetivo
 
@@ -126,5 +126,7 @@ El informe formal sigue la estructura estándar de publicaciones científicas:
 - Afirmaciones sin respaldo en evidencia del experimento
 
 ---
+
+[^tracker]: 🔬 **Nota:** Tracker no forma parte del texto original de Bigler. Es una adaptación propia para trabajar los conceptos en clase con análisis de video. [**Tracker Online**](https://opensourcephysics.github.io/tracker-online/) es una herramienta gratuita desarrollada por Douglas Brown (Cabrillo College) y el proyecto [Open Source Physics](https://www.compadre.org/osp/).
 
 *Adaptado de [Jeff Bigler — Physics 1: Mechanics in Plain English](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf), licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Traducción y adaptación al Diseño Curricular DGCyE: Prof. Ing. Luciano Lamaita, 2026.*

@@ -111,10 +111,10 @@ $$d_x = v_x \cdot t = 15{,}3 \times 2{,}57 = 39{,}4\ \text{m}$$
 
 ---
 
-## Actividad con Tracker
+## Actividad con Tracker[^tracker]
 
 1. Filmá una pelota lanzada horizontalmente desde una mesa, o con ángulo desde el suelo.
-2. En Tracker marcá la posición cuadro a cuadro.
+2. En Tracker[^tracker] marcá la posición cuadro a cuadro.
 3. Graficá $x(t)$ y $y(t)$ por separado.
 4. Verificá que $x(t)$ es una recta (MRU) y $y(t)$ es una parábola (MRUV).
 5. Calculá $v_x$ desde la pendiente de $x(t)$ y $g$ desde la curvatura de $y(t)$.
@@ -128,5 +128,7 @@ $$d_x = v_x \cdot t = 15{,}3 \times 2{,}57 = 39{,}4\ \text{m}$$
 3. Un arquero apunta directamente al blanco (horizontalmente). ¿La flecha llega al blanco, por encima o por debajo? ¿Qué debería hacer el arquero para acertar?
 
 ---
+
+[^tracker]: 🔬 **Nota:** Tracker no forma parte del texto original de Bigler. Es una adaptación propia para trabajar los conceptos en clase con análisis de video. [**Tracker Online**](https://opensourcephysics.github.io/tracker-online/) es una herramienta gratuita desarrollada por Douglas Brown (Cabrillo College) y el proyecto [Open Source Physics](https://www.compadre.org/osp/).
 
 *Adaptado de [Jeff Bigler — Physics 1: Mechanics in Plain English](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf), licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Traducción y adaptación al Diseño Curricular DGCyE: Prof. Ing. Luciano Lamaita, 2026.*

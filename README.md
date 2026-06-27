@@ -1,7 +1,7 @@
 # profe.lemeit.ar — Sitio personal de Luciano Lamaita
 
-Sitio personal de **Prof. Ing. Luciano Lamaita** — docente de Física y Química en Saladillo, Buenos Aires.  
-Reúne apuntes de clase, guías y recursos para estudiantes, más proyectos técnicos.
+Sitio personal de **Prof. Ing. Luciano Lamaita** — docente de Física en Saladillo, Buenos Aires.
+Reúne la traducción y adaptación al español de las notas de Jeff Bigler, apuntes de clase y proyectos técnicos.
 
 🌐 **[profe.lemeit.ar](https://profe.lemeit.ar)**
 
@@ -19,25 +19,53 @@ Reúne apuntes de clase, guías y recursos para estudiantes, más proyectos téc
 
 ---
 
-## Estructura de contenido
+## Estructura del proyecto
 
 ```
 content/
 ├── notes/
-│   ├── fisica-4to/          ← Introducción a la Física — 4° año
-│   │   ├── u1-generalidades/    (conocimiento científico, unidades, vectores)
-│   │   ├── u2-cinematica/       (MRU, MRUV, caída libre, tiro oblicuo)
-│   │   ├── u3-dinamica/         (Leyes de Newton)
-│   │   ├── u4-energia/          (trabajo, energía, conservación)
-│   │   ├── u5-electricidad/     (circuitos, Ohm, electromagnetismo)
-│   │   └── u6-energia-termica/  (temperatura, termodinámica)
-│   ├── fisica-5to/          ← Física — 5° año (INJ, en preparación)
-│   ├── fisica-6to/          ← Física Clásica y Moderna — 6° año (INJ, en preparación)
-│   └── lab-industrias-7mo/  ← Laboratorio de Industrias — 7° TQ (EEST N°1)
-├── projects/                ← Proyectos técnicos (EMA, EUREKA, DVBA GIS)
-├── propuestas/              ← Proyectos pedagógicos institucionales
-└── about.md                 ← Página "Sobre mí"
+│   ├── notas-fisica/               ← traducción completa de Bigler (Physics 1)
+│   │   ├── cap01-laboratorio/      ✅ completo (8 notas)
+│   │   ├── cap02-matematicas/      ✅ completo (6 notas)
+│   │   ├── cap03-cinematica-1d/    ✅ completo (9 notas)
+│   │   ├── cap04-cinematica-2d/    ✅ completo (5 notas)
+│   │   ├── cap05-fuerzas-1d/       ⬜ en preparación
+│   │   ├── cap06-fuerzas-2d/       ⬜
+│   │   ├── cap07-rotacion/         ⬜
+│   │   ├── cap08-gravitacion/      ⬜
+│   │   ├── cap09-energia/          ⬜
+│   │   ├── cap10-momento/          ⬜
+│   │   ├── cap11-mhs/              ⬜
+│   │   ├── cap12-fluidos/          ⬜
+│   │   └── cap13-relatividad/      ⬜
+│   ├── fisica-4to/                 ← Introducción a la Física 4° año (en construcción)
+│   ├── fisica-5to/                 ← Física 5° año — INJ (en construcción)
+│   ├── fisica-6to/                 ← Física Clásica y Moderna 6° año — INJ (en construcción)
+│   └── lab-industrias-7mo/         ← Laboratorio de Industrias 7° TQ — EEST N°1 (en construcción)
+├── projects/                       ← Proyectos técnicos (EMA, EUREKA, DVBA GIS)
+├── propuestas/                     ← Proyectos pedagógicos institucionales
+└── about.md                        ← Página "Sobre mí"
 ```
+
+---
+
+## Sobre las Notas de Física
+
+Las notas son una **traducción y adaptación al español** de:
+
+> Bigler, J. — *Physics 1: Mechanics in Plain English*
+> Lynn English High School, Lynn MA · [mrbigler.com](https://www.mrbigler.com)
+> Licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+Adaptación al español con autorización del autor.
+Traducción, adaptación pedagógica e integración con actividades de campo: **Prof. Ing. Luciano Lamaita**, Saladillo, Buenos Aires, 2026.
+
+### Actividades complementarias
+
+Algunas notas incluyen actividades con **Tracker** — herramienta gratuita de análisis de video:
+- 🌐 [Tracker Online](https://opensourcephysics.github.io/tracker-online/)
+- Desarrollado por Douglas Brown (Cabrillo College) y el proyecto [Open Source Physics](https://www.compadre.org/osp/)
+- Estas actividades son adaptaciones propias y **no forman parte del texto original de Bigler**
 
 ---
 
@@ -52,31 +80,16 @@ content/
 
 ---
 
-## Notas de clase
-
-Las notas están adaptadas del material de **Jeff Bigler** (*Physics 1: Mechanics in Plain English*),  
-bajo licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/),  
-con traducción y adaptación al Diseño Curricular DGCyE por Prof. Ing. Luciano Lamaita.
-
-Cada nota incluye:
-- Objetivos de aprendizaje
-- Desarrollo conceptual con fórmulas (KaTeX)
-- Ejemplos resueltos
-- Actividades de campo con Tracker
-- Preguntas para pensar
-- Tags por unidad y tema
-
----
-
 ## Customizaciones sobre PaperMod
 
 | Archivo | Propósito |
 |---------|-----------|
 | `layouts/notes/list.html` | Listado de materias y unidades con logos, orden por `weight`, numeración |
-| `layouts/partials/home_info.html` | Home orientada al alumno con últimas notas |
-| `assets/css/extended/custom.css` | Paleta X-Wing (naranja oscuro + negro) |
-| `static/favicon.svg` | Favicon pulso ECG naranja sobre fondo negro |
+| `layouts/partials/home_info.html` | Home con últimas notas publicadas |
+| `assets/css/extended/custom.css` | Paleta X-Wing Poe Dameron (naranja oscuro + negro) |
+| `static/favicon.svg` | Favicon — letra L serif naranja sobre fondo negro |
 | `static/images/logos/` | Logos institucionales (Madre Teresa, INJ, EEST N°1) |
+| `static/images/diagramas/` | Capturas de figuras del libro de Bigler |
 
 ---
 
@@ -87,6 +100,9 @@ cd C:\GitHub\aboutme
 hugo server --buildDrafts
 # → http://localhost:1313
 ```
+
+> La carpeta `public/` es generada automáticamente por Hugo al correr el servidor local.
+> **No forma parte del repo** — está en `.gitignore`. Cloudflare Pages genera su propia versión en cada deploy.
 
 ## Deploy
 

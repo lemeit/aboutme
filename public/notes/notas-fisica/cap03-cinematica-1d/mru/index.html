@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Movimiento Rectilíneo Uniforme (MRU) | Luciano Lamaita</title>
+<meta name="keywords" content="U2, cinemática, MRU, gráficos, velocidad constante">
+<meta name="description" content="Movimiento con velocidad constante: ecuación, gráficos x(t) y v(t), y resolución de problemas.">
+<meta name="author" content="Luciano Lamaita">
+<link rel="canonical" href="http://localhost:1313/notes/notas-fisica/cap03-cinematica-1d/mru/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0c52ad92016b3caf48902a5f0b32c0ea7799a95186599988c9f8f8762878b24f.css" integrity="sha256-DFKtkgFrPK9IkCpfCzLA6neZqVGGWZmIyfj4dih4sk8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.svg">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon.svg">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/notas-fisica/cap03-cinematica-1d/mru/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body, {
+    trust: true,
+    strict: false,
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '$', right: '$', display: false}
+    ]
+  });"></script>
+
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Luciano Lamaita (Alt + H)">Luciano Lamaita</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/projects/" title="Proyectos">
+                    <span>Proyectos</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/notes/" title="Notas">
+                    <span>Notas</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="Sobre mí">
+                    <span>Sobre mí</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/notes/">Notas</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/notes/notas-fisica/">Notas de Física</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/notes/notas-fisica/cap03-cinematica-1d/">Capítulo 3 — Cinemática en 1D</a>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+</nav>
+    <h1 class="post-title entry-hint-parent">
+      Movimiento Rectilíneo Uniforme (MRU)
+    </h1>
+    <div class="post-description">
+      Movimiento con velocidad constante: ecuación, gráficos x(t) y v(t), y resolución de problemas.
+    </div>
+    <div class="post-meta">
+
+<span title='2026-06-22 00:00:00 +0000 UTC'>22 de junio de 2026</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>Luciano Lamaita</span>
+
+</div>
+  </header> 
+  <div class="post-content md-content"><h2 id="objetivos-de-aprendizaje">Objetivos de aprendizaje<a hidden class="anchor" aria-hidden="true" href="#objetivos-de-aprendizaje">#</a></h2>
+<p>Al finalizar esta nota, vas a poder:</p>
+<ul>
+<li>Describir las condiciones del movimiento rectilíneo uniforme (MRU).</li>
+<li>Aplicar la ecuación de posición del MRU para resolver problemas.</li>
+<li>Interpretar y construir gráficos $x(t)$ y $v(t)$ para el MRU.</li>
+<li>Relacionar la pendiente del gráfico $x(t)$ con la velocidad.</li>
+<li>Identificar MRU en situaciones reales y en análisis con Tracker.</li>
+</ul>
+<hr>
+<h2 id="qué-es-el-mru">¿Qué es el MRU?<a hidden class="anchor" aria-hidden="true" href="#qué-es-el-mru">#</a></h2>
+<p>El <strong>movimiento rectilíneo uniforme</strong> es aquel en que un objeto se desplaza en línea recta con <strong>velocidad constante</strong>: misma rapidez y misma dirección en todo momento.</p>
+<p>Condiciones del MRU:</p>
+<ul>
+<li>Trayectoria <strong>rectilínea</strong> (sobre una línea recta)</li>
+<li>Velocidad <strong>constante</strong> (sin aceleración: $a = 0$)</li>
+</ul>
+<blockquote>
+<p><strong>Ejemplo cotidiano:</strong> Un auto en autopista a velocidad crucero constante. Un corredor manteniendo su ritmo en la recta. Una pelota sobre una superficie perfectamente lisa.</p>
+</blockquote>
+<hr>
+<h2 id="ecuación-del-mru">Ecuación del MRU<a hidden class="anchor" aria-hidden="true" href="#ecuación-del-mru">#</a></h2>
+<p>Si la aceleración es cero, la única ecuación que necesitamos es:</p>
+<p>$$\Delta x = v \cdot t$$</p>
+<p>O en su forma completa, incluyendo la posición inicial $x_0$:</p>
+<p>$$x = x_0 + v \cdot t$$</p>
+<p>donde:</p>
+<table>
+	<thead>
+			<tr>
+					<th>Símbolo</th>
+					<th>Significado</th>
+					<th>Unidad</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>$x$</td>
+					<td>posición final</td>
+					<td>m</td>
+			</tr>
+			<tr>
+					<td>$x_0$</td>
+					<td>posición inicial</td>
+					<td>m</td>
+			</tr>
+			<tr>
+					<td>$v$</td>
+					<td>velocidad (constante)</td>
+					<td>m/s</td>
+			</tr>
+			<tr>
+					<td>$t$</td>
+					<td>tiempo</td>
+					<td>s</td>
+			</tr>
+	</tbody>
+</table>
+<blockquote>
+<p>💡 Esta es la ecuación de una <strong>función lineal</strong>: $x$ depende de $t$ de manera proporcional. Recordá de matemática: $y = b + m \cdot x$, donde $m$ es la pendiente. Acá la &ldquo;pendiente&rdquo; es la velocidad $v$.</p>
+</blockquote>
+<hr>
+<h2 id="gráficos-del-mru">Gráficos del MRU<a hidden class="anchor" aria-hidden="true" href="#gráficos-del-mru">#</a></h2>
+<h3 id="gráfico-posición-vs-tiempo--xt">Gráfico posición vs. tiempo — $x(t)$<a hidden class="anchor" aria-hidden="true" href="#gráfico-posición-vs-tiempo--xt">#</a></h3>
+<p>En el MRU, el gráfico $x(t)$ es una <strong>línea recta</strong>.</p>
+<ul>
+<li>La <strong>pendiente</strong> de esa recta es la velocidad: $v = \dfrac{\Delta x}{\Delta t}$</li>
+<li>Una pendiente positiva → objeto moviéndose en dirección positiva</li>
+<li>Una pendiente negativa → objeto moviéndose en dirección negativa</li>
+<li>Una línea horizontal (pendiente cero) → objeto en reposo</li>
+</ul>
+<table>
+	<thead>
+			<tr>
+					<th>Situación</th>
+					<th>Gráfico $x(t)$</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Reposo</td>
+					<td>Línea horizontal</td>
+			</tr>
+			<tr>
+					<td>MRU en dirección +</td>
+					<td>Línea recta con pendiente positiva</td>
+			</tr>
+			<tr>
+					<td>MRU en dirección −</td>
+					<td>Línea recta con pendiente negativa</td>
+			</tr>
+			<tr>
+					<td>Mayor velocidad</td>
+					<td>Línea más inclinada</td>
+			</tr>
+	</tbody>
+</table>
+<h3 id="gráfico-velocidad-vs-tiempo--vt">Gráfico velocidad vs. tiempo — $v(t)$<a hidden class="anchor" aria-hidden="true" href="#gráfico-velocidad-vs-tiempo--vt">#</a></h3>
+<p>En el MRU, el gráfico $v(t)$ es una <strong>línea horizontal</strong> (la velocidad no cambia).</p>
+<ul>
+<li>El <strong>área</strong> bajo el gráfico $v(t)$ entre dos instantes es el desplazamiento en ese intervalo:</li>
+</ul>
+<p>$$\Delta x = v \cdot \Delta t = \text{área del rectángulo bajo la curva}$$</p>
+<hr>
+<h2 id="diagramas-de-puntos">Diagramas de puntos<a hidden class="anchor" aria-hidden="true" href="#diagramas-de-puntos">#</a></h2>
+<p>Un diagrama de puntos es una forma sencilla de visualizar el movimiento: se marca la posición del objeto a intervalos de tiempo iguales.</p>
+<p>En el <strong>MRU</strong>, los puntos están <strong>igualmente espaciados</strong> — el objeto recorre la misma distancia en cada intervalo de tiempo.</p>
+<p>$$\bullet \quad \bullet \quad \bullet \quad \bullet \quad \bullet \quad \bullet$$</p>
+<p>Si los puntos se acercan → el objeto frena.
+Si los puntos se alejan → el objeto acelera.
+Si están parejos → MRU.</p>
+<hr>
+<h2 id="resolución-de-problemas--método-guess">Resolución de problemas — método GUESS<a hidden class="anchor" aria-hidden="true" href="#resolución-de-problemas--método-guess">#</a></h2>
+<p>Para resolver cualquier problema de cinemática, seguimos estos pasos:</p>
+<ol>
+<li><strong>G</strong> — <em>Given</em>: anotá todos los datos del problema con sus unidades</li>
+<li><strong>U</strong> — <em>Unknown</em>: identificá qué hay que encontrar</li>
+<li><strong>E</strong> — <em>Equation</em>: escribí la ecuación que relaciona esas variables</li>
+<li><strong>S</strong> — <em>Substitute</em>: sustituí los valores (con unidades)</li>
+<li><strong>S</strong> — <em>Solve</em>: resolvé y verificá el resultado</li>
+</ol>
+<hr>
+<h2 id="ejemplos-resueltos">Ejemplos resueltos<a hidden class="anchor" aria-hidden="true" href="#ejemplos-resueltos">#</a></h2>
+<p><strong>Ejemplo 1 — calcular velocidad:</strong></p>
+<p>Un auto recorre 1 200 m en 60 s a velocidad constante. ¿Cuál es su velocidad?</p>
+<table>
+	<thead>
+			<tr>
+					<th></th>
+					<th></th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><strong>G</strong></td>
+					<td>$\Delta x = 1,200$ m, $t = 60$ s</td>
+			</tr>
+			<tr>
+					<td><strong>U</strong></td>
+					<td>$v = ?$</td>
+			</tr>
+			<tr>
+					<td><strong>E</strong></td>
+					<td>$\Delta x = v \cdot t$</td>
+			</tr>
+			<tr>
+					<td><strong>S</strong></td>
+					<td>$v = \dfrac{\Delta x}{t} = \dfrac{1,200}{60}$</td>
+			</tr>
+			<tr>
+					<td><strong>S</strong></td>
+					<td>$v = 20$ m/s</td>
+			</tr>
+	</tbody>
+</table>
+<hr>
+<p><strong>Ejemplo 2 — calcular tiempo:</strong></p>
+<p>Una persona camina a 1,25 m/s. ¿Cuánto tarda en recorrer 320 m?</p>
+<p>$$t = \frac{\Delta x}{v} = \frac{320 \text{ m}}{1{,}25 \text{ m/s}} = 256 \text{ s}$$</p>
+<hr>
+<p><strong>Ejemplo 3 — posición en función del tiempo:</strong></p>
+<p>Un ciclista parte de $x_0 = 50$ m con velocidad $v = 8$ m/s. ¿Dónde está a los 10 s?</p>
+<p>$$x = x_0 + v \cdot t = 50 + 8 \cdot 10 = 130 \text{ m}$$</p>
+<hr>
+<p><strong>Ejemplo 4 — MRU en dirección negativa:</strong></p>
+<p>Un objeto parte de $x_0 = 80$ m moviéndose hacia el origen con $v = -5$ m/s. ¿Cuándo llega al origen?</p>
+<p>Queremos $x = 0$:</p>
+<p>$$0 = 80 + (-5) \cdot t \quad \Rightarrow \quad t = \frac{80}{5} = 16 \text{ s}$$</p>
+<hr>
+<h2 id="conexión-con-la-actividad-de-campo">Conexión con la actividad de campo<a hidden class="anchor" aria-hidden="true" href="#conexión-con-la-actividad-de-campo">#</a></h2>
+<p>En nuestra <strong>actividad de carreras</strong> en el patio, analizamos el movimiento con Tracker:</p>
+<ul>
+<li>Si el corredor mantiene velocidad constante, el gráfico $x(t)$ en Tracker es una <strong>línea recta</strong>.</li>
+<li>La pendiente de esa recta (calculada automáticamente por Tracker) es la <strong>velocidad media</strong> del corredor.</li>
+<li>En el gráfico $v(t)$ de Tracker, verás una línea aproximadamente horizontal — eso es MRU.</li>
+</ul>
+<blockquote>
+<p><strong>Para pensar:</strong> ¿En qué parte de una carrera de 40 m es más probable ver MRU? ¿Al inicio, en el medio o al final?</p>
+</blockquote>
+<hr>
+<h2 id="ejercicios">Ejercicios<a hidden class="anchor" aria-hidden="true" href="#ejercicios">#</a></h2>
+<ol>
+<li>
+<p>Un tren viaja a velocidad constante de 25 m/s. ¿Cuánto tiempo tarda en recorrer 5 km?</p>
+</li>
+<li>
+<p>Un auto parte de $x_0 = 0$ con $v = 15$ m/s. Calculá su posición a los 0, 2, 4, 6 y 8 s. Graficá $x(t)$.</p>
+</li>
+<li>
+<p>Del gráfico $x(t)$ de un objeto, la pendiente es $-3$ m/s. ¿Qué podés decir sobre su movimiento?</p>
+</li>
+<li>
+<p>Dos ciclistas parten del mismo punto al mismo tiempo. El primero va a 6 m/s y el segundo a 10 m/s en la misma dirección. ¿A qué distancia están entre sí a los 30 s?</p>
+</li>
+<li>
+<p>En el análisis con Tracker de una carrera de 40 m, obtenés los siguientes datos:</p>
+</li>
+</ol>
+<table>
+	<thead>
+			<tr>
+					<th>$t$ (s)</th>
+					<th>$x$ (m)</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>0</td>
+					<td>0</td>
+			</tr>
+			<tr>
+					<td>1</td>
+					<td>5,8</td>
+			</tr>
+			<tr>
+					<td>2</td>
+					<td>11,7</td>
+			</tr>
+			<tr>
+					<td>3</td>
+					<td>17,5</td>
+			</tr>
+			<tr>
+					<td>4</td>
+					<td>23,3</td>
+			</tr>
+			<tr>
+					<td>5</td>
+					<td>29,1</td>
+			</tr>
+			<tr>
+					<td>6</td>
+					<td>34,9</td>
+			</tr>
+	</tbody>
+</table>
+<p>Graficá $x(t)$, calculá la pendiente y determiná la velocidad media del corredor.</p>
+<hr>
+<p><em>Adaptado de <a href="https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf">Bigler, J. — Class Notes for Physics 1: Mechanics in Plain English</a> (CC BY-NC-SA 4.0). Traducción, adaptación al Diseño Curricular DGCyE e integración pedagógica con actividades de campo con Tracker: Prof. Ing. Luciano Lamaita, 2026.</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/u2/">U2</a></li>
+      <li><a href="http://localhost:1313/tags/cinem%C3%A1tica/">Cinemática</a></li>
+      <li><a href="http://localhost:1313/tags/mru/">MRU</a></li>
+      <li><a href="http://localhost:1313/tags/gr%C3%A1ficos/">Gráficos</a></li>
+      <li><a href="http://localhost:1313/tags/velocidad-constante/">Velocidad Constante</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">Luciano Lamaita</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

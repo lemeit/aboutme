@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Error e incerteza en las mediciones | Luciano Lamaita</title>
+<meta name="keywords" content="U1, laboratorio, error, incerteza, error sistemático, error aleatorio, cifras significativas">
+<meta name="description" content="Error aleatorio y sistemático, incerteza absoluta y relativa, propagación de error.">
+<meta name="author" content="Luciano Lamaita">
+<link rel="canonical" href="http://localhost:1313/notes/notas-fisica/cap01-laboratorio/error-incerteza/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0c52ad92016b3caf48902a5f0b32c0ea7799a95186599988c9f8f8762878b24f.css" integrity="sha256-DFKtkgFrPK9IkCpfCzLA6neZqVGGWZmIyfj4dih4sk8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.svg">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon.svg">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/notas-fisica/cap01-laboratorio/error-incerteza/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body, {
+    trust: true,
+    strict: false,
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '$', right: '$', display: false}
+    ]
+  });"></script>
+
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Luciano Lamaita (Alt + H)">Luciano Lamaita</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/projects/" title="Proyectos">
+                    <span>Proyectos</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/notes/" title="Notas">
+                    <span>Notas</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="Sobre mí">
+                    <span>Sobre mí</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/notes/">Notas</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/notes/notas-fisica/">Notas de Física</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/notes/notas-fisica/cap01-laboratorio/">Capítulo 1 — Laboratorio y Medición</a>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+</nav>
+    <h1 class="post-title entry-hint-parent">
+      Error e incerteza en las mediciones
+    </h1>
+    <div class="post-description">
+      Error aleatorio y sistemático, incerteza absoluta y relativa, propagación de error.
+    </div>
+    <div class="post-meta">
+
+<span title='2026-06-26 00:00:00 +0000 UTC'>26 de junio de 2026</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>Luciano Lamaita</span>
+
+</div>
+  </header> 
+  <div class="post-content md-content"><h2 id="objetivos-de-aprendizaje">Objetivos de aprendizaje<a hidden class="anchor" aria-hidden="true" href="#objetivos-de-aprendizaje">#</a></h2>
+<p>Al finalizar esta sección, vas a poder:</p>
+<ul>
+<li>Distinguir entre error aleatorio y error sistemático.</li>
+<li>Expresar una medición con su incerteza absoluta: $x \pm u$.</li>
+<li>Calcular el error relativo y el error porcentual.</li>
+<li>Propagar la incerteza en cálculos simples.</li>
+</ul>
+<hr>
+<h2 id="el-error-en-ciencia-no-es-una-equivocación">El error en ciencia no es una equivocación<a hidden class="anchor" aria-hidden="true" href="#el-error-en-ciencia-no-es-una-equivocación">#</a></h2>
+<blockquote>
+<p>En ciencia, <strong>&ldquo;error&rdquo; significa incerteza</strong> — no una equivocación. Si medís que la distancia a tu escuela es $(2{,}4 \pm 0{,}1)\ \text{km}$, el ±0,1 km no significa que el odómetro está roto; significa que la distancia real podría ser entre 2,3 km y 2,5 km.</p>
+</blockquote>
+<p>Cuando analices tus resultados, nunca uses la palabra &ldquo;error&rdquo; para referirte a errores cometidos en el procedimiento.</p>
+<hr>
+<h2 id="error-aleatorio-y-error-sistemático">Error aleatorio y error sistemático<a hidden class="anchor" aria-hidden="true" href="#error-aleatorio-y-error-sistemático">#</a></h2>
+<h3 id="error-aleatorio">Error aleatorio<a hidden class="anchor" aria-hidden="true" href="#error-aleatorio">#</a></h3>
+<p>Variaciones impredecibles en las mediciones, causadas por factores que cambian al azar de una medición a la siguiente.</p>
+<ul>
+<li>Hace que las mediciones se dispersen alrededor del valor real.</li>
+<li><strong>No</strong> tiene una causa única identificable.</li>
+<li>Se reduce tomando más mediciones y promediando.</li>
+</ul>
+<h3 id="error-sistemático">Error sistemático<a hidden class="anchor" aria-hidden="true" href="#error-sistemático">#</a></h3>
+<p>Desviaciones consistentes en la misma dirección, causadas por un problema en el instrumento o en el procedimiento.</p>
+<ul>
+<li>Hace que todas las mediciones sean más altas (o más bajas) que el valor real.</li>
+<li><strong>Tiene</strong> una causa identificable (instrumento mal calibrado, punto cero incorrecto, etc.).</li>
+<li><strong>No</strong> se reduce tomando más mediciones — hay que corregir la causa.</li>
+</ul>
+<h3 id="exactitud-y-precisión">Exactitud y precisión<a hidden class="anchor" aria-hidden="true" href="#exactitud-y-precisión">#</a></h3>
+<p>Estos términos se usan en algunos libros de física secundaria:</p>
+<table>
+	<thead>
+			<tr>
+					<th>Término</th>
+					<th>Significado en ciencia</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><strong>Exactitud</strong> (accuracy)</td>
+					<td>Qué tan cercanas están las mediciones al valor real (bajo error sistemático)</td>
+			</tr>
+			<tr>
+					<td><strong>Precisión</strong> (precision)</td>
+					<td>Qué tan cercanas están las mediciones entre sí (bajo error aleatorio)</td>
+			</tr>
+	</tbody>
+</table>
+<blockquote>
+<p>📷 <em>Imagen: los cuatro blancos de tiro con arco mostrando combinaciones de alta/baja exactitud y precisión — Bigler pág. 55 (capturar de PDF)</em></p>
+</blockquote>
+<p><strong>Ejemplo de la edad del docente:</strong></p>
+<ul>
+<li>Si cinco estudiantes estiman la edad de un docente de 50 años y dan 72, 73, 77, 78 años → alta precisión (cercanas entre sí) pero baja exactitud (lejos del valor real). Hay <strong>alto error sistemático</strong>.</li>
+<li>Si otros cinco dan 10, 31, 77, 98 años → el promedio es 54 (cerca del valor real), pero alto error aleatorio.</li>
+</ul>
+<hr>
+<h2 id="incerteza-de-una-medición">Incerteza de una medición<a hidden class="anchor" aria-hidden="true" href="#incerteza-de-una-medición">#</a></h2>
+<h3 id="notación">Notación<a hidden class="anchor" aria-hidden="true" href="#notación">#</a></h3>
+<p>Una medición se expresa como:</p>
+<p>$$x \pm u$$</p>
+<p>donde $x$ es el valor medido y $u$ es la <strong>incerteza absoluta</strong>.</p>
+<p><strong>Ejemplo:</strong> $22{,}3 \pm 0{,}3\ \text{cm}$ significa que el valor real está probablemente entre $22{,}0\ \text{cm}$ y $22{,}6\ \text{cm}$.</p>
+<blockquote>
+<p>La incerteza y el valor deben expresarse con el <strong>mismo número de decimales</strong>: $32{,}0 \pm 0{,}1\ \text{mL}$ es correcto; $32 \pm 0{,}1\ \text{mL}$ es incorrecto.</p>
+</blockquote>
+<h3 id="instrumentos-digitales">Instrumentos digitales<a hidden class="anchor" aria-hidden="true" href="#instrumentos-digitales">#</a></h3>
+<ul>
+<li>Si la lectura es estable: la incerteza es $\pm 1$ en el último dígito (salvo que el fabricante indique otro valor).</li>
+<li>Si la lectura fluctúa: registrá el promedio entre el valor máximo y mínimo, y la incerteza es la mitad del rango:</li>
+</ul>
+<p>$$u = \frac{x_{max} - x_{min}}{2}$$</p>
+<p><strong>Ejemplo:</strong> una balanza oscila entre 3,46 g y 3,58 g.</p>
+<p>$$\bar{x} = \frac{3{,}46 + 3{,}58}{2} = 3{,}52\ \text{g} \qquad u = \frac{3{,}58 - 3{,}46}{2} = 0{,}06\ \text{g}$$</p>
+<p>Se registra: $3{,}52 \pm 0{,}06\ \text{g}$</p>
+<h3 id="instrumentos-analógicos">Instrumentos analógicos<a hidden class="anchor" aria-hidden="true" href="#instrumentos-analógicos">#</a></h3>
+<p>Siempre estimá <strong>un dígito más allá</strong> de la división más pequeña del instrumento.</p>
+<blockquote>
+<p>📷 <em>Imagen: velocímetro con estimación del dígito extra — Bigler pág. 60 (capturar de PDF)</em></p>
+</blockquote>
+<table>
+	<thead>
+			<tr>
+					<th>Instrumento</th>
+					<th>División más pequeña</th>
+					<th>Estimá hasta</th>
+					<th>Incerteza</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Regla</td>
+					<td>1 mm</td>
+					<td>0,1 mm</td>
+					<td>±0,1 mm</td>
+			</tr>
+			<tr>
+					<td>Probeta 25 mL</td>
+					<td>0,2 mL</td>
+					<td>0,02 mL</td>
+					<td>±0,02 mL</td>
+			</tr>
+			<tr>
+					<td>Termómetro</td>
+					<td>1 °C</td>
+					<td>0,1 °C</td>
+					<td>±0,1 °C</td>
+			</tr>
+	</tbody>
+</table>
+<hr>
+<h2 id="error-relativo-y-error-porcentual">Error relativo y error porcentual<a hidden class="anchor" aria-hidden="true" href="#error-relativo-y-error-porcentual">#</a></h2>
+<p>El <strong>error relativo</strong> (R.E.) expresa la incerteza como fracción del valor medido:</p>
+<p>$$\text{R.E.} = \frac{u}{x}$$</p>
+<p>El <strong>error porcentual</strong> es el error relativo multiplicado por 100:</p>
+<p>$$\text{E%} = \frac{u}{x} \times 100$$</p>
+<p><strong>Ejemplo:</strong> una longitud de $9 \pm 1\ \text{cm}$:</p>
+<p>$$\text{R.E.} = \frac{1}{9} = 0{,}111 \qquad \text{E%} = 11{,}1%$$</p>
+<blockquote>
+<p>El error relativo no tiene unidades — es adimensional.</p>
+</blockquote>
+<hr>
+<h2 id="propagación-de-incerteza">Propagación de incerteza<a hidden class="anchor" aria-hidden="true" href="#propagación-de-incerteza">#</a></h2>
+<p>Cuando calculás algo a partir de mediciones con incerteza, la incerteza se <strong>propaga</strong> al resultado.</p>
+<h3 id="método-error-relativo">Método: error relativo<a hidden class="anchor" aria-hidden="true" href="#método-error-relativo">#</a></h3>
+<p>Para multiplicaciones y divisiones, sumás los errores relativos:</p>
+<p>$$\text{R.E.}_{resultado} = \text{R.E.}_1 + \text{R.E.}_2 + \ldots$$</p>
+<p><strong>Ejemplo:</strong> un rectángulo mide $(10 \pm 2)\ \text{cm}$ de base y $(8 \pm 1)\ \text{cm}$ de altura. ¿Cuál es el área y su incerteza?</p>
+<p>$$A = 10 \times 8 = 80\ \text{cm}^2$$</p>
+<p>$$\text{R.E.}<em>{base} = \frac{2}{10} = 0{,}20 \qquad \text{R.E.}</em>{altura} = \frac{1}{8} = 0{,}125$$</p>
+<p>$$\text{R.E.}_{área} = 0{,}20 + 0{,}125 = 0{,}325$$</p>
+<p>$$u_{área} = 0{,}325 \times 80 = 26\ \text{cm}^2$$</p>
+<p>$$A = (80 \pm 26)\ \text{cm}^2$$</p>
+<h3 id="método-alternativo-girá-tres-veces-crank-three-times">Método alternativo: &ldquo;girá tres veces&rdquo; (<em>crank three times</em>)<a hidden class="anchor" aria-hidden="true" href="#método-alternativo-girá-tres-veces-crank-three-times">#</a></h3>
+<ol>
+<li>Calculá con los valores nominales → resultado central.</li>
+<li>Calculá con los valores que dan el resultado <strong>mínimo</strong> → límite inferior.</li>
+<li>Calculá con los valores que dan el resultado <strong>máximo</strong> → límite superior.</li>
+<li>La incerteza es la mitad del rango: $u = \frac{max - min}{2}$.</li>
+</ol>
+<p>Este método es más intuitivo pero más laborioso en cálculos de varios pasos.</p>
+<hr>
+<h2 id="para-pensar">Para pensar<a hidden class="anchor" aria-hidden="true" href="#para-pensar">#</a></h2>
+<ol>
+<li>Medís la temperatura del agua cinco veces con el mismo termómetro y obtenés siempre 98 °C, cuando el valor real es 100 °C. ¿Qué tipo de error es? ¿Cómo lo corregirías?</li>
+<li>¿Por qué tomar más mediciones reduce el error aleatorio pero no el sistemático?</li>
+<li>Si medís una longitud de 5 cm con una incerteza de 0,5 cm, ¿cuál es el error porcentual? ¿Ese nivel de incerteza es aceptable para un trabajo de laboratorio?</li>
+</ol>
+<hr>
+<p><em>Adaptado de <a href="https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf">Jeff Bigler — Physics 1: Mechanics in Plain English</a>, licencia <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. Traducción y adaptación al Diseño Curricular DGCyE: Prof. Ing. Luciano Lamaita, 2026.</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/u1/">U1</a></li>
+      <li><a href="http://localhost:1313/tags/laboratorio/">Laboratorio</a></li>
+      <li><a href="http://localhost:1313/tags/error/">Error</a></li>
+      <li><a href="http://localhost:1313/tags/incerteza/">Incerteza</a></li>
+      <li><a href="http://localhost:1313/tags/error-sistem%C3%A1tico/">Error Sistemático</a></li>
+      <li><a href="http://localhost:1313/tags/error-aleatorio/">Error Aleatorio</a></li>
+      <li><a href="http://localhost:1313/tags/cifras-significativas/">Cifras Significativas</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">Luciano Lamaita</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

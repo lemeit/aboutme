@@ -10,9 +10,9 @@
     <atom:link href="http://localhost:1313/tags/tiro-oblicuo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tiro Oblicuo (Movimiento Proyectil)</title>
-      <link>http://localhost:1313/notes/fisica-4to/u2-cinematica/tiro-oblicuo/</link>
+      <link>http://localhost:1313/notes/notas-fisica/cap03-cinematica-1d/tiro-oblicuo/</link>
       <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/fisica-4to/u2-cinematica/tiro-oblicuo/</guid>
+      <guid>http://localhost:1313/notes/notas-fisica/cap03-cinematica-1d/tiro-oblicuo/</guid>
       <description>Movimiento en dos dimensiones: componentes horizontal y vertical independientes.</description>
     </item>
   </channel>

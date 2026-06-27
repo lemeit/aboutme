@@ -10,30 +10,30 @@
     <atom:link href="http://localhost:1313/tags/u2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sistemas de referencia. Posición, distancia y desplazamiento</title>
-      <link>http://localhost:1313/notes/fisica-4to/u2-cinematica/sistemas-referencia/</link>
+      <link>http://localhost:1313/notes/notas-fisica/cap03-cinematica-1d/sistemas-referencia/</link>
       <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/fisica-4to/u2-cinematica/sistemas-referencia/</guid>
+      <guid>http://localhost:1313/notes/notas-fisica/cap03-cinematica-1d/sistemas-referencia/</guid>
       <description>Cómo describir la posición de un objeto. Diferencia entre distancia recorrida y desplazamiento. Velocidad escalar y velocidad vectorial.</description>
     </item>
     <item>
       <title>Movimiento Rectilíneo Uniforme (MRU)</title>
-      <link>http://localhost:1313/notes/fisica-4to/u2-cinematica/mru/</link>
+      <link>http://localhost:1313/notes/notas-fisica/cap03-cinematica-1d/mru/</link>
       <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/fisica-4to/u2-cinematica/mru/</guid>
+      <guid>http://localhost:1313/notes/notas-fisica/cap03-cinematica-1d/mru/</guid>
       <description>Movimiento con velocidad constante: ecuación, gráficos x(t) y v(t), y resolución de problemas.</description>
     </item>
     <item>
       <title>Caída Libre</title>
-      <link>http://localhost:1313/notes/fisica-4to/u2-cinematica/caida-libre/</link>
+      <link>http://localhost:1313/notes/notas-fisica/cap03-cinematica-1d/caida-libre/</link>
       <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/fisica-4to/u2-cinematica/caida-libre/</guid>
+      <guid>http://localhost:1313/notes/notas-fisica/cap03-cinematica-1d/caida-libre/</guid>
       <description>La gravedad como aceleración constante. Caída, lanzamiento vertical y punto más alto.</description>
     </item>
     <item>
       <title>Tiro Oblicuo (Movimiento Proyectil)</title>
-      <link>http://localhost:1313/notes/fisica-4to/u2-cinematica/tiro-oblicuo/</link>
+      <link>http://localhost:1313/notes/notas-fisica/cap03-cinematica-1d/tiro-oblicuo/</link>
       <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/fisica-4to/u2-cinematica/tiro-oblicuo/</guid>
+      <guid>http://localhost:1313/notes/notas-fisica/cap03-cinematica-1d/tiro-oblicuo/</guid>
       <description>Movimiento en dos dimensiones: componentes horizontal y vertical independientes.</description>
     </item>
   </channel>

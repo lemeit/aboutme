@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Segunda Ley de Newton — Fuerza y aceleración | Luciano Lamaita</title>
+<meta name="keywords" content="U3, Dinámica, Newton, fuerza neta, masa, aceleración, diagrama cuerpo libre">
+<meta name="description" content="La fuerza neta sobre un objeto produce una aceleración proporcional a su masa.">
+<meta name="author" content="Luciano Lamaita">
+<link rel="canonical" href="http://localhost:1313/notes/notas-fisica/cap05-fuerzas-1d/newton-2/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0c52ad92016b3caf48902a5f0b32c0ea7799a95186599988c9f8f8762878b24f.css" integrity="sha256-DFKtkgFrPK9IkCpfCzLA6neZqVGGWZmIyfj4dih4sk8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.svg">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon.svg">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/notas-fisica/cap05-fuerzas-1d/newton-2/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body, {
+    trust: true,
+    strict: false,
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '$', right: '$', display: false}
+    ]
+  });"></script>
+
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Luciano Lamaita (Alt + H)">Luciano Lamaita</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/projects/" title="Proyectos">
+                    <span>Proyectos</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/notes/" title="Notas">
+                    <span>Notas</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="Sobre mí">
+                    <span>Sobre mí</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/notes/">Notas</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/notes/notas-fisica/">Notas de Física</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/notes/notas-fisica/cap05-fuerzas-1d/">Capítulo 5 — Fuerzas en 1D</a>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+</nav>
+    <h1 class="post-title entry-hint-parent">
+      Segunda Ley de Newton — Fuerza y aceleración
+    </h1>
+    <div class="post-description">
+      La fuerza neta sobre un objeto produce una aceleración proporcional a su masa.
+    </div>
+    <div class="post-meta">
+
+<span title='2026-06-26 00:00:00 +0000 UTC'>26 de junio de 2026</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Luciano Lamaita</span>
+
+</div>
+  </header> 
+  <div class="post-content md-content"><h2 id="objetivos-de-aprendizaje">Objetivos de aprendizaje<a hidden class="anchor" aria-hidden="true" href="#objetivos-de-aprendizaje">#</a></h2>
+<p>Al finalizar esta sección, vas a poder:</p>
+<ul>
+<li>Enunciar la Segunda Ley de Newton y aplicar $F = ma$.</li>
+<li>Construir diagramas de cuerpo libre para situaciones simples.</li>
+<li>Calcular fuerza, masa o aceleración dado los otros dos valores.</li>
+</ul>
+<hr>
+<h2 id="segunda-ley-de-newton">Segunda Ley de Newton<a hidden class="anchor" aria-hidden="true" href="#segunda-ley-de-newton">#</a></h2>
+<blockquote>
+<p><strong>&ldquo;Una fuerza neta sobre un objeto produce una aceleración en la dirección de esa fuerza, proporcional a la fuerza e inversamente proporcional a la masa.&rdquo;</strong></p>
+</blockquote>
+<p>$$\vec{F}_{neta} = m \cdot \vec{a}$$</p>
+<p>O en sus formas equivalentes:</p>
+<p>$$a = \frac{F_{neta}}{m} \qquad m = \frac{F_{neta}}{a}$$</p>
+<table>
+	<thead>
+			<tr>
+					<th>Símbolo</th>
+					<th>Cantidad</th>
+					<th>Unidad</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>$F_{neta}$</td>
+					<td>Fuerza neta</td>
+					<td>N = kg·m/s²</td>
+			</tr>
+			<tr>
+					<td>$m$</td>
+					<td>Masa</td>
+					<td>kg</td>
+			</tr>
+			<tr>
+					<td>$a$</td>
+					<td>Aceleración</td>
+					<td>m/s²</td>
+			</tr>
+	</tbody>
+</table>
+<blockquote>
+<p><strong>Relaciones clave:</strong></p>
+<ul>
+<li>A <strong>mayor fuerza</strong> → mayor aceleración (masa constante)</li>
+<li>A <strong>mayor masa</strong> → menor aceleración (fuerza constante)</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="peso-y-masa">Peso y masa<a hidden class="anchor" aria-hidden="true" href="#peso-y-masa">#</a></h2>
+<p>El <strong>peso</strong> es la fuerza gravitacional sobre un objeto:</p>
+<p>$$F_g = m \cdot g \qquad g \approx 10\ \text{m/s}^2$$</p>
+<blockquote>
+<p><strong>Masa ≠ Peso.</strong> La masa es una propiedad intrínseca del objeto (kg). El peso es una fuerza que depende de la gravedad local (N). En la Luna, tu masa es la misma pero tu peso es menor.</p>
+</blockquote>
+<hr>
+<h2 id="diagrama-de-cuerpo-libre-dcl">Diagrama de cuerpo libre (DCL)<a hidden class="anchor" aria-hidden="true" href="#diagrama-de-cuerpo-libre-dcl">#</a></h2>
+<p>Un <strong>diagrama de cuerpo libre</strong> es un esquema donde se representa el objeto como un punto y se dibujan todas las fuerzas que actúan sobre él como vectores.</p>
+<p><strong>Pasos para construirlo:</strong></p>
+<ol>
+<li>Dibujá el objeto como un punto o caja simple.</li>
+<li>Identificá todas las fuerzas que actúan sobre él.</li>
+<li>Dibujá cada fuerza como una flecha desde el objeto, en la dirección y sentido correcto.</li>
+<li>Etiquetá cada fuerza con su símbolo.</li>
+</ol>
+<h3 id="ejemplo--caja-sobre-una-mesa-con-fuerza-aplicada">Ejemplo — Caja sobre una mesa con fuerza aplicada<a hidden class="anchor" aria-hidden="true" href="#ejemplo--caja-sobre-una-mesa-con-fuerza-aplicada">#</a></h3>
+<p>Una caja de 5 kg sobre una mesa recibe una fuerza horizontal de 20 N. La fricción es 8 N.</p>
+<pre tabindex="0"><code>        F_ap = 20 N →
+   ←    [CAJA]    →
+   F_f = 8 N      F_N ↑
+                  F_g ↓
+</code></pre><p><strong>Dirección horizontal:</strong>
+$$F_{neta} = F_{ap} - F_f = 20 - 8 = 12\ \text{N}$$
+$$a = \frac{F_{neta}}{m} = \frac{12}{5} = 2{,}4\ \text{m/s}^2$$</p>
+<p><strong>Dirección vertical:</strong> la caja no se mueve verticalmente → $F_N = F_g = mg = 5 \times 10 = 50\ \text{N}$</p>
+<hr>
+<h2 id="tipos-de-fuerzas-comunes">Tipos de fuerzas comunes<a hidden class="anchor" aria-hidden="true" href="#tipos-de-fuerzas-comunes">#</a></h2>
+<h3 id="peso-f_g">Peso ($F_g$)<a hidden class="anchor" aria-hidden="true" href="#peso-f_g">#</a></h3>
+<p>$$F_g = mg$$
+Siempre hacia abajo. Un objeto de 2 kg tiene un peso de $2 \times 10 = 20\ \text{N}$.</p>
+<h3 id="fuerza-normal-f_n">Fuerza normal ($F_N$)<a hidden class="anchor" aria-hidden="true" href="#fuerza-normal-f_n">#</a></h3>
+<p>Fuerza perpendicular a la superficie de contacto, que impide que el objeto la atraviese. En una superficie horizontal: $F_N = F_g$.</p>
+<h3 id="fricción-f_f">Fricción ($F_f$)<a hidden class="anchor" aria-hidden="true" href="#fricción-f_f">#</a></h3>
+<p>Fuerza que se opone al movimiento relativo entre superficies en contacto. Siempre contraria al movimiento o intento de movimiento.</p>
+<h3 id="tensión-f_t">Tensión ($F_T$)<a hidden class="anchor" aria-hidden="true" href="#tensión-f_t">#</a></h3>
+<p>Fuerza transmitida por una cuerda, hilo o cable. Actúa a lo largo del hilo, alejándose del objeto.</p>
+<hr>
+<h2 id="ejemplos-resueltos">Ejemplos resueltos<a hidden class="anchor" aria-hidden="true" href="#ejemplos-resueltos">#</a></h2>
+<h3 id="ejemplo-1--fuerza-neta">Ejemplo 1 — Fuerza neta<a hidden class="anchor" aria-hidden="true" href="#ejemplo-1--fuerza-neta">#</a></h3>
+<p>Un objeto de 4 kg acelera a 3 m/s². ¿Cuál es la fuerza neta?</p>
+<p>$$F_{neta} = ma = 4 \times 3 = 12\ \text{N}$$</p>
+<h3 id="ejemplo-2--masa">Ejemplo 2 — Masa<a hidden class="anchor" aria-hidden="true" href="#ejemplo-2--masa">#</a></h3>
+<p>Una fuerza de 30 N produce una aceleración de 6 m/s². ¿Cuál es la masa del objeto?</p>
+<p>$$m = \frac{F}{a} = \frac{30}{6} = 5\ \text{kg}$$</p>
+<h3 id="ejemplo-3--sistema-con-fricción">Ejemplo 3 — Sistema con fricción<a hidden class="anchor" aria-hidden="true" href="#ejemplo-3--sistema-con-fricción">#</a></h3>
+<p>Una persona empuja una caja de 10 kg con 40 N. La fricción es 15 N. ¿Cuál es la aceleración?</p>
+<p>$$a = \frac{F_{ap} - F_f}{m} = \frac{40 - 15}{10} = \frac{25}{10} = 2{,}5\ \text{m/s}^2$$</p>
+<hr>
+<h2 id="para-pensar">Para pensar<a hidden class="anchor" aria-hidden="true" href="#para-pensar">#</a></h2>
+<ol>
+<li>Si duplicás la fuerza sobre un objeto (misma masa), ¿qué pasa con la aceleración?</li>
+<li>Dos objetos reciben la misma fuerza. Uno tiene el doble de masa que el otro. ¿Cómo se comparan sus aceleraciones?</li>
+<li>Un objeto en caída libre: ¿qué fuerza actúa? ¿Cuál es la aceleración? ¿Coincide con $F = ma$?</li>
+</ol>
+<hr>
+<p><em>Adaptado de <a href="https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf">Jeff Bigler — Physics 1: Mechanics in Plain English</a>, licencia <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. Traducción y adaptación al Diseño Curricular DGCyE: Prof. Ing. Luciano Lamaita, 2026.</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/u3/">U3</a></li>
+      <li><a href="http://localhost:1313/tags/din%C3%A1mica/">Dinámica</a></li>
+      <li><a href="http://localhost:1313/tags/newton/">Newton</a></li>
+      <li><a href="http://localhost:1313/tags/fuerza-neta/">Fuerza Neta</a></li>
+      <li><a href="http://localhost:1313/tags/masa/">Masa</a></li>
+      <li><a href="http://localhost:1313/tags/aceleraci%C3%B3n/">Aceleración</a></li>
+      <li><a href="http://localhost:1313/tags/diagrama-cuerpo-libre/">Diagrama Cuerpo Libre</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">Luciano Lamaita</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

@@ -6,13 +6,27 @@
     <description>Recent content in Cifras Significativas on Luciano Lamaita</description>
     <generator>Hugo</generator>
     <language>es-AR</language>
-    <lastBuildDate>Mon, 22 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/cifras-significativas/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Error e incerteza en las mediciones</title>
+      <link>http://localhost:1313/notes/notas-fisica/cap01-laboratorio/error-incerteza/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/notas-fisica/cap01-laboratorio/error-incerteza/</guid>
+      <description>Error aleatorio y sistemático, incerteza absoluta y relativa, propagación de error.</description>
+    </item>
+    <item>
+      <title>Cifras significativas</title>
+      <link>http://localhost:1313/notes/notas-fisica/cap01-laboratorio/cifras-significativas/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/notas-fisica/cap01-laboratorio/cifras-significativas/</guid>
+      <description>Identificar dígitos significativos, reglas de redondeo en suma/resta y multiplicación/división.</description>
+    </item>
+    <item>
       <title>Unidades, dimensiones y medición</title>
-      <link>http://localhost:1313/notes/fisica-4to/u1-generalidades/unidades-dimensiones/</link>
+      <link>http://localhost:1313/notes/notas-fisica/cap01-laboratorio/unidades-dimensiones/</link>
       <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/fisica-4to/u1-generalidades/unidades-dimensiones/</guid>
+      <guid>http://localhost:1313/notes/notas-fisica/cap01-laboratorio/unidades-dimensiones/</guid>
       <description>El Sistema Internacional de Unidades, prefijos métricos, notación científica y cifras significativas.</description>
     </item>
   </channel>

@@ -10,9 +10,9 @@
     <atom:link href="http://localhost:1313/tags/aceleraci%C3%B3n/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Segunda Ley de Newton — Fuerza y aceleración</title>
-      <link>http://localhost:1313/notes/fisica-4to/u3-dinamica/newton-2/</link>
+      <link>http://localhost:1313/notes/notas-fisica/cap05-fuerzas-1d/newton-2/</link>
       <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/fisica-4to/u3-dinamica/newton-2/</guid>
+      <guid>http://localhost:1313/notes/notas-fisica/cap05-fuerzas-1d/newton-2/</guid>
       <description>La fuerza neta sobre un objeto produce una aceleración proporcional a su masa.</description>
     </item>
   </channel>

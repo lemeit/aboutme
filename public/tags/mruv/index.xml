@@ -10,9 +10,9 @@
     <atom:link href="http://localhost:1313/tags/mruv/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Caída Libre</title>
-      <link>http://localhost:1313/notes/fisica-4to/u2-cinematica/caida-libre/</link>
+      <link>http://localhost:1313/notes/notas-fisica/cap03-cinematica-1d/caida-libre/</link>
       <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/fisica-4to/u2-cinematica/caida-libre/</guid>
+      <guid>http://localhost:1313/notes/notas-fisica/cap03-cinematica-1d/caida-libre/</guid>
       <description>La gravedad como aceleración constante. Caída, lanzamiento vertical y punto más alto.</description>
     </item>
   </channel>

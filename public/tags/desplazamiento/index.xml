@@ -10,9 +10,9 @@
     <atom:link href="http://localhost:1313/tags/desplazamiento/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sistemas de referencia. Posición, distancia y desplazamiento</title>
-      <link>http://localhost:1313/notes/fisica-4to/u2-cinematica/sistemas-referencia/</link>
+      <link>http://localhost:1313/notes/notas-fisica/cap03-cinematica-1d/sistemas-referencia/</link>
       <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/fisica-4to/u2-cinematica/sistemas-referencia/</guid>
+      <guid>http://localhost:1313/notes/notas-fisica/cap03-cinematica-1d/sistemas-referencia/</guid>
       <description>Cómo describir la posición de un objeto. Diferencia entre distancia recorrida y desplazamiento. Velocidad escalar y velocidad vectorial.</description>
     </item>
   </channel>

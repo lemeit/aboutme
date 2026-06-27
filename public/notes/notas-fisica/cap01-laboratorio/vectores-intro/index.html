@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Introducción a los vectores | Luciano Lamaita</title>
+<meta name="keywords" content="U1, vectores, escalares, trigonometría">
+<meta name="description" content="Qué es un vector, diferencia con magnitudes escalares, representación gráfica, suma vectorial y descomposición en componentes.">
+<meta name="author" content="Luciano Lamaita">
+<link rel="canonical" href="http://localhost:1313/notes/notas-fisica/cap01-laboratorio/vectores-intro/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0c52ad92016b3caf48902a5f0b32c0ea7799a95186599988c9f8f8762878b24f.css" integrity="sha256-DFKtkgFrPK9IkCpfCzLA6neZqVGGWZmIyfj4dih4sk8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.svg">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon.svg">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/notas-fisica/cap01-laboratorio/vectores-intro/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body, {
+    trust: true,
+    strict: false,
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '$', right: '$', display: false}
+    ]
+  });"></script>
+
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Luciano Lamaita (Alt + H)">Luciano Lamaita</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/projects/" title="Proyectos">
+                    <span>Proyectos</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/notes/" title="Notas">
+                    <span>Notas</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="Sobre mí">
+                    <span>Sobre mí</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/notes/">Notas</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/notes/notas-fisica/">Notas de Física</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/notes/notas-fisica/cap01-laboratorio/">Capítulo 1 — Laboratorio y Medición</a>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+</nav>
+    <h1 class="post-title entry-hint-parent">
+      Introducción a los vectores
+    </h1>
+    <div class="post-description">
+      Qué es un vector, diferencia con magnitudes escalares, representación gráfica, suma vectorial y descomposición en componentes.
+    </div>
+    <div class="post-meta">
+
+<span title='2026-06-22 00:00:00 +0000 UTC'>22 de junio de 2026</span>&nbsp;·&nbsp;<span>6 min</span>&nbsp;·&nbsp;<span>Luciano Lamaita</span>
+
+</div>
+  </header> 
+  <div class="post-content md-content"><h2 id="objetivos-de-aprendizaje">Objetivos de aprendizaje<a hidden class="anchor" aria-hidden="true" href="#objetivos-de-aprendizaje">#</a></h2>
+<p>Al finalizar esta unidad, vas a poder:</p>
+<ul>
+<li>Distinguir entre magnitudes escalares y vectoriales.</li>
+<li>Representar un vector gráficamente con su módulo y dirección.</li>
+<li>Sumar vectores en una y dos dimensiones.</li>
+<li>Descomponer un vector en sus componentes x e y usando trigonometría básica.</li>
+<li>Aplicar el Teorema de Pitágoras para calcular el módulo de un vector resultante.</li>
+</ul>
+<blockquote>
+<p>💡 Los vectores son una herramienta matemática, no un tema de Física en sí mismo. Los vemos acá porque los vamos a usar constantemente en cinemática (velocidad, desplazamiento, aceleración) y dinámica (fuerza).</p>
+</blockquote>
+<hr>
+<h2 id="escalares-y-vectores">Escalares y vectores<a hidden class="anchor" aria-hidden="true" href="#escalares-y-vectores">#</a></h2>
+<p>En Física, las magnitudes se dividen en dos tipos:</p>
+<p><strong>Magnitud escalar:</strong> tiene solo un valor numérico con su unidad. No tiene dirección.</p>
+<blockquote>
+<p>Ejemplos: masa (5 kg), temperatura (20 °C), tiempo (3 s), energía (100 J), distancia recorrida (50 m).</p>
+</blockquote>
+<p><strong>Magnitud vectorial:</strong> tiene valor numérico (módulo) <strong>y</strong> dirección.</p>
+<blockquote>
+<p>Ejemplos: velocidad (60 km/h hacia el norte), fuerza (10 N hacia abajo), desplazamiento (3 m hacia la derecha), aceleración (9,8 m/s² hacia el centro de la Tierra).</p>
+</blockquote>
+<h3 id="por-qué-importa-la-diferencia">¿Por qué importa la diferencia?<a hidden class="anchor" aria-hidden="true" href="#por-qué-importa-la-diferencia">#</a></h3>
+<p>Porque las operaciones matemáticas son distintas. Si dos personas empujan un objeto con 10 N cada una, el resultado depende de <em>hacia dónde</em> empuja cada una:</p>
+<ul>
+<li>Si empujan en la misma dirección: fuerza resultante = 20 N</li>
+<li>Si empujan en direcciones opuestas: fuerza resultante = 0 N</li>
+<li>Si empujan en ángulo recto: fuerza resultante = 14,1 N (¡no es 20 N!)</li>
+</ul>
+<p>Con escalares, 10 + 10 = 20, siempre. Con vectores, depende de la geometría.</p>
+<hr>
+<h2 id="representación-gráfica-de-vectores">Representación gráfica de vectores<a hidden class="anchor" aria-hidden="true" href="#representación-gráfica-de-vectores">#</a></h2>
+<p>Un vector se representa como una <strong>flecha</strong>:</p>
+<ul>
+<li>La <strong>longitud</strong> de la flecha indica el módulo (cuánto).</li>
+<li>La <strong>dirección y sentido</strong> de la flecha indica hacia dónde apunta el vector.</li>
+</ul>
+<p>$$\vec{v} \quad \text{(vector velocidad)} \qquad |\vec{v}| = v \quad \text{(módulo, un escalar)}$$</p>
+<h3 id="notación">Notación<a hidden class="anchor" aria-hidden="true" href="#notación">#</a></h3>
+<p>En la escritura a mano, los vectores se escriben con una flecha encima:</p>
+<p>$$\vec{F}, \quad \vec{v}, \quad \vec{a}, \quad \vec{d}$$</p>
+<p>El módulo (valor sin dirección) se escribe sin flecha o con barras:</p>
+<p>$$F = |\vec{F}| \qquad v = |\vec{v}|$$</p>
+<h3 id="sistemas-de-referencia-y-convención-de-signos">Sistemas de referencia y convención de signos<a hidden class="anchor" aria-hidden="true" href="#sistemas-de-referencia-y-convención-de-signos">#</a></h3>
+<p>Para trabajar con vectores en una dimensión, elegimos un <strong>sentido positivo</strong>. Los vectores en ese sentido son positivos; los opuestos son negativos.</p>
+<blockquote>
+<p><strong>Ejemplo:</strong> Si defino &ldquo;hacia la derecha&rdquo; como positivo:</p>
+<ul>
+<li>$\vec{v} = +10 \text{ m/s}$ → el objeto se mueve hacia la derecha</li>
+<li>$\vec{v} = -10 \text{ m/s}$ → el objeto se mueve hacia la izquierda</li>
+</ul>
+</blockquote>
+<p>La elección del sentido positivo es <strong>arbitraria</strong> — lo que importa es ser consistente en todo el problema.</p>
+<blockquote>
+<p>⚠️ Una velocidad de $-10$ m/s <strong>no es menor</strong> que $+5$ m/s en el sentido físico: el primer objeto se mueve <strong>más rápido</strong> (módulo 10 vs. módulo 5), pero en sentido contrario.</p>
+</blockquote>
+<hr>
+<h2 id="suma-de-vectores">Suma de vectores<a hidden class="anchor" aria-hidden="true" href="#suma-de-vectores">#</a></h2>
+<h3 id="en-una-dimensión">En una dimensión<a hidden class="anchor" aria-hidden="true" href="#en-una-dimensión">#</a></h3>
+<p>Cuando los vectores están sobre la misma recta (mismo eje), se suman algebraicamente como números con signo:</p>
+<p>$$\vec{F}_{total} = \vec{F}_1 + \vec{F}_2$$</p>
+<p><strong>Ejemplo:</strong> Una persona empuja una caja con 8 N hacia la derecha (+8 N). La fricción ejerce 3 N hacia la izquierda (-3 N).</p>
+<p>$$\vec{F}_{total} = +8 \text{ N} + (-3 \text{ N}) = +5 \text{ N} \quad \text{(hacia la derecha)}$$</p>
+<h3 id="en-dos-dimensiones--vectores-perpendiculares">En dos dimensiones — vectores perpendiculares<a hidden class="anchor" aria-hidden="true" href="#en-dos-dimensiones--vectores-perpendiculares">#</a></h3>
+<p>Cuando los vectores forman un ángulo de 90°, usamos el <strong>Teorema de Pitágoras</strong> para calcular el módulo del vector resultante:</p>
+<p>$$|\vec{R}| = \sqrt{|\vec{A}|^2 + |\vec{B}|^2}$$</p>
+<p><strong>Ejemplo:</strong> Un barco navega 6 km hacia el este y luego 8 km hacia el norte. ¿Cuánto se desplazó del punto de partida?</p>
+<p>$$|\vec{R}| = \sqrt{6^2 + 8^2} = \sqrt{36 + 64} = \sqrt{100} = 10 \text{ km}$$</p>
+<blockquote>
+<p>💡 La suma de vectores no es suma aritmética: $6 + 8 = 14$ km sería la distancia recorrida, pero el desplazamiento (vector) es solo 10 km.</p>
+</blockquote>
+<p>Para encontrar la <strong>dirección</strong> del vector resultante, usamos trigonometría:</p>
+<p>$$\tan \theta = \frac{|\vec{B}|}{|\vec{A}|} = \frac{8}{6} \approx 1{,}33 \quad \Rightarrow \quad \theta = \arctan(1{,}33) \approx 53°$$</p>
+<p>El desplazamiento resultante es <strong>10 km a 53° al norte del este</strong>.</p>
+<hr>
+<h2 id="descomposición-de-vectores-en-componentes">Descomposición de vectores en componentes<a hidden class="anchor" aria-hidden="true" href="#descomposición-de-vectores-en-componentes">#</a></h2>
+<p>En muchos problemas es necesario hacer el proceso inverso: <strong>descomponer</strong> un vector en sus componentes horizontal (x) y vertical (y).</p>
+<p>Si un vector $\vec{v}$ tiene módulo $v$ y forma un ángulo $\theta$ con el eje horizontal:</p>
+<p>$$v_x = v \cdot \cos\theta$$
+$$v_y = v \cdot \sin\theta$$</p>
+<p>Y para reconstruir el módulo a partir de las componentes:</p>
+<p>$$v = \sqrt{v_x^2 + v_y^2}$$</p>
+<p><strong>Ejemplo típico — tiro oblicuo:</strong></p>
+<p>Una pelota se lanza con velocidad inicial $v_0 = 20$ m/s a un ángulo de 30° sobre la horizontal.</p>
+<p>$$v_{0x} = 20 \cdot \cos(30°) = 20 \cdot 0{,}866 = 17{,}3 \text{ m/s}$$
+$$v_{0y} = 20 \cdot \sin(30°) = 20 \cdot 0{,}5 = 10{,}0 \text{ m/s}$$</p>
+<p>La componente horizontal $v_{0x}$ se mantiene constante durante el vuelo.
+La componente vertical $v_{0y}$ cambia por efecto de la gravedad.</p>
+<blockquote>
+<p>Esta idea — tratar las dos componentes como <strong>movimientos independientes</strong> — es la clave para resolver cualquier problema de tiro oblicuo. La vamos a usar en detalle en la unidad de cinemática.</p>
+</blockquote>
+<hr>
+<h2 id="tabla-de-magnitudes-escalares-y-vectoriales-en-física">Tabla de magnitudes escalares y vectoriales en Física<a hidden class="anchor" aria-hidden="true" href="#tabla-de-magnitudes-escalares-y-vectoriales-en-física">#</a></h2>
+<table>
+	<thead>
+			<tr>
+					<th>Magnitud</th>
+					<th>Tipo</th>
+					<th>Unidad SI</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Masa</td>
+					<td>Escalar</td>
+					<td>kg</td>
+			</tr>
+			<tr>
+					<td>Tiempo</td>
+					<td>Escalar</td>
+					<td>s</td>
+			</tr>
+			<tr>
+					<td>Temperatura</td>
+					<td>Escalar</td>
+					<td>K</td>
+			</tr>
+			<tr>
+					<td>Energía</td>
+					<td>Escalar</td>
+					<td>J</td>
+			</tr>
+			<tr>
+					<td>Distancia recorrida</td>
+					<td>Escalar</td>
+					<td>m</td>
+			</tr>
+			<tr>
+					<td>Rapidez (<em>speed</em>)</td>
+					<td>Escalar</td>
+					<td>m/s</td>
+			</tr>
+			<tr>
+					<td>Desplazamiento</td>
+					<td><strong>Vector</strong></td>
+					<td>m</td>
+			</tr>
+			<tr>
+					<td>Velocidad</td>
+					<td><strong>Vector</strong></td>
+					<td>m/s</td>
+			</tr>
+			<tr>
+					<td>Aceleración</td>
+					<td><strong>Vector</strong></td>
+					<td>m/s²</td>
+			</tr>
+			<tr>
+					<td>Fuerza</td>
+					<td><strong>Vector</strong></td>
+					<td>N</td>
+			</tr>
+			<tr>
+					<td>Peso</td>
+					<td><strong>Vector</strong></td>
+					<td>N</td>
+			</tr>
+	</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Distancia ≠ Desplazamiento.</strong> Si caminás 5 m hacia adelante y después 5 m hacia atrás, recorriste 10 m (escalar), pero tu desplazamiento es 0 m (vector). Esta distinción aparece constantemente en cinemática.</p>
+</blockquote>
+<hr>
+<h2 id="repaso-de-trigonometría-básica">Repaso de trigonometría básica<a hidden class="anchor" aria-hidden="true" href="#repaso-de-trigonometría-básica">#</a></h2>
+<p>Para trabajar con vectores en 2D necesitamos seno, coseno y tangente. En un triángulo rectángulo con ángulo $\theta$:</p>
+<p>$$\sin\theta = \frac{\text{cateto opuesto}}{\text{hipotenusa}} \qquad \cos\theta = \frac{\text{cateto adyacente}}{\text{hipotenusa}} \qquad \tan\theta = \frac{\text{cateto opuesto}}{\text{cateto adyacente}}$$</p>
+<p><strong>Valores que conviene tener presentes:</strong></p>
+<table>
+	<thead>
+			<tr>
+					<th>$\theta$</th>
+					<th>$\sin\theta$</th>
+					<th>$\cos\theta$</th>
+					<th>$\tan\theta$</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>0°</td>
+					<td>0</td>
+					<td>1</td>
+					<td>0</td>
+			</tr>
+			<tr>
+					<td>30°</td>
+					<td>0,5</td>
+					<td>0,866</td>
+					<td>0,577</td>
+			</tr>
+			<tr>
+					<td>45°</td>
+					<td>0,707</td>
+					<td>0,707</td>
+					<td>1</td>
+			</tr>
+			<tr>
+					<td>60°</td>
+					<td>0,866</td>
+					<td>0,5</td>
+					<td>1,732</td>
+			</tr>
+			<tr>
+					<td>90°</td>
+					<td>1</td>
+					<td>0</td>
+					<td>—</td>
+			</tr>
+	</tbody>
+</table>
+<hr>
+<h2 id="ejercicios">Ejercicios<a hidden class="anchor" aria-hidden="true" href="#ejercicios">#</a></h2>
+<ol>
+<li>
+<p>Clasificá cada una de las siguientes magnitudes como escalar o vectorial: temperatura, velocidad del viento, masa de un objeto, fuerza gravitatoria, tiempo, desplazamiento.</p>
+</li>
+<li>
+<p>Un auto recorre 40 km hacia el este y luego 30 km hacia el norte. Calculá el módulo y la dirección del desplazamiento total.</p>
+</li>
+<li>
+<p>Una fuerza de 50 N actúa a 37° sobre la horizontal. Calculá sus componentes horizontal y vertical.</p>
+</li>
+<li>
+<p>Dos fuerzas actúan sobre un objeto: $\vec{F}_1 = 12$ N hacia la derecha y $\vec{F}_2 = 5$ N hacia arriba. Calculá el módulo y la dirección de la fuerza resultante.</p>
+</li>
+<li>
+<p>Un corredor se mueve 100 m hacia el este, luego 100 m hacia el norte, luego 100 m hacia el oeste. ¿Cuál es su desplazamiento total? ¿Y la distancia recorrida?</p>
+</li>
+</ol>
+<hr>
+<p><em>Adaptado de <a href="https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf">Bigler, J. — Class Notes for Physics 1: Mechanics in Plain English</a> (CC BY-NC-SA 4.0). Traducción, adaptación al Diseño Curricular DGCyE e integración pedagógica: Prof. Ing. Luciano Lamaita, 2026.</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/u1/">U1</a></li>
+      <li><a href="http://localhost:1313/tags/vectores/">Vectores</a></li>
+      <li><a href="http://localhost:1313/tags/escalares/">Escalares</a></li>
+      <li><a href="http://localhost:1313/tags/trigonometr%C3%ADa/">Trigonometría</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">Luciano Lamaita</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

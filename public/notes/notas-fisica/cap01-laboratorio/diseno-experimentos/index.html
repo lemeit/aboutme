@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Diseño y realización de experimentos | Luciano Lamaita</title>
+<meta name="keywords" content="U1, laboratorio, experimento, variable independiente, variable dependiente, método científico">
+<meta name="description" content="Variables, diseño experimental por diseño inverso, experimentos cualitativos y cuantitativos.">
+<meta name="author" content="Luciano Lamaita">
+<link rel="canonical" href="http://localhost:1313/notes/notas-fisica/cap01-laboratorio/diseno-experimentos/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0c52ad92016b3caf48902a5f0b32c0ea7799a95186599988c9f8f8762878b24f.css" integrity="sha256-DFKtkgFrPK9IkCpfCzLA6neZqVGGWZmIyfj4dih4sk8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.svg">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon.svg">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/notes/notas-fisica/cap01-laboratorio/diseno-experimentos/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body, {
+    trust: true,
+    strict: false,
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '$', right: '$', display: false}
+    ]
+  });"></script>
+
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Luciano Lamaita (Alt + H)">Luciano Lamaita</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/projects/" title="Proyectos">
+                    <span>Proyectos</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/notes/" title="Notas">
+                    <span>Notas</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="Sobre mí">
+                    <span>Sobre mí</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/notes/">Notas</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/notes/notas-fisica/">Notas de Física</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/notes/notas-fisica/cap01-laboratorio/">Capítulo 1 — Laboratorio y Medición</a>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+</nav>
+    <h1 class="post-title entry-hint-parent">
+      Diseño y realización de experimentos
+    </h1>
+    <div class="post-description">
+      Variables, diseño experimental por diseño inverso, experimentos cualitativos y cuantitativos.
+    </div>
+    <div class="post-meta">
+
+<span title='2026-06-26 00:00:00 +0000 UTC'>26 de junio de 2026</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Luciano Lamaita</span>
+
+</div>
+  </header> 
+  <div class="post-content md-content"><h2 id="objetivos-de-aprendizaje">Objetivos de aprendizaje<a hidden class="anchor" aria-hidden="true" href="#objetivos-de-aprendizaje">#</a></h2>
+<p>Al finalizar esta sección, vas a poder:</p>
+<ul>
+<li>Distinguir entre variables de control, manipuladas y respondientes.</li>
+<li>Diseñar un experimento partiendo del objetivo (diseño inverso).</li>
+<li>Diferenciar experimentos cualitativos de cuantitativos.</li>
+</ul>
+<hr>
+<h2 id="cómo-se-diseña-un-experimento-real">Cómo se diseña un experimento real<a hidden class="anchor" aria-hidden="true" href="#cómo-se-diseña-un-experimento-real">#</a></h2>
+<p>En la mayoría de las clases de ciencias, los &ldquo;experimentos&rdquo; ya vienen diseñados paso a paso. En la ciencia real — y en este curso — el proceso es al revés:</p>
+<ol>
+<li>Empezás por el <strong>objetivo</strong>: ¿qué querés saber o medir?</li>
+<li>Determinás qué necesitás medir o calcular para alcanzar ese objetivo.</li>
+<li>Diseñás el procedimiento que te permita obtener esos datos.</li>
+<li>Realizás el experimento y analizás los resultados.</li>
+<li>Sacás conclusiones y decidís qué hacer a continuación.</li>
+</ol>
+<p>Este enfoque se llama <strong>diseño inverso</strong> (<em>backward design</em>) o experimento por indagación (<em>inquiry-based</em>).</p>
+<hr>
+<h2 id="tipos-de-experimentos">Tipos de experimentos<a hidden class="anchor" aria-hidden="true" href="#tipos-de-experimentos">#</a></h2>
+<h3 id="experimentos-cualitativos">Experimentos cualitativos<a hidden class="anchor" aria-hidden="true" href="#experimentos-cualitativos">#</a></h3>
+<p>Buscan determinar <strong>si algo ocurre</strong>, bajo qué condiciones ocurre, o cómo se ve cuando ocurre. No requieren mediciones numéricas precisas.</p>
+<p>Preguntas de diseño:</p>
+<ul>
+<li>¿Qué querés observar?</li>
+<li>¿Qué necesitás hacer para que ocurra?</li>
+<li>¿Cómo vas a saber si ocurrió?</li>
+</ul>
+<h3 id="experimentos-cuantitativos">Experimentos cuantitativos<a hidden class="anchor" aria-hidden="true" href="#experimentos-cuantitativos">#</a></h3>
+<p>Buscan determinar <strong>en qué medida</strong> algo ocurre. Requieren mediciones y cálculos.</p>
+<p>Preguntas de diseño:</p>
+<ul>
+<li>¿Qué querés medir o calcular en última instancia?</li>
+<li>¿Podés medirlo directamente, o necesitás una ecuación?</li>
+<li>¿Qué otras cantidades necesitás medir para usar esa ecuación?</li>
+<li>¿Cómo configurás las condiciones del experimento?</li>
+</ul>
+<hr>
+<h2 id="tipos-de-variables">Tipos de variables<a hidden class="anchor" aria-hidden="true" href="#tipos-de-variables">#</a></h2>
+<p>En todo experimento hay tres tipos de variables:</p>
+<table>
+	<thead>
+			<tr>
+					<th>Tipo</th>
+					<th>Nombre alternativo</th>
+					<th>Definición</th>
+					<th>Ejemplo</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><strong>Variable de control</strong></td>
+					<td>—</td>
+					<td>Condición que se mantiene constante para no afectar el resultado</td>
+					<td>Velocidad del viento al lanzar una pelota</td>
+			</tr>
+			<tr>
+					<td><strong>Variable manipulada</strong></td>
+					<td>Variable independiente</td>
+					<td>La que vos elegís y cambiás intencionalmente</td>
+					<td>Altura desde la que se suelta una pelota</td>
+			</tr>
+			<tr>
+					<td><strong>Variable respondiente</strong></td>
+					<td>Variable dependiente</td>
+					<td>La que cambia como resultado de la acción; se mide</td>
+					<td>Tiempo que tarda en caer</td>
+			</tr>
+	</tbody>
+</table>
+<blockquote>
+<p><strong>Regla práctica:</strong> la variable manipulada va en el eje horizontal del gráfico ($x$); la respondiente va en el eje vertical ($y$).</p>
+</blockquote>
+<h3 id="controles-positivos-y-negativos-en-experimentos-cualitativos">Controles positivos y negativos (en experimentos cualitativos)<a hidden class="anchor" aria-hidden="true" href="#controles-positivos-y-negativos-en-experimentos-cualitativos">#</a></h3>
+<ul>
+<li><strong>Control positivo:</strong> muestra que <em>sí</em> contiene lo que el experimento debe detectar. Si el experimento falla en detectarlo, algo está mal con el procedimiento.</li>
+<li><strong>Control negativo:</strong> muestra que <em>no</em> contiene lo que se busca. Si el experimento lo detecta de todas formas, algo está mal.</li>
+</ul>
+<hr>
+<h2 id="cuántos-datos-necesito">¿Cuántos datos necesito?<a hidden class="anchor" aria-hidden="true" href="#cuántos-datos-necesito">#</a></h2>
+<p>Los resultados deben ser <strong>estadísticamente significativos</strong>: que sea poco probable que ocurrieran por azar.</p>
+<p>Regla práctica para esta materia — <strong>regla del 8 y 10</strong>:</p>
+<ul>
+<li>Al menos <strong>8 puntos de datos</strong>.</li>
+<li>El rango de la variable manipulada debe abarcar al menos un <strong>factor de 10</strong> (por ejemplo, de 1 cm a 10 cm, o de 0,5 s a 5 s).</li>
+</ul>
+<hr>
+<h2 id="el-proceso-de-diseño-experimental">El proceso de diseño experimental<a hidden class="anchor" aria-hidden="true" href="#el-proceso-de-diseño-experimental">#</a></h2>
+<ol>
+<li>Decidir qué querés determinar.</li>
+<li>Identificar las ecuaciones relevantes.</li>
+<li>Determinar qué cantidades necesitás medir.</li>
+<li>Definir las variables: ¿cuáles controlás, cuáles manipulás, cuál es la respondiente?</li>
+<li>Planificar cómo medirlas con precisión.</li>
+<li>Realizar el experimento y registrar los datos.</li>
+<li>Analizar y sacar conclusiones.</li>
+</ol>
+<hr>
+<h2 id="actividad-de-campo--tracker">Actividad de campo — Tracker<a hidden class="anchor" aria-hidden="true" href="#actividad-de-campo--tracker">#</a></h2>
+<p>Usando la app <strong>Tracker</strong>, podés realizar experimentos cuantitativos de cinemática:</p>
+<ol>
+<li>Filmás el movimiento (pelota, corredor, carrito).</li>
+<li>Tracker analiza el video cuadro por cuadro.</li>
+<li>Obtenés posición, velocidad y aceleración como función del tiempo.</li>
+<li>Identificás variables: la variable manipulada es el tiempo $t$; la respondiente es la posición $x$.</li>
+</ol>
+<blockquote>
+<p><strong>Pregunta:</strong> en un experimento con Tracker, ¿qué serían las variables de control? (Pensá en condiciones que deben mantenerse iguales en cada toma.)</p>
+</blockquote>
+<hr>
+<h2 id="para-pensar">Para pensar<a hidden class="anchor" aria-hidden="true" href="#para-pensar">#</a></h2>
+<ol>
+<li>Querés saber si un auto de juguete rueda más lejos sobre alfombra o sobre piso liso. ¿Es un experimento cualitativo o cuantitativo? ¿Cuáles son las variables?</li>
+<li>¿Por qué es importante tener un control negativo en un experimento?</li>
+<li>Si solo tenés 3 puntos de datos y todos dan el mismo resultado, ¿podés afirmar con confianza que el resultado es correcto? ¿Por qué?</li>
+</ol>
+<hr>
+<p><em>Adaptado de <a href="https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf">Jeff Bigler — Physics 1: Mechanics in Plain English</a>, licencia <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. Traducción y adaptación al Diseño Curricular DGCyE: Prof. Ing. Luciano Lamaita, 2026.</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/u1/">U1</a></li>
+      <li><a href="http://localhost:1313/tags/laboratorio/">Laboratorio</a></li>
+      <li><a href="http://localhost:1313/tags/experimento/">Experimento</a></li>
+      <li><a href="http://localhost:1313/tags/variable-independiente/">Variable Independiente</a></li>
+      <li><a href="http://localhost:1313/tags/variable-dependiente/">Variable Dependiente</a></li>
+      <li><a href="http://localhost:1313/tags/m%C3%A9todo-cient%C3%ADfico/">Método Científico</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">Luciano Lamaita</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

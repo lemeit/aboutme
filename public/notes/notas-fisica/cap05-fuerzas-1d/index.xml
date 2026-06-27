@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Capítulo 5 — Fuerzas en 1D on Luciano Lamaita</title>
+    <link>http://localhost:1313/notes/notas-fisica/cap05-fuerzas-1d/</link>
+    <description>Recent content in Capítulo 5 — Fuerzas en 1D on Luciano Lamaita</description>
+    <generator>Hugo</generator>
+    <language>es-AR</language>
+    <lastBuildDate>Fri, 26 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/notes/notas-fisica/cap05-fuerzas-1d/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Primera Ley de Newton — Inercia</title>
+      <link>http://localhost:1313/notes/notas-fisica/cap05-fuerzas-1d/newton-1/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/notas-fisica/cap05-fuerzas-1d/newton-1/</guid>
+      <description>Todo cuerpo mantiene su estado de movimiento si no actúa una fuerza neta.</description>
+    </item>
+    <item>
+      <title>Segunda Ley de Newton — Fuerza y aceleración</title>
+      <link>http://localhost:1313/notes/notas-fisica/cap05-fuerzas-1d/newton-2/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/notas-fisica/cap05-fuerzas-1d/newton-2/</guid>
+      <description>La fuerza neta sobre un objeto produce una aceleración proporcional a su masa.</description>
+    </item>
+    <item>
+      <title>Tercera Ley de Newton — Acción y reacción</title>
+      <link>http://localhost:1313/notes/notas-fisica/cap05-fuerzas-1d/newton-3/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/notas-fisica/cap05-fuerzas-1d/newton-3/</guid>
+      <description>Toda fuerza de acción produce una fuerza de reacción igual y opuesta.</description>
+    </item>
+  </channel>
+</rss>

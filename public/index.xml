@@ -9,81 +9,130 @@
     <lastBuildDate>Fri, 26 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Primera Ley de Newton — Inercia</title>
-      <link>http://localhost:1313/notes/fisica-4to/u3-dinamica/newton-1/</link>
+      <title>¿Qué es la Física? El conocimiento científico</title>
+      <link>http://localhost:1313/notes/notas-fisica/cap01-laboratorio/conocimiento-cientifico/</link>
       <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/fisica-4to/u3-dinamica/newton-1/</guid>
+      <guid>http://localhost:1313/notes/notas-fisica/cap01-laboratorio/conocimiento-cientifico/</guid>
+      <description>Ramas de la Física, método científico, teoría, ley, hipótesis y lenguaje de la ciencia.</description>
+    </item>
+    <item>
+      <title>Primera Ley de Newton — Inercia</title>
+      <link>http://localhost:1313/notes/notas-fisica/cap05-fuerzas-1d/newton-1/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/notas-fisica/cap05-fuerzas-1d/newton-1/</guid>
       <description>Todo cuerpo mantiene su estado de movimiento si no actúa una fuerza neta.</description>
     </item>
     <item>
-      <title>¿Qué es la Física? El conocimiento científico</title>
-      <link>http://localhost:1313/notes/fisica-4to/u1-generalidades/conocimiento-cientifico/</link>
-      <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/fisica-4to/u1-generalidades/conocimiento-cientifico/</guid>
-      <description>Introducción a la Física, el método científico, y las diferencias entre teorías, leyes e hipótesis.</description>
-    </item>
-    <item>
       <title>Sistemas de referencia. Posición, distancia y desplazamiento</title>
-      <link>http://localhost:1313/notes/fisica-4to/u2-cinematica/sistemas-referencia/</link>
+      <link>http://localhost:1313/notes/notas-fisica/cap03-cinematica-1d/sistemas-referencia/</link>
       <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/fisica-4to/u2-cinematica/sistemas-referencia/</guid>
+      <guid>http://localhost:1313/notes/notas-fisica/cap03-cinematica-1d/sistemas-referencia/</guid>
       <description>Cómo describir la posición de un objeto. Diferencia entre distancia recorrida y desplazamiento. Velocidad escalar y velocidad vectorial.</description>
     </item>
     <item>
-      <title>Segunda Ley de Newton — Fuerza y aceleración</title>
-      <link>http://localhost:1313/notes/fisica-4to/u3-dinamica/newton-2/</link>
+      <title>Diseño y realización de experimentos</title>
+      <link>http://localhost:1313/notes/notas-fisica/cap01-laboratorio/diseno-experimentos/</link>
       <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/fisica-4to/u3-dinamica/newton-2/</guid>
+      <guid>http://localhost:1313/notes/notas-fisica/cap01-laboratorio/diseno-experimentos/</guid>
+      <description>Variables, diseño experimental por diseño inverso, experimentos cualitativos y cuantitativos.</description>
+    </item>
+    <item>
+      <title>Segunda Ley de Newton — Fuerza y aceleración</title>
+      <link>http://localhost:1313/notes/notas-fisica/cap05-fuerzas-1d/newton-2/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/notas-fisica/cap05-fuerzas-1d/newton-2/</guid>
       <description>La fuerza neta sobre un objeto produce una aceleración proporcional a su masa.</description>
     </item>
     <item>
       <title>Movimiento Rectilíneo Uniforme (MRU)</title>
-      <link>http://localhost:1313/notes/fisica-4to/u2-cinematica/mru/</link>
+      <link>http://localhost:1313/notes/notas-fisica/cap03-cinematica-1d/mru/</link>
       <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/fisica-4to/u2-cinematica/mru/</guid>
+      <guid>http://localhost:1313/notes/notas-fisica/cap03-cinematica-1d/mru/</guid>
       <description>Movimiento con velocidad constante: ecuación, gráficos x(t) y v(t), y resolución de problemas.</description>
     </item>
     <item>
-      <title>Unidades, dimensiones y medición</title>
-      <link>http://localhost:1313/notes/fisica-4to/u1-generalidades/unidades-dimensiones/</link>
-      <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/fisica-4to/u1-generalidades/unidades-dimensiones/</guid>
-      <description>El Sistema Internacional de Unidades, prefijos métricos, notación científica y cifras significativas.</description>
+      <title>Error e incerteza en las mediciones</title>
+      <link>http://localhost:1313/notes/notas-fisica/cap01-laboratorio/error-incerteza/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/notas-fisica/cap01-laboratorio/error-incerteza/</guid>
+      <description>Error aleatorio y sistemático, incerteza absoluta y relativa, propagación de error.</description>
     </item>
     <item>
       <title>Tercera Ley de Newton — Acción y reacción</title>
-      <link>http://localhost:1313/notes/fisica-4to/u3-dinamica/newton-3/</link>
+      <link>http://localhost:1313/notes/notas-fisica/cap05-fuerzas-1d/newton-3/</link>
       <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/fisica-4to/u3-dinamica/newton-3/</guid>
+      <guid>http://localhost:1313/notes/notas-fisica/cap05-fuerzas-1d/newton-3/</guid>
       <description>Toda fuerza de acción produce una fuerza de reacción igual y opuesta.</description>
     </item>
     <item>
       <title>Movimiento Rectilíneo Uniformemente Variado (MRUV)</title>
-      <link>http://localhost:1313/notes/fisica-4to/u2-cinematica/mruv/</link>
+      <link>http://localhost:1313/notes/notas-fisica/cap03-cinematica-1d/mruv/</link>
       <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/fisica-4to/u2-cinematica/mruv/</guid>
+      <guid>http://localhost:1313/notes/notas-fisica/cap03-cinematica-1d/mruv/</guid>
       <description>Aceleración constante, ecuaciones de movimiento y resolución de problemas.</description>
     </item>
     <item>
-      <title>Introducción a los vectores</title>
-      <link>http://localhost:1313/notes/fisica-4to/u1-generalidades/vectores-intro/</link>
-      <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/fisica-4to/u1-generalidades/vectores-intro/</guid>
-      <description>Qué es un vector, diferencia con magnitudes escalares, representación gráfica, suma vectorial y descomposición en componentes.</description>
-    </item>
-    <item>
       <title>Caída Libre</title>
-      <link>http://localhost:1313/notes/fisica-4to/u2-cinematica/caida-libre/</link>
+      <link>http://localhost:1313/notes/notas-fisica/cap03-cinematica-1d/caida-libre/</link>
       <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/fisica-4to/u2-cinematica/caida-libre/</guid>
+      <guid>http://localhost:1313/notes/notas-fisica/cap03-cinematica-1d/caida-libre/</guid>
       <description>La gravedad como aceleración constante. Caída, lanzamiento vertical y punto más alto.</description>
     </item>
     <item>
-      <title>Tiro Oblicuo (Movimiento Proyectil)</title>
-      <link>http://localhost:1313/notes/fisica-4to/u2-cinematica/tiro-oblicuo/</link>
+      <title>Cifras significativas</title>
+      <link>http://localhost:1313/notes/notas-fisica/cap01-laboratorio/cifras-significativas/</link>
       <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/fisica-4to/u2-cinematica/tiro-oblicuo/</guid>
+      <guid>http://localhost:1313/notes/notas-fisica/cap01-laboratorio/cifras-significativas/</guid>
+      <description>Identificar dígitos significativos, reglas de redondeo en suma/resta y multiplicación/división.</description>
+    </item>
+    <item>
+      <title>Gráficos y análisis de datos en laboratorio</title>
+      <link>http://localhost:1313/notes/notas-fisica/cap01-laboratorio/graficos-laboratorio/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/notas-fisica/cap01-laboratorio/graficos-laboratorio/</guid>
+      <description>Construcción de gráficos, línea de mejor ajuste, pendiente y linealización de ecuaciones.</description>
+    </item>
+    <item>
+      <title>Tiro Oblicuo (Movimiento Proyectil)</title>
+      <link>http://localhost:1313/notes/notas-fisica/cap03-cinematica-1d/tiro-oblicuo/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/notas-fisica/cap03-cinematica-1d/tiro-oblicuo/</guid>
       <description>Movimiento en dos dimensiones: componentes horizontal y vertical independientes.</description>
+    </item>
+    <item>
+      <title>Prácticas científicas</title>
+      <link>http://localhost:1313/notes/notas-fisica/cap01-laboratorio/practicas-cientificas/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/notas-fisica/cap01-laboratorio/practicas-cientificas/</guid>
+      <description>Las prácticas científicas según los marcos curriculares: crear representaciones, argumentar con evidencia, comunicar resultados.</description>
+    </item>
+    <item>
+      <title>El cuaderno de laboratorio</title>
+      <link>http://localhost:1313/notes/notas-fisica/cap01-laboratorio/cuaderno-laboratorio/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/notas-fisica/cap01-laboratorio/cuaderno-laboratorio/</guid>
+      <description>Propósito, reglas y uso del cuaderno de laboratorio como registro oficial del trabajo experimental.</description>
+    </item>
+    <item>
+      <title>Informes de laboratorio</title>
+      <link>http://localhost:1313/notes/notas-fisica/cap01-laboratorio/informe-laboratorio/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/notas-fisica/cap01-laboratorio/informe-laboratorio/</guid>
+      <description>Estructura y contenido de informes de laboratorio internos y formales.</description>
+    </item>
+    <item>
+      <title>Unidades, dimensiones y medición</title>
+      <link>http://localhost:1313/notes/notas-fisica/cap01-laboratorio/unidades-dimensiones/</link>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/notas-fisica/cap01-laboratorio/unidades-dimensiones/</guid>
+      <description>El Sistema Internacional de Unidades, prefijos métricos, notación científica y cifras significativas.</description>
+    </item>
+    <item>
+      <title>Introducción a los vectores</title>
+      <link>http://localhost:1313/notes/notas-fisica/cap01-laboratorio/vectores-intro/</link>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/notas-fisica/cap01-laboratorio/vectores-intro/</guid>
+      <description>Qué es un vector, diferencia con magnitudes escalares, representación gráfica, suma vectorial y descomposición en componentes.</description>
     </item>
     <item>
       <title>Temperatura Escalas</title>

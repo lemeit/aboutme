@@ -2,6 +2,11 @@
 :root {
   --primary:   #9B3D00;   /* naranja muy oscuro, casi óxido */
   --secondary: #5C2200;   /* marrón-negro para detalles */
+
+  /* Fondos cremita cálido — armoniza con el naranja */
+  --theme:   #FAF7F2;     /* artículos y home */
+  --entry:   #FAF7F2;     /* tarjetas */
+  --code-bg: #F0EBE2;     /* listas y bloques de código */
 }
 
 .dark {

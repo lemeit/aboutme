@@ -1,5 +1,6 @@
 baseURL = "https://profe.lemeit.ar/"
-locale = "es-AR"
+defaultContentLanguage = "es"
+languageCode = "es-AR"
 title = "Luciano Lamaita"
 theme = "PaperMod"
 
@@ -8,6 +9,7 @@ mainSections = []
 [params]
   author = "Luciano Lamaita"
   description = "Ingeniero | Docente | Saladillo, Buenos Aires"
+  dateFormat = "02/01/2006"
   ShowReadingTime = true
   ShowShareButtons = false
   ShowPostNavLinks = false

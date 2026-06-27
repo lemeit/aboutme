@@ -12,6 +12,11 @@
 .dark {
   --primary:   #B84800;
   --secondary: #8B3D00;
+
+  /* Fondos oscuros — modo noche */
+  --theme:   #1A1612;
+  --entry:   #221E18;
+  --code-bg: #13100D;
 }
 
 /* Acento negro en bordes y títulos */

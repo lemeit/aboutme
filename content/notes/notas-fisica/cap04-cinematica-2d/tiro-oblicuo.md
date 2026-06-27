@@ -3,9 +3,9 @@ title = "Tiro Oblicuo (Movimiento Proyectil)"
 date = "2026-06-26"
 draft = false
 math = true
-weight = 5
-description = "Movimiento en dos dimensiones: componentes horizontal y vertical independientes."
-tags = ["U2", "Cinemática", "tiro oblicuo", "proyectil", "movimiento 2D", "vectores"]
+weight = 1
+description = "Movimiento en 2D: componentes independientes horizontal (MRU) y vertical (MRUV). Tiro horizontal y con ángulo."
+tags = ["cap04", "cinemática 2D", "tiro oblicuo", "proyectil", "movimiento 2D", "vectores", "trigonometría"]
 +++
 
 ## Objetivos de aprendizaje
@@ -13,105 +13,119 @@ tags = ["U2", "Cinemática", "tiro oblicuo", "proyectil", "movimiento 2D", "vect
 Al finalizar esta sección, vas a poder:
 
 - Comprender que el movimiento proyectil combina MRU horizontal con MRUV vertical de forma independiente.
-- Separar un lanzamiento en sus componentes $x$ e $y$.
-- Resolver problemas básicos de tiro horizontal y lanzamiento con ángulo.
+- Identificar el tiempo como variable que vincula ambas dimensiones.
+- Resolver problemas de tiro horizontal y lanzamiento con ángulo.
+- Interpretar gráficos de trayectoria parabólica.
 
 ---
 
 ## ¿Qué es un proyectil?
 
-Un **proyectil** es cualquier objeto lanzado que, una vez en el aire, solo está sometido a la gravedad (despreciamos el aire).
+Un **proyectil** es un objeto que es propulsado (arrojado, disparado, etc.) y que, una vez en el aire, solo está sometido a la gravedad (despreciamos el aire).
 
-**Ejemplos:** una pelota pateada, una piedra arrojada, agua que sale de una manguera horizontal.
-
-> **La clave del tiro oblicuo:** el movimiento horizontal y el vertical son **independientes entre sí**. La gravedad solo afecta al movimiento vertical; el movimiento horizontal se mantiene constante.
+**Ejemplos:** una pelota pateada, una piedra arrojada, una bala, el Angry Bird de la honda.
 
 ---
 
-## Dos movimientos simultáneos
+## La clave: movimientos independientes
 
-| Dirección | Movimiento | Aceleración | Ecuación |
-|-----------|-----------|-------------|---------|
-| Horizontal ($x$) | MRU | $a_x = 0$ | $x = v_x \cdot t$ |
-| Vertical ($y$) | MRUV (caída libre) | $a_y = g$ | $y = v_{0y}\,t + \tfrac{1}{2}g\,t^2$ |
+Como los vectores perpendiculares no se afectan mutuamente, el movimiento horizontal y el vertical son **completamente independientes** y se analizan por separado con sus propias ecuaciones.
 
-El **tiempo** es la variable que vincula ambas direcciones: el mismo $t$ vale para $x$ e $y$.
+| Dirección | Movimiento | Aceleración | Ecuaciones |
+|-----------|-----------|-------------|-----------|
+| Horizontal ($x$) | MRU | $a_x = 0$ | $d_x = v_x \cdot t$ |
+| Vertical ($y$) | MRUV | $a_y = g$ | $v_y = v_{0y} + gt$ · $d_y = v_{0y}t + \tfrac{1}{2}gt^2$ · $v_y^2 - v_{0y}^2 = 2gd_y$ |
+
+**El tiempo $t$ es el mismo en ambas dimensiones** — es la variable que vincula el problema horizontal con el vertical.
+
+---
+
+## Estrategia general de resolución
+
+1. **Separar** la velocidad inicial en componentes $v_x$ y $v_{0y}$ (si hay ángulo).
+2. **Resolver el problema vertical primero** → obtenés el tiempo de vuelo $t$.
+3. **Usar ese tiempo en el problema horizontal** → calculás el alcance $d_x$.
+
+> Cuando la dirección es solo hacia abajo, tomamos hacia abajo como positivo.
+> Cuando hay lanzamiento hacia arriba, tomamos hacia arriba como positivo y $g = -10\ \text{m/s}^2$.
 
 ---
 
 ## Tiro horizontal
 
-El objeto sale con velocidad puramente horizontal ($v_{0y} = 0$). Es el caso más sencillo.
+El objeto sale con velocidad puramente horizontal ($v_{0y} = 0$).
 
-$$x = v_x \cdot t \qquad y = \tfrac{1}{2}g\,t^2$$
+$$d_x = v_x \cdot t \qquad d_y = \tfrac{1}{2}g\,t^2$$
 
-**Estrategia:**
-1. Con la ecuación vertical encontrás el tiempo de vuelo $t$ a partir de la altura $h$.
-2. Con ese $t$ calculás el alcance horizontal $x$.
+### Ejemplo resuelto (Bigler)
 
-### Ejemplo
+Una pelota es lanzada horizontalmente a $5\ \text{m/s}$ desde 1,5 m de altura. ¿Dónde cae?
 
-Una pelota rueda por una mesa y cae desde $h = 1{,}25\ \text{m}$ con velocidad horizontal $v_x = 3\ \text{m/s}$. ¿Dónde cae?
+**Vertical** (positivo hacia abajo, $v_{0y} = 0$):
 
-**Paso 1 — tiempo de vuelo** (positivo hacia abajo, $v_{0y}=0$):
+$$d_y = \tfrac{1}{2}g\,t^2 \implies 1{,}5 = 5\,t^2 \implies t^2 = 0{,}3 \implies t = 0{,}55\ \text{s}$$
 
-$$h = \tfrac{1}{2}g\,t^2 \implies 1{,}25 = 5\,t^2 \implies t^2 = 0{,}25 \implies t = 0{,}5\ \text{s}$$
+**Horizontal:**
 
-**Paso 2 — alcance horizontal:**
+$$d_x = v_x \cdot t = 5 \times 0{,}55 = 2{,}74\ \text{m}$$
 
-$$x = v_x \cdot t = 3 \times 0{,}5 = 1{,}5\ \text{m}$$
-
-> La pelota cae $1{,}5\ \text{m}$ adelante de la mesa.
+> 📷 *Imagen: trayectoria parabólica del tiro horizontal — Bigler pág. 245 (capturar)*
 
 ---
 
 ## Lanzamiento con ángulo
 
-Si el objeto sale con velocidad $v_0$ formando un ángulo $\theta$ con la horizontal, hay que descomponer el vector velocidad inicial:
+Si el objeto sale con velocidad $v_0$ y ángulo $\theta$ respecto a la horizontal, hay que descomponer:
 
-$$v_{0x} = v_0 \cos\theta \qquad v_{0y} = v_0 \sin\theta$$
+$$v_x = v_0 \cos\theta \qquad v_{0y} = v_0 \sin\theta$$
 
-Luego cada componente sigue sus propias ecuaciones (horizontal = MRU, vertical = MRUV).
+> 📷 *Imagen: descomposición de velocidad en ángulo — Bigler pág. 246 (capturar)*
 
-**Dato clave:** el ángulo que maximiza el alcance horizontal es $\theta = 45°$.
+### Ejemplo resuelto — Angry Bird (Bigler)
+
+Un pájaro es lanzado a $20\ \text{m/s}$ con ángulo de $40°$. Cae al mismo nivel de lanzamiento. ¿Cuál es el alcance?
+
+**Descomposición:**
+
+$$v_x = 20\cos(40°) = 15{,}3\ \text{m/s} \qquad v_{0y} = 20\sin(40°) = 12{,}9\ \text{m/s}$$
+
+**Vertical** (positivo hacia arriba, $d_y = 0$ porque cae al mismo nivel):
+
+$$0 = v_{0y}\,t + \tfrac{1}{2}(-g)t^2 = t\left(v_{0y} - \tfrac{g}{2}\,t\right)$$
+
+$$t = 0 \quad \text{o} \quad t = \frac{2\,v_{0y}}{g} = \frac{2 \times 12{,}9}{10} = 2{,}57\ \text{s}$$
+
+**Horizontal:**
+
+$$d_x = v_x \cdot t = 15{,}3 \times 2{,}57 = 39{,}4\ \text{m}$$
+
+> 📷 *Imagen: trayectoria del Angry Bird con componentes — Bigler pág. 248 (capturar)*
 
 ---
 
-## Experimento mental — Bigler
+## Datos útiles
 
-Bigler propone este experimento: soltás una pelota y al mismo instante golpeás otra horizontalmente desde la misma altura. ¿Cuál llega primero al suelo?
-
-**Ambas llegan al mismo tiempo.** La velocidad horizontal no afecta la caída vertical — ambas tienen la misma aceleración hacia abajo y la misma altura inicial.
-
----
-
-## Trayectoria parabólica
-
-La combinación de movimiento horizontal uniforme + caída libre produce una trayectoria **parabólica**. Esto se puede verificar eliminando $t$ entre las dos ecuaciones:
-
-$$y = \frac{g}{2\,v_x^2}\,x^2$$
-
-que es la ecuación de una parábola.
+- El ángulo que **maximiza el alcance horizontal** es $\theta = 45°$.
+- Un objeto **lanzado horizontalmente** y otro **soltado** desde la misma altura tocan el suelo al mismo tiempo (ambos tienen la misma aceleración vertical y $v_{0y} = 0$).
+- La trayectoria es una **parábola** — se puede demostrar eliminando $t$ entre las ecuaciones de $x$ e $y$.
 
 ---
 
-## Actividad de campo — Tracker[^tracker]
+## Actividad con Tracker[^tracker]
 
-1. Filmá una pelota lanzada horizontalmente desde una mesa (o lanzada con ángulo desde el suelo).
-2. En Tracker[^tracker] marcá la posición en cada cuadro.
+1. Filmá una pelota lanzada horizontalmente desde una mesa, o con ángulo desde el suelo.
+2. En Tracker[^tracker] marcá la posición cuadro a cuadro.
 3. Graficá $x(t)$ y $y(t)$ por separado.
 4. Verificá que $x(t)$ es una recta (MRU) y $y(t)$ es una parábola (MRUV).
 5. Calculá $v_x$ desde la pendiente de $x(t)$ y $g$ desde la curvatura de $y(t)$.
-
-> **Pregunta guía:** ¿el valor de $g$ que obtenés del video coincide con $10\ \text{m/s}^2$? ¿Qué podría hacer que no coincida exactamente?
 
 ---
 
 ## Para pensar
 
 1. ¿Por qué la trayectoria de un proyectil es una parábola y no una recta?
-2. Si lanzás dos pelotas desde la misma altura —una horizontalmente y la otra simplemente la soltás— ¿cuál llega primero al suelo?
-3. Un arquero apunta directo al blanco (horizontalmente). ¿La flecha llega al blanco, por encima o por debajo? ¿Por qué?
+2. Dos objetos son lanzados desde la misma altura: uno horizontalmente y el otro simplemente soltado. ¿Cuál llega primero al suelo? ¿Por qué?
+3. Un arquero apunta directamente al blanco (horizontalmente). ¿La flecha llega al blanco, por encima o por debajo? ¿Qué debería hacer el arquero para acertar?
 
 ---
 

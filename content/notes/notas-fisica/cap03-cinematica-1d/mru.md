@@ -1,192 +1,139 @@
 +++
 title = "Movimiento Rectilíneo Uniforme (MRU)"
-date = "2026-06-22"
+date = "2026-06-26"
 draft = false
-description = "Movimiento con velocidad constante: ecuación, gráficos x(t) y v(t), y resolución de problemas."
-tags = ["U2", "cinemática", "MRU", "gráficos", "velocidad constante"]
 math = true
-weight = 2
+weight = 5
+description = "Velocidad constante, ecuación de posición, gráficos x(t) y v(t), resolución de problemas."
+tags = ["cap03", "cinemática", "MRU", "velocidad constante", "posición", "gráficos"]
 +++
 
 ## Objetivos de aprendizaje
 
-Al finalizar esta nota, vas a poder:
+Al finalizar esta sección, vas a poder:
 
-- Describir las condiciones del movimiento rectilíneo uniforme (MRU).
-- Aplicar la ecuación de posición del MRU para resolver problemas.
-- Interpretar y construir gráficos $x(t)$ y $v(t)$ para el MRU.
-- Relacionar la pendiente del gráfico $x(t)$ con la velocidad.
-- Identificar MRU en situaciones reales y en análisis con Tracker.
-
----
-
-## ¿Qué es el MRU?
-
-El **movimiento rectilíneo uniforme** es aquel en que un objeto se desplaza en línea recta con **velocidad constante**: misma rapidez y misma dirección en todo momento.
-
-Condiciones del MRU:
-- Trayectoria **rectilínea** (sobre una línea recta)
-- Velocidad **constante** (sin aceleración: $a = 0$)
-
-> **Ejemplo cotidiano:** Un auto en autopista a velocidad crucero constante. Un corredor manteniendo su ritmo en la recta. Una pelota sobre una superficie perfectamente lisa.
+- Reconocer y describir un movimiento rectilíneo uniforme.
+- Aplicar la ecuación $x = x_0 + v \cdot t$ para calcular posición, velocidad o tiempo.
+- Interpretar gráficos $x(t)$ y $v(t)$ para el MRU.
+- Resolver problemas con el método GUESS.
 
 ---
 
-## Ecuación del MRU
+## Definición
 
-Si la aceleración es cero, la única ecuación que necesitamos es:
+El **Movimiento Rectilíneo Uniforme (MRU)** es el movimiento de un objeto que se desplaza en línea recta con velocidad constante.
 
-$$\Delta x = v \cdot t$$
+Condición: $a = 0 \implies v = v_0 = v_{med} = \text{constante}$
 
-O en su forma completa, incluyendo la posición inicial $x_0$:
+---
 
-$$x = x_0 + v \cdot t$$
+## Ecuación de movimiento
 
-donde:
+$$\boxed{x = x_0 + v \cdot t}$$
 
-| Símbolo | Significado | Unidad |
-|---|---|---|
+Equivalentemente, usando desplazamiento:
+
+$$\Delta x = v \cdot t \qquad \text{donde} \quad v_{med} = \frac{\Delta x}{t}$$
+
+| Variable | Magnitud | Unidad |
+|----------|----------|--------|
 | $x$ | posición final | m |
 | $x_0$ | posición inicial | m |
 | $v$ | velocidad (constante) | m/s |
 | $t$ | tiempo | s |
 
-> 💡 Esta es la ecuación de una **función lineal**: $x$ depende de $t$ de manera proporcional. Recordá de matemática: $y = b + m \cdot x$, donde $m$ es la pendiente. Acá la "pendiente" es la velocidad $v$.
+> Si el objeto **parte del reposo o del origen**: $x_0 = 0$.
+> Si **se detiene**: $v = 0$ → pero eso ya no es MRU.
 
 ---
 
 ## Gráficos del MRU
 
-### Gráfico posición vs. tiempo — $x(t)$
+**Gráfico $x(t)$:** recta con pendiente = $v$
 
-En el MRU, el gráfico $x(t)$ es una **línea recta**.
+$$\text{pendiente} = \frac{\Delta x}{\Delta t} = v$$
 
-- La **pendiente** de esa recta es la velocidad: $v = \dfrac{\Delta x}{\Delta t}$
-- Una pendiente positiva → objeto moviéndose en dirección positiva
-- Una pendiente negativa → objeto moviéndose en dirección negativa
-- Una línea horizontal (pendiente cero) → objeto en reposo
+> 📷 *Imagen: gráfico x(t) con pendiente positiva, cero y negativa — Bigler pág. 216 (capturar)*
 
-| Situación | Gráfico $x(t)$ |
-|---|---|
-| Reposo | Línea horizontal |
-| MRU en dirección + | Línea recta con pendiente positiva |
-| MRU en dirección − | Línea recta con pendiente negativa |
-| Mayor velocidad | Línea más inclinada |
+**Gráfico $v(t)$:** recta horizontal
 
-### Gráfico velocidad vs. tiempo — $v(t)$
+$$v = \text{constante} \implies \text{línea horizontal}$$
 
-En el MRU, el gráfico $v(t)$ es una **línea horizontal** (la velocidad no cambia).
+El **área bajo la curva** en el gráfico $v(t)$ es el desplazamiento:
 
-- El **área** bajo el gráfico $v(t)$ entre dos instantes es el desplazamiento en ese intervalo:
-
-$$\Delta x = v \cdot \Delta t = \text{área del rectángulo bajo la curva}$$
+$$\Delta x = v \cdot t = \text{área del rectángulo bajo la recta}$$
 
 ---
 
-## Diagramas de puntos
+## Tabla de resolución de problemas
 
-Un diagrama de puntos es una forma sencilla de visualizar el movimiento: se marca la posición del objeto a intervalos de tiempo iguales.
+Para elegir la ecuación correcta, hacé una tabla con lo que sabés y lo que buscás:
 
-En el **MRU**, los puntos están **igualmente espaciados** — el objeto recorre la misma distancia en cada intervalo de tiempo.
-
-$$\bullet \quad \bullet \quad \bullet \quad \bullet \quad \bullet \quad \bullet$$
-
-Si los puntos se acercan → el objeto frena.
-Si los puntos se alejan → el objeto acelera.
-Si están parejos → MRU.
-
----
-
-## Resolución de problemas — método GUESS
-
-Para resolver cualquier problema de cinemática, seguimos estos pasos:
-
-1. **G** — *Given*: anotá todos los datos del problema con sus unidades
-2. **U** — *Unknown*: identificá qué hay que encontrar
-3. **E** — *Equation*: escribí la ecuación que relaciona esas variables
-4. **S** — *Substitute*: sustituí los valores (con unidades)
-5. **S** — *Solve*: resolvé y verificá el resultado
+| Situación | Condición |
+|-----------|-----------|
+| "parte del reposo" | $v_0 = 0$ |
+| "se detiene" | $v = 0$ |
+| "velocidad constante" | $a = 0$, use $\Delta x = v \cdot t$ |
 
 ---
 
 ## Ejemplos resueltos
 
-**Ejemplo 1 — calcular velocidad:**
+### Ejemplo 1 — Velocidad media
 
-Un auto recorre 1 200 m en 60 s a velocidad constante. ¿Cuál es su velocidad?
+Un auto recorre 1 200 m en 60 s. ¿Cuál es su velocidad media?
 
-| | |
-|---|---|
-| **G** | $\Delta x = 1\,200$ m, $t = 60$ s |
-| **U** | $v = ?$ |
-| **E** | $\Delta x = v \cdot t$ |
-| **S** | $v = \dfrac{\Delta x}{t} = \dfrac{1\,200}{60}$ |
-| **S** | $v = 20$ m/s |
+**G:** $\Delta x = 1200\ \text{m}$, $t = 60\ \text{s}$ · **U:** $v = ?$
+
+$$v = \frac{\Delta x}{t} = \frac{1200}{60} = 20\ \text{m/s}$$
 
 ---
 
-**Ejemplo 2 — calcular tiempo:**
+### Ejemplo 2 — Tiempo
 
-Una persona camina a 1,25 m/s. ¿Cuánto tarda en recorrer 320 m?
+Una persona camina a $1{,}25\ \text{m/s}$. ¿Cuánto tarda en recorrer 320 m?
 
-$$t = \frac{\Delta x}{v} = \frac{320 \text{ m}}{1{,}25 \text{ m/s}} = 256 \text{ s}$$
+**G:** $v = 1{,}25\ \text{m/s}$, $\Delta x = 320\ \text{m}$ · **U:** $t = ?$
 
----
-
-**Ejemplo 3 — posición en función del tiempo:**
-
-Un ciclista parte de $x_0 = 50$ m con velocidad $v = 8$ m/s. ¿Dónde está a los 10 s?
-
-$$x = x_0 + v \cdot t = 50 + 8 \cdot 10 = 130 \text{ m}$$
+$$t = \frac{\Delta x}{v} = \frac{320}{1{,}25} = 256\ \text{s}$$
 
 ---
 
-**Ejemplo 4 — MRU en dirección negativa:**
+### Ejemplo 3 — Posición
 
-Un objeto parte de $x_0 = 80$ m moviéndose hacia el origen con $v = -5$ m/s. ¿Cuándo llega al origen?
+Un ciclista sale de $x_0 = 0$ a $v = 4\ \text{m/s}$. ¿Dónde está a los 7 min?
 
-Queremos $x = 0$:
-
-$$0 = 80 + (-5) \cdot t \quad \Rightarrow \quad t = \frac{80}{5} = 16 \text{ s}$$
+$$x = x_0 + v \cdot t = 0 + 4 \times (7 \times 60) = 4 \times 420 = 1680\ \text{m}$$
 
 ---
 
-## Conexión con la actividad de campo
+### Ejemplo 4 — Pista circular
 
-En nuestra **actividad de carreras** en el patio, analizamos el movimiento con Tracker:
+Un auto da una vuelta completa a una pista circular de radio 100 m a velocidad constante.
 
-- Si el corredor mantiene velocidad constante, el gráfico $x(t)$ en Tracker es una **línea recta**.
-- La pendiente de esa recta (calculada automáticamente por Tracker) es la **velocidad media** del corredor.
-- En el gráfico $v(t)$ de Tracker, verás una línea aproximadamente horizontal — eso es MRU.
+- **Distancia recorrida:** $2\pi r = 2\pi \times 100 \approx 628\ \text{m}$
+- **Desplazamiento:** $0\ \text{m}$ (volvió al punto de partida)
+- **Velocidad media:** $0\ \text{m/s}$ (desplazamiento / tiempo = 0)
+- **Rapidez media:** $\frac{628\ \text{m}}{t}$ (depende del tiempo)
 
-> **Para pensar:** ¿En qué parte de una carrera de 40 m es más probable ver MRU? ¿Al inicio, en el medio o al final?
+---
+
+## Actividad con Tracker
+
+1. Filmá un objeto moviéndose a velocidad aproximadamente constante (por ejemplo, un carrito rodando en una superficie plana).
+2. Marcá la posición cuadro a cuadro.
+3. Graficá $x(t)$ — si es una recta, el movimiento es MRU.
+4. Calculá la pendiente → es la velocidad.
+5. Compará con $v = \Delta x / t$ medido directamente.
 
 ---
 
 ## Ejercicios
 
-1. Un tren viaja a velocidad constante de 25 m/s. ¿Cuánto tiempo tarda en recorrer 5 km?
-
-2. Un auto parte de $x_0 = 0$ con $v = 15$ m/s. Calculá su posición a los 0, 2, 4, 6 y 8 s. Graficá $x(t)$.
-
-3. Del gráfico $x(t)$ de un objeto, la pendiente es $-3$ m/s. ¿Qué podés decir sobre su movimiento?
-
-4. Dos ciclistas parten del mismo punto al mismo tiempo. El primero va a 6 m/s y el segundo a 10 m/s en la misma dirección. ¿A qué distancia están entre sí a los 30 s?
-
-5. En el análisis con Tracker de una carrera de 40 m, obtenés los siguientes datos:
-
-| $t$ (s) | $x$ (m) |
-|---|---|
-| 0 | 0 |
-| 1 | 5,8 |
-| 2 | 11,7 |
-| 3 | 17,5 |
-| 4 | 23,3 |
-| 5 | 29,1 |
-| 6 | 34,9 |
-
-Graficá $x(t)$, calculá la pendiente y determiná la velocidad media del corredor.
+1. Una ciclista sale de $x_0 = 0$ a velocidad constante. A los 3 min está a 720 m. Calculá su velocidad en m/s y km/h.
+2. ¿Cuánto tiempo tardará en recorrer 2 km?
+3. Esbozá el gráfico $x(t)$ entre $t = 0$ y $t = 8\ \text{min}$ y el gráfico $v(t)$ correspondiente.
 
 ---
 
-*Adaptado de [Bigler, J. — Class Notes for Physics 1: Mechanics in Plain English](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf) (CC BY-NC-SA 4.0). Traducción, adaptación al Diseño Curricular DGCyE e integración pedagógica con actividades de campo con Tracker: Prof. Ing. Luciano Lamaita, 2026.*
+*Adaptado de [Jeff Bigler — Physics 1: Mechanics in Plain English](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf), licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Traducción y adaptación al Diseño Curricular DGCyE: Prof. Ing. Luciano Lamaita, 2026.*

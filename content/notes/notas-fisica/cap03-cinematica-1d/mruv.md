@@ -1,176 +1,201 @@
 +++
 title = "Movimiento Rectilíneo Uniformemente Variado (MRUV)"
-date = "2026-06-25"
+date = "2026-06-26"
 draft = false
 math = true
-weight = 3
-description = "Aceleración constante, ecuaciones de movimiento y resolución de problemas."
+weight = 6
+description = "Aceleración constante, ecuaciones de movimiento, tabla de resolución y ejemplos completos."
+tags = ["cap03", "cinemática", "MRUV", "aceleración constante", "ecuaciones de movimiento", "gráficos"]
 +++
 
 ## Objetivos de aprendizaje
 
 Al finalizar esta sección, vas a poder:
 
-- Definir aceleración y calcularla a partir de velocidades inicial, final y tiempo.
-- Reconocer la diferencia entre velocidad constante (MRU) y aceleración constante (MRUV).
-- Aplicar las ecuaciones de movimiento para resolver problemas en una dimensión.
-- Identificar situaciones de caída libre como caso particular del MRUV.
+- Reconocer el MRUV y sus condiciones.
+- Derivar y aplicar las cuatro ecuaciones de movimiento.
+- Elegir la ecuación correcta según las variables disponibles.
+- Resolver problemas usando el método GUESS con tabla de variables.
+- Interpretar gráficos $x(t)$ y $v(t)$ para el MRUV.
 
 ---
 
-## ¿Qué es la aceleración?
+## Definición
 
-En el MRU la velocidad no cambia. En el **MRUV**, la velocidad cambia, y lo hace a una **tasa constante**: esa tasa es la **aceleración**.
-
-$$a = \frac{\Delta v}{t} = \frac{v - v_0}{t}$$
-
-| Símbolo | Cantidad | Unidad SI |
-|---------|----------|-----------|
-| $v_0$ | velocidad inicial | m/s |
-| $v$ | velocidad final | m/s |
-| $a$ | aceleración | m/s² |
-| $t$ | tiempo | s |
-| $d$ | desplazamiento | m |
-
-> **Cómo leer m/s²:** "metros por segundo, por segundo". Si $a = 5\ \text{m/s}^2$, la velocidad aumenta $5\ \text{m/s}$ cada segundo.
-
-### Aceleración: signo y dirección
-
-La aceleración es un **vector**. Su signo indica si la velocidad está aumentando o disminuyendo en la dirección positiva elegida.
-
-- $a > 0$: la velocidad se vuelve más positiva (objeto acelerando en dirección positiva, o frenando en dirección negativa).
-- $a < 0$: la velocidad se vuelve más negativa (objeto frenando en dirección positiva, o acelerando en dirección negativa).
-
-> **Importante:** en Física no usamos la palabra "desaceleración". Un objeto que frena tiene aceleración negativa (si va en dirección positiva). La aceleración siempre se describe con su signo.
-
-### Ejemplo
-
-Un auto parte de $v_0 = +15\ \text{m/s}$ y llega a $v = +40\ \text{m/s}$ en $t = 5\ \text{s}$.
-
-$$a = \frac{v - v_0}{t} = \frac{40 - 15}{5} = \frac{25}{5} = +5\ \text{m/s}^2$$
-
-La velocidad en cada segundo sería:
-
-| $t$ (s) | 0 | 1 | 2 | 3 | 4 | 5 |
-|---------|---|---|---|---|---|---|
-| $v$ (m/s) | +15 | +20 | +25 | +30 | +35 | +40 |
+El **Movimiento Rectilíneo Uniformemente Variado (MRUV)** es el movimiento de un objeto que se desplaza en línea recta con **aceleración constante** ($a = \text{cte} \neq 0$).
 
 ---
 
-## Las ecuaciones de movimiento
+## Derivación de las ecuaciones de movimiento
 
-Para un objeto con **aceleración constante**, existen cuatro ecuaciones que relacionan posición, velocidad, aceleración y tiempo. Solo hace falta saber tres de las cinco variables ($v_0$, $v$, $a$, $t$, $d$) para encontrar las otras dos.
+### Punto de partida
 
-### Derivación (cómo se obtienen)
+La velocidad media es:
 
-Partimos de la definición de velocidad media y aceleración:
+$$v_{med} = \frac{\Delta x}{t} \implies \Delta x = v_{med} \cdot t$$
 
-$$v_{med} = \frac{d}{t} \qquad a = \frac{v - v_0}{t}$$
-
-Con aceleración constante, la velocidad media es el promedio de la inicial y la final:
+Con aceleración constante, la velocidad media es el promedio de inicial y final:
 
 $$v_{med} = \frac{v_0 + v}{2}$$
 
-Combinando estas relaciones se obtienen las cuatro ecuaciones:
+La aceleración es:
 
-### Tabla de ecuaciones
+$$a = \frac{v - v_0}{t} \implies v - v_0 = at$$
 
-| Ecuación | Forma | Variables (falta) |
-|----------|-------|-------------------|
-| Velocidad media | $\dfrac{d}{t} = \dfrac{v_0 + v}{2}$ | $a$ |
-| Definición de $a$ | $v - v_0 = at$ | $d$ |
-| Posición con $a$ | $d = v_0 t + \tfrac{1}{2}at^2$ | $v$ |
-| Sin tiempo | $v^2 - v_0^2 = 2ad$ | $t$ |
+### Las cuatro ecuaciones
 
-### ¿Cómo elegir la ecuación?
+Combinando estas relaciones se obtienen las cuatro ecuaciones de Newton:
 
-Hacé una tabla con lo que **sabés** y lo que **buscás**. Elegí la ecuación que contenga la incógnita y en la que todas las demás variables sean conocidas.
+$$\boxed{\frac{\Delta x}{t} = \frac{v_0 + v}{2}} \qquad \text{(sin } a\text{)}$$
 
-> Casos especiales:
-> - "parte del reposo" → $v_0 = 0$
-> - "se detiene" → $v = 0$
-> - "velocidad constante" → $a = 0$
-> - "caída libre" → $a = g \approx 10\ \text{m/s}^2$ hacia abajo
+$$\boxed{v = v_0 + at} \qquad \text{(sin } \Delta x\text{)}$$
+
+$$\boxed{\Delta x = v_0 t + \tfrac{1}{2}at^2} \qquad \text{(sin } v\text{)}$$
+
+$$\boxed{v^2 - v_0^2 = 2a \Delta x} \qquad \text{(sin } t\text{)}$$
+
+### Resumen
+
+| Ecuación | Variable ausente |
+|----------|-----------------|
+| $\dfrac{\Delta x}{t} = \dfrac{v_0 + v}{2}$ | $a$ |
+| $v = v_0 + at$ | $\Delta x$ |
+| $\Delta x = v_0 t + \tfrac{1}{2}at^2$ | $v$ |
+| $v^2 - v_0^2 = 2a \Delta x$ | $t$ |
 
 ---
 
-## Caída libre
+## Cómo elegir la ecuación — tabla de variables
 
-La **caída libre** es el caso particular del MRUV en que la aceleración es la gravedad terrestre:
+Para cada problema, hacé una tabla con dirección y valor de cada variable:
 
-$$g \approx 9{,}8\ \text{m/s}^2 \approx 10\ \text{m/s}^2 \text{ (valor de trabajo)}$$
+| Variable | Dirección | Valor |
+|----------|-----------|-------|
+| $\Delta x$ | ↑ o ↓ | ? o dado |
+| $v_0$ | ↑ o ↓ | ? o dado |
+| $v$ | ↑ o ↓ | ? o dado |
+| $a$ | ↑ o ↓ | ? o dado |
+| $t$ | N/A | ? o dado |
 
-La gravedad siempre actúa **hacia abajo**. Si elegimos el positivo hacia arriba, entonces $a = -10\ \text{m/s}^2$.
+Elegís la ecuación que contiene la incógnita y en la que todas las demás variables son conocidas.
 
-### Situaciones típicas
+### Condiciones especiales
 
-| Situación | Condición inicial | Condición final / clave |
-|-----------|------------------|------------------------|
-| Caída desde el reposo | $v_0 = 0$ | $a = g$ hacia abajo |
-| Lanzamiento vertical hacia arriba | $v_0 > 0$ (hacia arriba) | En el punto más alto: $v = 0$ |
-| Sube y vuelve al punto inicial | $d = 0$ | $\|v\| = \|v_0\|$, dirección opuesta |
+| Situación en el enunciado | Condición |
+|--------------------------|-----------|
+| "parte del reposo" | $v_0 = 0$ |
+| "se detiene" | $v = 0$ |
+| "velocidad constante" | $a = 0$ |
+| "caída libre" | $a = g \approx 10\ \text{m/s}^2$ hacia abajo |
+| "altura máxima" | $v = 0$ en ese instante |
 
-> **Aclaración:** un objeto que baja por una rampa no está en caída libre, aunque la gravedad sea la causa del movimiento. La rampa restringe su trayectoria.
+---
+
+## Representación con vectores positivos y negativos
+
+Las variables de posición, velocidad y aceleración son **vectores** — en 1D su signo indica dirección:
+
+- **Posición:** positiva si está del lado positivo del origen.
+- **Velocidad:** positiva si se mueve en la dirección positiva.
+- **Aceleración:** positiva si la velocidad "tiende hacia positivo" (aumenta en dirección positiva o disminuye en dirección negativa).
+
+Un objeto puede tener velocidad positiva y aceleración negativa al mismo tiempo (está frenando). Un objeto puede tener velocidad cero y aún estar acelerando.
+
+---
+
+## Gráficos del MRUV
+
+**Gráfico $x(t)$:** parábola
+
+- Cóncava hacia arriba → $a > 0$ (velocidad creciente en dirección positiva)
+- Cóncava hacia abajo → $a < 0$
+
+**Gráfico $v(t)$:** recta inclinada
+
+- Pendiente = aceleración $a$
+- Área bajo la curva = desplazamiento $\Delta x$
+
+> 📷 *Imagen: gráfico v(t) con área triangular y cálculo de desplazamiento — Bigler pág. 220 (capturar)*
 
 ---
 
 ## Ejemplos resueltos
 
-### Ejemplo 1 — Frenada
+### Ejemplo 1 — Gato saltando (caída libre)
 
-Un auto viaja a $v_0 = 30\ \text{m/s}$ y frena uniformemente hasta detenerse en $t = 6\ \text{s}$.
-¿Cuánto espacio recorre hasta detenerse?
+Un gato salta desde una heladera de 1,8 m. ¿Con qué velocidad llega al suelo?
 
-**Datos:** $v_0 = 30\ \text{m/s}$, $v = 0$, $t = 6\ \text{s}$, busco $d$.
+**Tabla** (positivo = hacia abajo):
 
-Uso $\dfrac{d}{t} = \dfrac{v_0 + v}{2}$:
+| Variable | Dir | Valor |
+|----------|-----|-------|
+| $\Delta x$ | ↓ | $+1{,}8\ \text{m}$ |
+| $v_0$ | — | $0$ |
+| $v$ | ↓ | $?$ |
+| $a = g$ | ↓ | $+10\ \text{m/s}^2$ |
+| $t$ | — | N/A |
 
-$$d = t \cdot \frac{v_0 + v}{2} = 6 \cdot \frac{30 + 0}{2} = 6 \cdot 15 = 90\ \text{m}$$
+Uso $v^2 - v_0^2 = 2a\Delta x$:
 
----
-
-### Ejemplo 2 — Caída libre
-
-Un gato salta desde una heladera de $1{,}8\ \text{m}$ de altura. ¿Con qué velocidad llega al suelo?
-
-**Datos:** $d = 1{,}8\ \text{m}$, $v_0 = 0$, $a = g = +10\ \text{m/s}^2$ (abajo = positivo), busco $v$.
-
-Uso $v^2 - v_0^2 = 2ad$:
-
-$$v^2 = 2 \cdot 10 \cdot 1{,}8 = 36 \implies v = 6\ \text{m/s}$$
+$$v^2 = 2 \times 10 \times 1{,}8 = 36 \implies v = 6\ \text{m/s}$$
 
 ---
 
-### Ejemplo 3 — Lanzamiento hacia arriba
+### Ejemplo 2 — Manzana lanzada hacia arriba
 
-Se lanza una pelota hacia arriba con $v_0 = 15\ \text{m/s}$. ¿A qué altura máxima llega?
+Una manzana es lanzada hacia arriba con $v_0 = 8\ \text{m/s}$. Cae al mismo punto de lanzamiento. ¿Cuánto tiempo estuvo en el aire?
 
-**Datos:** $v_0 = +15\ \text{m/s}$ (positivo = arriba), $v = 0$ (máxima altura), $a = -10\ \text{m/s}^2$, busco $d$.
+**Tabla** (positivo = hacia arriba):
 
-$$d = \frac{v^2 - v_0^2}{2a} = \frac{0 - 225}{2 \cdot (-10)} = \frac{-225}{-20} = 11{,}25\ \text{m}$$
+| Variable | Dir | Valor |
+|----------|-----|-------|
+| $\Delta x$ | — | $0$ |
+| $v_0$ | ↑ | $+8\ \text{m/s}$ |
+| $a$ | ↓ | $-10\ \text{m/s}^2$ |
+| $t$ | — | $?$ |
+
+Uso $\Delta x = v_0 t + \tfrac{1}{2}at^2$:
+
+$$0 = 8t - 5t^2 = t(8 - 5t)$$
+
+Soluciones: $t = 0$ (instante inicial) y $t = \frac{8}{5} = 1{,}6\ \text{s}$ ✓
 
 ---
 
-## Actividad de campo — Carrera en el patio
+### Ejemplo 3 — Auto con freno paracaídas
 
-Usarás la app **Tracker** para filmar a un compañero corriendo desde el reposo y medir la aceleración.
+Un auto de carreras va a $80\ \text{m/s}$ cuando abre un paracaídas que le produce una desaceleración de $4\ \text{m/s}^2$. ¿Cuántos metros recorre hasta detenerse?
 
-1. Filmá a alguien saliendo desde el reposo y acelerando 10–15 metros.
-2. Cargá el video en Tracker y marcá la posición en cada cuadro.
-3. Graficá $v(t)$: si el movimiento es MRUV, el gráfico debe ser una **recta con pendiente** $a$.
-4. Calculá la aceleración media desde la pendiente.
-5. Compará con el valor obtenido de las ecuaciones usando $v_0$, $v$ final y $t$.
+**Tabla** (positivo = dirección del movimiento):
 
-> **Pregunta guía:** ¿es la aceleración de una persona al saltar desde el reposo constante durante toda la carrera, o solo en algún tramo?
+| Variable | Valor |
+|----------|-------|
+| $v_0$ | $+80\ \text{m/s}$ |
+| $v$ | $0$ |
+| $a$ | $-4\ \text{m/s}^2$ |
+| $\Delta x$ | $?$ |
+
+Uso $v^2 - v_0^2 = 2a\Delta x$:
+
+$$0 - 6400 = 2(-4)\Delta x \implies \Delta x = \frac{6400}{8} = 800\ \text{m}$$
+
+---
+
+## Actividad con Tracker
+
+1. Filmá un objeto que acelera (pelota rodando por una rampa, carrito con peso colgante).
+2. Graficá $x(t)$ — debe ser una parábola.
+3. Graficá $x$ vs. $t^2$ — si el movimiento es MRUV desde el reposo, debe ser una **recta** con pendiente $a/2$.
+4. Calculá $a = 2 \times \text{pendiente}$ y compará con el valor esperado.
 
 ---
 
 ## Para pensar
 
-1. Un objeto tiene velocidad positiva y aceleración negativa. ¿Está acelerando o frenando? ¿Puede cambiar de dirección?
-2. En el punto más alto de un lanzamiento vertical, $v = 0$. ¿La aceleración también es cero en ese instante? ¿Por qué?
-3. Dos objetos se dejan caer desde la misma altura: uno pesa 1 kg y el otro 10 kg. ¿Cuál llega primero al suelo?
+1. Un objeto tiene $v_0 > 0$ y $a < 0$. ¿Qué pasa con su velocidad? ¿En qué momento cambia de dirección?
+2. Dos objetos salen del reposo con la misma aceleración pero desde posiciones distintas. ¿Tienen la misma velocidad después de 5 s? ¿Y la misma posición?
+3. En el gráfico $v(t)$ de un MRUV, ¿qué significa que la recta cruce el eje horizontal?
 
 ---
 
-*Adaptado de [Jeff Bigler — Physics 1: Mechanics in Plain English](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf), licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Traducción y adaptación al Diseño Curricular DGCyE: Prof. Ing. Luciano Lamaita.*
+*Adaptado de [Jeff Bigler — Physics 1: Mechanics in Plain English](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf), licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Traducción y adaptación al Diseño Curricular DGCyE: Prof. Ing. Luciano Lamaita, 2026.*

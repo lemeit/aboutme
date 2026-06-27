@@ -3,135 +3,142 @@ title = "Caída Libre"
 date = "2026-06-26"
 draft = false
 math = true
-weight = 4
-description = "La gravedad como aceleración constante. Caída, lanzamiento vertical y punto más alto."
-tags = ["U2", "Cinemática", "caída libre", "gravedad", "lanzamiento vertical", "MRUV"]
+weight = 7
+description = "MRUV con a = g. Caída desde el reposo, lanzamiento vertical y punto más alto."
+tags = ["cap03", "cinemática", "caída libre", "gravedad", "lanzamiento vertical", "MRUV"]
 +++
 
 ## Objetivos de aprendizaje
 
 Al finalizar esta sección, vas a poder:
 
-- Reconocer la caída libre como un caso particular del MRUV con $a = g$.
-- Aplicar las ecuaciones de movimiento a problemas de caída y lanzamiento vertical.
-- Identificar las condiciones especiales: punto más alto, sube y vuelve, caída desde el reposo.
+- Reconocer la caída libre como MRUV con $a = g$.
+- Aplicar la tabla de variables y las ecuaciones de movimiento a problemas de caída libre.
+- Analizar los tres casos típicos: caída desde el reposo, lanzamiento hacia arriba, y sube y vuelve.
 
 ---
 
-## ¿Qué es la caída libre?
+## Definición
 
-**Caída libre** es el movimiento de un objeto que acelera hacia el centro de la Tierra bajo el efecto de la gravedad, cuando los efectos de otras fuerzas (como el aire) son despreciables.
+La **caída libre** es el movimiento de un objeto que acelera libremente hacia el centro de la Tierra por efecto de la gravedad, cuando los efectos de otras fuerzas (fricción del aire) son despreciables.
 
-$$g \approx 9{,}8\ \text{m/s}^2 \approx 10\ \text{m/s}^2 \quad \text{(valor de trabajo)}$$
+$$g \approx 9{,}806\ \text{m/s}^2 \approx 10\ \text{m/s}^2 \quad \text{(valor de trabajo)}$$
 
-> **Importante:** un objeto que baja por una rampa **no** está en caída libre, aunque la gravedad sea la causa del movimiento. La rampa limita su trayectoria y el objeto no cae libremente.
+Cuando un objeto está en caída libre, reemplazamos $a$ por $g$ en las ecuaciones.
 
-### ¿Por qué todos los objetos caen igual?
-
-Galileo demostró —supuestamente desde la Torre de Pisa— que objetos de distinta masa caen con la misma aceleración. Esto vale **siempre que el aire sea despreciable**. En presencia de aire, una pluma cae más lento que una moneda porque la resistencia aerodinámica es comparativamente mayor para la pluma.
+> **Importante:** un objeto sobre una rampa **no está en caída libre**, aunque la gravedad sea la causa del movimiento — la rampa restringe su trayectoria.
 
 ---
 
 ## La gravedad es un vector
 
-Al ser un vector, $g$ puede ser positiva o negativa según el sistema de referencia elegido. La convención más común:
+El signo de $g$ depende de la dirección positiva elegida:
 
 | Convención | $g$ | Cuándo usarla |
 |-----------|-----|---------------|
-| Positivo hacia abajo | $+10\ \text{m/s}^2$ | Solo hay caída (sin lanzamiento hacia arriba) |
+| Positivo hacia abajo | $+10\ \text{m/s}^2$ | Caída desde el reposo sin lanzamiento hacia arriba |
 | Positivo hacia arriba | $-10\ \text{m/s}^2$ | Lanzamientos verticales hacia arriba |
 
-> **Regla práctica:** elegí el positivo en la dirección del movimiento inicial. Si el objeto cae desde el reposo, positivo hacia abajo es más cómodo.
+---
+
+## Estrategia para resolver problemas de caída libre
+
+1. Elegí la dirección positiva.
+2. Completá la tabla de variables con dirección y valor.
+3. Identificá la ecuación que tiene la incógnita y todas las demás variables conocidas.
+4. Despejá y sustituí.
+
+### Tabla tipo para caída libre
+
+| Variable | Dir. | Valor |
+|----------|------|-------|
+| $\Delta x$ | | |
+| $v_0$ | | |
+| $v$ | | |
+| $a = g$ | | $\pm 10\ \text{m/s}^2$ |
+| $t$ | N/A | |
 
 ---
 
-## Ecuaciones — igual que el MRUV, con $a = g$
-
-| Ecuación | Uso |
-|----------|-----|
-| $v = v_0 + g\,t$ | velocidad en cualquier instante |
-| $x = x_0 + v_0\,t + \tfrac{1}{2}g\,t^2$ | posición en cualquier instante |
-| $v^2 = v_0^2 + 2g\,\Delta x$ | velocidad final sin usar $t$ |
-
----
-
-## Situaciones típicas
+## Tres situaciones típicas
 
 ### 1. Caída desde el reposo
 
-El objeto parte con $v_0 = 0$ desde una altura $h$. Positivo hacia abajo.
+$v_0 = 0$, positivo hacia abajo.
 
-$$x = \tfrac{1}{2}g\,t^2 \qquad v = g\,t$$
+**Ejemplo:** una piedra se deja caer desde 5 m. ¿Cuánto tarda en llegar al suelo?
 
-**Ejemplo:** ¿Cuánto tarda en caer una piedra desde 20 m?
+| Variable | Dir. | Valor |
+|----------|------|-------|
+| $\Delta x$ | ↓ | $+5\ \text{m}$ |
+| $v_0$ | — | $0$ |
+| $a = g$ | ↓ | $+10\ \text{m/s}^2$ |
+| $t$ | — | $?$ |
 
-$$20 = \tfrac{1}{2} \cdot 10 \cdot t^2 \implies t^2 = 4 \implies t = 2\ \text{s}$$
-
-Velocidad al llegar: $v = 10 \times 2 = 20\ \text{m/s}$
+$$\Delta x = \tfrac{1}{2}g t^2 \implies t = \sqrt{\frac{2\Delta x}{g}} = \sqrt{\frac{2 \times 5}{10}} = \sqrt{1} = 1\ \text{s}$$
 
 ---
 
 ### 2. Lanzamiento vertical hacia arriba
 
-El objeto sube, se detiene un instante y vuelve a caer. Positivo hacia arriba → $g = -10\ \text{m/s}^2$.
+$v_0 > 0$ (hacia arriba), $a = -g$ (hacia abajo). Positivo hacia arriba.
 
-**Condición clave — punto más alto:**
+**Condición clave en el punto más alto:** $v = 0$ (se detiene un instante).
 
-$$v = 0 \quad \text{(se detiene un instante)}$$
+> ¿La aceleración en el punto más alto es cero? **No.** La gravedad sigue actuando: $a = -g = -10\ \text{m/s}^2$. La velocidad es cero por un instante, pero la aceleración nunca lo es durante el vuelo.
 
-> ¿La aceleración en el punto más alto es cero? **No.** La gravedad sigue actuando: $a = g = -10\ \text{m/s}^2$. La velocidad es cero por un instante, pero la aceleración no lo es nunca durante el vuelo.
+**Altura máxima:**
 
-**Altura máxima** (partiendo de $x_0 = 0$):
+$$v^2 - v_0^2 = 2a\Delta x \quad \text{con } v = 0:$$
+$$\Delta x_{max} = \frac{-v_0^2}{2a} = \frac{v_0^2}{2g}$$
 
-$$v^2 = v_0^2 - 2g\,h_{max} \implies h_{max} = \frac{v_0^2}{2g}$$
+**Ejemplo (Bigler):** se lanza una manzana hacia arriba con $v_0 = 8\ \text{m/s}$. ¿A qué altura llega?
+
+$$\Delta x_{max} = \frac{8^2}{2 \times 10} = \frac{64}{20} = 3{,}2\ \text{m}$$
 
 ---
 
 ### 3. Sube y vuelve al mismo punto
 
-Si el objeto regresa a la misma altura desde donde fue lanzado:
+Si el objeto regresa a la misma altura de lanzamiento:
 
-- El desplazamiento total es $\Delta x = 0$
-- El tiempo de subida **es igual** al tiempo de bajada
-- La rapidez al llegar es **igual** a la rapidez inicial: $|v| = |v_0|$, pero en dirección contraria
+| Propiedad | Valor |
+|-----------|-------|
+| Desplazamiento total | $\Delta x = 0$ |
+| Tiempo de subida | = tiempo de bajada |
+| Velocidad final | $\|v\| = \|v_0\|$, dirección opuesta |
 
----
+**Ejemplo (Bigler):** la manzana es lanzada con $v_0 = +8\ \text{m/s}$ y vuelve al mismo punto. ¿Cuánto tiempo estuvo en el aire?
 
-## Ejemplos resueltos
+$$0 = v_0 t + \tfrac{1}{2}at^2 = t\left(v_0 + \tfrac{1}{2}at\right)$$
 
-### Ejemplo 1 — Caída
-
-Un gato salta desde una heladera de $1{,}8\ \text{m}$ de altura. ¿Con qué velocidad llega al suelo? (Positivo hacia abajo, $v_0 = 0$)
-
-$$v^2 = 2 \cdot 10 \cdot 1{,}8 = 36 \implies v = 6\ \text{m/s}$$
+$$t = 0 \quad \text{(instante de lanzamiento)} \quad \text{o} \quad t = \frac{-2v_0}{a} = \frac{-2 \times 8}{-10} = 1{,}6\ \text{s}$$
 
 ---
 
-### Ejemplo 2 — Lanzamiento hacia arriba
+## Más ejemplos resueltos
 
-Se lanza una manzana hacia arriba con $v_0 = 8\ \text{m/s}$. La manzana vuelve a caer al mismo punto. ¿Cuánto tiempo estuvo en el aire? (Positivo hacia arriba, $g = -10\ \text{m/s}^2$, $\Delta x = 0$)
+### Pelota disparada hacia arriba con $v_0 = 30\ \text{m/s}$ (Bigler)
 
-$$0 = v_0\,t - \tfrac{1}{2}g\,t^2 = t\left(v_0 - \tfrac{1}{2}g\,t\right)$$
+**a) Altura máxima:**
 
-La solución $t = 0$ es el instante inicial. La otra:
+$$\Delta x_{max} = \frac{v_0^2}{2g} = \frac{900}{20} = 45\ \text{m}$$
 
-$$t = \frac{2\,v_0}{g} = \frac{2 \times 8}{10} = 1{,}6\ \text{s}$$
+**b) Tiempo total de vuelo:**
 
----
+$$t_{total} = \frac{2v_0}{g} = \frac{2 \times 30}{10} = 6{,}0\ \text{s}$$
 
-### Ejemplo 3 — Altura máxima
+### Torre de 125 m — ¿cuántos segundos cae? (Bigler)
 
-¿A qué altura llegó la manzana del ejemplo anterior?
-
-$$h_{max} = \frac{v_0^2}{2g} = \frac{64}{20} = 3{,}2\ \text{m}$$
+$$\Delta x = \tfrac{1}{2}g t^2 \implies t = \sqrt{\frac{2 \times 125}{10}} = \sqrt{25} = 5{,}0\ \text{s}$$
 
 ---
 
 ## Para pensar
 
-1. Se dejan caer simultáneamente una piedra de 1 kg y otra de 5 kg desde la misma altura. ¿Cuál llega primero? ¿Por qué?
-2. Si lanzás una pelota hacia arriba y la atrapás en el mismo punto, ¿la velocidad al atraparla es mayor, igual o menor que al lanzarla?
-3. Un objeto tiene $v = 0$ en un instante. ¿Eso significa que está en reposo? ¿Puede tener aceleración en ese instante?
+1. Se dejan caer simultáneamente una piedra de 1 kg y otra de 10 kg desde la misma altura. ¿Cuál llega primero? Justificá.
+2. Un objeto tiene $v = 0$ en un instante. ¿Eso significa que está en reposo? ¿Puede tener aceleración?
+3. ¿Por qué la caída libre es un MRUV? ¿Qué condición se asume?
 
 ---
 

@@ -1,4 +1,4 @@
-﻿+++
++++
 title = 'Capítulo 7 — Rotación'
 draft = false
 weight = 7

@@ -1,4 +1,4 @@
-﻿+++
++++
 title = 'Capítulo 9 — Energía, Trabajo y Potencia'
 draft = false
 weight = 9

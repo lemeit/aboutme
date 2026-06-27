@@ -1,4 +1,4 @@
-﻿+++
++++
 title = 'Capítulo 6 — Fuerzas en 2D'
 draft = false
 weight = 6

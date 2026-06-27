@@ -1,8 +1,8 @@
-﻿+++
++++
 title = 'Introducción a la Física — 4° año'
 draft = false
 weight = 1
-description = 'Diseño Curricular DGCyE · Ciclo Superior'
+description = 'Ciclo Superior'
 +++
 
 Materia compartida entre el **Colegio Madre Teresa** y el **Instituto Niño Jesús**.

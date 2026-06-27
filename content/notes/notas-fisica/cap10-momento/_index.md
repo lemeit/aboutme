@@ -1,4 +1,4 @@
-﻿+++
++++
 title = 'Capítulo 10 — Cantidad de Movimiento'
 draft = false
 weight = 10

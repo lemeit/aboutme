@@ -25,10 +25,10 @@ Reúne la traducción y adaptación al español de las notas de Jeff Bigler, apu
 content/
 ├── notes/
 │   ├── notas-fisica/               ← traducción completa de Bigler (Physics 1)
-│   │   ├── cap01-laboratorio/      ✅ completo (8 notas)
+│   │   ├── cap01-laboratorio/      ✅ completo (9 notas)
 │   │   ├── cap02-matematicas/      ✅ completo (6 notas)
-│   │   ├── cap03-cinematica-1d/    ✅ completo (9 notas)
-│   │   ├── cap04-cinematica-2d/    ✅ completo (5 notas)
+│   │   ├── cap03-cinematica-1d/    ✅ completo (10 notas)
+│   │   ├── cap04-cinematica-2d/    🔄 en progreso (1 nota)
 │   │   ├── cap05-fuerzas-1d/       ⬜ en preparación
 │   │   ├── cap06-fuerzas-2d/       ⬜
 │   │   ├── cap07-rotacion/         ⬜

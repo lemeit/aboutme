@@ -38,6 +38,7 @@ content/
 │   │   ├── cap11-mhs/              ⬜
 │   │   ├── cap12-fluidos/          ⬜
 │   │   └── cap13-relatividad/      ⬜
+│   ├── herramientas/               ← Herramientas digitales (Tracker, etc.)
 │   ├── fisica-4to/                 ← Introducción a la Física 4° año (en construcción)
 │   ├── fisica-5to/                 ← Física 5° año — INJ (en construcción)
 │   ├── fisica-6to/                 ← Física Clásica y Moderna 6° año — INJ (en construcción)

@@ -63,6 +63,9 @@ mainSections = []
     url = "/about/"
     weight = 3
 
+[frontmatter]
+  lastmod = [":git", "lastmod", ":fileModTime", "date"]
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

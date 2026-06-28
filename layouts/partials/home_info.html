@@ -17,7 +17,7 @@
 {{/* Últimas notas publicadas */}}
 {{- $notas := where site.RegularPages "Section" "notes" }}
 {{- $notas = where $notas "Draft" false }}
-{{- $notas = first 4 (sort $notas "Date" "desc") }}
+{{- $notas = first 4 (sort $notas "Lastmod" "desc") }}
 {{- if $notas }}
 <div style="margin-top:2.5rem;">
   <h2 style="font-size:1rem; font-weight:700; color:var(--secondary);

@@ -46,14 +46,13 @@ Si no hay fuerza neta → no hay cambio en el movimiento.
 
 **Inercia:** la resistencia de un objeto a cambiar su estado de movimiento. Es una propiedad de la masa — a mayor masa, mayor inercia. La inercia no es una fuerza.
 
-{{< figura src="/images/diagramas/cap05_fuerzas-1d_leyes-newton_pp281.png" alt="Wile E. Coyote corriendo sobre el vacío" caption="Imagen: Wile E. Coyote corriendo sobre el vacío — Bigler pág. 281" >}}
+{{< figura src="/images/diagramas/cap05_fuerzas-1d_leyes-newton_pp281.png" alt="Wile E. Coyote corriendo sobre el vacío" caption="Wile E. Coyote corriendo sobre el vacío — Bigler pág. 281" >}}
 
 ---
 
 ## Segunda Ley — F = ma
 
 > *"Una fuerza neta sobre un objeto produce una aceleración en la dirección de esa fuerza, proporcional a la fuerza e inversamente proporcional a la masa."*
-
 
 $$\vec{F}_{neta} = m\,\vec{a} \qquad \text{o bien} \qquad a = \frac{F_{neta}}{m}$$
 

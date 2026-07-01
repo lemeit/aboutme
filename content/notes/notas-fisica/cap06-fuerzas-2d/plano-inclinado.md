@@ -21,10 +21,11 @@ Al finalizar esta sección, vas a poder:
 ## El problema de la rampa
 
 Cuando un objeto está sobre una rampa con ángulo $\theta$, la fuerza normal **no se opone directamente** a la gravedad — es perpendicular a la superficie de la rampa.
-<center>
-![Diagrama de cuerpo libre — caja sobre mesa](/images/diagramas/cap06_fuerzas-2d_plano-inclinado_pp373.png)
-> 📷 *Imagen: diagrama de un bloque en una rampa con $F_g$, $F_N$ y $F_{neta}$ — Bigler pág. 373*
-</center>
+
+<div style="text-align: center;">
+  <img src="/images/diagramas/cap06_fuerzas-2d_plano-inclinado_pp373.png" alt="Diagrama de cuerpo libre — caja sobre mesa" />
+</div>
+
 ---
 
 ## Descomposición del peso en la rampa

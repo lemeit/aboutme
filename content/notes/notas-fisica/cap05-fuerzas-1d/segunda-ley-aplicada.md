@@ -41,6 +41,22 @@ a  →  a  ─────────────────────
 t  →  dato
 ```
 
+{{% guess-chart titulo1="Ecuaciones de movimiento" titulo2="Segunda Ley de Newton" conector="a" %}}
+| var | dir | value |
+|---|---|---|
+| d | → | ? |
+| v₀ | N/A | 0 |
+| v | → | dato |
+| a | → | a |
+| t | - | dato |
++++
+| var | dir | value |
+|---|---|---|
+| F_net | → | F_net |
+| m | N/A | m (dato) |
+| a | → | a |
+{{% /guess-chart %}}
+
 ---
 
 ## Ejemplos resueltos

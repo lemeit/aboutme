@@ -1,0 +1,61 @@
+{{ $conector := .Get "conector" }}
+{{ $titulo1 := .Get "titulo1" }}
+{{ $titulo2 := .Get "titulo2" }}
+{{ $partes := split .Inner "+++" }}
+{{ $tabla1 := index $partes 0 }}
+{{ $tabla2 := index $partes 1 }}
+
+<div class="guess-chart" style="position:relative; display:flex; flex-wrap:wrap; gap:2.5em; justify-content:center; margin:1.5em auto; background:var(--code-bg); padding:1.25em; border-radius:8px;">
+  <div style="flex:1 1 260px; min-width:220px;">
+    <div style="font-weight:bold; margin-bottom:.5em; text-align:center; color:var(--secondary);">{{ $titulo1 }}</div>
+    {{ $tabla1 | safeHTML }}
+  </div>
+  <div style="flex:1 1 260px; min-width:220px;">
+    <div style="font-weight:bold; margin-bottom:.5em; text-align:center; color:var(--secondary);">{{ $titulo2 }}</div>
+    {{ $tabla2 | safeHTML }}
+  </div>
+</div>
+
+<script>
+(function() {
+  var conector = {{ $conector }};
+  var container = document.currentScript.previousElementSibling;
+  if (!container) return;
+  var cells = container.querySelectorAll("td, th");
+  var matches = [];
+  cells.forEach(function(c) {
+    if (c.textContent.trim() === conector) matches.push(c);
+  });
+  matches.forEach(function(c) {
+    c.style.color = "var(--primary)";
+    c.style.fontWeight = "bold";
+  });
+  if (matches.length >= 2) {
+    var svgNS = "http://www.w3.org/2000/svg";
+    var svg = document.createElementNS(svgNS, "svg");
+    svg.style.position = "absolute";
+    svg.style.top = "0"; svg.style.left = "0";
+    svg.style.width = "100%"; svg.style.height = "100%";
+    svg.style.pointerEvents = "none";
+    container.appendChild(svg);
+
+    function draw() {
+      svg.innerHTML = "";
+      var rect0 = container.getBoundingClientRect();
+      var r1 = matches[0].getBoundingClientRect();
+      var r2 = matches[1].getBoundingClientRect();
+      var x1 = r1.right - rect0.left, y1 = r1.top + r1.height/2 - rect0.top;
+      var x2 = r2.left - rect0.left, y2 = r2.top + r2.height/2 - rect0.top;
+      var line = document.createElementNS(svgNS, "line");
+      line.setAttribute("x1", x1); line.setAttribute("y1", y1);
+      line.setAttribute("x2", x2); line.setAttribute("y2", y2);
+      line.setAttribute("stroke", "var(--primary)");
+      line.setAttribute("stroke-width", "2");
+      line.setAttribute("stroke-dasharray", "4,3");
+      svg.appendChild(line);
+    }
+    draw();
+    window.addEventListener("resize", draw);
+  }
+})();
+</script>

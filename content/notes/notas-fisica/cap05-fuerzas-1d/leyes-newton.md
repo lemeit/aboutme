@@ -58,7 +58,7 @@ Si no hay fuerza neta → no hay cambio en el movimiento.
 
 > *"Una fuerza neta sobre un objeto produce una aceleración en la dirección de esa fuerza, proporcional a la fuerza e inversamente proporcional a la masa."*
 
-$$\vec{F}_{\text{neta}} = m\vec{a} \qquad \text{o bien} \qquad a = \frac{F_{\text{neta}}}{m}$$
+$$\vec{F}_{neta} = m\,\vec{a} \qquad \text{o bien} \qquad a = \frac{F_{neta}}{m}$$
 
 Si hay fuerza neta → hay aceleración. Si hay aceleración → había fuerza neta.
 

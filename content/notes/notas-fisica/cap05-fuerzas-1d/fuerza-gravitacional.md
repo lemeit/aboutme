@@ -26,7 +26,7 @@ La fuerza gravitacional es una fuerza de atracción entre cualquier par de objet
 $$F_g = \frac{G\,m_1\,m_2}{r^2}$$
 
 donde:
-- $G = 6{,}67 \times 10^{-11}\ \text{N·m}^2/\text{kg}^2$ — constante gravitacional universal
+- $G = 6{,}67 \times 10^{-11}\ \text{N}\cdot\text{m}^2/\text{kg}^2$ — constante gravitacional universal
 - $m_1$, $m_2$ — masas de los dos objetos
 - $r$ — distancia entre sus centros de masa
 

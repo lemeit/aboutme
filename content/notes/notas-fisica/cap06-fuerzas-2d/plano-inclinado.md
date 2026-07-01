@@ -22,7 +22,7 @@ Al finalizar esta sección, vas a poder:
 
 Cuando un objeto está sobre una rampa con ángulo $\theta$, la fuerza normal **no se opone directamente** a la gravedad — es perpendicular a la superficie de la rampa.
 
-{{< figura src="/images/diagramas/cap06_fuerzas-2d_plano-inclinado_pp373.png" alt="Diagrama de un bloque en una rampa con $F_g$, $F_N$ y $F_{neta}$ — Bigler pág. 373" >}}
+{{< figura src="/images/diagramas/cap06_fuerzas-2d_plano-inclinado_pp373.png" alt="Diagrama de un bloque en una rampa con fuerza gravitacional, normal y neta" caption="Diagrama de un bloque en una rampa con $F_g$, $F_N$ y $F_{neta}$ — Bigler pág. 373" >}}
 
 
 ---

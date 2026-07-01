@@ -46,7 +46,7 @@ Si no hay fuerza neta → no hay cambio en el movimiento.
 
 **Inercia:** la resistencia de un objeto a cambiar su estado de movimiento. Es una propiedad de la masa — a mayor masa, mayor inercia. La inercia no es una fuerza.
 
-{{< figura src="/images/diagramas/cap05_fuerzas-1d_leyes-newton_pp28  1.png" alt="Wile E. Coyote corriendo sobre el vacío" caption="Wile E. Coyote corriendo sobre el vacío (Bigler pág. 281)" >}}
+{{< figura src="/images/diagramas/cap05_fuerzas-1d_leyes-newton_pp281.png" alt="Wile E. Coyote corriendo sobre el vacío" caption="Wile E. Coyote corriendo sobre el vacío (Bigler pág. 281)" >}}
 
 ---
 

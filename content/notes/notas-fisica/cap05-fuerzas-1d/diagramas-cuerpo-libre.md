@@ -26,7 +26,7 @@ Un **diagrama de cuerpo libre (DCL)** es un esquema que representa todas las fue
 - Cada fuerza es una **flecha** que parte del punto, en la dirección exacta de la fuerza.
 - El largo relativo de las flechas indica la magnitud relativa de las fuerzas.
 
-> 📷 *Imagen: DCL de una caja en una rampa con $F_g$, $F_N$ y $F_f$ — Bigler pág. 305 (capturar)*
+{{< figura src="/images/diagramas/cap05_fuerzas-1d_diagramas-cuerpo-libre_pp305.png" alt="DCL de una caja en una rampa con $F_g$, $F_N$ y $F_f$" caption="DCL de una caja en una rampa con $F_g$, $F_N$ y $F_f$ (Bigler pág. 305)" >}}
 
 ---
 

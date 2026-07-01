@@ -94,7 +94,7 @@ Fuerzas: $\vec{F}_g$ (↓), $\vec{F}_N$ (↑), $\vec{F}_b$ (↑).
 
 Como no hay aceleración: $F_N + F_b = F_g$.
 
-> 📷 *Imagen: DCL correcto e incorrectos de una piedra en el fondo de una pileta — Bigler pág. 307 (capturar)*
+{{< figura src="/images/diagramas/cap05_fuerzas-1d_diagramas-cuerpo-libre_pp307.png" alt="DCL correctos e incorrectos de una piedra en el fondo de una pileta" caption="DCL correctos e incorrectos de una piedra en el fondo de una pileta (Bigler pág. 307)" >}}
 
 ---
 

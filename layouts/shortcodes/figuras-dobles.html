@@ -1,0 +1,17 @@
+<div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1.5em; margin:1.5em auto;">
+  <figure style="text-align:center; margin:0; flex:1 1 280px; max-width:45%;">
+    <img src="{{ .Get "src1" }}" alt="{{ .Get "alt1" }}" style="max-width:100%; display:block; margin:0 auto;">
+    {{ with .Get "caption1" }}
+    <figcaption style="font-size:.85em; color:var(--secondary); margin-top:.5em; text-align:center; font-weight:normal; font-style:italic;">{{ . }}</figcaption>
+    {{ end }}
+  </figure>
+  <figure style="text-align:center; margin:0; flex:1 1 280px; max-width:45%;">
+    <img src="{{ .Get "src2" }}" alt="{{ .Get "alt2" }}" style="max-width:100%; display:block; margin:0 auto;">
+    {{ with .Get "caption2" }}
+    <figcaption style="font-size:.85em; color:var(--secondary); margin-top:.5em; text-align:center; font-weight:normal; font-style:italic;">{{ . }}</figcaption>
+    {{ end }}
+  </figure>
+</div>
+{{ with .Get "caption" }}
+<p style="font-size:.85em; color:var(--secondary); margin-top:.5em; text-align:center; font-style:italic;">{{ . }}</p>
+{{ end }}

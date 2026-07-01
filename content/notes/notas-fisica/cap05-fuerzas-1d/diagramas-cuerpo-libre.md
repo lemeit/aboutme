@@ -63,7 +63,16 @@ Un **diagrama de cuerpo libre (DCL)** es un esquema que representa todas las fue
 | Incluir la velocidad como si fuera una fuerza | La velocidad **no es** una fuerza y no aparece en el DCL |
 | Omitir la fuerza normal | Si hay superficie → hay normal |
 
-> 📷 *Imagen: DCL de una caja acelerada por cuerda con $F_g$, $F_N$, $F_T$, $F_f$ — Bigler pág. 306 (capturar)*
+
+{{< figuras-dobles 
+    src1="/images/diagramas/cap05_fuerzas-1d_diagramas-cuerpo-libre_pp306_a.png" 
+    alt1="Diagrama de cuerpo libre — caso a" 
+    caption1="(Caja acelerada hacia la derecha)"
+    src2="/images/diagramas/cap05_fuerzas-1d_diagramas-cuerpo-libre_pp306_b.png" 
+    alt2="Diagrama de cuerpo libre — caso b" 
+    caption2="(DCL de la caja)"
+    caption="DCL de una caja acelerada por una cuerda con $F_g$, $F_N$, $F_T$, $F_f$ (Bigler pág. 306)"
+>}}
 
 ---
 

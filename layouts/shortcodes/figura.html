@@ -1,6 +1,6 @@
 <figure style="text-align:center; margin:1.5em auto;">
-  <img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" style="max-width:100%;">
+  <img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" style="max-width:100%; display:block; margin:0 auto;">
   {{ with .Get "caption" }}
-  <figcaption style="font-size:.85em; color:#666; margin-top:.5em;">📷 <em>{{ . }}</em></figcaption>
+  <figcaption style="font-size:.85em; color:#666; margin-top:.5em; text-align:center;">📷 <em>{{ . }}</em></figcaption>
   {{ end }}
 </figure>

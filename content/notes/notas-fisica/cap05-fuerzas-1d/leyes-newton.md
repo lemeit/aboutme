@@ -48,8 +48,6 @@ Si no hay fuerza neta → no hay cambio en el movimiento.
 
 {{< figura src="/images/diagramas/cap05_fuerzas-1d_leyes-newton_pp281.png" alt="Wile E. Coyote corriendo sobre el vacío" caption="Imagen: Wile E. Coyote corriendo sobre el vacío — Bigler pág. 281" >}}
 
-> 📷 *Imagen: Wile E. Coyote corriendo sobre el vacío — Bigler pág. 281*
-
 ---
 
 ## Segunda Ley — F = ma

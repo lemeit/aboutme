@@ -25,6 +25,7 @@ Cuando un objeto está sobre una rampa con ángulo $\theta$, la fuerza normal **
 <div style="text-align: center;">
   <img src="/images/diagramas/cap06_fuerzas-2d_plano-inclinado_pp373.png" alt="Diagrama de cuerpo libre — caja sobre mesa" />
 </div>
+
 > 📷 *Imagen: diagrama de un bloque en una rampa con $F_g$, $F_N$ y $F_{neta}$ — Bigler pág. 373*
 
 ---

@@ -42,7 +42,7 @@ Cuando un problema combina fuerzas y cinemática, necesitás dos tablas GUESS co
 +++
 | var | dir | value |
 |---|---|---|
-| F_net | → | F_net |
+| $F_{net}$ | → | $F_{net}$ |
 | m | N/A | m (dato) |
 | a | → | a |
 {{% /guess-chart %}}

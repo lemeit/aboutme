@@ -31,16 +31,6 @@ $$\vec{F}_{neta} = \sum \vec{F} = m\,\vec{a} \qquad \text{o bien} \qquad a = \fr
 
 Cuando un problema combina fuerzas y cinemática, necesitás dos tablas GUESS conectadas por la aceleración $a$:
 
-```
-Ecuaciones de movimiento         Segunda Ley de Newton
-────────────────────────         ─────────────────────
-d  →  ?                          Fnet →  Fnet
-v₀ →  0                          m    →  m (dato)
-v  →  dato                   ←a→  a   →  a
-a  →  a  ─────────────────────
-t  →  dato
-```
-
 {{% guess-chart titulo1="Ecuaciones de movimiento" titulo2="Segunda Ley de Newton" conector="a" %}}
 | var | dir | value |
 |---|---|---|

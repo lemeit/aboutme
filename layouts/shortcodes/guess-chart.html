@@ -5,15 +5,11 @@
 {{ $tabla1 := index $partes 0 }}
 {{ $tabla2 := index $partes 1 }}
 
-<div class="guess-chart" style="position:relative; display:flex; flex-wrap:wrap; gap:2.5em; justify-content:center; margin:1.5em auto; background:var(--code-bg); padding:1.25em; border-radius:8px;">
-  <div style="flex:1 1 260px; min-width:220px;">
-    <div style="font-weight:bold; margin-bottom:.5em; text-align:center; color:var(--secondary);">{{ $titulo1 }}</div>
-    {{ $tabla1 | safeHTML }}
-  </div>
-  <div style="flex:1 1 260px; min-width:220px;">
-    <div style="font-weight:bold; margin-bottom:.5em; text-align:center; color:var(--secondary);">{{ $titulo2 }}</div>
-    {{ $tabla2 | safeHTML }}
-  </div>
+<div class="guess-chart" style="position:relative; margin:1.5em auto; padding:1.25em 1.25em 1.25em 3em; background:var(--code-bg); border-radius:8px; max-width:480px;">
+  <div style="font-weight:bold; margin-bottom:.5em; text-align:center; color:var(--secondary);">{{ $titulo1 }}</div>
+  {{ $tabla1 | safeHTML }}
+  <div style="font-weight:bold; margin:1.75em 0 .5em; text-align:center; color:var(--secondary);">{{ $titulo2 }}</div>
+  {{ $tabla2 | safeHTML }}
 </div>
 
 <script>
@@ -37,22 +33,43 @@
     svg.style.top = "0"; svg.style.left = "0";
     svg.style.width = "100%"; svg.style.height = "100%";
     svg.style.pointerEvents = "none";
+    container.style.position = "relative";
     container.appendChild(svg);
 
+    var marker = document.createElementNS(svgNS, "marker");
+    marker.setAttribute("id", "guess-arrow-" + Math.random().toString(36).slice(2));
+    marker.setAttribute("viewBox", "0 0 10 10");
+    marker.setAttribute("refX", "8");
+    marker.setAttribute("refY", "5");
+    marker.setAttribute("markerWidth", "6");
+    marker.setAttribute("markerHeight", "6");
+    marker.setAttribute("orient", "auto-start-reverse");
+    var arrowPath = document.createElementNS(svgNS, "path");
+    arrowPath.setAttribute("d", "M0,0 L10,5 L0,10 z");
+    arrowPath.setAttribute("fill", "var(--primary)");
+    marker.appendChild(arrowPath);
+    var defs = document.createElementNS(svgNS, "defs");
+    defs.appendChild(marker);
+    svg.appendChild(defs);
+
     function draw() {
-      svg.innerHTML = "";
       var rect0 = container.getBoundingClientRect();
       var r1 = matches[0].getBoundingClientRect();
       var r2 = matches[1].getBoundingClientRect();
-      var x1 = r1.right - rect0.left, y1 = r1.top + r1.height/2 - rect0.top;
+      var x1 = r1.left - rect0.left, y1 = r1.top + r1.height/2 - rect0.top;
       var x2 = r2.left - rect0.left, y2 = r2.top + r2.height/2 - rect0.top;
-      var line = document.createElementNS(svgNS, "line");
-      line.setAttribute("x1", x1); line.setAttribute("y1", y1);
-      line.setAttribute("x2", x2); line.setAttribute("y2", y2);
-      line.setAttribute("stroke", "var(--primary)");
-      line.setAttribute("stroke-width", "2");
-      line.setAttribute("stroke-dasharray", "4,3");
-      svg.appendChild(line);
+      var gutterX = 14;
+
+      while (svg.childNodes.length > 1) svg.removeChild(svg.lastChild);
+
+      var path = document.createElementNS(svgNS, "path");
+      var d = "M " + x2 + " " + y2 + " L " + gutterX + " " + y2 + " L " + gutterX + " " + y1 + " L " + x1 + " " + y1;
+      path.setAttribute("d", d);
+      path.setAttribute("fill", "none");
+      path.setAttribute("stroke", "var(--primary)");
+      path.setAttribute("stroke-width", "2");
+      path.setAttribute("marker-end", "url(#" + marker.id + ")");
+      svg.appendChild(path);
     }
     draw();
     window.addEventListener("resize", draw);

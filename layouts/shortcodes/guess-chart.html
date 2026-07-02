@@ -2,15 +2,16 @@
 {{ $titulo1 := .Get "titulo1" }}
 {{ $titulo2 := .Get "titulo2" }}
 {{ $partes := split .Inner "+++" }}
-{{ $tabla1 := index $partes 0 }}
-{{ $tabla2 := index $partes 1 }}
+{{ $tabla1 := index $partes 0 | strings.TrimSpace }}
+{{ $tabla2 := index $partes 1 | strings.TrimSpace }}
 {{ $uid := printf "guess-%d" now.UnixNano }}
+
 
 <div class="guess-chart" id="{{ $uid }}" style="position:relative; margin:1.5em auto; padding:1.25em 1.25em 1.25em 3em; background:var(--code-bg); border-radius:8px; max-width:480px;">
   <div style="font-weight:bold; margin-bottom:.5em; text-align:center; color:var(--secondary);">{{ $titulo1 }}</div>
-  <div class="guess-table-1">{{ $tabla1 | safeHTML }}</div>
+  <div class="guess-table-1">{{ $tabla1 | markdownify }}</div>
   <div style="font-weight:bold; margin:1.75em 0 .5em; text-align:center; color:var(--secondary);">{{ $titulo2 }}</div>
-  <div class="guess-table-2">{{ $tabla2 | safeHTML }}</div>
+  <div class="guess-table-2">{{ $tabla2 | markdownify }}</div>
 </div>
 
 <script>

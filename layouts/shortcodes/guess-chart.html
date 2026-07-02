@@ -4,40 +4,50 @@
 {{ $partes := split .Inner "+++" }}
 {{ $tabla1 := index $partes 0 }}
 {{ $tabla2 := index $partes 1 }}
+{{ $uid := printf "guess-%d" now.UnixNano }}
 
-<div class="guess-chart" style="position:relative; margin:1.5em auto; padding:1.25em 1.25em 1.25em 3em; background:var(--code-bg); border-radius:8px; max-width:480px;">
+<div class="guess-chart" id="{{ $uid }}" style="position:relative; margin:1.5em auto; padding:1.25em 1.25em 1.25em 3em; background:var(--code-bg); border-radius:8px; max-width:480px;">
   <div style="font-weight:bold; margin-bottom:.5em; text-align:center; color:var(--secondary);">{{ $titulo1 }}</div>
-  {{ $tabla1 | safeHTML }}
+  <div class="guess-table-1">{{ $tabla1 | safeHTML }}</div>
   <div style="font-weight:bold; margin:1.75em 0 .5em; text-align:center; color:var(--secondary);">{{ $titulo2 }}</div>
-  {{ $tabla2 | safeHTML }}
+  <div class="guess-table-2">{{ $tabla2 | safeHTML }}</div>
 </div>
 
 <script>
 (function() {
   var conector = {{ $conector }};
-  var container = document.currentScript.previousElementSibling;
+  var container = document.getElementById("{{ $uid }}");
   if (!container) return;
-  var cells = container.querySelectorAll("td, th");
-  var matches = [];
-  cells.forEach(function(c) {
-    if (c.textContent.trim() === conector) matches.push(c);
+
+  function findCell(scopeSelector) {
+    var scope = container.querySelector(scopeSelector);
+    if (!scope) return null;
+    var rows = scope.querySelectorAll("tr");
+    for (var i = 0; i < rows.length; i++) {
+      var firstCell = rows[i].querySelector("td:first-child, th:first-child");
+      if (firstCell && firstCell.textContent.trim() === conector) return firstCell;
+    }
+    return null;
+  }
+
+  var cell1 = findCell(".guess-table-1");
+  var cell2 = findCell(".guess-table-2");
+  [cell1, cell2].forEach(function(c) {
+    if (c) { c.style.color = "var(--primary)"; c.style.fontWeight = "bold"; }
   });
-  matches.forEach(function(c) {
-    c.style.color = "var(--primary)";
-    c.style.fontWeight = "bold";
-  });
-  if (matches.length >= 2) {
+
+  if (cell1 && cell2) {
     var svgNS = "http://www.w3.org/2000/svg";
     var svg = document.createElementNS(svgNS, "svg");
     svg.style.position = "absolute";
     svg.style.top = "0"; svg.style.left = "0";
     svg.style.width = "100%"; svg.style.height = "100%";
     svg.style.pointerEvents = "none";
-    container.style.position = "relative";
     container.appendChild(svg);
 
+    var markerId = "{{ $uid }}-arrow";
     var marker = document.createElementNS(svgNS, "marker");
-    marker.setAttribute("id", "guess-arrow-" + Math.random().toString(36).slice(2));
+    marker.setAttribute("id", markerId);
     marker.setAttribute("viewBox", "0 0 10 10");
     marker.setAttribute("refX", "8");
     marker.setAttribute("refY", "5");
@@ -54,8 +64,8 @@
 
     function draw() {
       var rect0 = container.getBoundingClientRect();
-      var r1 = matches[0].getBoundingClientRect();
-      var r2 = matches[1].getBoundingClientRect();
+      var r1 = cell1.getBoundingClientRect();
+      var r2 = cell2.getBoundingClientRect();
       var x1 = r1.left - rect0.left, y1 = r1.top + r1.height/2 - rect0.top;
       var x2 = r2.left - rect0.left, y2 = r2.top + r2.height/2 - rect0.top;
       var gutterX = 14;
@@ -68,7 +78,7 @@
       path.setAttribute("fill", "none");
       path.setAttribute("stroke", "var(--primary)");
       path.setAttribute("stroke-width", "2");
-      path.setAttribute("marker-end", "url(#" + marker.id + ")");
+      path.setAttribute("marker-end", "url(#" + markerId + ")");
       svg.appendChild(path);
     }
     draw();

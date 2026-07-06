@@ -3,4 +3,7 @@
   {{ with .Get "caption" }}
   <figcaption style="font-size:.85em; color:var(--secondary); margin-top:.5em; text-align:center; font-weight:normal; font-style:italic;">{{ . }}</figcaption>
   {{ end }}
+  {{ with .Get "source" }}
+  <div style="font-size:.75em; color:var(--secondary); margin-top:.3em; text-align:center;">{{ . | markdownify }}</div>
+  {{ end }}
 </figure>

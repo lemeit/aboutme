@@ -63,7 +63,7 @@ En la Edad Media, los "científicos" eran filósofos que decidían qué era corr
 
 El método científico se parece más a una red de procesos interconectados que a una secuencia lineal. La experimentación está en el centro, pero el proceso puede entrar por cualquier punto:
 
-{{< figura src="/images/diagramas/cap01_laboratorio_diagrama-del-metodo-cientifico_pp30.png" alt="diagrama del método científico como red — Bigler pág. 30" caption="Diagrama del método científico como red (Bigler pág. 30)" source="From the Understanding Science website. Understanding Science. 2018. University of California Museum of Paleontology. 1 July 2018. Reprinted with permission." >}}
+{{< figura src="/images/diagramas/cap01_laboratorio_diagrama-del-metodo-cientifico_pp30.png" alt="diagrama del método científico como red — Bigler pág. 30" caption="Diagrama del método científico como red (Bigler pág. 30)" source="Extraído del sitio web Understanding Science. Understanding Science. 2018. University of California Museum of Paleontology. 1 de julio de 2018. Reproducido con permiso."}}
 
 Cada nodo de esa red representa un área amplia con muchos procesos posibles: hacer preguntas, observar, experimentar, comunicar, revisar.
 

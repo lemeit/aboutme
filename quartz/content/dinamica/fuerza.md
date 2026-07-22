@@ -37,3 +37,4 @@ $$\vec{F} = m \vec{a}$$
 - [[trabajo]] — $W = \vec{F} \cdot \Delta \vec{r}$
 - [[momentum-lineal]] — $\vec{F} = \frac{d\vec{p}}{dt}$
 - [[energia]] — La fuerza puede transferir energía
+- [[torque]] — Momento de fuerza

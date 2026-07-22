@@ -15,6 +15,7 @@ Una magnitud **escalar** se describe solo con un número y una unidad. No tiene 
 - [[rapidez]] — 100 km/h (el módulo de la velocidad)
 - [[energia-cinetica]] — 500 J
 - [[potencia]] — 60 W
+- [[densidad]] — 1000 kg/m³
 
 ## Diferencia con [[vector]]
 
@@ -24,3 +25,4 @@ Una magnitud **escalar** se describe solo con un número y una unidad. No tiene 
 | [[masa]] | [[velocidad]] |
 | [[temperatura]] | [[fuerza]] |
 | [[tiempo]] | [[aceleracion]] |
+| [[energia]] | [[momentum-lineal]] |

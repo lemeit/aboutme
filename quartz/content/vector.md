@@ -19,9 +19,10 @@ $$\vec{A} = A_x \hat{i} + A_y \hat{j} + A_z \hat{k}$$
 - [[aceleracion]] — Vector que describe el cambio de velocidad
 - [[fuerza]] — Vector que causa aceleración
 - [[campo-electrico]] — Vector que describe la fuerza por unidad de carga
+- [[momentum-lineal]] — Vector: $\vec{p} = m\vec{v}$
 
 ## Operaciones
 
-- Suma: [[suma-de-vectores]]
-- Producto escalar: [[trabajo]]
-- Producto vectorial: [[momento-angular]]
+- Suma: regla del paralelogramo
+- Producto escalar: $\vec{A} \cdot \vec{B} = AB\cos\theta$ → [[trabajo]]
+- Producto vectorial: $\vec{A} \times \vec{B}$ → [[momento-angular]]

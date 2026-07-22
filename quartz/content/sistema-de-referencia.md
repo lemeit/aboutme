@@ -25,3 +25,4 @@ Un **sistema de referencia** es un conjunto de ejes coordenados y un origen resp
 - [[velocidad]]
 - [[mru]]
 - [[relatividad-especial]]
+- [[fuerza-ficticia]] — Aparecen en sistemas no inerciales

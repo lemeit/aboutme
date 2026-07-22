@@ -27,7 +27,7 @@ $$v = \omega r = \frac{2\pi r}{T}$$
 - [[fuerza-centripeta]] — $F_c = m a_c$
 - [[periodo]] — Tiempo de una vuelta
 - [[frecuencia]] — Vueltas por unidad de tiempo
-- [[momentum-angular]] — Se conserva sin torque externo
+- [[momento-angular]] — Se conserva sin torque externo
 
 ## Ejemplo
 

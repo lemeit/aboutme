@@ -14,7 +14,7 @@ tema: "General"
 | [[masa]] | kilogramo | kg |
 | [[tiempo]] | segundo | s |
 | Corriente eléctrica | amperio | A |
-| Temperatura | kelvin | K |
+| [[temperatura]] | kelvin | K |
 | Cantidad de sustancia | mol | mol |
 | Intensidad luminosa | candela | cd |
 
@@ -28,6 +28,8 @@ tema: "General"
 | [[energia]] / [[trabajo]] | julio | J | kg·m²·s⁻² |
 | [[potencia]] | watt | W | kg·m²·s⁻³ |
 | [[presion]] | pascal | Pa | kg·m⁻¹·s⁻² |
+| [[carga-electrica]] | coulomb | C | A·s |
+| [[potencial-electrico]] | voltio | V | kg·m²·s⁻³·A⁻¹ |
 
 ## Prefijos
 

@@ -10,6 +10,31 @@
 <div class="post-content md-content">{{ .Content }}</div>
 {{- end }}
 
+<a href="/conceptos/" style="display:flex; align-items:center; gap:1rem;
+   padding:1rem 1.2rem; margin:1rem 0 1.5rem 0; border-radius:10px;
+   background:var(--code-bg); border:1px solid var(--primary);
+   text-decoration:none; color:inherit;">
+  <svg width="40" height="40" viewBox="0 0 40 40" style="flex-shrink:0;">
+    <line x1="8" y1="10" x2="20" y2="20" stroke="var(--primary)" stroke-width="1.5"/>
+    <line x1="32" y1="8" x2="20" y2="20" stroke="var(--primary)" stroke-width="1.5"/>
+    <line x1="10" y1="32" x2="20" y2="20" stroke="var(--primary)" stroke-width="1.5"/>
+    <line x1="30" y1="30" x2="20" y2="20" stroke="var(--primary)" stroke-width="1.5"/>
+    <circle cx="20" cy="20" r="5" fill="var(--primary)"/>
+    <circle cx="8" cy="10" r="3.5" fill="var(--secondary)"/>
+    <circle cx="32" cy="8" r="3.5" fill="var(--secondary)"/>
+    <circle cx="10" cy="32" r="3.5" fill="var(--secondary)"/>
+    <circle cx="30" cy="30" r="3.5" fill="var(--secondary)"/>
+  </svg>
+  <div>
+    <div style="font-weight:700; font-size:1.05rem; color:var(--primary);">
+      Conceptos de Física
+    </div>
+    <div style="font-size:0.85rem; color:var(--secondary); margin-top:0.15rem;">
+      Explorá el mapa interactivo de conceptos, con conexiones y búsqueda
+    </div>
+  </div>
+</a>
+
 {{/* Sub-secciones ordenadas por weight */}}
 {{- $subsections := .Sections }}
 {{- $logosMap := dict

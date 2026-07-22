@@ -59,9 +59,13 @@ mainSections = []
     url = "/notes/"
     weight = 2
   [[menu.main]]
+    name = "Conceptos de Física"
+    url = "/conceptos/"
+    weight = 3
+  [[menu.main]]
     name = "Sobre mí"
     url = "/about/"
-    weight = 3
+    weight = 4
 
 [frontmatter]
   lastmod = [":git", "lastmod", ":fileModTime", "date"]

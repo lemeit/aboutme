@@ -16,9 +16,18 @@ theme:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Inter
-      body: Inter
-      code: IBM Plex Mono
+      header:
+        name: Inter
+        weights: [400, 700]
+        includeItalic: false
+      body:
+        name: Inter
+        weights: [400, 400]
+        includeItalic: false
+      code:
+        name: IBM Plex Mono
+        weights: [400, 400]
+        includeItalic: false
     colors:
       lightMode:
         light: "#FAF7F2"

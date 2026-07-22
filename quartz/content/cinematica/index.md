@@ -20,7 +20,7 @@ Estudia el **movimiento** de los cuerpos sin analizar sus **causas**.
 - [[mruv]] — Movimiento rectilíneo uniformemente variado
 - [[caida-libre]] — Caso particular del MRUV
 - [[tiro-vertical]] — Otro caso del MRUV
-- [[mcp]] — Movimiento circular uniforme
+- [[mcu]] — Movimiento circular uniforme
 
 ## Herramientas
 

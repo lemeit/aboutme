@@ -168,6 +168,11 @@ plugins:
       priority: 50
   - source: github:quartz-community/graph
     enabled: true
+    options:
+      localGraph:
+        showTags: false
+      globalGraph:
+        showTags: false
     layout:
       position: right
       priority: 10
@@ -234,8 +239,7 @@ plugins:
     enabled: true
     options:
       links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
+        ← Volver a Notas: https://profe.lemeit.ar/notas
   - source: github:quartz-community/recent-notes
     enabled: false
   - source: github:quartz-community/spacer

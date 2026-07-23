@@ -1,5 +1,5 @@
 ---
-title: "Mapa de Física — Serway & Vuille"
+title: "Mapa de Física"
 description: "Mapa de conceptos de Física, organizado por grandes áreas, basado en Física de Serway & Vuille (9ª edición)."
 ---
 

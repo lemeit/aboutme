@@ -173,6 +173,11 @@ plugins:
         showTags: false
       globalGraph:
         showTags: false
+        scale: 1.3
+        repelForce: 0.8
+        linkDistance: 40
+        fontSize: 0.75
+        depth: -1
     layout:
       position: right
       priority: 10
@@ -194,6 +199,7 @@ plugins:
     layout:
       position: beforeBody
       priority: 10
+      condition: not-index
   - source: github:quartz-community/content-meta
     enabled: true
     layout:
@@ -239,7 +245,14 @@ plugins:
     enabled: true
     options:
       links:
-        ← Volver a Notas: https://profe.lemeit.ar/notas
+        Mecánica: https://profe.lemeit.ar/conceptos/mecanica/
+        Gravitación: https://profe.lemeit.ar/conceptos/gravitacion/
+        Materia: https://profe.lemeit.ar/conceptos/materia/
+        Termodinámica: https://profe.lemeit.ar/conceptos/termodinamica/
+        Ondas: https://profe.lemeit.ar/conceptos/ondas/
+        Electricidad y Magnetismo: https://profe.lemeit.ar/conceptos/electricidad-y-magnetismo/
+        Física Moderna: https://profe.lemeit.ar/conceptos/fisica-moderna/
+        ← Volver a Notas: https://profe.lemeit.ar/notes/
   - source: github:quartz-community/recent-notes
     enabled: false
   - source: github:quartz-community/spacer
@@ -297,7 +310,8 @@ layout:
         beforeBody: []
         left: []
         right: []
-    content: {}
+    content:
+      frame: graph-hero
     folder:
       exclude:
         - reader-mode

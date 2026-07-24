@@ -2,26 +2,31 @@ import { PageFrame } from "./types"
 import { DefaultFrame } from "./DefaultFrame"
 import { FullWidthFrame } from "./FullWidthFrame"
 import { MinimalFrame } from "./MinimalFrame"
+import { GraphHeroFrame } from "./GraphHeroFrame"
 import { frameRegistry } from "./registry"
 
 export type { PageFrame, PageFrameProps } from "./types"
 export { DefaultFrame } from "./DefaultFrame"
 export { FullWidthFrame } from "./FullWidthFrame"
 export { MinimalFrame } from "./MinimalFrame"
+export { GraphHeroFrame } from "./GraphHeroFrame"
 export { frameRegistry } from "./registry"
 export type { RegisteredFrame } from "./registry"
 
 /**
  * Registry of built-in page frames. Page types can reference these by name
  * via their `frame` property, and YAML config can override via
- * `layout.byPageType.<name>.template`.
+ * `layout.byPageType.<name>.frame`.
  *
  * The "default" frame reproduces the original three-column Quartz layout.
+ * "graph-hero" es igual a "default" en todas las páginas excepto en el
+ * home (slug === "index"), donde muestra el grafo al centro.
  */
 const builtinFrames: Record<string, PageFrame> = {
   default: DefaultFrame,
   "full-width": FullWidthFrame,
   minimal: MinimalFrame,
+  "graph-hero": GraphHeroFrame,
 }
 
 /**

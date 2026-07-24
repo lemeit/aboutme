@@ -246,13 +246,6 @@ plugins:
     options:
       links:
         © 2026 Luciano Lamaita: https://profe.lemeit.ar/
-        Mecánica: https://profe.lemeit.ar/conceptos/mecanica/
-        Gravitación: https://profe.lemeit.ar/conceptos/gravitacion/
-        Materia: https://profe.lemeit.ar/conceptos/materia/
-        Termodinámica: https://profe.lemeit.ar/conceptos/termodinamica/
-        Ondas: https://profe.lemeit.ar/conceptos/ondas/
-        Electricidad y Magnetismo: https://profe.lemeit.ar/conceptos/electricidad-y-magnetismo/
-        Física Moderna: https://profe.lemeit.ar/conceptos/fisica-moderna/
         ← Volver a Notas: https://profe.lemeit.ar/notes/
   - source: github:quartz-community/recent-notes
     enabled: false

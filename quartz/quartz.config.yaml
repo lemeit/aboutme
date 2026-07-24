@@ -245,6 +245,7 @@ plugins:
     enabled: true
     options:
       links:
+        © 2026 Luciano Lamaita: https://profe.lemeit.ar/
         Mecánica: https://profe.lemeit.ar/conceptos/mecanica/
         Gravitación: https://profe.lemeit.ar/conceptos/gravitacion/
         Materia: https://profe.lemeit.ar/conceptos/materia/
@@ -310,8 +311,7 @@ layout:
         beforeBody: []
         left: []
         right: []
-    content:
-      template: graph-hero
+    content: {}
     folder:
       exclude:
         - reader-mode

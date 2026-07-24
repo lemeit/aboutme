@@ -2,44 +2,45 @@ import { loadQuartzConfig, loadQuartzLayout } from "./quartz/plugins/loader/conf
 import * as ExternalPlugin from "./.quartz/plugins"
 
 // Orden lógico de aprendizaje (como en Serway & Vuille), en vez de alfabético.
-// Las claves son los nombres de carpeta (slug), no los títulos que se muestran.
+// OJO: FileTrieNode de este plugin no expone "slugSegment", solo "displayName"
+// (el título que viene del frontmatter de cada index.md) e "isFolder".
+// Por eso comparamos contra displayName, no contra el nombre de carpeta.
 
 const areaOrder = [
-  "mecanica",
-  "gravitacion",
-  "materia",
-  "termodinamica",
-  "ondas",
-  "electricidad-y-magnetismo",
-  "fisica-moderna",
+  "Mecánica",
+  "Gravitación",
+  "Materia",
+  "Termodinámica",
+  "Ondas",
+  "Electricidad y Magnetismo",
+  "Física Moderna",
 ]
 
-const mecanicaOrder = ["fundamentos", "cinematica", "dinamica", "estatica", "energia"]
+const mecanicaOrder = ["Fundamentos", "Cinemática", "Dinámica", "Estática", "Energía"]
 
-const ondasOrder = ["ondas-electromagneticas-y-luz"]
+const ondasOrder = ["Ondas Electromagnéticas y Luz"]
 
-function priorityOf(slugSegment: string): number {
-  let idx = areaOrder.indexOf(slugSegment)
+function priorityOf(displayName: string): number {
+  let idx = areaOrder.indexOf(displayName)
   if (idx !== -1) return idx
 
-  idx = mecanicaOrder.indexOf(slugSegment)
+  idx = mecanicaOrder.indexOf(displayName)
   if (idx !== -1) return 100 + idx
 
-  idx = ondasOrder.indexOf(slugSegment)
+  idx = ondasOrder.indexOf(displayName)
   if (idx !== -1) return 200 + idx
 
   return 9999 // cualquier carpeta/nota no listada cae al final, orden alfabético entre sí
 }
 
-// Advanced: pasamos un callback que no se puede expresar en YAML
 ExternalPlugin.Explorer({
   sortFn: (a, b) => {
     // carpetas antes que notas, igual que el comportamiento por defecto
     if (a.isFolder && !b.isFolder) return -1
     if (!a.isFolder && b.isFolder) return 1
 
-    const pa = priorityOf(a.slugSegment)
-    const pb = priorityOf(b.slugSegment)
+    const pa = priorityOf(a.displayName)
+    const pb = priorityOf(b.displayName)
     if (pa !== pb) return pa - pb
 
     // dentro del mismo grupo (o para lo no listado), alfabético normal

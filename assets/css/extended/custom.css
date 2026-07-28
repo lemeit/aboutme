@@ -9,37 +9,30 @@
   --code-bg: #F0EBE2;     /* listas y bloques de código */
 }
 
-/* ── Dark mode — paleta Quartz / Obsidian ── */
-[data-theme="dark"] {
-  /* Fondos */
+/* ── Dark mode — :root para igualar especificidad con PaperMod ── */
+:root[data-theme="dark"] {
   --theme:    #1A1612;
   --entry:    #221E18;
   --code-bg:  #221E18;
-
-  /* --primary naranja: links, títulos, nav — igual que Quartz secondary */
-  --primary:   #B84800;
-  --secondary: #C9BEB2;  /* texto secundario — crema grisáceo */
-  --tertiary:  #3D3028;  /* elementos sutiles */
-  --content:   #E8DFD6;  /* cuerpo de texto — crema cálido */
-
-  /* Bordes */
+  --primary:   #F2ECE4;   /* texto UI, headings no-link — crema cálido */
+  --secondary: #C9BEB2;   /* texto secundario */
+  --tertiary:  #3D3028;
+  --content:   #E8DFD6;   /* cuerpo de texto */
   --border:    #6B5C4E;
 }
 
-[data-theme="dark"] a:hover       { color: #8B3D00; }
+/* Links naranja en dark mode — igual que Quartz secondary (#B84800) */
+[data-theme="dark"] a             { color: #B84800 !important; }
+[data-theme="dark"] a:hover       { color: #8B3D00 !important; }
 [data-theme="dark"] header.header { border-bottom: 2px solid #3D3028; }
 
-/* notes-link en dark mode — naranja explícito para ganar al !important de abajo */
-[data-theme="dark"] nav .notes-link,
-[data-theme="dark"] ul .notes-link { color: #B84800 !important; }
-
-/* Botones y links */
+/* Botones y links — modo claro */
 a       { color: var(--primary); }
 a:hover { color: var(--secondary); }
 
 /* Header del sitio */
 header.header { border-bottom: 2px solid #111; }
 
-/* notes-link en modo claro — hereda el texto, no el naranja de los links */
+/* notes-link: modo claro usa --content, dark mode ya queda naranja por la regla de arriba */
 nav .notes-link,
-ul .notes-link { color: var(--content) !important; }
+ul .notes-link { color: var(--content); }

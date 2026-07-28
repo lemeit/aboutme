@@ -9,27 +9,35 @@
   --code-bg: #F0EBE2;     /* listas y bloques de código */
 }
 
-.dark {
-  --primary:   #B84800;
-  --secondary: #8B3D00;
+/* ── Dark mode — paleta idéntica a Quartz / Obsidian ── */
+[data-theme="dark"] {
+  /* Fondos */
+  --theme:    #1A1612;   /* fondo principal */
+  --entry:    #221E18;   /* tarjetas */
+  --code-bg:  #221E18;   /* listas en dark usan --theme en PaperMod */
 
-  /* Fondos oscuros — modo noche */
-  --theme:   #1A1612;
-  --entry:   #221E18;
-  --code-bg: #13100D;
+  /* Texto */
+  --primary:   #F2ECE4;  /* texto UI, nav, títulos — crema cálido */
+  --secondary: #C9BEB2;  /* texto secundario */
+  --tertiary:  #3D3028;  /* elementos sutiles */
+  --content:   #E8DFD6;  /* cuerpo de texto */
+
+  /* Bordes */
+  --border:    #6B5C4E;
 }
 
-/* Acento negro en bordes y títulos */
-/*.page-header h1 {
-  border-left: 5px solid #111;
-  padding-left: 0.75rem;
-}*/
+/* Links en dark mode — naranja quemado como en Quartz */
+[data-theme="dark"] a              { color: #B84800; }
+[data-theme="dark"] a:hover        { color: #8B3D00; }
 
-/* Botones y links activos */
+/* Header en dark mode */
+[data-theme="dark"] header.header  { border-bottom: 2px solid #3D3028; }
+
+/* Botones y links activos — modo claro */
 a { color: var(--primary); }
 a:hover { color: var(--secondary); }
 
-/* Header del sitio — franja negra sutil */
+/* Header del sitio — franja oscura sutil */
 header.header {
   border-bottom: 2px solid #111;
 }

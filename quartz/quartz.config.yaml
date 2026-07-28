@@ -177,7 +177,6 @@ plugins:
         repelForce: 0.8
         linkDistance: 40
         fontSize: 0.75
-        depth: -1
     layout:
       position: right
       priority: 10

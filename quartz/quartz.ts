@@ -1,20 +1,11 @@
 import { loadQuartzConfig, loadQuartzLayout } from "./quartz/plugins/loader/config-loader"
 import * as ExternalPlugin from "./.quartz/plugins"
 
-// Convierte cualquier string a slug comparable: sin acentos, minúsculas, guiones.
-// Ej: "Mecánica" → "mecanica", "Electricidad y Magnetismo" → "electricidad-y-magnetismo"
-// Así la comparación es robusta sin importar si displayName viene como título o como slug.
-function toSlug(s: string): string {
-  return s
-    .normalize("NFD")
-    .replace(/[̀-ͯ]/g, "")
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-|-$/g, "")
-}
+// Orden lógico de aprendizaje (como en Serway & Vuille).
+// Usamos slugSegment (nombre de carpeta, ya limpio) en lugar de displayName
+// para evitar problemas de normalización de acentos.
+// slugSegment: "mecanica", "gravitacion", etc.
 
-// Orden lógico de aprendizaje (como en Serway & Vuille)
-// Usamos slugs normalizados para evitar problemas de encoding con acentos
 const areaOrder = [
   "mecanica",
   "gravitacion",
@@ -29,33 +20,35 @@ const mecanicaOrder = ["fundamentos", "cinematica", "dinamica", "estatica", "ene
 
 const ondasOrder = ["ondas-electromagneticas-y-luz"]
 
-function priorityOf(displayName: string): number {
-  const slug = toSlug(displayName)
-
-  let idx = areaOrder.indexOf(slug)
+function priorityOf(slugSegment: string): number {
+  let idx = areaOrder.indexOf(slugSegment)
   if (idx !== -1) return idx
 
-  idx = mecanicaOrder.indexOf(slug)
+  idx = mecanicaOrder.indexOf(slugSegment)
   if (idx !== -1) return 100 + idx
 
-  idx = ondasOrder.indexOf(slug)
+  idx = ondasOrder.indexOf(slugSegment)
   if (idx !== -1) return 200 + idx
 
-  return 9999 // cualquier carpeta/nota no listada cae al final, orden alfabético entre sí
+  return 9999
 }
 
 ExternalPlugin.Explorer({
-  sortFn: (a, b) => {
-    // carpetas antes que notas, igual que el comportamiento por defecto
+  sortFn: (a: any, b: any) => {
+    // carpetas antes que notas
     if (a.isFolder && !b.isFolder) return -1
     if (!a.isFolder && b.isFolder) return 1
 
-    const pa = priorityOf(a.displayName)
-    const pb = priorityOf(b.displayName)
+    // slugSegment: nombre de carpeta limpio sin acentos (mecanica, gravitacion…)
+    const pa = priorityOf(a.slugSegment ?? "")
+    const pb = priorityOf(b.slugSegment ?? "")
     if (pa !== pb) return pa - pb
 
-    // dentro del mismo grupo (o para lo no listado), alfabético normal
-    return a.displayName.localeCompare(b.displayName, "es", { numeric: true, sensitivity: "base" })
+    // fallback: alfabético por displayName
+    return (a.displayName ?? "").localeCompare(b.displayName ?? "", "es", {
+      numeric: true,
+      sensitivity: "base",
+    })
   },
 })
 

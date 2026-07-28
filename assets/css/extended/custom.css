@@ -9,40 +9,37 @@
   --code-bg: #F0EBE2;     /* listas y bloques de código */
 }
 
-/* ── Dark mode — paleta idéntica a Quartz / Obsidian ── */
+/* ── Dark mode — paleta Quartz / Obsidian ── */
 [data-theme="dark"] {
   /* Fondos */
-  --theme:    #1A1612;   /* fondo principal */
-  --entry:    #221E18;   /* tarjetas */
-  --code-bg:  #221E18;   /* listas en dark usan --theme en PaperMod */
+  --theme:    #1A1612;
+  --entry:    #221E18;
+  --code-bg:  #221E18;
 
-  /* Texto */
-  --primary:   #F2ECE4;  /* texto UI, nav, títulos — crema cálido */
-  --secondary: #C9BEB2;  /* texto secundario */
+  /* --primary naranja: links, títulos, nav — igual que Quartz secondary */
+  --primary:   #B84800;
+  --secondary: #C9BEB2;  /* texto secundario — crema grisáceo */
   --tertiary:  #3D3028;  /* elementos sutiles */
-  --content:   #E8DFD6;  /* cuerpo de texto */
+  --content:   #E8DFD6;  /* cuerpo de texto — crema cálido */
 
   /* Bordes */
   --border:    #6B5C4E;
 }
 
-/* Links en dark mode — naranja quemado como en Quartz */
-[data-theme="dark"] a              { color: #B84800; }
-[data-theme="dark"] a:hover        { color: #8B3D00; }
+[data-theme="dark"] a:hover       { color: #8B3D00; }
+[data-theme="dark"] header.header { border-bottom: 2px solid #3D3028; }
 
-/* Header en dark mode */
-[data-theme="dark"] header.header  { border-bottom: 2px solid #3D3028; }
+/* notes-link en dark mode — naranja explícito para ganar al !important de abajo */
+[data-theme="dark"] nav .notes-link,
+[data-theme="dark"] ul .notes-link { color: #B84800 !important; }
 
-/* Botones y links activos — modo claro */
-a { color: var(--primary); }
+/* Botones y links */
+a       { color: var(--primary); }
 a:hover { color: var(--secondary); }
 
-/* Header del sitio — franja oscura sutil */
-header.header {
-  border-bottom: 2px solid #111;
-}
+/* Header del sitio */
+header.header { border-bottom: 2px solid #111; }
 
+/* notes-link en modo claro — hereda el texto, no el naranja de los links */
 nav .notes-link,
-ul .notes-link {
-  color: var(--content) !important;
-}
+ul .notes-link { color: var(--content) !important; }

@@ -7,10 +7,10 @@ Explorá el grafo →, o navegá por área en el panel de la izquierda.
 
 ## Áreas
 
-- [[mecanica|Mecánica]] — cinemática, dinámica, estática y energía
-- [[gravitacion|Gravitación]] — gravitación universal y leyes de Kepler
-- [[materia|Materia]] — sólidos y fluidos
-- [[termodinamica|Termodinámica]] — calor, gases y leyes termodinámicas
-- [[ondas|Ondas]] — mecánicas, sonido y electromagnéticas
-- [[electricidad-y-magnetismo|Electricidad y Magnetismo]] — campo, potencial, circuitos e inducción
-- [[fisica-moderna|Física Moderna]] — relatividad, cuántica y nuclear
+- [[mecanica/index|Mecánica]] — cinemática, dinámica, estática y energía
+- [[gravitacion/index|Gravitación]] — gravitación universal y leyes de Kepler
+- [[materia/index|Materia]] — sólidos y fluidos
+- [[termodinamica/index|Termodinámica]] — calor, gases y leyes termodinámicas
+- [[ondas/index|Ondas]] — mecánicas, sonido y electromagnéticas
+- [[electricidad-y-magnetismo/index|Electricidad y Magnetismo]] — campo, potencial, circuitos e inducción
+- [[fisica-moderna/index|Física Moderna]] — relatividad, cuántica y nuclear

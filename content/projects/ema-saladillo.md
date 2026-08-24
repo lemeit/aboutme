@@ -2,6 +2,7 @@
 title = 'Red EMA Saladillo'
 date = '2026-06-18'
 lastmod = '2026-08-23'
+weight = 2
 draft = false
 tags = ['meteorología', 'IoT', 'Cloudflare D1', 'GitHub Actions']
 description = 'Red de estaciones meteorológicas automáticas para la EEST N°1 de Saladillo.'

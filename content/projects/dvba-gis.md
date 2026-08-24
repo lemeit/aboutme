@@ -1,6 +1,7 @@
 +++
 title = 'GIS Vial — DVBA Zona VI'
 date = '2026-06-18'
+weight = 20
 draft = false
 tags = ['GIS', 'Python', 'Leaflet', 'vialidad']
 description = 'Herramientas GIS para la gestión de la red vial provincial en Zona VI Saladillo.'

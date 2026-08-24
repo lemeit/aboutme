@@ -1,6 +1,7 @@
 +++
 title = 'Agua Saladillo'
 date = '2026-08-23'
+weight = 3
 draft = false
 tags = ['calidad de agua', 'en desarrollo']
 description = 'Monitoreo de calidad de agua en Saladillo — tercer proyecto de la red ambiental, en desarrollo.'

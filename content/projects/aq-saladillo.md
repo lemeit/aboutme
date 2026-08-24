@@ -1,6 +1,7 @@
 +++
 title = 'Aire Saladillo'
 date = '2026-08-23'
+weight = 1
 draft = false
 tags = ['calidad de aire', 'PurpleAir', 'IoT', 'Cloudflare D1', 'GitHub Actions']
 description = 'Red de sensores PurpleAir en escuelas y jardines de infantes de Saladillo, con AQI en tiempo real.'
@@ -27,9 +28,10 @@ en [aq.lemeit.ar](https://aq.lemeit.ar).
 
 ## Contexto institucional
 
-El autor trabajó anteriormente en el CEMCA (Centro de Monitoreo de Calidad de Aire) del Ministerio de
-Ambiente de la Provincia de Buenos Aires, usado como referencia de diseño para el mapa de este proyecto.
-Hay planes de colaboración a futuro, como la colocation de sensores de bajo costo junto a estaciones
+El autor trabajó anteriormente en el Ministerio de Ambiente de la Provincia de Buenos Aires, y mantiene
+buena sinergia y contacto con el CEMCA (Centro de Monitoreo de Calidad de Aire), un área de ese mismo
+Ministerio — su panel público fue referencia de diseño para el mapa de este proyecto. Hay intención de
+seguir trabajando en conjunto a futuro, como la colocation de sensores de bajo costo junto a estaciones
 oficiales certificadas para comparar y calibrar contra el equipo de referencia.
 
 ## Red de monitoreo ambiental

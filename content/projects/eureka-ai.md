@@ -1,6 +1,7 @@
 +++
 title = 'EUREKA AI'
 date = '2026-06-18'
+weight = 10
 draft = false
 tags = ['IA', 'educación', 'Firebase', 'Cloudflare']
 description = 'Tutor de física, química y matemática con método socrático.'

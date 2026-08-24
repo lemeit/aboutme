@@ -19,3 +19,11 @@ Este es uno de tres proyectos ambientales hermanos que comparten la misma infrae
 - **Meteorología** — [emas.lemeit.ar](https://emas.lemeit.ar)
 - **Calidad del aire** — sensores PurpleAir en escuelas, [aq.lemeit.ar](https://aq.lemeit.ar)
 - **Calidad del agua** — este proyecto, en desarrollo
+
+## Identidad visual (reservada)
+
+Cuando este proyecto tenga sitio propio, reutilizar el mismo patrón de favicon/monograma que EMA y AQ
+(cuadrado redondeado, letras blancas en negrita, mismo estilo de tipografía): monograma **"WQ"** sobre
+fondo **teal `#4FB0C6`** — color de la familia ya usado para "Humedad" en los gráficos de AQ, para
+mantener la identidad visual dentro de la misma paleta pero distinguible de un vistazo del naranja de
+AQ y el celeste de EMA.

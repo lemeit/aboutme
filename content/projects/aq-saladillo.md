@@ -28,11 +28,29 @@ en [aq.lemeit.ar](https://aq.lemeit.ar).
 
 ## Contexto institucional
 
-El autor trabajó anteriormente en el Ministerio de Ambiente de la Provincia de Buenos Aires, y mantiene
-buena sinergia y contacto con el CEMCA (Centro de Monitoreo de Calidad de Aire), un área de ese mismo
-Ministerio — su panel público fue referencia de diseño para el mapa de este proyecto. Hay intención de
-seguir trabajando en conjunto a futuro, como la colocation de sensores de bajo costo junto a estaciones
-oficiales certificadas para comparar y calibrar contra el equipo de referencia.
+Este proyecto se enmarca en una iniciativa más amplia de ciencia ciudadana ambiental — *Escuelas de
+Saladillo en Acción por un Aire Limpio* — que busca desplegar sensores de bajo costo dentro y cerca de
+instituciones educativas urbanas y rurales del partido, involucrando a los estudiantes en el monitoreo,
+el análisis de datos y la concientización comunitaria, con la mira puesta en aportar información de base
+para eventuales ordenanzas municipales de calidad del aire.
+
+El autor (Ing. Químico) es Embajador Comunitario de OpenAQ (2023), integra el Grupo de Trabajo de Air
+Quality de la ECSA (European Citizen Science Association) y participa de los proyectos CanAirIO,
+AireCiudadano y Sensor.Community — de ahí surgen buena parte de los antecedentes técnicos y
+metodológicos del proyecto, incluyendo la experiencia nacional de ciencia ciudadana ambiental del
+Ministerio de Ambiente y Desarrollo Sustentable de la Nación, el PNUD y la iniciativa open-seneca
+(Universidad de Cambridge), con mediciones en CABA, Rosario, Mendoza, Córdoba y Tucumán (2019–2021).
+
+Como parte de esta iniciativa está prevista la instalación de un monitor Clarity Node-S (con panel solar
+y transmisión celular) y un monitor AirGradient Open Air (por WiFi) en una escuela rural y un jardín de
+infantes urbano — que además de material particulado, temperatura y humedad podrían sumar a futuro la
+medición de CO2 mencionada en el roadmap de este proyecto.
+
+El autor también trabajó anteriormente en el Ministerio de Ambiente de la Provincia de Buenos Aires, y
+mantiene buena sinergia y contacto con el CEMCA (Centro de Monitoreo de Calidad de Aire), un área de ese
+mismo Ministerio — su panel público fue referencia de diseño para el mapa de este proyecto. Hay intención
+de seguir trabajando en conjunto a futuro, como la colocation de sensores de bajo costo junto a
+estaciones oficiales certificadas para comparar y calibrar contra el equipo de referencia.
 
 ## Red de monitoreo ambiental
 

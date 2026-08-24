@@ -1,7 +1,7 @@
 +++
 title = 'Red EMA Saladillo'
 date = '2026-06-18'
-lastmod = '2026-08-23'
+lastmod = '2026-08-24'
 weight = 2
 draft = false
 tags = ['meteorología', 'IoT', 'Cloudflare D1', 'GitHub Actions']
@@ -34,7 +34,7 @@ Este es uno de tres proyectos ambientales hermanos que comparten la misma infrae
 
 - **Meteorología** — este proyecto, [emas.lemeit.ar](https://emas.lemeit.ar)
 - **Calidad del aire** — sensores PurpleAir en escuelas, [aq.lemeit.ar](https://aq.lemeit.ar)
-- **Calidad del agua** — protocolos municipales, [wq.lemeit.ar](https://wq.lemeit.ar) (en desarrollo)
+- **Calidad del agua** — protocolos municipales, [wq.lemeit.ar](https://wq.lemeit.ar)
 
 ## Links
 

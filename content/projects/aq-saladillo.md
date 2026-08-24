@@ -1,6 +1,7 @@
 +++
 title = 'Aire Saladillo'
 date = '2026-08-23'
+lastmod = '2026-08-24'
 weight = 1
 draft = false
 tags = ['calidad de aire', 'PurpleAir', 'IoT', 'Cloudflare D1', 'GitHub Actions']
@@ -58,7 +59,7 @@ Este es uno de tres proyectos ambientales hermanos que comparten la misma infrae
 
 - **Meteorología** — [emas.lemeit.ar](https://emas.lemeit.ar)
 - **Calidad del aire** — este proyecto, [aq.lemeit.ar](https://aq.lemeit.ar)
-- **Calidad del agua** — protocolos municipales, [wq.lemeit.ar](https://wq.lemeit.ar) (en desarrollo)
+- **Calidad del agua** — protocolos municipales, [wq.lemeit.ar](https://wq.lemeit.ar)
 
 ## Links
 

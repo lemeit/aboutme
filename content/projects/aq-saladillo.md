@@ -22,7 +22,7 @@ en [aq.lemeit.ar](https://aq.lemeit.ar).
 
 ## Stack
 
-- Ingesta programada contra la API de PurpleAir cada 15 min, con tres disparadores independientes en paralelo para máxima confiabilidad (Cron Trigger de Cloudflare, GitHub Actions y un cron externo), deduplicados automáticamente en la base
+- Ingesta programada contra la API de PurpleAir cada 15 min. Tres disparadores corren en paralelo para máxima confiabilidad (Cron Trigger de Cloudflare, GitHub Actions y un cron externo), y los datos se deduplican automáticamente en la base
 - Base de datos en Cloudflare D1, expuesta por un Worker propio
 - Dashboard HTML/CSS/JS vanilla con Chart.js y Leaflet
 - Hosting en Cloudflare Pages

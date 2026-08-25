@@ -1,7 +1,7 @@
 +++
 title = 'Aire Saladillo'
 date = '2026-08-23'
-lastmod = '2026-08-24'
+lastmod = '2026-08-25'
 weight = 1
 draft = false
 tags = ['calidad de aire', 'PurpleAir', 'IoT', 'Cloudflare D1', 'GitHub Actions']
@@ -22,7 +22,7 @@ en [aq.lemeit.ar](https://aq.lemeit.ar).
 
 ## Stack
 
-- Ingesta programada con GitHub Actions (cron cada 15 min) contra la API de PurpleAir
+- Ingesta programada contra la API de PurpleAir cada 15 min, con tres disparadores independientes en paralelo para máxima confiabilidad (Cron Trigger de Cloudflare, GitHub Actions y un cron externo), deduplicados automáticamente en la base
 - Base de datos en Cloudflare D1, expuesta por un Worker propio
 - Dashboard HTML/CSS/JS vanilla con Chart.js y Leaflet
 - Hosting en Cloudflare Pages

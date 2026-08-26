@@ -8,8 +8,8 @@ tags = ['calidad de aire', 'PurpleAir', 'IoT', 'Cloudflare D1', 'GitHub Actions'
 description = 'Red de sensores PurpleAir en escuelas y jardines de infantes de Saladillo, con AQI en tiempo real.'
 +++
 
-Red de sensores [PurpleAir](https://www.purpleair.com) instalada en escuelas y jardines de infantes
-de Saladillo para la determinación de material particulado (PM2.5/PM10), temperatura, humedad, presión y compuestos orgánicos volátiles (VOC) en tiempo real. Publicado
+Red de sensores [PurpleAir](https://www.purpleair.com) y [AirGradient](https://www.airgradient.com/) instalada en escuelas y jardines de infantes
+de Saladillo para la determinación de material particulado (PM2.5/PM10), temperatura, humedad, presión, compuestos orgánicos volátiles (VOC) y C$O_2$ en tiempo real. Publicado
 en [aq.lemeit.ar](https://aq.lemeit.ar).
 
 ## Funcionalidad

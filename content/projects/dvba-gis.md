@@ -16,7 +16,7 @@ sello institucional.
 
 ## Funcionalidad
 
-- Filtros por número de ruta, por partido (caminos) y por rango de fechas o tipo (tareas)
+- Filtros por número de ruta, partidos, caminos y por rango de fechas o tipo (tareas)
 - Ficha oficial de cada ruta provincial al estilo de una hoja DNV: longitud, tipo de pavimento, ancho de calzada y banquinas
 - Progresivas calibradas con mojones oficiales — al pasar el cursor sobre la traza se ve la progresiva exacta en tiempo real
 - Aplicación móvil (PWA instalable) con dos modos: básico (foto + GPS en un toque, para operarios de campo) y avanzado (formulario completo por categoría, estado y sub-atributos). Funciona sin conexión y sincroniza al recuperar señal
@@ -36,7 +36,7 @@ sello institucional.
 
 En producción interna para Zona VI (8 partidos, 15 rutas provinciales y ~100 caminos secundarios), con las zonas IV Junín y V Chivilcoy en fase de escalado piloto. La estructura de datos ya soporta las 12 zonas viales de la Provincia y los 135 partidos bonaerenses, y modela el organigrama real de la DVBA con 10 roles operativos (técnico, capataz, jefes de división, jefe de zona, gerencia, admin) sobre un ciclo de trabajo cerrado.
 
-El mapa institucional es de consulta pública, sin login; cargar relevamientos, ejecutar tareas o generar reportes requiere usuario asignado. Lo desarrolla y mantiene el Ing. Luciano Lamaita como parte de la División Técnica de la zona — una herramienta interna hecha desde el propio sector operativo, con asistentes de IA como copilotos de programación, para facilitar el registro y la trazabilidad del trabajo diario.
+El mapa institucional es de consulta pública, sin login; cargar relevamientos, ejecutar tareas o generar reportes requiere usuario asignado. Desarrollado y mantenido como una herramienta interna con asistentes de IA como copilotos de programación, para facilitar el registro y la trazabilidad del trabajo diario.
 
 ## Links
 

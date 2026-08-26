@@ -9,8 +9,7 @@ description = 'Red de sensores PurpleAir en escuelas y jardines de infantes de S
 +++
 
 Red de sensores [PurpleAir](https://www.purpleair.com) instalada en escuelas y jardines de infantes
-de Saladillo, que mide material particulado (PM2.5/PM10), temperatura, humedad, presión y — en los
-sensores PurpleAir Flex de la flota — compuestos orgánicos volátiles (VOC) en tiempo real. Publicado
+de Saladillo para la determinación de material particulado (PM2.5/PM10), temperatura, humedad, presión y compuestos orgánicos volátiles (VOC) en tiempo real. Publicado
 en [aq.lemeit.ar](https://aq.lemeit.ar).
 
 ## Funcionalidad
@@ -22,7 +21,7 @@ en [aq.lemeit.ar](https://aq.lemeit.ar).
 
 ## Stack
 
-- Ingesta programada contra la API de PurpleAir cada 15 min. Tres disparadores corren en paralelo para máxima confiabilidad (Cron Trigger de Cloudflare, GitHub Actions y un cron externo), y los datos se deduplican automáticamente en la base
+- Ingesta programada contra la API de PurpleAir cada 15 min. Tres disparadores corren en paralelo para máxima confiabilidad (Cron Trigger de Cloudflare, GitHub Actions y un cron externo), y los datos se deduplican (eliminan repetidos) automáticamente en la base
 - Base de datos en Cloudflare D1, expuesta por un Worker propio
 - Dashboard HTML/CSS/JS vanilla con Chart.js y Leaflet
 - Hosting en Cloudflare Pages

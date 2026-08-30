@@ -256,17 +256,17 @@ Con *X* = biomasa (g/L), *S* = sustrato (g/L), *P* = etanol (g/L):
 
 | Parámetro | Valor típico | Significado |
 |---|---|---|
-| \( \mu_{max} \) | 0,30–0,45 h⁻¹ | Velocidad específica máxima de crecimiento |
-| \( K_s \) | 1–5 g/L | Constante de afinidad por el sustrato |
-| \( Y_{X/S} \) | 0,05–0,10 g/g | Rendimiento de biomasa |
-| \( \alpha \) | 2–4 g/g | Formación de etanol asociada al crecimiento |
-| \( \beta \) | 0,05–0,15 g/(g·h) | Formación de etanol no asociada al crecimiento |
+| $ \mu_{max} $ | 0,30–0,45 h⁻¹ | Velocidad específica máxima de crecimiento |
+| $ K_s $ | 1–5 g/L | Constante de afinidad por el sustrato |
+| $ Y_{X/S} $ | 0,05–0,10 g/g | Rendimiento de biomasa |
+| $ \alpha $ | 2–4 g/g | Formación de etanol asociada al crecimiento |
+| $ \beta $ | 0,05–0,15 g/(g·h) | Formación de etanol no asociada al crecimiento |
 
 Una variante más completa —con inhibición por producto, útil si la fermentación se acerca a concentraciones de etanol donde la propia levadura empieza a frenar— reemplaza μ por:
 
 $$ \mu = \mu_{max} \frac{S}{K_s+S} \cdot \frac{1}{1+P/K_i} $$
 
-con \( K_i \) la constante de inhibición por etanol (valores de referencia: \( \mu_{max}\approx 0{,}35 \) h⁻¹, \( K_s\approx 1{,}0 \) g/L, \( K_i\approx 80 \) g/L, \( Y_{P/S}\approx 0{,}48 \) g/g).
+con $ K_i $ la constante de inhibición por etanol (valores de referencia: $ \mu_{max}\approx 0{,}35 $ h⁻¹, $ K_s\approx 1{,}0 $ g/L, $ K_i\approx 80 $ g/L, $ Y_{P/S}\approx 0{,}48 $ g/g).
 
 ### Diseñar el corte para que quede "sin alcohol"
 

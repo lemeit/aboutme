@@ -303,4 +303,4 @@ Ese *t\** es el tiempo de fermentación que programás: al alcanzarlo, se interr
 - [Monte Sastre, E. (2021). *Modelling and simulation of a continuous beer production plant using Simulink*. Trabajo de Fin de Grado, Universidad Carlos III de Madrid.](/files/monte-sastre-2021-simulink-cerveza.pdf) (PDF)
 - [Julián-Ricardo, M. C., Baltá-García, J. G., Pérez-Sánchez, E. J. y Pérez-Sánchez, A. (2018). *Simulación del proceso de producción de cerveza a escala piloto*. Afinidad, LXXV(581), 39–45.](/files/julian-ricardo-2018-superpro-cerveza-piloto.pdf) (PDF, simulación en SuperPro Designer)
 - Código Alimentario Argentino — [Cap. XIII, Bebidas Fermentadas: Cervezas](https://www.argentina.gob.ar/sites/default/files/anmat-capitulo_xiii_beb_fermentadasactualiz_2018-12.pdf) (límite de 0,5 % v/v para cerveza sin alcohol, Art. 1080)
-- [Límite de gluten en Argentina — 10 mg/kg](https://celiaquia.info/valor-de-gluten-maximo-permitido-en-alimentos-para-celiacos/) (Art. 1383, CAA)
+- [Límite de gluten en Argentina — 10 mg/kg](https://www.argentina.gob.ar/sites/default/files/capitulo_xvii_dieteticosactualiz_2025-09_0.pdf) (Art. 1383, CAA)

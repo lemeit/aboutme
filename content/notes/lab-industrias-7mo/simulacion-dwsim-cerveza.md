@@ -9,7 +9,7 @@ description = 'Balance de materia y energía aplicado a una cervecería piloto �
 
 Vas a construir, paso a paso y en DWSIM (un simulador de procesos gratuito y de código abierto), el balance de materia y energía de una planta piloto de elaboración de cerveza — el proyecto final de la materia: una cerveza **sin TACC y sin alcohol** (≤0,5 % v/v). Si todavía no viste el [marco teórico]({{< ref "teoria-balance-energia" >}}) (balance de energía, Bernoulli, NPSH), es el paso previo a esta guía — acá ya lo vas a estar aplicando directamente.
 
-📊 **[Abrir planilla en Google Sheets — hacé tu copia](https://docs.google.com/spreadsheets/d/1_ItL1nn0kCZN63zf5AfpR7oCiFvLgLZl/copy)** — balance de materia y verificación manual
+📊 **[Abrir planilla en Google Sheets — hacé tu copia](https://docs.google.com/spreadsheets/d/1_ItL1nn0kCZN63zf5AfpR7oCiFvLgLZl/copy)** · 📥 **[Descargar (.xlsx)](/files/planilla-balance-cerveceria-dwsim.xlsx)** — balance de materia y verificación manual
 
 ## Objetivos
 
@@ -299,4 +299,8 @@ Ese *t\** es el tiempo de fermentación que programás: al alcanzarlo, se interr
 - DWSIM — código fuente de Pump.vb — https://github.com/DanWBR/dwsim/blob/windows/DWSIM.UnitOperations/UnitOperations/Pump.vb
 - DWSIM — Unit Operation and Stream Models — https://dwsim.org/docs/crossplatform/help/unitops.htm
 - FOSSEE — Manual de operaciones unitarias en DWSIM — https://static.fossee.in/dwsim/manuals/Unit-Operations-DWSIM.pdf
-- Córdova Beltrán, C. X. (2021). *Simulación y modelamiento de un proceso de producción de cerveza artesanal a base de quinua*. Tesis, ESPOCH.
+- [Córdova Beltrán, C. X. (2021). *Simulación y modelamiento de un proceso de producción de cerveza artesanal a base de quinua*. Tesis, ESPOCH.](/files/cordova-2021-espoch-cerveza-quinua-dwsim.pdf) (PDF)
+- [Monte Sastre, E. (2021). *Modelling and simulation of a continuous beer production plant using Simulink*. Trabajo de Fin de Grado, Universidad Carlos III de Madrid.](/files/monte-sastre-2021-simulink-cerveza.pdf) (PDF)
+- [Julián-Ricardo, M. C., Baltá-García, J. G., Pérez-Sánchez, E. J. y Pérez-Sánchez, A. (2018). *Simulación del proceso de producción de cerveza a escala piloto*. Afinidad, LXXV(581), 39–45.](/files/julian-ricardo-2018-superpro-cerveza-piloto.pdf) (PDF, simulación en SuperPro Designer)
+- Código Alimentario Argentino — [Cap. XIII, Bebidas Fermentadas: Cervezas](https://www.argentina.gob.ar/sites/default/files/anmat-capitulo_xiii_beb_fermentadasactualiz_2018-12.pdf) (límite de 0,5 % v/v para cerveza sin alcohol, Art. 1080)
+- [Límite de gluten en Argentina — 10 mg/kg](https://celiaquia.info/valor-de-gluten-maximo-permitido-en-alimentos-para-celiacos/) (Art. 1383, CAA)

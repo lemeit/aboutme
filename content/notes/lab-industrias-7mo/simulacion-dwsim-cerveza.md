@@ -9,6 +9,8 @@ description = 'Balance de materia y energía aplicado a una cervecería piloto �
 
 Vas a construir, paso a paso y en DWSIM (un simulador de procesos gratuito y de código abierto), el balance de materia y energía de una planta piloto de elaboración de cerveza — el proyecto final de la materia: una cerveza **sin TACC y sin alcohol** (≤0,5 % v/v). Si todavía no viste el [marco teórico]({{< ref "teoria-balance-energia" >}}) (balance de energía, Bernoulli, NPSH), es el paso previo a esta guía — acá ya lo vas a estar aplicando directamente.
 
+📥 **[Descargar planilla de cálculo](/files/planilla-balance-cerveceria-dwsim.xlsx)** — balance de materia y verificación manual (Excel / LibreOffice)
+
 ## Objetivos
 
 - Aplicar el balance de materia y de energía a un proceso real, no a un ejercicio abstracto.

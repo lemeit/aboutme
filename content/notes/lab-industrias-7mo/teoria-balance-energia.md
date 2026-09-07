@@ -139,7 +139,7 @@ que es exactamente la parte de presión de Bernoulli. La diferencia entre Bernou
 
 $$ h_2 = h_1 + \frac{P_2 - P_1}{\rho\,\eta} $$
 
-Con los mismos números que vas a usar en la guía de simulación ($ \Delta P = 100\,000 $ Pa, $ \eta = 72\,\% $, $ \rho \approx 998 $ kg/m³, $ C_p \approx 4{,}186 $ kJ/kg·K):
+Con los mismos números que vas a usar en la guía de simulación ($ \Delta P = 100\,000 $ Pa, $ \eta = 0.72 $ (72 %), $ \rho \approx 998 $ kg/m³, $ C_p \approx 4{,}186 $ kJ/kg·K):
 
 $$ w_{ideal} = \frac{\Delta P}{\rho} = \frac{100\,000}{998} = 0.100\ \tfrac{\text{kJ}}{\text{kg}} \quad (\text{Bernoulli, sin pérdidas}) $$
 

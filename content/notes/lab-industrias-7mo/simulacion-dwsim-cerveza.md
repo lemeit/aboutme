@@ -277,11 +277,11 @@ Agregá las dos al mismo `Reaction Set` y asignaselo al reactor.
 
 Es el cálculo de diseño que hace "sin alcohol" a la cerveza. A 100 % de conversión producirías:
 
-$$ m_{etanol,100\%} \approx (49.8+10.2)\ \text{kg azúcar} \times 0.53\ \tfrac{\text{kg etanol}}{\text{kg azúcar}} = 60.0 \times 0.53 \approx 31.8\ \text{kg} $$
+$$ m_{etanol,100} \approx (49.8+10.2)\ \text{kg azúcar} \times 0.53\ \tfrac{\text{kg etanol}}{\text{kg azúcar}} = 60.0 \times 0.53 \approx 31.8\ \text{kg} $$
 
 (0,53 kg etanol/kg azúcar sale de la estequiometría de las dos reacciones — coincide con el 5,3 % de alcohol que la tesis citada valida contra su cerveza experimental de 5 %.) El objetivo es ≤0,5 % v/v ≈ 3,95 g/L (CAA, Art. 1080), sobre el volumen del lote (600 L, el mismo dato del que partiste en la sección 2):
 
-$$ \text{Conversión necesaria} = \frac{P_{objetivo} \times V_{mosto}}{m_{etanol,100\%}} = \frac{3.95\ g/L \times 600\ L}{31\,800\ g} \approx 7.5\ \% $$
+$$ \text{Conversión necesaria} = \frac{P_{objetivo} \times V_{mosto}}{m_{etanol,100}} = \frac{3.95\ g/L \times 600\ L}{31\,800\ g} \approx 7.5 $$ %
 
 Por eso `Conversion [%]` no es 100 (cerveza normal) sino ≈7,5: le decís al reactor que deje fermentar solo una fracción chica del azúcar, a propósito.
 
@@ -375,9 +375,9 @@ con $ K_i $ la constante de inhibición por etanol (valores de referencia: $ \mu
 
 ### Diseñar el corte para que quede "sin alcohol"
 
-Integrando el sistema —en una planilla, en Python, o en un reactor `Batch` de DWSIM con cinética definida por vos— obtenés *P(t)*. Buscás *t\** donde *P* alcanza el límite legal:
+Integrando el sistema —en una planilla, en Python, o en un reactor `Batch` de DWSIM con cinética definida por vos— obtenés *P(t)*. Buscás *t\** donde *P* alcanza el límite legal (0,5 % v/v ≈ 3,95 g/L):
 
-$$ P(t^{*}) = 0.5\ \%v/v \approx 3.95\ g/L $$
+$$ P(t^{*}) \approx 3.95\ g/L $$
 
 Ese *t\** es el tiempo de fermentación que programás: al alcanzarlo, se interrumpe la fermentación (fermentación arrestada) enfriando rápido y separando la levadura.
 

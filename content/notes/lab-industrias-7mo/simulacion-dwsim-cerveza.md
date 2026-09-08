@@ -14,11 +14,11 @@ Vas a construir, paso a paso y en DWSIM (un simulador de procesos gratuito y de 
 
 Recursos
 
-📊 [Abrir en Google Sheets — hacé tu copia](https://docs.google.com/spreadsheets/d/1_ItL1nn0kCZN63zf5AfpR7oCiFvLgLZl/copy)
+📊 <a href="https://docs.google.com/spreadsheets/d/1_ItL1nn0kCZN63zf5AfpR7oCiFvLgLZl/copy" target="_blank" rel="noopener">Abrir en Google Sheets — hacé tu copia</a>
 
-📥 [Descargar planilla (.xlsx)](https://profe.lemeit.ar/files/planilla-balance-cerveceria-dwsim.xlsx)
+📥 <a href="https://profe.lemeit.ar/files/planilla-balance-cerveceria-dwsim.xlsx" target="_blank" rel="noopener">Descargar planilla (.xlsx)</a>
 
-📄 [Descargar en PDF (formato paper)](https://profe.lemeit.ar/files/pdf/simulacion-dwsim-cerveza.pdf)
+📄 <a href="https://profe.lemeit.ar/files/pdf/simulacion-dwsim-cerveza.pdf" target="_blank" rel="noopener">Descargar en PDF (formato paper)</a>
 
 </div>
 

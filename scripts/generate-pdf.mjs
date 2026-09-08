@@ -6,19 +6,60 @@
 // Se corre en CI (.github/workflows/generate-pdf.yml) contra un build
 // LOCAL y descartable de Hugo -- no toca el build real de Cloudflare
 // Pages. El unico resultado que se commitea es el PDF en
-// static/files/pdf/<slug>.pdf, que Cloudflare vuelve a incluir solo
-// como cualquier otro archivo estatico en su propio build.
+// static/files/pdf/<slug>.pdf.
+//
+// IMPORTANTE: Hugo referencia sus propios CSS/JS con rutas absolutas
+// (/css/stylesheet.xxxx.css). Esas rutas solo resuelven bien si el HTML
+// se sirve por HTTP -- abrirlo directo como file:// las rompe (Chromium
+// las busca en la raiz del filesystem). Por eso este script levanta un
+// server HTTP local mínimo sobre ./public antes de abrir las páginas.
 //
 // Uso: node scripts/generate-pdf.mjs
 // Requiere que ./public ya exista (correr `hugo` antes).
 
 import { chromium } from 'playwright';
-import { readFileSync, existsSync, mkdirSync, readdirSync, statSync } from 'node:fs';
+import { readFileSync, existsSync, mkdirSync, readdirSync, statSync, createReadStream } from 'node:fs';
 import path from 'node:path';
+import http from 'node:http';
 
 const CONTENT_DIR = 'content';
 const PUBLIC_DIR = 'public';
 const OUT_DIR = path.join('static', 'files', 'pdf');
+const PORT = 8971;
+
+const MIME = {
+  '.html': 'text/html; charset=utf-8',
+  '.css': 'text/css; charset=utf-8',
+  '.js': 'application/javascript; charset=utf-8',
+  '.svg': 'image/svg+xml',
+  '.png': 'image/png',
+  '.jpg': 'image/jpeg',
+  '.jpeg': 'image/jpeg',
+  '.woff2': 'font/woff2',
+  '.woff': 'font/woff',
+  '.json': 'application/json; charset=utf-8',
+  '.xml': 'application/xml; charset=utf-8',
+};
+
+function startServer() {
+  const server = http.createServer((req, res) => {
+    let urlPath = decodeURIComponent(req.url.split('?')[0]);
+    if (urlPath.endsWith('/')) urlPath += 'index.html';
+    let filePath = path.join(PUBLIC_DIR, urlPath);
+    if (!existsSync(filePath) || statSync(filePath).isDirectory()) {
+      filePath = path.join(PUBLIC_DIR, urlPath, 'index.html');
+    }
+    if (!existsSync(filePath)) {
+      res.writeHead(404);
+      res.end('not found: ' + urlPath);
+      return;
+    }
+    const ext = path.extname(filePath);
+    res.writeHead(200, { 'Content-Type': MIME[ext] || 'application/octet-stream' });
+    createReadStream(filePath).pipe(res);
+  });
+  return new Promise((resolve) => server.listen(PORT, () => resolve(server)));
+}
 
 function walk(dir) {
   const out = [];
@@ -72,16 +113,16 @@ async function main() {
   }
 
   mkdirSync(OUT_DIR, { recursive: true });
+  const server = await startServer();
   const browser = await chromium.launch();
 
   for (const t of targets) {
     const outName = t.slug.split('/').pop() + '.pdf';
     const outPath = path.join(OUT_DIR, outName);
-    console.log(`[pdf] generando ${outPath} desde ${t.htmlPath} ...`);
+    console.log(`[pdf] generando ${outPath} desde http://localhost:${PORT}/${t.slug}/ ...`);
 
     const page = await browser.newPage();
-    const fileUrl = 'file://' + path.resolve(t.htmlPath);
-    await page.goto(fileUrl, { waitUntil: 'load', timeout: 30000 });
+    await page.goto(`http://localhost:${PORT}/${t.slug}/`, { waitUntil: 'networkidle', timeout: 30000 });
 
     const dateText = await page.evaluate(() => {
       const el = document.querySelector('.post-meta');
@@ -118,6 +159,7 @@ async function main() {
   }
 
   await browser.close();
+  server.close();
 }
 
 main().catch((err) => {

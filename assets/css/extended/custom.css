@@ -36,3 +36,29 @@ header.header { border-bottom: 2px solid #111; }
 /* notes-link: modo claro usa --content, dark mode ya queda naranja por la regla de arriba */
 nav .notes-link,
 ul .notes-link { color: var(--content); }
+/* Caja de recursos (planilla / PDF) flotando a un costado del inicio del artículo */
+.post-content .resource-box {
+  float: right;
+  width: 230px;
+  margin: 0 0 1rem 1.5rem;
+  padding: 12px 14px;
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: var(--radius, 8px);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+.post-content .resource-box p:first-child {
+  margin: 0 0 6px 0;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color: var(--secondary);
+  font-weight: 600;
+}
+.post-content .resource-box p { margin: 4px 0; }
+.post-content .resource-box a { word-break: break-word; }
+
+@media (max-width: 700px) {
+  .post-content .resource-box { float: none; width: auto; margin: 1rem 0; }
+}

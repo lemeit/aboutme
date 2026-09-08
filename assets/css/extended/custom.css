@@ -36,7 +36,12 @@ header.header { border-bottom: 2px solid #111; }
 /* notes-link: modo claro usa --content, dark mode ya queda naranja por la regla de arriba */
 nav .notes-link,
 ul .notes-link { color: var(--content); }
-/* Caja de recursos (planilla / PDF) flotando a un costado del inicio del artículo */
+/* Caja de recursos (planilla / PDF).
+   Por defecto (pantallas angostas/medianas): franja horizontal dentro
+   del flujo del texto, arriba de "Objetivos".
+   En pantallas anchas (>=1300px) se vuelve un panel lateral real: se
+   saca de la columna de texto (720px) con margen negativo y flota en
+   el margen vacío a la derecha, pegado mientras se hace scroll. */
 .post-content .resource-box {
   display: flex;
   flex-wrap: wrap;
@@ -62,4 +67,24 @@ ul .notes-link { color: var(--content); }
 }
 .post-content .resource-box p { margin: 0; }
 .post-content .resource-box a { white-space: nowrap; }
+
+@media (min-width: 1300px) {
+  .post-content .resource-box {
+    float: right;
+    clear: right;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    width: 200px;
+    margin: 0 -220px 1rem 20px;
+    position: sticky;
+    top: 90px;
+  }
+  .post-content .resource-box p:first-child {
+    flex-basis: auto;
+  }
+  .post-content .resource-box a {
+    white-space: normal;
+  }
+}
 

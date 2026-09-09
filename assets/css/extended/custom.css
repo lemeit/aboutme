@@ -75,8 +75,13 @@ ul .notes-link { color: var(--content); }
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: stretch;
-    width: 200px;
-    margin: 0 -220px 1rem 20px;
+    width: 190px;
+    margin: 0 -204px 1rem 14px;
+    padding-left: 12px;
+    border: none;
+    border-left: 3px solid var(--primary);
+    border-radius: 0;
+    background: transparent;
     position: sticky;
     top: 90px;
   }

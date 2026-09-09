@@ -114,7 +114,7 @@ async function main() {
 
   mkdirSync(OUT_DIR, { recursive: true });
   const server = await startServer();
-  const browser = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' });
+  const browser = await chromium.launch();
 
   for (const t of targets) {
     const outName = t.slug.split('/').pop() + '.pdf';

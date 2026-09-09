@@ -124,14 +124,14 @@
   }
   .post-content.md-content th,
   .post-content.md-content td {
-    border: none;
+    border: none !important;
     padding: 3pt 5pt;
     text-align: left;
   }
   .post-content.md-content th {
     text-align: center;
     font-weight: 700;
-    border-bottom: 0.75pt solid #000;
+    border-bottom: 0.75pt solid #000 !important;
   }
   .post-content.md-content pre,
   .post-content.md-content code {

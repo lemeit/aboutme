@@ -152,7 +152,14 @@ async function main() {
       path: outPath,
       format: 'A4',
       printBackground: true,
-      margin: { top: '20mm', bottom: '18mm', left: '14mm', right: '14mm' },
+      margin: { top: '20mm', bottom: '20mm', left: '14mm', right: '14mm' },
+      displayHeaderFooter: true,
+      headerTemplate: '<span></span>',
+      footerTemplate: `
+        <div style="width:100%; font-family: Arial, Helvetica, sans-serif; font-size:8pt; color:#555; text-align:center;">
+          Página <span class="pageNumber"></span> de <span class="totalPages"></span>
+        </div>
+      `,
     });
     await page.close();
     console.log(`[pdf] listo: ${outPath}`);

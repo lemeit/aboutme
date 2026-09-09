@@ -10,7 +10,7 @@
 @media print {
   @page {
     size: A4;
-    margin: 20mm 14mm 18mm 14mm;
+    margin: 20mm 14mm 20mm 14mm;
   }
 
   html, body {
@@ -103,17 +103,29 @@
     orphans: 3;
     widows: 3;
   }
+  /* Tablas en formato APA: solo 3 líneas horizontales (arriba, debajo
+     del encabezado, abajo), sin líneas verticales ni bordes por celda,
+     encabezado centrado, cuerpo alineado a la izquierda. */
   .post-content.md-content table {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 7.6pt;
     break-inside: avoid;
-    margin: 6pt 0;
+    margin: 8pt 0;
     border-collapse: collapse;
     width: 100%;
+    border-top: 1pt solid #000;
+    border-bottom: 1pt solid #000;
   }
   .post-content.md-content th,
   .post-content.md-content td {
-    border: 0.5pt solid #999;
-    padding: 2pt 4pt;
+    border: none;
+    padding: 3pt 5pt;
+    text-align: left;
+  }
+  .post-content.md-content th {
+    text-align: center;
+    font-weight: 700;
+    border-bottom: 0.75pt solid #000;
   }
   .post-content.md-content pre,
   .post-content.md-content code {

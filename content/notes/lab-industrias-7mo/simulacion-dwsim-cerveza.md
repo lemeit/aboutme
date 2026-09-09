@@ -20,8 +20,6 @@ Recursos
 
 📄 <a href="https://profe.lemeit.ar/files/pdf/simulacion-dwsim-cerveza.pdf" target="_blank" rel="noopener">Descargar en PDF (formato paper)</a>
 
-📘 <a href="https://profe.lemeit.ar/files/pdf/teoria-balance-energia.pdf" target="_blank" rel="noopener">Marco teórico (PDF)</a>
-
 </div>
 
 ## Objetivos
@@ -279,7 +277,7 @@ Acá es donde se decide si tu cerveza tiene alcohol o no. DWSIM no tiene un bloq
 2. La corriente de entrada ya viene resuelta desde arriba (mosto frío, lote de 600 L): Water 540,0 kg, maltose 49,8 kg, Glucose 10,2 kg (total 600,0 kg). Temperatura 20 °C, Presión 1 atm.
 3. **Cargá las dos reacciones de conversión**, en *Settings > Reactions*:
 
-| Reacción | Ecuación | Base Comp | Conversion [%] |
+| Reacción | Ecuación | Base Comp | Conv. [%] |
 |---|---|---|---|
 | Glucosa | C6H12O6 → 2CO2 + 2C2H5OH | Glucose | ≈ 7,5 |
 | Maltosa | H2O + C12H22O11 → 4CO2 + 4C2H5OH | maltose | ≈ 7,5 |
@@ -405,18 +403,18 @@ Ese *t\** es el tiempo de fermentación que programás: al alcanzarlo, se interr
 - El cálculo manual de verificación de cada equipo (trabajo real y ΔT de cada bomba; calor entregado en el hervor y retirado en el intercambiador; % de conversión y grado alcohólico del fermentador) comparado contra el resultado del simulador.
 - Una conclusión breve sobre las diferencias entre el cálculo manual y el de DWSIM, si las hay.
 
-## Fuentes
+## Referencias
 
 - DWSIM – Open-Source Chemical Process Simulator — https://dwsim.org/
-- DWSIM — Your First Simulation (tutorial oficial) — https://dwsim.org/tutorials/en/beginner/01-your-first-simulation.html
+- DWSIM — Your First Simulation — https://dwsim.org/tutorials/en/beginner/01-your-first-simulation.html
 - DWSIM — Mixer Basics — https://dwsim.org/tutorials/en/beginner/02-mixer-basics.html
-- DWSIM — Advanced Tutorial: Ethanol Plant (reactor de conversión + NRTL) — https://dwsim.org/tutorials/en/advanced/05-ethanol-plant.html
+- DWSIM — Advanced Tutorial: Ethanol Plant — https://dwsim.org/tutorials/en/advanced/05-ethanol-plant.html
 - DWSIM — Pump Class (API help) — https://dwsim.org/api_help/html/T_DWSIM_UnitOperations_UnitOperations_Pump.htm
 - DWSIM — código fuente de Pump.vb — https://github.com/DanWBR/dwsim/blob/windows/DWSIM.UnitOperations/UnitOperations/Pump.vb
 - DWSIM — Unit Operation and Stream Models — https://dwsim.org/docs/crossplatform/help/unitops.htm
 - FOSSEE — Manual de operaciones unitarias en DWSIM — https://static.fossee.in/dwsim/manuals/Unit-Operations-DWSIM.pdf
 - [Córdova Beltrán, C. X. (2021). *Simulación y modelamiento de un proceso de producción de cerveza artesanal a base de quinua*. Tesis, ESPOCH.](/files/cordova-2021-espoch-cerveza-quinua-dwsim.pdf) (PDF)
-- [Monte Sastre, E. (2021). *Modelling and simulation of a continuous beer production plant using Simulink*. Trabajo de Fin de Grado, Universidad Carlos III de Madrid.](/files/monte-sastre-2021-simulink-cerveza.pdf) (PDF)
-- [Julián-Ricardo, M. C., Baltá-García, J. G., Pérez-Sánchez, E. J. y Pérez-Sánchez, A. (2018). *Simulación del proceso de producción de cerveza a escala piloto*. Afinidad, LXXV(581), 39–45.](/files/julian-ricardo-2018-superpro-cerveza-piloto.pdf) (PDF, simulación en SuperPro Designer)
-- Código Alimentario Argentino — [Cap. XIII, Bebidas Fermentadas: Cervezas](https://www.argentina.gob.ar/sites/default/files/anmat-capitulo_xiii_beb_fermentadasactualiz_2018-12.pdf) (límite de 0,5 % v/v para cerveza sin alcohol, Art. 1080)
+- [Monte Sastre, E. (2021). *Modelling and simulation of a continuous beer production plant using Simulink*. Trabajo de Fin de Grado, U. Carlos III de Madrid.](/files/monte-sastre-2021-simulink-cerveza.pdf) (PDF)
+- [Julián-Ricardo et al. (2018). *Simulación del proceso de producción de cerveza a escala piloto*. Afinidad, LXXV(581), 39–45.](/files/julian-ricardo-2018-superpro-cerveza-piloto.pdf) (PDF, SuperPro Designer)
+- Código Alimentario Argentino — [Cap. XIII, Bebidas Fermentadas: Cervezas](https://www.argentina.gob.ar/sites/default/files/anmat-capitulo_xiii_beb_fermentadasactualiz_2018-12.pdf) (límite 0,5 % v/v, Art. 1080)
 - [Límite de gluten en Argentina — 10 mg/kg](https://www.argentina.gob.ar/sites/default/files/capitulo_xvii_dieteticosactualiz_2025-09_0.pdf) (Art. 1383, CAA)

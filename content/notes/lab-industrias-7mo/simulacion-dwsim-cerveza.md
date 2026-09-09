@@ -20,6 +20,8 @@ Recursos
 
 📄 <a href="https://profe.lemeit.ar/files/pdf/simulacion-dwsim-cerveza.pdf" target="_blank" rel="noopener">Descargar en PDF (formato paper)</a>
 
+📘 <a href="https://profe.lemeit.ar/files/pdf/teoria-balance-energia.pdf" target="_blank" rel="noopener">Marco teórico (PDF)</a>
+
 </div>
 
 ## Objetivos

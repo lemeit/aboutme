@@ -4,10 +4,21 @@ date = 2026-08-30
 weight = 1
 draft = false
 math = true
+pdf = true
 description = 'De lo que ya sabés (balance de materia, gases ideales, calorimetría) al balance de energía y la ecuación de Bernoulli, con la mira puesta en el proyecto final: una cerveza sin TACC y sin alcohol.'
 +++
 
 Ya cerraste el balance de materia. Ahora arranca el balance de energía — y lo vamos a construir con la mira puesta en el proyecto final de la materia: diseñar, simular y justificar una cerveza **sin TACC y sin alcohol** (≤0,5 % v/v), hecha con malta de mijo u otras semillas sin gluten. Todavía no hace falta saber qué semilla exactamente — eso viene con más referencias más adelante —, pero sí hace falta el balance de energía: es lo que te va a permitir enfriar el mosto sin adivinar, dimensionar la bomba que lo mueve, y entender por dónde se va el calor cuando la fermentación libera energía.
+
+<div class="resource-box no-print">
+
+Recursos
+
+📄 <a href="https://profe.lemeit.ar/files/pdf/teoria-balance-energia.pdf" target="_blank" rel="noopener">Descargar en PDF (formato paper)</a>
+
+📘 <a href="https://profe.lemeit.ar/files/pdf/simulacion-dwsim-cerveza.pdf" target="_blank" rel="noopener">Guía de simulación en DWSIM (PDF)</a>
+
+</div>
 
 ## 0. Dónde estás parado
 

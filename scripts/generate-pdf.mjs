@@ -114,7 +114,7 @@ async function main() {
 
   mkdirSync(OUT_DIR, { recursive: true });
   const server = await startServer();
-  const browser = await chromium.launch();
+  const browser = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' });
 
   for (const t of targets) {
     const outName = t.slug.split('/').pop() + '.pdf';
@@ -125,8 +125,12 @@ async function main() {
     await page.goto(`http://localhost:${PORT}/${t.slug}/`, { waitUntil: 'networkidle', timeout: 30000 });
 
     const dateText = await page.evaluate(() => {
-      const el = document.querySelector('.post-meta');
-      return el ? el.textContent.trim().split('\n')[0].trim() : '';
+      // .post-meta de PaperMod es "<span>fecha</span> · <span>min lectura</span> · <span>autor</span>"
+      // todo en un solo div sin saltos de línea reales -- por eso tomamos
+      // solo el primer <span> (la fecha), no el textContent completo,
+      // que repetiría el nombre del autor (ya está en el byline de abajo).
+      const el = document.querySelector('.post-meta span');
+      return el ? el.textContent.trim() : '';
     });
 
     await page.evaluate((dateText) => {

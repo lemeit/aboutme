@@ -43,45 +43,85 @@
     display: none !important;
   }
 
-  /* Encabezado institucional (logo + colegio + materia), inyectado por
-     generate-pdf.mjs desde el front matter ("materia"/"colegio") si la
-     nota los define -- usa el espacio que antes quedaba vacío entre el
-     margen superior de la hoja y el título (margen superior ya
-     reducido en @page, arriba). Logo a la izquierda, texto a la
-     derecha, todo el bloque centrado como unidad. */
-  .paper-institutional-header {
+  /* Masthead estilo revista científica (Elsevier/ScienceDirect y
+     similares): franja de 3 columnas -- logo+institución, sitio,
+     "sello" de la materia -- inyectada por generate-pdf.mjs desde el
+     front matter (logo/materia/colegio) si la nota los define. Usa el
+     espacio que antes quedaba vacío entre el margen superior de la
+     hoja y el título (margen superior ya reducido en @page, arriba). */
+  .paper-masthead {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 8pt;
-    margin: 0 0 8pt 0;
+    justify-content: space-between;
+    gap: 10pt;
+    margin: 0 0 3pt 0;
   }
-  .paper-institutional-logo {
-    height: 34pt;
+  .paper-masthead-col {
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    min-width: 0;
+  }
+  .paper-masthead-left {
+    justify-content: flex-start;
+    gap: 6pt;
+    text-align: left;
+  }
+  .paper-masthead-center {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .paper-masthead-right {
+    justify-content: flex-end;
+    text-align: right;
+  }
+  .paper-masthead-logo {
+    height: 30pt;
     width: auto;
     break-inside: avoid;
   }
-  .paper-institutional-text {
-    text-align: left;
-  }
-  .paper-institutional-header-colegio {
-    font-family: Georgia, 'Times New Roman', serif;
-    font-size: 10pt;
-    font-weight: 700;
-    letter-spacing: 0.02em;
-    color: #333;
-  }
-  .paper-institutional-header-materia {
+  .paper-masthead-schoolname {
     font-family: Georgia, 'Times New Roman', serif;
     font-size: 9pt;
-    color: #555;
-    margin-top: 1pt;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: #333;
+    line-height: 1.15;
   }
-  .paper-institutional-header-site {
+  .paper-masthead-tag {
     font-family: Georgia, 'Times New Roman', serif;
-    font-size: 7.5pt;
+    font-size: 6.5pt;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
     color: #888;
-    margin-top: 2pt;
+  }
+  .paper-masthead-site {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 11pt;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--primary, #9b3d00);
+  }
+  .paper-masthead-badge {
+    display: inline-block;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 7pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #333;
+    border-top: 1pt solid #333;
+    border-bottom: 0.5pt solid #333;
+    padding: 2pt 4pt;
+    line-height: 1.25;
+  }
+  .paper-masthead-citation {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 8pt;
+    color: #666;
+    text-align: center;
+    margin: 0 0 9pt 0;
   }
 
   .post-title {

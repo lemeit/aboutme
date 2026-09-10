@@ -1,5 +1,5 @@
 +++
-title = 'Simulación de una planta piloto de cerveza con un simulador de procesos'
+title = 'Secuencia de los balances en la elaboración de una bebida fermentada mediante un simulador de procesos'
 date = 2026-09-06
 weight = 2
 draft = false

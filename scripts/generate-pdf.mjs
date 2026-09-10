@@ -157,53 +157,72 @@ async function main() {
       }
     }, dateText);
 
-    // Encabezado de logo/materia/colegio: usa el espacio que antes
-    // quedaba vacío arriba del título (margen superior de la hoja ya
-    // reducido en el CSS). Se arma desde el front matter
-    // (logo/materia/colegio) para que sea reutilizable en cualquier
-    // otra nota, sin texto fijo en el script.
+    // Masthead estilo "paper" de revista científica (Elsevier/ScienceDirect
+    // y similares): franja de 3 columnas -- logo+institución a la
+    // izquierda, sitio al centro, "sello" de la materia a la derecha --
+    // y debajo una línea de cita con institución+materia+año. Se arma
+    // desde el front matter (logo/materia/colegio) para que sea
+    // reutilizable en cualquier otra nota, sin texto fijo salvo el sitio.
     await page.evaluate(({ materia, colegio, logo }) => {
       if (!materia && !colegio && !logo) return;
       const title = document.querySelector('.post-title');
       if (!title) return;
-      const header = document.createElement('div');
-      header.className = 'paper-institutional-header';
+
+      const masthead = document.createElement('div');
+      masthead.className = 'paper-masthead';
+
+      const left = document.createElement('div');
+      left.className = 'paper-masthead-col paper-masthead-left';
       if (logo) {
         const img = document.createElement('img');
-        img.className = 'paper-institutional-logo';
+        img.className = 'paper-masthead-logo';
         img.src = logo;
-        header.appendChild(img);
+        left.appendChild(img);
       }
-      if (materia || colegio) {
-        const text = document.createElement('div');
-        text.className = 'paper-institutional-text';
-        if (colegio) {
-          const line1 = document.createElement('div');
-          line1.className = 'paper-institutional-header-colegio';
-          line1.textContent = colegio;
-          text.appendChild(line1);
-        }
-        if (materia) {
-          const line2 = document.createElement('div');
-          line2.className = 'paper-institutional-header-materia';
-          line2.textContent = materia;
-          text.appendChild(line2);
-        }
-        // Sitio: fijo (no viene del front matter, es el mismo para
-        // todas las notas), como tercera línea chica del encabezado.
-        const line3 = document.createElement('div');
-        line3.className = 'paper-institutional-header-site';
-        line3.textContent = 'profe.lemeit.ar';
-        text.appendChild(line3);
-        header.appendChild(text);
+      if (colegio) {
+        const name = document.createElement('div');
+        name.className = 'paper-masthead-schoolname';
+        name.textContent = colegio;
+        left.appendChild(name);
       }
-      title.insertAdjacentElement('beforebegin', header);
+      masthead.appendChild(left);
+
+      const center = document.createElement('div');
+      center.className = 'paper-masthead-col paper-masthead-center';
+      const tag = document.createElement('div');
+      tag.className = 'paper-masthead-tag';
+      tag.textContent = 'Disponible en';
+      center.appendChild(tag);
+      const site = document.createElement('div');
+      site.className = 'paper-masthead-site';
+      site.textContent = 'profe.lemeit.ar';
+      center.appendChild(site);
+      masthead.appendChild(center);
+
+      const right = document.createElement('div');
+      right.className = 'paper-masthead-col paper-masthead-right';
+      if (materia) {
+        const badge = document.createElement('div');
+        badge.className = 'paper-masthead-badge';
+        badge.textContent = materia.split('—')[0].trim();
+        right.appendChild(badge);
+      }
+      masthead.appendChild(right);
+
+      title.insertAdjacentElement('beforebegin', masthead);
+
+      if (colegio || materia) {
+        const citation = document.createElement('div');
+        citation.className = 'paper-masthead-citation';
+        citation.textContent = [colegio, materia].filter(Boolean).join(' — ');
+        masthead.insertAdjacentElement('afterend', citation);
+      }
     }, { materia: t.materia, colegio: t.colegio, logo: t.logo });
 
     // Esperar a que el logo (si hay) termine de cargar antes de seguir --
     // si no, a veces el PDF sale con el hueco del <img> en blanco.
     await page.waitForFunction(() => {
-      const img = document.querySelector('.paper-institutional-logo');
+      const img = document.querySelector('.paper-masthead-logo');
       return !img || img.complete;
     }, { timeout: 5000 }).catch(() => {
       console.warn('[pdf] aviso: timeout esperando el logo institucional, sigo igual.');

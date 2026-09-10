@@ -75,7 +75,7 @@ Para trabajar con vectores en una dimensión, elegimos un **sentido positivo**. 
 
 La elección del sentido positivo es **arbitraria** — lo que importa es ser consistente en todo el problema.
 
-> ⚠️ Una velocidad de $-10$ m/s **no es menor** que $+5$ m/s en el sentido físico: el primer objeto se mueve **más rápido** (módulo 10 vs. módulo 5), pero en sentido contrario.
+> ⚠️ Una velocidad de $-10\ \text{m/s}$ **no es menor** que $+5\ \text{m/s}$ en el sentido físico: el primer objeto se mueve **más rápido** (módulo 10 vs. módulo 5), pero en sentido contrario.
 
 ---
 

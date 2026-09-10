@@ -67,6 +67,11 @@
     gap: 6pt;
     text-align: left;
   }
+  .paper-masthead-left-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1pt;
+  }
   .paper-masthead-center {
     justify-content: center;
     flex-direction: column;
@@ -88,6 +93,14 @@
     letter-spacing: 0.01em;
     color: #333;
     line-height: 1.15;
+  }
+  .paper-masthead-locality {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 7pt;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #777;
   }
   .paper-masthead-tag {
     font-family: Georgia, 'Times New Roman', serif;
@@ -116,12 +129,12 @@
     padding: 2pt 4pt;
     line-height: 1.25;
   }
-  .paper-masthead-citation {
-    font-family: Georgia, 'Times New Roman', serif;
-    font-size: 8pt;
-    color: #666;
-    text-align: center;
-    margin: 0 0 9pt 0;
+  .paper-masthead-badge-sub {
+    display: block;
+    font-size: 6pt;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    margin-top: 1pt;
   }
 
   .post-title {

@@ -78,6 +78,9 @@ function frontMatterString(fm, key) {
   return m ? m[1] : '';
 }
 
+const MESES_ES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio',
+  'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+
 function parseFrontMatter(mdPath) {
   const text = readFileSync(mdPath, 'utf8');
   const m = text.match(/^\+\+\+\r?\n([\s\S]*?)\r?\n\+\+\+/);
@@ -89,7 +92,13 @@ function parseFrontMatter(mdPath) {
   const materia = frontMatterString(fm, 'materia');
   const colegio = frontMatterString(fm, 'colegio');
   const logo = frontMatterString(fm, 'logo');
-  return { title, materia, colegio, logo };
+  const localidad = frontMatterString(fm, 'localidad');
+  // Fecha sin el día: se calcula acá (no en el navegador) para no
+  // depender del formato que arma el tema para ".post-meta" -- así
+  // queda controlado que solo se muestre "mes año" en español.
+  const dateMatch = fm.match(/^\s*date\s*=\s*(\d{4})-(\d{2})-(\d{2})/m);
+  const dateText = dateMatch ? `${MESES_ES[parseInt(dateMatch[2], 10) - 1]} ${dateMatch[1]}` : '';
+  return { title, materia, colegio, logo, localidad, dateText };
 }
 
 function slugFromContentPath(mdPath) {
@@ -113,7 +122,7 @@ async function main() {
       console.warn(`[pdf] aviso: ${f} tiene pdf = true pero no encontre ${htmlPath} (¿corriste "hugo" antes?)`);
       continue;
     }
-    targets.push({ mdPath: f, slug, htmlPath, title: fm.title, materia: fm.materia, colegio: fm.colegio, logo: fm.logo });
+    targets.push({ mdPath: f, slug, htmlPath, title: fm.title, materia: fm.materia, colegio: fm.colegio, logo: fm.logo, localidad: fm.localidad, dateText: fm.dateText });
   }
 
   if (targets.length === 0) {
@@ -138,15 +147,9 @@ async function main() {
     await page.emulateMedia({ media: 'print' });
     await page.goto(`http://localhost:${PORT}/${t.slug}/`, { waitUntil: 'networkidle', timeout: 30000 });
 
-    const dateText = await page.evaluate(() => {
-      // .post-meta de PaperMod es "<span>fecha</span> · <span>min lectura</span> · <span>autor</span>"
-      // todo en un solo div sin saltos de línea reales -- por eso tomamos
-      // solo el primer <span> (la fecha), no el textContent completo,
-      // que repetiría el nombre del autor (ya está en el byline de abajo).
-      const el = document.querySelector('.post-meta span');
-      return el ? el.textContent.trim() : '';
-    });
-
+    // La fecha ya viene calculada del front matter (parseFrontMatter),
+    // como "mes año" en español y sin el día -- no se scrapea más de
+    // ".post-meta" (eso traía el formato con día que no queríamos).
     await page.evaluate((dateText) => {
       const title = document.querySelector('.post-title');
       if (title) {
@@ -155,15 +158,17 @@ async function main() {
         byline.textContent = `Luciano Lamaita${dateText ? ' · ' + dateText : ''}`;
         title.insertAdjacentElement('afterend', byline);
       }
-    }, dateText);
+    }, t.dateText);
 
     // Masthead estilo "paper" de revista científica (Elsevier/ScienceDirect
     // y similares): franja de 3 columnas -- logo+institución a la
-    // izquierda, sitio al centro, "sello" de la materia a la derecha --
-    // y debajo una línea de cita con institución+materia+año. Se arma
-    // desde el front matter (logo/materia/colegio) para que sea
+    // izquierda, sitio al centro, "sello" de la materia a la derecha.
+    // Ya no lleva una línea de cita aparte debajo (era redundante con el
+    // sello de la derecha) -- toda la info (colegio, localidad, materia,
+    // año) vive dentro de las 2 columnas de los costados. Se arma desde
+    // el front matter (logo/materia/colegio/localidad) para que sea
     // reutilizable en cualquier otra nota, sin texto fijo salvo el sitio.
-    await page.evaluate(({ materia, colegio, logo }) => {
+    await page.evaluate(({ materia, colegio, logo, localidad }) => {
       if (!materia && !colegio && !logo) return;
       const title = document.querySelector('.post-title');
       if (!title) return;
@@ -179,11 +184,25 @@ async function main() {
         img.src = logo;
         left.appendChild(img);
       }
-      if (colegio) {
-        const name = document.createElement('div');
-        name.className = 'paper-masthead-schoolname';
-        name.textContent = colegio;
-        left.appendChild(name);
+      if (colegio || localidad) {
+        // El nombre de la escuela va sin repetir "EET"/"EEST N°1" -- eso
+        // ya está en el logo. La localidad (Saladillo) va como segunda
+        // línea, debajo del nombre, en el mismo bloque de texto.
+        const textCol = document.createElement('div');
+        textCol.className = 'paper-masthead-left-text';
+        if (colegio) {
+          const name = document.createElement('div');
+          name.className = 'paper-masthead-schoolname';
+          name.textContent = colegio;
+          textCol.appendChild(name);
+        }
+        if (localidad) {
+          const loc = document.createElement('div');
+          loc.className = 'paper-masthead-locality';
+          loc.textContent = localidad;
+          textCol.appendChild(loc);
+        }
+        left.appendChild(textCol);
       }
       masthead.appendChild(left);
 
@@ -202,22 +221,27 @@ async function main() {
       const right = document.createElement('div');
       right.className = 'paper-masthead-col paper-masthead-right';
       if (materia) {
+        // "Laboratorio de Industrias — 7° año" -> línea principal (la
+        // materia) + línea secundaria (el año), las dos dentro del mismo
+        // sello -- ya no hay línea de cita aparte donde ponerlo.
+        const parts = materia.split('—').map((s) => s.trim()).filter(Boolean);
         const badge = document.createElement('div');
         badge.className = 'paper-masthead-badge';
-        badge.textContent = materia.split('—')[0].trim();
+        const main = document.createElement('span');
+        main.textContent = parts[0] || materia;
+        badge.appendChild(main);
+        if (parts[1]) {
+          const sub = document.createElement('span');
+          sub.className = 'paper-masthead-badge-sub';
+          sub.textContent = parts[1];
+          badge.appendChild(sub);
+        }
         right.appendChild(badge);
       }
       masthead.appendChild(right);
 
       title.insertAdjacentElement('beforebegin', masthead);
-
-      if (colegio || materia) {
-        const citation = document.createElement('div');
-        citation.className = 'paper-masthead-citation';
-        citation.textContent = [colegio, materia].filter(Boolean).join(' — ');
-        masthead.insertAdjacentElement('afterend', citation);
-      }
-    }, { materia: t.materia, colegio: t.colegio, logo: t.logo });
+    }, { materia: t.materia, colegio: t.colegio, logo: t.logo, localidad: t.localidad });
 
     // Esperar a que el logo (si hay) termine de cargar antes de seguir --
     // si no, a veces el PDF sale con el hueco del <img> en blanco.

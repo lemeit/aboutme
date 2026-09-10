@@ -6,8 +6,9 @@ draft = false
 math = true
 pdf = true
 materia = 'Laboratorio de Industrias — 7° año'
-colegio = 'EEST N°1 "Gral. Savio"'
+colegio = '"Gral. Savio"'
 logo = '/images/logos/eest1.png'
+localidad = 'Saladillo'
 description = 'Balance de materia y energía aplicado a una cervecería piloto — construcción paso a paso en el simulador de procesos abierto DWSIM.'
 +++
 

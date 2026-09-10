@@ -1,10 +1,13 @@
 +++
-title = 'Simulación de una planta piloto de cerveza en DWSIM'
+title = 'Simulación de una planta piloto de cerveza con un simulador de procesos'
 date = 2026-09-06
 weight = 2
 draft = false
 math = true
 pdf = true
+materia = 'Laboratorio de Industrias — 7° año'
+colegio = 'EEST N°1 "Gral. Savio"'
+logo = '/images/logos/eest1.png'
 description = 'Balance de materia y energía aplicado a una cervecería piloto — construcción paso a paso en el simulador de procesos abierto DWSIM.'
 +++
 

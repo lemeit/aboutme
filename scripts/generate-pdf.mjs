@@ -72,6 +72,12 @@ function walk(dir) {
   return out;
 }
 
+function frontMatterString(fm, key) {
+  const m = fm.match(new RegExp(`^\\s*${key}\\s*=\\s*'([^']*)'`, 'm')) ||
+            fm.match(new RegExp(`^\\s*${key}\\s*=\\s*"([^"]*)"`, 'm'));
+  return m ? m[1] : '';
+}
+
 function parseFrontMatter(mdPath) {
   const text = readFileSync(mdPath, 'utf8');
   const m = text.match(/^\+\+\+\r?\n([\s\S]*?)\r?\n\+\+\+/);
@@ -79,8 +85,11 @@ function parseFrontMatter(mdPath) {
   const fm = m[1];
   const pdfMatch = fm.match(/^\s*pdf\s*=\s*true\s*$/m);
   if (!pdfMatch) return null;
-  const titleMatch = fm.match(/^\s*title\s*=\s*'([^']*)'/m) || fm.match(/^\s*title\s*=\s*"([^"]*)"/m);
-  return { title: titleMatch ? titleMatch[1] : path.basename(mdPath, '.md') };
+  const title = frontMatterString(fm, 'title') || path.basename(mdPath, '.md');
+  const materia = frontMatterString(fm, 'materia');
+  const colegio = frontMatterString(fm, 'colegio');
+  const logo = frontMatterString(fm, 'logo');
+  return { title, materia, colegio, logo };
 }
 
 function slugFromContentPath(mdPath) {
@@ -104,7 +113,7 @@ async function main() {
       console.warn(`[pdf] aviso: ${f} tiene pdf = true pero no encontre ${htmlPath} (¿corriste "hugo" antes?)`);
       continue;
     }
-    targets.push({ mdPath: f, slug, htmlPath, title: fm.title });
+    targets.push({ mdPath: f, slug, htmlPath, title: fm.title, materia: fm.materia, colegio: fm.colegio, logo: fm.logo });
   }
 
   if (targets.length === 0) {
@@ -143,10 +152,62 @@ async function main() {
       if (title) {
         const byline = document.createElement('div');
         byline.className = 'paper-byline';
-        byline.textContent = `Luciano Lamaita · profe.lemeit.ar${dateText ? ' · ' + dateText : ''}`;
+        byline.textContent = `Luciano Lamaita${dateText ? ' · ' + dateText : ''}`;
         title.insertAdjacentElement('afterend', byline);
       }
     }, dateText);
+
+    // Encabezado de logo/materia/colegio: usa el espacio que antes
+    // quedaba vacío arriba del título (margen superior de la hoja ya
+    // reducido en el CSS). Se arma desde el front matter
+    // (logo/materia/colegio) para que sea reutilizable en cualquier
+    // otra nota, sin texto fijo en el script.
+    await page.evaluate(({ materia, colegio, logo }) => {
+      if (!materia && !colegio && !logo) return;
+      const title = document.querySelector('.post-title');
+      if (!title) return;
+      const header = document.createElement('div');
+      header.className = 'paper-institutional-header';
+      if (logo) {
+        const img = document.createElement('img');
+        img.className = 'paper-institutional-logo';
+        img.src = logo;
+        header.appendChild(img);
+      }
+      if (materia || colegio) {
+        const text = document.createElement('div');
+        text.className = 'paper-institutional-text';
+        if (colegio) {
+          const line1 = document.createElement('div');
+          line1.className = 'paper-institutional-header-colegio';
+          line1.textContent = colegio;
+          text.appendChild(line1);
+        }
+        if (materia) {
+          const line2 = document.createElement('div');
+          line2.className = 'paper-institutional-header-materia';
+          line2.textContent = materia;
+          text.appendChild(line2);
+        }
+        // Sitio: fijo (no viene del front matter, es el mismo para
+        // todas las notas), como tercera línea chica del encabezado.
+        const line3 = document.createElement('div');
+        line3.className = 'paper-institutional-header-site';
+        line3.textContent = 'profe.lemeit.ar';
+        text.appendChild(line3);
+        header.appendChild(text);
+      }
+      title.insertAdjacentElement('beforebegin', header);
+    }, { materia: t.materia, colegio: t.colegio, logo: t.logo });
+
+    // Esperar a que el logo (si hay) termine de cargar antes de seguir --
+    // si no, a veces el PDF sale con el hueco del <img> en blanco.
+    await page.waitForFunction(() => {
+      const img = document.querySelector('.paper-institutional-logo');
+      return !img || img.complete;
+    }, { timeout: 5000 }).catch(() => {
+      console.warn('[pdf] aviso: timeout esperando el logo institucional, sigo igual.');
+    });
 
     await page.waitForFunction(() => {
       const spans = document.querySelectorAll('.katex, .katex-display');

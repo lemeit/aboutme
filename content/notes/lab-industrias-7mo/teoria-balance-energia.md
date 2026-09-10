@@ -5,6 +5,9 @@ weight = 1
 draft = false
 math = true
 pdf = true
+materia = 'Laboratorio de Industrias — 7° año'
+colegio = 'EEST N°1 "Gral. Savio"'
+logo = '/images/logos/eest1.png'
 description = 'De lo ya conocido (balance de materia, gases ideales, calorimetría) al balance de energía y la ecuación de Bernoulli, con la mira puesta en el proyecto final: una cerveza sin TACC y sin alcohol.'
 +++
 
@@ -160,7 +163,7 @@ que es exactamente la parte de presión de Bernoulli. La diferencia entre Bernou
 
 $$ h_2 = h_1 + \frac{P_2 - P_1}{\rho\,\eta} $$
 
-Con los mismos números que se usan en la guía de simulación ($ \Delta P = 100\,000\ \text{Pa} $, $ \eta = 0.72 $ (72 %), $ \rho \approx 998\ \text{kg/m}^3 $, $ C_p \approx 4{,}186\ \text{kJ/kg·K} $):
+Con los mismos números que se usan en la guía de simulación ($ \Delta P = 100\,000\ \text{Pa} $, $ \eta = 0.72 $ (72 %), $ \rho \approx 998\ \text{kg/m}^3 $, $ C_p \approx 4{,}186\ \text{kJ/kg}\cdot\text{K} $):
 
 **Bernoulli, sin pérdidas:**
 

@@ -10,7 +10,7 @@
 @media print {
   @page {
     size: A4;
-    margin: 20mm 14mm 20mm 14mm;
+    margin: 12mm 14mm 18mm 14mm;
   }
 
   html, body {
@@ -23,7 +23,7 @@
   body {
     font-family: Georgia, 'Times New Roman', serif;
     font-size: 9.8pt;
-    line-height: 1.42;
+    line-height: 1.38;
   }
 
   header.header,
@@ -41,6 +41,47 @@
   nav,
   .no-print {
     display: none !important;
+  }
+
+  /* Encabezado institucional (logo + colegio + materia), inyectado por
+     generate-pdf.mjs desde el front matter ("materia"/"colegio") si la
+     nota los define -- usa el espacio que antes quedaba vacío entre el
+     margen superior de la hoja y el título (margen superior ya
+     reducido en @page, arriba). Logo a la izquierda, texto a la
+     derecha, todo el bloque centrado como unidad. */
+  .paper-institutional-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8pt;
+    margin: 0 0 8pt 0;
+  }
+  .paper-institutional-logo {
+    height: 34pt;
+    width: auto;
+    break-inside: avoid;
+  }
+  .paper-institutional-text {
+    text-align: left;
+  }
+  .paper-institutional-header-colegio {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 10pt;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: #333;
+  }
+  .paper-institutional-header-materia {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 9pt;
+    color: #555;
+    margin-top: 1pt;
+  }
+  .paper-institutional-header-site {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 7.5pt;
+    color: #888;
+    margin-top: 2pt;
   }
 
   .post-title {
@@ -89,15 +130,19 @@
     column-rule: 0.3pt solid #ccc;
     text-align: justify;
     hyphens: auto;
+    /* Por defecto el navegador "balancea" las columnas (intenta que las
+       2 columnas de cada página queden parejas en altura), lo que corta
+       la columna izquierda antes de tiempo aunque hubiera lugar para
+       seguir. En un paper real el texto llena la columna de punta a
+       punta y recién ahí salta a la siguiente -- eso es "auto". */
+    column-fill: auto;
   }
 
   .post-content.md-content h2 {
     font-family: Georgia, 'Times New Roman', serif;
     font-size: 12pt;
-    margin: 10pt 0 4pt 0;
+    margin: 10pt 0 3pt 0;
     break-after: avoid-column;
-    border-bottom: 0.5pt solid #444;
-    padding-bottom: 2pt;
   }
   .post-content.md-content h3 {
     font-family: Georgia, 'Times New Roman', serif;
@@ -106,31 +151,55 @@
     break-after: avoid-column;
   }
   .post-content.md-content p {
-    margin: 0 0 6pt 0;
+    margin: 0 0 5pt 0;
     orphans: 3;
     widows: 3;
+  }
+  .post-content.md-content ul,
+  .post-content.md-content ol {
+    margin: 0 0 5pt 0;
+    padding-left: 14pt;
+  }
+  .post-content.md-content li {
+    margin: 0 0 2pt 0;
+  }
+  /* Lista de referencias: es siempre el último <ul> del documento (va
+     al final, después de "Referencias"). Sin viñeta -- en un paper el
+     listado de referencias no lleva punto ni bullet por ítem. */
+  .post-content.md-content ul:last-of-type {
+    list-style: none;
+    padding-left: 0;
   }
   /* Tablas en formato APA: solo 3 líneas horizontales (arriba, debajo
      del encabezado, abajo), sin líneas verticales ni bordes por celda,
      encabezado centrado, cuerpo alineado a la izquierda.
-     "width: auto" (en vez de 100%) es a propósito: con solo 2-3
-     columnas de contenido corto, forzar el ancho completo de la
-     columna de impresión hacía que el navegador le repartiera el
-     espacio sobrante a una columna, dejando una franja vacía a la
-     derecha -- pero las líneas de arriba/abajo (border-top/bottom del
-     <table>) igual atravesaban esa franja, así que se veía como una
-     tercera columna vacía. Con "auto" la tabla (y sus líneas) miden
-     exactamente lo que ocupa el contenido. */
+     El ancho se ajusta al contenido ("fit-content", no "auto" a secas):
+     con una tabla de 2-3 columnas de contenido corto, "width:100%"
+     hacía que el navegador le repartiera todo el espacio sobrante a
+     una sola columna, dejando una franja vacía enorme de un lado (con
+     las líneas de arriba/abajo atravesándola, como si faltara una
+     columna). "width:auto" corrige eso, pero "margin:auto" para
+     centrar la tabla no se resuelve bien dentro de las columnas CSS de
+     este layout -- queda pegada a la izquierda con todo el espacio
+     libre de un solo lado, mismo efecto visual. "fit-content" sí fija
+     un ancho concreto antes de calcular los márgenes automáticos, así
+     que la tabla queda angosta (mide lo que ocupa el contenido) Y
+     centrada, con el espacio libre repartido parejo a los dos lados. */
   .post-content.md-content table {
     font-family: Georgia, 'Times New Roman', serif;
     font-size: 9pt;
     break-inside: auto;
-    margin: 8pt auto;
+    margin: 7pt auto;
     border-collapse: collapse;
-    width: auto;
+    width: fit-content;
     max-width: 100%;
-    border-top: 0.75pt solid #333;
-    border-bottom: 0.75pt solid #333;
+    /* El ancho de línea por debajo de ~1px de dispositivo queda "piso-eado"
+       por el pipeline de impresión de Chromium (confirmado: 0.75pt, 0.5pt,
+       0.3pt y 0.15pt de border-width producen el MISMO PDF byte a byte).
+       Como no se puede afinar más el trazo, el único margen real para que
+       se vea más fino es bajar el contraste de color en vez del ancho. */
+    border-top: 0.75pt solid #777;
+    border-bottom: 0.75pt solid #777;
   }
   .post-content.md-content thead {
     display: table-header-group;
@@ -154,7 +223,7 @@
   .post-content.md-content th {
     text-align: center;
     font-weight: 700;
-    border-bottom: 0.6pt solid #333 !important;
+    border-bottom: 0.6pt solid #777 !important;
   }
   .post-content.md-content pre,
   .post-content.md-content code {
@@ -168,13 +237,20 @@
   .post-content.md-content .katex-display {
     font-size: 1.1em;
     break-inside: avoid;
-    margin: 6pt 0;
+    margin: 5pt 0;
     /* Ya no se achican fórmulas con JS (ver generate-pdf.mjs), así que si
        alguna quedara más ancha que la columna preferimos que se note en la
        revisión visual (overflow visible) en vez de cortarla en seco. */
     overflow-x: visible;
   }
   .post-content.md-content .katex { font-size: 1.05em; }
+  /* Barra de fracción: igual que con los bordes de tabla, el ancho ya
+     está en el piso mínimo que renderiza Chromium (probado: reducir
+     border-bottom-width o aplicar transform: scaleY() no cambia el PDF
+     resultante). Se aclara el color para que se perciba más fina. */
+  .post-content.md-content .katex .frac-line {
+    border-bottom-color: #555 !important;
+  }
   .post-content.md-content blockquote {
     break-inside: avoid;
     font-size: 9pt;

@@ -8,6 +8,9 @@ mainSections = []
 
 [params]
   author = "Luciano Lamaita"
+
+  [params.footer]
+    text = "[Wiki de proyectos](https://wiki.lemeit.ar/)"
   description = "Ingeniero | Docente | Saladillo, Buenos Aires"
   dateFormat = "02/01/2006"
   ShowReadingTime = true

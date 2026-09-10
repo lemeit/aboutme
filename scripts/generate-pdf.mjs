@@ -158,10 +158,14 @@ async function main() {
     await page.waitForTimeout(500);
 
     // Acomodar el contenido que es más ancho que una columna de impresión:
-    // fórmulas de KaTeX (se achican, o si ni así entran pasan a ocupar las
-    // dos columnas) y tablas (si alguna celda no entra, pasan a ocupar las
-    // dos columnas). Sin esto, el contenido ancho se corta en seco contra
-    // el borde de la columna en vez de acomodarse.
+    // las fórmulas de KaTeX se achican hasta entrar en la columna (nunca
+    // pasan a ocupar las dos, eso rompería el formato de dos columnas de
+    // toda la página); las tablas, si con eso no alcanza (una celda que no
+    // entra ni bajando el tamaño de fuente general de la tabla), sí pasan a
+    // ocupar las dos columnas -- una tabla ancha centrada es normal en un
+    // paper, una fórmula angosta cruzando la página no. Sin este ajuste el
+    // contenido ancho se corta en seco contra el borde de la columna en vez
+    // de acomodarse.
     await page.evaluate(() => {
       const container = document.querySelector('.post-content.md-content');
       if (!container) return;
@@ -190,7 +194,13 @@ async function main() {
       // colchón, fórmulas justo en el límite quedan con la última letra
       // cortada.
       const SAFETY = 0.88;
-      const MIN_SCALE = 0.6; // no reducir una fórmula a menos del 60% de su tamaño
+      // Piso de achique de una fórmula: 0.5 = no menos de la mitad de su
+      // tamaño original. A diferencia de una versión anterior de este
+      // script, las fórmulas NUNCA pasan a ocupar las dos columnas -- eso
+      // rompe la lectura en dos columnas de toda la página. Achicar es la
+      // única salida; con las notas actuales, ninguna fórmula necesita
+      // bajar de ~0.6 para entrar, así que 0.5 deja margen de sobra.
+      const MIN_SCALE = 0.5;
 
       // Ojo con .katex-display > .katex: la propia hoja de estilos de KaTeX
       // le pone "display: block; white-space: nowrap" -- es decir, ocupa
@@ -210,30 +220,22 @@ async function main() {
         return width;
       }
 
-      // Devuelve true si el elemento entró en budgetPx (reduciendo la
-      // fuente si hace falta, hasta MIN_SCALE); false si ni al mínimo entra.
+      // Achica la fuente del elemento hasta que entre en budgetPx, sin
+      // bajar nunca de MIN_SCALE de su tamaño original.
       function shrinkToFit(el, budgetPx) {
         const naturalWidth = naturalWidthOf(el);
-        if (naturalWidth <= budgetPx * SAFETY) return true;
+        if (naturalWidth <= budgetPx * SAFETY) return;
         const currentPx = parseFloat(getComputedStyle(el).fontSize);
-        const scale = (budgetPx * SAFETY) / naturalWidth;
-        el.style.fontSize = (currentPx * Math.max(scale, MIN_SCALE)) + 'px';
-        return scale >= MIN_SCALE;
+        const scale = Math.max((budgetPx * SAFETY) / naturalWidth, MIN_SCALE);
+        el.style.fontSize = (currentPx * scale) + 'px';
       }
 
-      // Fórmulas en bloque ($$...$$): intentar que entren en una columna;
-      // si ni al tamaño mínimo entran, que ocupen las dos columnas.
+      // Fórmulas en bloque ($$...$$): achicar hasta que entren en una
+      // columna. Nunca pasan a ocupar las dos columnas (rompería la
+      // lectura en dos columnas de la página).
       container.querySelectorAll('.katex-display').forEach((disp) => {
         disp.style.fontSize = '';
-        disp.style.columnSpan = '';
-        disp.style.textAlign = '';
-        const fits = shrinkToFit(disp, columnWidthPx);
-        if (!fits) {
-          disp.style.fontSize = '';
-          disp.style.columnSpan = 'all';
-          disp.style.textAlign = 'center';
-          shrinkToFit(disp, contentWidthPx);
-        }
+        shrinkToFit(disp, columnWidthPx);
       });
 
       // Fórmulas en línea ($...$) que por sí solas ya son más anchas que

@@ -8,7 +8,7 @@ pdf = true
 description = 'De lo ya conocido (balance de materia, gases ideales, calorimetría) al balance de energía y la ecuación de Bernoulli, con la mira puesta en el proyecto final: una cerveza sin TACC y sin alcohol.'
 +++
 
-Con el balance de materia ya cerrado, arranca el balance de energía — que se construye con la mira puesta en el proyecto final de la materia: diseñar, simular y justificar una cerveza **sin TACC y sin alcohol** (≤0,5 % v/v), hecha con malta de mijo u otras semillas sin gluten. Todavía no hace falta saber qué semilla exactamente — eso viene con más referencias más adelante —, pero sí hace falta el balance de energía: es lo que permite enfriar el mosto sin adivinar, dimensionar la bomba que lo mueve, y entender por dónde se va el calor cuando la fermentación libera energía.
+Con el balance de materia ya cerrado, arranca el balance de energía — que se construye con la mira puesta en el proyecto final de la materia: diseñar, simular y justificar una cerveza **sin TACC y sin alcohol** (≤0,5 % v/v), hecha con malta de mijo u otras semillas sin gluten. Todavía no hace falta saber qué semilla exactamente — eso viene con más referencias más adelante —, pero sí hace falta el balance de energía: es lo que permite enfriar el mosto sin adivinar, dimensionar la bomba que lo mueve, y entender por dónde se va el calor cuando la fermentación libera energía.
 
 <div class="resource-box no-print">
 
@@ -136,7 +136,7 @@ Con $ w_{bomba} $ el trabajo que la bomba entrega por unidad de masa, y $ h_{pé
 
 Hay una segunda pregunta, además de "cuánta presión gana el fluido": ¿qué pasa en la **entrada** de la bomba, antes de que el rotor empiece a empujar? Ahí es donde aparece el NPSH (*Net Positive Suction Head*), y es Bernoulli aplicado al tramo de cañería que va desde el tanque de origen hasta la boca de succión de la bomba.
 
-Por Bernoulli, si la velocidad del fluido aumenta en algún punto de la cañería (por un estrechamiento, por ejemplo) o si hay pérdidas por fricción antes de llegar a la bomba, la presión local en ese punto **baja**. Y acá conecta con algo ya visto de calorimetría y cambio de fase: un líquido hierve cuando su presión de vapor iguala a la presión a la que está sometido — el agua hierve a 100 °C a 1 atm, pero a menor presión hierve a menor temperatura. Si la presión en la succión de la bomba cae lo suficiente, el líquido puede empezar a vaporizarse ahí mismo, **sin que nadie le agregue calor**, solo por la caída de presión. Esas burbujas de vapor colapsan violentamente al llegar a la zona de alta presión dentro de la bomba — eso es cavitación, y con el tiempo destruye el rotor.
+Por Bernoulli, si la velocidad del fluido aumenta en algún punto de la cañería (por un estrechamiento, por ejemplo) o si hay pérdidas por fricción antes de llegar a la bomba, la presión local en ese punto **baja**. Y acá conecta con algo ya visto de calorimetría y cambio de fase: un líquido hierve cuando su presión de vapor iguala a la presión a la que está sometido — el agua hierve a 100 °C a 1 atm, pero a menor presión hierve a menor temperatura. Si la presión en la succión de la bomba cae lo suficiente, el líquido puede empezar a vaporizarse ahí mismo, **sin que nadie le agregue calor**, solo por la caída de presión. Esas burbujas de vapor colapsan violentamente al llegar a la zona de alta presión dentro de la bomba — eso es cavitación, y con el tiempo destruye el rotor.
 
 El NPSH disponible es, justamente, el margen entre la presión real en la succión y la presión de vapor del líquido a esa temperatura, expresado como altura de columna de líquido (las mismas unidades de $ P/\rho g $ que ya aparecen en Bernoulli):
 
@@ -156,11 +156,11 @@ En la bomba de la planta piloto, la entrada y la salida tienen el mismo diámetr
 
 $$ -\dot W_s = \Delta \dot H \qquad \Longrightarrow \qquad w_{bomba} = \frac{\Delta P}{\rho} $$
 
-que es exactamente la parte de presión de Bernoulli. La diferencia entre Bernoulli ideal (lo que se calcula a mano en un primer paso) y lo que hace DWSIM por dentro está en un solo lugar: **la eficiencia**. Una bomba real no es 100 % eficiente — parte del trabajo se disipa por fricción interna, y esa parte no se pierde (la energía no se crea ni se destruye) sino que aparece como un pequeño aumento de temperatura. Por eso DWSIM calcula:
+que es exactamente la parte de presión de Bernoulli. La diferencia entre Bernoulli ideal (lo que se calcula a mano en un primer paso) y lo que hace DWSIM por dentro está en un solo lugar: **la eficiencia**. Una bomba real no es 100 % eficiente — parte del trabajo se disipa por fricción interna, y esa parte no se pierde (la energía no se crea ni se destruye) sino que aparece como un pequeño aumento de temperatura. Por eso DWSIM calcula:
 
 $$ h_2 = h_1 + \frac{P_2 - P_1}{\rho\,\eta} $$
 
-Con los mismos números que se usan en la guía de simulación ($ \Delta P = 100\,000 $ Pa, $ \eta = 0.72 $ (72 %), $ \rho \approx 998 $ kg/m³, $ C_p \approx 4{,}186 $ kJ/kg·K):
+Con los mismos números que se usan en la guía de simulación ($ \Delta P = 100\,000\ \text{Pa} $, $ \eta = 0.72 $ (72 %), $ \rho \approx 998\ \text{kg/m}^3 $, $ C_p \approx 4{,}186\ \text{kJ/kg·K} $):
 
 **Bernoulli, sin pérdidas:**
 

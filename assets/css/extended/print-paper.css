@@ -51,7 +51,7 @@
        izquierdo y "text-align: center" no tiene ningún efecto -- por eso
        forzamos "display: block" acá. */
     display: block !important;
-    font-family: Arial, Helvetica, sans-serif !important;
+    font-family: Georgia, 'Times New Roman', serif !important;
     font-size: 17pt !important;
     font-weight: 700;
     text-align: center;
@@ -61,12 +61,12 @@
   .post-title .entry-hint { display: none; }
 
   .post-description {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Georgia, 'Times New Roman', serif;
     font-size: 9pt;
     font-style: italic;
     text-align: justify;
-    border-top: 0.75pt solid #222;
-    border-bottom: 0.75pt solid #222;
+    border-top: 0.5pt solid #444;
+    border-bottom: 0.5pt solid #444;
     padding: 6pt 2pt;
     margin: 8pt 0 12pt 0;
   }
@@ -76,7 +76,7 @@
   }
 
   .paper-byline {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Georgia, 'Times New Roman', serif;
     font-size: 9.5pt;
     color: #333;
     text-align: center;
@@ -86,21 +86,21 @@
   .post-content.md-content {
     column-count: 2;
     column-gap: 8mm;
-    column-rule: 0.4pt solid #ccc;
+    column-rule: 0.3pt solid #ccc;
     text-align: justify;
     hyphens: auto;
   }
 
   .post-content.md-content h2 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Georgia, 'Times New Roman', serif;
     font-size: 12pt;
     margin: 10pt 0 4pt 0;
     break-after: avoid-column;
-    border-bottom: 0.6pt solid #222;
+    border-bottom: 0.5pt solid #444;
     padding-bottom: 2pt;
   }
   .post-content.md-content h3 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Georgia, 'Times New Roman', serif;
     font-size: 10.6pt;
     margin: 8pt 0 3pt 0;
     break-after: avoid-column;
@@ -112,16 +112,25 @@
   }
   /* Tablas en formato APA: solo 3 líneas horizontales (arriba, debajo
      del encabezado, abajo), sin líneas verticales ni bordes por celda,
-     encabezado centrado, cuerpo alineado a la izquierda. */
+     encabezado centrado, cuerpo alineado a la izquierda.
+     "width: auto" (en vez de 100%) es a propósito: con solo 2-3
+     columnas de contenido corto, forzar el ancho completo de la
+     columna de impresión hacía que el navegador le repartiera el
+     espacio sobrante a una columna, dejando una franja vacía a la
+     derecha -- pero las líneas de arriba/abajo (border-top/bottom del
+     <table>) igual atravesaban esa franja, así que se veía como una
+     tercera columna vacía. Con "auto" la tabla (y sus líneas) miden
+     exactamente lo que ocupa el contenido. */
   .post-content.md-content table {
     font-family: Georgia, 'Times New Roman', serif;
     font-size: 9pt;
     break-inside: auto;
-    margin: 8pt 0;
+    margin: 8pt auto;
     border-collapse: collapse;
-    width: 100%;
-    border-top: 1pt solid #000;
-    border-bottom: 1pt solid #000;
+    width: auto;
+    max-width: 100%;
+    border-top: 0.75pt solid #333;
+    border-bottom: 0.75pt solid #333;
   }
   .post-content.md-content thead {
     display: table-header-group;
@@ -145,7 +154,7 @@
   .post-content.md-content th {
     text-align: center;
     font-weight: 700;
-    border-bottom: 0.75pt solid #000 !important;
+    border-bottom: 0.6pt solid #333 !important;
   }
   .post-content.md-content pre,
   .post-content.md-content code {
@@ -169,7 +178,7 @@
   .post-content.md-content blockquote {
     break-inside: avoid;
     font-size: 9pt;
-    border-left: 2pt solid #999;
+    border-left: 1pt solid #999;
     padding-left: 6pt;
     margin: 6pt 0;
   }

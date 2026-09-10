@@ -68,6 +68,41 @@ ul .notes-link { color: var(--content); }
 .post-content .resource-box p { margin: 0; }
 .post-content .resource-box a { white-space: nowrap; }
 
+/* Tablas en pantalla: PaperMod por defecto le pone un borde de 1px a
+   cada celda (var(--border)), lo que arma una cuadrícula completa en un
+   gris muy tenue -- se ve poco prolijo, sobre todo en tablas angostas.
+   La reemplazamos por el mismo formato "3 líneas" de un paper académico
+   (arriba, debajo del encabezado, abajo), sin grilla vertical, con un
+   separador tenue entre filas del cuerpo. Selector con ".post-content"
+   además de ".md-content" para tener más especificidad que la regla del
+   tema y no depender del orden de carga de los CSS. */
+.post-content.md-content table {
+  border-collapse: collapse;
+  width: auto;
+  max-width: 100%;
+  margin: 1.4rem auto;
+  border-top: 2px solid var(--primary);
+  border-bottom: 2px solid var(--primary);
+}
+.post-content.md-content table th,
+.post-content.md-content table:not(.highlighttable, .highlight table, .gist .highlight) td {
+  border: none;
+  border-bottom: 1px solid var(--border);
+  padding: 8px 16px;
+  min-width: 0;
+}
+.post-content.md-content table tr:last-child td {
+  border-bottom: none;
+}
+.post-content.md-content table th {
+  border-bottom: 2px solid var(--primary);
+  text-align: center;
+  font-weight: 600;
+}
+.post-content.md-content table td {
+  text-align: left;
+}
+
 @media (min-width: 1300px) {
   .post-content .resource-box {
     float: right;

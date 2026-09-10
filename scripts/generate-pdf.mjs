@@ -209,7 +209,7 @@ async function main() {
       displayHeaderFooter: true,
       headerTemplate: '<span></span>',
       footerTemplate: `
-        <div style="width:100%; font-family: Arial, Helvetica, sans-serif; font-size:8pt; color:#555; text-align:center;">
+        <div style="width:100%; font-family: Georgia, 'Times New Roman', serif; font-size:8pt; color:#555; text-align:center;">
           Página <span class="pageNumber"></span> de <span class="totalPages"></span>
         </div>
       `,

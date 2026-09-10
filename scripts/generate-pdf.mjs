@@ -122,6 +122,11 @@ async function main() {
     console.log(`[pdf] generando ${outPath} desde http://localhost:${PORT}/${t.slug}/ ...`);
 
     const page = await browser.newPage();
+    // Importante: activar el media "print" ANTES de tocar el DOM, para que
+    // cualquier medición de tamaño que hagamos más abajo (ancho de columna,
+    // ancho de fórmulas) refleje el CSS de @media print (2 columnas, fuentes
+    // de impresión) y no el layout de pantalla normal.
+    await page.emulateMedia({ media: 'print' });
     await page.goto(`http://localhost:${PORT}/${t.slug}/`, { waitUntil: 'networkidle', timeout: 30000 });
 
     const dateText = await page.evaluate(() => {
@@ -151,6 +156,109 @@ async function main() {
       console.warn(`[pdf] aviso: timeout esperando KaTeX en ${t.slug}, sigo igual.`);
     });
     await page.waitForTimeout(500);
+
+    // Acomodar el contenido que es más ancho que una columna de impresión:
+    // fórmulas de KaTeX (se achican, o si ni así entran pasan a ocupar las
+    // dos columnas) y tablas (si alguna celda no entra, pasan a ocupar las
+    // dos columnas). Sin esto, el contenido ancho se corta en seco contra
+    // el borde de la columna en vez de acomodarse.
+    await page.evaluate(() => {
+      const container = document.querySelector('.post-content.md-content');
+      if (!container) return;
+
+      // Ojo: el viewport que usa Playwright para renderizar la página NO
+      // tiene el ancho de una hoja A4 real, así que container.clientWidth
+      // (y por lo tanto el ancho de columna que arma "column-count: 2")
+      // no tiene relación con el ancho real de columna del PDF final.
+      // Para que las mediciones de acá abajo valgan, forzamos el ancho
+      // real del área de contenido de una hoja A4 (210mm - 14mm de margen
+      // a cada lado, la misma geometría de print-paper.css) ANTES de medir
+      // nada. Esto no cambia el PDF final: ese ancho es exactamente el que
+      // "width: auto" hubiera resuelto de todos modos dentro del área de
+      // impresión real.
+      const MM_TO_PX = 96 / 25.4;
+      const contentWidthPx = (210 - 2 * 14) * MM_TO_PX;
+      container.style.width = contentWidthPx + 'px';
+
+      const gapPx = parseFloat(getComputedStyle(container).columnGap) || 0;
+      const columnWidthPx = (container.clientWidth - gapPx) / 2;
+
+      // El margen de seguridad es más generoso de lo que parece necesario
+      // porque esta medición se hace ANTES de generar el PDF (con
+      // page.evaluate, en el layout "en vivo" de la página) y el paginado
+      // real de page.pdf() puede diferir en un par de px -- sin este
+      // colchón, fórmulas justo en el límite quedan con la última letra
+      // cortada.
+      const SAFETY = 0.88;
+      const MIN_SCALE = 0.6; // no reducir una fórmula a menos del 60% de su tamaño
+
+      // Ojo con .katex-display > .katex: la propia hoja de estilos de KaTeX
+      // le pone "display: block; white-space: nowrap" -- es decir, ocupa
+      // todo el ancho del contenedor (auto = 100%) aunque el contenido real
+      // sea angosto, y si es más ancho se lo deja pasar en una sola línea
+      // sin ajustar el tamaño de la caja. Por eso medir su
+      // getBoundingClientRect() tal cual da SIEMPRE el ancho de la columna,
+      // nunca el ancho real de la fórmula. Para conseguir el ancho real
+      // (shrink-to-fit) lo pasamos a "inline-block" un instante, medimos, y
+      // lo devolvemos a como estaba.
+      function naturalWidthOf(el) {
+        const inner = el.querySelector(':scope > .katex') || el;
+        const prevDisplay = inner.style.display;
+        inner.style.display = 'inline-block';
+        const width = inner.getBoundingClientRect().width;
+        inner.style.display = prevDisplay;
+        return width;
+      }
+
+      // Devuelve true si el elemento entró en budgetPx (reduciendo la
+      // fuente si hace falta, hasta MIN_SCALE); false si ni al mínimo entra.
+      function shrinkToFit(el, budgetPx) {
+        const naturalWidth = naturalWidthOf(el);
+        if (naturalWidth <= budgetPx * SAFETY) return true;
+        const currentPx = parseFloat(getComputedStyle(el).fontSize);
+        const scale = (budgetPx * SAFETY) / naturalWidth;
+        el.style.fontSize = (currentPx * Math.max(scale, MIN_SCALE)) + 'px';
+        return scale >= MIN_SCALE;
+      }
+
+      // Fórmulas en bloque ($$...$$): intentar que entren en una columna;
+      // si ni al tamaño mínimo entran, que ocupen las dos columnas.
+      container.querySelectorAll('.katex-display').forEach((disp) => {
+        disp.style.fontSize = '';
+        disp.style.columnSpan = '';
+        disp.style.textAlign = '';
+        const fits = shrinkToFit(disp, columnWidthPx);
+        if (!fits) {
+          disp.style.fontSize = '';
+          disp.style.columnSpan = 'all';
+          disp.style.textAlign = 'center';
+          shrinkToFit(disp, contentWidthPx);
+        }
+      });
+
+      // Fórmulas en línea ($...$) que por sí solas ya son más anchas que
+      // una columna (caso raro, ej. una fracción grande en medio de una
+      // oración): reducirlas in situ, no pueden ocupar las dos columnas.
+      container.querySelectorAll('.katex').forEach((el) => {
+        if (el.closest('.katex-display')) return;
+        el.style.fontSize = '';
+        shrinkToFit(el, columnWidthPx);
+      });
+
+      // Tablas: si alguna celda tiene contenido que no entra en el ancho
+      // que le tocó (una palabra/número más ancho que la celda, aun
+      // después de que el navegador reparte el ancho disponible entre
+      // columnas de la tabla), la tabla entera pasa a ocupar las dos
+      // columnas de la página en vez de dejar que el texto se corte.
+      container.querySelectorAll('table').forEach((table) => {
+        table.style.columnSpan = '';
+        const cells = table.querySelectorAll('th, td');
+        const overflows = Array.from(cells).some((cell) => cell.scrollWidth > cell.clientWidth + 1);
+        if (overflows) {
+          table.style.columnSpan = 'all';
+        }
+      });
+    });
 
     await page.pdf({
       path: outPath,

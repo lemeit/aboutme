@@ -2,6 +2,7 @@ baseURL = "https://profe.lemeit.ar/"
 defaultContentLanguage = "es"
 languageCode = "es-AR"
 title = "Luciano Lamaita"
+copyright = "© 2026 [Luciano Lamaita](mailto:info@lemeit.ar)"
 theme = "PaperMod"
 
 mainSections = []

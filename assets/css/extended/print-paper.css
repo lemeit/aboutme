@@ -44,6 +44,13 @@
   }
 
   .post-title {
+    /* El tema le agrega la clase "entry-hint-parent" al <h1> del título,
+       que en post-entry.css trae "display: flex; justify-content:
+       space-between" (para poner el icono de anclaje a la derecha). Con
+       un solo hijo real (el texto), eso lo empuja contra el borde
+       izquierdo y "text-align: center" no tiene ningún efecto -- por eso
+       forzamos "display: block" acá. */
+    display: block !important;
     font-family: Arial, Helvetica, sans-serif !important;
     font-size: 17pt !important;
     font-weight: 700;
@@ -107,7 +114,7 @@
      del encabezado, abajo), sin líneas verticales ni bordes por celda,
      encabezado centrado, cuerpo alineado a la izquierda. */
   .post-content.md-content table {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Georgia, 'Times New Roman', serif;
     font-size: 9pt;
     break-inside: auto;
     margin: 8pt 0;
@@ -153,7 +160,10 @@
     font-size: 1.1em;
     break-inside: avoid;
     margin: 6pt 0;
-    overflow-x: hidden;
+    /* Ya no se achican fórmulas con JS (ver generate-pdf.mjs), así que si
+       alguna quedara más ancha que la columna preferimos que se note en la
+       revisión visual (overflow visible) en vez de cortarla en seco. */
+    overflow-x: visible;
   }
   .post-content.md-content .katex { font-size: 1.05em; }
   .post-content.md-content blockquote {

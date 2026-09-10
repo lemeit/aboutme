@@ -157,95 +157,34 @@ async function main() {
     });
     await page.waitForTimeout(500);
 
-    // Acomodar el contenido que es más ancho que una columna de impresión:
-    // las fórmulas de KaTeX se achican hasta entrar en la columna (nunca
-    // pasan a ocupar las dos, eso rompería el formato de dos columnas de
-    // toda la página); las tablas, si con eso no alcanza (una celda que no
-    // entra ni bajando el tamaño de fuente general de la tabla), sí pasan a
-    // ocupar las dos columnas -- una tabla ancha centrada es normal en un
-    // paper, una fórmula angosta cruzando la página no. Sin este ajuste el
-    // contenido ancho se corta en seco contra el borde de la columna en vez
-    // de acomodarse.
+    // Acomodar el contenido que es más ancho que una columna de impresión.
+    // Las fórmulas de KaTeX YA NO se achican con JS (una versión anterior de
+    // este script lo hacía: el problema es que achicar la fuente de una
+    // fórmula angosta deja los trazos de KaTeX -- barra de fracción, etc,
+    // dimensionados para el tamaño ORIGINAL -- desproporcionadamente gruesos,
+    // y además el achique variaba fórmula por fórmula así que no quedaban
+    // todas del mismo tamaño). En cambio, toda fórmula que no entra en una
+    // columna se resuelve en la fuente (los .md), partiéndola en varias
+    // líneas con \begin{aligned}...\end{aligned} -- así TODAS las fórmulas
+    // del documento quedan al mismo tamaño, sin achique.
+    // Las tablas sí pueden seguir pasando a ocupar las dos columnas si una
+    // celda no entra (una tabla ancha centrada es normal en un paper).
     await page.evaluate(() => {
       const container = document.querySelector('.post-content.md-content');
       if (!container) return;
 
       // Ojo: el viewport que usa Playwright para renderizar la página NO
       // tiene el ancho de una hoja A4 real, así que container.clientWidth
-      // (y por lo tanto el ancho de columna que arma "column-count: 2")
-      // no tiene relación con el ancho real de columna del PDF final.
-      // Para que las mediciones de acá abajo valgan, forzamos el ancho
-      // real del área de contenido de una hoja A4 (210mm - 14mm de margen
-      // a cada lado, la misma geometría de print-paper.css) ANTES de medir
-      // nada. Esto no cambia el PDF final: ese ancho es exactamente el que
-      // "width: auto" hubiera resuelto de todos modos dentro del área de
-      // impresión real.
+      // no tiene relación con el ancho real de columna del PDF final. Para
+      // que la medición de overflow de celdas de tabla de acá abajo valga,
+      // forzamos el ancho real del área de contenido de una hoja A4
+      // (210mm - 14mm de margen a cada lado, la misma geometría de
+      // print-paper.css) ANTES de medir nada. Esto no cambia el PDF final:
+      // ese ancho es exactamente el que "width: auto" hubiera resuelto de
+      // todos modos dentro del área de impresión real.
       const MM_TO_PX = 96 / 25.4;
       const contentWidthPx = (210 - 2 * 14) * MM_TO_PX;
       container.style.width = contentWidthPx + 'px';
-
-      const gapPx = parseFloat(getComputedStyle(container).columnGap) || 0;
-      const columnWidthPx = (container.clientWidth - gapPx) / 2;
-
-      // El margen de seguridad es más generoso de lo que parece necesario
-      // porque esta medición se hace ANTES de generar el PDF (con
-      // page.evaluate, en el layout "en vivo" de la página) y el paginado
-      // real de page.pdf() puede diferir en un par de px -- sin este
-      // colchón, fórmulas justo en el límite quedan con la última letra
-      // cortada.
-      const SAFETY = 0.88;
-      // Piso de achique de una fórmula: 0.5 = no menos de la mitad de su
-      // tamaño original. A diferencia de una versión anterior de este
-      // script, las fórmulas NUNCA pasan a ocupar las dos columnas -- eso
-      // rompe la lectura en dos columnas de toda la página. Achicar es la
-      // única salida; con las notas actuales, ninguna fórmula necesita
-      // bajar de ~0.6 para entrar, así que 0.5 deja margen de sobra.
-      const MIN_SCALE = 0.5;
-
-      // Ojo con .katex-display > .katex: la propia hoja de estilos de KaTeX
-      // le pone "display: block; white-space: nowrap" -- es decir, ocupa
-      // todo el ancho del contenedor (auto = 100%) aunque el contenido real
-      // sea angosto, y si es más ancho se lo deja pasar en una sola línea
-      // sin ajustar el tamaño de la caja. Por eso medir su
-      // getBoundingClientRect() tal cual da SIEMPRE el ancho de la columna,
-      // nunca el ancho real de la fórmula. Para conseguir el ancho real
-      // (shrink-to-fit) lo pasamos a "inline-block" un instante, medimos, y
-      // lo devolvemos a como estaba.
-      function naturalWidthOf(el) {
-        const inner = el.querySelector(':scope > .katex') || el;
-        const prevDisplay = inner.style.display;
-        inner.style.display = 'inline-block';
-        const width = inner.getBoundingClientRect().width;
-        inner.style.display = prevDisplay;
-        return width;
-      }
-
-      // Achica la fuente del elemento hasta que entre en budgetPx, sin
-      // bajar nunca de MIN_SCALE de su tamaño original.
-      function shrinkToFit(el, budgetPx) {
-        const naturalWidth = naturalWidthOf(el);
-        if (naturalWidth <= budgetPx * SAFETY) return;
-        const currentPx = parseFloat(getComputedStyle(el).fontSize);
-        const scale = Math.max((budgetPx * SAFETY) / naturalWidth, MIN_SCALE);
-        el.style.fontSize = (currentPx * scale) + 'px';
-      }
-
-      // Fórmulas en bloque ($$...$$): achicar hasta que entren en una
-      // columna. Nunca pasan a ocupar las dos columnas (rompería la
-      // lectura en dos columnas de la página).
-      container.querySelectorAll('.katex-display').forEach((disp) => {
-        disp.style.fontSize = '';
-        shrinkToFit(disp, columnWidthPx);
-      });
-
-      // Fórmulas en línea ($...$) que por sí solas ya son más anchas que
-      // una columna (caso raro, ej. una fracción grande en medio de una
-      // oración): reducirlas in situ, no pueden ocupar las dos columnas.
-      container.querySelectorAll('.katex').forEach((el) => {
-        if (el.closest('.katex-display')) return;
-        el.style.fontSize = '';
-        shrinkToFit(el, columnWidthPx);
-      });
 
       // Tablas: si alguna celda tiene contenido que no entra en el ancho
       // que le tocó (una palabra/número más ancho que la celda, aun

@@ -35,4 +35,4 @@ Tecnología · DIY/IoT · Calidad del aire · Inteligencia artificial · Softwar
 - Bluesky: [lemeit.bsky.social](https://bskp.app/profile/lemeit.bsky.social)
 - Instagram: [@lemeitok](https://instagram.com/lemeitok)
 - OpenAQ: [perfil](https://ambassadors.openaq.org/people/luciano_lamaita)
-- Email: <span id="obf-em" data-u="info" data-d="lemeit.ar"></span><script>(function(){var e=document.getElementById('obf-em');if(e){var a=document.createElement('a');a.href='mailto:'+e.dataset.u+'@'+e.dataset.d;a.textContent=e.dataset.u+'@'+e.dataset.d;e.appendChild(a);}})()</script>
+- Email: <span id="obf-em" data-u="info" data-d="lemeit.ar"></span><script>(function(){var e=document.getElementById(`obf-em`);if(e){var a=document.createElement(`a`);a.href=`mailto:`+e.dataset.u+`@`+e.dataset.d;a.textContent=e.dataset.u+`@`+e.dataset.d;e.appendChild(a);}})()</script>

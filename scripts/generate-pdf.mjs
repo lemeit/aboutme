@@ -161,7 +161,7 @@ async function main() {
       if (title) {
         const byline = document.createElement('div');
         byline.className = 'paper-byline';
-        byline.textContent = `Luciano Lamaita${dateText ? ' · ' + dateText : ''}`;
+        byline.textContent = `Prof. Luciano Lamaita${dateText ? ' · ' + dateText : ''}`;
         title.insertAdjacentElement('afterend', byline);
       }
     }, t.dateText);

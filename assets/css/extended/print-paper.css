@@ -248,22 +248,36 @@
   .post-content.md-content li {
     margin: 0 0 2pt 0;
   }
-  /* Lista de referencias: es siempre el último <ul> del documento (va
-     al final, después de "Referencias"). Sin viñeta -- en un paper el
-     listado de referencias no lleva punto ni bullet por ítem. */
-  .post-content.md-content ul:last-of-type {
-    list-style: none;
-    padding-left: 0;
+  /* Lista de referencias: numerada (antes sin viñeta, pero así sola no
+     se leía bien -- ver .paper-references más abajo, que apunta a un
+     <ol> con clase propia en vez de "último <ul>", para no depender de
+     qué lista quede última en el documento). */
+  .post-content.md-content .paper-references {
+    font-size: 8.7pt;
+    padding-left: 16pt;
   }
-  /* Los links de la lista de referencias no llevan el subrayado ni el
-     color naranja del tema -- es un documento pensado para imprimir, no
-     tiene sentido que se vean como links de página web (la URL visible
-     ya se sacó de la fuente, ahora el título de la cita ES el link). El
-     acceso al PDF sigue funcionando igual desde la versión digital/online
-     -- sólo cambia cómo se ve impreso. */
-  .post-content.md-content ul:last-of-type a {
+  .post-content.md-content .paper-references li {
+    margin: 0 0 3pt 0;
+  }
+  /* Los links de la lista de referencias (y de las citas en el texto,
+     ver .paper-cite) no llevan el subrayado ni el color naranja del
+     tema -- es un documento pensado para imprimir, no tiene sentido que
+     se vean como links de página web (la URL visible ya se sacó de la
+     fuente, ahora el título de la cita ES el link). El acceso al PDF
+     sigue funcionando igual desde la versión digital/online -- sólo
+     cambia cómo se ve impreso. */
+  .post-content.md-content .paper-references a {
     color: inherit;
     text-decoration: none;
+  }
+  /* Cita en el texto ("[9]"), linkeada a su <li id="ref-9"> de la lista
+     de referencias -- mismo criterio: sin subrayado ni color de link,
+     un poco más chica que el cuerpo para no competir con el texto. */
+  .post-content.md-content .paper-cite {
+    font-size: 0.82em;
+    color: inherit;
+    text-decoration: none;
+    white-space: nowrap;
   }
   /* Tablas en formato APA: solo 3 líneas horizontales (arriba, debajo
      del encabezado, abajo), sin líneas verticales ni bordes por celda,

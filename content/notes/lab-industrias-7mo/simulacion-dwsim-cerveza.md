@@ -459,14 +459,14 @@ Ese *t\** es el tiempo de fermentación a programar: al alcanzarlo, se interrump
 
 ## Referencias
 
-- DWSIM – Open-Source Chemical Process Simulator — https://dwsim.org/
-- DWSIM — Your First Simulation — https://dwsim.org/tutorials/en/beginner/01-your-first-simulation.html
-- DWSIM — Mixer Basics — https://dwsim.org/tutorials/en/beginner/02-mixer-basics.html
-- DWSIM — Advanced Tutorial: Ethanol Plant — https://dwsim.org/tutorials/en/advanced/05-ethanol-plant.html
-- DWSIM — Pump Class (API help) — https://dwsim.org/api_help/html/T_DWSIM_UnitOperations_UnitOperations_Pump.htm
-- DWSIM — código fuente de Pump.vb — https://github.com/DanWBR/dwsim/blob/windows/DWSIM.UnitOperations/UnitOperations/Pump.vb
-- DWSIM — Unit Operation and Stream Models — https://dwsim.org/docs/crossplatform/help/unitops.htm
-- FOSSEE — Manual de operaciones unitarias en DWSIM — https://static.fossee.in/dwsim/manuals/Unit-Operations-DWSIM.pdf
+- [DWSIM – Open-Source Chemical Process Simulator](https://dwsim.org/)
+- [DWSIM — Your First Simulation](https://dwsim.org/tutorials/en/beginner/01-your-first-simulation.html)
+- [DWSIM — Mixer Basics](https://dwsim.org/tutorials/en/beginner/02-mixer-basics.html)
+- [DWSIM — Advanced Tutorial: Ethanol Plant](https://dwsim.org/tutorials/en/advanced/05-ethanol-plant.html)
+- [DWSIM — Pump Class (API help)](https://dwsim.org/api_help/html/T_DWSIM_UnitOperations_UnitOperations_Pump.htm)
+- [DWSIM — código fuente de Pump.vb](https://github.com/DanWBR/dwsim/blob/windows/DWSIM.UnitOperations/UnitOperations/Pump.vb)
+- [DWSIM — Unit Operation and Stream Models](https://dwsim.org/docs/crossplatform/help/unitops.htm)
+- [FOSSEE — Manual de operaciones unitarias en DWSIM](https://static.fossee.in/dwsim/manuals/Unit-Operations-DWSIM.pdf)
 - [Córdova Beltrán, C. X. (2021). *Simulación y modelamiento de un proceso de producción de cerveza artesanal a base de quinua*. Tesis, ESPOCH.](/files/cordova-2021-espoch-cerveza-quinua-dwsim.pdf) (PDF)
 - [Monte Sastre, E. (2021). *Modelling and simulation of a continuous beer production plant using Simulink*. Trabajo de Fin de Grado, U. Carlos III de Madrid.](/files/monte-sastre-2021-simulink-cerveza.pdf) (PDF)
 - [Julián-Ricardo et al. (2018). *Simulación del proceso de producción de cerveza a escala piloto*. Afinidad, LXXV(581), 39–45.](/files/julian-ricardo-2018-superpro-cerveza-piloto.pdf) (PDF, SuperPro Designer)

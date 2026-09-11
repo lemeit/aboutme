@@ -19,6 +19,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # Historial completo (no el shallow-clone de 1 commit por
+          # defecto) -- el fetch + rebase del paso de más abajo, para
+          # reintentar el push si choca con otro push en simultáneo,
+          # necesita poder ver el historial común con origin/main.
+          fetch-depth: 0
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
@@ -49,7 +55,28 @@ jobs:
           git add static/files/pdf/
           if git diff --cached --quiet; then
             echo "Sin cambios en los PDFs, no hago commit."
-          else
-            git commit -m "pdf: regenerar PDF(s) de nota(s)"
-            git push
+            exit 0
           fi
+          git commit -m "pdf: regenerar PDF(s) de nota(s)"
+
+          # El push puede chocar si el remoto se movió mientras corría este
+          # job (otro push llegando casi al mismo tiempo -- pasa seguido en
+          # este repo). Antes de reintentar, "git rebase -X ours" pone este
+          # commit arriba de lo último del remoto y, si justo hay conflicto
+          # en un PDF, se queda con el que se acaba de generar acá (es la
+          # versión correcta, construida desde el mismo código que ya está
+          # en el remoto). Reintenta varias veces por si el push vuelve a
+          # perder la carrera.
+          for i in 1 2 3 4 5; do
+            git fetch origin main
+            if git rebase -X ours origin/main && git push origin HEAD:main; then
+              echo "Push OK (intento $i)."
+              exit 0
+            fi
+            echo "Intento $i de push falló (probablemente otro push en simultáneo) -- reintentando..."
+            git rebase --abort 2>/dev/null || true
+            sleep $((RANDOM % 5 + 3))
+          done
+
+          echo "No se pudo pushear los PDFs regenerados después de varios intentos."
+          exit 1

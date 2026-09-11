@@ -93,12 +93,18 @@ function parseFrontMatter(mdPath) {
   const colegio = frontMatterString(fm, 'colegio');
   const logo = frontMatterString(fm, 'logo');
   const localidad = frontMatterString(fm, 'localidad');
+  // Logo de la materia (opcional): todavía no existe ninguno, así que esto
+  // queda sin usar por ahora -- el día que haya un logo para "Laboratorio
+  // de Industrias" (o cualquier otra materia), alcanza con agregar este
+  // campo al front matter y el sello de la derecha lo usa en vez del
+  // ícono genérico de engranaje.
+  const materiaLogo = frontMatterString(fm, 'materia_logo');
   // Fecha sin el día: se calcula acá (no en el navegador) para no
   // depender del formato que arma el tema para ".post-meta" -- así
   // queda controlado que solo se muestre "mes año" en español.
   const dateMatch = fm.match(/^\s*date\s*=\s*(\d{4})-(\d{2})-(\d{2})/m);
   const dateText = dateMatch ? `${MESES_ES[parseInt(dateMatch[2], 10) - 1]} ${dateMatch[1]}` : '';
-  return { title, materia, colegio, logo, localidad, dateText };
+  return { title, materia, colegio, logo, localidad, materiaLogo, dateText };
 }
 
 function slugFromContentPath(mdPath) {
@@ -122,7 +128,7 @@ async function main() {
       console.warn(`[pdf] aviso: ${f} tiene pdf = true pero no encontre ${htmlPath} (¿corriste "hugo" antes?)`);
       continue;
     }
-    targets.push({ mdPath: f, slug, htmlPath, title: fm.title, materia: fm.materia, colegio: fm.colegio, logo: fm.logo, localidad: fm.localidad, dateText: fm.dateText });
+    targets.push({ mdPath: f, slug, htmlPath, title: fm.title, materia: fm.materia, colegio: fm.colegio, logo: fm.logo, localidad: fm.localidad, materiaLogo: fm.materiaLogo, dateText: fm.dateText });
   }
 
   if (targets.length === 0) {
@@ -162,13 +168,13 @@ async function main() {
 
     // Masthead estilo "paper" de revista científica (Elsevier/ScienceDirect
     // y similares): franja de 3 columnas -- logo+institución a la
-    // izquierda, sitio al centro, "sello" de la materia a la derecha.
-    // Ya no lleva una línea de cita aparte debajo (era redundante con el
-    // sello de la derecha) -- toda la info (colegio, localidad, materia,
-    // año) vive dentro de las 2 columnas de los costados. Se arma desde
-    // el front matter (logo/materia/colegio/localidad) para que sea
+    // izquierda, sitio al centro, ícono+materia a la derecha. Ya no lleva
+    // una línea de cita aparte debajo (era redundante con la columna de
+    // la derecha) -- toda la info (colegio, localidad, materia, año) vive
+    // dentro de las 2 columnas de los costados. Se arma desde el front
+    // matter (logo/materia/colegio/localidad/materia_logo) para que sea
     // reutilizable en cualquier otra nota, sin texto fijo salvo el sitio.
-    await page.evaluate(({ materia, colegio, logo, localidad }) => {
+    await page.evaluate(({ materia, colegio, logo, localidad, materiaLogo }) => {
       if (!materia && !colegio && !logo) return;
       const title = document.querySelector('.post-title');
       if (!title) return;
@@ -185,8 +191,9 @@ async function main() {
         left.appendChild(img);
       }
       if (colegio || localidad) {
-        // El nombre de la escuela va sin repetir "EET"/"EEST N°1" -- eso
-        // ya está en el logo. La localidad (Saladillo) va como segunda
+        // Nombre completo de la escuela (el mismo que ya trae el logo,
+        // repetido en texto porque el logo puede no leerse bien chico en
+        // pantalla/impresión). La localidad (Saladillo) va como segunda
         // línea, debajo del nombre, en el mismo bloque de texto.
         const textCol = document.createElement('div');
         textCol.className = 'paper-masthead-left-text';
@@ -222,32 +229,58 @@ async function main() {
       right.className = 'paper-masthead-col paper-masthead-right';
       if (materia) {
         // "Laboratorio de Industrias — 7° año" -> línea principal (la
-        // materia) + línea secundaria (el año), las dos dentro del mismo
-        // sello -- ya no hay línea de cita aparte donde ponerlo.
+        // materia) + línea secundaria (el año), al lado de un ícono --
+        // mismo esquema visual que la columna izquierda (logo + texto),
+        // en vez del sello de texto plano de antes.
         const parts = materia.split('—').map((s) => s.trim()).filter(Boolean);
-        const badge = document.createElement('div');
-        badge.className = 'paper-masthead-badge';
-        const main = document.createElement('span');
-        main.textContent = parts[0] || materia;
-        badge.appendChild(main);
-        if (parts[1]) {
-          const sub = document.createElement('span');
-          sub.className = 'paper-masthead-badge-sub';
-          sub.textContent = parts[1];
-          badge.appendChild(sub);
+
+        const iconWrap = document.createElement('div');
+        iconWrap.className = 'paper-masthead-materia-icon';
+        if (materiaLogo) {
+          // El día que exista un logo real de la materia, con completar
+          // "materia_logo" en el front matter alcanza -- reemplaza el
+          // ícono genérico de acá abajo sin tocar más código.
+          const img = document.createElement('img');
+          img.className = 'paper-masthead-materia-logo-img';
+          img.src = materiaLogo;
+          iconWrap.appendChild(img);
+        } else {
+          // Ícono genérico (engranaje) relacionado con industria/procesos,
+          // como placeholder hasta que haya un logo propio de la materia.
+          iconWrap.innerHTML =
+            '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">' +
+            '<circle cx="12" cy="12" r="8.4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-dasharray="2.6 2.3"/>' +
+            '<circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/>' +
+            '<circle cx="12" cy="12" r="1.2" fill="currentColor"/>' +
+            '</svg>';
         }
-        right.appendChild(badge);
+        right.appendChild(iconWrap);
+
+        const textCol = document.createElement('div');
+        textCol.className = 'paper-masthead-materia-text';
+        const name = document.createElement('div');
+        name.className = 'paper-masthead-materia-name';
+        name.textContent = parts[0] || materia;
+        textCol.appendChild(name);
+        if (parts[1]) {
+          const year = document.createElement('div');
+          year.className = 'paper-masthead-materia-year';
+          year.textContent = parts[1];
+          textCol.appendChild(year);
+        }
+        right.appendChild(textCol);
       }
       masthead.appendChild(right);
 
       title.insertAdjacentElement('beforebegin', masthead);
-    }, { materia: t.materia, colegio: t.colegio, logo: t.logo, localidad: t.localidad });
+    }, { materia: t.materia, colegio: t.colegio, logo: t.logo, localidad: t.localidad, materiaLogo: t.materiaLogo });
 
-    // Esperar a que el logo (si hay) termine de cargar antes de seguir --
+    // Esperar a que las imágenes del masthead (logo del colegio y, si
+    // existe, logo de la materia) terminen de cargar antes de seguir --
     // si no, a veces el PDF sale con el hueco del <img> en blanco.
     await page.waitForFunction(() => {
-      const img = document.querySelector('.paper-masthead-logo');
-      return !img || img.complete;
+      const imgs = document.querySelectorAll('.paper-masthead-logo, .paper-masthead-materia-logo-img');
+      return Array.from(imgs).every((img) => img.complete);
     }, { timeout: 5000 }).catch(() => {
       console.warn('[pdf] aviso: timeout esperando el logo institucional, sigo igual.');
     });

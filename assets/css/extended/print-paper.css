@@ -79,6 +79,7 @@
   }
   .paper-masthead-right {
     justify-content: flex-end;
+    gap: 6pt;
     text-align: right;
   }
   .paper-masthead-logo {
@@ -116,25 +117,49 @@
     font-style: italic;
     color: var(--primary, #9b3d00);
   }
-  .paper-masthead-badge {
-    display: inline-block;
+  /* Columna derecha: ícono + texto, mismo esquema que el logo+texto de
+     la izquierda -- así queda simétrico y preparado para el día que haya
+     un logo real de la materia (basta con completar "materia_logo" en
+     el front matter; ver generate-pdf.mjs). Hasta entonces, el ícono es
+     un engranaje genérico (industria/procesos) dibujado en SVG. */
+  .paper-masthead-materia-icon {
+    width: 20pt;
+    height: 20pt;
+    flex: 0 0 auto;
+    color: var(--primary, #9b3d00);
+    break-inside: avoid;
+  }
+  .paper-masthead-materia-icon svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .paper-masthead-materia-logo-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .paper-masthead-materia-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5pt;
+  }
+  .paper-masthead-materia-name {
     font-family: Georgia, 'Times New Roman', serif;
-    font-size: 7pt;
+    font-size: 8pt;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.03em;
-    color: #333;
-    border-top: 1pt solid #333;
-    border-bottom: 0.5pt solid #333;
-    padding: 2pt 4pt;
-    line-height: 1.25;
-  }
-  .paper-masthead-badge-sub {
-    display: block;
-    font-size: 6pt;
-    font-weight: 400;
     letter-spacing: 0.02em;
-    margin-top: 1pt;
+    color: #333;
+    line-height: 1.15;
+  }
+  .paper-masthead-materia-year {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 6.5pt;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #888;
   }
 
   .post-title {

@@ -10,6 +10,15 @@ on:
       - 'scripts/generate-pdf.mjs'
   workflow_dispatch: {}
 
+# Si se dispara más de una corrida casi al mismo tiempo (dos pushes
+# seguidos, u otra corrida que ya estaba procesando), que se pongan en
+# fila una detrás de la otra en vez de correr en paralelo -- así no
+# compiten por pushear al mismo tiempo, que es la causa más común de que
+# el push de más abajo choque con "fetch first".
+concurrency:
+  group: generate-pdf-${{ github.ref }}
+  cancel-in-progress: false
+
 permissions:
   contents: write
 

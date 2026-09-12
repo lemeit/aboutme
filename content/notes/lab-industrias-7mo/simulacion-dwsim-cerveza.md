@@ -68,7 +68,7 @@ m_{azúcar} &= 0.10 \times V_{fermentador} \times \rho_{mosto} \\
 \end{aligned}
 $$
 
-**Paso 2 — Split maltosa/glucosa.** La hidrólisis del almidón durante la maceración deja los azúcares en una proporción fija (Córdova, ESPOCH, 2021<a href="#ref-9" class="paper-cite">[9]</a>, cerveza artesanal de quinua — la misma tesis que valida el resto de esta sección): 83 % maltosa, 17 % glucosa.
+**Paso 2 — Split maltosa/glucosa.** La hidrólisis del almidón durante la maceración deja los azúcares en una proporción fija (Córdova, ESPOCH, 2021, cerveza artesanal de quinua — la misma tesis que valida el resto de esta sección)<sup class="paper-cite"><a href="#ref-9">9</a></sup>: 83 % maltosa, 17 % glucosa.
 
 $$
 \begin{aligned}
@@ -77,7 +77,7 @@ m_{glucosa} &= 0.17 \times 60.0 = 10.2\ kg
 \end{aligned}
 $$
 
-**Paso 3 — Malta necesaria.** La misma tesis<a href="#ref-9" class="paper-cite">[9]</a> reporta que solo ≈58 % de la malta es almidón extraíble (el resto —proteínas, cáscara, dextrinas— no se convierte en azúcar fermentable y se retira como bagazo antes del hervor):
+**Paso 3 — Malta necesaria.** La misma tesis<sup class="paper-cite"><a href="#ref-9">9</a></sup> reporta que solo ≈58 % de la malta es almidón extraíble (el resto —proteínas, cáscara, dextrinas— no se convierte en azúcar fermentable y se retira como bagazo antes del hervor):
 
 $$ m_{malta} = \frac{m_{azúcar}}{0.58} = \frac{60.0}{0.58} \approx 103.4\ kg $$
 
@@ -85,7 +85,7 @@ $$ m_{malta} = \frac{m_{azúcar}}{0.58} = \frac{60.0}{0.58} \approx 103.4\ kg $$
 
 $$ m_{agua,\,macerado} = 3 \times m_{malta} = 3 \times 103.4 \approx 310.2\ kg $$
 
-**Paso 5 — Agua de relleno antes del hervor.** El mosto recién macerado (agua de macerado + azúcares) todavía no tiene el volumen que necesita el hervor: hace falta agua extra, que además compensa la que se va a perder como vapor durante la hora de hervor (≈10 % del agua total, mismo supuesto que la tesis<a href="#ref-9" class="paper-cite">[9]</a>). Para llegar a los 600 kg de agua que van a quedar después de esa evaporación:
+**Paso 5 — Agua de relleno antes del hervor.** El mosto recién macerado (agua de macerado + azúcares) todavía no tiene el volumen que necesita el hervor: hace falta agua extra, que además compensa la que se va a perder como vapor durante la hora de hervor (≈10 % del agua total, mismo supuesto que la tesis)<sup class="paper-cite"><a href="#ref-9">9</a></sup>. Para llegar a los 600 kg de agua que van a quedar después de esa evaporación:
 
 $$
 \begin{aligned}
@@ -112,7 +112,7 @@ Con agua + malta ya suman **703,4 kg** de entrada conocida. Los rendimientos de
 
 ### ¿Azúcar simple o maltosa? Qué entra al balance y qué no
 
-No es "una u otra": el mosto que sale de la maceración trae los dos azúcares fermentables a la vez, en las proporciones que deja la hidrólisis del almidón. No es una simplificación de manual — es lo que hace, con DWSIM, un trabajo de titulación real que simuló este mismo tipo de planta (Córdova, ESPOCH, 2021<a href="#ref-9" class="paper-cite">[9]</a>): define `Water`, `Carbon dioxide`, `Ethanol`, `Glucose` y `maltose` como componentes, y carga **dos reacciones de conversión en el mismo reactor**, una por azúcar. Acá se hace lo mismo — no importa si la materia prima final es mijo, sorgo o quinoa: lo que fermenta siempre es la mezcla maltosa + glucosa que deja la maceración.
+No es "una u otra": el mosto que sale de la maceración trae los dos azúcares fermentables a la vez, en las proporciones que deja la hidrólisis del almidón. No es una simplificación de manual — es lo que hace, con DWSIM, un trabajo de titulación real que simuló este mismo tipo de planta (Córdova, ESPOCH, 2021)<sup class="paper-cite"><a href="#ref-9">9</a></sup>: define `Water`, `Carbon dioxide`, `Ethanol`, `Glucose` y `maltose` como componentes, y carga **dos reacciones de conversión en el mismo reactor**, una por azúcar. Acá se hace lo mismo — no importa si la materia prima final es mijo, sorgo o quinoa: lo que fermenta siempre es la mezcla maltosa + glucosa que deja la maceración.
 
 | Fracción | % del almidón | Masa (kg, lote 600 L) | Qué es |
 |---|---|---|---|
@@ -139,15 +139,15 @@ $$
 
 ## 3. Instalar DWSIM
 
-DWSIM es un simulador de procesos de código abierto: no pide licencia, cuenta ni pago, y corre en Windows, Linux y Mac.<a href="#ref-7" class="paper-cite">[7]</a><a href="#ref-8" class="paper-cite">[8]</a>
+DWSIM es un simulador de procesos de código abierto: no pide licencia, cuenta ni pago, y corre en Windows, Linux y Mac.<sup class="paper-cite"><a href="#ref-7">7</a>,<a href="#ref-8">8</a></sup>
 
-1. Descargarlo de **dwsim.org**<a href="#ref-1" class="paper-cite">[1]</a> (sección Downloads) y elegir el instalador del sistema operativo correspondiente.
+1. Descargarlo de **dwsim.org**<sup class="paper-cite"><a href="#ref-1">1</a></sup> (sección Downloads) y elegir el instalador del sistema operativo correspondiente.
 2. Instalarlo con las opciones por defecto — no requiere activación ni registro.
 3. Abrirlo: va a aparecer una pantalla de inicio con la opción de crear una simulación nueva.
 
 ## 4. Armando el flowsheet completo, de las materias primas a la cerveza
 
-Esto es lo que hay que construir: **una sola simulación continua**, con las materias primas entrando por un lado y la cerveza saliendo por el otro, siguiendo exactamente los pasos de la sección 1 — no equipos sueltos y desconectados. Antes de diseñarla, vale la pena mirar cómo lo resuelve la literatura real: la tesis de cerveza de quinua en DWSIM (Córdova, ESPOCH, 2021, ya citada)<a href="#ref-9" class="paper-cite">[9]</a> arma su flowsheet así — `Mixer` (agua + extracto con los azúcares ya calculados a mano) → `Mixer` (+ agua de relleno) → `Heater` (hervor) → separador vapor-líquido → `Cooler` → `Conversion Reactor` (fermentador). Ni bombas ni válvulas aparecen en ese flowsheet: a esta escala su efecto sobre el balance de materia y energía es despreciable (ya se vio con el ΔT≈0,009 °C de la bomba), así que la literatura las deja afuera del cálculo. Acá se agregan igual, como equipos de trasiego entre etapas, porque construir cada tipo de equipo es un objetivo del TP en sí mismo — pero ahora ubicadas en su lugar real dentro de una única secuencia, no como ejercicios aislados. Otras plantas de cerveza simuladas con herramientas distintas: con Simulink (Monte Sastre, 2021)<a href="#ref-10" class="paper-cite">[10]</a>, y con SuperPro Designer (Julián-Ricardo et al., 2018)<a href="#ref-11" class="paper-cite">[11]</a>.
+Esto es lo que hay que construir: **una sola simulación continua**, con las materias primas entrando por un lado y la cerveza saliendo por el otro, siguiendo exactamente los pasos de la sección 1 — no equipos sueltos y desconectados. Antes de diseñarla, vale la pena mirar cómo lo resuelve la literatura real: la tesis de cerveza de quinua en DWSIM (Córdova, ESPOCH, 2021, ya citada)<sup class="paper-cite"><a href="#ref-9">9</a></sup> arma su flowsheet así — `Mixer` (agua + extracto con los azúcares ya calculados a mano) → `Mixer` (+ agua de relleno) → `Heater` (hervor) → separador vapor-líquido → `Cooler` → `Conversion Reactor` (fermentador). Ni bombas ni válvulas aparecen en ese flowsheet: a esta escala su efecto sobre el balance de materia y energía es despreciable (ya se vio con el ΔT≈0,009 °C de la bomba), así que la literatura las deja afuera del cálculo. Acá se agregan igual, como equipos de trasiego entre etapas, porque construir cada tipo de equipo es un objetivo del TP en sí mismo — pero ahora ubicadas en su lugar real dentro de una única secuencia, no como ejercicios aislados. Otras plantas de cerveza simuladas con herramientas distintas: con Simulink (Monte Sastre, 2021)<sup class="paper-cite"><a href="#ref-10">10</a></sup>, y con SuperPro Designer (Julián-Ricardo et al., 2018)<sup class="paper-cite"><a href="#ref-11">11</a></sup>.
 
 La secuencia completa a armar — los números de cada corriente son los mismos que ya se calcularon en la sección 2, para un fermentador de 600 L, y de acá en más van a cerrar exactamente sin ningún ajuste posterior:
 
@@ -155,7 +155,7 @@ La secuencia completa a armar — los números de cada corriente son los mismos 
 
 ### 4.0 Preparar la simulación
 
-Arrancar con todos los componentes que van a hacer falta de punta a punta — no hace falta ir agregándolos equipo por equipo. `New Steady-State Simulation`.<a href="#ref-2" class="paper-cite">[2]</a> En *Compounds*, agregar `Water`, `Glucose`, `maltose`, `Ethanol` y `Carbon dioxide` (base ChemSep). En *Property Packages* elegir `Steam Tables (IAPWS-IF97)` — a estas concentraciones tan diluidas de azúcar y etanol (≤0,5 % v/v) la mezcla se comporta como prácticamente agua; para una receta con alcohol normal (~5 % v/v) haría falta `NRTL`, que es lo que usa el tutorial oficial de planta de etanol de DWSIM.<a href="#ref-4" class="paper-cite">[4]</a> `Finish`.
+Arrancar con todos los componentes que van a hacer falta de punta a punta — no hace falta ir agregándolos equipo por equipo. `New Steady-State Simulation`.<sup class="paper-cite"><a href="#ref-2">2</a></sup> En *Compounds*, agregar `Water`, `Glucose`, `maltose`, `Ethanol` y `Carbon dioxide` (base ChemSep). En *Property Packages* elegir `Steam Tables (IAPWS-IF97)` — a estas concentraciones tan diluidas de azúcar y etanol (≤0,5 % v/v) la mezcla se comporta como prácticamente agua; para una receta con alcohol normal (~5 % v/v) haría falta `NRTL`, que es lo que usa el tutorial oficial de planta de etanol de DWSIM.<sup class="paper-cite"><a href="#ref-4">4</a></sup> `Finish`.
 
 ### 4.1 Corrientes de entrada y el primer mezclador (`Mixer`)
 
@@ -163,7 +163,7 @@ Acá arranca el balance de materia real: agua por un lado, los azúcares que se 
 
 1. **Corriente `Agua-macerado`.** Water = 1. Temperatura 20 °C, Presión 1 atm. Caudal másico: 310,2 kg/h (paso 4 de la sección 2 — la convención de kg/h de acá en más equivale a decir que cada etapa dura 1 hora, ver la nota al final de la sección 4.8).
 2. **Corriente `Extracto-malta`.** Los azúcares ya hidrolizados que se van a fermentar más adelante (sección 4.8) — no "malta" como tal, DWSIM no la reconoce como compuesto: maltose = 49,8 kg/h, Glucose = 10,2 kg/h (total 60,0 kg/h, pasos 1-2 de la sección 2). Temperatura 20 °C, Presión 1 atm.
-3. **Agregar el `Mixer`** (*Object Palette > Mixers/Splitters*).<a href="#ref-3" class="paper-cite">[3]</a> Conectar las dos corrientes de entrada y una corriente de salida, `Mosto-1`.
+3. **Agregar el `Mixer`** (*Object Palette > Mixers/Splitters*).<sup class="paper-cite"><a href="#ref-3">3</a></sup> Conectar las dos corrientes de entrada y una corriente de salida, `Mosto-1`.
 4. `Solve`. En `Mosto-1` → *Results*: caudal másico = suma de las dos entradas (370,2 kg/h: Water 310,2 / maltose 49,8 / Glucose 10,2), y la temperatura sale del balance de energía del mezclado — con las dos entradas a 20 °C, la salida también da 20 °C.
 
 **¿Y si se quiere fijar la temperatura de maceración en 65 °C?** Agregar un `Heater` más entre este `Mixer` y la Bomba 1 (mismo bloque que se usa para el hervor en la sección 4.4, `Calculation Type = Outlet Temperature = 65 °C`). No cambia nada de la lógica de acá, solo agrega un salto de temperatura más antes de seguir.
@@ -198,7 +198,7 @@ Con `Pressure Increase` se carga directamente ese ΔP (≈30 000 Pa). Con `Outl
 
 ### Qué calcula DWSIM por dentro (la bomba)
 
-No es una caja negra: esto es lo que hace el bloque `Pump` al apretar `Solve`, tomado del código fuente (`Pump.vb`, repositorio de DWSIM)<a href="#ref-6" class="paper-cite">[6]</a> y de la documentación de la clase (`Pump`, API help)<a href="#ref-5" class="paper-cite">[5]</a> — la misma secuencia desarrollada en la [teoría]({{< ref "teoria-balance-energia" >}}), del balance de energía a Bernoulli y NPSH.
+No es una caja negra: esto es lo que hace el bloque `Pump` al apretar `Solve`, tomado del código fuente (`Pump.vb`, repositorio de DWSIM)<sup class="paper-cite"><a href="#ref-6">6</a></sup> y de la documentación de la clase (`Pump`, API help)<sup class="paper-cite"><a href="#ref-5">5</a></sup> — la misma secuencia desarrollada en la [teoría]({{< ref "teoria-balance-energia" >}}), del balance de energía a Bernoulli y NPSH.
 
 1. Flash de la corriente de entrada: `Steam Tables (IAPWS-IF97)` devuelve ρ_liq y H₁ a partir de T₁, P₁ y la composición.
 2. Trabajo mecánico ideal (líquido ~incompresible), corregido por eficiencia:
@@ -237,7 +237,7 @@ Con el ΔP real de Bomba 1 (≈30 000 Pa, un tercio del de este ejemplo) el ΔT
 
 ### 4.3 Agua de relleno: el segundo mezclador, antes del hervor
 
-Como se vio en la sección 2 (paso 5), el mosto recién macerado todavía no tiene el agua que necesita el hervor — hace falta completar con agua de relleno, que además compensa la que se va a evaporar durante la hora de hervor. En DWSIM esto es un segundo `Mixer`, exactamente como en el flowsheet de la tesis citada (Córdova, ESPOCH, 2021)<a href="#ref-9" class="paper-cite">[9]</a>.
+Como se vio en la sección 2 (paso 5), el mosto recién macerado todavía no tiene el agua que necesita el hervor — hace falta completar con agua de relleno, que además compensa la que se va a evaporar durante la hora de hervor. En DWSIM esto es un segundo `Mixer`, exactamente como en el flowsheet de la tesis citada (Córdova, ESPOCH, 2021)<sup class="paper-cite"><a href="#ref-9">9</a></sup>.
 
 1. **Corriente `Agua-hervido`.** Water = 1. Temperatura 20 °C, Presión 1 atm. Caudal másico: 289,8 kg/h (paso 5 de la sección 2).
 2. **Agregar un segundo `Mixer`** entre la salida de Bomba 1 y el `Heater` del hervor (sección 4.4). Conectarle `Mosto-1` (ya bombeado) y `Agua-hervido`, con una salida, `Mosto-2`.
@@ -316,7 +316,7 @@ DWSIM hace un flash presión–entalpía con (P₂, H₂) para encontrar T₂. P
 
 ### 4.8 Cuarto equipo: el fermentador (reactor de conversión)
 
-Acá es donde se decide si la cerveza tiene alcohol o no. DWSIM no tiene un bloque "fermentador": se arma con un `Conversion Reactor` — el mismo bloque, con la misma lógica, que usa tanto el tutorial oficial de DWSIM para una planta de etanol<a href="#ref-4" class="paper-cite">[4]</a> como la tesis de cerveza de quinua citada en la sección 2.<a href="#ref-9" class="paper-cite">[9]</a> No hace falta resolver ecuaciones diferenciales de cinética para este nivel: alcanza con fijar qué porcentaje del azúcar se convierte.
+Acá es donde se decide si la cerveza tiene alcohol o no. DWSIM no tiene un bloque "fermentador": se arma con un `Conversion Reactor` — el mismo bloque, con la misma lógica, que usa tanto el tutorial oficial de DWSIM para una planta de etanol<sup class="paper-cite"><a href="#ref-4">4</a></sup> como la tesis de cerveza de quinua citada en la sección 2.<sup class="paper-cite"><a href="#ref-9">9</a></sup> No hace falta resolver ecuaciones diferenciales de cinética para este nivel: alcanza con fijar qué porcentaje del azúcar se convierte.
 
 1. **Armar el reactor.** `Conversion Reactor` desde *Object Palette > Reactors*. Entrada: la salida de Bomba 2 (o de la válvula, si se agregó). Dos salidas: fase líquida (`cerveza`) y gas (`CO2`) — el reactor separa fases automáticamente.
 2. La corriente de entrada ya viene resuelta desde arriba (mosto frío, lote de 600 L): Water 540,0 kg, maltose 49,8 kg, Glucose 10,2 kg (total 600,0 kg). Temperatura 20 °C, Presión 1 atm.
@@ -340,7 +340,7 @@ m_{etanol,100} &\approx (49.8+10.2)\ \text{kg azúcar} \times 0.53\ \tfrac{\text
 \end{aligned}
 $$
 
-(0,53 kg etanol/kg azúcar sale de la estequiometría de las dos reacciones — coincide con el 5,3 % de alcohol que la tesis citada<a href="#ref-9" class="paper-cite">[9]</a> valida contra su cerveza experimental de 5 %.) El objetivo es ≤0,5 % v/v ≈ 3,95 g/L (CAA, Art. 1080)<a href="#ref-12" class="paper-cite">[12]</a>, sobre el volumen del lote (600 L, el mismo dato del que se partió en la sección 2):
+(0,53 kg etanol/kg azúcar sale de la estequiometría de las dos reacciones — coincide con el 5,3 % de alcohol que la tesis citada valida contra su cerveza experimental de 5 %.)<sup class="paper-cite"><a href="#ref-9">9</a></sup> El objetivo es ≤0,5 % v/v ≈ 3,95 g/L (CAA, Art. 1080)<sup class="paper-cite"><a href="#ref-12">12</a></sup>, sobre el volumen del lote (600 L, el mismo dato del que se partió en la sección 2):
 
 $$
 \begin{aligned}
@@ -359,7 +359,7 @@ Balance de materia por componente, ahora con generación/consumo:
 
 $$ \dot m_{i,out} = \dot m_{i,in} + \sum_r \nu_{i,r}\,\xi_r $$
 
-Balance de energía: la fermentación es exotérmica — la tesis citada<a href="#ref-9" class="paper-cite">[9]</a> reporta un calor de reacción de −221 877 kJ/kmol de glucosa y −312 858 kJ/kmol de maltosa, a 25 °C. Si se fija el reactor en modo isotérmico (T de salida = T de entrada), DWSIM calcula cuánto calor hay que retirar para mantenerla — el dato que define el tamaño de la camisa de refrigeración del fermentador real.
+Balance de energía: la fermentación es exotérmica — la tesis citada<sup class="paper-cite"><a href="#ref-9">9</a></sup> reporta un calor de reacción de −221 877 kJ/kmol de glucosa y −312 858 kJ/kmol de maltosa, a 25 °C. Si se fija el reactor en modo isotérmico (T de salida = T de entrada), DWSIM calcula cuánto calor hay que retirar para mantenerla — el dato que define el tamaño de la camisa de refrigeración del fermentador real.
 
 > No perder de vista la escala: 600 L es el volumen de *lote*, no un caudal por hora. Los caudales en kg/h de toda esta sección son una convención (masa del lote / duración elegida de cada etapa) — DWSIM resuelve el flowsheet como una única "pasada" que representa el lote completo, no una operación continua real.
 
@@ -407,7 +407,7 @@ El reactor de conversión de la sección 4.8 resuelve un balance de estado estac
 
 La cebada (y su malta) contienen hordeínas, que son gluten. Para una cerveza libre de gluten hay que partir de semillas que no lo tengan: mijo, sorgo, trigo sarraceno o quinoa. Estas semillas no traen actividad diastásica propia (no tienen enzimas amilolíticas activadas por el malteado) — por eso el paso de maceración donde se agregan enzimas exógenas, pensado originalmente para la malta, es exactamente lo que hace falta para hidrolizar el almidón de estas semillas en azúcares fermentables.
 
-> Para que el producto se pueda etiquetar "sin gluten" en Argentina, el contenido final tiene que ser **≤ 10 mg/kg (10 ppm)** — Código Alimentario Argentino, Art. 1383.<a href="#ref-13" class="paper-cite">[13]</a>
+> Para que el producto se pueda etiquetar "sin gluten" en Argentina, el contenido final tiene que ser **≤ 10 mg/kg (10 ppm)** — Código Alimentario Argentino, Art. 1383.<sup class="paper-cite"><a href="#ref-13">13</a></sup>
 
 ### Cinética de Monod + Luedeking-Piret
 

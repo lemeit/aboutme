@@ -272,20 +272,36 @@
     color: inherit;
     text-decoration: none;
   }
-  /* Cita en el texto ("[9]"), linkeada a su <li id="ref-9"> de la lista
-     de referencias -- mismo criterio: sin subrayado ni color de link.
-     Va como superíndice (estilo paper académico) para no competir con
-     el texto ni ocupar espacio en el renglón; "vertical-align: super"
-     ya la levanta y la achica un poco por sí solo en la mayoría de
-     browsers, pero fijamos "font-size" a mano para que Chromium (el
-     que usa scripts/generate-pdf.mjs) la deje realmente chica. */
-  .post-content.md-content .paper-cite {
+  /* Cita en el texto: un <sup class="paper-cite"> (no "[9]" entre
+     corchetes -- eso es estilo revista de humanidades; en papers
+     científicos el número de referencia va como superíndice, sin
+     corchetes, tal como acá) que envuelve uno o más <a href="#ref-N">
+     enlazados a su <li id="ref-N"> de la lista de referencias. Cuando
+     una misma frase cita más de una fuente, van juntas en un solo
+     <sup> separadas por coma -- "7,8", no "78" ni dos superíndices
+     pegados -- p.ej. <sup class="paper-cite"><a href="#ref-7">7</a
+     >,<a href="#ref-8">8</a></sup>.
+     Dónde va el <sup> respecto de un paréntesis: si la cita respalda
+     SOLO una palabra o frase puntual dentro de una oración más larga,
+     va pegada a esa palabra/frase, esté o no entre paréntesis. Si en
+     cambio el paréntesis completo ES la cita (autor, año, fuente, o
+     una aclaración que depende enteramente de esa fuente), el <sup>
+     va DESPUÉS del paréntesis que cierra -- no antes, adentro --
+     porque el superíndice numera la fuente de todo el paréntesis, no
+     de la palabra que quedó pegada al cierre. Mismo criterio con
+     punto/coma finales: el <sup> va después del signo de puntuación,
+     no antes. Esta convención (estilo Vancouver/IEEE de referencias
+     numeradas) es la que se usa en todo el sitio, en cualquier nota
+     nueva que vaya a tener PDF -- mantenerla acá para que sea
+     consistente entre notas. */
+  .post-content.md-content sup.paper-cite {
     font-size: 0.72em;
     vertical-align: super;
-    line-height: 0;
+    white-space: nowrap;
+  }
+  .post-content.md-content sup.paper-cite a {
     color: inherit;
     text-decoration: none;
-    white-space: nowrap;
   }
   /* Tablas en formato APA: solo 3 líneas horizontales (arriba, debajo
      del encabezado, abajo), sin líneas verticales ni bordes por celda,

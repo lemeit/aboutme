@@ -41,7 +41,17 @@ ul .notes-link { color: var(--content); }
    del flujo del texto, arriba de "Objetivos".
    En pantallas anchas (>=1300px) se vuelve un panel lateral real: se
    saca de la columna de texto (720px) con margen negativo y flota en
-   el margen vacío a la derecha, pegado mientras se hace scroll. */
+   el margen vacío a la derecha, pegado mientras se hace scroll.
+   El fondo (--entry) es casi idéntico al fondo de la página (--theme)
+   -- son dos tonos de crema muy parecidos a propósito, para que las
+   tarjetas del theme no compitan con el texto -- así que acá, con
+   "border: 1px solid var(--border)" (gris clarísimo), la caja quedaba
+   casi invisible y se leía como un párrafo más, no como un recuadro
+   aparte. Se reemplaza por el mismo lenguaje visual que ya usa la
+   versión de panel lateral (barra de acento a la izquierda en
+   var(--primary)) más un fondo un toque más oscuro (--code-bg, el
+   mismo tono cálido que ya se usa para bloques de código) -- así se
+   distingue del fondo de la página en cualquier ancho de pantalla. */
 .post-content .resource-box {
   display: flex;
   flex-wrap: wrap;
@@ -49,10 +59,11 @@ ul .notes-link { color: var(--content); }
   gap: 6px 18px;
   width: 100%;
   margin: 1rem 0 1.4rem 0;
-  padding: 10px 14px;
-  background: var(--entry);
-  border: 1px solid var(--border);
-  border-radius: var(--radius, 8px);
+  padding: 10px 14px 10px 16px;
+  background: var(--code-bg);
+  border: none;
+  border-left: 3px solid var(--primary);
+  border-radius: 0 var(--radius, 8px) var(--radius, 8px) 0;
   font-size: 0.85rem;
   line-height: 1.4;
 }

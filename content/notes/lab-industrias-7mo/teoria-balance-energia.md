@@ -9,6 +9,7 @@ materia = 'Laboratorio de Industrias — 7° año'
 colegio = 'EEST N°1 "Gral. Savio"'
 logo = '/images/logos/eest1.png'
 localidad = 'Saladillo'
+materia_logo = '/images/logos/lab-industrias.svg'
 description = 'De lo ya conocido (balance de materia, gases ideales, calorimetría) al balance de energía y la ecuación de Bernoulli, con la mira puesta en el proyecto final: una cerveza sin TACC y sin alcohol.'
 +++
 

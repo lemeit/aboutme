@@ -229,10 +229,25 @@ async function main() {
       right.className = 'paper-masthead-col paper-masthead-right';
       if (materia) {
         // "Laboratorio de Industrias — 7° año" -> línea principal (la
-        // materia) + línea secundaria (el año), al lado de un ícono --
-        // mismo esquema visual que la columna izquierda (logo + texto),
-        // en vez del sello de texto plano de antes.
+        // materia) + línea secundaria (el año), seguida del ícono/sello
+        // -- a diferencia de la columna izquierda (logo primero, texto
+        // después), acá el ícono va DESPUÉS del texto, pegado al margen
+        // derecho de la hoja, que es donde tiene que quedar el "sello".
         const parts = materia.split('—').map((s) => s.trim()).filter(Boolean);
+
+        const textCol = document.createElement('div');
+        textCol.className = 'paper-masthead-materia-text';
+        const name = document.createElement('div');
+        name.className = 'paper-masthead-materia-name';
+        name.textContent = parts[0] || materia;
+        textCol.appendChild(name);
+        if (parts[1]) {
+          const year = document.createElement('div');
+          year.className = 'paper-masthead-materia-year';
+          year.textContent = parts[1];
+          textCol.appendChild(year);
+        }
+        right.appendChild(textCol);
 
         const iconWrap = document.createElement('div');
         iconWrap.className = 'paper-masthead-materia-icon';
@@ -255,20 +270,6 @@ async function main() {
             '</svg>';
         }
         right.appendChild(iconWrap);
-
-        const textCol = document.createElement('div');
-        textCol.className = 'paper-masthead-materia-text';
-        const name = document.createElement('div');
-        name.className = 'paper-masthead-materia-name';
-        name.textContent = parts[0] || materia;
-        textCol.appendChild(name);
-        if (parts[1]) {
-          const year = document.createElement('div');
-          year.className = 'paper-masthead-materia-year';
-          year.textContent = parts[1];
-          textCol.appendChild(year);
-        }
-        right.appendChild(textCol);
       }
       masthead.appendChild(right);
 

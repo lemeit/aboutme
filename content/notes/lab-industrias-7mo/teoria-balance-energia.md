@@ -130,11 +130,11 @@ Un sistema de cañerías real casi nunca cumple esas tres condiciones a la vez: 
 $$
 \begin{aligned}
 \frac{P_1}{\rho} + \frac{v_1^2}{2} + g z_1 + w_{bomba} \\
-= \frac{P_2}{\rho} + \frac{v_2^2}{2} + g z_2 + h_{pérdidas}
+= \frac{P_2}{\rho} + \frac{v_2^2}{2} + g z_2 + h_{\text{pérdidas}}
 \end{aligned}
 $$
 
-Con $ w_{bomba} $ el trabajo que la bomba entrega por unidad de masa, y $ h_{pérdidas} $ la energía disipada por fricción en cañerías y accesorios. Es la misma ecuación de la sección 7, con dos términos que antes valían cero y ahora no.
+Con $ w_{bomba} $ el trabajo que la bomba entrega por unidad de masa, y $ h_{\text{pérdidas}} $ la energía disipada por fricción en cañerías y accesorios. Es la misma ecuación de la sección 7, con dos términos que antes valían cero y ahora no.
 
 ## 9. NPSH: la otra aplicación de Bernoulli — que el líquido no hierva en la succión
 

@@ -63,7 +63,7 @@ $$ \sum_i m_{i,\,entra} = \sum_j m_{j,\,sale} $$
 
 $$
 \begin{aligned}
-m_{azúcar} &= 0.10 \times V_{fermentador} \times \rho_{mosto} \\
+m_{\text{azúcar}} &= 0.10 \times V_{fermentador} \times \rho_{mosto} \\
 &\approx 0.10 \times 600\ L \times 1.00\ kg/L = 60.0\ kg
 \end{aligned}
 $$
@@ -79,7 +79,7 @@ $$
 
 **Paso 3 — Malta necesaria.** La misma tesis<sup class="paper-cite"><a href="#ref-9">9</a></sup> reporta que solo ≈58 % de la malta es almidón extraíble (el resto —proteínas, cáscara, dextrinas— no se convierte en azúcar fermentable y se retira como bagazo antes del hervor):
 
-$$ m_{malta} = \frac{m_{azúcar}}{0.58} = \frac{60.0}{0.58} \approx 103.4\ kg $$
+$$ m_{malta} = \frac{m_{\text{azúcar}}}{0.58} = \frac{60.0}{0.58} \approx 103.4\ kg $$
 
 **Paso 4 — Agua de maceración.** Con la relación estándar de 3 L de agua por kg de malta:
 
@@ -182,7 +182,7 @@ Bomba 1 del proceso (sección 1, paso 2): trasiega el mosto recién mezclado hac
 
 No es un dato libre: sale del mismo Bernoulli extendido que se vio en la [teoría]({{< ref "teoria-balance-energia" >}}). Para un trasiego de planta piloto entre dos tanques abiertos a la atmósfera, la bomba tiene que vencer la elevación entre ambos más las pérdidas de carga por fricción en la cañería:
 
-$$ \Delta P = \rho\,g\,\Delta z + \Delta P_{fricción} $$
+$$ \Delta P = \rho\,g\,\Delta z + \Delta P_{\text{fricción}} $$
 
 Si todavía no se tiene el layout real de cañerías, una estimación razonable para pérdidas por fricción en tramos cortos con pocos accesorios es sumar un 20–30 % al término de elevación. Por ejemplo, para Bomba 1 (trasiego del macerador a la olla de cocción, con una elevación típica de 2–3 m en una planta piloto):
 

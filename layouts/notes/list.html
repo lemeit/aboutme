@@ -45,16 +45,23 @@
     "fisica-6to"         (slice "/images/logos/inj.png")
     "lab-industrias-7mo" (slice "/images/logos/eest1.png")
 }}
+{{- $leftLogosMap := dict
+    "lab-industrias-7mo" "/images/logos/lab-industrias.svg"
+}}
 {{- if $subsections }}
 <nav style="margin:1rem 0;">
   <ul style="list-style:none; padding:0; margin:0;">
     {{- range sort $subsections "Params.weight" }}
     {{- $skey := path.Base (strings.TrimRight "/" .RelPermalink) }}
     {{- $slogos := index $logosMap $skey }}
+    {{- $leftLogo := index $leftLogosMap $skey }}
     <li style="margin:0.35rem 0; padding:0.55rem 0;
               display:flex; gap:0.7rem; align-items:center;
               justify-content:space-between;">
-      <div>
+      {{- if $leftLogo }}
+      <img src="{{ $leftLogo }}" alt="logo materia" style="height:36px; flex-shrink:0; opacity:0.9;">
+      {{- end }}
+      <div style="flex:1;">
         <a href="{{ .RelPermalink }}" class="notes-link" style="font-weight:600; text-decoration:none; color:inherit;">
           {{ .Title }}
         </a>

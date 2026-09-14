@@ -8,6 +8,7 @@ on:
       - 'layouts/**'
       - 'assets/css/extended/print-paper.css'
       - 'scripts/generate-pdf.mjs'
+      - 'static/images/logos/**'
   workflow_dispatch: {}
 
 # Si se dispara más de una corrida casi al mismo tiempo (dos pushes

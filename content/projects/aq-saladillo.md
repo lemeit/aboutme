@@ -33,7 +33,7 @@ Red de sensores [PurpleAir](https://www.purpleair.com) y [AirGradient](https://w
 
 ## Contexto institucional
 
-Este proyecto se enmarca en la iniciativa *Ciencia Ciudadana Ambiental: Escuelas de Saladillo en Acción por un Aire Limpio*, que busca desplegar sensores de bajo costo dentro y cerca de instituciones educativas urbanas y rurales del partido, involucrando a los estudiantes en el monitoreo, el análisis de datos y la concientización comunitaria, con la mira puesta en aportar información de base para eventuales ordenanzas municipales de calidad del aire.
+Este proyecto es continuación de la iniciativa *Ciencia Ciudadana Ambiental: Escuelas de Saladillo en Acción por un Aire Limpio*. Busca desplegar sensores de bajo costo dentro y cerca de instituciones educativas urbanas y rurales del partido de Saladillo, involucrando a los estudiantes en el monitoreo, el análisis de datos y la concientización comunitaria, con la mira puesta en aportar información de base para eventuales ordenanzas municipales de calidad del aire.
 
 El autor (Ing. Químico) es Embajador Comunitario de OpenAQ (2023), integra el Grupo de Trabajo de Air Quality de la ECSA (European Citizen Science Association) y participa de los proyectos CanAirIO, AireCiudadano y Sensor.Community — de ahí surgen buena parte de los antecedentes técnicos y metodológicos, incluyendo la experiencia nacional de ciencia ciudadana ambiental del Ministerio de Ambiente y Desarrollo Sustentable de la Nación, el PNUD y la iniciativa open-seneca (Universidad de Cambridge), con mediciones en CABA, Rosario, Mendoza, Córdoba y Tucumán (2019–2021).
 

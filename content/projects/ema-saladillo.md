@@ -1,11 +1,11 @@
 +++
-title = 'Red EMA Saladillo'
+title = 'Red de Estaciones Meteorológicas'
 date = '2026-06-18'
 lastmod = '2026-09-16'
 weight = 2
 draft = false
 tags = ['meteorología', 'IoT', 'Cloudflare D1', 'GitHub Actions', 'scraping']
-description = 'Red de estaciones meteorológicas automáticas en Saladillo y 25 de Mayo, con datos en tiempo real.'
+description = 'Red de estaciones meteorológicas automáticas (EMA) en Buenos Aires, con datos en tiempo real.'
 +++
 
 Red de estaciones meteorológicas automáticas (EMA) distribuidas en Saladillo y 25 de Mayo, Buenos Aires.
@@ -36,7 +36,7 @@ Publicado en [emas.lemeit.ar](https://emas.lemeit.ar).
 Este es uno de tres proyectos ambientales hermanos que comparten la misma infraestructura en Cloudflare (Pages + Workers + D1):
 
 - **Meteorología** — este proyecto, [emas.lemeit.ar](https://emas.lemeit.ar)
-- **Calidad del aire** — sensores PurpleAir + AirGradient, [aq.lemeit.ar](https://aq.lemeit.ar)
+- **Calidad del aire** — [aq.lemeit.ar](https://aq.lemeit.ar)
 - **Calidad del agua** — protocolos municipales, [wq.lemeit.ar](https://wq.lemeit.ar)
 
 ## Links

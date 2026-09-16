@@ -1,11 +1,11 @@
 +++
-title = 'Aire Saladillo'
+title = 'Red de Calidad del Aire'
 date = '2026-08-23'
 lastmod = '2026-09-16'
 weight = 1
 draft = false
 tags = ['calidad de aire', 'PurpleAir', 'AirGradient', 'IoT', 'Cloudflare D1', 'GitHub Actions']
-description = 'Red de sensores PurpleAir y AirGradient en escuelas de Saladillo, con PM2.5/PM10, CO2, NOx y AQI en tiempo real.'
+description = 'Red de sensores PurpleAir y AirGradient con PM2.5/PM10, CO2, NOx y AQI en tiempo real.'
 +++
 
 Red de sensores [PurpleAir](https://www.purpleair.com) y [AirGradient](https://www.airgradient.com/) instalada en escuelas, jardines de infantes y domicilios de Saladillo para la determinación de material particulado (PM2.5/PM10), temperatura, humedad, presión, VOC, CO2 y NOx en tiempo real. Publicado en [aq.lemeit.ar](https://aq.lemeit.ar).

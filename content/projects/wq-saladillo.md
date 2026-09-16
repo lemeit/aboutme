@@ -32,7 +32,7 @@ la brecha entre norma escrita y práctica real quede visible en vez de oculta de
 ## Ingesta automática de protocolos
 
 Los datos salen de protocolos de ensayo que la Municipalidad publica como PDF sueltos, sin tabla, índice
-ni nombres de archivo consistentes. Un GitHub Action (disparado a mano) automatiza la parte más pesada:
+ni nombres de archivo consistentes. Un GitHub Action (disparado manualmente) automatiza la parte más pesada:
 descarga los PDF nuevos y le pide a la API de Gemini —gratis, lee el PDF directo, sin OCR previo— que
 devuelva JSON estructurado con la tabla de determinaciones de cada protocolo (los protocolos usan al menos
 tres formatos de tabla distintos: fisicoquímica, bacteriología, metales/plaguicidas). Todo lo extraído

@@ -1,5 +1,5 @@
 +++
-title = 'Red de Estaciones Meteorológicas'
+title = 'EMAS'
 date = '2026-06-18'
 lastmod = '2026-09-16'
 weight = 2
@@ -35,9 +35,9 @@ Publicado en [emas.lemeit.ar](https://emas.lemeit.ar).
 
 Este es uno de tres proyectos ambientales hermanos que comparten la misma infraestructura en Cloudflare (Pages + Workers + D1):
 
-- **Meteorología** — este proyecto, [emas.lemeit.ar](https://emas.lemeit.ar)
-- **Calidad del aire** — [aq.lemeit.ar](https://aq.lemeit.ar)
-- **Calidad del agua** — protocolos municipales, [wq.lemeit.ar](https://wq.lemeit.ar)
+- **EMAS** — este proyecto, [emas.lemeit.ar](https://emas.lemeit.ar)
+- **Aire Escolar** — calidad del aire, [aq.lemeit.ar](https://aq.lemeit.ar)
+- **Calidad del Agua** — protocolos municipales, [wq.lemeit.ar](https://wq.lemeit.ar)
 
 ## Links
 

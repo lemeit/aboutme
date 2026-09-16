@@ -1,14 +1,14 @@
 +++
-title = 'Red de Calidad del Aire'
+title = 'Aire Escolar'
 date = '2026-08-23'
 lastmod = '2026-09-16'
 weight = 1
 draft = false
 tags = ['calidad de aire', 'PurpleAir', 'AirGradient', 'IoT', 'Cloudflare D1', 'GitHub Actions']
-description = 'Red de sensores PurpleAir y AirGradient con PM2.5/PM10, CO2, NOx y AQI en tiempo real.'
+description = 'Monitoreo ambiental escolar con sensores PurpleAir y AirGradient — PM2.5/PM10, CO2, NOx y AQI en tiempo real.'
 +++
 
-Red de sensores [PurpleAir](https://www.purpleair.com) y [AirGradient](https://www.airgradient.com/) instalada en escuelas, jardines de infantes y domicilios de Saladillo para la determinación de material particulado (PM2.5/PM10), temperatura, humedad, presión, VOC, CO2 y NOx en tiempo real. Publicado en [aq.lemeit.ar](https://aq.lemeit.ar).
+Red de sensores [PurpleAir](https://www.purpleair.com) y [AirGradient](https://www.airgradient.com/) instalada en instituciones educativas de la Provincia de Buenos Aires para la determinación de material particulado (PM1.0/PM2.5/PM10), temperatura, humedad, presión, VOC, CO2 y NOx en tiempo real. Publicado en [aq.lemeit.ar](https://aq.lemeit.ar).
 
 ## Sensores
 
@@ -33,7 +33,7 @@ Red de sensores [PurpleAir](https://www.purpleair.com) y [AirGradient](https://w
 
 ## Contexto institucional
 
-Este proyecto es continuación de la iniciativa *Ciencia Ciudadana Ambiental: Escuelas de Saladillo en Acción por un Aire Limpio*. Busca desplegar sensores de bajo costo dentro y cerca de instituciones educativas urbanas y rurales del partido de Saladillo, involucrando a los estudiantes en el monitoreo, el análisis de datos y la concientización comunitaria, con la mira puesta en aportar información de base para eventuales ordenanzas municipales de calidad del aire.
+Este proyecto es continuación de la iniciativa *Ciencia Ciudadana Ambiental: Escuelas de Saladillo en Acción por un Aire Limpio*. Busca desplegar sensores de bajo costo dentro y cerca de instituciones educativas urbanas y rurales de la Provincia de Buenos Aires, involucrando a los estudiantes en el monitoreo, el análisis de datos y la concientización comunitaria, con la mira puesta en aportar información de base para eventuales políticas locales de calidad del aire.
 
 El autor (Ing. Químico) es Embajador Comunitario de OpenAQ (2023), integra el Grupo de Trabajo de Air Quality de la ECSA (European Citizen Science Association) y participa de los proyectos CanAirIO, AireCiudadano y Sensor.Community — de ahí surgen buena parte de los antecedentes técnicos y metodológicos, incluyendo la experiencia nacional de ciencia ciudadana ambiental del Ministerio de Ambiente y Desarrollo Sustentable de la Nación, el PNUD y la iniciativa open-seneca (Universidad de Cambridge), con mediciones en CABA, Rosario, Mendoza, Córdoba y Tucumán (2019–2021).
 
@@ -43,9 +43,9 @@ El autor también trabajó anteriormente en el Ministerio de Ambiente de la Prov
 
 Este es uno de tres proyectos ambientales hermanos que comparten la misma infraestructura en Cloudflare (Pages + Workers + D1):
 
-- **Meteorología** — [emas.lemeit.ar](https://emas.lemeit.ar)
-- **Calidad del aire** — este proyecto, [aq.lemeit.ar](https://aq.lemeit.ar)
-- **Calidad del agua** — protocolos municipales, [wq.lemeit.ar](https://wq.lemeit.ar)
+- **EMAS** — meteorología, [emas.lemeit.ar](https://emas.lemeit.ar)
+- **Aire Escolar** — este proyecto, [aq.lemeit.ar](https://aq.lemeit.ar)
+- **Calidad del Agua** — protocolos municipales, [wq.lemeit.ar](https://wq.lemeit.ar)
 
 ## Links
 

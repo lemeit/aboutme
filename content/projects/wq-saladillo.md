@@ -43,9 +43,9 @@ dashboard.
 
 Este es uno de tres proyectos ambientales hermanos que comparten la misma infraestructura en Cloudflare (Pages + Workers + D1):
 
-- **Meteorología** — [emas.lemeit.ar](https://emas.lemeit.ar)
-- **Calidad del aire** — sensores PurpleAir en escuelas, [aq.lemeit.ar](https://aq.lemeit.ar)
-- **Calidad del agua** — este proyecto, [wq.lemeit.ar](https://wq.lemeit.ar)
+- **EMAS** — meteorología, [emas.lemeit.ar](https://emas.lemeit.ar)
+- **Aire Escolar** — calidad del aire, [aq.lemeit.ar](https://aq.lemeit.ar)
+- **Calidad del Agua** — este proyecto, [wq.lemeit.ar](https://wq.lemeit.ar)
 
 ## Links
 

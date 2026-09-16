@@ -49,5 +49,5 @@ Este es uno de tres proyectos ambientales hermanos que comparten la misma infrae
 
 ## Links
 
-- [Repositorio](https://github.com/lemeit/agua-saladillo)
+- [Repositorio](https://github.com/lemeit/lemeit-wq)
 - [Sitio en vivo](https://wq.lemeit.ar)

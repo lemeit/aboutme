@@ -38,5 +38,5 @@ Este es uno de tres proyectos ambientales hermanos que comparten la misma infrae
 
 ## Links
 
-- [Repositorio](https://github.com/lemeit/ema-saladillo)
+- [Repositorio](https://github.com/lemeit/lemeit-emas)
 - [Sitio en vivo](https://emas.lemeit.ar)

@@ -62,5 +62,5 @@ Este es uno de tres proyectos ambientales hermanos que comparten la misma infrae
 
 ## Links
 
-- [Repositorio](https://github.com/lemeit/purpleair-saladillo)
+- [Repositorio](https://github.com/lemeit/lemeit-aq)
 - [Sitio en vivo](https://aq.lemeit.ar)

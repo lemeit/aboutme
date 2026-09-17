@@ -9,7 +9,7 @@ description = 'Red de estaciones meteorológicas automáticas (EMA) en Buenos Ai
 +++
 
 Red de estaciones meteorológicas automáticas (EMA) distribuidas en Saladillo y 25 de Mayo, Buenos Aires.
-Publicado en [emas.lemeit.ar](https://emas.lemeit.ar).
+Publicado en [app.lemeit.ar/emas](https://app.lemeit.ar/emas).
 
 ## Estaciones
 
@@ -29,19 +29,19 @@ Publicado en [emas.lemeit.ar](https://emas.lemeit.ar).
 - Ingesta programada con GitHub Actions (cron horario), escribiendo a D1 vía su API HTTP
 - Base de datos en Cloudflare D1 (migrada desde Supabase en agosto 2026, ~30.200 filas de historial), expuesta por un Worker propio con rutas compatibles con el formato anterior
 - Dashboard responsive (HTML/CSS/JS vanilla) con mapa de tiles CARTO (proxy en el Worker para no exponer la key), rosa de vientos y análisis espacial interpolado entre estaciones
-- API pública en [emas.lemeit.ar/api.html](https://emas.lemeit.ar/api.html) — CORS abierto, sin autenticación, con soporte de rangos de fechas y exportación CSV
+- API pública en [app.lemeit.ar/emas/api.html](https://app.lemeit.ar/emas/api.html) — CORS abierto, sin autenticación, con soporte de rangos de fechas y exportación CSV
 
 ## Red de monitoreo ambiental
 
 Este es uno de tres proyectos ambientales hermanos que comparten la misma infraestructura en Cloudflare (Pages + Workers + D1):
 
-- **EMAS** — este proyecto, [emas.lemeit.ar](https://emas.lemeit.ar)
-- **Aire Escolar** — calidad del aire, [aq.lemeit.ar](https://aq.lemeit.ar)
-- **Calidad del Agua** — protocolos municipales, [wq.lemeit.ar](https://wq.lemeit.ar)
+- **EMAS** — este proyecto, [app.lemeit.ar/emas](https://app.lemeit.ar/emas)
+- **Aire Escolar** — calidad del aire, [app.lemeit.ar/aq](https://app.lemeit.ar/aq)
+- **Calidad del Agua** — protocolos municipales, [app.lemeit.ar/wq](https://app.lemeit.ar/wq)
 
 ## Links
 
 - [Repositorio](https://github.com/lemeit/lemeit-emas)
-- [Sitio en vivo](https://emas.lemeit.ar)
-- [API pública](https://emas.lemeit.ar/api.html)
+- [Sitio en vivo](https://app.lemeit.ar/emas)
+- [API pública](https://app.lemeit.ar/emas/api.html)
 - [Documentación técnica](https://wiki.lemeit.ar/red-ambiental/02-ema-saladillo/)

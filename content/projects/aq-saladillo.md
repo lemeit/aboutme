@@ -8,7 +8,7 @@ tags = ['calidad de aire', 'PurpleAir', 'AirGradient', 'IoT', 'Cloudflare D1', '
 description = 'Monitoreo ambiental escolar con sensores PurpleAir y AirGradient — PM2.5/PM10, CO2, NOx y AQI en tiempo real.'
 +++
 
-Red de sensores [PurpleAir](https://www.purpleair.com) y [AirGradient](https://www.airgradient.com/) instalada en instituciones educativas de la Provincia de Buenos Aires para la determinación de material particulado (PM1.0/PM2.5/PM10), temperatura, humedad, presión, VOC, CO2 y NOx en tiempo real. Publicado en [aq.lemeit.ar](https://aq.lemeit.ar).
+Red de sensores [PurpleAir](https://www.purpleair.com) y [AirGradient](https://www.airgradient.com/) instalada en instituciones educativas de la Provincia de Buenos Aires para la determinación de material particulado (PM1.0/PM2.5/PM10), temperatura, humedad, presión, VOC, CO2 y NOx en tiempo real. Publicado en [app.lemeit.ar/aq](https://app.lemeit.ar/aq).
 
 ## Sensores
 
@@ -21,7 +21,7 @@ Red de sensores [PurpleAir](https://www.purpleair.com) y [AirGradient](https://w
 - Tarjetas por sensor con velocímetro de AQI, datos actuales y badge de proveedor (PurpleAir / AirGradient)
 - Mapa interactivo con selector de capa de datos (AQI, PM2.5, temperatura, humedad, presión, VOC, CO2, NOx)
 - Gráfico histórico con selector multi-parámetro y ejes Y independientes; overlay de canales A/B del sensor
-- Exportación a CSV, tema claro/oscuro, API pública en [aq.lemeit.ar/api.html](https://aq.lemeit.ar/api.html)
+- Exportación a CSV, tema claro/oscuro, API pública en [app.lemeit.ar/aq/api.html](https://app.lemeit.ar/aq/api.html)
 
 ## Stack
 
@@ -43,13 +43,13 @@ El autor también trabajó anteriormente en el Ministerio de Ambiente de la Prov
 
 Este es uno de tres proyectos ambientales hermanos que comparten la misma infraestructura en Cloudflare (Pages + Workers + D1):
 
-- **EMAS** — meteorología, [emas.lemeit.ar](https://emas.lemeit.ar)
-- **Aire Escolar** — este proyecto, [aq.lemeit.ar](https://aq.lemeit.ar)
-- **Calidad del Agua** — protocolos municipales, [wq.lemeit.ar](https://wq.lemeit.ar)
+- **EMAS** — meteorología, [app.lemeit.ar/emas](https://app.lemeit.ar/emas)
+- **Aire Escolar** — este proyecto, [app.lemeit.ar/aq](https://app.lemeit.ar/aq)
+- **Calidad del Agua** — protocolos municipales, [app.lemeit.ar/wq](https://app.lemeit.ar/wq)
 
 ## Links
 
 - [Repositorio](https://github.com/lemeit/lemeit-aq)
-- [Sitio en vivo](https://aq.lemeit.ar)
-- [API pública](https://aq.lemeit.ar/api.html)
+- [Sitio en vivo](https://app.lemeit.ar/aq)
+- [API pública](https://app.lemeit.ar/aq/api.html)
 - [Documentación técnica](https://wiki.lemeit.ar/red-ambiental/01-aire-saladillo/)

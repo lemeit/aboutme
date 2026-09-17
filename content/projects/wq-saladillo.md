@@ -12,7 +12,7 @@ Tercer proyecto de la red de monitoreo ambiental: calidad del agua de red en Sal
 protocolos de muestreo municipales — arsénico, nitratos, nitritos, fluoruro, metales pesados y
 parámetros bacteriológicos (coliformes totales, *Escherichia coli*, *Pseudomona aeruginosa*) sobre
 decenas de puntos de la red (bombas, escuelas, jardines de infantes, domicilios). Publicado en
-[wq.lemeit.ar](https://wq.lemeit.ar).
+[app.lemeit.ar/wq](https://app.lemeit.ar/wq).
 
 ## Funcionalidad
 
@@ -43,11 +43,11 @@ dashboard.
 
 Este es uno de tres proyectos ambientales hermanos que comparten la misma infraestructura en Cloudflare (Pages + Workers + D1):
 
-- **EMAS** — meteorología, [emas.lemeit.ar](https://emas.lemeit.ar)
-- **Aire Escolar** — calidad del aire, [aq.lemeit.ar](https://aq.lemeit.ar)
-- **Calidad del Agua** — este proyecto, [wq.lemeit.ar](https://wq.lemeit.ar)
+- **EMAS** — meteorología, [app.lemeit.ar/emas](https://app.lemeit.ar/emas)
+- **Aire Escolar** — calidad del aire, [app.lemeit.ar/aq](https://app.lemeit.ar/aq)
+- **Calidad del Agua** — este proyecto, [app.lemeit.ar/wq](https://app.lemeit.ar/wq)
 
 ## Links
 
 - [Repositorio](https://github.com/lemeit/lemeit-wq)
-- [Sitio en vivo](https://wq.lemeit.ar)
+- [Sitio en vivo](https://app.lemeit.ar/wq)

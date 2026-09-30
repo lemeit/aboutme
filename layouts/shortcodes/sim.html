@@ -14,19 +14,34 @@
 
 {{- if not (.Page.Store.Get "simEmbedCss") -}}
 <style>
-  .sim-embed{margin:1.6rem 0;border:1px solid rgba(128,128,128,.28);border-radius:10px;overflow:hidden;background:#04050a}
-  .sim-embed-bar{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.45rem .9rem;background:rgba(128,128,128,.09)}
+  /* la barra pertenece al sitio: usa las variables del tema */
+  .sim-embed{
+    margin:1.6rem 0;border:1px solid var(--tertiary,rgba(128,128,128,.3));
+    border-radius:10px;overflow:hidden;
+    background:var(--code-bg,rgba(128,128,128,.09));
+  }
+  .sim-embed-bar{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.5rem .95rem}
   .sim-embed-title{font-size:.78rem;letter-spacing:.06em;color:var(--secondary,#888);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .sim-embed-actions{display:flex;gap:1rem;align-items:center;flex-shrink:0}
+  .sim-embed-actions{display:flex;gap:1.1rem;align-items:center;flex-shrink:0}
   .sim-embed-actions a,.sim-embed-fs{
     font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;
     color:var(--secondary,#888);text-decoration:none;background:none;
     border:none;cursor:pointer;padding:0;font-family:inherit;
   }
   .sim-embed-actions a:hover,.sim-embed-fs:hover{color:var(--theme,#444)}
+
   .sim-embed iframe{display:block;width:100%;border:0;height:var(--sim-h,760px)!important}
   @media (max-width:768px){.sim-embed iframe{height:72vh!important}}
-  .sim-embed:fullscreen{display:flex;flex-direction:column;border:none;border-radius:0}
+
+  /* en pantalla completa el marco flota sobre la sim (siempre oscura):
+     la barra pasa a la paleta de la simulación */
+  .sim-embed:fullscreen{display:flex;flex-direction:column;border:none;border-radius:0;background:#04050a}
+  .sim-embed:fullscreen .sim-embed-bar{background:#04050a}
+  .sim-embed:fullscreen .sim-embed-title,
+  .sim-embed:fullscreen .sim-embed-actions a,
+  .sim-embed:fullscreen .sim-embed-fs{color:rgba(217,212,199,.7)}
+  .sim-embed:fullscreen .sim-embed-actions a:hover,
+  .sim-embed:fullscreen .sim-embed-fs:hover{color:#ffa14f}
   .sim-embed:fullscreen iframe{flex:1;height:auto!important}
 </style>
 {{- .Page.Store.Set "simEmbedCss" true -}}

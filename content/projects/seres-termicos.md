@@ -38,9 +38,8 @@ proyecto lo simula por dos caminos que comparten la misma columna vertebral
 
 *Corren completamente en el navegador. No requieren instalación ni servidor.*
 
-La simulación de la línea Bestiario está embebida abajo. También podés
-[abrirla en pestaña nueva](/simus/seres-termicos/bestiario.html) para
-pantalla completa.
+La simulación de la línea Bestiario está embebida abajo — la barra del
+recuadro permite abrirlo en pantalla completa o en pestaña nueva.
 
 {{< sim src="/simus/seres-termicos/bestiario.html" title="Seres Térmicos — Bestiario (línea B, v1)" >}}
 

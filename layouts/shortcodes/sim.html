@@ -1,6 +1,6 @@
 {{- $src := .Get "src" -}}
 {{- $title := .Get "title" | default "Simulación interactiva" -}}
-{{- $height := .Get "height" | default "min(85vh, 860px)" -}}
+{{- $h := .Get "height" | default "760" -}}
 {{- $embed := ne (.Get "embed") "false" -}}
 
 {{- $url := $src | relURL -}}
@@ -24,22 +24,23 @@
     border:none;cursor:pointer;padding:0;font-family:inherit;
   }
   .sim-embed-actions a:hover,.sim-embed-fs:hover{color:var(--theme,#444)}
-  .sim-embed iframe{display:block;width:100%;border:0;min-height:560px}
+  .sim-embed iframe{display:block;width:100%;border:0;height:var(--sim-h,760px)!important}
+  @media (max-width:768px){.sim-embed iframe{height:72vh!important}}
   .sim-embed:fullscreen{display:flex;flex-direction:column;border:none;border-radius:0}
-  .sim-embed:fullscreen iframe{flex:1;height:auto!important;min-height:0!important}
+  .sim-embed:fullscreen iframe{flex:1;height:auto!important}
 </style>
 {{- .Page.Store.Set "simEmbedCss" true -}}
 {{- end -}}
 
-<div class="sim-embed">
+<div class="sim-embed" style="--sim-h:{{ $h }}px">
   <div class="sim-embed-bar">
     <span class="sim-embed-title">{{ $title }}</span>
     <span class="sim-embed-actions">
       <button class="sim-embed-fs" type="button" title="Pantalla completa">⛶ pantalla completa</button>
-      <a href="{{ $src | relURL }}" target="_blank" rel="noopener">abrir en pestaña nueva ↗</a>
+      <a href="{{ $src | relURL }}" target="_blank" rel="noopener">pestaña nueva ↗</a>
     </span>
   </div>
-  <iframe src="{{ $url }}" title="{{ $title }}" loading="lazy" allow="fullscreen" style="height:{{ $height }}"></iframe>
+  <iframe src="{{ $url }}" title="{{ $title }}" loading="lazy" allow="fullscreen"></iframe>
 </div>
 
 {{- if not (.Page.Store.Get "simEmbedJs") -}}

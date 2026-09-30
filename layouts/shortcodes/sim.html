@@ -1,0 +1,57 @@
+{{- $src := .Get "src" -}}
+{{- $title := .Get "title" | default "Simulación interactiva" -}}
+{{- $height := .Get "height" | default "min(85vh, 860px)" -}}
+{{- $embed := ne (.Get "embed") "false" -}}
+
+{{- $url := $src | relURL -}}
+{{- if $embed -}}
+  {{- if strings.Contains $url "?" -}}
+    {{- $url = printf "%s&embed=1" $url -}}
+  {{- else -}}
+    {{- $url = printf "%s?embed=1" $url -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if not (.Page.Store.Get "simEmbedCss") -}}
+<style>
+  .sim-embed{margin:1.6rem 0;border:1px solid rgba(128,128,128,.28);border-radius:10px;overflow:hidden;background:#04050a}
+  .sim-embed-bar{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.45rem .9rem;background:rgba(128,128,128,.09)}
+  .sim-embed-title{font-size:.78rem;letter-spacing:.06em;color:var(--secondary,#888);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .sim-embed-actions{display:flex;gap:1rem;align-items:center;flex-shrink:0}
+  .sim-embed-actions a,.sim-embed-fs{
+    font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--secondary,#888);text-decoration:none;background:none;
+    border:none;cursor:pointer;padding:0;font-family:inherit;
+  }
+  .sim-embed-actions a:hover,.sim-embed-fs:hover{color:var(--theme,#444)}
+  .sim-embed iframe{display:block;width:100%;border:0;min-height:560px}
+  .sim-embed:fullscreen{display:flex;flex-direction:column;border:none;border-radius:0}
+  .sim-embed:fullscreen iframe{flex:1;height:auto!important;min-height:0!important}
+</style>
+{{- .Page.Store.Set "simEmbedCss" true -}}
+{{- end -}}
+
+<div class="sim-embed">
+  <div class="sim-embed-bar">
+    <span class="sim-embed-title">{{ $title }}</span>
+    <span class="sim-embed-actions">
+      <button class="sim-embed-fs" type="button" title="Pantalla completa">⛶ pantalla completa</button>
+      <a href="{{ $src | relURL }}" target="_blank" rel="noopener">abrir en pestaña nueva ↗</a>
+    </span>
+  </div>
+  <iframe src="{{ $url }}" title="{{ $title }}" loading="lazy" allow="fullscreen" style="height:{{ $height }}"></iframe>
+</div>
+
+{{- if not (.Page.Store.Get "simEmbedJs") -}}
+<script>
+document.addEventListener('click',function(e){
+  const b=e.target.closest('.sim-embed-fs');
+  if(!b)return;
+  const el=b.closest('.sim-embed');
+  const fsEl=document.fullscreenElement||document.webkitFullscreenElement;
+  if(fsEl){(document.exitFullscreen||document.webkitExitFullscreen).call(document);}
+  else{(el.requestFullscreen||el.webkitRequestFullscreen||el.msRequestFullscreen).call(el);}
+});
+</script>
+{{- .Page.Store.Set "simEmbedJs" true -}}
+{{- end -}}

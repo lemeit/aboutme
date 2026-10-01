@@ -41,4 +41,17 @@ document.addEventListener('click',function(e){
   if(fsEl){(document.exitFullscreen||document.webkitExitFullscreen).call(document);}
   else{(el.requestFullscreen||el.webkitRequestFullscreen||el.msRequestFullscreen).call(el);}
 });
+/* pantalla completa = versión completa: el telón se abre sin recargar */
+document.addEventListener('fullscreenchange',function(){
+  document.querySelectorAll('.sim-embed iframe').forEach(f=>{
+    try{
+      const b=f.contentDocument&&f.contentDocument.body;
+      if(!b)return;
+      if(document.fullscreenElement&&document.fullscreenElement.contains(f))
+        b.classList.remove('embed');
+      else
+        b.classList.add('embed');
+    }catch(err){}
+  });
+});
 </script>

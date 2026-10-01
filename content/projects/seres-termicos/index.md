@@ -29,12 +29,12 @@ proyecto lo simula por dos caminos que comparten la misma columna vertebral
 
 ## Simulaciones
 
-| Línea | Versión | Descripción | Abrir |
-|-------|---------|-------------|-------|
-| Campo | **v06 — Ciclo de vida** | Campo 2D · presupuesto energético individual · nacimiento, metabolismo y muerte · gráficas en tiempo real | [▶ abrir](/simus/seres-termicos/v06-ciclovida.html) |
-| Campo | **v07 — 3D esférico** | Campo 3D en esfera de plasma · ray marching WebGL2 · doble perspectiva: cósmica e interior · rotar con mouse · Tab cambia de ser | [▶ abrir](/simus/seres-termicos/v07-3d.html) |
-| Campo | **v08 — Espaciotiempo** | Campo 2D × tiempo → volumen 3D · worldtubes borgesianos · Espacio pausa | [▶ abrir](/simus/seres-termicos/v08-espaciotiempo.html) |
-| Bestiario | **B1 — Bestiario** | Organismos térmicos articulados · 5 niveles de existencia · fichas de zoología fantástica · termotaxis · crónica de ascensos | [▶ abrir](/simus/seres-termicos/bestiario.html) |
+| Línea | Versión | Descripción | Documentación |
+|-------|---------|-------------|---------------|
+| Campo | **v06 — Ciclo de vida** | Campo 2D · presupuesto energético individual · nacimiento, metabolismo y muerte · gráficas en tiempo real | [ver →]({{< relref "/projects/seres-termicos/v06-ciclovida" >}}) |
+| Campo | **v07 — 3D esférico** | Campo 3D en esfera de plasma · ray marching WebGL2 · doble perspectiva: cósmica e interior · Tab cambia de ser | [ver →]({{< relref "/projects/seres-termicos/v07-3d" >}}) |
+| Campo | **v08 — Espaciotiempo** | Campo 2D × tiempo → volumen 3D · worldtubes borgesianos | [ver →]({{< relref "/projects/seres-termicos/v08-espaciotiempo" >}}) |
+| Bestiario | **B1 — Bestiario** | Organismos articulados · 5 niveles · fichas · termotaxis · crónica | *embebida abajo* |
 
 *Corren completamente en el navegador. No requieren instalación ni servidor.*
 

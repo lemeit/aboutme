@@ -4,11 +4,11 @@ date = '2026-09-25'
 lastmod = '2026-09-25'
 draft = false
 math = true
+url = '/projects/seres-termicos/v06-ciclovida/'
 description = 'El ser como presupuesto energético: nace del vacío, metaboliza, se reproduce y muere. Campo térmico 2D con ciclo de vida completo y gráficas en tiempo real.'
 
 [build]
-list = false
-render = true
+list = 'never'
 +++
 
 > "un ciego y sordo e impalpable **conjunto** de calores y fríos articulados."

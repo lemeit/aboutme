@@ -4,11 +4,11 @@ date = '2026-09-25'
 lastmod = '2026-09-25'
 draft = false
 math = true
-description = 'El campo 2D acumulado a lo largo del tiempo como volumen 3D: worldtubes. Los seres no se mueven — su vida entera es una forma geométrica: nacimiento, bifurcación y muerte como geometría.'
+url = '/projects/seres-termicos/v08-espaciotiempo/'
+description = 'El campo 2D acumulado a lo largo del tiempo como volumen 3D: worldtubes. Los seres no se mueven — su vida entera es una forma geométrica.'
 
 [build]
-list = false
-render = true
+list = 'never'
 +++
 
 > "Los humanos vistos en cuatro dimensiones son «grandes milpiés»: cada instante

@@ -4,11 +4,11 @@ date = '2026-09-25'
 lastmod = '2026-09-25'
 draft = false
 math = true
-description = 'El campo térmico en tres dimensiones, confinado en una esfera de plasma: ray marching volumétrico en WebGL2 y doble perspectiva — el cosmos desde afuera, el mundo desde adentro de un ser.'
+url = '/projects/seres-termicos/v07-3d/'
+description = 'El campo térmico en 3D confinado en una esfera de plasma: ray marching volumétrico en WebGL2 y doble perspectiva — el cosmos desde afuera, el mundo desde adentro de un ser.'
 
 [build]
-list = false
-render = true
+list = 'never'
 +++
 
 > "Los diversos colores definían en el espacio cósmico figuras regulares e irregulares."

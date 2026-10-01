@@ -1,0 +1,26 @@
+<details class="doc-details" {{ with .Get "open" }}open{{ end }}>
+  <summary>{{ .Get "title" }}</summary>
+  <div class="d-body">
+    {{ .Inner | markdownify }}
+  </div>
+</details>
+{{- if not (.Page.Store.Get "detailsJs") -}}
+<script>
+/* si navegás a un ancla dentro de un details cerrado, abrirlo */
+(function(){
+  function abrir(){
+    if(!location.hash)return;
+    const el=document.querySelector(location.hash);
+    if(!el)return;
+    let d=el.closest('details');
+    while(d){d.open=true;d=d.parentElement&&d.parentElement.closest('details');}
+  }
+  window.addEventListener('hashchange',abrir);
+  document.addEventListener('click',function(e){
+    const a=e.target.closest('a[href^="#"]');
+    if(a)setTimeout(abrir,0);
+  });
+})();
+</script>
+{{- .Page.Store.Set "detailsJs" true -}}
+{{- end -}}

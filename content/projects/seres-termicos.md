@@ -423,7 +423,7 @@ donde $\sigma$ es el coeficiente de extinción, proporcional a $|T|$.
 | III | `v06-ciclovida.html` | **Enfoque B**: presupuesto energético, ciclo de vida | Claude · borrador ChatGPT | [ficha →](/projects/seres-termicos/v06-ciclovida/) |
 | V | `v07-3d.html` | Campo 3D + esfera volumétrica (WebGL2) + PIP interior | Claude · borrador ChatGPT | [ficha →](/projects/seres-termicos/v07-3d/) |
 | V | `v08-espaciotiempo.html` | Campo 2D × tiempo → volumen 3D de worldtubes | Claude · borrador ChatGPT | [ficha →](/projects/seres-termicos/v08-espaciotiempo/) |
-| IV | `bestiario.html` (B1) | **Línea BESTIARIO**: organismo articulado, taxonomía por equilibrios | Claude | [correr →](/simus/seres-termicos/bestiario.html) |
+| IV | `bestiario.html` (B1) | **Línea BESTIARIO**: organismo articulado, taxonomía por equilibrios | GLM (Zhipu AI) | [correr →](/simus/seres-termicos/bestiario.html) |
 
 Nota sobre la numeración: hasta v08 las versiones son secuenciales (la línea del campo).
 B1 es una **bifurcación**, no una continuación: B de *bestiario*, 1 por ser la primera
@@ -433,7 +433,7 @@ versión de esa línea. Ambas comparten la columna vertebral
 Nota de metodología: las líneas I–V se desarrollaron con Claude (Anthropic) a partir
 de un borrador exploratorio iniciado con ChatGPT (OpenAI), cuyo desarrollo continúa
 allí hacia una versión final. La línea bestiario (B1) y la integración documental del
-proyecto se desarrollaron en diálogo directo con Claude.
+proyecto se desarrollaron con GLM (Zhipu AI) en diálogo iterativo con el autor.
 
 ---
 

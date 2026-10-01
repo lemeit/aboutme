@@ -16,6 +16,8 @@ list = 'never'
 >
 > — paráfrasis de Kurt Vonnegut, *Matadero cinco* (1969)
 
+*Esta simulación pertenece a la Línea V — [El cosmos](/projects/seres-termicos/): dónde viven y cómo se ven en el tiempo.*
+
 Esta es la visualización más borgiana del proyecto. En lugar de mirar la
 simulación *pasar*, v08 acumula la historia del campo como si el tiempo fuera una
 tercera dimensión espacial. El resultado no muestra objetos que se mueven: muestra

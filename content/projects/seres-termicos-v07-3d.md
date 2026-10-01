@@ -15,6 +15,8 @@ list = 'never'
 >
 > — J. L. Borges (con M. Guerrero), *El libro de los seres imaginarios* (1957)
 
+*Esta simulación pertenece a la Línea V — [El cosmos](/projects/seres-termicos/): dónde viven y cómo se ven en el tiempo.*
+
 Borges describe un cosmos, no una grilla. El universo rectangular de las versiones
 anteriores era una conveniencia numérica: sus bordes rectos no significaban nada.
 En v07 el universo es una **esfera** — y el calor que llega al borde no escapa: rebota.

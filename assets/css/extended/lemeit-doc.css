@@ -1,10 +1,149 @@
-.doc-details{margin:1.4rem 0;border:1px solid var(--tertiary,rgba(128,128,128,.3));
-  border-radius:10px;overflow:hidden;background:var(--code-bg,transparent)}
-.doc-details summary{cursor:pointer;padding:.75rem 1.1rem;font-weight:600;
-  list-style:none;display:flex;align-items:center;gap:.6rem;user-select:none}
-.doc-details summary::-webkit-details-marker{display:none}
-.doc-details summary::before{content:'▸';color:var(--secondary,#888);
-  transition:transform .2s;flex-shrink:0}
-.doc-details[open] summary::before{transform:rotate(90deg)}
-.doc-details summary:hover{color:var(--theme,#444)}
-.doc-details .d-body{padding:.2rem 1.3rem 1.1rem;border-top:1px solid var(--tertiary,rgba(128,128,128,.2))}
+/* ============================================================
+   lemeit-doc.css — extensiones de documento para PaperMod
+   (se carga automáticamente desde assets/css/extended/)
+
+   1) Selección de texto legible (global)
+   2) TOC lateral sticky a la IZQUIERDA (pantallas ≥1200px)
+   3) Estilos para el shortcode <details> de secciones plegables
+   ============================================================ */
+
+/* ---------- 1) Selección de texto: naranja de la paleta, texto intacto ---------- */
+::selection {
+  background: rgba(217, 105, 31, .35);
+}
+
+/* ---------- 2) TOC como sidebar sticky, a la IZQUIERDA ---------- */
+@media (min-width: 1200px) {
+
+  /* el conjunto = TOC + gap + ancho ORIGINAL del contenido:
+     el texto conserva su --main-width completo */
+  .main:has(.post-single .toc) {
+    max-width: calc(280px + 44px + var(--main-width, 720px) + var(--gap, 20px) * 2);
+  }
+
+  /* grid de dos columnas: toc | contenido */
+  .post-single:has(.toc) {
+    display: grid;
+    grid-template-columns: 280px minmax(0, 1fr);
+    grid-template-areas:
+      "toc header"
+      "toc content"
+      "toc footer";
+    column-gap: 44px;
+  }
+
+  .post-single .post-header  { grid-area: header; }
+  .post-single .post-content { grid-area: content; min-width: 0; }
+  .post-single .post-footer  { grid-area: footer; }
+
+  .post-single .toc {
+    grid-area: toc;
+    position: sticky;
+    top: 40px;
+    align-self: start;
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 0;
+    font-size: 13px;
+    scrollbar-width: thin;
+    border: 1px solid var(--border, rgba(128,128,128,.25));
+    border-radius: 10px;
+    padding: 6px 0;
+  }
+
+  .post-single .toc details summary {
+    margin-left: 14px;
+    padding: 8px 0;
+  }
+
+  .post-single .toc .inner {
+    margin: 0 14px;
+    padding: 8px 0;
+  }
+
+  /* bullets propios: guiones posicionados DENTRO del li (no se cortan) */
+  .post-single .toc ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .post-single .toc li {
+    position: relative;
+    padding-left: 18px;
+  }
+
+  .post-single .toc li::before {
+    content: '–';
+    position: absolute;
+    left: 6px;
+    color: var(--secondary, #888);
+  }
+
+  /* sangría por nivel */
+  .post-single .toc ul ul {
+    padding-left: 14px;
+  }
+
+  /* H3 (nivel 2): más chicos y tenues, con punto */
+  .post-single .toc ul ul a {
+    font-size: 12px;
+  }
+  .post-single .toc ul ul li::before {
+    content: '·';
+  }
+
+  /* links del índice */
+  .post-single .toc a {
+    text-decoration: none;
+    color: var(--secondary, #888);
+    display: block;
+    padding: 3px 0;
+  }
+
+  .post-single .toc a:hover {
+    color: var(--lm-accent, var(--theme, #444));
+  }
+
+} /* fin @media */
+
+/* ---------- 3) Secciones plegables (shortcode details) ---------- */
+.doc-details {
+  margin: 1.4rem 0;
+  border: 1px solid var(--border, rgba(128,128,128,.3));
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--code-bg, transparent);
+}
+
+.doc-details summary {
+  cursor: pointer;
+  padding: .75rem 1.1rem;
+  font-weight: 600;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  user-select: none;
+}
+
+.doc-details summary::-webkit-details-marker { display: none; }
+
+.doc-details summary::before {
+  content: '▸';
+  color: var(--secondary, #888);
+  transition: transform .2s;
+  flex-shrink: 0;
+}
+
+.doc-details[open] summary::before { transform: rotate(90deg); }
+
+.doc-details summary:hover {
+  color: var(--lm-accent, var(--theme, #444));
+}
+
+.doc-details .d-body {
+  padding: .2rem 1.3rem 1.1rem;
+  border-top: 1px solid var(--border, rgba(128,128,128,.2));
+}

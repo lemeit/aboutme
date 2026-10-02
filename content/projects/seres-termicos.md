@@ -5,6 +5,8 @@ lastmod = '2026-09-25'
 weight = 10
 draft = false
 math = true
+ShowToc = true
+TocOpen = true
 tags = ['física', 'simulación', 'WebGL2', 'Canvas2D', 'Borges', 'visualización', 'difusión']
 description = 'Laboratorio de hipótesis físicas inspirado en el texto de Borges: de la ecuación del calor a los organismos articulados y los worldtubes. Nueve simulaciones en cinco líneas, documentadas cronológicamente con toda la física detrás.'
 +++
@@ -469,4 +471,4 @@ proyecto se desarrollaron con GLM (Zhipu AI) en diálogo iterativo con el autor.
 - **Sistema de diseño**: [design.lemeit.ar](https://design.lemeit.ar)
 - **README técnico completo**: [README del repo](https://github.com/lemeit/simus/blob/main/README.md)
 
-*Proyecto en desarrollo.
+_*Proyecto en desarrollo._

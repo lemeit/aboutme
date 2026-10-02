@@ -103,7 +103,7 @@
   }
 
   .post-single .toc a:hover {
-    color: var(--lm-accent, var(--theme, #444));
+    color: #B84800;
   }
 
 } /* fin @media */
@@ -140,7 +140,7 @@
 .doc-details[open] summary::before { transform: rotate(90deg); }
 
 .doc-details summary:hover {
-  color: var(--lm-accent, var(--theme, #444));
+  color: #B84800;
 }
 
 .doc-details .d-body {

@@ -1,0 +1,482 @@
+[
+  {
+    "name": "cap01_metodo-red_pp29",
+    "pdf_page": 29,
+    "printed_page": 29,
+    "box_pt": [
+      231.9,
+      408.4,
+      435.4,
+      614.1
+    ],
+    "caption": "metodo red"
+  },
+  {
+    "name": "cap01_carro-ventilador_pp47",
+    "pdf_page": 47,
+    "printed_page": 47,
+    "box_pt": [
+      257.9,
+      124.4,
+      409.5,
+      261.5
+    ],
+    "caption": "carro ventilador"
+  },
+  {
+    "name": "cap01_exactitud-precision_pp55",
+    "pdf_page": 55,
+    "printed_page": 55,
+    "box_pt": [
+      142.0,
+      213.2,
+      524.8,
+      338.7
+    ],
+    "caption": "exactitud precision"
+  },
+  {
+    "name": "cap01_longitud-incierta_pp58",
+    "pdf_page": 58,
+    "printed_page": 58,
+    "box_pt": [
+      261.1,
+      435.9,
+      405.4,
+      505.3
+    ],
+    "caption": "longitud incierta"
+  },
+  {
+    "name": "cap01_lectura-analogica_pp60",
+    "pdf_page": 60,
+    "printed_page": 60,
+    "box_pt": [
+      164.4,
+      490.5,
+      502.9,
+      644.5
+    ],
+    "caption": "lectura analogica"
+  },
+  {
+    "name": "cap01_menisco_pp61",
+    "pdf_page": 61,
+    "printed_page": 61,
+    "box_pt": [
+      224.3,
+      160.1,
+      443.0,
+      284.3
+    ],
+    "caption": "menisco"
+  },
+  {
+    "name": "cap01_dispersion-ajuste_pp62",
+    "pdf_page": 62,
+    "printed_page": 62,
+    "box_pt": [
+      339.8,
+      403.9,
+      523.9,
+      572.0
+    ],
+    "caption": "dispersion ajuste"
+  },
+  {
+    "name": "cap01_distribucion-normal_pp63",
+    "pdf_page": 63,
+    "printed_page": 63,
+    "box_pt": [
+      297.4,
+      167.7,
+      525.3,
+      284.7
+    ],
+    "caption": "distribucion normal"
+  },
+  {
+    "name": "cap01_area-incertidumbre_pp66",
+    "pdf_page": 66,
+    "printed_page": 66,
+    "box_pt": [
+      245.4,
+      180.4,
+      422.1,
+      316.1
+    ],
+    "caption": "area incertidumbre"
+  },
+  {
+    "name": "cap01_suma-incertidumbre_pp67",
+    "pdf_page": 67,
+    "printed_page": 67,
+    "box_pt": [
+      213.9,
+      232.7,
+      471.1,
+      340.5
+    ],
+    "caption": "suma incertidumbre"
+  },
+  {
+    "name": "cap01_resta-incertidumbre_pp68",
+    "pdf_page": 68,
+    "printed_page": 68,
+    "box_pt": [
+      228.9,
+      115.2,
+      438.1,
+      234.4
+    ],
+    "caption": "resta incertidumbre"
+  },
+  {
+    "name": "cap01_hooke-ajuste_pp85",
+    "pdf_page": 85,
+    "printed_page": 85,
+    "box_pt": [
+      151.5,
+      365.8,
+      516.2,
+      580.8
+    ],
+    "caption": "hooke ajuste"
+  },
+  {
+    "name": "cap01_hooke-barras_pp86",
+    "pdf_page": 86,
+    "printed_page": 86,
+    "box_pt": [
+      150.3,
+      192.4,
+      517.2,
+      408.0
+    ],
+    "caption": "hooke barras"
+  },
+  {
+    "name": "cap01_hooke-pendientes_pp87",
+    "pdf_page": 87,
+    "printed_page": 87,
+    "box_pt": [
+      165.2,
+      148.1,
+      501.7,
+      345.8
+    ],
+    "caption": "hooke pendientes"
+  },
+  {
+    "name": "cap02_fuerzas-subindices_pp134",
+    "pdf_page": 134,
+    "printed_page": 134,
+    "box_pt": [
+      267.9,
+      505.2,
+      399.4,
+      627.7
+    ],
+    "caption": "fuerzas subindices",
+    "embedded_image": "/Image1268"
+  },
+  {
+    "name": "cap02_triangulo-rectangulo_pp146",
+    "pdf_page": 146,
+    "printed_page": 146,
+    "box_pt": [
+      424.0,
+      479.5,
+      538.9,
+      574.9
+    ],
+    "caption": "triangulo rectangulo",
+    "embedded_image": "/Image1394"
+  },
+  {
+    "name": "cap02_triangulos-semejantes_pp147",
+    "pdf_page": 147,
+    "printed_page": 147,
+    "box_pt": [
+      173.2,
+      73.3,
+      457.2,
+      196.1
+    ],
+    "caption": "triangulos semejantes",
+    "embedded_image": "/Image1410"
+  },
+  {
+    "name": "cap02_componentes_pp148",
+    "pdf_page": 148,
+    "printed_page": 148,
+    "box_pt": [
+      404.5,
+      103.8,
+      527.3,
+      203.5
+    ],
+    "caption": "componentes",
+    "embedded_image": "/Image1413"
+  },
+  {
+    "name": "cap02_canon-componentes_pp148",
+    "pdf_page": 148,
+    "printed_page": 148,
+    "box_pt": [
+      229.7,
+      264.9,
+      437.6,
+      385.2
+    ],
+    "caption": "canon componentes",
+    "embedded_image": "/Image1424"
+  },
+  {
+    "name": "cap02_angulo-inverso_pp149",
+    "pdf_page": 149,
+    "printed_page": 149,
+    "box_pt": [
+      254.0,
+      134.8,
+      413.3,
+      204.8
+    ],
+    "caption": "angulo inverso",
+    "embedded_image": "/Image1435"
+  },
+  {
+    "name": "cap02_ejercicios-triangulo_pp150",
+    "pdf_page": 150,
+    "printed_page": 150,
+    "box_pt": [
+      290.4,
+      130.3,
+      376.9,
+      242.3
+    ],
+    "caption": "ejercicios triangulo",
+    "embedded_image": "/Image1438"
+  },
+  {
+    "name": "cap02_triangulo-general_pp152",
+    "pdf_page": 152,
+    "printed_page": 152,
+    "box_pt": [
+      256.6,
+      501.0,
+      410.6,
+      613.0
+    ],
+    "caption": "triangulo general",
+    "embedded_image": "/Image1441"
+  },
+  {
+    "name": "cap02_ley-cosenos_pp154",
+    "pdf_page": 154,
+    "printed_page": 154,
+    "box_pt": [
+      255.1,
+      170.1,
+      412.1,
+      288.1
+    ],
+    "caption": "ley cosenos",
+    "embedded_image": "/Image1448"
+  },
+  {
+    "name": "cap02_suma-perpendicular_pp158",
+    "pdf_page": 158,
+    "printed_page": 158,
+    "box_pt": [
+      217.7,
+      169.2,
+      449.6,
+      329.2
+    ],
+    "caption": "suma perpendicular",
+    "embedded_image": "/Image1479"
+  },
+  {
+    "name": "cap02_suma-oblicua_pp159",
+    "pdf_page": 159,
+    "printed_page": 159,
+    "box_pt": [
+      150.2,
+      88.4,
+      517.1,
+      178.6
+    ],
+    "caption": "suma oblicua",
+    "embedded_image": "/Image1495"
+  },
+  {
+    "name": "cap02_mano-derecha_pp168",
+    "pdf_page": 168,
+    "printed_page": 168,
+    "box_pt": [
+      433.8,
+      271.2,
+      533.0,
+      381.7
+    ],
+    "caption": "mano derecha",
+    "embedded_image": "/Image1624"
+  },
+  {
+    "name": "cap02_torque-llave_pp169",
+    "pdf_page": 169,
+    "printed_page": 169,
+    "box_pt": [
+      274.6,
+      94.4,
+      392.6,
+      177.9
+    ],
+    "caption": "torque llave",
+    "embedded_image": "/Image1642"
+  },
+  {
+    "name": "cap02_ejercicio-productos_pp170",
+    "pdf_page": 170,
+    "printed_page": 170,
+    "box_pt": [
+      178.0,
+      118.5,
+      304.2,
+      217.0
+    ],
+    "caption": "ejercicio productos",
+    "embedded_image": "/Image1654"
+  },
+  {
+    "name": "cap02_radian_pp171",
+    "pdf_page": 171,
+    "printed_page": 171,
+    "box_pt": [
+      280.6,
+      486.6,
+      386.6,
+      592.6
+    ],
+    "caption": "radian",
+    "embedded_image": "/Image1659"
+  },
+  {
+    "name": "cap02_circulo-unitario_pp172",
+    "pdf_page": 172,
+    "printed_page": 172,
+    "box_pt": [
+      193.7,
+      121.2,
+      472.4,
+      386.2
+    ],
+    "caption": "circulo unitario",
+    "embedded_image": "/Image1667"
+  },
+  {
+    "name": "cap02_coordenadas-boston_pp175",
+    "pdf_page": 175,
+    "printed_page": 175,
+    "box_pt": [
+      226.7,
+      173.5,
+      440.6,
+      383.0
+    ],
+    "caption": "coordenadas boston",
+    "embedded_image": "/Image1673"
+  },
+  {
+    "name": "cap02_puntos-polares_pp176",
+    "pdf_page": 176,
+    "printed_page": 176,
+    "box_pt": [
+      237.9,
+      410.9,
+      429.4,
+      569.4
+    ],
+    "caption": "puntos polares",
+    "embedded_image": "/Image1678"
+  },
+  {
+    "name": "cap02_vector-ejercicio-1_pp161",
+    "pdf_page": 161,
+    "printed_page": 161,
+    "box_pt": [
+      213.6,
+      114.3,
+      342.7,
+      188.1
+    ],
+    "caption": "Ejercicio de vectores 1",
+    "embedded_image": "/Image1522"
+  },
+  {
+    "name": "cap02_vector-ejercicio-2_pp161",
+    "pdf_page": 161,
+    "printed_page": 161,
+    "box_pt": [
+      213.5,
+      196.6,
+      393.9,
+      271.4
+    ],
+    "caption": "Ejercicio de vectores 2",
+    "embedded_image": "/Image1524"
+  },
+  {
+    "name": "cap02_vector-ejercicio-3_pp161",
+    "pdf_page": 161,
+    "printed_page": 161,
+    "box_pt": [
+      209.8,
+      289.7,
+      330.3,
+      369.0
+    ],
+    "caption": "Ejercicio de vectores 3",
+    "embedded_image": "/Image1523"
+  },
+  {
+    "name": "cap02_vector-ejercicio-4_pp161",
+    "pdf_page": 161,
+    "printed_page": 161,
+    "box_pt": [
+      213.4,
+      404.8,
+      330.4,
+      480.1
+    ],
+    "caption": "Ejercicio de vectores 4",
+    "embedded_image": "/Image1526"
+  },
+  {
+    "name": "cap02_vector-ejercicio-5_pp161",
+    "pdf_page": 161,
+    "printed_page": 161,
+    "box_pt": [
+      214.2,
+      504.6,
+      342.7,
+      594.2
+    ],
+    "caption": "Ejercicio de vectores 5",
+    "embedded_image": "/Image1528"
+  },
+  {
+    "name": "cap02_vector-ejercicio-6_pp161",
+    "pdf_page": 161,
+    "printed_page": 161,
+    "box_pt": [
+      210.2,
+      621.3,
+      314.2,
+      693.6
+    ],
+    "caption": "Ejercicio de vectores 6",
+    "embedded_image": "/Image1530"
+  }
+]

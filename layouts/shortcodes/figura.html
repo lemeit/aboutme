@@ -1,5 +1,12 @@
+{{- $width := .Get "width" -}}
+{{- if strings.HasPrefix .Page.RelPermalink "/notes/notas-fisica/" -}}
+  {{- $width = 420 -}}
+  {{- with .Get "width" -}}
+    {{- $width = math.Round (mul (float .) 0.75) -}}
+  {{- end -}}
+{{- end -}}
 <figure style="text-align:center; margin:1.5em auto;">
-  <img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" style="max-width:100%; display:block; margin:0 auto;">
+  <img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" style="{{ with $width }}width:{{ . }}px; {{ end }}max-width:100%; height:auto; display:block; margin:0 auto;">
   {{ with .Get "caption" }}
   <figcaption style="font-size:.85em; color:var(--secondary); margin-top:.5em; text-align:center; font-weight:normal; font-style:italic;">{{ . }}</figcaption>
   {{ end }}

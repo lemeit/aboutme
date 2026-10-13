@@ -6,6 +6,16 @@
   {{- end }}
 </header>
 
+{{- if and .Parent (eq .Parent.RelPermalink "/notes/notas-fisica/") }}
+{{- $updated := len (where .RegularPages "Params.traduccion_estado" "in" (slice "Revisada" "Ampliada")) }}
+<aside class="translation-status" aria-label="Estado de la traducción y adaptación">
+  <strong>Traducción y adaptación: {{ if .RegularPages }}en desarrollo{{ else }}en preparación{{ end }}</strong>
+  {{- if gt $updated 0 }}
+  <span>{{ $updated }} {{ if eq $updated 1 }}sección ampliada{{ else }}secciones ampliadas{{ end }}</span>
+  {{- end }}
+</aside>
+{{- end }}
+
 {{- if .Content }}
 <div class="post-content md-content">{{ .Content }}</div>
 {{- end }}

@@ -6,7 +6,14 @@ description = "El Sistema Internacional de Unidades, prefijos métricos, notaci�
 tags = ["U1", "SI", "unidades", "notación científica", "cifras significativas", "medición"]
 math = true
 weight = 9
+lastmod = "2026-10-13"
+traduccion_estado = "Complemento propio"
+cotejo_estado = "No es una sección independiente del capítulo 1"
+figuras_estado = "Sin figuras"
+visual_estado = "Verificada: escritorio y móvil"
 +++
+
+**Material complementario propio:** introducción a unidades y medición para estas clases. El desarrollo del original sobre SI y notación científica pertenece al capítulo 2. [Continuar allí]({{< ref "/notes/notas-fisica/cap02-matematicas/cap02-si-notacion.md" >}}).
 
 ## Objetivos de aprendizaje
 
@@ -108,7 +115,7 @@ $$N = a \times 10^n \quad \text{donde } 1 \leq a < 10$$
 | 1 000 000 | $1 \times 10^6$ |
 | 0,000 075 | $7{,}5 \times 10^{-5}$ |
 | 602 000 000 000 000 000 000 000 | $6{,}02 \times 10^{23}$ |
-| 0,000 000 000 663 | $6{,}63 \times 10^{-34}$ |
+| 0,000 000 000 663 | $6{,}63 \times 10^{-10}$ |
 
 ### Operaciones con notación científica
 
@@ -130,7 +137,7 @@ Las calculadoras científicas tienen una tecla **EE** (o **EXP** o **×10ˣ**) p
 
 Para ingresar $6{,}6 \times 10^{-34}$: presionás `6.6` → `EE` → `-34`.
 
-> ⚠️ No escribas $6{,}6 \times 10^{-34}$ como `6.6 × 10 ^ (-34)` en la calculadora — esto puede dar errores por el orden de operaciones (PEMDAS). Siempre usá la tecla **EE**.
+> ⚠️ La tecla **EE** facilita ingresar una potencia de diez. También puede usarse una expresión con potencias y paréntesis si la calculadora interpreta correctamente el orden de operaciones; comprobá que la pantalla represente el número esperado.
 
 ---
 
@@ -190,7 +197,7 @@ Al expresar una medición, siempre se indica la incertidumbre:
 
 $$d = (2{,}4 \pm 0{,}1) \text{ m}$$
 
-Esto significa que el valor real está entre 2,3 m y 2,5 m.
+El intervalo indicado es de 2,3 m a 2,5 m. Su interpretación depende de cómo se estimó la incertidumbre; no es una garantía absoluta sobre el valor verdadero.
 
 La **incertidumbre relativa** expresa el error como fracción del valor medido:
 

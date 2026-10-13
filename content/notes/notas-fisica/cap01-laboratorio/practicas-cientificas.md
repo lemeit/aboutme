@@ -2,133 +2,127 @@
 title = "Prácticas científicas"
 date = "2026-06-26"
 draft = false
-math = false
+math = true
 weight = 6
 description = "Las prácticas científicas según los marcos curriculares: crear representaciones, argumentar con evidencia, comunicar resultados."
 tags = ["U1", "laboratorio", "prácticas científicas", "método científico", "argumentación", "evidencia"]
+lastmod = "2026-10-13"
+traduccion_estado = "Ampliada"
+cotejo_estado = "Desarrollo cotejado: pp. 34–40"
+figuras_estado = "Sin figuras en estas páginas"
+visual_estado = "Verificada: escritorio y móvil"
 +++
 
-## Objetivos de aprendizaje
+**Fuente:** Jeff Bigler, *Physics 1: Mechanics in Plain English*, edición octubre de 2025, pp. 34–40. [Consultar el original (PDF)](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf#page=34).
 
-Al finalizar esta sección, vas a poder:
+## Qué significa trabajar científicamente
 
-- Identificar las prácticas científicas fundamentales que guían el trabajo experimental.
-- Crear representaciones (diagramas, tablas, gráficos) de situaciones físicas.
-- Justificar afirmaciones usando evidencia experimental.
-- Diseñar y describir procedimientos experimentales apropiados.
+Las prácticas científicas son acciones que permiten investigar y comunicar resultados: formular preguntas, construir representaciones, planificar mediciones, analizar datos y argumentar. No son pasos obligatorios de una receta. Una investigación puede volver a un modelo después de encontrar nuevos datos o reformular su pregunta al descubrir una limitación del instrumento.
 
----
+Bigler presenta **tres grupos de prácticas AP de 2024**, después las **ocho prácticas NGSS** y finalmente una formulación de Massachusetts de 2016. Son organizaciones distintas de capacidades relacionadas; no deben mezclarse en una única lista numerada.
 
-## ¿Qué son las prácticas científicas?
+## Los tres grupos AP del original
 
-Las **prácticas científicas** son los procesos que los científicos usan para investigar el mundo natural. No son una lista de pasos a seguir — son habilidades que se desarrollan y se aplican de manera flexible según la situación.
+### 1. Crear representaciones
 
-Los marcos curriculares internacionales (NGSS, College Board AP®) organizan estas prácticas en categorías. Aunque el diseño curricular argentino tiene su propio enfoque, estas prácticas son universales al trabajo científico.
+Crear representaciones que describan fenómenos físicos. Esto incluye diagramas, tablas, esquemas y gráficos. Un gráfico cualitativo comunica el comportamiento esperado; uno cuantitativo necesita escalas, unidades y puntos ubicados según sus valores.
 
----
+| Código | Capacidad |
+|---|---|
+| 1.A | Crear diagramas, tablas y esquemas de una situación física |
+| 1.B | Esbozar gráficos cualitativos que representen un modelo o sistema |
+| 1.C | Crear gráficos cuantitativos con escalas y unidades apropiadas |
 
-## Práctica 1 — Crear representaciones
+### 2. Procedimientos matemáticos
 
-Representar situaciones físicas de forma clara y precisa:
+Usar relaciones matemáticas para derivar, calcular, estimar, comparar y predecir. La tarea no se limita a sustituir números: hay que elegir un camino que conecte los datos con la cantidad buscada.
 
-- **Diagramas y esquemas:** representar objetos, fuerzas, trayectorias.
-- **Tablas:** organizar datos experimentales con columnas para variables y unidades.
-- **Gráficos cualitativos:** esbozar la forma esperada de una relación antes de tener datos.
-- **Gráficos cuantitativos:** graficar datos con escalas correctas, unidades y línea de mejor ajuste.
+| Código | Capacidad |
+|---|---|
+| 2.A | Derivar una expresión simbólica a partir de cantidades conocidas |
+| 2.B | Calcular o estimar una cantidad desconocida con sus unidades |
+| 2.C | Comparar cantidades en escenarios, instantes o lugares diferentes |
+| 2.D | Predecir valores o factores de cambio mediante dependencias funcionales |
 
-> Un buen diagrama ahorra cálculos y evita errores. Antes de resolver cualquier problema, hacé un esquema de la situación.
+### 3. Preguntas y argumentación científica
 
----
+Describir procedimientos experimentales y sostener afirmaciones con datos y principios. El diseño debe responder a la pregunta; la explicación debe mostrar por qué los resultados permiten hacer la afirmación.
 
-## Práctica 2 — Razonamiento matemático
+| Código | Capacidad |
+|---|---|
+| 3.A | Crear un procedimiento adecuado para una pregunta científica |
+| 3.B | Aplicar una ley, definición, relación teórica o modelo para formular una afirmación |
+| 3.C | Justificar una afirmación con datos, representaciones o principios físicos |
 
-Derivar, calcular y predecir usando matemáticas:
+**Nota sobre la fuente:** el párrafo de la p. 34 conserva una referencia a “siete” prácticas, aunque debajo enumera estos tres grupos. Esta adaptación sigue la lista desarrollada en esas páginas y no arrastra la discrepancia.
 
-- **Derivar expresiones simbólicas:** obtener una fórmula a partir de relaciones conocidas, siguiendo un camino lógico.
-- **Calcular cantidades:** obtener un valor numérico con unidades a partir de datos conocidos.
-- **Comparar situaciones:** analizar cómo cambia una magnitud cuando cambian las condiciones.
-- **Predecir:** usar una relación funcional para estimar qué pasará en un caso nuevo.
+## Las ocho prácticas NGSS
 
----
+### 1. Formular preguntas y definir problemas
 
-## Práctica 3 — Diseñar experimentos y argumentar
+Las preguntas pueden surgir de una observación cuidadosa, de un resultado inesperado o de las limitaciones de un modelo. Es necesario refinarlas hasta que puedan investigarse: ¿qué relación entre variables se quiere conocer?, ¿qué resultado permitiría distinguir explicaciones?, ¿hay recursos para medirlo?
 
-- **Diseñar procedimientos:** crear un procedimiento experimental apropiado para responder una pregunta específica.
-- **Aplicar modelos:** usar una ley, definición o relación teórica para hacer una afirmación.
-- **Justificar afirmaciones:** respaldar una conclusión con evidencia experimental, representaciones físicas o principios.
+Una pregunta científica debe ser pertinente y contrastable empíricamente. Un problema de diseño añade criterios y restricciones: desempeño esperado, costos, recursos, efectos ambientales o condiciones sociales. Las preguntas también pueden cuestionar las premisas de un argumento, una interpretación de datos o la adecuación de una solución.
 
-### El esquema claim → evidence → reasoning
+### 2. Desarrollar y utilizar modelos
 
-Toda conclusión científica debe tener tres componentes:
+Un modelo representa aspectos relevantes de un sistema, no necesariamente todos. Podés comparar modelos alternativos, diseñar una prueba de sus predicciones y modificarlos cuando la evidencia no los respalda.
 
-| Componente | Pregunta que responde |
-|-----------|----------------------|
-| **Afirmación** (*claim*) | ¿Qué es lo que concluís? |
-| **Evidencia** (*evidence*) | ¿Qué datos respaldan esa conclusión? |
-| **Razonamiento** (*reasoning*) | ¿Por qué esa evidencia apoya esa conclusión? |
+Se pueden usar representaciones físicas, diagramas, ecuaciones y simulaciones, pasando de una a otra según la pregunta. Un modelo computacional permite cambiar parámetros y generar predicciones; su utilidad depende de los supuestos con los que se construyó y de qué tan bien representa el fenómeno.
 
-**Ejemplo:**
+### 3. Planificar y realizar investigaciones
 
-- *Claim:* el objeto se mueve con MRU.
-- *Evidence:* el gráfico $x(t)$ es una recta con $R^2 = 0{,}998$.
-- *Reasoning:* en el MRU la posición varía linealmente con el tiempo ($x = x_0 + vt$), lo que produce una recta en el gráfico $x(t)$.
+Decidí qué datos hacen falta, cuántos, con qué precisión y cómo se obtendrán. Identificá controles y posibles variables que confundan la relación investigada. Elegí instrumentos adecuados, registrá datos y revisá el diseño ante las limitaciones de tiempo, costo y equipo.
 
----
+La investigación puede desarrollarse de manera individual o colaborativa. También requiere considerar los efectos ambientales, sociales y personales de las acciones. Una hipótesis direccional especifica qué cambio se espera en la variable dependiente al modificar una independiente.
 
-## Práctica 4 — Analizar e interpretar datos
+### 4. Analizar e interpretar datos
 
-- Usar herramientas y modelos para extraer conclusiones válidas de los datos.
-- Aplicar estadística: pendiente, ordenada al origen, coeficiente de correlación.
-- Considerar las limitaciones: error de medición, selección de muestras.
-- Comparar conjuntos de datos para evaluar consistencia.
+Utilizá herramientas y modelos para obtener conclusiones respaldadas por datos. Compará conjuntos de mediciones, examiná si son consistentes y evaluá qué cambia cuando aparece evidencia nueva.
 
----
+Un análisis puede incluir estadística, pendiente y ordenada de un ajuste, dispersión, residuos y limitaciones de la muestra. No basta con mostrar una ecuación de tendencia: hay que explicar qué representa físicamente y en qué rango es válida.
 
-## Práctica 5 — Usar matemáticas y pensamiento computacional
+### 5. Utilizar matemáticas y pensamiento computacional
 
-- Crear y usar modelos matemáticos para representar fenómenos.
-- Aplicar álgebra, funciones y proporciones.
-- Usar herramientas digitales (Tracker[^tracker], Desmos, planillas) para análisis.
-- Verificar expresiones con casos límite: ¿tiene sentido el resultado cuando una variable se hace cero o muy grande?
+Aplicá álgebra, funciones, proporciones, tasas y conversiones de unidades. Podés construir o revisar simulaciones y algoritmos, siempre indicando las hipótesis del modelo.
 
----
+Los casos límite ayudan a detectar fallas: ¿qué produce el cálculo si una velocidad vale cero?, ¿qué sucede si una masa aumenta mucho?, ¿las unidades son coherentes? Una simulación que produce un número no garantiza que ese número describa una situación físicamente posible.
 
-## Práctica 6 — Construir explicaciones
+### 6. Construir explicaciones y diseñar soluciones
 
-- Hacer afirmaciones cuantitativas y cualitativas sobre relaciones entre variables.
-- Revisar explicaciones a partir de nueva evidencia.
-- Aplicar principios científicos para explicar fenómenos y resolver problemas de diseño.
+Conectá afirmaciones sobre relaciones entre variables con evidencia válida y razonamiento científico. Una explicación puede integrar experimentos propios, modelos, teorías y resultados de otros trabajos.
 
----
+La evidencia debe sostener el alcance de la conclusión. Si proponés una solución de ingeniería, justificá su diseño, evaluá efectos no previstos y explicá las decisiones entre criterios que compiten, como precisión, costo y facilidad de uso.
 
-## Práctica 7 — Argumentar con evidencia
+### 7. Argumentar a partir de evidencia
 
-- Comparar y evaluar argumentos o soluciones alternativas.
-- Evaluar la solidez de una explicación aceptada actualmente.
-- Construir argumentos escritos o verbales basados en datos.
-- Hacer y defender afirmaciones sobre el mundo natural.
+Compará argumentos y soluciones, examinando afirmaciones, datos y razonamientos. Criticar una idea significa preguntar qué la respalda y qué información permitiría resolver una contradicción, no descalificar a quien la propone.
 
----
+Presentá argumentos escritos u orales y respondé a críticas considerando otras perspectivas. Al evaluar diseños, incorporá restricciones y efectos técnicos, económicos, ambientales y éticos que sean pertinentes al problema.
 
-## Práctica 8 — Obtener, evaluar y comunicar información
+### 8. Obtener, evaluar y comunicar información
 
-- Leer y evaluar literatura científica adaptada al nivel del curso.
-- Comparar fuentes de información en distintos formatos.
-- Comunicar ideas y resultados de forma oral, gráfica, textual y matemática.
+Leé fuentes científicas adaptadas al nivel del curso, identificá sus conclusiones y evaluá su evidencia. Compará texto, gráficos, tablas y otras representaciones para responder una pregunta.
 
----
+Al comunicar, conservá el significado aunque simplifiques la formulación. Contrastá fuentes, verificá datos cuando sea posible y señalá qué se sabe y qué permanece incierto. La comunicación puede ser oral, escrita, gráfica o matemática.
 
-## Las prácticas en tu curso
+## La formulación de Massachusetts
 
-A lo largo del año, vas a usar estas prácticas en los trabajos de laboratorio con Tracker[^tracker] y en los informes. Cada experimento requiere al menos:
+La p. 40 recoge ocho capacidades relacionadas: definir un problema de diseño; usar modelos para generar datos; planificar investigaciones; aplicar estadística; comprobar casos límite; conectar evidencia y afirmaciones; intercambiar críticas respetuosas; y evaluar la fiabilidad de información científica. Esa formulación es una referencia curricular del original, no una equivalencia automática con el diseño curricular de una materia argentina.
 
-1. **Representar** la situación (diagrama, tabla de datos).
-2. **Diseñar** el procedimiento (variables, qué medir, cómo).
-3. **Analizar** los datos (gráfico, pendiente, incerteza).
-4. **Argumentar** la conclusión (claim → evidence → reasoning).
+## Adaptación propia: aplicar las prácticas en una experiencia
+
+Para estudiar un movimiento con Tracker, una planilla o mediciones manuales:
+
+1. Formulá una pregunta concreta y dibujá el montaje.
+2. Decidí qué medir y qué controlar, con las unidades e incertidumbres correspondientes.
+3. Representá los datos y elegí un modelo compatible con la situación.
+4. Explicá la conclusión con **afirmación, evidencia y razonamiento**.
+
+Por ejemplo, un gráfico posición-tiempo aproximadamente lineal es evidencia compatible con velocidad constante en el intervalo observado. El argumento se completa comparando la forma prevista $x=x_0+vt$ con los datos y sus residuos. Un $R^2$ alto, por sí solo, no demuestra MRU ni descarta un sesgo instrumental.
+
+Tracker y esta actividad son incorporaciones propias para las clases; no aparecen en las pp. 34–40.
 
 ---
 
-[^tracker]: 🔬 **Nota:** Tracker no forma parte del texto original de Bigler. Es una adaptación propia para trabajar los conceptos en clase con análisis de video. [**Tracker Online**](https://opensourcephysics.github.io/tracker-online/) es una herramienta gratuita desarrollada por Douglas Brown (Cabrillo College) y el proyecto [Open Source Physics](https://www.compadre.org/osp/).
-
-*Adaptado de [Jeff Bigler — Physics 1: Mechanics in Plain English](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf), licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Traducción y adaptación: Prof. Ing. Luciano Lamaita, 2026.*
+*Traducción y adaptación del desarrollo de las pp. 34–40. Se distingue la organización AP de la NGSS, se conserva la referencia curricular de Massachusetts y se identifica la actividad propia. Original y adaptación: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Jeff Bigler; adaptación para el sitio de Prof. Ing. Luciano Lamaita.*

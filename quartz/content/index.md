@@ -5,6 +5,10 @@ description: "Mapa de conceptos de Física, organizado por grandes áreas, basad
 
 Explorá el grafo →, o navegá por área en el panel de la izquierda.
 
+Este apartado reúne **apuntes propios de Física**, organizados según el temario de *Física* de Serway y Vuille (9.ª edición). El libro sirve como referencia para los contenidos y su organización; estas notas no son una copia textual ni una traducción del libro.
+
+La [traducción y adaptación de las notas de Jeff Bigler](https://profe.lemeit.ar/notes/notas-fisica/) es un recorrido separado dentro del portal.
+
 ## Áreas
 
 - [[mecanica/index|Mecánica]] — cinemática, dinámica, estática y energía

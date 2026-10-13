@@ -6,7 +6,14 @@ math = true
 weight = 3
 description = "Cómo despejar variables en ecuaciones físicas antes de sustituir números."
 tags = ["cap02", "matemáticas", "álgebra", "despeje", "ecuaciones", "resolución simbólica"]
+lastmod = "2026-10-13"
+traduccion_estado = "Ampliada"
+cotejo_estado = "Desarrollo y ejercicios cotejados: pp. 128–131"
+figuras_estado = "Sin figuras; tablas reconstruidas"
+visual_estado = "Verificada: escritorio y móvil"
 +++
+
+**Fuente:** Jeff Bigler, *Physics 1: Mechanics in Plain English*, edición octubre de 2025, pp. 128–131. [Consultar el original (PDF)](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf#page=128). Traducción y adaptación desarrollada; se señalan las aclaraciones propias.
 
 ## Objetivos de aprendizaje
 
@@ -26,7 +33,9 @@ En física, frecuentemente nos interesa más la *relación* entre las magnitudes
 
 **Solución numérica directa:**
 
-$$a = \frac{v - v_0}{t} = \frac{10 - 0}{12} = 0{,}83\ \text{m/s}^2 \qquad F = ma = 65 \times 0{,}83 = 54{,}2\ \text{N}$$
+$$a = \frac{10-0}{12}\ \mathrm{m/s^2} \approx0{,}8333\ \mathrm{m/s^2}$$
+
+$$F=65\frac{10}{12}\ \mathrm{N}\approx54{,}2\ \mathrm{N}$$
 
 Correcto, pero responde *solo este caso*.
 
@@ -96,7 +105,7 @@ $$x = \tfrac{1}{2}at^2 \implies t^2 = \frac{2x}{a} \implies t = \sqrt{\frac{2x}{
 
 ### Despejar $v_0$ de $v^2 = v_0^2 + 2a \Delta x$
 
-$$v_0^2 = v^2 - 2a \Delta x \implies v_0 = \sqrt{v^2 - 2a \Delta x}$$
+$$v_0^2 = v^2 - 2a \Delta x \implies v_0 = \pm\sqrt{v^2 - 2a \Delta x}$$
 
 ### Despejar $a$ de $v = v_0 + at$
 
@@ -104,7 +113,53 @@ $$at = v - v_0 \implies a = \frac{v - v_0}{t}$$
 
 ---
 
-## Para pensar
+## Mantener condiciones y signos durante el despeje
+
+La expresión general para el ejemplo del ciclista, suponiendo fuerza neta constante en una dimensión, es:
+
+$$F_{\mathrm{net}}=m\frac{v_f-v_i}{\Delta t}$$
+
+Si parte del reposo, $v_i=0$ y queda $F_{\mathrm{net}}=mv_f/\Delta t$. Esta relación permite comparar situaciones con las mismas hipótesis: duplicar la masa duplica la fuerza necesaria para el mismo cambio de velocidad en el mismo tiempo; duplicar el tiempo reduce la fuerza a la mitad. Si la fuerza varía, la relación con el cambio total de velocidad expresa la fuerza neta media, para masa constante.
+
+**Aclaración de esta adaptación:** los 65 kg del ejemplo original se toman como la masa del sistema modelado. Si se calcula la fuerza sobre persona y bicicleta, debe incluirse la masa total pertinente, no ignorarse la bicicleta sin declararlo.
+
+## Despejar una variable del denominador
+
+En $n/r=s$, suponiendo $r\ne0$, multiplicá por $r$ y obtené $n=sr$. Si buscás $r$, luego dividí por $s$, siempre que $s\ne0$: $r=n/s$. No intercambies símbolos de lugar sin identificar qué operación se realizó en ambos miembros.
+
+## Raíces y soluciones posibles
+
+De $t^2=4ab$ se obtiene algebraicamente $t=\pm2\sqrt{ab}$ cuando el radicando permite una solución real. Si $t$ representa un intervalo de tiempo positivo, la situación física selecciona la raíz positiva. Del mismo modo, al conocer $v_0^2$ se conoce un módulo, no automáticamente el sentido de una velocidad.
+
+**Corrección de notación:** las raíces positivas usadas en los ejemplos no deben interpretarse como si una ecuación cuadrática tuviera siempre una única solución. Primero se resuelve la ecuación y después se selecciona la solución compatible con el problema.
+
+## Ejercicios del original
+
+### 1. Eliminar una variable intermedia
+
+Se conocen $a=2bc$ y $e=c^2d$. Expresá $e$ en función de $a$, $b$ y $d$.
+
+$$c=\frac{a}{2b},\qquad e=\left(\frac{a}{2b}\right)^2d=\frac{a^2d}{4b^2}$$
+
+El despeje requiere $b\ne0$. Se sustituyó una expresión completa, con paréntesis antes de elevarla al cuadrado.
+
+### 2. Identificar dependencias
+
+Se conocen $w=\tfrac32xy^2$ y $z=q/y$. Expresá $z$ usando $q$, $w$ y $x$:
+
+$$y^2=\frac{2w}{3x}$$
+
+Para la rama $y>0$:
+
+$$z=q\sqrt{\frac{3x}{2w}}$$
+
+Si $y<0$, corresponde la rama con signo negativo. Los denominadores deben ser distintos de cero y el radicando debe ser admisible.
+
+Para comparar factores positivos manteniendo los demás constantes, $z$ crece linealmente con $q$, como la raíz cuadrada de $x$ y como la inversa de la raíz de $w$. Duplicar $q$ duplica $z$; duplicar $x$ lo multiplica por $\sqrt2$; dividir $w$ por dos también lo multiplica por $\sqrt2$.
+
+La pregunta del original sobre “qué variable produce el mayor cambio” necesita especificar qué cambios se comparan. Para el mismo factor multiplicativo positivo, $q$ produce una dependencia más fuerte que las raíces. No se puede maximizar una expresión sin conocer qué valores están permitidos.
+
+## Actividades propias — Para pensar
 
 1. ¿Por qué es mejor despejar la variable primero y sustituir números al final, en lugar de sustituir números en cada paso?
 2. De la ecuación $F = \frac{mv}{t}$, ¿qué pasa con la fuerza si duplicás la velocidad? ¿Y si duplicás el tiempo?

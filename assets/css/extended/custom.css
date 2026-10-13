@@ -1,4 +1,36 @@
 /* ── Paleta X-Wing Poe Dameron ── */
+.translation-status {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+  margin: 1rem 0 1.5rem;
+  padding: 0.8rem 1rem;
+  background: var(--code-bg);
+  border-left: 3px solid var(--primary);
+  border-radius: 0 8px 8px 0;
+  font-size: 0.85rem;
+}
+.translation-status span { color: var(--secondary); }
+.post-content .katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.25em 0;
+}
+.post-content .katex-display > .katex { padding: 0 0.25em; }
+@media screen {
+  .bigler-table-scroll {
+    overflow-x: auto;
+    margin: 1.4rem 0;
+  }
+  .post-content.md-content .bigler-table-scroll table {
+    display: table;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    overflow: visible;
+  }
+}
+
 :root {
   --primary:   #9B3D00;   /* naranja muy oscuro, casi óxido */
   --secondary: #5C2200;   /* marrón-negro para detalles */

@@ -27,12 +27,12 @@ aboutme/
 ├── content/                            ← Contenido Hugo
 │   ├── notes/
 │   │   ├── notas-fisica/               ← Traducción de Bigler (Physics 1)
-│   │   │   ├── cap01-laboratorio/      ✅ completo (9 notas)
-│   │   │   ├── cap02-matematicas/      ✅ completo (6 notas)
-│   │   │   ├── cap03-cinematica-1d/    ✅ completo (10 notas)
-│   │   │   ├── cap04-cinematica-2d/    🔄 en progreso
-│   │   │   ├── cap05-fuerzas-1d/       ⬜ en preparación
-│   │   │   ├── cap06-fuerzas-2d/       ⬜
+│   │   │   ├── cap01-laboratorio/      8 notas ampliadas + complemento propio
+│   │   │   ├── cap02-matematicas/      10 notas ampliadas y cotejadas
+│   │   │   ├── cap03-cinematica-1d/    9 notas; primera sección revisada
+│   │   │   ├── cap04-cinematica-2d/    5 notas; revisión pendiente
+│   │   │   ├── cap05-fuerzas-1d/       10 notas; revisión pendiente
+│   │   │   ├── cap06-fuerzas-2d/       2 notas; revisión pendiente
 │   │   │   └── …
 │   │   ├── herramientas/               ← Herramientas digitales (Tracker, etc.) [weight=2]
 │   │   ├── fisica-4to/                 ← Introducción a la Física 4° año [weight=3]
@@ -139,6 +139,20 @@ Las notas son una **traducción y adaptación al español** de:
 
 Adaptación al español con autorización del autor.
 Traducción, adaptación pedagógica e integración con actividades de campo: **Prof. Ing. Luciano Lamaita**, Saladillo, Buenos Aires, 2026.
+
+### Revisión editorial y figuras
+
+La revisión iniciada el 13/10/2026 usa el PDF de octubre de 2025. El índice público incluye el enlace al original; cada capítulo muestra un estado sencillo de traducción/adaptación. El detalle técnico permanece en `docs/bigler-avance.md`, fuera del contenido Hugo. Regenerarlo con `python scripts/bigler-progress.py`. Las notas existentes no se consideran traducciones completas hasta cotejarlas. Los estados `traduccion_estado`, `cotejo_estado`, `figuras_estado` y `visual_estado` se guardan en el front matter y quedan pendientes si no están definidos.
+
+La primera sección revisada es **Rapidez y velocidad**, pp. 184–187. El registro de correspondencias y comprobaciones está en `docs/bigler-revision.md`.
+
+`scripts/extract-bigler-figures.py` automatiza la extracción de figuras registradas del PDF: usa Poppler para regiones con texto y trazos, o pypdf/Pillow para imágenes bitmap completas sin texto adyacente. Las regiones e identificadores adicionales están en `scripts/bigler-figure-regions.json`. Se inspecciona cada resultado; los PNG y su procedencia, página, coordenadas o identificador y hash de la fuente quedan en `static/images/diagramas/`.
+
+```powershell
+python scripts/extract-bigler-figures.py "C:\ruta\Notes-Physics-1.pdf"
+```
+
+El mapa Quartz contiene apuntes propios organizados según Serway y Vuille; es un recorrido separado de la traducción de Bigler.
 
 ### Herramientas complementarias
 

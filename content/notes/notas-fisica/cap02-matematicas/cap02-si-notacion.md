@@ -6,7 +6,14 @@ math = true
 weight = 2
 description = "Unidades base del SI, prefijos métricos, conversiones y notación científica."
 tags = ["cap02", "matemáticas", "SI", "unidades", "prefijos", "notación científica", "conversiones"]
+lastmod = "2026-10-13"
+traduccion_estado = "Ampliada"
+cotejo_estado = "Desarrollo y ejercicios cotejados: pp. 117–127"
+figuras_estado = "Sin figuras; tablas reconstruidas"
+visual_estado = "Verificada: escritorio y móvil"
 +++
+
+**Fuente:** Jeff Bigler, *Physics 1: Mechanics in Plain English*, edición octubre de 2025, pp. 117–127. [Consultar el original (PDF)](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf#page=117). Traducción y adaptación desarrollada; se señalan las aclaraciones propias.
 
 ## Objetivos de aprendizaje
 
@@ -54,21 +61,34 @@ En este curso usamos exclusivamente el sistema **MKS** (metro-kilogramo-segundo)
 Los prefijos indican multiplicar la unidad por una potencia de 10:
 
 | Prefijo | Símbolo | Factor |
-|---------|---------|--------|
+|---|---|---|
+| quetta | Q | $10^{30}$ |
+| ronna | R | $10^{27}$ |
+| yotta | Y | $10^{24}$ |
+| zetta | Z | $10^{21}$ |
+| exa | E | $10^{18}$ |
+| peta | P | $10^{15}$ |
+| tera | T | $10^{12}$ |
 | giga | G | $10^9$ |
 | mega | M | $10^6$ |
 | kilo | k | $10^3$ |
 | hecto | h | $10^2$ |
 | deca | da | $10^1$ |
-| — | — | $10^0 = 1$ |
+| sin prefijo | — | $10^0$ |
 | deci | d | $10^{-1}$ |
 | centi | c | $10^{-2}$ |
 | mili | m | $10^{-3}$ |
 | micro | μ | $10^{-6}$ |
 | nano | n | $10^{-9}$ |
 | pico | p | $10^{-12}$ |
+| femto | f | $10^{-15}$ |
+| atto | a | $10^{-18}$ |
+| zepto | z | $10^{-21}$ |
+| yocto | y | $10^{-24}$ |
+| ronto | r | $10^{-27}$ |
+| quecto | q | $10^{-30}$ |
 
-> 📷 *Imagen: tabla completa de prefijos del SI — Bigler pág. 119 (capturar de PDF)*
+La tabla completa de la p. 119 se reconstruye aquí como tabla accesible, sin necesidad de capturar una imagen.
 
 ### Conversiones entre prefijos
 
@@ -140,11 +160,11 @@ Las calculadoras científicas tienen un botón específico para notación cient�
 | `6.6 EE -34` | `6.6E-34` | $6{,}6 \times 10^{-34}$ |
 | `1.52 EE 12` | `1.52E12` | $1{,}52 \times 10^{12}$ |
 
-> **Importante:** siempre usá el botón EE (no escribas `× 10 ^`). Si no lo usás, podrías obtener errores de orden de operaciones (PEMDAS). Y siempre poné paréntesis alrededor del denominador en fracciones.
+> **Importante:** EE facilita ingresar un número como una sola cantidad. También se puede usar una expresión con potencias, si se colocan los paréntesis adecuados. En un cociente, encerrá el denominador completo para evitar interpretaciones distintas.
 
 ---
 
-## Ejercicios
+## Ejercicios propios de práctica
 
 1. Convertí: $68\ \text{kJ} =$ \_\_\_\_\_\_ J
 2. Convertí: $325\ \text{ms} =$ \_\_\_\_\_\_ s
@@ -153,5 +173,76 @@ Las calculadoras científicas tienen un botón específico para notación cient�
 5. Calculá: $(2{,}8 \times 10^6)(1{,}4 \times 10^{-2})$
 
 ---
+
+## Dimensión, unidad y prefijo
+
+La dimensión indica qué tipo de magnitud se mide; la unidad indica con qué referencia se expresa. Centímetro y pulgada miden longitud, pero una pulgada equivale exactamente a 2,54 cm. Cambiar de unidad no cambia la longitud del objeto: cambia el número que la representa.
+
+Un prefijo multiplica la unidad por una potencia de diez. La tabla tiene saltos de una potencia y de tres potencias; no basta con contar filas. Compará exponentes. Por ejemplo, $35\ \mathrm{cm}=35\times10^{-2}\ \mathrm{m}=0{,}35\ \mathrm{m}$.
+
+La presión atmosférica de referencia del ejemplo se expresa de tres maneras equivalentes:
+
+$$101\,325\ \mathrm{Pa}=101{,}325\ \mathrm{kPa}=0{,}101325\ \mathrm{MPa}$$
+
+**Aclaración de esta adaptación:** no se apilan prefijos. Para múltiplos y submúltiplos de masa se aplican prefijos al gramo: miligramo, kilogramo, etc. La presencia histórica de “kilo” en la unidad base kilogramo no autoriza escribir un segundo prefijo delante de kg.
+
+## Definiciones por constantes
+
+El original explica que desde 2019 el SI se define fijando valores exactos de constantes. Estos valores no son mediciones que haya que volver a redondear al definir las unidades:
+
+| Constante | Valor exacto de definición |
+|---|---|
+| Constante de Planck $h$ | $6{,}62607015\times10^{-34}\ \mathrm{J\,s}$ |
+| Carga elemental $e$ | $1{,}602176634\times10^{-19}\ \mathrm{C}$ |
+| Constante de Boltzmann $k$ | $1{,}380649\times10^{-23}\ \mathrm{J/K}$ |
+| Constante de Avogadro $N_A$ | $6{,}02214076\times10^{23}\ \mathrm{mol^{-1}}$ |
+| Velocidad de la luz en el vacío $c$ | $299\,792\,458\ \mathrm{m/s}$ |
+| Frecuencia de la transición hiperfina del cesio-133 | $9\,192\,631\,770\ \mathrm{Hz}$ |
+| Eficacia luminosa de radiación de $540\times10^{12}$ Hz | $683\ \mathrm{lm/W}$ |
+
+Las realizaciones de las unidades mediante instrumentos sí tienen incertidumbre. Esa diferencia permite distinguir una definición exacta de una medición experimental.
+
+## MKS y cgs: comparar mediante dimensiones
+
+El sistema MKS usa metro, kilogramo y segundo para mecánica; el cgs usa centímetro, gramo y segundo. Los factores de conversión de unidades derivadas se obtienen aplicando **cada exponente**, no usando un factor universal.
+
+$$1\ \mathrm{N}=1\ \mathrm{kg\,m/s^2}=10^5\ \mathrm{dyn}$$
+
+$$1\ \mathrm{J}=1\ \mathrm{kg\,m^2/s^2}=10^7\ \mathrm{erg}$$
+
+**Corrección del original:** la p. 121 generaliza un factor $10^5$ para unidades correspondientes, pero para energía el factor es $10^7$ porque la longitud aparece al cuadrado. En estas notas se usa SI; la comparación ilustra por qué hay que revisar dimensiones y exponentes.
+
+## Escritura de unidades
+
+El símbolo no lleva plural ni punto propio: 25 kg, no “25 kgs”. Mayúsculas y minúsculas importan: mW y MW difieren por un factor $10^9$. Los símbolos basados en nombres de personas comienzan con mayúscula, como N y Pa; el nombre de la unidad se escribe en minúscula en español: newton, pascal.
+
+Los productos pueden escribirse con un punto medio o un espacio, como N·m. Los cocientes pueden escribirse como fracciones, con barra o con exponentes negativos. Entre número y unidad se deja un espacio; para ángulos en grados, el símbolo va junto al número, como $30^\circ$.
+
+En estas notas se usa coma decimal y espacio para agrupar miles. Los números no se separan con puntos de miles porque esos puntos pueden confundirse con una marca decimal en otras convenciones.
+
+## Ejercicios del original: conversiones
+
+Convertí los seis datos de la p. 123 y comprobá que la magnitud permanece igual:
+
+| Dato | Conversión de comprobación |
+|---|---|
+| 2,5 m | 250 cm |
+| 18 mL | 0,018 L |
+| 68 kJ | 68 000 J |
+| 6 500 mg | 0,0065 kg |
+| 101 kPa | 101 000 Pa |
+| 325 ms | 0,325 s |
+
+## Ejercicios del original: notación científica
+
+1. Convertí $2{,}65\times10^9$ a escritura decimal: 2 650 000 000.
+2. Convertí 387 000 000 a notación científica: $3{,}87\times10^8$.
+3. Convertí $1{,}06\times10^{-7}$ a decimal: 0,000 000 106.
+4. Convertí 0,000 000 065: $6{,}5\times10^{-8}$.
+5. Calculá $(2{,}8\times10^6)(1{,}4\times10^{-2})$: $3{,}92\times10^4$, o $3{,}9\times10^4$ con dos cifras significativas.
+6. Calculá $(3{,}75\times10^8)/(1{,}25\times10^4)$: $3{,}00\times10^4$.
+7. Calculá $(1{,}2\times10^{-3})/(5{,}0\times10^{-1})$: $2{,}4\times10^{-3}$.
+
+En notación científica normalizada, el valor absoluto del significando de un número no nulo está entre 1 inclusive y 10 exclusive. Un número negativo conserva su signo: $-4{,}81\times10^{-7}$. El exponente indica escala, no el signo del número. Cero se escribe simplemente como 0.
 
 *Adaptado de [Jeff Bigler — Physics 1: Mechanics in Plain English](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf), licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Traducción y adaptación: Prof. Ing. Luciano Lamaita, 2026.*

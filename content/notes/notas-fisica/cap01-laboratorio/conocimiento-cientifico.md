@@ -6,8 +6,14 @@ math = true
 weight = 1
 description = "Ramas de la Física, método científico, teoría, ley, hipótesis y lenguaje de la ciencia."
 tags = ["U1", "Física", "método científico", "teoría", "ley", "hipótesis", "conocimiento científico"]
+lastmod = "2026-10-13"
+traduccion_estado = "Ampliada"
+cotejo_estado = "Desarrollo cotejado: pp. 23–33"
+figuras_estado = "2 figuras incorporadas; recortes revisados"
+visual_estado = "Verificada: escritorio y móvil"
 +++
 
+**Fuente:** Jeff Bigler, *Physics 1: Mechanics in Plain English*, edición octubre de 2025, pp. 23–33. [Consultar el original (PDF)](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf#page=23). Traducción y adaptación desarrollada; las actividades propias se identifican aparte.
 ## Objetivos de aprendizaje
 
 Al finalizar esta sección, vas a poder:
@@ -31,7 +37,7 @@ La **Física** es el estudio de la naturaleza y propiedades de la materia y la e
 |------|-------------|
 | **Mecánica** | Movimiento, fuerzas, gravedad y energía cinética |
 | **Física térmica** | Energía almacenada y transferida como calor |
-| **Ondas** (óptica y acústica) | Transferencia de energía a través de un medio |
+| **Ondas** (óptica y acústica) | Propagación de perturbaciones y energía; las ondas electromagnéticas también se propagan en el vacío |
 | **Electricidad y magnetismo** | Fuerzas e interacciones entre partículas cargadas |
 | **Física atómica y cuántica** | Partículas subatómicas e interacciones |
 | **Física nuclear** | Fuerzas en el núcleo atómico |
@@ -45,7 +51,7 @@ La Física es también la base de la **ingeniería**: diseño, construcción y u
 
 La Física es una ciencia matemática. Las matemáticas son el lenguaje con el que describimos las leyes del universo — la Física es esas leyes en acción.
 
-> "La matemática es el estudio de las reglas que gobiernan el universo; la Física es el estudio de esas reglas en acción." — Bigler
+Bigler presenta las matemáticas como el lenguaje de las relaciones físicas: comprender una ecuación incluye entender qué relación describe y cuándo puede aplicarse.
 
 Nivel matemático necesario:
 - **Introducción a la Física (4° año):** álgebra, geometría, algo de trigonometría básica.
@@ -59,7 +65,9 @@ El **método científico** no es una lista de pasos fijos — es una **forma de 
 
 En la Edad Media, los "científicos" eran filósofos que decidían qué era correcto debatiendo entre ellos. Durante el Renacimiento, científicos como **Galileo Galilei** y **Leonardo da Vinci** empezaron a usar experimentos en lugar de argumentos para descubrir cómo funciona el mundo.
 
-### El método científico como red, no como receta
+### El método científico como red de procesos
+
+{{< figura src="/images/diagramas/cap01_metodo-red_pp29.png" alt="Red de exploración, prueba de ideas, análisis comunitario y beneficios de la ciencia." caption="Vista general de las conexiones entre procesos. Etiquetas originales en inglés." source="Understanding Science, University of California Museum of Paleontology. Figura reproducida en Bigler, p. 29; se conserva la atribución y el permiso indicados en el original." >}}
 
 El método científico se parece más a una red de procesos interconectados que a una secuencia lineal. La experimentación está en el centro, pero el proceso puede entrar por cualquier punto:
 
@@ -89,7 +97,7 @@ Estos términos tienen significados **distintos** en ciencia y en el lenguaje co
 
 | Término | En ciencia | En el lenguaje cotidiano |
 |---------|-----------|--------------------------|
-| **Teoría** | Explicación que nunca ha sido refutada, que explica observaciones y predice experimentos | Suposición, conjetura |
+| **Teoría** | Explicación respaldada por evidencia que permite interpretar observaciones y hacer predicciones | Suposición, conjetura |
 | **Ley** | Descripción de algo que siempre ocurre y puede predecirse, sin necesidad de explicar el *por qué* | Norma con castigo |
 | **Modelo** | Representación que ayuda a visualizar o entender algo | Copia exacta a escala menor |
 | **Hecho** | Afirmación extensamente confirmada por la comunidad científica (provisional; nueva evidencia puede modificarlo) | Verdad inmutable |
@@ -119,7 +127,51 @@ Si un experimento reproducible contradice una teoría y pasa la revisión de par
 
 ---
 
-## Para pensar
+## Qué abarca este libro
+
+Bigler organiza estas notas alrededor de la **mecánica**. El recorrido comienza con las herramientas del laboratorio y las matemáticas, y después estudia cómo describir movimientos, cómo relacionarlos con fuerzas y cómo analizarlos mediante energía y cantidad de movimiento.
+
+| Área del recorrido | Preguntas que se trabajan |
+|---|---|
+| Cinemática | ¿Dónde está el objeto? ¿Cómo cambia su posición? ¿Qué sucede si cambia la dirección? |
+| Fuerzas | ¿Cómo se modifica el movimiento? ¿Qué interacciones producen tensión, fricción o resistencia del aire? |
+| Energía, trabajo y potencia | ¿Cómo se almacena o transfiere energía? ¿Con qué rapidez se transfiere? |
+| Cantidad de movimiento | ¿Qué se conserva cuando los objetos interactúan o chocan? |
+| Movimiento armónico | ¿Cómo oscilan los resortes y los péndulos? |
+| Fluidos | ¿Cómo se relacionan presión, flotación y flujo? |
+| Relatividad especial | ¿Cómo cambian las medidas de espacio y tiempo al comparar observadores? |
+
+En el original, *Physics 1* reúne estos temas y *Physics 2* reúne otros contenidos, como ondas, electricidad y física térmica. Esa división corresponde a la organización del material del autor; no establece por sí sola qué debe enseñarse en cada año de una escuela argentina.
+
+## Aprender procedimientos y entenderlos
+
+Muchos fenómenos de la mecánica se pueden observar directamente: una pelota que cae, un carro que se frena o un resorte que se estira. Esa familiaridad ayuda a visualizar el problema, pero no reemplaza la comprensión de las relaciones matemáticas.
+
+Bigler señala una dificultad frecuente: memorizar operaciones que producen una respuesta correcta sin poder explicar por qué se eligieron. En Física necesitás reconocer qué cantidades intervienen, qué representa cada símbolo, qué supuestos permite hacer la situación y qué significa físicamente el resultado.
+
+Un número correcto es una forma de comprobar el trabajo. El objetivo de aprendizaje es poder reconstruir el razonamiento, aplicarlo en otra situación y detectar una respuesta que no tenga sentido.
+
+### Matemáticas necesarias
+
+En un curso introductorio basado en álgebra se utilizan fracciones, proporciones, ecuaciones, geometría, funciones y gráficos. En los recorridos más avanzados del original se agrega trigonometría. Los cursos universitarios de Física e Ingeniería incorporan cálculo diferencial e integral y, según el tema, ecuaciones diferenciales, álgebra lineal y herramientas vectoriales.
+
+No necesitás conocer todos esos temas para empezar: necesitás reconocer cuándo una dificultad proviene de una operación matemática y practicarla o pedir ayuda. El nivel de matemáticas se ajusta al curso concreto.
+
+### Herramientas digitales como apoyo
+
+El original advierte que una calculadora, un programa de gráficos o una IA pueden convertirse en una “caja negra”: generan una respuesta, pero no aseguran que quien la recibe comprenda el proceso.
+
+**Adaptación para estas clases:** usá las herramientas para comprobar cálculos, comparar representaciones y explorar cambios de parámetros. Antes de aceptar una salida, explicá qué ingresaste, qué modelo se aplicó y cómo comprobarías el resultado sin depender exclusivamente de la herramienta. Si no entendés un paso, identificar la dificultad y pedir ayuda forma parte del trabajo.
+
+## Por qué se revisan las afirmaciones
+
+La revisión puede cuestionar tres aspectos diferentes: la afirmación, la forma de obtener la evidencia o la conexión lógica entre ambas. Un conjunto de observaciones puede ser válido y, sin embargo, admitir más de una explicación. Por eso los datos no hablan por sí solos: hay que argumentar qué permiten concluir y qué no.
+
+Una teoría y una ley pueden producir predicciones comprobables. Una teoría propone una explicación o un modelo; una ley describe una relación. No son escalones de una jerarquía: acumular evidencia no transforma automáticamente una teoría en ley.
+
+**Aclaración de esta adaptación:** se conservan estas distinciones como guía de lectura, no como definiciones absolutas aplicables sin excepciones. La terminología científica tiene usos históricos y depende del campo. Que una teoría esté bien respaldada no significa que sea infalible o que funcione fuera de su dominio de aplicación.
+
+## Actividades propias — Para pensar
 
 1. ¿Por qué la Teoría de la Evolución sigue siendo una "teoría" si lleva más de 150 años sin ser refutada?
 2. La Ley de Ohm describe la relación entre voltaje, corriente y resistencia. ¿Por qué es una ley y no una teoría?

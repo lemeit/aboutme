@@ -6,198 +6,174 @@ math = true
 weight = 6
 description = "Aceleración constante, ecuaciones de movimiento, tabla de resolución y ejemplos completos."
 tags = ["cap03", "cinemática", "MRUV", "aceleración constante", "ecuaciones de movimiento", "gráficos"]
+lastmod = "2026-10-14"
+traduccion_estado = "Ampliada"
+cotejo_estado = "Desarrollo cotejado: pp. 197–200, 202–206, 209–211"
+figuras_estado = "Sin recortes adicionales; ecuaciones y tablas reconstruidas"
+visual_estado = "Pendiente: inspección visual y auto-render en navegador; LaTeX validado"
 +++
+
+**Fuente:** Jeff Bigler, *Physics 1: Mechanics in Plain English*, edición octubre de 2025, pp. 197–200, 202–206, 209–211. [Consultar el original (PDF)](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf#page=197).
 
 ## Objetivos de aprendizaje
 
-Al finalizar esta sección, vas a poder:
+- Derivar las ecuaciones para una componente del movimiento con aceleración constante.
+- Elegir una ecuación por las variables conocidas y la incógnita, sin perder los signos.
+- Seleccionar soluciones físicamente compatibles y separar tramos si cambian las condiciones.
 
-- Reconocer el MRUV y sus condiciones.
-- Derivar y aplicar las cuatro ecuaciones de movimiento.
-- Elegir la ecuación correcta según las variables disponibles.
-- Resolver problemas usando el método GUESS con tabla de variables.
-- Interpretar gráficos $x(t)$ y $v(t)$ para el MRUV.
+## Modelo y notación
 
----
+El **movimiento rectilíneo uniformemente variado** tiene aceleración constante en una recta. Usaremos $t$ para el tiempo transcurrido desde el instante inicial, $v_0$ y $v$ para las velocidades inicial y final, y $\Delta x=x-x_0$ para el desplazamiento.
 
-## Definición
+Las ecuaciones también incluyen el caso límite $a=0$; cuando queremos destacar una variación efectiva de velocidad, hablamos de MRUV con $a\ne0$. Si $a$ cambia, hay que dividir el movimiento en tramos o usar otro método.
 
-El **Movimiento Rectilíneo Uniformemente Variado (MRUV)** es el movimiento de un objeto que se desplaza en línea recta con **aceleración constante** ($a = \text{cte} \neq 0$).
+**Aclaración respecto del original:** Bigler escribe flechas vectoriales incluso en $v^2$ y $a\Delta x$ y advierte que no son productos vectoriales bien definidos. Aquí escribimos **componentes escalares con signo en un eje fijo**. Así, $v^2$ es el cuadrado de una componente y el producto $a\Delta x$ es un producto de números con sus unidades.
 
----
+## Derivación paso a paso
 
-## Derivación de las ecuaciones de movimiento
+### Velocidad final
 
-### Punto de partida
+De $a=(v-v_0)/t$, con aceleración constante:
 
-La velocidad media es:
+$$v=v_0+at$$
 
-$$v_{med} = \frac{\Delta x}{t} \implies \Delta x = v_{med} \cdot t$$
+### Velocidad media y desplazamiento
 
-Con aceleración constante, la velocidad media es el promedio de inicial y final:
+Una velocidad que cambia linealmente en el tiempo tiene como media el promedio de sus extremos:
 
-$$v_{med} = \frac{v_0 + v}{2}$$
+$$v_{\mathrm{med}}=\frac{v_0+v}{2}$$
 
-La aceleración es:
+$$\Delta x=\frac{v_0+v}{2}\,t$$
 
-$$a = \frac{v - v_0}{t} \implies v - v_0 = at$$
+Esta igualdad entre media y promedio de extremos **no vale en general** para aceleración variable. La definición $v_{\mathrm{med}}=\Delta x/t$ sí conserva su validez.
 
-### Las cuatro ecuaciones
+### Posición en función del tiempo
 
-Combinando estas relaciones se obtienen las cuatro ecuaciones de Newton:
+Sustituyendo $v=v_0+at$:
 
-$$\boxed{\frac{\Delta x}{t} = \frac{v_0 + v}{2}} \qquad \text{(sin } a\text{)}$$
+$$\Delta x=\frac{v_0+(v_0+at)}{2}\,t=v_0t+\frac12at^2$$
 
-$$\boxed{v = v_0 + at} \qquad \text{(sin } \Delta x\text{)}$$
+$$x=x_0+v_0t+\frac12at^2$$
 
-$$\boxed{\Delta x = v_0 t + \tfrac{1}{2}at^2} \qquad \text{(sin } v\text{)}$$
+El primer término del desplazamiento es lo que aportaría la velocidad inicial constante; el segundo expresa la contribución de la variación de velocidad. Si $a$ es negativa, esa contribución también puede ser negativa.
 
-$$\boxed{v^2 - v_0^2 = 2a \Delta x} \qquad \text{(sin } t\text{)}$$
+### Relación sin tiempo
 
-### Resumen
+Multiplicando $v-v_0=at$ por $v+v_0$ y usando la expresión de $\Delta x$:
 
-| Ecuación | Variable ausente |
-|----------|-----------------|
-| $\dfrac{\Delta x}{t} = \dfrac{v_0 + v}{2}$ | $a$ |
-| $v = v_0 + at$ | $\Delta x$ |
-| $\Delta x = v_0 t + \tfrac{1}{2}at^2$ | $v$ |
-| $v^2 - v_0^2 = 2a \Delta x$ | $t$ |
+$$v^2-v_0^2=a\,t(v+v_0)=2a\Delta x$$
 
----
+$$v^2=v_0^2+2a\Delta x$$
 
-## Cómo elegir la ecuación — tabla de variables
+Esta derivación evita dividir por $a$ y deja claro cómo se eliminó el tiempo.
 
-Para cada problema, hacé una tabla con dirección y valor de cada variable:
+## Elegir por la variable ausente
 
-| Variable | Dirección | Valor |
-|----------|-----------|-------|
-| $\Delta x$ | ↑ o ↓ | ? o dado |
-| $v_0$ | ↑ o ↓ | ? o dado |
-| $v$ | ↑ o ↓ | ? o dado |
-| $a$ | ↑ o ↓ | ? o dado |
-| $t$ | N/A | ? o dado |
+| Ecuación | Variable que no aparece |
+|---|---|
+| $\Delta x=(v_0+v)t/2$ | $a$ |
+| $v=v_0+at$ | $\Delta x$ |
+| $\Delta x=v_0t+at^2/2$ | $v$ |
+| $v^2=v_0^2+2a\Delta x$ | $t$ |
 
-Elegís la ecuación que contiene la incógnita y en la que todas las demás variables son conocidas.
+Hacé primero una tabla de $\Delta x$, $v_0$, $v$, $a$ y $t$. Escribí qué se conoce, qué se busca y qué variable no hace falta. La ecuación elegida debe contener la incógnita y solamente datos conocidos o deducidos del enunciado. Si quedan dos incógnitas, necesitás una segunda relación independiente.
 
-### Condiciones especiales
+| Expresión del enunciado | Dato que permite usar |
+|---|---|
+| Parte del reposo | $v_0=0$ |
+| Se detiene | $v=0$ en ese instante |
+| Velocidad constante | $a=0$ |
+| Caída libre próxima a la Tierra | $a$ apunta hacia abajo, módulo aproximadamente $g$ |
+| Punto más alto de un lanzamiento vertical | $v=0$, pero $a$ sigue siendo gravitatoria |
 
-| Situación en el enunciado | Condición |
-|--------------------------|-----------|
-| "parte del reposo" | $v_0 = 0$ |
-| "se detiene" | $v = 0$ |
-| "velocidad constante" | $a = 0$ |
-| "caída libre" | $a = g \approx 10\ \text{m/s}^2$ hacia abajo |
-| "altura máxima" | $v = 0$ en ese instante |
+El tiempo transcurrido es no negativo. Velocidad, aceleración y desplazamiento pueden tener signos diferentes. Al extraer una raíz cuadrada, considerá las ramas posibles y seleccioná la compatible con el evento pedido.
 
----
+## Ejemplos del original
 
-## Representación con vectores positivos y negativos
+### Gato que cae desde una heladera, p. 202
 
-Las variables de posición, velocidad y aceleración son **vectores** — en 1D su signo indica dirección:
-
-- **Posición:** positiva si está del lado positivo del origen.
-- **Velocidad:** positiva si se mueve en la dirección positiva.
-- **Aceleración:** positiva si la velocidad "tiende hacia positivo" (aumenta en dirección positiva o disminuye en dirección negativa).
-
-Un objeto puede tener velocidad positiva y aceleración negativa al mismo tiempo (está frenando). Un objeto puede tener velocidad cero y aún estar acelerando.
-
----
-
-## Gráficos del MRUV
-
-**Gráfico $x(t)$:** parábola
-
-- Cóncava hacia arriba → $a > 0$ (velocidad creciente en dirección positiva)
-- Cóncava hacia abajo → $a < 0$
-
-**Gráfico $v(t)$:** recta inclinada
-
-- Pendiente = aceleración $a$
-- Área bajo la curva = desplazamiento $\Delta x$
-
-> 📷 *Imagen: gráfico v(t) con área triangular y cálculo de desplazamiento — Bigler pág. 220 (capturar)*
-
----
-
-## Ejemplos resueltos
-
-### Ejemplo 1 — Gato saltando (caída libre)
-
-Un gato salta desde una heladera de 1,8 m. ¿Con qué velocidad llega al suelo?
-
-**Tabla** (positivo = hacia abajo):
-
-| Variable | Dir | Valor |
-|----------|-----|-------|
-| $\Delta x$ | ↓ | $+1{,}8\ \text{m}$ |
-| $v_0$ | — | $0$ |
-| $v$ | ↓ | $?$ |
-| $a = g$ | ↓ | $+10\ \text{m/s}^2$ |
-| $t$ | — | N/A |
-
-Uso $v^2 - v_0^2 = 2a\Delta x$:
-
-$$v^2 = 2 \times 10 \times 1{,}8 = 36 \implies v = 6\ \text{m/s}$$
-
----
-
-### Ejemplo 2 — Manzana lanzada hacia arriba
-
-Una manzana es lanzada hacia arriba con $v_0 = 8\ \text{m/s}$. Cae al mismo punto de lanzamiento. ¿Cuánto tiempo estuvo en el aire?
-
-**Tabla** (positivo = hacia arriba):
-
-| Variable | Dir | Valor |
-|----------|-----|-------|
-| $\Delta x$ | — | $0$ |
-| $v_0$ | ↑ | $+8\ \text{m/s}$ |
-| $a$ | ↓ | $-10\ \text{m/s}^2$ |
-| $t$ | — | $?$ |
-
-Uso $\Delta x = v_0 t + \tfrac{1}{2}at^2$:
-
-$$0 = 8t - 5t^2 = t(8 - 5t)$$
-
-Soluciones: $t = 0$ (instante inicial) y $t = \frac{8}{5} = 1{,}6\ \text{s}$ ✓
-
----
-
-### Ejemplo 3 — Auto con freno paracaídas
-
-Un auto de carreras va a $80\ \text{m/s}$ cuando abre un paracaídas que le produce una desaceleración de $4\ \text{m/s}^2$. ¿Cuántos metros recorre hasta detenerse?
-
-**Tabla** (positivo = dirección del movimiento):
+Un gato cae desde el reposo desde 1,8 m. El ejemplo idealiza el salto como una caída con $v_0=0$ y desprecia el aire. Elegimos positivo hacia abajo y $g=10\ \mathrm{m/s^2}$.
 
 | Variable | Valor |
-|----------|-------|
-| $v_0$ | $+80\ \text{m/s}$ |
-| $v$ | $0$ |
-| $a$ | $-4\ \text{m/s}^2$ |
-| $\Delta x$ | $?$ |
+|---|---|
+| $\Delta x$ | $+1{,}8\ \mathrm m$ |
+| $v_0$ | $0$ |
+| $a$ | $+10\ \mathrm{m/s^2}$ |
+| $v$ | Incógnita |
+| $t$ | No necesario |
 
-Uso $v^2 - v_0^2 = 2a\Delta x$:
+$$v=\pm\sqrt{v_0^2+2a\Delta x}=\pm6\ \mathrm{m/s}$$
 
-$$0 - 6400 = 2(-4)\Delta x \implies \Delta x = \frac{6400}{8} = 800\ \text{m}$$
+Antes de tocar el suelo el gato se mueve hacia abajo: la rama pertinente es $v=+6\ \mathrm{m/s}$. Un salto con impulso inicial distinto de cero exigiría otro dato para $v_0$.
+
+### Manzana lanzada hacia arriba, p. 203
+
+Una manzana sale con $v_0=+8\ \mathrm{m/s}$ y retorna a la misma altura. Con positivo hacia arriba, $a=-10\ \mathrm{m/s^2}$ y $\Delta x=0$:
+
+$$0=8t-5t^2=t(8-5t)$$
+
+Las soluciones son $t=0$ y $t=1{,}6\ \mathrm s$. La primera corresponde al lanzamiento y la segunda al regreso. No se debe dividir por $t$ antes de advertir que se está descartando una raíz.
+
+### Frenado con paracaídas, serie 1, ejercicios 6–7
+
+Suponemos aceleración de frenado constante, positivo en el sentido inicial, $v_0>0$, $a<0$ y $v=0$:
+
+$$\Delta x=-\frac{v_0^2}{2a}$$
+
+El resultado es positivo porque $a$ es negativa. Si se usa $b=|a|$ como módulo de frenado, la misma relación es $\Delta x=v_0^2/(2b)$; no deben mezclarse las dos convenciones.
+
+Para $v_0=80\ \mathrm{m/s}$ y $a=-4\ \mathrm{m/s^2}$:
+
+$$\Delta x=-\frac{80^2}{2(-4)}=800\ \mathrm m$$
+
+El tiempo hasta detenerse es 20 s. Extender la misma fórmula a tiempos mayores predeciría movimiento hacia atrás; el modelo de frenado hasta la detención termina allí.
+
+## Serie 1: ejercicios de movimiento, pp. 204–206
+
+Se conservan los números originales; los ejercicios sobre trayectoria circular y caída libre están desarrollados en las notas correspondientes. Intentá resolver antes de abrir las comprobaciones.
+
+2. Un ascensor sube a 11 m/s y 3,0 s después sigue subiendo a 5,0 m/s. Hallá la aceleración media.
+3. Un automóvil parte del reposo con aceleración constante de $2{,}5\ \mathrm{m/s^2}$ durante 12 s. ¿Qué distancia recorre?
+4. Un objeto parte del reposo y llega a $+20{,}0\ \mathrm{m/s}$ en 5,0 s. Hallá $a$.
+5. Un objeto parte del reposo y llega a $+70\ \mathrm{m/s}$ en 10 s con aceleración constante. Hallá $a$ y el desplazamiento.
+
+{{< details title="Comprobaciones de la serie 1" >}}
+
+| Ejercicio original | Relación | Resultado |
+|---|---|---|
+| 2 | $(5-11)/3$ | $a_{\mathrm{med}}=-2\ \mathrm{m/s^2}$, positivo hacia arriba |
+| 3 | $at^2/2$ | $180\ \mathrm m$ |
+| 4 | $(20-0)/5$ | $+4\ \mathrm{m/s^2}$ |
+| 5 | $a=70/10$, $\Delta x=(0+70)10/2$ | $+7\ \mathrm{m/s^2}$ y $+350\ \mathrm m$ |
+
+{{< /details >}}
+
+## Serie 2: combinar relaciones, pp. 209–211
+
+1. Un automóvil parte del reposo 50 m al oeste de una señal. Acelera uniformemente hacia el este hasta 20 m/s en 15 s. Hallá su posición respecto de la señal.
+2. Otro automóvil parte del reposo 50 m al oeste de la señal y llega a 20 m/s al estar 50 m al este. Hallá su aceleración constante.
+3. Durante 10 s un automóvil tiene velocidad media de 25 m/s y aceleración constante de $2\ \mathrm{m/s^2}$. Hallá las velocidades inicial y final.
+4. Un automóvil termina a 30 m/s tras avanzar 80 m en 4 s con aceleración constante. Hallá $v_0$ y $a$.
+
+{{< details title="Desarrollo y comprobaciones de la serie 2" >}}
+
+1. Con este positivo, $x_0=-50\ \mathrm m$ y $\Delta x=(0+20)15/2=150\ \mathrm m$. Entonces $x_f=-50+150=+100\ \mathrm m$.
+2. El desplazamiento es $+50-(-50)=100\ \mathrm m$, no 50 m. De $a=(v^2-v_0^2)/(2\Delta x)$ resulta $+2\ \mathrm{m/s^2}$.
+3. Deben cumplirse $v+v_0=50$ y $v-v_0=20$, en m/s. Sumando y restando, $v_0=15\ \mathrm{m/s}$ y $v=35\ \mathrm{m/s}$.
+4. Como $80=(v_0+30)4/2$, $v_0=10\ \mathrm{m/s}$. Luego $a=(30-10)/4=5\ \mathrm{m/s^2}$.
+
+Los cuatro problemas suponen movimiento sobre una recta y aceleración constante; una velocidad media sola no permite inferir los extremos si falta esa condición.
+
+{{< /details >}}
+
+## Gráficos y actividad propia con Tracker
+
+En un MRUV, $v(t)$ es una recta de pendiente $a$ y $x(t)$ es una parábola con concavidad determinada por el signo de $a$. La relación entre pendientes y áreas se desarrolla en [Gráficos de movimiento]({{< ref "/notes/notas-fisica/cap03-cinematica-1d/graficos-movimiento.md" >}}), que conserva las figuras originales.
+
+Como adaptación propia, filmá un carrito sobre una rampa y ajustá $x=x_0+v_0t+at^2/2$. Compará el coeficiente cuadrático con la pendiente de $v(t)$. Graficar $x$ frente a $t^2$ da una recta solo cuando el término $v_0t$ es nulo o se ha eliminado: no sirve como criterio general si el objeto ya tenía velocidad inicial.
+
+Consultá la [guía de Tracker]({{< ref "/notes/herramientas/tracker.md" >}}), desarrollado por Douglas Brown y Open Source Physics. Diferencias pequeñas entre ajustes deben interpretarse considerando calibración, incertidumbre y perspectiva, no declarando automáticamente un cambio de ley física.
 
 ---
 
-## Actividad con Tracker[^tracker]
-
-1. Filmá un objeto que acelera (pelota rodando por una rampa, carrito con peso colgante).
-2. Graficá $x(t)$ — debe ser una parábola.
-3. Graficá $x$ vs. $t^2$ — si el movimiento es MRUV desde el reposo, debe ser una **recta** con pendiente $a/2$.
-4. Calculá $a = 2 \times \text{pendiente}$ y compará con el valor esperado.
-
----
-
-## Para pensar
-
-1. Un objeto tiene $v_0 > 0$ y $a < 0$. ¿Qué pasa con su velocidad? ¿En qué momento cambia de dirección?
-2. Dos objetos salen del reposo con la misma aceleración pero desde posiciones distintas. ¿Tienen la misma velocidad después de 5 s? ¿Y la misma posición?
-3. En el gráfico $v(t)$ de un MRUV, ¿qué significa que la recta cruce el eje horizontal?
-
----
-
-[^tracker]: 🔬 **Nota:** Tracker no forma parte del texto original de Bigler. Es una adaptación propia para trabajar los conceptos en clase con análisis de video. [**Tracker Online**](https://opensourcephysics.github.io/tracker-online/) es una herramienta gratuita desarrollada por Douglas Brown (Cabrillo College) y el proyecto [Open Source Physics](https://www.compadre.org/osp/).
-
-*Adaptado de [Jeff Bigler — Physics 1: Mechanics in Plain English](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf), licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Traducción y adaptación: Prof. Ing. Luciano Lamaita, 2026.*
+Adaptado de Jeff Bigler, *Physics 1: Mechanics in Plain English*, edición octubre de 2025. Licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Traducción y adaptación pedagógica: Prof. Ing. Luciano Lamaita, 2026. Las aclaraciones y actividades propias se identifican en el texto.

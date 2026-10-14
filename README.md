@@ -144,7 +144,7 @@ Traducción, adaptación pedagógica e integración con actividades de campo: **
 
 La revisión iniciada el 13/10/2026 usa el PDF de octubre de 2025. El índice público incluye el enlace al original; cada capítulo muestra un estado sencillo de traducción/adaptación. El detalle técnico permanece en `docs/bigler-avance.md`, fuera del contenido Hugo. Regenerarlo con `python scripts/bigler-progress.py`. Las notas existentes no se consideran traducciones completas hasta cotejarlas. Los estados `traduccion_estado`, `cotejo_estado`, `figuras_estado` y `visual_estado` se guardan en el front matter y quedan pendientes si no están definidos.
 
-La primera sección revisada es **Rapidez y velocidad**, pp. 184–187. El registro de correspondencias y comprobaciones está en `docs/bigler-revision.md`.
+La primera sección revisada fue **Rapidez y velocidad**, pp. 184–187. Los capítulos 1 y 2 ya tienen una adaptación ampliada. El 14/10/2026 se ampliaron en una rama local las otras ocho notas del capítulo 3, con 24 figuras adicionales. La comprobación visual de esta última tanda sigue pendiente: el navegador integrado bloqueó el acceso local. El registro de correspondencias, alcance y comprobaciones está en `docs/bigler-revision.md`.
 
 `scripts/extract-bigler-figures.py` automatiza la extracción de figuras registradas del PDF: usa Poppler para regiones con texto y trazos, o pypdf/Pillow para imágenes bitmap completas sin texto adyacente. Las regiones e identificadores adicionales están en `scripts/bigler-figure-regions.json`. Se inspecciona cada resultado; los PNG y su procedencia, página, coordenadas o identificador y hash de la fuente quedan en `static/images/diagramas/`.
 
@@ -205,6 +205,14 @@ cd C:\GitHub\aboutme
 hugo server --buildDrafts
 # → http://localhost:1313
 ```
+
+Si durante la edición aparecen fragmentos de shortcodes (por ejemplo `>}}`), títulos cortados o soluciones desplegables sin título, detener el servidor y reconstruir desde cero. Se observó este fallo en la reconstrucción incremental de Hugo 0.163.2, incluso con `--disableFastRender`. Para una revisión estable del contenido, usar una vista sin reconstrucción incremental:
+
+```powershell
+hugo server --bind 127.0.0.1 --port 1313 --watch=false --disableLiveReload --noHTTPCache --destination work/hugo-cap03-preview
+```
+
+Con `--watch=false`, reiniciar el servidor después de editar y recargar las pestañas abiertas. Comprobar el HTML generado con `python scripts/check-hugo-content.py work/hugo-cap03-preview`. Este control detecta shortcodes sin resolver, figuras dentro de títulos y desplegables vacíos; no sustituye la inspección visual ni la validación matemática.
 
 ### Quartz (mapa de conceptos)
 

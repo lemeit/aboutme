@@ -548,6 +548,338 @@
       "caption": "Ejercicio de vectores 6",
       "embedded_image": "/Image1530",
       "file": "static/images/diagramas/cap02_vector-ejercicio-6_pp161.png"
+    },
+    {
+      "name": "cap03_posicion-eje_pp183",
+      "pdf_page": 183,
+      "printed_page": 183,
+      "box_pt": [
+        265.25,
+        161.53,
+        401.98,
+        218.38
+      ],
+      "caption": "Coordenadas positivas y negativas respecto del origen.",
+      "embedded_image": "/Image1713",
+      "file": "static/images/diagramas/cap03_posicion-eje_pp183.png"
+    },
+    {
+      "name": "cap03_desplazamiento-negativo_pp183",
+      "pdf_page": 183,
+      "printed_page": 183,
+      "box_pt": [
+        416.8,
+        551.72,
+        522.6,
+        620.82
+      ],
+      "caption": "Desplazamiento negativo en una recta.",
+      "embedded_image": "/Image1715",
+      "file": "static/images/diagramas/cap03_desplazamiento-negativo_pp183.png"
+    },
+    {
+      "name": "cap03_velocimetros-positivo_pp190",
+      "pdf_page": 190,
+      "printed_page": 190,
+      "box_pt": [
+        147,
+        204,
+        521,
+        355
+      ],
+      "caption": "Velocidades inicial y final positivas.",
+      "file": "static/images/diagramas/cap03_velocimetros-positivo_pp190.png"
+    },
+    {
+      "name": "cap03_velocimetros-negativo_pp191",
+      "pdf_page": 191,
+      "printed_page": 191,
+      "box_pt": [
+        147,
+        132,
+        521,
+        284
+      ],
+      "caption": "Velocidades inicial y final negativas.",
+      "file": "static/images/diagramas/cap03_velocimetros-negativo_pp191.png"
+    },
+    {
+      "name": "cap03_velocimetros-inversion_pp192",
+      "pdf_page": 192,
+      "printed_page": 192,
+      "box_pt": [
+        147,
+        130,
+        521,
+        280
+      ],
+      "caption": "Velocidades con inversión de sentido.",
+      "file": "static/images/diagramas/cap03_velocimetros-inversion_pp192.png"
+    },
+    {
+      "name": "cap03_viento-aceleracion_pp193",
+      "pdf_page": 193,
+      "printed_page": 193,
+      "box_pt": [
+        224.57,
+        133.11,
+        442.71,
+        398.76
+      ],
+      "caption": "Analogía de la aceleración hacia un mismo lado.",
+      "embedded_image": "/Image1825",
+      "file": "static/images/diagramas/cap03_viento-aceleracion_pp193.png"
+    },
+    {
+      "name": "cap03_puntos-uniforme_pp196",
+      "pdf_page": 196,
+      "printed_page": 196,
+      "box_pt": [
+        239.9,
+        275.45,
+        427.4,
+        305.45
+      ],
+      "caption": "Posiciones a intervalos iguales: movimiento uniforme.",
+      "embedded_image": "/Image1838",
+      "file": "static/images/diagramas/cap03_puntos-uniforme_pp196.png"
+    },
+    {
+      "name": "cap03_puntos-acelera_pp196",
+      "pdf_page": 196,
+      "printed_page": 196,
+      "box_pt": [
+        242.9,
+        487.45,
+        423.65,
+        497.95
+      ],
+      "caption": "Posiciones a intervalos iguales: aumento de rapidez.",
+      "embedded_image": "/Image1840",
+      "file": "static/images/diagramas/cap03_puntos-acelera_pp196.png"
+    },
+    {
+      "name": "cap03_puntos-frena_pp196",
+      "pdf_page": 196,
+      "printed_page": 196,
+      "box_pt": [
+        242.15,
+        647.59,
+        425.15,
+        661.84
+      ],
+      "caption": "Posiciones a intervalos iguales: disminución de rapidez.",
+      "embedded_image": "/Image1842",
+      "file": "static/images/diagramas/cap03_puntos-frena_pp196.png"
+    },
+    {
+      "name": "cap03_posicion-pendiente_pp215",
+      "pdf_page": 215,
+      "printed_page": 215,
+      "box_pt": [
+        372.85,
+        453.62,
+        523.3,
+        573.12
+      ],
+      "caption": "Pendiente en un gráfico posición-tiempo.",
+      "embedded_image": "/Image2096",
+      "file": "static/images/diagramas/cap03_posicion-pendiente_pp215.png"
+    },
+    {
+      "name": "cap03_ventana-caida_pp214",
+      "pdf_page": 214,
+      "printed_page": 214,
+      "box_pt": [
+        356.3,
+        291.4,
+        523.3,
+        524.62
+      ],
+      "caption": "Piedra en caída que pasa por una ventana.",
+      "embedded_image": "/Image2091",
+      "file": "static/images/diagramas/cap03_ventana-caida_pp214.png"
+    },
+    {
+      "name": "cap03_onda-observador-quieto_pp232",
+      "pdf_page": 232,
+      "printed_page": 232,
+      "box_pt": [
+        201.55,
+        423.11,
+        465.75,
+        576.45
+      ],
+      "caption": "Onda medida desde una regla quieta.",
+      "embedded_image": "/Image2190",
+      "file": "static/images/diagramas/cap03_onda-observador-quieto_pp232.png"
+    },
+    {
+      "name": "cap03_onda-observador-acerca_pp233",
+      "pdf_page": 233,
+      "printed_page": 233,
+      "box_pt": [
+        201.55,
+        111.99,
+        465.75,
+        254.53
+      ],
+      "caption": "Regla que se mueve hacia la onda.",
+      "embedded_image": "/Image2196",
+      "file": "static/images/diagramas/cap03_onda-observador-acerca_pp233.png"
+    },
+    {
+      "name": "cap03_onda-observador-aleja_pp234",
+      "pdf_page": 234,
+      "printed_page": 234,
+      "box_pt": [
+        202.98,
+        111.99,
+        464.33,
+        252.38
+      ],
+      "caption": "Regla que se mueve en el sentido de la onda.",
+      "embedded_image": "/Image2200",
+      "file": "static/images/diagramas/cap03_onda-observador-aleja_pp234.png"
+    },
+    {
+      "name": "cap03_posicion-signos_pp216",
+      "pdf_page": 216,
+      "printed_page": 216,
+      "box_pt": [
+        147,
+        174,
+        527,
+        273
+      ],
+      "caption": "Pendientes positiva, nula y negativa de posición-tiempo.",
+      "file": "static/images/diagramas/cap03_posicion-signos_pp216.png"
+    },
+    {
+      "name": "cap03_posicion-tramos_pp216",
+      "pdf_page": 216,
+      "printed_page": 216,
+      "box_pt": [
+        223.15,
+        381.35,
+        444.14,
+        555.55
+      ],
+      "caption": "Posición por tramos: ida, reposo y regreso.",
+      "embedded_image": "/Image2105",
+      "file": "static/images/diagramas/cap03_posicion-tramos_pp216.png"
+    },
+    {
+      "name": "cap03_posicion-caracteristicas_pp217",
+      "pdf_page": 217,
+      "printed_page": 217,
+      "box_pt": [
+        161.57,
+        126.35,
+        505.72,
+        380.29
+      ],
+      "caption": "Características del gráfico posición-tiempo.",
+      "embedded_image": "/Image2107",
+      "file": "static/images/diagramas/cap03_posicion-caracteristicas_pp217.png"
+    },
+    {
+      "name": "cap03_areas-velocidad_pp219",
+      "pdf_page": 219,
+      "printed_page": 219,
+      "box_pt": [
+        152.57,
+        154.19,
+        514.69,
+        316.89
+      ],
+      "caption": "Desplazamiento como área bajo velocidad-tiempo.",
+      "embedded_image": "/Image2124",
+      "file": "static/images/diagramas/cap03_areas-velocidad_pp219.png"
+    },
+    {
+      "name": "cap03_areas-tramos_pp220",
+      "pdf_page": 220,
+      "printed_page": 220,
+      "box_pt": [
+        144.0,
+        153.02,
+        555.75,
+        285.02
+      ],
+      "caption": "Áreas de intervalos seleccionados en velocidad-tiempo.",
+      "embedded_image": "/Image2140",
+      "file": "static/images/diagramas/cap03_areas-tramos_pp220.png"
+    },
+    {
+      "name": "cap03_velocidad-caracteristicas_pp221",
+      "pdf_page": 221,
+      "printed_page": 221,
+      "box_pt": [
+        152.9,
+        93.49,
+        513.85,
+        358.96
+      ],
+      "caption": "Características del gráfico velocidad-tiempo.",
+      "embedded_image": "/Image2142",
+      "file": "static/images/diagramas/cap03_velocidad-caracteristicas_pp221.png"
+    },
+    {
+      "name": "cap03_ejercicio-posicion_pp222",
+      "pdf_page": 222,
+      "printed_page": 222,
+      "box_pt": [
+        144.0,
+        120.36,
+        330.01,
+        286.84
+      ],
+      "caption": "Ejercicio 1 de gráficos de movimiento.",
+      "embedded_image": "/Image2145",
+      "file": "static/images/diagramas/cap03_ejercicio-posicion_pp222.png"
+    },
+    {
+      "name": "cap03_ejercicio-velocidad_pp222",
+      "pdf_page": 222,
+      "printed_page": 222,
+      "box_pt": [
+        144.0,
+        396.17,
+        330.45,
+        569.66
+      ],
+      "caption": "Ejercicio 2 de gráficos de movimiento.",
+      "embedded_image": "/Image2146",
+      "file": "static/images/diagramas/cap03_ejercicio-velocidad_pp222.png"
+    },
+    {
+      "name": "cap03_ejercicio-conversion_pp223",
+      "pdf_page": 223,
+      "printed_page": 223,
+      "box_pt": [
+        149.35,
+        123.24,
+        336.49,
+        254.23
+      ],
+      "caption": "Ejercicio 3: pasar de posición a velocidad.",
+      "embedded_image": "/Image2149",
+      "file": "static/images/diagramas/cap03_ejercicio-conversion_pp223.png"
+    },
+    {
+      "name": "cap03_ejemplo-carrito_pp225",
+      "pdf_page": 225,
+      "printed_page": 225,
+      "box_pt": [
+        161.57,
+        223.48,
+        505.71,
+        402.03
+      ],
+      "caption": "Gráfico del carrito en el ejemplo de respuesta desarrollada.",
+      "embedded_image": "/Image2159",
+      "file": "static/images/diagramas/cap03_ejemplo-carrito_pp225.png"
     }
   ]
 }

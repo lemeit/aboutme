@@ -20,7 +20,7 @@ Al finalizar esta sección, vas a poder:
 
 ## Aceleración angular
 
-La **aceleración angular** ($\alpha$, alfa) es la tasa de cambio de la velocidad angular:
+La **aceleración angular media** ($\alpha_{med}$) es el cambio de velocidad angular dividido por el tiempo transcurrido. Si es constante, coincide con $\alpha$ durante todo el intervalo. En las expresiones siguientes $t$ representa ese tiempo transcurrido, no un instante arbitrario:
 
 $$\alpha = \frac{\Delta\omega}{t} = \frac{\omega - \omega_0}{t}$$
 
@@ -37,7 +37,7 @@ Unidad: $\text{rad/s}^2$
 
 ## Aceleración tangencial
 
-La **aceleración tangencial** ($a_T$) es la aceleración lineal de un punto en el cuerpo girante, en dirección tangente al círculo:
+La **aceleración tangencial** ($a_T$) es la componente tangencial de la aceleración de un punto de un cuerpo rígido que gira alrededor de un eje fijo. Además puede tener aceleración radial, incluso cuando $\alpha=0$:
 
 $$a_T = r\,\alpha$$
 
@@ -45,7 +45,7 @@ $$a_T = r\,\alpha$$
 
 ## Ecuaciones rotacionales
 
-Las ecuaciones del MRUV tienen su equivalente rotacional exacto:
+Para un eje fijo y **aceleración angular constante**, las ecuaciones del MRUV tienen la siguiente analogía rotacional. Los ángulos se expresan en radianes y los signos se fijan con un sentido de giro; $d$ en la columna lineal representa desplazamiento con signo, no longitud total del recorrido:
 
 | Lineal | Angular |
 |--------|---------|
@@ -58,6 +58,8 @@ Las ecuaciones del MRUV tienen su equivalente rotacional exacto:
 ## Ejemplo resuelto — Bicicleta (Bigler)
 
 Un ciclista acelera de $7{,}5\ \text{m/s}$ a $10{,}0\ \text{m/s}$ en $5{,}0\ \text{s}$. Las ruedas tienen radio $r = 0{,}343\ \text{m}$. ¿Cuál es la aceleración angular?
+
+> **Aclaración de la adaptación — Bigler, pp. 263–264:** se supone rodadura **sin deslizamiento**, radio constante y variación uniforme de velocidad. Así, la rapidez del centro de la rueda es $r\omega$ y su aceleración de traslación es $r\alpha$. No se está identificando esa aceleración con la aceleración total de un punto del borde respecto del suelo; el borde también participa del giro. El resultado del ejemplo se conserva.
 
 **Método 1 — desde la aceleración tangencial:**
 

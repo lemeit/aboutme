@@ -28,7 +28,9 @@ $$F_g = \frac{G\,m_1\,m_2}{r^2}$$
 donde:
 - $G = 6{,}67 \times 10^{-11}\ \text{N}\cdot\text{m}^2/\text{kg}^2$ — constante gravitacional universal
 - $m_1$, $m_2$ — masas de los dos objetos
-- $r$ — distancia entre sus centros de masa
+- $r$ — distancia entre las masas puntuales; para dos cuerpos esféricamente simétricos sin superposición, distancia entre sus centros
+
+> **Aclaración de la adaptación — Bigler, pp. 299–300:** el original introduce la ley y luego aplica un modelo de la Tierra con centro de masa en su centro físico. La fórmula entre centros no debe extenderse sin más a cualquier distribución de masa: para cuerpos de forma arbitraria hay que considerar cómo está distribuida. El caso terrestre de estas notas es una aproximación esférica.
 
 ---
 

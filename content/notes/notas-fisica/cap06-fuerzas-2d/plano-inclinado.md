@@ -37,7 +37,7 @@ Por geometría, el ángulo entre $\vec{F}_g$ y la normal a la rampa es el mismo 
 | Perpendicular a la rampa | Igual y opuesta a $F_N$ | $F_N = F_g\cos\theta$ |
 
 **Verificación de casos extremos:**
-- $\theta = 0°$ (horizontal): $F_{\parallel} = 0$, $F_N = F_g$ ✓ (objeto en reposo)
+- $\theta = 0°$ (horizontal): $F_{\parallel} = 0$, $F_N = F_g$ en este modelo sin otras fuerzas; aceleración cero permite reposo o velocidad constante.
 - $\theta = 90°$ (vertical): $F_{\parallel} = F_g$, $F_N = 0$ ✓ (caída libre)
 
 ---
@@ -62,13 +62,15 @@ $$a = \frac{14{,}3}{2{,}5} = 5{,}7\ \text{m/s}^2$$
 
 ## Rampa con fricción
 
-Si hay fricción, la fuerza de fricción actúa hacia arriba de la rampa (opuesta al movimiento):
+Si el objeto **desliza cuesta abajo**, la fricción cinética apunta cuesta arriba. Tomando positivo cuesta abajo, sin otras fuerzas aplicadas:
 
 $$F_{neta} = F_g\sin\theta - F_f = mg\sin\theta - \mu_k mg\cos\theta = mg(\sin\theta - \mu_k\cos\theta)$$
 
 **Velocidad constante** (equilibrio dinámico): $F_{neta} = 0$
 
 $$mg\sin\theta = \mu_k mg\cos\theta \implies \tan\theta = \mu_k$$
+
+> **Condiciones recuperadas del original — Bigler, pp. 372–377:** $F_N=mg\cos\theta$ supone contacto y balance perpendicular sin otras fuerzas normales. La relación $\tan\theta=\mu_k$ corresponde al descenso uniforme del ejemplo del esquiador. Si el cuerpo sube, la fricción cinética apunta cuesta abajo; si no desliza, hay que verificar el límite de fricción estática. El sentido de la fricción no es siempre cuesta arriba.
 
 ---
 

@@ -79,7 +79,7 @@ Commit de contenido: `80d78c5`; el commit automático `d2b9a15` incorporó los P
 
 ## Capítulo 3: ampliación local del 14/10/2026
 
-Rama: `contenido/bigler-capitulo-3`. Se ampliaron las ocho notas pendientes y se conservó la nota piloto revisada. Esta tanda no se publicó.
+Rama de trabajo: `contenido/bigler-capitulo-3`. Se ampliaron las ocho notas pendientes y se conservó la nota piloto revisada. Tras las correcciones documentadas al final, se publicó mediante el PR #2 el 14/10/2026. La comprobación online posterior contó 497 expresiones KaTeX sin errores y verificó las imágenes y los desplegables. La inspección visual exhaustiva de escritorio/móvil sigue pendiente.
 
 | Nota | Páginas cotejadas | Alcance |
 |---|---|---|

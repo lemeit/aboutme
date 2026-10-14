@@ -20,11 +20,11 @@ Al finalizar esta sección, vas a poder:
 
 ## Fuerzas perpendiculares son independientes
 
-Una propiedad clave de los vectores: **un vector no tiene efecto sobre otro vector perpendicular a él**.
-
-Esto significa que podemos separar un problema en 2D en dos problemas 1D independientes:
+La segunda ley se proyecta sobre cada eje y permite escribir una ecuación para cada componente:
 
 $$F_{neta,x} = m\,a_x \qquad F_{neta,y} = m\,a_y$$
+
+> **Aclaración de la adaptación — Bigler, p. 361:** el original describe fuerzas perpendiculares como independientes. Esto permite separar las componentes, pero no garantiza que todo el problema esté desacoplado. Por ejemplo, una fuerza vertical modifica la normal y, mediante el rozamiento, puede modificar la aceleración horizontal.
 
 ---
 
@@ -91,11 +91,11 @@ $$\theta = \tan^{-1}\left(\frac{30}{50}\right) = 31{,}0°\ \text{(hacia abajo a 
 
 ## Fuerza normal con fuerza aplicada en ángulo
 
-Cuando una fuerza $F_{ap}$ se aplica con ángulo $\theta$ hacia arriba, la componente vertical **reduce** la fuerza normal:
+Si el cuerpo mantiene contacto con una superficie horizontal, no tiene aceleración vertical y las únicas fuerzas verticales son peso, normal y la componente hacia arriba de $F_{ap}$, entonces:
 
 $$F_N = F_g - F_{ap}\sin\theta$$
 
-Esto es importante porque al reducir $F_N$, también se reduce la fricción $F_f = \mu F_N$.
+Si el resultado exigiera una normal negativa, el cuerpo pierde contacto: esta ecuación ya no describe el movimiento. Al reducir la normal también se reduce el límite estático $\mu_sF_N$ o la fricción cinética aproximada $\mu_kF_N$, según el régimen.
 
 ---
 

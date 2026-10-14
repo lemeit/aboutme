@@ -22,7 +22,7 @@ Al finalizar esta sección, vas a poder:
 
 | Tipo | Definición |
 |------|-----------|
-| **Fuerza de reacción** | Se crea en respuesta a la acción de otra fuerza (3ª Ley) |
+| **Par de acción y reacción** | Dos fuerzas iguales y opuestas de una interacción, ejercidas sobre cuerpos distintos (3ª Ley) |
 | **Fuerza de contacto** | Existe solo mientras los objetos están en contacto |
 | **Fuerza opositora** | Actúa en sentido contrario a otra fuerza |
 
@@ -56,13 +56,15 @@ $$F_g = m\,g \qquad g \approx 10\ \text{m/s}^2$$
 
 ### Tensión ($\vec{F}_T$)
 
-Fuerza de tracción transmitida por una cuerda, cable o hilo. Actúa en ambos extremos simultáneamente (es su propia fuerza de reacción). La dirección es siempre a lo largo del hilo.
+Fuerza de tracción ejercida por una cuerda, cable o hilo sobre el cuerpo al que está unido. Su dirección es a lo largo del hilo.
+
+> **Aclaración de la adaptación — Bigler, p. 294:** el original dice que la tensión es «su propia fuerza de reacción». Para identificar la tercera ley hay que distinguir cuerpos: la cuerda tira del bloque y el bloque tira de la cuerda con una fuerza igual y opuesta. Esas fuerzas actúan sobre cuerpos diferentes y no se cancelan en el diagrama del bloque.
 
 ### Fuerza normal ($\vec{F}_N$)
 
 Fuerza de reacción de una superficie que impide que un objeto la atraviese. Siempre **perpendicular** a la superficie. (*Normal* = perpendicular, en terminología matemática.)
 
-> En una superficie horizontal, $F_N = F_g$. En un plano inclinado, $F_N < F_g$.
+> Si no hay otras fuerzas con componente perpendicular ni aceleración perpendicular, $F_N=mg$ en una superficie horizontal y $F_N=mg\cos\theta$ en una rampa. No son igualdades universales: una fuerza aplicada o el movimiento de la superficie pueden modificar la normal. Se recuperan así las condiciones de los casos simples de Bigler, pp. 342 y 372–374.
 
 ### Fricción ($\vec{F}_f$)
 

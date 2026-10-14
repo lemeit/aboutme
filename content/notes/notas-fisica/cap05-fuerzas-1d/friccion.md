@@ -33,12 +33,12 @@ Características:
 
 | Tipo | Cuándo actúa | Fórmula |
 |------|-------------|---------|
-| **Estática** ($F_{f,s}$) | Objeto en reposo, con fuerza aplicada | $F_{f,s} \leq \mu_s F_N$ |
-| **Cinética** ($F_{f,k}$) | Objeto en movimiento | $F_{f,k} = \mu_k F_N$ |
+| **Estática** ($F_{f,s}$) | Sin deslizamiento relativo entre las superficies | $0\leq F_{f,s}\leq\mu_s F_N$ |
+| **Cinética** ($F_{f,k}$) | Con deslizamiento relativo entre las superficies | $F_{f,k}\approx\mu_k F_N$ |
 
 > La ecuación de fricción estática es una **desigualdad**: cuando el objeto está en reposo, la fricción se iguala a la fuerza aplicada (no necesariamente al valor máximo $\mu_s F_N$). Recién cuando la fuerza aplicada supera ese máximo, el objeto comienza a moverse.
 
-Siempre: $\mu_k < \mu_s$ — es más difícil arrancar que mantener el movimiento.
+Habitualmente $\mu_k<\mu_s$: iniciar el deslizamiento requiere más fuerza que mantenerlo. Bigler dice «casi siempre» en la p. 338; el «siempre» del resumen anterior había eliminado ese matiz. Son relaciones de un modelo aproximado de rozamiento seco, no leyes universales para cualquier contacto.
 
 ---
 
@@ -46,7 +46,9 @@ Siempre: $\mu_k < \mu_s$ — es más difícil arrancar que mantener el movimient
 
 El **coeficiente de fricción** ($\mu$) es un número adimensional que depende de los materiales en contacto:
 
-$$\mu = \frac{F_f}{F_N}$$
+$$\mu_k\approx\frac{F_{f,k}}{F_N},\qquad \mu_s=\frac{F_{f,s,\max}}{F_N}$$
+
+En estática, el cociente de la fuerza de fricción actual y la normal no determina necesariamente $\mu_s$: hay que conocer el límite antes de deslizar. Esta aclaración complementa la definición abreviada de Bigler, p. 340.
 
 ---
 
@@ -61,9 +63,9 @@ Mientras el objeto está en reposo, la fricción es igual a la fuerza aplicada (
 ## Pasos para resolver problemas con fricción
 
 1. Calculá el peso: $F_g = mg$
-2. Calculá la fuerza normal: si la superficie es horizontal, $F_N = F_g$
-3. Determiná si la fricción es estática (objeto quieto) o cinética (objeto en movimiento)
-4. Calculá: $F_f = \mu F_N$ (con el $\mu$ correspondiente)
+2. Calculá la normal mediante el balance perpendicular. En horizontal, $F_N=mg$ solo si no hay otras componentes verticales ni aceleración vertical y se mantiene el contacto.
+3. Determiná si las superficies deslizan una respecto de otra: importa ese movimiento relativo, no el reposo respecto del suelo.
+4. En estática, calculá la fuerza necesaria para impedir el deslizamiento y comprobá que no supere $\mu_sF_N$. En cinética, usá el modelo $F_{f,k}\approx\mu_kF_N$. Esta distinción sí aparece en los pasos del original, p. 342.
 5. Determiná la fuerza neta: $F_{neta} = F_{aplicada} + F_f$ (cuidado con los signos)
 
 ---
@@ -86,7 +88,7 @@ La persona aplica $140\ \text{N}$.
 
 1. ¿Por qué los neumáticos de un auto que frena sin bloquearse recorren menos distancia que uno que patinan?
 2. ¿Puede la fricción ser mayor que la fuerza aplicada? ¿Cuándo?
-3. ¿Por qué la fricción cinética es siempre menor que la fricción estática máxima?
+3. ¿Qué diferencia hay entre la fricción estática actual y su valor máximo? ¿Por qué no se debe aplicar automáticamente $F_{f,s}=\mu_sF_N$?
 
 ---
 

@@ -30,11 +30,13 @@ Esta aceleración apunta siempre **hacia el centro** del círculo.
 
 ## Aceleración centrípeta
 
-La **aceleración centrípeta** ($a_c$) es la aceleración constante hacia el centro que mantiene al objeto en su trayectoria circular:
+La **aceleración centrípeta** ($a_c$) es la componente de la aceleración dirigida hacia el centro de la trayectoria circular:
 
 $$\boxed{a_c = \frac{v^2}{r} = r\,\omega^2}$$
 
 Unidad: m/s² (igual que cualquier aceleración)
+
+> **Aclaración de la adaptación — Bigler, pp. 266–267:** el original la llama «constante». En el movimiento circular uniforme es constante su **módulo**, pero la dirección del vector cambia al recorrer el círculo. Si la rapidez varía, también hay una componente tangencial y la aceleración total no apunta necesariamente al centro.
 
 > **Centrípeto** significa "hacia el centro". La aceleración centrípeta no es un nuevo tipo de fuerza — es la dirección de la aceleración resultante de cualquier fuerza que mantenga al objeto en círculo.
 

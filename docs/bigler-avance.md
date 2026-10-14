@@ -39,15 +39,15 @@ Los porcentajes del capítulo completo requieren inventariar todas las secciones
 
 | Nota | Texto | Cotejo | Figuras | Visual Hugo |
 |---|---|---|---|---|
-| [Sistemas de referencia. Posición, distancia y desplazamiento](../content/notes/notas-fisica/cap03-cinematica-1d/sistemas-referencia.md) | Por revisar | Pendiente | Por revisar | Pendiente |
+| [Sistemas de referencia. Posición, distancia y desplazamiento](../content/notes/notas-fisica/cap03-cinematica-1d/sistemas-referencia.md) | Ampliada | Desarrollo cotejado: pp. 182–183 | 2 figuras extraídas; ejemplo enlazado a Rapidez y velocidad | Pendiente: inspección visual y auto-render en navegador; LaTeX validado |
 | [Rapidez y velocidad](../content/notes/notas-fisica/cap03-cinematica-1d/velocidad-rapidez.md) | Revisada | Revisado: pp. 184–187 | 2 extraídas y revisadas | Revisada: escritorio y móvil |
-| [Aceleración lineal](../content/notes/notas-fisica/cap03-cinematica-1d/aceleracion.md) | Por revisar | Pendiente | Por revisar | Pendiente |
-| [Diagramas de puntos](../content/notes/notas-fisica/cap03-cinematica-1d/diagramas-puntos.md) | Por revisar | Pendiente | Por revisar | Pendiente |
-| [Movimiento Rectilíneo Uniforme (MRU)](../content/notes/notas-fisica/cap03-cinematica-1d/mru.md) | Por revisar | Pendiente | Por revisar | Pendiente |
-| [Movimiento Rectilíneo Uniformemente Variado (MRUV)](../content/notes/notas-fisica/cap03-cinematica-1d/mruv.md) | Por revisar | Pendiente | Por revisar | Pendiente |
-| [Caída Libre](../content/notes/notas-fisica/cap03-cinematica-1d/caida-libre.md) | Por revisar | Pendiente | Por revisar | Pendiente |
-| [Gráficos de movimiento](../content/notes/notas-fisica/cap03-cinematica-1d/graficos-movimiento.md) | Por revisar | Pendiente | Por revisar | Pendiente |
-| [Movimiento relativo y velocidades relativas](../content/notes/notas-fisica/cap03-cinematica-1d/movimiento-relativo.md) | Por revisar | Pendiente | Por revisar | Pendiente |
+| [Aceleración lineal](../content/notes/notas-fisica/cap03-cinematica-1d/aceleracion.md) | Ampliada | Desarrollo cotejado: pp. 188–194 | 4 figuras extraídas; tablas reconstruidas | Pendiente: inspección visual y auto-render en navegador; LaTeX validado |
+| [Diagramas de puntos](../content/notes/notas-fisica/cap03-cinematica-1d/diagramas-puntos.md) | Ampliada | Desarrollo cotejado: pp. 195–196 | 3 secuencias del original extraídas; fotografía histórica no reproducida | Pendiente: inspección visual y auto-render en navegador; LaTeX validado |
+| [Movimiento Rectilíneo Uniforme (MRU)](../content/notes/notas-fisica/cap03-cinematica-1d/mru.md) | Ampliada | Desarrollo cotejado: pp. 185–187, 197–200, 204 | 1 figura del original; tablas reconstruidas | Pendiente: inspección visual y auto-render en navegador; LaTeX validado |
+| [Movimiento Rectilíneo Uniformemente Variado (MRUV)](../content/notes/notas-fisica/cap03-cinematica-1d/mruv.md) | Ampliada | Desarrollo cotejado: pp. 197–200, 202–206, 209–211 | Sin recortes adicionales; ecuaciones y tablas reconstruidas | Pendiente: inspección visual y auto-render en navegador; LaTeX validado |
+| [Caída Libre](../content/notes/notas-fisica/cap03-cinematica-1d/caida-libre.md) | Ampliada | Desarrollo cotejado: pp. 194, 201–203, 206–208, 212–214 | 1 figura extraída; problemas reconstruidos con signos explícitos | Pendiente: inspección visual y auto-render en navegador; LaTeX validado |
+| [Gráficos de movimiento](../content/notes/notas-fisica/cap03-cinematica-1d/graficos-movimiento.md) | Ampliada | Desarrollo cotejado: pp. 215–227 | 10 figuras extraídas; tablas y ejercicios reconstruidos | Pendiente: inspección visual y auto-render en navegador; LaTeX validado |
+| [Movimiento relativo y velocidades relativas](../content/notes/notas-fisica/cap03-cinematica-1d/movimiento-relativo.md) | Ampliada | Desarrollo cotejado: pp. 228–237 | 3 esquemas extraídos; fotos e ilustraciones contextuales omitidas | Pendiente: inspección visual y auto-render en navegador; LaTeX validado |
 
 ## Capítulo 4 — Cinemática en 2D
 

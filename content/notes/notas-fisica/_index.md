@@ -2,15 +2,15 @@
 title = 'Notas de Física'
 draft = false
 weight = 1
-description = 'Traducción y adaptación al español de Physics 1: Mechanics in Plain English — Jeff Bigler (CC BY-NC-SA 4.0). Prof. Ing. Luciano Lamaita, 2026.'
+description = 'Conceptos, ejemplos resueltos y actividades de mecánica.'
 +++
 
-**⚠️ En proceso** — este contenido se está traduciendo y ampliando de forma continua.
+## Fuente y autoría
 
-## Libro original
+Traducción y adaptación al español de [*Physics 1: Mechanics in Plain English* — libro completo en inglés (PDF)](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf), de **Jeff Bigler**, edición de **octubre de 2025**. Trabajo realizado por el **Prof. Ing. Luciano Lamaita, 2026**.
 
-Estas notas traducen y adaptan **Jeff Bigler — *Physics 1: Mechanics in Plain English***. Para consultar el texto completo:
+El original y esta adaptación se distribuyen bajo la licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Las actividades y aclaraciones propias se identifican en cada nota.
 
-[**Abrir el libro original en inglés (PDF)**](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf)
+## Estado del contenido
 
-Estas notas utilizan la edición de **octubre de 2025**. El original y esta adaptación se distribuyen bajo [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Las actividades y aclaraciones propias se identifican en cada nota.
+**En desarrollo:** las secciones se traducen, amplían y revisan de forma continua. Cada capítulo indica el avance de su traducción y adaptación.

@@ -130,6 +130,9 @@
                  min-width:1.6rem; text-align:right; flex-shrink:0;">
       {{- .Params.weight }}.
     </span>
+    {{- with .Params.list_icon }}
+    <img src="{{ . }}" alt="" width="32" height="32" style="flex-shrink:0; align-self:center; object-fit:contain;">
+    {{- end }}
     <a href="{{ .RelPermalink }}" class="notes-link"
        style="font-weight:600; text-decoration:none;">
       {{ .Title }}

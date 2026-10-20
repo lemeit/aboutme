@@ -3,9 +3,12 @@ title = "Tracker — Análisis de video para Física"
 date = "2026-06-27"
 draft = false
 weight = 1
+list_icon = "/images/logos/tracker-icon.png"
 description = "Instalación, interfaz y flujo de trabajo completo para analizar movimiento a partir de video."
 tags = ["tracker", "herramientas", "análisis de video", "laboratorio", "cinemática"]
 +++
+
+{{< figura src="/images/logos/tracker-logo.png" width="249" alt="Tracker — Video Analysis and Modeling Tool" source="Logo original de [Tracker / Open Source Physics](https://opensourcephysics.github.io/tracker/)." >}}
 
 ## Objetivos de aprendizaje
 

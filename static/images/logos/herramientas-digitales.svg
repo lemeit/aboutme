@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-labelledby="title desc">
+  <title id="title">Herramientas digitales: análisis de datos</title>
+  <desc id="desc">Pantalla con ejes, una curva y puntos de medición para representar herramientas de análisis científico.</desc>
+  <g fill="none" stroke="#9B3D00" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="2.5" y="3" width="19" height="14" rx="1.3" stroke-width="1.1"/>
+    <path d="M9 17v3.5m6-3.5v3.5m-8 0h10" stroke-width=".8"/>
+    <path d="M6 6v7h12" stroke-width=".55"/>
+    <path d="M7.5 11.5c3-1 4-5 9.5-5" stroke-width=".65"/>
+  </g>
+  <g fill="#9B3D00">
+    <circle cx="8" cy="11.3" r=".65"/>
+    <circle cx="12" cy="8.4" r=".65"/>
+    <circle cx="17" cy="6.5" r=".65"/>
+  </g>
+</svg>

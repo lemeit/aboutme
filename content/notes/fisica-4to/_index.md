@@ -2,7 +2,5 @@
 title = 'Introducción a la Física — 4° año'
 draft = false
 weight = 3
-description = 'Ciclo Superior'
+description = 'Colegio Secundario Madre Teresa'
 +++
-
-**Colegio Madre Teresa**

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-labelledby="title desc">
+  <title id="title">Notas de Física: diagrama de fuerzas</title>
+  <desc id="desc">Adaptación vectorial del favicon de Jeff Bigler, https://www.mrbigler.com/favicon.ico. Tres fuerzas parten de un cuerpo central. Rediseño para la traducción y adaptación al español, 2026. Fuente: sitio de Jeff Bigler, CC BY-NC-SA 4.0, https://www.mrbigler.com/.</desc>
+  <g fill="none" stroke="#9B3D00" stroke-width=".8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M10 10 2.5 2.5m0 3.4V2.5h3.4"/>
+    <path d="M10 10h11.5m-2.6-2.6 2.6 2.6-2.6 2.6"/>
+    <path d="M10 10v11.5m-2.6-2.6 2.6 2.6 2.6-2.6"/>
+  </g>
+  <circle cx="10" cy="10" r="2.5" fill="#9B3D00"/>
+</svg>

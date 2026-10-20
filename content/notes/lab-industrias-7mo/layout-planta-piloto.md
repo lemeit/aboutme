@@ -2,6 +2,8 @@
 title = 'Layout preliminar de la planta piloto de elaboración'
 date = 2026-09-23
 weight = 3
+proyecto = 'cerveceria-piloto'
+proyecto_orden = 1
 draft = false
 math = false
 pdf = true
@@ -13,7 +15,11 @@ materia_logo = '/images/logos/lab-industrias.svg'
 description = 'Layout orientativo del local físico donde se instalaría la planta piloto de cerveza sin TACC y sin alcohol del proyecto final de la materia.'
 +++
 
+Esta nota integra el [proyecto integrador final: diseño y evaluación de una cervecería piloto]({{< ref "proyecto-integrador-final" >}}), junto con los balances de materia y energía, la simulación, la evaluación económica y el encuadre ambiental.
+
 El balance de materia y energía de la [simulación en DWSIM]({{< ref "simulacion-dwsim-cerveza" >}}) resuelve el proceso, pero el proyecto final de la materia también tiene que entrar físicamente en algún lado. Esta nota muestra el layout preliminar del local donde se instalaría la planta piloto, usado además para conversar con proveedores durante la etapa de evaluación y cotización del equipamiento.
+
+Para relacionar las áreas de proceso con sus corrientes, consultá la [guía y calculadora de balance de materia]({{< ref "balance-materia-interactivo" >}}). Las superficies del layout también sirven como datos de entrada para el [análisis ambiental y el simulador de NCA]({{< ref "encuadre-ambiental-nca" >}}); un esquema preliminar no sustituye los planos y las constancias exigibles.
 
 ## El local
 

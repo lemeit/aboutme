@@ -2,6 +2,8 @@
 title = 'Balance de energía: de la calorimetría a Bernoulli'
 date = 2026-08-30
 weight = 1
+proyecto = 'cerveceria-piloto'
+proyecto_orden = 3
 draft = false
 math = true
 pdf = true
@@ -12,6 +14,8 @@ localidad = 'Saladillo'
 materia_logo = '/images/logos/lab-industrias.svg'
 description = 'De lo ya conocido (balance de materia, gases ideales, calorimetría) al balance de energía y la ecuación de Bernoulli, con la mira puesta en el proyecto final: una cerveza sin TACC y sin alcohol.'
 +++
+
+Este marco teórico integra el [proyecto integrador final de cervecería piloto]({{< ref "proyecto-integrador-final" >}}). Se articula con la [guía de balance de materia]({{< ref "balance-materia-interactivo" >}}), el [layout de la planta]({{< ref "layout-planta-piloto" >}}) y la [simulación en DWSIM]({{< ref "simulacion-dwsim-cerveza" >}}).
 
 Con el balance de materia ya cerrado, arranca el balance de energía — que se construye con la mira puesta en el proyecto final de la materia: diseñar, simular y justificar una cerveza **sin TACC y sin alcohol** (≤0,5 % v/v), hecha con malta de mijo u otras semillas sin gluten. Todavía no hace falta saber qué semilla exactamente — eso viene con más referencias más adelante —, pero sí hace falta el balance de energía: es lo que permite enfriar el mosto sin adivinar, dimensionar la bomba que lo mueve, y entender por dónde se va el calor cuando la fermentación libera energía.
 

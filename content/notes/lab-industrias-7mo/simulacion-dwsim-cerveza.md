@@ -2,6 +2,8 @@
 title = 'Secuencia de los balances en la elaboración de una bebida fermentada mediante un simulador de procesos'
 date = 2026-09-06
 weight = 2
+proyecto = 'cerveceria-piloto'
+proyecto_orden = 4
 draft = false
 math = true
 pdf = true
@@ -19,6 +21,10 @@ Este TP consiste en construir, paso a paso y en DWSIM (un simulador de procesos 
 
 Recursos
 
+🧭 [Organización del proyecto integrador final]({{< ref "proyecto-integrador-final" >}})
+
+🧮 [Abrir la calculadora interactiva de balance de materia](/simuladores/balance-materia-cerveza/) · [Guía de uso y relación con DWSIM]({{< ref "balance-materia-interactivo" >}})
+
 📊 <a href="https://docs.google.com/spreadsheets/d/1_ItL1nn0kCZN63zf5AfpR7oCiFvLgLZl/copy" target="_blank" rel="noopener">Abrir en Google Sheets — crear una copia propia</a>
 
 📥 <a href="https://profe.lemeit.ar/files/planilla-balance-cerveceria-dwsim.xlsx" target="_blank" rel="noopener">Descargar planilla (.xlsx)</a>
@@ -28,6 +34,8 @@ Recursos
 </div>
 
 ## Objetivos
+
+**Para comparar con la calculadora:** esta guía conserva el ejemplo de 600 L, mientras que la herramienta interactiva abre con 320 L de producto terminado. Igualá las bases y los supuestos antes de contrastar resultados; distinguí capacidad del fermentador, masa cargada y volumen final envasado.
 
 - Aplicar el balance de materia y de energía a un proceso real, no a un ejercicio abstracto.
 - Instalar y manejar un simulador de procesos de código abierto (DWSIM).

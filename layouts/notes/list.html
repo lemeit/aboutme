@@ -97,6 +97,26 @@
 
 {{/* Páginas directas */}}
 {{- $pages := where .RegularPages "Draft" false }}
+{{/* Agrupación local del proyecto, conservando URLs y weights de sus artículos. */}}
+{{- if eq .RelPermalink "/notes/lab-industrias-7mo/" }}
+  {{- $project := where $pages "Params.proyecto" "cerveceria-piloto" }}
+  {{- $cover := where $project "Params.proyecto_portada" true }}
+  {{- if $cover }}
+  <section aria-labelledby="proyecto-integrador-heading" class="post-content">
+    {{- range $cover }}
+    <h2 id="proyecto-integrador-heading"><a href="{{ .RelPermalink }}">Proyecto integrador final · Cervecería piloto</a></h2>
+    <p>Layout, balances de materia y energía, simulación y encuadre ambiental se reúnen en un mismo proyecto. La evaluación económica forma parte del recorrido; su guía específica todavía no está incorporada.</p>
+    <p><a href="{{ .RelPermalink }}">Ver el recorrido completo y los criterios de trabajo →</a></p>
+    {{- end }}
+    <ol>
+      {{- range sort (where $project "Params.proyecto_portada" "ne" true) "Params.proyecto_orden" }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{- end }}
+    </ol>
+  </section>
+  {{- $pages = where $pages "Params.proyecto" "ne" "cerveceria-piloto" }}
+  {{- end }}
+{{- end }}
 {{- if $pages }}
 <ol style="list-style:none; padding:0; margin:0.5rem 0; counter-reset:nota;">
   {{- range sort $pages "Params.weight" }}

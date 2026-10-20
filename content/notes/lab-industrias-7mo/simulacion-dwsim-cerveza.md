@@ -483,3 +483,5 @@ Ese *t\** es el tiempo de fermentación a programar: al alcanzarlo, se interrump
 <li id="ref-12">Código Alimentario Argentino. <em><a href="https://www.argentina.gob.ar/sites/default/files/anmat-capitulo_xiii_beb_fermentadasactualiz_2018-12.pdf" target="_blank" rel="noopener">Cap. XIII, Bebidas Fermentadas: Cervezas</a></em> (límite 0,5 % v/v, Art. 1080; PDF)</li>
 <li id="ref-13">Código Alimentario Argentino. <a href="https://www.argentina.gob.ar/sites/default/files/capitulo_xvii_dieteticosactualiz_2025-09_0.pdf" target="_blank" rel="noopener">Límite de gluten en Argentina — 10 mg/kg</a> (Art. 1383, CAA; PDF)</li>
 </ol>
+
+Para relacionar el diseño y los balances con inversión, costos y flujos de fondos, continuá con la [guía de evaluación económica]({{< ref "evaluacion-economica" >}}).

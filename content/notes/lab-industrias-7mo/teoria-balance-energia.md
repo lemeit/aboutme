@@ -198,3 +198,5 @@ Ese $ \Delta T $, aunque chico, es la evidencia de estar usando el balance de en
 | Balance de energía completo (DWSIM) | El balance general, sin ninguna simplificación | Entalpía real vía tablas de propiedades — la fricción aparece como ΔT |
 
 No hay una ecuación de Bernoulli por un lado y un balance de energía por otro: hay una sola ecuación de conservación, y Bernoulli —con o sin bomba, con o sin NPSH— es lo que queda cuando se apagan (o se prenden) los términos correctos. Con esto ya está la base para la [guía de simulación paso a paso en DWSIM]({{< ref "simulacion-dwsim-cerveza" >}}), donde se aplican exactamente estas ecuaciones a la bomba, el intercambiador y el fermentador del proyecto.
+
+Para relacionar el diseño y los balances con inversión, costos y flujos de fondos, continuá con la [guía de evaluación económica]({{< ref "evaluacion-economica" >}}).

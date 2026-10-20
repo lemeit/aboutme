@@ -3,7 +3,7 @@ title = 'Encuadre ambiental del proyecto industrial: simulador de NCA'
 date = 2026-10-20
 weight = 6
 proyecto = 'cerveceria-piloto'
-proyecto_orden = 5
+proyecto_orden = 6
 draft = false
 description = 'Guía para relacionar layout, equipos y corrientes de la cervecería con el cálculo orientativo del Nivel de Complejidad Ambiental en la provincia de Buenos Aires.'
 +++
@@ -32,3 +32,5 @@ Los tratamientos, controles y gestiones que se justifiquen para el caso deben co
 El resultado es una **estimación numérica para estudiar el proyecto**. No constituye una CNCA emitida por la autoridad, un Certificado de Aptitud Ambiental ni una habilitación. Antes de trasladar los datos a un trámite, se deben revisar el encuadre, las fuentes vigentes y los requisitos del municipio y de la autoridad provincial.
 
 Los enlaces a los anexos oficiales y a los manuales se encuentran dentro de la herramienta, junto con el criterio utilizado para cada puntaje.
+
+Para relacionar el diseño y los balances con inversión, costos y flujos de fondos, continuá con la [guía de evaluación económica]({{< ref "evaluacion-economica" >}}).

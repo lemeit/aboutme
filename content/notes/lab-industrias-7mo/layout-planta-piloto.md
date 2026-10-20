@@ -34,3 +34,5 @@ El área del local se repartió entre seis zonas de proceso — recepción de ma
 Las dos puertas dobles abren hacia afuera por seguridad. La galería de acceso es techada pero abierta de un lado, y es continua con el patio exterior, donde se prevé ubicar los servicios auxiliares (chiller/glicol, CIP, tablero eléctrico) sin ocupar superficie cubierta.
 
 Es un esquema orientativo, no un plano arquitectónico: el reparto final de superficies va a depender de las dimensiones reales del equipamiento que se termine cotizando, y todavía hace falta confirmar la altura libre sobre las zonas de fermentación y maduración (≥ 3 m).
+
+Para relacionar el diseño y los balances con inversión, costos y flujos de fondos, continuá con la [guía de evaluación económica]({{< ref "evaluacion-economica" >}}).

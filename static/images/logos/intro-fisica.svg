@@ -1,13 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-labelledby="title desc">
-<title id="title">Física: bloque sobre plano inclinado con fuerzas</title>
-<desc id="desc">Peso P vertical hacia abajo, normal N perpendicular al plano y tensión T paralela al plano hacia arriba.</desc>
-<defs><marker id="arrow" markerWidth="4" markerHeight="4" refX="3.4" refY="2" orient="auto" markerUnits="userSpaceOnUse"><path d="M.5 .5 3.5 2 .5 3.5" fill="none" stroke="#9B3D00" stroke-width=".45" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
-<g fill="none" stroke="#9B3D00" stroke-linecap="round" stroke-linejoin="round">
-<path d="M3 27h26V12Z" stroke-width="1"/>
-<rect x="10" y="14.2" width="8" height="6" rx=".8" transform="rotate(-29.98 14 17.2)" fill="#FAF7F2" stroke-width="1"/>
-<path d="M14 17.2v11.3" stroke-width=".32" marker-end="url(#arrow)"/>
-<path d="M14 17.2 7.7 6.3" stroke-width=".32" marker-end="url(#arrow)"/>
-<path d="M17.5 15.2l8.5-4.9" stroke-width=".32" marker-end="url(#arrow)"/>
-</g>
-<g fill="#9B3D00" font-family="Arial, sans-serif" font-size="3.5"><text x="17" y="30">P</text><text x="4" y="6.5">N</text><text x="27" y="10.5">T</text></g>
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Introducción a la Física: péndulo y movimiento</title>
+  <g fill="none" stroke="#9B3D00" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M7 3h10" stroke-width="1.1"/>
+    <path d="M12 3v16" stroke-width=".65" stroke-dasharray="1.3 1.8"/>
+    <path d="M12 3l6 12" stroke-width="1.1"/>
+    <circle cx="18.8" cy="16.6" r="1.8" stroke-width="1.1"/>
+    <path d="M4.8 17.2a10.2 10.2 0 0 0 10.7 3" stroke-width=".8"/>
+    <path d="m13.6 19.1 2 .9-1.1 1.8" stroke-width=".8"/>
+  </g>
 </svg>

@@ -45,3 +45,5 @@ Si el agua se despeja de la ecuación, el cierre es algebraico: **no verifica un
 Para continuar con las necesidades térmicas y mecánicas del proceso, consultá el [marco teórico del balance de energía]({{< ref "teoria-balance-energia" >}}).
 
 Las operaciones y corrientes también deben corresponderse con el [layout de la planta piloto]({{< ref "layout-planta-piloto" >}}). Para revisar sus implicancias ambientales y las de los servicios auxiliares, continuá con el [encuadre ambiental y el simulador de NCA]({{< ref "encuadre-ambiental-nca" >}}).
+
+Para relacionar el diseño y los balances con inversión, costos y flujos de fondos, continuá con la [guía de evaluación económica]({{< ref "evaluacion-economica" >}}).

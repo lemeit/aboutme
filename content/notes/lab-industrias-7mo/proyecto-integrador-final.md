@@ -18,7 +18,7 @@ El proyecto integrador final de Laboratorio de Industrias reúne el diseño del 
 | Balance de materia | ¿Qué masas entran, se transforman y salen por lote? | [Guía y calculadora interactiva]({{< ref "balance-materia-interactivo" >}}), con planilla Excel y diagrama. |
 | Balance de energía | ¿Cuánto calor y trabajo requieren las operaciones? | [De la calorimetría a Bernoulli]({{< ref "teoria-balance-energia" >}}). |
 | Simulación del proceso | ¿Cómo se representan y contrastan los balances en los equipos? | [Secuencia de los balances y simulación en DWSIM]({{< ref "simulacion-dwsim-cerveza" >}}). |
-| Evaluación económica | ¿Qué inversión y costos requiere el diseño y cómo se evalúan sus flujos de fondos? | Etapa del proyecto: la guía específica de VAN y TIR todavía no está incorporada a este apartado. |
+| Evaluación económica | ¿Qué inversión y costos requiere el diseño y cómo se evalúan sus flujos de fondos? | [Guía y calculadora de evaluación económica]({{< ref "evaluacion-economica" >}}), con VAN, TIR, flujo de fondos y sensibilidad. |
 | Encuadre ambiental | ¿Qué características del establecimiento determinan su encuadre y sus requisitos ambientales? | [Guía de encuadre ambiental y simulador de NCA]({{< ref "encuadre-ambiental-nca" >}}), con buscador de actividades ARBA. |
 
 La simulación es una herramienta para revisar el diseño, no una parte desconectada de los balances. Del mismo modo, la evaluación económica y el encuadre ambiental pueden exigir volver sobre los equipos, los tratamientos, la localización y los costos.

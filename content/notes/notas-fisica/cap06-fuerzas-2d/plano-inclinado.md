@@ -6,6 +6,8 @@ math = true
 weight = 2
 description = "Fuerzas sobre un objeto en una rampa: componentes paralela y perpendicular, fricción y máquina de Atwood modificada."
 tags = ["cap06", "fuerzas 2D", "plano inclinado", "rampa", "normal", "fricción", "Atwood", "trigonometría"]
+revision_estado = "En revisión: divergencias y notas de adaptación, 21/10/2026"
+lastmod = "2026-10-21"
 +++
 
 ## Objetivos de aprendizaje
@@ -70,7 +72,9 @@ $$F_{neta} = F_g\sin\theta - F_f = mg\sin\theta - \mu_k mg\cos\theta = mg(\sin\t
 
 $$mg\sin\theta = \mu_k mg\cos\theta \implies \tan\theta = \mu_k$$
 
-> **Condiciones recuperadas del original — Bigler, pp. 372–377:** $F_N=mg\cos\theta$ supone contacto y balance perpendicular sin otras fuerzas normales. La relación $\tan\theta=\mu_k$ corresponde al descenso uniforme del ejemplo del esquiador. Si el cuerpo sube, la fricción cinética apunta cuesta abajo; si no desliza, hay que verificar el límite de fricción estática. El sentido de la fricción no es siempre cuesta arriba.
+{{< nota-adaptacion pagina="372" origen="Adaptación anterior: generalización del ejemplo de descenso" >}}
+**Condiciones recuperadas del original — Bigler, pp. 372–377:** $F_N=mg\cos\theta$ supone contacto y balance perpendicular sin otras fuerzas normales. La relación $\tan\theta=\mu_k$ corresponde al descenso uniforme del ejemplo del esquiador. Si el cuerpo sube, la fricción cinética apunta cuesta abajo; si no desliza, hay que verificar el límite de fricción estática. El sentido de la fricción no es siempre cuesta arriba.
+{{< /nota-adaptacion >}}
 
 ---
 

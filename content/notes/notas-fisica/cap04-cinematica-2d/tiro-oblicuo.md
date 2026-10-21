@@ -6,11 +6,12 @@ math = true
 weight = 1
 description = "Movimiento en 2D: componentes independientes horizontal (MRU) y vertical (MRUV). Tiro horizontal y con ángulo."
 tags = ["cap04", "cinemática 2D", "tiro oblicuo", "proyectil", "movimiento 2D", "vectores", "trigonometría"]
-lastmod = "2026-10-14"
+lastmod = "2026-10-21"
 traduccion_estado = "Ampliada"
 cotejo_estado = "Desarrollo cotejado: pp. 242–257"
 figuras_estado = "6 figuras extraídas; ejercicios y tablas reconstruidos"
-visual_estado = "Pendiente: revisión en navegador"
+visual_estado = "Pendiente: revisar cambios editoriales del 21/10/2026"
+revision_estado = "En revisión: divergencias y notas de adaptación, 21/10/2026"
 +++
 
 **Fuente:** Jeff Bigler, *Physics 1: Mechanics in Plain English*, edición octubre de 2025, pp. 242–257. [Consultar el original (PDF)](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf#page=242).
@@ -64,7 +65,9 @@ $$\Delta x=5\sqrt{0{,}3}\approx2{,}74\ \mathrm m$$
 
 En el impacto $v_y=-10\sqrt{0{,}3}\approx-5{,}48\ \mathrm{m/s}$ mientras $v_x=+5\ \mathrm{m/s}$. La velocidad total apunta hacia adelante y hacia abajo. Su módulo, como comprobación propia, es $\sqrt{5^2+5{,}48^2}\approx7{,}42\ \mathrm{m/s}$.
 
-**Aclaración de cálculo:** el original muestra $5(0{,}55)=2{,}74$ con un tiempo ya redondeado. Para obtener 2,74 m se conserva el valor de la raíz hasta el final; el producto literal $5(0{,}55)$ da 2,75 m.
+{{< nota-adaptacion pagina="245" origen="Operación numérica mostrada en el original" >}}
+El original muestra $5(0{,}55)=2{,}74$ con un tiempo ya redondeado. Para obtener 2,74 m se conserva el valor de la raíz hasta el final; el producto literal $5(0{,}55)$ da 2,75 m.
+{{< /nota-adaptacion >}}
 
 Un objeto soltado y otro lanzado horizontalmente desde la misma altura llegan al mismo nivel al mismo tiempo si ambos parten simultáneamente con $v_{0y}=0$ y obedecen el mismo modelo sin aire.
 

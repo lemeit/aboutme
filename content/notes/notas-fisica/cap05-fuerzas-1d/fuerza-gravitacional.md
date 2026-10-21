@@ -6,6 +6,8 @@ math = true
 weight = 4
 description = "Ley de gravitación universal, campo gravitacional, peso aparente y fuerzas g."
 tags = ["cap05", "fuerzas", "gravitación", "campo gravitacional", "peso", "peso aparente", "g-force"]
+revision_estado = "En revisión: divergencias y notas de adaptación, 21/10/2026"
+lastmod = "2026-10-21"
 +++
 
 ## Objetivos de aprendizaje
@@ -30,7 +32,9 @@ donde:
 - $m_1$, $m_2$ — masas de los dos objetos
 - $r$ — distancia entre las masas puntuales; para dos cuerpos esféricamente simétricos sin superposición, distancia entre sus centros
 
-> **Aclaración de la adaptación — Bigler, pp. 299–300:** el original introduce la ley y luego aplica un modelo de la Tierra con centro de masa en su centro físico. La fórmula entre centros no debe extenderse sin más a cualquier distribución de masa: para cuerpos de forma arbitraria hay que considerar cómo está distribuida. El caso terrestre de estas notas es una aproximación esférica.
+{{< nota-adaptacion pagina="299" origen="Adaptación anterior: generalización del modelo del original" >}}
+El original introduce la ley y luego aplica un modelo de la Tierra con centro de masa en su centro físico. La fórmula entre centros no debe extenderse sin más a cualquier distribución de masa: para cuerpos de forma arbitraria hay que considerar cómo está distribuida. El caso terrestre de estas notas es una aproximación esférica.
+{{< /nota-adaptacion >}}
 
 ---
 

@@ -6,11 +6,12 @@ math = true
 weight = 2
 description = "Unidades base del SI, prefijos métricos, conversiones y notación científica."
 tags = ["cap02", "matemáticas", "SI", "unidades", "prefijos", "notación científica", "conversiones"]
-lastmod = "2026-10-13"
+lastmod = "2026-10-21"
 traduccion_estado = "Ampliada"
 cotejo_estado = "Desarrollo y ejercicios cotejados: pp. 117–127"
 figuras_estado = "Sin figuras; tablas reconstruidas"
-visual_estado = "Verificada: escritorio y móvil"
+visual_estado = "Pendiente: revisar cambios editoriales del 21/10/2026"
+revision_estado = "En revisión: divergencias y notas de adaptación, 21/10/2026"
 +++
 
 **Fuente:** Jeff Bigler, *Physics 1: Mechanics in Plain English*, edición octubre de 2025, pp. 117–127. [Consultar el original (PDF)](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf#page=117). Traducción y adaptación desarrollada; se señalan las aclaraciones propias.
@@ -210,7 +211,9 @@ $$1\ \mathrm{N}=1\ \mathrm{kg\,m/s^2}=10^5\ \mathrm{dyn}$$
 
 $$1\ \mathrm{J}=1\ \mathrm{kg\,m^2/s^2}=10^7\ \mathrm{erg}$$
 
-**Corrección del original:** la p. 121 generaliza un factor $10^5$ para unidades correspondientes, pero para energía el factor es $10^7$ porque la longitud aparece al cuadrado. En estas notas se usa SI; la comparación ilustra por qué hay que revisar dimensiones y exponentes.
+{{< nota-adaptacion pagina="121" origen="Generalización del original: factores MKS y cgs" >}}
+La p. 121 generaliza un factor $10^5$ para unidades correspondientes, pero para energía el factor es $10^7$ porque la longitud aparece al cuadrado. En estas notas se usa SI; la comparación ilustra por qué hay que revisar dimensiones y exponentes.
+{{< /nota-adaptacion >}}
 
 ## Escritura de unidades
 

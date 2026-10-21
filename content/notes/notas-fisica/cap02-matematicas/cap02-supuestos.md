@@ -6,11 +6,12 @@ math = true
 weight = 1
 description = "Las suposiciones ideales que usamos para simplificar problemas de Física."
 tags = ["cap02", "matemáticas", "supuestos", "idealización", "resolución de problemas"]
-lastmod = "2026-10-13"
+lastmod = "2026-10-21"
 traduccion_estado = "Ampliada"
 cotejo_estado = "Desarrollo y ejercicios cotejados: pp. 114–116"
 figuras_estado = "Sin figuras; tablas reconstruidas"
-visual_estado = "Verificada: escritorio y móvil"
+visual_estado = "Pendiente: revisar cambios editoriales del 21/10/2026"
+revision_estado = "En revisión: divergencias y notas de adaptación, 21/10/2026"
 +++
 
 **Fuente:** Jeff Bigler, *Physics 1: Mechanics in Plain English*, edición octubre de 2025, pp. 114–116. [Consultar el original (PDF)](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf#page=114). Traducción y adaptación desarrollada; se señalan las aclaraciones propias.
@@ -107,7 +108,9 @@ Conservar la energía total no implica que se conserve la energía mecánica de 
 
 ## Gas ideal
 
+{{< nota-adaptacion pagina="115" origen="Formulación abreviada del original: colisiones en un gas ideal" >}}
 En el modelo elemental de gas ideal se desprecia el volumen de las moléculas frente al del recipiente y se omiten interacciones entre ellas **excepto durante colisiones**, que se consideran elásticas. Esa es una precisión respecto de la formulación abreviada del original: decir que no interactúan al colisionar sería contradictorio. El modelo deja de ser adecuado en condiciones donde las interacciones y el tamaño molecular importan.
+{{< /nota-adaptacion >}}
 
 ## Declarar y comprobar
 

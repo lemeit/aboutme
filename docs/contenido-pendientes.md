@@ -1,8 +1,14 @@
 # Estado editorial y próximos pasos
 
-Revisión de continuidad: 14/10/2026. Documento interno, fuera de `content/`; no aparece en Hugo.
+Revisión de continuidad: 21/10/2026. Documento interno, fuera de `content/`; no aparece en Hugo.
+
+## Prioridad vigente
+
+A pedido del usuario, se pausa la ampliación para revisar divergencias desde el capítulo 1. Ver `docs/bigler-revision-divergencias.md`. Los pasajes señalados llevan «Nota de adaptación · En revisión»; no se declara completada la nueva revisión integral.
 
 ## Qué ya está publicado
+
+- Correcciones cotejadas de ocho notas: PR #4 integrado y producción confirmada el 14/10/2026. Despliegue `ba9b175f-33d9-41df-a1d2-c3163d37ff72`, commit de producción `1c9aff2` (incluye regeneración de PDF). Se comprobaron los cambios en las ocho URLs públicas.
 
 - Capítulos 1 y 2: adaptación ampliada, figuras incorporadas y comprobación de escritorio/móvil registrada.
 - Capítulo 3: nueve notas ampliadas/revisadas, 26 imágenes (24 nuevas) y publicación mediante PR #2. Se comprobaron online 497 expresiones KaTeX sin errores, carga de imágenes y ausencia de fragmentos de shortcodes o desplegables vacíos. Esto no equivale a una revisión visual exhaustiva de todo el capítulo en escritorio/móvil ni a una edición definitiva del libro.
@@ -13,16 +19,16 @@ Revisión de continuidad: 14/10/2026. Documento interno, fuera de `content/`; no
 
 | Parte | Estado | Trabajo siguiente |
 |---|---|---|
-| Capítulo 4, Cinemática 2D | 5 notas breves, sin cotejo editorial registrado | Proyectiles, movimiento angular, aceleración angular, circular y comparación lineal/rotacional |
-| Capítulo 5, Fuerzas 1D | 10 notas breves, sin cotejo editorial registrado | Newton, centro de masa, tipos de fuerzas, gravedad, diagramas, aplicaciones, tensión, fricción, resortes y arrastre |
+| Capítulo 4, Cinemática 2D | 5 notas ampliadas con 9 figuras, publicadas mediante PR #11; presencia de figuras comprobada online el 21/10/2026 | Correcciones posteriores de tablas y notas editoriales en local; nueva revisión pendiente |
+| Capítulo 5, Fuerzas 1D | Leyes de Newton ampliada (pp. 280–285), incluida en esta tanda editorial; 9 notas por ampliar | Centro de masa, tipos de fuerzas, gravedad, diagramas, aplicaciones, tensión, fricción, resortes y arrastre |
 | Capítulo 6, Fuerzas 2D | 2 notas breves, sin cotejo editorial registrado | Fuerzas en ángulo y plano inclinado; inventariar secciones faltantes del original |
 | Capítulos 7–13 | Solo índices, sin notas desarrolladas | Rotación, gravitación, energía/trabajo/potencia, cantidad de movimiento, MAS, fluidos y relatividad especial |
 
-En capítulos 4–6 hay **17 notas** y **6 marcadores de imagen «capturar»**: tres en tiro oblicuo, uno en movimiento centrípeto, uno en tensión y uno en fricción. Este número cuenta marcadores existentes, no todas las figuras que habrá que recuperar del original. Las notas actuales son resúmenes: su cantidad no expresa cobertura completa de cada capítulo.
+Antes de ampliar el capítulo 4 había 17 notas breves y 6 marcadores «capturar». La tanda local del capítulo 4 recupera sus cuatro marcadores con figuras cotejadas. Quedan **11 notas por ampliar en capítulos 5–6** y **2 marcadores «capturar»**, en tensión y fricción. Ese conteo no representa todas las figuras ni secciones del original que faltan por recuperar.
 
 ## Problemas detectados que deben corregirse al ampliar
 
-La tabla siguiente fue una revisión preliminar de afirmaciones en los archivos del sitio. **No permite atribuir los problemas a la traducción.** El cotejo posterior por páginas está en `docs/bigler-cotejo-observaciones.md` y prevalece sobre esta clasificación: varias expresiones ya están en el original; otras perdieron matices al resumirse. En particular, los signos de Atwood no se consideran un error del original. No se modificó todavía el texto público.
+La tabla siguiente fue una revisión preliminar de afirmaciones en los archivos del sitio. **No permite atribuir los problemas a la traducción.** El cotejo posterior por páginas está en `docs/bigler-cotejo-observaciones.md` y prevalece sobre esta clasificación: varias expresiones ya están en el original; otras perdieron matices al resumirse. En particular, los signos de Atwood no se consideran un error del original. Las correcciones cotejadas se integraron mediante PR #4; la tabla conserva el diagnóstico inicial, no una lista de errores aún presentes.
 
 | Prioridad | Archivo | Problema concreto | Tratamiento necesario |
 |---|---|---|---|

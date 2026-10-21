@@ -6,11 +6,12 @@ math = true
 weight = 1
 description = "Ramas de la Física, método científico, teoría, ley, hipótesis y lenguaje de la ciencia."
 tags = ["U1", "Física", "método científico", "teoría", "ley", "hipótesis", "conocimiento científico"]
-lastmod = "2026-10-13"
+lastmod = "2026-10-21"
 traduccion_estado = "Ampliada"
 cotejo_estado = "Desarrollo cotejado: pp. 23–33"
 figuras_estado = "2 figuras incorporadas; recortes revisados"
-visual_estado = "Verificada: escritorio y móvil"
+visual_estado = "Pendiente: revisar cambios editoriales del 21/10/2026"
+revision_estado = "En revisión: divergencias y notas de adaptación, 21/10/2026"
 +++
 
 **Fuente:** Jeff Bigler, *Physics 1: Mechanics in Plain English*, edición octubre de 2025, pp. 23–33. [Consultar el original (PDF)](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf#page=23). Traducción y adaptación desarrollada; las actividades propias se identifican aparte.
@@ -87,7 +88,7 @@ Cuando un científico descubre algo importante, lo expresa como una **afirmació
 | **Evidence** (evidencia) | Observaciones y resultados experimentales que respaldan la afirmación |
 | **Reasoning** (razonamiento) | Explicación de cómo la evidencia sostiene la afirmación |
 
-Antes de ser aceptada, cualquier afirmación pasa por la **revisión de pares** (*peer review*): otros científicos intentan refutarla, cuestionar la evidencia o encontrar fallas en el razonamiento. Esto no es un ataque — es un proceso que fortalece el conocimiento.
+En la comunicación científica, la **revisión de pares** (*peer review*) permite evaluar trabajos y afirmaciones: otros científicos intentan refutarla, cuestionar la evidencia o encontrar fallas en el razonamiento. Esto no es un ataque — es un proceso que fortalece el conocimiento.
 
 ---
 
@@ -98,7 +99,7 @@ Estos términos tienen significados **distintos** en ciencia y en el lenguaje co
 | Término | En ciencia | En el lenguaje cotidiano |
 |---------|-----------|--------------------------|
 | **Teoría** | Explicación respaldada por evidencia que permite interpretar observaciones y hacer predicciones | Suposición, conjetura |
-| **Ley** | Descripción de algo que siempre ocurre y puede predecirse, sin necesidad de explicar el *por qué* | Norma con castigo |
+| **Ley** | Descripción de una regularidad o relación dentro de su dominio de validez, sin exigir una explicación causal completa | Norma con castigo |
 | **Modelo** | Representación que ayuda a visualizar o entender algo | Copia exacta a escala menor |
 | **Hecho** | Afirmación extensamente confirmada por la comunidad científica (provisional; nueva evidencia puede modificarlo) | Verdad inmutable |
 | **Hipótesis** | Predicción concreta y testeable sobre el resultado de un experimento | Idea inicial, "corazonada" |
@@ -122,8 +123,8 @@ Si un experimento reproducible contradice una teoría y pasa la revisión de par
 | **Opinión** | Juicios basados en evidencia y experiencia | Preferencias subjetivas |
 | **Escepticismo** | Evaluar una afirmación según la calidad de la evidencia | Negativismo o negacionismo |
 | **Consenso** | Amplio acuerdo basado en extensa evidencia | Opinión popular |
-| **Error** | Incertidumbre medida o calculada (no una equivocación) | Mistake, equivocación |
-| **Incertidumbre** | Rango de confianza en un resultado | "No estar seguro" |
+| **Error de medición** | Diferencia respecto de un valor de referencia; se distingue de la incertidumbre | Mistake, equivocación |
+| **Incertidumbre** | Caracteriza la dispersión de valores atribuibles a la magnitud medida | "No estar seguro" |
 
 ---
 
@@ -180,3 +181,8 @@ Una teoría y una ley pueden producir predicciones comprobables. Una teoría pro
 ---
 
 *Adaptado de [Jeff Bigler — Physics 1: Mechanics in Plain English](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf), licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Traducción y adaptación: Prof. Ing. Luciano Lamaita, 2026.*
+
+
+{{< nota-adaptacion pagina="31" origen="Terminología del original y síntesis de esta adaptación" >}}
+Las definiciones de teoría, ley y modelo son una guía introductoria, no una jerarquía ni una garantía de validez universal. En la tabla se distingue error de medición de incertidumbre, siguiendo el [VIM](https://jcgm.bipm.org/vim/en/2.16.html); la síntesis anterior los confundía. La revisión de pares tampoco asegura por sí sola que una afirmación sea correcta.
+{{< /nota-adaptacion >}}

@@ -6,11 +6,12 @@ math = true
 weight = 9
 description = "Marco de referencia inercial, principio de relatividad y suma de velocidades."
 tags = ["cap03", "cinemática", "movimiento relativo", "velocidad relativa", "marco de referencia", "relatividad"]
-lastmod = "2026-10-14"
+lastmod = "2026-10-21"
 traduccion_estado = "Ampliada"
 cotejo_estado = "Desarrollo cotejado: pp. 228–237"
 figuras_estado = "3 esquemas extraídos; fotos e ilustraciones contextuales omitidas"
-visual_estado = "Pendiente: inspección visual y auto-render en navegador; LaTeX validado"
+visual_estado = "Pendiente: revisar cambios editoriales del 21/10/2026"
+revision_estado = "En revisión: divergencias y notas de adaptación, 21/10/2026"
 +++
 
 **Fuente:** Jeff Bigler, *Physics 1: Mechanics in Plain English*, edición octubre de 2025, pp. 228–237. [Consultar el original (PDF)](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf#page=228).
@@ -37,7 +38,9 @@ La sensación de que el propio tren arranca cuando se mueve el de al lado es un 
 
 **Aclaración de la adaptación:** «no sentir fuerza» no prueba que se está en reposo, y tampoco exige ausencia de todas las fuerzas: sentado actúan el peso y la fuerza del asiento. El equilibrio de fuerzas y la aceleración son los conceptos pertinentes.
 
+{{< nota-adaptacion pagina="230" origen="Ejemplos de referencia del original; omisiones identificadas" >}}
 El original agrega ejemplos de un avión y del movimiento de la Tierra a escalas astronómicas. Aquí conservamos su idea central sin usar el cambio de huso horario como demostración de un avión inmóvil en un marco inercial: husos horarios y rotación terrestre no bastan para establecerlo. Las cifras cosmológicas y esa ilustración se omiten porque no son necesarias para la suma clásica de velocidades de esta unidad.
+{{< /nota-adaptacion >}}
 
 ## Una pelota dentro de un vehículo
 

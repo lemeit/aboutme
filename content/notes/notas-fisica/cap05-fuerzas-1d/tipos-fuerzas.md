@@ -6,6 +6,8 @@ math = true
 weight = 3
 description = "Catálogo de fuerzas: peso, tensión, normal, fricción, empuje, resorte, arrastre y sustentación."
 tags = ["cap05", "fuerzas", "peso", "tensión", "normal", "fricción", "empuje", "resorte", "arrastre"]
+revision_estado = "En revisión: divergencias y notas de adaptación, 21/10/2026"
+lastmod = "2026-10-21"
 +++
 
 ## Objetivos de aprendizaje
@@ -58,7 +60,9 @@ $$F_g = m\,g \qquad g \approx 10\ \text{m/s}^2$$
 
 Fuerza de tracción ejercida por una cuerda, cable o hilo sobre el cuerpo al que está unido. Su dirección es a lo largo del hilo.
 
-> **Aclaración de la adaptación — Bigler, p. 294:** el original dice que la tensión es «su propia fuerza de reacción». Para identificar la tercera ley hay que distinguir cuerpos: la cuerda tira del bloque y el bloque tira de la cuerda con una fuerza igual y opuesta. Esas fuerzas actúan sobre cuerpos diferentes y no se cancelan en el diagrama del bloque.
+{{< nota-adaptacion pagina="294" origen="Texto del original: tensión y tercera ley" >}}
+El original dice que la tensión es «su propia fuerza de reacción». Para identificar la tercera ley hay que distinguir cuerpos: la cuerda tira del bloque y el bloque tira de la cuerda con una fuerza igual y opuesta. Esas fuerzas actúan sobre cuerpos diferentes y no se cancelan en el diagrama del bloque.
+{{< /nota-adaptacion >}}
 
 ### Fuerza normal ($\vec{F}_N$)
 

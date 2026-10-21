@@ -6,11 +6,12 @@ math = true
 weight = 3
 description = "Aceleración angular, ecuaciones rotacionales paralelas a las lineales y aceleración tangencial."
 tags = ["cap04", "cinemática 2D", "aceleración angular", "rotación", "ecuaciones rotacionales"]
-lastmod = "2026-10-14"
+lastmod = "2026-10-21"
 traduccion_estado = "Ampliada"
 cotejo_estado = "Desarrollo cotejado: pp. 262–265"
 figuras_estado = "Ecuaciones y problemas reconstruidos; sin recortes necesarios"
-visual_estado = "Pendiente: revisión en navegador"
+visual_estado = "Pendiente: revisar cambios editoriales del 21/10/2026"
+revision_estado = "En revisión: divergencias y notas de adaptación, 21/10/2026"
 +++
 
 **Fuente:** Jeff Bigler, *Physics 1: Mechanics in Plain English*, edición octubre de 2025, pp. 262–265. [Consultar el original (PDF)](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf#page=262).
@@ -118,7 +119,9 @@ $$\omega_0=\frac{100}{3}\frac{2\pi}{60}=\frac{10\pi}{9}\ \mathrm{rad/s}$$
 
 $$\alpha=-\frac{10\pi/9}{26}=-\frac{5\pi}{117}\ \mathrm{rad/s^2}\approx-0{,}1343\ \mathrm{rad/s^2}$$
 
+{{< nota-adaptacion pagina="265" origen="Respuesta numérica del original" >}}
 El original indica −0,135 rad/s². Usando el dato de 33⅓ rpm sin redondearlo antes, el resultado es aproximadamente −0,1343; se explicita esta pequeña diferencia de redondeo. En 26 s recorre $130\pi/9\approx45{,}38$ rad, unas 7,22 vueltas, bajo el modelo uniforme.
+{{< /nota-adaptacion >}}
 
 ## Control del ejemplo de bicicleta
 

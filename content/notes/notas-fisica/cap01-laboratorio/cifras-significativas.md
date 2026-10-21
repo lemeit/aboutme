@@ -6,11 +6,12 @@ math = true
 weight = 4
 description = "Identificar dígitos significativos, reglas de redondeo en suma/resta y multiplicación/división."
 tags = ["U1", "laboratorio", "cifras significativas", "redondeo", "medición", "incerteza"]
-lastmod = "2026-10-13"
+lastmod = "2026-10-21"
 traduccion_estado = "Ampliada"
 cotejo_estado = "Desarrollo y ejercicios cotejados: pp. 74–82"
 figuras_estado = "Tablas reconstruidas; sin recortes necesarios"
-visual_estado = "Verificada: escritorio y móvil"
+visual_estado = "Pendiente: revisar cambios editoriales del 21/10/2026"
+revision_estado = "En revisión: divergencias y notas de adaptación, 21/10/2026"
 +++
 
 **Fuente:** Jeff Bigler, *Physics 1: Mechanics in Plain English*, edición octubre de 2025, pp. 74–82. [Consultar el original (PDF)](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf#page=74). Traducción y adaptación desarrollada; las actividades propias se identifican aparte.
@@ -34,7 +35,7 @@ Las **cifras significativas** (o dígitos significativos) son una forma rápida 
 
 ## ¿Qué es un dígito significativo?
 
-Los **dígitos significativos** son los dígitos de un número que no han sido redondeados. Son la parte "medida" del número.
+Los **dígitos significativos** son los dígitos conservados para comunicar la precisión de un valor medido o calculado. Incluyen el último dígito informado, que puede estar estimado o haber cambiado al redondear.
 
 ### Reglas para identificarlos
 
@@ -160,3 +161,8 @@ No confundas ese caso con un factor medido y redondeado a “1”. El ejemplo ex
 ---
 
 *Adaptado de [Jeff Bigler — Physics 1: Mechanics in Plain English](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf), licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Traducción y adaptación: Prof. Ing. Luciano Lamaita, 2026.*
+
+
+{{< nota-adaptacion pagina="76" origen="Definición verbal y convención del original" >}}
+El original llama significativos a los dígitos que no fueron redondeados, pero su propio ejemplo cambia 234 567 a 235 000 y cuenta el 5 como significativo. Aquí se habla de dígitos conservados: el último no tiene por qué ser exacto ni coincidir con el dígito previo al redondeo. Los ceros finales de un entero necesitan una convención explícita o notación científica; no se conoce su precisión solo mirando el número.
+{{< /nota-adaptacion >}}

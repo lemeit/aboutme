@@ -8,7 +8,9 @@ description = "Medidas de ángulos, longitud de arco y elección del modo de la 
 traduccion_estado = "Ampliada"
 cotejo_estado = "Desarrollo cotejado: pp. 171–173"
 figuras_estado = "2 figuras extraídas y revisadas"
-visual_estado = "Verificada: escritorio y móvil"
+visual_estado = "Pendiente: revisar cambios editoriales del 21/10/2026"
+revision_estado = "En revisión: divergencias y notas de adaptación, 21/10/2026"
+lastmod = "2026-10-21"
 +++
 
 **Fuente:** Jeff Bigler, *Physics 1: Mechanics in Plain English*, edición octubre de 2025, pp. 171–173. [Consultar el original (PDF)](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf#page=171).
@@ -23,7 +25,9 @@ El radián aparece de forma natural al relacionar el arco $s$ de una circunferen
 
 $$\theta=\frac{s}{r},\qquad s=r\theta$$
 
-**Corrección del original:** una frase de la p. 171 dice que el ángulo es arco multiplicado por radio. La relación correcta es el cociente $s/r$. Esa división entre longitudes explica que el ángulo en radianes sea adimensional; el símbolo rad sigue siendo útil para aclarar qué magnitud se expresa.
+{{< nota-adaptacion pagina="171" origen="Texto del original: arco y radio" >}}
+Una frase de la p. 171 dice que el ángulo es arco multiplicado por radio. La relación correcta es el cociente $s/r$. Esa división entre longitudes explica que el ángulo en radianes sea adimensional; el símbolo rad sigue siendo útil para aclarar qué magnitud se expresa.
+{{< /nota-adaptacion >}}
 
 {{< figura src="/images/diagramas/cap02_radian_pp171.png" width="320" alt="Arco de circunferencia de longitud igual al radio, que define un ángulo de un radián." caption="La definición relaciona arco y radio. Las etiquetas se conservan como aparecen en el original." source="Jeff Bigler, edición octubre de 2025, p. 171. Recorte del original, CC BY-NC-SA 4.0." >}}
 

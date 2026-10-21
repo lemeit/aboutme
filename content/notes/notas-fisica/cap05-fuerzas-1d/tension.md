@@ -6,6 +6,8 @@ math = true
 weight = 7
 description = "Tensión en cuerdas, poleas simples, ventaja mecánica y máquina de Atwood."
 tags = ["cap05", "fuerzas", "tensión", "polea", "Atwood", "ventaja mecánica", "cuerdas"]
+revision_estado = "En revisión: divergencias y notas de adaptación, 21/10/2026"
+lastmod = "2026-10-21"
 +++
 
 ## Objetivos de aprendizaje
@@ -51,7 +53,9 @@ $$\text{Ventaja mecánica} = \frac{\text{peso del objeto}}{\text{fuerza aplicada
 | 2 | $F_g/2$ | $2d$ |
 | 3 | $F_g/3$ | $3d$ |
 
-> **Aclaración de la adaptación — Bigler, pp. 326–327:** el original relaciona poleas y ramales en los montajes que dibuja. Esa correspondencia no es universal: hay que contar los ramales que sostienen la parte móvil, no las ruedas. La tabla expresa ese conteo; supone ramales paralelos, cuerda y poleas ideales y peso de la parte móvil incluido en la carga.
+{{< nota-adaptacion pagina="327" origen="Caso mixto: ejemplos del original y generalización del resumen" >}}
+El original relaciona poleas y ramales en los montajes que dibuja. Esa correspondencia no es universal: hay que contar los ramales que sostienen la parte móvil, no las ruedas. La tabla expresa ese conteo; supone ramales paralelos, cuerda y poleas ideales y peso de la parte móvil incluido en la carga.
+{{< /nota-adaptacion >}}
 
 La ventaja mecánica ideal reduce la fuerza pero **no reduce el trabajo**: aumentar la distancia compensa la reducción de fuerza. Con rozamiento, el trabajo de entrada es mayor.
 
@@ -81,7 +85,9 @@ $$F_T-m_1g=m_1a\quad\Rightarrow\quad F_T=5\left(\frac{10}{3}+10\right)=\frac{200
 
 El bloque 2 comprueba el mismo resultado: $m_2g-F_T=m_2a$, por lo que $F_T=10(10-10/3)=200/3\ \mathrm N$. Es mayor que 50 N y menor que 100 N.
 
-> **Aclaración del cálculo — Bigler, p. 329:** el original presenta 66,6 N con cifras intermedias redondeadas. Aquí conservamos la fracción hasta el final y obtenemos aproximadamente 66,7 N. La expresión del resumen anterior $5(3{,}3+10)=66{,}6$ no era aritméticamente correcta: ese producto vale 66,5. Los signos originales responden a la convención por bloque y no se consideran un error.
+{{< nota-adaptacion pagina="329" origen="Caso mixto: redondeo original y operación de la adaptación" >}}
+El original presenta 66,6 N con cifras intermedias redondeadas. Aquí conservamos la fracción hasta el final y obtenemos aproximadamente 66,7 N. La expresión del resumen anterior $5(3{,}3+10)=66{,}6$ no era aritméticamente correcta: ese producto vale 66,5. Los signos originales responden a la convención por bloque y no se consideran un error.
+{{< /nota-adaptacion >}}
 
 ---
 

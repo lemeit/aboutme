@@ -6,11 +6,12 @@ math = true
 weight = 5
 description = "Seno, coseno, tangente y su aplicación para descomponer vectores en componentes."
 tags = ["cap02", "matemáticas", "trigonometría", "seno", "coseno", "tangente", "vectores", "componentes"]
-lastmod = "2026-10-13"
+lastmod = "2026-10-21"
 traduccion_estado = "Ampliada"
 cotejo_estado = "Desarrollo y ejercicios cotejados: pp. 146–151"
 figuras_estado = "6 figuras extraídas y revisadas"
-visual_estado = "Verificada: escritorio y móvil"
+visual_estado = "Pendiente: revisar cambios editoriales del 21/10/2026"
+revision_estado = "En revisión: divergencias y notas de adaptación, 21/10/2026"
 +++
 
 **Fuente:** Jeff Bigler, *Physics 1: Mechanics in Plain English*, edición octubre de 2025, pp. 146–151. [Consultar el original (PDF)](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf#page=146). Traducción y adaptación desarrollada; se señalan las aclaraciones propias.
@@ -144,7 +145,13 @@ Para los ejercicios 1–5, $C$ es la hipotenusa, $A$ el cateto adyacente a $\the
 3. Si $C=20$ y $\theta=50^\circ$, calculá ambos catetos. **Comprobación:** $A\approx12{,}86$ y $B\approx15{,}32$.
 4. Si $A=100$ y $C=150$, calculá $\theta$. **Comprobación:** aproximadamente $48{,}19^\circ$.
 5. Si $B=100$ y $C=150$, calculá $\theta$. **Comprobación:** aproximadamente $41{,}81^\circ$.
-6. Una pelota está a 10 m del pie de una elevación de 2,5 m. Calculá el ángulo de la línea que une su posición con la cima: $\arctan(2{,}5/10)\approx14{,}04^\circ$. **Aclaración de esta adaptación:** el original presenta ese valor como un ángulo mínimo de lanzamiento de golf; una trayectoria real es curva y para determinar el ángulo de lanzamiento también se necesita la rapidez inicial u otras condiciones. Aquí se resuelve el problema geométrico que esos dos datos permiten plantear.
+
+6. Una pelota está a 10 m del pie de una elevación de 2,5 m. Calculá el ángulo de la línea que une su posición con la cima: $\arctan(2{,}5/10)\approx14{,}04^\circ$.
+
+{{< nota-adaptacion pagina="151" origen="Ejercicio del original: geometría y lanzamiento" >}}
+El original presenta ese valor como un ángulo mínimo de lanzamiento de golf; una trayectoria real es curva y para determinar el ángulo de lanzamiento también se necesita la rapidez inicial u otras condiciones. Aquí se resuelve el problema geométrico que esos dos datos permiten plantear.
+{{< /nota-adaptacion >}}
+
 7. Una fuerza de 80 N forma $40^\circ$ sobre la horizontal. Hallá su componente horizontal. **Comprobación:** $F_x=80\cos40^\circ\approx61{,}28$ N.
 
 Mostrá qué razón se usa y cómo se despeja la incógnita, en lugar de escribir únicamente el resultado de una tecla.

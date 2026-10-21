@@ -27,15 +27,16 @@ def main():
         if not notes:
             lines.extend(["Sin notas desarrolladas.", ""])
             continue
-        lines.extend(["| Nota | Texto | Cotejo | Figuras | Visual Hugo |",
-                      "|---|---|---|---|---|"])
+        lines.extend(["| Nota | Texto | Cotejo | Figuras | Visual Hugo | Revisión de divergencias |",
+                      "|---|---|---|---|---|---|"])
         for note in notes:
             params = metadata(note)
             title = f'[{cell(params["title"])}](../{note.relative_to(ROOT).as_posix()})'
             values = [title, cell(params.get("traduccion_estado", "Por revisar")),
                       cell(params.get("cotejo_estado", "Pendiente")),
                       cell(params.get("figuras_estado", "Por revisar")),
-                      cell(params.get("visual_estado", "Pendiente"))]
+                      cell(params.get("visual_estado", "Pendiente")),
+                      cell(params.get("revision_estado", "Pendiente: nueva revisión desde el capítulo 1"))]
             lines.append("| " + " | ".join(values) + " |")
         lines.append("")
     destination = ROOT / "docs/bigler-avance.md"

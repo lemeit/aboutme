@@ -6,11 +6,12 @@ math = true
 weight = 2
 description = "Variables, diseño experimental por diseño inverso, experimentos cualitativos y cuantitativos."
 tags = ["U1", "laboratorio", "experimento", "variable independiente", "variable dependiente", "método científico"]
-lastmod = "2026-10-13"
+lastmod = "2026-10-21"
 traduccion_estado = "Ampliada"
 cotejo_estado = "Desarrollo y ejemplo cotejados: pp. 41–53"
 figuras_estado = "1 figura extraída; flujo reconstruido"
-visual_estado = "Verificada: escritorio y móvil"
+visual_estado = "Pendiente: revisar cambios editoriales del 21/10/2026"
+revision_estado = "En revisión: divergencias y notas de adaptación, 21/10/2026"
 +++
 
 **Fuente:** Jeff Bigler, *Physics 1: Mechanics in Plain English*, edición octubre de 2025, pp. 41–53. [Consultar el original (PDF)](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf#page=41). Traducción y adaptación desarrollada; las actividades propias se identifican aparte.
@@ -178,7 +179,9 @@ Elegir el frente del carro como referencia evita comparar un inicio medido con u
 
 Bigler propone para su curso la regla **8 y 10**: al menos ocho puntos y un rango de la variable manipulada que abarque un factor diez. Es una orientación didáctica, no una garantía de significación estadística. El rango viable depende del equipo y de que el modelo siga siendo válido; no conviene imponer un factor diez si destruye esas condiciones.
 
-**Aclaración estadística de esta adaptación:** la significación se evalúa con un modelo y un análisis adecuados. No se demuestra contando puntos, y un umbral del 5 % no significa que haya un 5 % de probabilidad de que la conclusión sea falsa. Además de variar las condiciones, repetir ensayos permite estimar la dispersión.
+{{< nota-adaptacion pagina="45" origen="Interpretación estadística del original" >}}
+La significación se evalúa con un modelo y un análisis adecuados. No se demuestra contando puntos, y un umbral del 5 % no significa que haya un 5 % de probabilidad de que la conclusión sea falsa. Además de variar las condiciones, repetir ensayos permite estimar la dispersión.
+{{< /nota-adaptacion >}}
 
 ## Analizar en el orden inverso
 

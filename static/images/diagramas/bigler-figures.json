@@ -880,6 +880,131 @@
       "caption": "Gráfico del carrito en el ejemplo de respuesta desarrollada.",
       "embedded_image": "/Image2159",
       "file": "static/images/diagramas/cap03_ejemplo-carrito_pp225.png"
+    },
+    {
+      "name": "cap04_tiro-horizontal_pp245",
+      "pdf_page": 245,
+      "printed_page": 245,
+      "box_pt": [
+        168.43,
+        489.41,
+        498.86,
+        683.06
+      ],
+      "caption": "Trayectoria del tiro horizontal.",
+      "embedded_image": "/Image2257",
+      "file": "static/images/diagramas/cap04_tiro-horizontal_pp245.png"
+    },
+    {
+      "name": "cap04_componentes-lanzamiento_pp246",
+      "pdf_page": 246,
+      "printed_page": 246,
+      "box_pt": [
+        245.9,
+        132.35,
+        420.82,
+        275.6
+      ],
+      "caption": "Componentes de velocidad inicial.",
+      "embedded_image": "/Image2259",
+      "file": "static/images/diagramas/cap04_componentes-lanzamiento_pp246.png"
+    },
+    {
+      "name": "cap04_velocidad-en-vuelo_pp246",
+      "pdf_page": 246,
+      "printed_page": 246,
+      "box_pt": [
+        179.9,
+        392.66,
+        487.4,
+        557.66
+      ],
+      "caption": "Velocidades durante el vuelo.",
+      "embedded_image": "/Image1496",
+      "file": "static/images/diagramas/cap04_velocidad-en-vuelo_pp246.png"
+    },
+    {
+      "name": "cap04_trayectoria-pajaro_pp248",
+      "pdf_page": 248,
+      "printed_page": 248,
+      "box_pt": [
+        173.1,
+        90.39,
+        512.16,
+        269.64
+      ],
+      "caption": "Trayectoria del ejemplo del pájaro.",
+      "embedded_image": "/Image2277",
+      "file": "static/images/diagramas/cap04_trayectoria-pajaro_pp248.png"
+    },
+    {
+      "name": "cap04_pelota-valla_pp251",
+      "pdf_page": 251,
+      "printed_page": 251,
+      "box_pt": [
+        144.0,
+        150.1,
+        532.5,
+        243.1
+      ],
+      "caption": "Pelota que pasa una valla.",
+      "embedded_image": "/Image2298",
+      "file": "static/images/diagramas/cap04_pelota-valla_pp251.png"
+    },
+    {
+      "name": "cap04_arco-radianes_pp258",
+      "pdf_page": 258,
+      "printed_page": 258,
+      "box_pt": [
+        275.15,
+        528.96,
+        392.15,
+        635.46
+      ],
+      "caption": "Arco y ángulo en radianes.",
+      "embedded_image": "/Image2317",
+      "file": "static/images/diagramas/cap04_arco-radianes_pp258.png"
+    },
+    {
+      "name": "cap04_rueda-cuerda_pp261",
+      "pdf_page": 261,
+      "printed_page": 261,
+      "box_pt": [
+        444.0,
+        100.84,
+        531.0,
+        235.84
+      ],
+      "caption": "Rueda que desenrolla cuerda.",
+      "embedded_image": "/Image2368",
+      "file": "static/images/diagramas/cap04_rueda-cuerda_pp261.png"
+    },
+    {
+      "name": "cap04_velocidad-aceleracion-circular_pp266",
+      "pdf_page": 266,
+      "printed_page": 266,
+      "box_pt": [
+        380.8,
+        555.66,
+        522.58,
+        647.06
+      ],
+      "caption": "Velocidad y aceleración en movimiento circular.",
+      "embedded_image": "/Image2410",
+      "file": "static/images/diagramas/cap04_velocidad-aceleracion-circular_pp266.png"
+    },
+    {
+      "name": "cap04_graficos-proyectil_pp249",
+      "pdf_page": 249,
+      "printed_page": 249,
+      "box_pt": [
+        157,
+        266,
+        527,
+        447
+      ],
+      "caption": "Opciones A–D de velocidad y aceleración verticales.",
+      "file": "static/images/diagramas/cap04_graficos-proyectil_pp249.png"
     }
   ]
 }

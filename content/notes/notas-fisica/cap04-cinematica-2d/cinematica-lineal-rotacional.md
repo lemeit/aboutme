@@ -6,7 +6,14 @@ math = true
 weight = 5
 description = "Tabla comparativa completa de variables y ecuaciones lineales vs. angulares. Estrategia de resolución."
 tags = ["cap04", "cinemática 2D", "rotación", "cinemática lineal", "cinemática rotacional", "tabla resumen"]
+lastmod = "2026-10-14"
+traduccion_estado = "Ampliada"
+cotejo_estado = "Desarrollo cotejado: pp. 270–273"
+figuras_estado = "Tablas reconstruidas; sin figuras en estas páginas"
+visual_estado = "Pendiente: revisión en navegador"
 +++
+
+**Fuente:** Jeff Bigler, *Physics 1: Mechanics in Plain English*, edición octubre de 2025, pp. 270–273. [Consultar el original (PDF)](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf#page=270).
 
 ## Objetivos de aprendizaje
 
@@ -20,7 +27,7 @@ Al finalizar esta sección, vas a poder:
 
 ## Variables: lineal vs. angular
 
-Cada variable lineal tiene su **análogo angular exacto**:
+Para un eje fijo, las variables lineales y angulares tienen la siguiente correspondencia cinemática:
 
 | Variable | Lineal | Unidad | Angular | Unidad |
 |----------|--------|--------|---------|--------|
@@ -32,13 +39,17 @@ Cada variable lineal tiene su **análogo angular exacto**:
 
 **Relaciones entre sistemas:**
 
-$$s = r\,\theta \qquad v_T = r\,\omega \qquad a_T = r\,\alpha \qquad a_c = \frac{v^2}{r} = r\,\omega^2$$
+$$\Delta s=r\Delta\theta\qquad v_T=r\omega\qquad a_T=r\alpha\qquad a_c=\frac{v^2}{r}=r\omega^2$$
+
+Aquí $\Delta s$ es desplazamiento de arco con signo. La longitud recorrida coincide con su módulo solo si no se invierte el giro; $\Delta\theta$ es el ángulo acumulado respecto de la posición inicial, no necesariamente el ángulo de posición respecto de cero.
 
 > **Nota:** el radián es adimensional (es una razón de longitudes), por eso las unidades de $v_T = r\omega$ quedan en m/s y no en m·rad/s.
 
 ---
 
 ## Ecuaciones: lineal vs. angular
+
+En la tabla, $t$ es tiempo transcurrido y las ecuaciones de movimiento usan aceleración lineal o angular constante. La igualdad entre velocidad media y promedio de extremos requiere esa condición; no forma parte de la definición general.
 
 | Lineal | Angular | Descripción |
 |--------|---------|-------------|
@@ -58,7 +69,7 @@ $$s = r\,\theta \qquad v_T = r\,\omega \qquad a_T = r\,\alpha \qquad a_c = \frac
 | "parte del reposo" → $v_0 = 0$ | "empieza sin girar" → $\omega_0 = 0$ |
 | "se detiene" → $v = 0$ | "deja de girar" → $\omega = 0$ |
 | "velocidad constante" → $a = 0$ | "velocidad angular constante" → $\alpha = 0$ |
-| "caída libre" → $a = g$ | — |
+| "caída libre" → componente vertical $a_y=\pm g$, según el eje | — |
 
 ---
 
@@ -93,7 +104,7 @@ $$\omega_0 = 33{,}33\ \text{RPM} \times \frac{2\pi}{60} = \frac{33{,}33 \times 2
 
 $$\alpha = \frac{\omega - \omega_0}{t} = \frac{0 - 3{,}49}{26} = -0{,}134\ \text{rad/s}^2$$
 
-El signo negativo indica desaceleración.
+Como se tomó positivo el giro inicial, la aceleración negativa lo frena. El signo por sí solo no determina disminución de rapidez angular.
 
 ---
 
@@ -101,8 +112,38 @@ El signo negativo indica desaceleración.
 
 1. ¿Qué tienen en común la velocidad tangencial y la velocidad lineal? ¿En qué difieren?
 2. En un carrusel, ¿todos los puntos tienen la misma velocidad angular? ¿Y la misma velocidad tangencial?
-3. ¿Por qué no se puede usar $v_{med}$ o $\omega_{med}$ cuando hay aceleración distinta de cero?
+3. ¿Por qué la definición de velocidad media sigue siendo válida con aceleración, pero no se puede sustituir automáticamente la velocidad instantánea por esa media?
+
+## Aclaración sobre velocidades medias, p. 271
+
+El comentario del original dice que no pueden usarse $v_{\mathrm{med}}$ y $\omega_{\mathrm{med}}$ si hay aceleración. Tomado literalmente contradice las definiciones de medias y los ejemplos anteriores. En esta adaptación se precisa:
+
+- $v_{\mathrm{med}}=\Delta x/\Delta t$ y $\omega_{\mathrm{med}}=\Delta\theta/\Delta t$ son válidas aunque las velocidades cambien.
+- No se reemplaza una velocidad instantánea por la media sin justificarlo.
+- El promedio de valores inicial y final da la media temporal cuando la velocidad cambia linealmente, es decir, cuando la aceleración correspondiente es constante.
+
+Por ejemplo, desde el reposo con $a=2\ \mathrm{m/s^2}$ durante 4 s, la velocidad final es 8 m/s y la media 4 m/s. El desplazamiento es $4(4)=16$ m, no $8(4)=32$ m. Este ejemplo es una comprobación propia.
+
+## Elegir ecuaciones sin confundir modelos
+
+Las recomendaciones de la p. 273 requieren identificar primero si se pide una coordenada, un desplazamiento, una longitud recorrida, una rapidez o una componente con signo. No basta con que aparezca la misma letra en una tabla.
+
+| Situación | Relación apropiada | Condiciones |
+|---|---|---|
+| Cuerda que desenrolla una rueda | $s=r|\Delta\theta|$ | Radio fijo, sin deslizamiento, sin inversión del giro |
+| Giro uniforme de un disco | $|v_T|=r|\omega|$ | Medir radio desde el eje |
+| Frenado angular uniforme | $\alpha=(\omega-\omega_0)/t$ | Eje fijo y aceleración constante para describir todo el intervalo |
+| Giro circular con rapidez constante | $a_c=v^2/r$ | $a_T=0$, pero vector aceleración variable en dirección |
+| Rueda que rueda sobre el suelo | $v_{\mathrm{centro}}=r|\omega|$ | Rodadura sin deslizamiento |
+
+El resumen conserva componentes con signo para las ecuaciones de un eje y módulos para la comparación radial. No se elevan al cuadrado vectores completos ni se identifica longitud de arco con desplazamiento cartesiano.
+
+## Ejemplo del tocadiscos y control de redondeo
+
+El problema de 33⅓ rpm y 26 s proviene de la p. 265 y se desarrolla en [Aceleración angular]({{< ref "/notes/notas-fisica/cap04-cinematica-2d/aceleracion-angular.md" >}}). El cálculo con valores exactos da $\alpha=-5\pi/117\approx-0{,}1343\ \mathrm{rad/s^2}$; el original indica −0,135. Se conserva visible el origen y se aclara la diferencia de redondeo, sin repetir el problema como si fuera otro ejercicio de las pp. 270–273.
+
+Este resumen es una tabla de consulta, no una licencia para usar cualquier ecuación en cualquier movimiento. Para problemas con aire, eje móvil, radio variable o aceleración no uniforme hay que revisar el modelo antes de sustituir números.
 
 ---
 
-*Adaptado de [Jeff Bigler — Physics 1: Mechanics in Plain English](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf), licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Traducción y adaptación: Prof. Ing. Luciano Lamaita, 2026.*
+Adaptado de Jeff Bigler. Licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Traducción y adaptación pedagógica: Prof. Ing. Luciano Lamaita, 2026. Las aclaraciones propias se identifican en el texto.

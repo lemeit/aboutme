@@ -1467,6 +1467,202 @@
       "caption": "Representaciones de flujo laminar y turbulento.",
       "embedded_image": "/Image3162",
       "file": "static/images/diagramas/cap05_arrastre-flujos_pp357.png"
+    },
+    {
+      "name": "cap09_altura-referencia_pp447",
+      "pdf_page": 447,
+      "printed_page": 447,
+      "box_pt": [
+        372.7,
+        213.59,
+        523.3,
+        373.19
+      ],
+      "caption": "Distancias medidas desde el centro terrestre y desde la superficie.",
+      "embedded_image": "/Image3806",
+      "file": "static/images/diagramas/cap09_altura-referencia_pp447.png"
+    },
+    {
+      "name": "cap09_trabajo-caminos_pp457",
+      "pdf_page": 457,
+      "printed_page": 457,
+      "box_pt": [
+        212.15,
+        210.05,
+        454.75,
+        358.35
+      ],
+      "caption": "Elevación vertical y por una rampa.",
+      "embedded_image": "/Image3877",
+      "file": "static/images/diagramas/cap09_trabajo-caminos_pp457.png"
+    },
+    {
+      "name": "cap09_friccion-caminos_pp457",
+      "pdf_page": 457,
+      "printed_page": 457,
+      "box_pt": [
+        198.3,
+        448.27,
+        468.96,
+        633.27
+      ],
+      "caption": "Dos recorridos entre las mismas posiciones.",
+      "embedded_image": "/Image3878",
+      "file": "static/images/diagramas/cap09_friccion-caminos_pp457.png"
+    },
+    {
+      "name": "cap09_rampa-345_pp458",
+      "pdf_page": 458,
+      "printed_page": 458,
+      "box_pt": [
+        212.15,
+        171.2,
+        454.75,
+        319.09
+      ],
+      "caption": "Rampa de 5 m con elevación de 3 m.",
+      "embedded_image": "/Image3888",
+      "file": "static/images/diagramas/cap09_rampa-345_pp458.png"
+    },
+    {
+      "name": "cap09_trabajo-grafico_pp459",
+      "pdf_page": 459,
+      "printed_page": 459,
+      "box_pt": [
+        203.8,
+        176.61,
+        463.5,
+        340.76
+      ],
+      "caption": "Áreas positivas y negativas en un gráfico fuerza–posición.",
+      "embedded_image": "/Image3894",
+      "file": "static/images/diagramas/cap09_trabajo-grafico_pp459.png"
+    },
+    {
+      "name": "cap09_carrito_pp460",
+      "pdf_page": 460,
+      "printed_page": 460,
+      "box_pt": [
+        395.8,
+        397.95,
+        523.2,
+        487.9
+      ],
+      "caption": "Fuerza oblicua aplicada a un carrito.",
+      "embedded_image": "/Image3899",
+      "file": "static/images/diagramas/cap09_carrito_pp460.png"
+    },
+    {
+      "name": "cap09_fuerza-posicion_pp462",
+      "pdf_page": 462,
+      "printed_page": 462,
+      "box_pt": [
+        237.65,
+        103.81,
+        465.13,
+        268.66
+      ],
+      "caption": "Gráfico del ejercicio de fuerza variable.",
+      "embedded_image": "/Image3907",
+      "file": "static/images/diagramas/cap09_fuerza-posicion_pp462.png"
+    },
+    {
+      "name": "cap09_fuerza-oblicua_pp463",
+      "pdf_page": 463,
+      "printed_page": 463,
+      "box_pt": [
+        333.75,
+        489.15,
+        515.15,
+        597.83
+      ],
+      "caption": "Fuerza de 100 N inclinada 25° respecto del desplazamiento.",
+      "embedded_image": "/Image3913",
+      "file": "static/images/diagramas/cap09_fuerza-oblicua_pp463.png"
+    },
+    {
+      "name": "cap09_caida-energias_pp465",
+      "pdf_page": 465,
+      "printed_page": 465,
+      "box_pt": [
+        216.65,
+        115.82,
+        449.9,
+        313.79
+      ],
+      "caption": "Transformación de energía potencial gravitatoria en cinética.",
+      "embedded_image": "/Image3917",
+      "file": "static/images/diagramas/cap09_caida-energias_pp465.png"
+    },
+    {
+      "name": "cap09_montana-barras_pp467",
+      "pdf_page": 467,
+      "printed_page": 467,
+      "box_pt": [
+        154.75,
+        282.64,
+        512.49,
+        431.64
+      ],
+      "caption": "Energía cinética, potencial y mecánica en una pista ideal.",
+      "embedded_image": "/Image3922",
+      "file": "static/images/diagramas/cap09_montana-barras_pp467.png"
+    },
+    {
+      "name": "cap09_balance-lol_pp468",
+      "pdf_page": 468,
+      "printed_page": 468,
+      "box_pt": [
+        201.32,
+        229.24,
+        465.91,
+        358.84
+      ],
+      "caption": "Balance de energía con aporte de trabajo.",
+      "embedded_image": "/Image3929",
+      "file": "static/images/diagramas/cap09_balance-lol_pp468.png"
+    },
+    {
+      "name": "cap09_auto-balance_pp469",
+      "pdf_page": 469,
+      "printed_page": 469,
+      "box_pt": [
+        191.15,
+        152.68,
+        511.53,
+        309.63
+      ],
+      "caption": "Aumento de energía cinética de un auto.",
+      "embedded_image": "/Image3934",
+      "file": "static/images/diagramas/cap09_auto-balance_pp469.png"
+    },
+    {
+      "name": "cap09_caida-balance_pp470",
+      "pdf_page": 470,
+      "printed_page": 470,
+      "box_pt": [
+        193.98,
+        175.53,
+        509.28,
+        329.58
+      ],
+      "caption": "Balance del sistema cuerpo–Tierra durante una caída.",
+      "embedded_image": "/Image3942",
+      "file": "static/images/diagramas/cap09_caida-balance_pp470.png"
+    },
+    {
+      "name": "cap09_resorte-rampa_pp475",
+      "pdf_page": 475,
+      "printed_page": 475,
+      "box_pt": [
+        200.9,
+        135.24,
+        502.4,
+        201.24
+      ],
+      "caption": "Bloque que desciende por una rampa y comprime un resorte.",
+      "embedded_image": "/Image3965",
+      "file": "static/images/diagramas/cap09_resorte-rampa_pp475.png"
     }
   ]
 }

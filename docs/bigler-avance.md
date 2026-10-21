@@ -91,7 +91,17 @@ Sin notas desarrolladas.
 
 ## Capítulo 9 — Energía, Trabajo y Potencia
 
-Sin notas desarrolladas.
+| Nota | Texto | Cotejo | Figuras | Visual Hugo | Revisión de divergencias |
+|---|---|---|---|---|---|
+| [Energía y energía cinética](../content/notes/notas-fisica/cap09-energia/energia-cinetica.md) | Ampliada | Desarrollo cotejado: pp. 441–444 | 0 figuras del original | Pendiente: revisión en navegador de escritorio y móvil | En revisión: observaciones de adaptación identificadas |
+| [Energía potencial y energía mecánica](../content/notes/notas-fisica/cap09-energia/energia-potencial.md) | Ampliada | Desarrollo cotejado: pp. 445–453 | 1 figuras del original | Pendiente: revisión en navegador de escritorio y móvil | En revisión: observaciones de adaptación identificadas |
+| [Trabajo de una fuerza](../content/notes/notas-fisica/cap09-energia/trabajo.md) | Ampliada | Desarrollo cotejado: pp. 454–463 | 7 figuras del original | Pendiente: revisión en navegador de escritorio y móvil | En revisión: observaciones de adaptación identificadas |
+| [Conservación de la energía](../content/notes/notas-fisica/cap09-energia/conservacion-energia.md) | Ampliada | Desarrollo cotejado: pp. 464–476 | 6 figuras del original | Pendiente: revisión en navegador de escritorio y móvil | En revisión: observaciones de adaptación identificadas |
+| [Trabajo en la rotación](../content/notes/notas-fisica/cap09-energia/trabajo-rotacional.md) | Ampliada | Desarrollo cotejado: pp. 477–478 | 0 figuras del original | Pendiente: revisión en navegador de escritorio y móvil | En revisión: observaciones de adaptación identificadas |
+| [Energía cinética de rotación y rodadura](../content/notes/notas-fisica/cap09-energia/energia-cinetica-rotacional.md) | Ampliada | Desarrollo cotejado: pp. 479–486 | 0 figuras del original | Pendiente: revisión en navegador de escritorio y móvil | En revisión: observaciones de adaptación identificadas |
+| [Rapidez de escape y energía orbital](../content/notes/notas-fisica/cap09-energia/velocidad-escape.md) | Ampliada | Desarrollo cotejado: pp. 487–489 | 0 figuras del original | Pendiente: revisión en navegador de escritorio y móvil | En revisión: observaciones de adaptación identificadas |
+| [Potencia, energía y rendimiento](../content/notes/notas-fisica/cap09-energia/potencia.md) | Ampliada | Desarrollo cotejado: pp. 490–494 | 0 figuras del original | Pendiente: revisión en navegador de escritorio y móvil | En revisión: observaciones de adaptación identificadas |
+| [Guía de clase: energía, trabajo y potencia](../content/notes/notas-fisica/cap09-energia/guia-clase.md) | Complemento propio | Propuesta docente propia basada en el capítulo 9 | Remite a las figuras de las notas del capítulo | Pendiente: revisión en navegador de escritorio y móvil | En revisión editorial |
 
 ## Capítulo 10 — Cantidad de Movimiento
 

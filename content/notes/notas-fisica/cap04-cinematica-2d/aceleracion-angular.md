@@ -6,7 +6,14 @@ math = true
 weight = 3
 description = "Aceleración angular, ecuaciones rotacionales paralelas a las lineales y aceleración tangencial."
 tags = ["cap04", "cinemática 2D", "aceleración angular", "rotación", "ecuaciones rotacionales"]
+lastmod = "2026-10-14"
+traduccion_estado = "Ampliada"
+cotejo_estado = "Desarrollo cotejado: pp. 262–265"
+figuras_estado = "Ecuaciones y problemas reconstruidos; sin recortes necesarios"
+visual_estado = "Pendiente: revisión en navegador"
 +++
+
+**Fuente:** Jeff Bigler, *Physics 1: Mechanics in Plain English*, edición octubre de 2025, pp. 262–265. [Consultar el original (PDF)](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf#page=262).
 
 ## Objetivos de aprendizaje
 
@@ -20,7 +27,7 @@ Al finalizar esta sección, vas a poder:
 
 ## Aceleración angular
 
-La **aceleración angular media** ($\alpha_{med}$) es el cambio de velocidad angular dividido por el tiempo transcurrido. Si es constante, coincide con $\alpha$ durante todo el intervalo. En las expresiones siguientes $t$ representa ese tiempo transcurrido, no un instante arbitrario:
+La **aceleración angular media** ($\alpha_{\mathrm{med}}$) es el cambio de velocidad angular dividido por el tiempo transcurrido. Si es constante, coincide con $\alpha$ durante todo el intervalo. En las expresiones siguientes $t$ representa ese tiempo transcurrido, no un instante arbitrario:
 
 $$\alpha = \frac{\Delta\omega}{t} = \frac{\omega - \omega_0}{t}$$
 
@@ -45,13 +52,13 @@ $$a_T = r\,\alpha$$
 
 ## Ecuaciones rotacionales
 
-Para un eje fijo y **aceleración angular constante**, las ecuaciones del MRUV tienen la siguiente analogía rotacional. Los ángulos se expresan en radianes y los signos se fijan con un sentido de giro; $d$ en la columna lineal representa desplazamiento con signo, no longitud total del recorrido:
+Para un eje fijo y **aceleración angular constante**, las ecuaciones del MRUV tienen la siguiente analogía rotacional. Los ángulos se expresan en radianes y los signos se fijan con un sentido de giro; $\Delta x$ en la columna lineal representa desplazamiento con signo, no longitud total del recorrido:
 
 | Lineal | Angular |
 |--------|---------|
 | $v = v_0 + at$ | $\omega = \omega_0 + \alpha t$ |
-| $d = v_0 t + \tfrac{1}{2}at^2$ | $\Delta\theta = \omega_0 t + \tfrac{1}{2}\alpha t^2$ |
-| $v^2 - v_0^2 = 2ad$ | $\omega^2 - \omega_0^2 = 2\alpha\Delta\theta$ |
+| $\Delta x=v_0t+\tfrac12at^2$ | $\Delta\theta = \omega_0 t + \tfrac{1}{2}\alpha t^2$ |
+| $v^2-v_0^2=2a\Delta x$ | $\omega^2 - \omega_0^2 = 2\alpha\Delta\theta$ |
 
 ---
 
@@ -83,6 +90,40 @@ Ambos métodos dan el mismo resultado. ✓
 2. ¿Qué significa que $\alpha$ sea negativa para un objeto que estaba girando?
 3. Si duplicás el radio de una rueda manteniendo la misma aceleración angular, ¿qué pasa con la aceleración tangencial del borde?
 
+## De la aceleración al ángulo acumulado
+
+Con eje fijo y aceleración angular constante, $\omega=\omega_0+\alpha t$. Su media durante el intervalo es $(\omega_0+\omega)/2$, por lo que:
+
+$$\Delta\theta=\frac{\omega_0+\omega}{2}t=\omega_0t+\frac12\alpha t^2$$
+
+Al eliminar el tiempo se obtiene $\omega^2-\omega_0^2=2\alpha\Delta\theta$. Son ecuaciones para componentes con signo alrededor de un eje elegido, no cuadrados de vectores. Si la aceleración angular varía, las definiciones de medias siguen siendo válidas, pero estas relaciones con aceleración constante no pueden aplicarse sin revisión.
+
+En un gráfico $\theta(t)$, la pendiente indica $\omega$. En $\omega(t)$, la pendiente indica $\alpha$ y el área con signo indica desplazamiento angular. Si $\omega$ es positiva y $\alpha$ negativa, el giro frena; si ambos son negativos, aumenta la rapidez angular en sentido horario. El signo negativo de $\alpha$ solo no prueba frenado.
+
+## Problemas del tocadiscos, p. 265
+
+### 1. Resultado simbólico
+
+Un plato gira inicialmente a $\omega_0$ y se detiene con aceleración constante en tiempo $T$. De $0=\omega_0+\alpha T$:
+
+$$\alpha=-\frac{\omega_0}{T}$$
+
+El signo es opuesto al de la velocidad inicial. Como extensión propia, su desplazamiento antes de detenerse es $\Delta\theta=\omega_0T/2$. El tiempo de detención es el final del modelo: prolongar una aceleración negativa indefinidamente predeciría inversión del giro.
+
+### 2. Plato de 33⅓ rpm
+
+Conservando $33\tfrac13=100/3$ vueltas por minuto, y tomando positivo el giro inicial:
+
+$$\omega_0=\frac{100}{3}\frac{2\pi}{60}=\frac{10\pi}{9}\ \mathrm{rad/s}$$
+
+$$\alpha=-\frac{10\pi/9}{26}=-\frac{5\pi}{117}\ \mathrm{rad/s^2}\approx-0{,}1343\ \mathrm{rad/s^2}$$
+
+El original indica −0,135 rad/s². Usando el dato de 33⅓ rpm sin redondearlo antes, el resultado es aproximadamente −0,1343; se explicita esta pequeña diferencia de redondeo. En 26 s recorre $130\pi/9\approx45{,}38$ rad, unas 7,22 vueltas, bajo el modelo uniforme.
+
+## Control del ejemplo de bicicleta
+
+La cuenta directa $(10-7{,}5)/(5\cdot0{,}343)$ da $1{,}4577\ \mathrm{rad/s^2}$, compatible con 1,46. Si la rueda patina, $v_{\mathrm{centro}}=r\omega$ deja de ser la relación de rodadura usada y el dato de velocidad de la bicicleta no basta para hallar su giro. El resultado del original se conserva dentro de sus supuestos.
+
 ---
 
-*Adaptado de [Jeff Bigler — Physics 1: Mechanics in Plain English](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf), licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Traducción y adaptación: Prof. Ing. Luciano Lamaita, 2026.*
+Adaptado de Jeff Bigler. Licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Traducción y adaptación pedagógica: Prof. Ing. Luciano Lamaita, 2026. Las aclaraciones propias se identifican en el texto.

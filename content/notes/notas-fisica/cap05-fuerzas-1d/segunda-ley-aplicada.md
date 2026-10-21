@@ -6,106 +6,108 @@ math = true
 weight = 6
 description = "Aplicación de F=ma con DCL, problemas combinados de fuerzas y cinemática, estrategia GUESS encadenado."
 tags = ["cap05", "fuerzas", "Newton", "Segunda Ley", "F=ma", "GUESS", "diagrama de cuerpo libre", "cinemática"]
+lastmod = "2026-10-21"
+traduccion_estado = "Ampliada"
+cotejo_estado = "Desarrollo cotejado: pp. 313–323"
+figuras_estado = "2 figuras recuperadas en esta tanda; ver fuente de cada figura"
+visual_estado = "Pendiente: revisión en navegador"
+revision_estado = "En revisión: observaciones de adaptación identificadas"
 +++
 
-## Objetivos de aprendizaje
+**Fuente:** Jeff Bigler, *Physics 1: Mechanics in Plain English*, edición octubre de 2025, pp. 313–323. [Consultar el original (PDF)](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf#page=313).
 
-Al finalizar esta sección, vas a poder:
+## Del diagrama a la ecuación
 
-- Aplicar la Segunda Ley de Newton para calcular fuerza, masa o aceleración.
-- Combinar ecuaciones de fuerzas con ecuaciones de movimiento (GUESS encadenado).
-- Resolver problemas con múltiples fuerzas usando DCL.
+La segunda ley se aplica a un cuerpo o sistema de masa constante, en un marco inercial:
 
----
+$$\sum\vec F=m\vec a$$
 
-## Segunda Ley — repaso
+Primero se identifican las fuerzas; después se suman sus componentes. No se multiplica una fuerza aislada por la masa ni se supone que la fuerza aplicada sea necesariamente la resultante.
 
-$$\vec{F}_{neta} = \sum \vec{F} = m\,\vec{a} \qquad \text{o bien} \qquad a = \frac{F_{neta}}{m}$$
+En una dimensión:
 
-**Equilibrio estático:** $F_{neta} = 0$ y el objeto está en reposo.
-**Equilibrio dinámico:** $F_{neta} = 0$ y el objeto se mueve a velocidad constante.
+$$F_{1x}+F_{2x}+\cdots=ma_x$$
 
----
+El signo de cada componente proviene del eje. Para un cuerpo extendido, la ecuación describe el movimiento del centro de masa; el equilibrio completo puede requerir también balance de torques.
 
-## Estrategia GUESS encadenado
+## Equilibrio y aceleración
 
-Cuando un problema combina fuerzas y cinemática, necesitás dos tablas GUESS conectadas por la aceleración $a$:
+| Resultante | Qué permite afirmar |
+|---|---|
+| Cero | La velocidad permanece constante; puede ser cero o no |
+| Hacia la derecha | La aceleración apunta a la derecha; la velocidad inicial todavía importa |
+| Variable con el tiempo | La aceleración puede variar; no se aplican automáticamente las ecuaciones de aceleración constante |
 
-{{% guess-chart titulo1="Ecuaciones de movimiento" titulo2="Segunda Ley de Newton" conector="a" %}}
-| var | dir | value |
-|---|---|---|
-| d | → | ? |
-| v₀ | N/A | 0 |
-| v | → | dato |
-| a | → | a |
-| t | - | dato |
-+++
-| var | dir | value |
-|---|---|---|
-| $F_{net}$ | → | $F_{net}$ |
-| m | N/A | m (dato) |
-| a | → | a |
-{{% /guess-chart %}}
+Bigler llama equilibrio estático al caso de reposo y equilibrio dinámico al de velocidad constante. En esta unidad usamos esa distinción para la traslación del sistema elegido.
 
----
+## Ejemplos originales de fuerzas opuestas
 
-## Ejemplos resueltos
+Para el carro de 35 kg sometido a una resultante de $+50$ N:
 
-### Ejemplo 1 — Fuerza neta simple (Bigler)
+$$a_x=\frac{50}{35}\ \mathrm{m/s^2}\approx+1{,}43\ \mathrm{m/s^2}$$
 
-Una fuerza neta de 50 N actúa sobre un carrito de 35 kg. ¿Cuál es la aceleración?
+En el juguete de 0,60 kg, Jamie tira hacia la izquierda con 40 N y Edward hacia la derecha con 60 N. Elegimos derecha positiva:
 
-$$a = \frac{F_{neta}}{m} = \frac{50}{35} = 1{,}43\ \text{m/s}^2$$
+{{< figura src="/images/diagramas/cap05_segunda-juguete_pp314.png" width="420" alt="Diagrama del juguete tirado en sentidos opuestos." caption="Diagrama del juguete tirado en sentidos opuestos." source="Jeff Bigler, edición octubre de 2025, p. 314. Figura del original; etiquetas en inglés. CC BY-NC-SA 4.0." >}}
 
----
+$$F_{\mathrm{neta},x}=-40+60=+20\ \mathrm N$$
 
-### Ejemplo 2 — Dos fuerzas opuestas (Bigler)
+$$a_x=\frac{20}{0{,}60}\approx+33{,}3\ \mathrm{m/s^2}$$
 
-Dos niños tiran de un juguete (masa 0,6 kg): Jamie hacia la izquierda con 40 N y Edward hacia la derecha con 60 N. ¿Cuál es la aceleración? (Positivo = derecha)
+El diagrama incluye las fuerzas sobre el juguete. Las fuerzas que el juguete ejerce sobre cada niño no se agregan a esa misma suma.
 
-$$F_{neta} = -40 + 60 = +20\ \text{N}$$
-$$a = \frac{20}{0{,}6} = +33{,}3\ \text{m/s}^2 \quad \text{(hacia la derecha)}$$
+## Conectar fuerzas con cinemática
 
----
+Un carro de libros de 75 kg parte del reposo. Actúa una **resultante constante** de 100 N y se pregunta cuánto se desplaza hasta llegar a 4,0 m/s.
 
-### Ejemplo 3 — Combinado fuerzas + cinemática (Bigler)
+$$a=\frac{100}{75}=\frac43\ \mathrm{m/s^2}$$
 
-Una persona aplica 100 N a un carrito de 75 kg desde el reposo. ¿Cuánto recorre hasta llegar a $4{,}0\ \text{m/s}$?
+$$v^2-v_0^2=2a\Delta x\quad\Rightarrow\quad\Delta x=\frac{16}{2(4/3)}=6{,}0\ \mathrm m$$
 
-**Paso 1 — Segunda Ley:**
+No se necesita conocer el tiempo para usar esa ecuación. Si se quiere comprobarlo, $t=v/a=3{,}0$ s y $\Delta x=at^2/2=6{,}0$ m.
 
-$$a = \frac{F_{neta}}{m} = \frac{100}{75} = 1{,}3\ \text{m/s}^2$$
+{{< nota-adaptacion pagina="315" origen="Tabla y redondeo del ejemplo original" >}}
+El enunciado y la operación usan 75 kg, pero la tabla de datos imprime 5 kg. Se conserva 75 kg, compatible con la aceleración y el resultado. También se mantienen cifras de guarda: usar 1,3 m/s² antes del último paso cambia ligeramente la cuenta, aunque el resultado escolar siga siendo aproximadamente 6 m.
+{{< /nota-adaptacion >}}
 
-**Paso 2 — Ecuación de movimiento** (con $v_0 = 0$, $v = 4{,}0\ \text{m/s}$, $a = 1{,}3\ \text{m/s}^2$):
+## Fuerza aplicada y fricción no son la misma incógnita
 
-$$v^2 - v_0^2 = 2a\,d \implies d = \frac{v^2}{2a} = \frac{16}{2{,}6} = 6\ \text{m}$$
+El bloque de 5,0 kg pasa del reposo a 6,0 m/s en 1,5 s mientras una fricción de 2,0 N se opone al deslizamiento. Se supone aceleración constante y fuerza aplicada horizontal.
 
----
+{{< figura src="/images/diagramas/cap05_segunda-bloque_pp317.png" width="290" alt="Diagrama del bloque acelerado sobre el suelo." caption="Diagrama del bloque acelerado sobre el suelo." source="Jeff Bigler, edición octubre de 2025, p. 317. Figura del original; etiquetas en inglés. CC BY-NC-SA 4.0." >}}
 
-### Ejemplo 4 — Fuerza aplicada con fricción (Bigler)
+$$a_x=\frac{6-0}{1{,}5}=4{,}0\ \mathrm{m/s^2}$$
 
-Un bloque de 5 kg debe acelerarse de reposo a $6{,}0\ \text{m/s}$ en 1,5 s, contra una fricción de 2 N. ¿Cuánta fuerza aplicada se necesita?
+$$F_a-2=5(4)\quad\Rightarrow\quad F_a=22\ \mathrm N$$
 
-**Paso 1 — aceleración:**
+La resultante es 20 N, pero la fuerza aplicada es 22 N. El balance vertical justifica normal y peso iguales en este caso; no intervienen en la suma horizontal.
 
-$$a = \frac{v - v_0}{t} = \frac{6{,}0}{1{,}5} = 4{,}0\ \text{m/s}^2$$
+## Ejercicios del original, pp. 319–323
 
-**Paso 2 — fuerza neta:**
+Resolvé antes de consultar los controles. Los resultados utilizan $g=10\ \mathrm{m/s^2}$ y los supuestos indicados en el libro.
 
-$$F_{neta} = ma = 5 \times 4{,}0 = 20\ \text{N}$$
+| Ejercicio adaptado | Control de resultado |
+|---|---|
+| Canoa: 225 N y 165 N, ambas al este | 390 N al este |
+| Canoa: 225 N al oeste y 165 N al este | 60 N al oeste |
+| Perros: 135 N y 143 N al este, 153 N al oeste | 125 N al este; con trineo y conductor de 250 kg, $a=0{,}50\ \mathrm{m/s^2}$ |
+| Disco: resultante 10 N y aceleración 50 m/s² | Masa 0,20 kg |
+| Caja de 12 kg: 15 N netos durante 6,0 s desde reposo | Rapidez 7,5 m/s |
+| Carro de 0,60 kg: 1,2 m en 4,0 s desde reposo, aceleración constante | $a=0{,}15\ \mathrm{m/s^2}$; resultante 0,090 N |
+| Persona de 44 kg quieta sobre una o dos balanzas | Peso 440 N; reparto igual: 220 N por balanza |
+| Astronauta de 70 kg con aceleración 0,36 m/s²; nave de $10^4$ kg | Fuerza de módulo 25,2 N; nave $0{,}00252\ \mathrm{m/s^2}$ en sentido opuesto |
+| Desde reposo hasta $v$ en tiempo $t$, masa constante | Resultante media $mv/t$; constante si lo es la aceleración |
+| Estudiante de 60 kg: de 0 a 16 m/s en 4 s | 240 N netos |
+| Elevar 60 kg con aceleración 2 m/s² | Fuerza aplicada 720 N; resultante 120 N |
+| Aparato que pesa 400 N en Tierra; campo en Mercurio de 3,6 N/kg | Masa 40 kg; peso 144 N |
+| Caja de 500 kg: empuje 1 200 N y aceleración 0,5 m/s² | Rozamiento 950 N opuesto al empuje |
 
-**Paso 3 — fuerza aplicada** (recordá que la fricción es negativa):
+**Comprobación propia:** en el ejercicio de elevar 60 kg, restá el peso a la fuerza aplicada. Si usás 120 N como fuerza total hacia arriba, el balance no produce la aceleración pedida.
 
-$$F_{neta} = F_a + F_f \implies 20 = F_a + (-2) \implies F_a = 22\ \text{N}$$
+## Método de resolución
 
----
-
-## Para pensar
-
-1. Un objeto se mueve a velocidad constante. ¿Hay fuerzas sobre él? ¿Hay fuerza neta?
-2. ¿Puede haber fuerza neta sin aceleración? ¿Y aceleración sin fuerza neta?
-3. Si duplicás la fuerza neta sobre un objeto (misma masa), ¿qué pasa con la aceleración? ¿Y si duplicás la masa (misma fuerza)?
+Elegí sistema y ejes, dibujá las fuerzas, escribí su suma y reconocé qué cantidad falta. Si necesitás aceleración, podés obtenerla de una relación cinemática compatible con el modelo. Al terminar, comprobá signos, unidades y que la fuerza encontrada sea aplicada o neta según lo que se preguntó.
 
 ---
 
-*Adaptado de [Jeff Bigler — Physics 1: Mechanics in Plain English](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf), licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Traducción y adaptación: Prof. Ing. Luciano Lamaita, 2026.*
+Traducción y adaptación pedagógica: Prof. Ing. Luciano Lamaita, 2026. Original de Jeff Bigler y adaptación bajo [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Los ejemplos propios y las observaciones en revisión se identifican en el texto.

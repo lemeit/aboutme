@@ -4,7 +4,7 @@ Revisión de continuidad: 21/10/2026. Documento interno, fuera de `content/`; no
 
 ## Prioridad vigente
 
-A pedido del usuario, se pausa la ampliación para revisar divergencias desde el capítulo 1. Ver `docs/bigler-revision-divergencias.md`. Los pasajes señalados llevan «Nota de adaptación · En revisión»; no se declara completada la nueva revisión integral.
+El 21/10/2026 el usuario pidió continuar el capítulo 5 ampliando texto, recuperando imágenes y cotejando discrepancias al mismo tiempo. La revisión integral desde el capítulo 1 sigue abierta; ver `docs/bigler-revision-divergencias.md`. Esta tanda local de fuerzas conserva los avisos «Nota de adaptación · En revisión» y se documenta en `docs/bigler-capitulo-5-ampliacion.md`.
 
 ## Qué ya está publicado
 
@@ -20,11 +20,11 @@ A pedido del usuario, se pausa la ampliación para revisar divergencias desde el
 | Parte | Estado | Trabajo siguiente |
 |---|---|---|
 | Capítulo 4, Cinemática 2D | 5 notas ampliadas con 9 figuras, publicadas mediante PR #11; presencia de figuras comprobada online el 21/10/2026 | Correcciones posteriores de tablas y notas editoriales en local; nueva revisión pendiente |
-| Capítulo 5, Fuerzas 1D | Leyes de Newton ampliada (pp. 280–285), incluida en esta tanda editorial; 9 notas por ampliar | Centro de masa, tipos de fuerzas, gravedad, diagramas, aplicaciones, tensión, fricción, resortes y arrastre |
+| Capítulo 5, Fuerzas 1D | Diez notas ampliadas; nueve desarrolladas en la nueva tanda local de pp. 286–357 con 33 figuras nuevas | Revisión visual, cierre de observaciones y publicación cuando se autorice |
 | Capítulo 6, Fuerzas 2D | 2 notas breves, sin cotejo editorial registrado | Fuerzas en ángulo y plano inclinado; inventariar secciones faltantes del original |
 | Capítulos 7–13 | Solo índices, sin notas desarrolladas | Rotación, gravitación, energía/trabajo/potencia, cantidad de movimiento, MAS, fluidos y relatividad especial |
 
-Antes de ampliar el capítulo 4 había 17 notas breves y 6 marcadores «capturar». La tanda local del capítulo 4 recupera sus cuatro marcadores con figuras cotejadas. Quedan **11 notas por ampliar en capítulos 5–6** y **2 marcadores «capturar»**, en tensión y fricción. Ese conteo no representa todas las figuras ni secciones del original que faltan por recuperar.
+Antes de ampliar el capítulo 4 había 17 notas breves y 6 marcadores «capturar». La tanda local del capítulo 4 recupera sus cuatro marcadores con figuras cotejadas. Con la tanda local del capítulo 5 quedan **2 notas por ampliar, ambas del capítulo 6**. Se resolvieron los dos marcadores «capturar» de tensión y fricción mediante figuras extraídas y registradas. Ese conteo no representa todas las figuras ni secciones del original que faltan por recuperar.
 
 ## Problemas detectados que deben corregirse al ampliar
 

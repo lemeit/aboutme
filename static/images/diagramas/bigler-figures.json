@@ -1005,6 +1005,468 @@
       ],
       "caption": "Opciones A–D de velocidad y aceleración verticales.",
       "file": "static/images/diagramas/cap04_graficos-proyectil_pp249.png"
+    },
+    {
+      "name": "cap05_centro-posturas_pp287",
+      "pdf_page": 287,
+      "printed_page": 287,
+      "box_pt": [
+        258.43,
+        156.69,
+        426.88,
+        304.98
+      ],
+      "caption": "El centro de masa cambia con la postura.",
+      "embedded_image": "/Image2583",
+      "file": "static/images/diagramas/cap05_centro-posturas_pp287.png"
+    },
+    {
+      "name": "cap05_centro-martillo_pp287",
+      "pdf_page": 287,
+      "printed_page": 287,
+      "box_pt": [
+        176.7,
+        383.48,
+        508.49,
+        443.78
+      ],
+      "caption": "Centro de masa de un martillo.",
+      "embedded_image": "/Image2584",
+      "file": "static/images/diagramas/cap05_centro-martillo_pp287.png"
+    },
+    {
+      "name": "cap05_centro-plomada_pp289",
+      "pdf_page": 289,
+      "printed_page": 289,
+      "box_pt": [
+        212.9,
+        496.67,
+        454.1,
+        634.07
+      ],
+      "caption": "Método de suspensión y plomada.",
+      "embedded_image": "/Image2606",
+      "file": "static/images/diagramas/cap05_centro-plomada_pp289.png"
+    },
+    {
+      "name": "cap05_centro-trayectoria_pp290",
+      "pdf_page": 290,
+      "printed_page": 290,
+      "box_pt": [
+        144.0,
+        341.56,
+        504.7,
+        517.96
+      ],
+      "caption": "Trayectoria del centro de masa de un objeto que gira.",
+      "embedded_image": "/Image2609",
+      "file": "static/images/diagramas/cap05_centro-trayectoria_pp290.png"
+    },
+    {
+      "name": "cap05_tipos-caja_pp292",
+      "pdf_page": 292,
+      "printed_page": 292,
+      "box_pt": [
+        194.9,
+        424.67,
+        472.1,
+        585.47
+      ],
+      "caption": "Peso, normal, tensión y rozamiento sobre una caja.",
+      "embedded_image": "/Image2621",
+      "file": "static/images/diagramas/cap05_tipos-caja_pp292.png"
+    },
+    {
+      "name": "cap05_tipos-cuerda_pp294",
+      "pdf_page": 294,
+      "printed_page": 294,
+      "box_pt": [
+        377.8,
+        396.63,
+        523.2,
+        508.92
+      ],
+      "caption": "Persona y pared conectadas por una cuerda.",
+      "embedded_image": "/Image2648",
+      "file": "static/images/diagramas/cap05_tipos-cuerda_pp294.png"
+    },
+    {
+      "name": "cap05_gravedad-pelota_pp302",
+      "pdf_page": 302,
+      "printed_page": 302,
+      "box_pt": [
+        339.4,
+        265.77,
+        519.39,
+        473.12
+      ],
+      "caption": "Sistema formado solo por la pelota.",
+      "embedded_image": "/Image2573",
+      "file": "static/images/diagramas/cap05_gravedad-pelota_pp302.png"
+    },
+    {
+      "name": "cap05_gravedad-tierra-pelota_pp302",
+      "pdf_page": 302,
+      "printed_page": 302,
+      "box_pt": [
+        149.4,
+        265.76,
+        330.1,
+        473.1
+      ],
+      "caption": "Sistema Tierra y pelota.",
+      "embedded_image": "/Image2577",
+      "file": "static/images/diagramas/cap05_gravedad-tierra-pelota_pp302.png"
+    },
+    {
+      "name": "cap05_dcl-rampa_pp305",
+      "pdf_page": 305,
+      "printed_page": 305,
+      "box_pt": [
+        215.15,
+        494.36,
+        451.94,
+        603.76
+      ],
+      "caption": "De la situación física al diagrama de cuerpo libre.",
+      "embedded_image": "/Image2751",
+      "file": "static/images/diagramas/cap05_dcl-rampa_pp305.png"
+    },
+    {
+      "name": "cap05_dcl-caja_pp306",
+      "pdf_page": 306,
+      "printed_page": 306,
+      "box_pt": [
+        153.9,
+        368.13,
+        284.2,
+        486.93
+      ],
+      "caption": "Diagrama de una caja acelerada por una cuerda.",
+      "embedded_image": "/Image2763",
+      "file": "static/images/diagramas/cap05_dcl-caja_pp306.png"
+    },
+    {
+      "name": "cap05_dcl-dos-cuerdas_pp309",
+      "pdf_page": 309,
+      "printed_page": 309,
+      "box_pt": [
+        273.65,
+        132.35,
+        393.65,
+        183.35
+      ],
+      "caption": "Tensiones en dos cuerdas con inclinaciones distintas.",
+      "embedded_image": "/Image2791",
+      "file": "static/images/diagramas/cap05_dcl-dos-cuerdas_pp309.png"
+    },
+    {
+      "name": "cap05_segunda-juguete_pp314",
+      "pdf_page": 314,
+      "printed_page": 314,
+      "box_pt": [
+        203.73,
+        565.9,
+        356.89,
+        596.1
+      ],
+      "caption": "Diagrama del juguete tirado en sentidos opuestos.",
+      "embedded_image": "/Image2820",
+      "file": "static/images/diagramas/cap05_segunda-juguete_pp314.png"
+    },
+    {
+      "name": "cap05_segunda-bloque_pp317",
+      "pdf_page": 317,
+      "printed_page": 317,
+      "box_pt": [
+        395.8,
+        132.02,
+        522.55,
+        247.52
+      ],
+      "caption": "Diagrama del bloque acelerado sobre el suelo.",
+      "embedded_image": "/Image2890",
+      "file": "static/images/diagramas/cap05_segunda-bloque_pp317.png"
+    },
+    {
+      "name": "cap05_tension-dinamometro_pp324",
+      "pdf_page": 324,
+      "printed_page": 324,
+      "box_pt": [
+        327.8,
+        517.16,
+        523.3,
+        646.74
+      ],
+      "caption": "Dinamómetro en una cuerda unida a una pared.",
+      "embedded_image": "/Image2936",
+      "file": "static/images/diagramas/cap05_tension-dinamometro_pp324.png"
+    },
+    {
+      "name": "cap05_tension-dos-pesas_pp325",
+      "pdf_page": 325,
+      "printed_page": 325,
+      "box_pt": [
+        194.9,
+        268.09,
+        472.15,
+        399.09
+      ],
+      "caption": "Dinamómetro entre dos pesas iguales.",
+      "embedded_image": "/Image2938",
+      "file": "static/images/diagramas/cap05_tension-dos-pesas_pp325.png"
+    },
+    {
+      "name": "cap05_polea-fija_pp326",
+      "pdf_page": 326,
+      "printed_page": 326,
+      "box_pt": [
+        404.35,
+        119.37,
+        521.9,
+        371.37
+      ],
+      "caption": "Polea fija: cambia el sentido de la fuerza.",
+      "embedded_image": "/Image2941",
+      "file": "static/images/diagramas/cap05_polea-fija_pp326.png"
+    },
+    {
+      "name": "cap05_polea-movil_pp326",
+      "pdf_page": 326,
+      "printed_page": 326,
+      "box_pt": [
+        380.75,
+        389.38,
+        523.3,
+        641.17
+      ],
+      "caption": "Dos ramales sostienen la parte móvil.",
+      "embedded_image": "/Image2942",
+      "file": "static/images/diagramas/cap05_polea-movil_pp326.png"
+    },
+    {
+      "name": "cap05_poleas-tres-ramales_pp327",
+      "pdf_page": 327,
+      "printed_page": 327,
+      "box_pt": [
+        365.8,
+        306.17,
+        522.75,
+        558.17
+      ],
+      "caption": "Montaje con tres ramales sustentantes.",
+      "embedded_image": "/Image2946",
+      "file": "static/images/diagramas/cap05_poleas-tres-ramales_pp327.png"
+    },
+    {
+      "name": "cap05_atwood_pp328",
+      "pdf_page": 328,
+      "printed_page": 328,
+      "box_pt": [
+        426.85,
+        159.3,
+        523.3,
+        372.35
+      ],
+      "caption": "Máquina de Atwood con masas de 5 y 10 kg.",
+      "embedded_image": "/Image2960",
+      "file": "static/images/diagramas/cap05_atwood_pp328.png"
+    },
+    {
+      "name": "cap05_atwood-mesa_pp331",
+      "pdf_page": 331,
+      "printed_page": 331,
+      "box_pt": [
+        308.75,
+        123.59,
+        523.25,
+        227.24
+      ],
+      "caption": "Carro de 10 kg y masa colgante de 4 kg.",
+      "embedded_image": "/Image3001",
+      "file": "static/images/diagramas/cap05_atwood-mesa_pp331.png"
+    },
+    {
+      "name": "cap05_poleas-ejercicio_pp333",
+      "pdf_page": 333,
+      "printed_page": 333,
+      "box_pt": [
+        462.7,
+        94.19,
+        523.3,
+        318.59
+      ],
+      "caption": "Montaje del ejercicio de carga de 120 N.",
+      "embedded_image": "/Image3011",
+      "file": "static/images/diagramas/cap05_poleas-ejercicio_pp333.png"
+    },
+    {
+      "name": "cap05_friccion-superficies_pp337",
+      "pdf_page": 337,
+      "printed_page": 337,
+      "box_pt": [
+        239.15,
+        554.42,
+        446.1,
+        617.41
+      ],
+      "caption": "Esquema de superficies rugosas en contacto.",
+      "embedded_image": "/Image3025",
+      "file": "static/images/diagramas/cap05_friccion-superficies_pp337.png"
+    },
+    {
+      "name": "cap05_friccion-grafico_pp339",
+      "pdf_page": 339,
+      "printed_page": 339,
+      "box_pt": [
+        237.55,
+        137.75,
+        429.75,
+        329.23
+      ],
+      "caption": "Rozamiento estático y cinético frente a la fuerza aplicada.",
+      "embedded_image": "/Image3035",
+      "file": "static/images/diagramas/cap05_friccion-grafico_pp339.png"
+    },
+    {
+      "name": "cap05_friccion-caja_pp344",
+      "pdf_page": 344,
+      "printed_page": 344,
+      "box_pt": [
+        270.65,
+        115.26,
+        414.65,
+        206.76
+      ],
+      "caption": "Caja que se empuja horizontalmente.",
+      "embedded_image": "/Image3063",
+      "file": "static/images/diagramas/cap05_friccion-caja_pp344.png"
+    },
+    {
+      "name": "cap05_resorte-traccion_pp348",
+      "pdf_page": 348,
+      "printed_page": 348,
+      "box_pt": [
+        419.8,
+        420.22,
+        522.75,
+        489.87
+      ],
+      "caption": "Resorte de espiras cerradas.",
+      "embedded_image": "/Image3072",
+      "file": "static/images/diagramas/cap05_resorte-traccion_pp348.png"
+    },
+    {
+      "name": "cap05_resorte-compresion_pp348",
+      "pdf_page": 348,
+      "printed_page": 348,
+      "box_pt": [
+        423.95,
+        510.03,
+        523.3,
+        583.43
+      ],
+      "caption": "Resorte de espiras separadas.",
+      "embedded_image": "/Image3073",
+      "file": "static/images/diagramas/cap05_resorte-compresion_pp348.png"
+    },
+    {
+      "name": "cap05_slinky-caida_pp350",
+      "pdf_page": 350,
+      "printed_page": 350,
+      "box_pt": [
+        314.8,
+        355.33,
+        522.85,
+        625.99
+      ],
+      "caption": "Secuencia de caída de un resorte extendido.",
+      "embedded_image": "/Image3088",
+      "file": "static/images/diagramas/cap05_slinky-caida_pp350.png"
+    },
+    {
+      "name": "cap05_resortes-paralelo_pp351",
+      "pdf_page": 351,
+      "printed_page": 351,
+      "box_pt": [
+        240.65,
+        142.11,
+        426.38,
+        212.66
+      ],
+      "caption": "Dos resortes en paralelo.",
+      "embedded_image": "/Image3107",
+      "file": "static/images/diagramas/cap05_resortes-paralelo_pp351.png"
+    },
+    {
+      "name": "cap05_resortes-serie_pp351",
+      "pdf_page": 351,
+      "printed_page": 351,
+      "box_pt": [
+        245.82,
+        464.28,
+        421.47,
+        507.47
+      ],
+      "caption": "Dos resortes en serie.",
+      "embedded_image": "/Image3109",
+      "file": "static/images/diagramas/cap05_resortes-serie_pp351.png"
+    },
+    {
+      "name": "cap05_resorte-limite_pp352",
+      "pdf_page": 352,
+      "printed_page": 352,
+      "box_pt": [
+        173.1,
+        204.06,
+        494.14,
+        404.71
+      ],
+      "caption": "Curva de esfuerzo y deformación del original.",
+      "embedded_image": "/Image3114",
+      "file": "static/images/diagramas/cap05_resorte-limite_pp352.png"
+    },
+    {
+      "name": "cap05_arrastre-area_pp355",
+      "pdf_page": 355,
+      "printed_page": 355,
+      "box_pt": [
+        451.1,
+        301.19,
+        523.3,
+        516.44
+      ],
+      "caption": "Área frontal: silueta proyectada sobre un plano.",
+      "embedded_image": "/Image3138",
+      "file": "static/images/diagramas/cap05_arrastre-area_pp355.png"
+    },
+    {
+      "name": "cap05_arrastre-formas_pp356",
+      "pdf_page": 356,
+      "printed_page": 356,
+      "box_pt": [
+        328.2,
+        71.61,
+        523.3,
+        427.25
+      ],
+      "caption": "Formas y coeficientes de arrastre orientativos.",
+      "embedded_image": "/Image3142",
+      "file": "static/images/diagramas/cap05_arrastre-formas_pp356.png"
+    },
+    {
+      "name": "cap05_arrastre-flujos_pp357",
+      "pdf_page": 357,
+      "printed_page": 357,
+      "box_pt": [
+        194.9,
+        268.74,
+        472.06,
+        332.09
+      ],
+      "caption": "Representaciones de flujo laminar y turbulento.",
+      "embedded_image": "/Image3162",
+      "file": "static/images/diagramas/cap05_arrastre-flujos_pp357.png"
     }
   ]
 }

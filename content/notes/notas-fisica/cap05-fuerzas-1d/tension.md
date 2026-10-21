@@ -6,105 +6,115 @@ math = true
 weight = 7
 description = "Tensión en cuerdas, poleas simples, ventaja mecánica y máquina de Atwood."
 tags = ["cap05", "fuerzas", "tensión", "polea", "Atwood", "ventaja mecánica", "cuerdas"]
-revision_estado = "En revisión: divergencias y notas de adaptación, 21/10/2026"
 lastmod = "2026-10-21"
+traduccion_estado = "Ampliada"
+cotejo_estado = "Desarrollo cotejado: pp. 324–336"
+figuras_estado = "8 figuras recuperadas en esta tanda; ver fuente de cada figura"
+visual_estado = "Pendiente: revisión en navegador"
+revision_estado = "En revisión: observaciones de adaptación identificadas"
 +++
 
-## Objetivos de aprendizaje
+**Fuente:** Jeff Bigler, *Physics 1: Mechanics in Plain English*, edición octubre de 2025, pp. 324–336. [Consultar el original (PDF)](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf#page=324).
 
-Al finalizar esta sección, vas a poder:
+## Qué mide la tensión
 
-- Calcular la tensión en cuerdas con y sin poleas.
-- Resolver problemas con la máquina de Atwood.
-- Calcular la ventaja mecánica de sistemas de poleas.
+La tensión es la interacción de tracción transmitida por una cuerda, cadena o cable. Sobre el objeto unido a ella actúa a lo largo de la cuerda y tirando hacia su interior; una cuerda flexible no empuja un bloque como una barra rígida.
 
----
+El modelo ideal utiliza cuerda de masa despreciable, inextensible y tensa, y poleas de masa y rozamiento despreciables. Bajo esas condiciones se usa un mismo módulo $T$ en cada tramo de la **misma cuerda**. Cuerdas diferentes no tienen por qué compartir tensión.
 
-## Definición
+{{< figura src="/images/diagramas/cap05_tension-dinamometro_pp324.png" width="460" alt="Dinamómetro en una cuerda unida a una pared." caption="Dinamómetro en una cuerda unida a una pared." source="Jeff Bigler, edición octubre de 2025, p. 324. Figura del original; etiquetas en inglés. CC BY-NC-SA 4.0." >}}
 
-La **tensión** ($\vec{F}_T$) es la fuerza de tracción que actúa a lo largo de una cuerda, hilo, cable, etc.
+El dinamómetro de la figura lee 100 N: mide la tensión que lo estira, no la suma de los módulos de las fuerzas opuestas que actúan en sus extremos.
 
-Propiedades clave:
-- La cuerda ejerce fuerzas de tracción sobre los cuerpos unidos a sus extremos. Los pares de tercera ley deben identificarse entre la cuerda y cada cuerpo, no como dos fuerzas que se cancelan sobre un mismo bloque.
-- En una cuerda ideal (masa despreciable, inextensible), la tensión es la **misma en todos los puntos** de la cuerda.
-- La dirección es siempre **a lo largo de la cuerda**.
-
-> **Ejemplo:** una persona jala una cuerda con 100 N conectada a una pared. La tensión en la cuerda es 100 N — la pared no "agrega" fuerza, solo la transmite. Si reemplazamos la pared por otra persona que jala con 100 N, la tensión sigue siendo 100 N (no 200 N).
-
----
-
-## Poleas
-
-Una **polea** es una rueda que cambia la dirección de la tensión en una cuerda, sin cambiar su magnitud (polea ideal = sin masa ni fricción).
-
-Con una **polea fija ideal**, se necesita una fuerza igual al peso para levantar la carga a velocidad constante, pero cambia la dirección de aplicación. Una polea móvil tiene otra geometría y puede aportar ventaja mecánica.
-
----
-
-## Ventaja mecánica
-
-En un sistema ideal con ramales paralelos que sostienen la parte móvil, y elevación a velocidad constante, cada ramal soporta la misma tensión. Si hay $n$ ramales sustentantes:
-
-$$\text{Ventaja mecánica} = \frac{\text{peso del objeto}}{\text{fuerza aplicada}} = \text{número de cuerdas que sostienen el peso}$$
-
-| Ramales sustentantes $n$ | Fuerza necesaria | Distancia a jalar para elevar $d$ |
-|--------|-----------------|-------------------|
-| 1 | $F_g$ | $d$ |
-| 2 | $F_g/2$ | $2d$ |
-| 3 | $F_g/3$ | $3d$ |
-
-{{< nota-adaptacion pagina="327" origen="Caso mixto: ejemplos del original y generalización del resumen" >}}
-El original relaciona poleas y ramales en los montajes que dibuja. Esa correspondencia no es universal: hay que contar los ramales que sostienen la parte móvil, no las ruedas. La tabla expresa ese conteo; supone ramales paralelos, cuerda y poleas ideales y peso de la parte móvil incluido en la carga.
+{{< nota-adaptacion pagina="324" origen="Definición del original: tensión y tercera ley" >}}
+Se mantiene la aclaración de p. 294: «su propia reacción» no identifica correctamente por sí sola los cuerpos del par. La cuerda tira de un cuerpo y ese cuerpo tira de la cuerda. Dos fuerzas sobre extremos distintos de un dinamómetro no se suman como dos pesos sobre un mismo gancho.
 {{< /nota-adaptacion >}}
 
-La ventaja mecánica ideal reduce la fuerza pero **no reduce el trabajo**: aumentar la distancia compensa la reducción de fuerza. Con rozamiento, el trabajo de entrada es mayor.
+{{< figura src="/images/diagramas/cap05_tension-dos-pesas_pp325.png" width="400" alt="Dinamómetro entre dos pesas iguales." caption="Dinamómetro entre dos pesas iguales." source="Jeff Bigler, edición octubre de 2025, p. 325. Figura del original; etiquetas en inglés. CC BY-NC-SA 4.0." >}}
 
----
+En el montaje equilibrado con dos pesos de 5 N, la lectura es 5 N. Ni cero por estar equilibrado ni 10 N por sumar los dos módulos: la resultante y la tensión son cantidades distintas.
 
-## Máquina de Atwood
+## Polea fija: cambiar la dirección
 
-La **máquina de Atwood** (George Atwood, 1784) es un sistema con una polea simple y dos masas unidas por una cuerda. Se usa para verificar experimentalmente las leyes de Newton.
+{{< figura src="/images/diagramas/cap05_polea-fija_pp326.png" width="190" alt="Polea fija: cambia el sentido de la fuerza." caption="Polea fija: cambia el sentido de la fuerza." source="Jeff Bigler, edición octubre de 2025, p. 326. Figura del original; etiquetas en inglés. CC BY-NC-SA 4.0." >}}
 
-> 📷 *Imagen: diagrama de la máquina de Atwood con dos masas — Bigler pág. 328 (capturar)*
+Para levantar lentamente una carga de peso 100 N mediante esta polea ideal fija, la tensión necesaria es 100 N. Tirar de 10 cm de cuerda eleva la carga 10 cm. La polea cambia el sentido de la fuerza, pero no reduce su módulo en este montaje.
 
-### Resolución (Bigler)
+## Polea móvil y ramales sustentantes
 
-Masas: $m_1=5\ \text{kg}$ (izquierda), $m_2=10\ \text{kg}$ (derecha). Conservamos la elección de Bigler, pp. 328–329: positivo hacia arriba para el bloque 1 y hacia abajo para el bloque 2, siguiendo la cuerda. Aquí $g=10\ \mathrm{m/s^2}$ es un **módulo positivo**; los signos se asignan en cada ecuación. Suponemos cuerda y polea sin masa y sin rozamiento.
+{{< figura src="/images/diagramas/cap05_polea-movil_pp326.png" width="210" alt="Dos ramales sostienen la parte móvil." caption="Dos ramales sostienen la parte móvil." source="Jeff Bigler, edición octubre de 2025, p. 326. Figura del original; etiquetas en inglés. CC BY-NC-SA 4.0." >}}
 
-**Fuerzas:**
-$$F_{g,1}=-m_1g=-50\ \mathrm N,\qquad F_{g,2}=+m_2g=+100\ \mathrm N$$
+Dos tramos verticales de la misma cuerda sostienen la parte móvil. Si su peso total es 100 N y se eleva sin aceleración:
 
-**Fuerza neta del sistema:**
-$$F_{neta} = +100 + (-50) = +50\ \text{N}$$
+$$2T=100\ \mathrm N\quad\Rightarrow\quad T=50\ \mathrm N$$
 
-**Aceleración:**
-$$a=\frac{50}{15}=\frac{10}{3}\ \mathrm{m/s^2}\approx+3{,}33\ \mathrm{m/s^2}$$
+Para elevar 10 cm la carga hay que tirar de 20 cm de cuerda. Se intercambia fuerza por recorrido, no se obtiene energía extra.
 
-**Tensión en la cuerda** (aplicando 2ª Ley al bloque 1):
-$$F_T-m_1g=m_1a\quad\Rightarrow\quad F_T=5\left(\frac{10}{3}+10\right)=\frac{200}{3}\ \mathrm N\approx66{,}7\ \mathrm N$$
+{{< figura src="/images/diagramas/cap05_poleas-tres-ramales_pp327.png" width="210" alt="Montaje con tres ramales sustentantes." caption="Montaje con tres ramales sustentantes." source="Jeff Bigler, edición octubre de 2025, p. 327. Figura del original; etiquetas en inglés. CC BY-NC-SA 4.0." >}}
 
-El bloque 2 comprueba el mismo resultado: $m_2g-F_T=m_2a$, por lo que $F_T=10(10-10/3)=200/3\ \mathrm N$. Es mayor que 50 N y menor que 100 N.
+En el montaje siguiente sostienen la carga tres ramales; para 100 N corresponde $T=100/3$ N y 30 cm de cuerda por cada 10 cm de elevación.
 
-{{< nota-adaptacion pagina="329" origen="Caso mixto: redondeo original y operación de la adaptación" >}}
-El original presenta 66,6 N con cifras intermedias redondeadas. Aquí conservamos la fracción hasta el final y obtenemos aproximadamente 66,7 N. La expresión del resumen anterior $5(3{,}3+10)=66{,}6$ no era aritméticamente correcta: ese producto vale 66,5. Los signos originales responden a la convención por bloque y no se consideran un error.
+{{< nota-adaptacion pagina="327" origen="Caso mixto: ejemplos del original y regla del resumen anterior" >}}
+La ventaja ideal depende de los ramales que sostienen la parte móvil y de sus direcciones, no del número de ruedas por sí solo. Para $n$ ramales paralelos verticales, tensión común y movimiento sin aceleración, $nT=W$. Hay que incluir en $W$ el peso de la parte móvil si no es despreciable. Si los ramales están inclinados, se suman sus componentes verticales.
 {{< /nota-adaptacion >}}
 
+En esos montajes ideales, $F_{\mathrm{entrada}}\,d_{\mathrm{entrada}}=W\,h$. Las pérdidas reales y las aceleraciones requieren otro balance.
+
+## Máquina de Atwood: dos masas colgantes
+
+{{< figura src="/images/diagramas/cap05_atwood_pp328.png" width="200" alt="Máquina de Atwood con masas de 5 y 10 kg." caption="Máquina de Atwood con masas de 5 y 10 kg." source="Jeff Bigler, edición octubre de 2025, p. 328. Figura del original; etiquetas en inglés. CC BY-NC-SA 4.0." >}}
+
+Sean $m_1=5$ kg y $m_2=10$ kg, con $g=10\ \mathrm{m/s^2}$. Elegimos positivo hacia arriba para la masa 1 y hacia abajo para la 2, siguiendo el movimiento de la cuerda. Con $g$ como módulo positivo:
+
+$$T-m_1g=m_1a$$
+$$m_2g-T=m_2a$$
+
+Sumando las ecuaciones escalares compatibles con esos ejes:
+
+$$a=\frac{(m_2-m_1)g}{m_1+m_2}=\frac{10}{3}\ \mathrm{m/s^2}$$
+
+$$T=m_1(g+a)=\frac{200}{3}\ \mathrm N\approx66{,}7\ \mathrm N$$
+
+La tensión queda entre 50 N y 100 N. Las aceleraciones tienen el mismo módulo, pero sentidos espaciales opuestos; no son el mismo vector.
+
+{{< nota-adaptacion pagina="329" origen="Caso mixto: redondeo del original y cálculo del resumen anterior" >}}
+El original usa 66,6 N con valores intermedios redondeados. Aquí se conserva la fracción hasta el final. La expresión anterior de nuestra síntesis $5(3{,}3+10)=66{,}6$ tampoco era aritméticamente correcta: ese producto da 66,5. Los signos por bloque del original son una convención válida; no se los presenta como errata.
+{{< /nota-adaptacion >}}
+
+## Carro y masa colgante
+
+{{< figura src="/images/diagramas/cap05_atwood-mesa_pp331.png" width="480" alt="Carro de 10 kg y masa colgante de 4 kg." caption="Carro de 10 kg y masa colgante de 4 kg." source="Jeff Bigler, edición octubre de 2025, p. 331. Figura del original; etiquetas en inglés. CC BY-NC-SA 4.0." >}}
+
+Para un carro de masa total 10 kg, sin fricción, y una masa colgante de 4 kg:
+
+$$T=m_1a,\qquad m_2g-T=m_2a$$
+
+$$a=\frac{m_2g}{m_1+m_2}=\frac{40}{14}\approx2{,}86\ \mathrm{m/s^2}$$
+
+$$T=m_1a=\frac{200}{7}\approx28{,}6\ \mathrm N$$
+
+Se suman las ecuaciones **a lo largo de la cuerda**, con las coordenadas compatibles elegidas. No se está afirmando que las tensiones horizontal y vertical se cancelen como vectores del plano en una suma aislada de los dos bloques: la polea fija cambia su dirección y recibe una fuerza del soporte.
+
+Si actúa un rozamiento cinético conocido $f$ sobre el carro que se mueve hacia la polea:
+
+$$T-f=m_1a,\qquad m_2g-T=m_2a$$
+
+$$a=\frac{m_2g-f}{m_1+m_2}$$
+
+Para un sistema inicialmente quieto, antes de imponer rozamiento cinético hay que comprobar si la fricción estática puede mantenerlo en reposo.
+
+## Ejercicios del original y controles
+
+{{< figura src="/images/diagramas/cap05_poleas-ejercicio_pp333.png" width="140" alt="Montaje del ejercicio de carga de 120 N." caption="Montaje del ejercicio de carga de 120 N." source="Jeff Bigler, edición octubre de 2025, p. 333. Figura del original; etiquetas en inglés. CC BY-NC-SA 4.0." >}}
+
+1. En el montaje de p. 333, contá los **seis ramales** que sostienen el conjunto móvil. Para una carga total de 120 N, la ventaja ideal es 6; la fuerza de entrada es 20 N y elevar 0,50 m exige tirar de 3,0 m de cuerda.
+2. Derivá para mesa sin fricción $a=m_2g/(m_1+m_2)$ y $T=m_1m_2g/(m_1+m_2)$.
+3. Para $m_1=2$ kg en la mesa y $m_2=6$ kg colgante: $a=7{,}5\ \mathrm{m/s^2}$ y $T=15$ N.
+4. Para Atwood con 3 kg y 8 kg: $a=50/11\approx4{,}55\ \mathrm{m/s^2}$ y $T=480/11\approx43{,}6$ N.
+5. Para 3 kg en mesa, 5 kg colgantes y rozamiento cinético de 10 N contra el movimiento del carro: $a=5{,}0\ \mathrm{m/s^2}$ y $T=25$ N.
+
+Los controles numéricos son para revisar el procedimiento: elegí ejes, escribí una ecuación por cuerpo y recién después eliminá la tensión o la aceleración.
+
 ---
 
-## Variante — masa sobre mesa
-
-Si una de las masas está sobre una mesa horizontal (en un carrito sin fricción), la fuerza neta es solo la gravedad sobre la masa colgante:
-
-$$F_{neta} = m_{colgante} \cdot g \qquad a = \frac{m_{colgante} \cdot g}{m_{total}}$$
-
----
-
-## Para pensar
-
-1. ¿Por qué la tensión en una cuerda ideal es la misma en todos sus puntos?
-2. En la máquina de Atwood, si las dos masas son iguales, ¿cuál es la aceleración? ¿Y la tensión?
-3. En un montaje ideal con ramales sustentantes paralelos, ¿cuántos ramales necesitás para elevar uniformemente una carga de 500 N aplicando 100 N? ¿Por qué el número de ruedas, sin un dibujo, no basta para responder?
-
----
-
-*Adaptado de [Jeff Bigler — Physics 1: Mechanics in Plain English](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf), licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Traducción y adaptación: Prof. Ing. Luciano Lamaita, 2026.*
+Traducción y adaptación pedagógica: Prof. Ing. Luciano Lamaita, 2026. Original de Jeff Bigler y adaptación bajo [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Los ejemplos propios y las observaciones en revisión se identifican en el texto.

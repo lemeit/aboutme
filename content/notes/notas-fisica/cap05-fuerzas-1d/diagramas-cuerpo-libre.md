@@ -6,110 +6,99 @@ math = true
 weight = 5
 description = "Cómo dibujar un DCL correcto: reglas, pasos y ejemplos."
 tags = ["cap05", "fuerzas", "diagrama de cuerpo libre", "DCL", "fuerzas", "vectores", "equilibrio"]
+lastmod = "2026-10-21"
+traduccion_estado = "Ampliada"
+cotejo_estado = "Desarrollo cotejado: pp. 305–312"
+figuras_estado = "3 figuras recuperadas en esta tanda; ver fuente de cada figura"
+visual_estado = "Pendiente: revisión en navegador"
+revision_estado = "En revisión: observaciones de adaptación identificadas"
 +++
 
-## Objetivos de aprendizaje
+**Fuente:** Jeff Bigler, *Physics 1: Mechanics in Plain English*, edición octubre de 2025, pp. 305–312. [Consultar el original (PDF)](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf#page=305).
 
-Al finalizar esta sección, vas a poder:
+## Aislar un cuerpo para estudiar sus fuerzas
 
-- Dibujar un diagrama de cuerpo libre (DCL) correcto para cualquier situación.
-- Identificar todas las fuerzas que actúan sobre un objeto.
-- Indicar la dirección positiva cuando hay fuerzas opuestas.
+Un **diagrama de cuerpo libre** representa las fuerzas que actúan sobre el cuerpo elegido. Se lo dibuja como un punto o un esquema simple; cada flecha indica una fuerza, su sentido y una magnitud relativa. No se dibujan también las fuerzas que ese cuerpo ejerce sobre otros.
 
----
+{{< figura src="/images/diagramas/cap05_dcl-rampa_pp305.png" width="500" alt="De la situación física al diagrama de cuerpo libre." caption="De la situación física al diagrama de cuerpo libre." source="Jeff Bigler, edición octubre de 2025, p. 305. Figura del original; etiquetas en inglés. CC BY-NC-SA 4.0." >}}
 
-## ¿Qué es un diagrama de cuerpo libre?
+En la rampa de p. 305 aparecen peso vertical, normal perpendicular y rozamiento tangencial. El sentido del rozamiento debe justificarse por la tendencia al deslizamiento del caso representado; no se fija siempre hacia arriba para cualquier movimiento.
 
-Un **diagrama de cuerpo libre (DCL)** es un esquema que representa todas las fuerzas que actúan sobre un objeto.
+## Un procedimiento que evita fuerzas inventadas
 
-- El objeto se representa como un **punto** (o caja simple).
-- Cada fuerza es una **flecha** que parte del punto, en la dirección exacta de la fuerza.
-- El largo relativo de las flechas indica la magnitud relativa de las fuerzas.
+1. Elegí el objeto o sistema y escribí qué contiene.
+2. Enumerá los agentes externos que interactúan con él: Tierra, superficie, cuerda, fluido u otro cuerpo.
+3. Dibujá por separado cada fuerza que actúa actualmente. No añadas el empuje de una mano que ya soltó al objeto.
+4. Elegí ejes y declaralos. Para una rampa suelen servir direcciones paralela y perpendicular.
+5. Proyectá las fuerzas y aplicá la segunda ley por componentes.
+6. Revisá si los tamaños relativos de las flechas son compatibles con la aceleración indicada.
 
-{{< figura src="/images/diagramas/cap05_fuerzas-1d_diagramas-cuerpo-libre_pp305.png" alt="DCL de una caja en una rampa con $F_g$, $F_N$ y $F_f$" caption="DCL de una caja en una rampa con $F_g$, $F_N$ y $F_f$ (Bigler pág. 305)" >}}
+El movimiento y la aceleración pueden mostrarse en un esquema auxiliar, pero no se agregan al diagrama como si fueran fuerzas. Tampoco se dibuja la resultante como una fuerza extra además de las fuerzas cuya suma ya la produce.
 
----
+## Caja tirada por una cuerda
 
-## Pasos para dibujar un DCL
+{{< figura src="/images/diagramas/cap05_dcl-caja_pp306.png" width="310" alt="Diagrama de una caja acelerada por una cuerda." caption="Diagrama de una caja acelerada por una cuerda." source="Jeff Bigler, edición octubre de 2025, p. 306. Figura del original; etiquetas en inglés. CC BY-NC-SA 4.0." >}}
 
-**1. ¿Actúa la gravedad?** (En casi todos los problemas terrestres, sí.)
-- Dibujá $\vec{F}_g$ apuntando hacia abajo.
+Con la cuerda horizontal y sin aceleración vertical:
 
-**2. ¿Algo sostiene al objeto?**
-- Superficie plana → fuerza normal $\vec{F}_N$, perpendicular a la superficie.
-- Cuerda, hilo → tensión $\vec{F}_T$, a lo largo del hilo.
+$$N-mg=0,\qquad T-f=ma_x$$
 
-**3. ¿Hay una fuerza que empuja o jala?**
-- Cuerda → tensión $\vec{F}_T$, a lo largo del hilo.
-- Empuje directo → thrust $\vec{F}_t$, en la dirección del empuje.
-- Solo incluí fuerzas que actúan **ahora** (no las del pasado).
+En el ejemplo $T>f$, por lo que $a_x>0$. Esto no determina por sí solo el signo de la velocidad. El suelo y la Tierra son los agentes de normal y peso; esas dos fuerzas actúan sobre la caja y **no** forman un par de tercera ley entre sí.
 
-**4. ¿Hay fricción?**
-- Si dos superficies están en contacto → casi siempre hay $\vec{F}_f$, paralela a la superficie y opuesta al movimiento.
-- El hielo se considera sin fricción salvo que se indique lo contrario.
-- La resistencia del aire se incluye en $\vec{F}_f$ salvo que se pida por separado.
+## Varias fuerzas en un mismo sentido
 
-**5. ¿Se necesita indicar la dirección positiva?**
-- Si hay fuerzas opuestas y vas a calcular → indicá cuál dirección es positiva con una flecha y un "+" en el diagrama.
+La piedra apoyada en el fondo del agua recibe peso hacia abajo, empuje del agua hacia arriba y normal del fondo hacia arriba. Si está en reposo:
 
----
+$$N+E=P$$
 
-## Errores comunes
+{{< figura src="/images/diagramas/cap05_fuerzas-1d_diagramas-cuerpo-libre_pp307.png" width="420" alt="Comparación del original entre diagramas de fuerzas sobre una piedra sumergida y apoyada." caption="Cada fuerza actúa sobre la piedra; no hay que inventar componentes horizontales para separar las flechas." source="Jeff Bigler, octubre de 2025, p. 307. Figura del original; etiquetas en inglés. CC BY-NC-SA 4.0." >}}
 
-| Error | Correcto |
-|-------|---------|
-| Las flechas no parten del punto central | Todas las flechas parten del punto que representa el objeto |
-| Flechas desviadas de su dirección real | Cada flecha debe apuntar en la dirección exacta de la fuerza |
-| Incluir la velocidad como si fuera una fuerza | La velocidad **no es** una fuerza y no aparece en el DCL |
-| Omitir la fuerza normal | Si hay superficie → hay normal |
+Las flechas no se encadenan como en una construcción punta-cola de suma de vectores: en este diagrama cada fuerza se asocia al mismo cuerpo. Se pueden separar ligeramente los rótulos o las flechas paralelas para que se lean, sin cambiar sus direcciones físicas.
 
+## Dos cuerdas: sumar componentes, no módulos
 
-{{< figuras-dobles 
-    src1="/images/diagramas/cap05_fuerzas-1d_diagramas-cuerpo-libre_pp306_a.png" 
-    alt1="Diagrama de cuerpo libre — caso a" 
-    caption1="(Caja acelerada hacia la derecha)"
-    src2="/images/diagramas/cap05_fuerzas-1d_diagramas-cuerpo-libre_pp306_b.png" 
-    alt2="Diagrama de cuerpo libre — caso b" 
-    caption2="(DCL de la caja)"
-    caption="DCL de una caja acelerada por una cuerda con $F_g$, $F_N$, $F_T$, $F_f$ (Bigler pág. 306)"
->}}
+{{< figura src="/images/diagramas/cap05_dcl-dos-cuerdas_pp309.png" width="430" alt="Tensiones en dos cuerdas con inclinaciones distintas." caption="Tensiones en dos cuerdas con inclinaciones distintas." source="Jeff Bigler, edición octubre de 2025, p. 309. Figura del original; etiquetas en inglés. CC BY-NC-SA 4.0." >}}
 
----
+La masa está quieta y las cuerdas tienen inclinaciones distintas. Sean $\theta_1$ y $\theta_2$ los ángulos de cada cuerda con la horizontal:
 
-## Ejemplos
+$$T_1\cos\theta_1=T_2\cos\theta_2$$
 
-### Caja en equilibrio sobre una mesa
+$$T_1\sin\theta_1+T_2\sin\theta_2=mg$$
 
-Fuerzas: $\vec{F}_g$ (↓) y $\vec{F}_N$ (↑). Como no hay aceleración: $F_N = F_g$.
+En el dibujo, la cuerda 2 es más vertical. Para cancelar componentes horizontales, su tensión debe ser mayor: $T_1<T_2$. La suma vectorial de tensiones compensa al peso; la suma de sus módulos no es igual a $mg$ en esta geometría.
 
-### Caja acelerada por una cuerda
+{{< nota-adaptacion pagina="309" origen="Respuesta del original: tensiones de dos cuerdas" >}}
+La explicación del libro habla de componentes, pero concluye que la opción D, $T_1+T_2=mg$, es correcta. Esa igualdad de módulos no corresponde al dibujo. Con los ángulos representados, la relación es $T_1<T_2$ (opción C), junto con los balances de componentes indicados arriba. Se conserva la figura y se deja explícita esta discrepancia para revisión.
+{{< /nota-adaptacion >}}
 
-Fuerzas: $\vec{F}_g$ (↓), $\vec{F}_N$ (↑), $\vec{F}_T$ (→), $\vec{F}_f$ (←).
+## Ejercicios del original, pp. 310–312
 
-Como la caja acelera hacia la derecha: $F_T > F_f$, entonces $F_{neta} = F_T - F_f > 0$.
+Para cada caso, dibujá solo las fuerzas del objeto señalado y justificá sus sentidos. Esta tabla adapta las consignas y ofrece un control posterior, no reemplaza construir el diagrama.
 
-### Piedra en el fondo de una pileta
+| Caso | Fuerzas y comparación en el modelo indicado |
+|---|---|
+| Ave quieta en una percha | Peso y apoyo equilibrados |
+| Jugador que se desliza sobre hielo sin fricción | Peso y normal; no hay fuerza horizontal para «mantenerlo» |
+| Jugador que se desliza hacia una base | Peso, normal y rozamiento opuesto al deslizamiento |
+| Lámpara sostenida por una cadena | Tensión hacia arriba y peso hacia abajo |
+| Balde elevado a velocidad constante | Tensión y peso del balde con su contenido equilibrados |
+| Paracaidista recién saltado, ya separado del avión | Peso y arrastre; si acelera hacia abajo, el peso supera al arrastre |
+| Paracaidista a velocidad terminal | Peso y arrastre equilibrados en el modelo vertical simple |
+| Atleta en vuelo sobre una valla, sin aire | Solo peso; no hay fuerza horizontal del salto después del despegue |
+| Avión en vuelo horizontal uniforme | Peso, sustentación, propulsión y arrastre, según los ejes del modelo |
+| Trineo tirado por una cuerda inclinada | Peso, normal, tensión oblicua y rozamiento |
+| Anillo sostenido por tres cuerdas | Tres tensiones sobre el anillo; no agregar el peso de la masa colgada como otra fuerza directa |
+| Niño y asiento de hamaca, sin rozamiento | Para el sistema niño-asiento, peso y fuerzas de las cuerdas; la resultante cambia la velocidad |
+| Ardilla quieta en un techo inclinado | Peso, normal y rozamiento estático que evita el deslizamiento |
+| Esquiador que baja uniformemente | Peso, normal y resistencia tangencial que equilibra la componente descendente |
+| Esquiador que acelera cuesta abajo | Mismos tipos de fuerzas, con resultante descendente en el caso planteado |
 
-Fuerzas: $\vec{F}_g$ (↓), $\vec{F}_N$ (↑), $\vec{F}_b$ (↑).
+{{< nota-adaptacion pagina="308" origen="Convenciones del original sobre fuerzas de resistencia" >}}
+El original permite agrupar rozamiento sólido y resistencia del aire. Aquí se los distingue cuando tienen agentes, direcciones o modelos diferentes. Que haya contacto tampoco obliga a que la fricción estática sea no nula: hay que decidir si es necesaria para impedir deslizamiento.
+{{< /nota-adaptacion >}}
 
-Como no hay aceleración: $F_N + F_b = F_g$.
-
-{{< figura src="/images/diagramas/cap05_fuerzas-1d_diagramas-cuerpo-libre_pp307.png" alt="DCL correctos e incorrectos de una piedra en el fondo de una pileta" caption="DCL correctos e incorrectos de una piedra en el fondo de una pileta (Bigler pág. 307)" >}}
+**Control propio:** si cambiás el sistema de «niño» a «niño y asiento», cambia qué interacciones son internas. El diagrama debe corresponder al sistema elegido, no a todos los objetos del dibujo a la vez.
 
 ---
 
-## Ejercicios para practicar (Bigler)
-
-Dibujá el DCL para cada situación:
-
-1. Un pájaro posado sin moverse sobre una rama.
-2. Un jugador de hockey deslizándose a velocidad constante (sin fricción).
-3. Un paracaidista en caída libre (justo después de saltar).
-4. Un paracaidista en velocidad terminal.
-5. Un avión en vuelo horizontal a velocidad constante.
-6. Un esquiador descendiendo una pendiente a velocidad constante.
-7. Un esquiador acelerando cuesta abajo.
-
----
-
-*Adaptado de [Jeff Bigler — Physics 1: Mechanics in Plain English](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf), licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Traducción y adaptación: Prof. Ing. Luciano Lamaita, 2026.*
+Traducción y adaptación pedagógica: Prof. Ing. Luciano Lamaita, 2026. Original de Jeff Bigler y adaptación bajo [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Los ejemplos propios y las observaciones en revisión se identifican en el texto.

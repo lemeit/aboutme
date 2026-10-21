@@ -2,18 +2,14 @@
 title = 'Guía de clase: energía, trabajo y potencia'
 date = '2026-10-21'
 lastmod = '2026-10-21'
-weight = 9
+weight = 10
+aliases = ["/notes/notas-fisica/cap09-energia/guia-clase/"]
 draft = false
 math = true
 description = 'Secuencia adaptable para presentar el capítulo: preguntas iniciales, ejemplos, actividad y evaluación de cierre.'
-traduccion_estado = 'Complemento propio'
-cotejo_estado = 'Propuesta docente propia basada en el capítulo 9'
-figuras_estado = 'Remite a las figuras de las notas del capítulo'
-visual_estado = 'Pendiente: revisión en navegador de escritorio y móvil'
-revision_estado = 'En revisión editorial'
 +++
 
-**Propuesta docente propia de Luciano Lamaita.** Acompaña la traducción y adaptación de Jeff Bigler, capítulo de energía, trabajo y potencia, pp. 435–494. No forma parte del texto original. Material bajo [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+**Material de clase de Introducción a la Física — 4° año.** Esta guía es un complemento docente: no forma parte de la traducción del libro. Se apoya en [Jeff Bigler, capítulo de energía, trabajo y potencia, pp. 435–494 del original en inglés](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf#page=435) y en [la traducción y adaptación al español](/notes/notas-fisica/cap09-energia/). Material bajo [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 ## Qué conviene que puedan explicar al terminar
 
@@ -29,12 +25,12 @@ Es una propuesta adaptable, no un tiempo obligatorio. Si la clase es de un solo 
 
 | Tiempo orientativo | Pregunta o tarea | Apoyo |
 |:---:|:---|:---|
-| 0–10 min | ¿Una caja quieta y elevada puede producir cambios al soltarla? ¿Y una que se mueve? | [Energía y energía cinética](../energia-cinetica/) |
+| 0–10 min | ¿Una caja quieta y elevada puede producir cambios al soltarla? ¿Y una que se mueve? | [Energía y energía cinética](/notes/notas-fisica/cap09-energia/energia-cinetica/) |
 | 10–20 min | Calcular la energía de un auto y preguntar qué pasa si duplica la rapidez | Misma nota, ejemplo de Bigler |
-| 20–30 min | Elegir el cero de altura y comparar dos referencias | [Energía potencial](../energia-potencial/) |
-| 30–40 min | Distinguir trabajo aplicado, gravitatorio y neto al elevar una caja | [Trabajo](../trabajo/) |
-| 40–55 min | Construir un balance con tabla y barras para una caída | [Conservación](../conservacion-energia/) |
-| 55–65 min | Comparar dos formas de elevar la misma carga en tiempos distintos | [Potencia](../potencia/) |
+| 20–30 min | Elegir el cero de altura y comparar dos referencias | [Energía potencial](/notes/notas-fisica/cap09-energia/energia-potencial/) |
+| 30–40 min | Distinguir trabajo aplicado, gravitatorio y neto al elevar una caja | [Trabajo](/notes/notas-fisica/cap09-energia/trabajo/) |
+| 40–55 min | Construir un balance con tabla y barras para una caída | [Conservación](/notes/notas-fisica/cap09-energia/conservacion-energia/) |
+| 55–65 min | Comparar dos formas de elevar la misma carga en tiempos distintos | [Potencia](/notes/notas-fisica/cap09-energia/potencia/) |
 | 65–75 min | Resolver en parejas el problema integrador de abajo | Datos y consignas propios |
 | 75–80 min | Responder las preguntas de salida y justificar una respuesta | Cierre individual |
 
@@ -119,6 +115,6 @@ Un mecanismo ideal eleva una carga de $20\,\mathrm{kg}$ una altura de $3\,\mathr
 
 ## Profundización
 
-Para un grupo que ya maneja torque y momento de inercia, continuar con [trabajo rotacional](../trabajo-rotacional/) y [energía de rotación y rodadura](../energia-cinetica-rotacional/). Para conectar energía con gravitación, usar [rapidez de escape](../velocidad-escape/).
+Para un grupo que ya maneja torque y momento de inercia, continuar con [trabajo rotacional](/notes/notas-fisica/cap09-energia/trabajo-rotacional/) y [energía de rotación y rodadura](/notes/notas-fisica/cap09-energia/energia-cinetica-rotacional/). Para conectar energía con gravitación, usar [rapidez de escape](/notes/notas-fisica/cap09-energia/velocidad-escape/).
 
 Estas extensiones se pueden trabajar en otro encuentro. No son requisitos para resolver los balances de traslación del recorrido central.

@@ -6,103 +6,95 @@ math = true
 weight = 4
 description = "Ley de gravitación universal, campo gravitacional, peso aparente y fuerzas g."
 tags = ["cap05", "fuerzas", "gravitación", "campo gravitacional", "peso", "peso aparente", "g-force"]
-revision_estado = "En revisión: divergencias y notas de adaptación, 21/10/2026"
 lastmod = "2026-10-21"
+traduccion_estado = "Ampliada"
+cotejo_estado = "Desarrollo cotejado: pp. 299–304"
+figuras_estado = "2 figuras recuperadas en esta tanda; ver fuente de cada figura"
+visual_estado = "Pendiente: revisión en navegador"
+revision_estado = "En revisión: observaciones de adaptación identificadas"
 +++
 
-## Objetivos de aprendizaje
+**Fuente:** Jeff Bigler, *Physics 1: Mechanics in Plain English*, edición octubre de 2025, pp. 299–304. [Consultar el original (PDF)](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf#page=299).
 
-Al finalizar esta sección, vas a poder:
+## Peso y modelo de gravitación
 
-- Explicar la gravedad como un campo de fuerza que actúa sobre objetos con masa.
-- Calcular el peso de un objeto usando $F_g = mg$.
-- Distinguir entre peso real y peso aparente.
-- Interpretar las fuerzas g en situaciones cotidianas.
+El **peso** es la fuerza gravitatoria que actúa sobre un cuerpo. En esta unidad se utiliza principalmente el modelo de campo uniforme cerca de la superficie terrestre:
 
----
+$$\vec P=m\vec g$$
 
-## Ley de Gravitación Universal
+La masa se mide en kg y el peso en N. Cambiar de lugar puede modificar el campo y el peso sin cambiar la masa del objeto.
 
-La fuerza gravitacional es una fuerza de atracción entre cualquier par de objetos con masa:
+Para dos masas puntuales, el módulo de su atracción newtoniana es:
 
-$$F_g = \frac{G\,m_1\,m_2}{r^2}$$
+$$F_g=G\frac{m_1m_2}{r^2},\qquad G\approx6{,}67\times10^{-11}\ \mathrm{N\,m^2/kg^2}$$
 
-donde:
-- $G = 6{,}67 \times 10^{-11}\ \text{N}\cdot\text{m}^2/\text{kg}^2$ — constante gravitacional universal
-- $m_1$, $m_2$ — masas de los dos objetos
-- $r$ — distancia entre las masas puntuales; para dos cuerpos esféricamente simétricos sin superposición, distancia entre sus centros
+La fuerza apunta hacia el otro cuerpo. No se asigna un signo negativo universal al módulo: el signo de una componente depende del eje. El carácter atractivo se expresa mediante la dirección del vector.
 
-{{< nota-adaptacion pagina="299" origen="Adaptación anterior: generalización del modelo del original" >}}
-El original introduce la ley y luego aplica un modelo de la Tierra con centro de masa en su centro físico. La fórmula entre centros no debe extenderse sin más a cualquier distribución de masa: para cuerpos de forma arbitraria hay que considerar cómo está distribuida. El caso terrestre de estas notas es una aproximación esférica.
+{{< nota-adaptacion pagina="299" origen="Presentación del original: alcance de la ley y explicación microscópica" >}}
+La fórmula entre centros puede usarse para cuerpos esféricamente simétricos sin superposición, pero no para cualquier distribución de masa. El original añade una explicación mediante gravitones e interacciones entre bosones de Higgs; no se adopta como hecho establecido en estas notas. Se mantiene el modelo newtoniano y se distingue esa cuestión de las propuestas de gravedad cuántica. [Contraste: CERN, gravitones](https://home.web.cern.ch/science/physics/extra-dimensions-gravitons-and-tiny-black-holes).
 {{< /nota-adaptacion >}}
 
----
+## Campo gravitacional y unidades
 
-## Campo gravitacional
+Si se modela la Tierra mediante una distribución esférica, fuera de ella:
 
-Cerca de la superficie de la Tierra, podemos tratar la gravedad como un **campo de fuerza uniforme**:
+$$g(r)=\frac{GM_T}{r^2}$$
 
-$$\vec{F}_g = m\,\vec{g} \qquad g \approx 10\ \frac{\text{N}}{\text{kg}} = 10\ \frac{\text{m}}{\text{s}^2}$$
+Cerca de la superficie, para cambios pequeños de posición, se aproxima por un mismo valor. Como en el libro, usamos $g=10\ \mathrm{N/kg}$ salvo que el problema indique otro dato. La equivalencia de unidades es:
 
-> El valor de $g$ varía entre $9{,}76$ y $9{,}83\ \text{m/s}^2$ en distintos puntos de la Tierra. Usamos $g = 10\ \text{m/s}^2$ como aproximación de trabajo.
+$$1\ \mathrm{N/kg}=1\ \mathrm{m/s^2}$$
 
-**Ejemplo:** ¿cuánto pesa un bloque de 7 kg?
+El campo describe fuerza por unidad de masa. En caída libre sin otras fuerzas, esa misma cantidad es la aceleración del cuerpo. No hay que sumar «campo» y «peso» como si fueran dos fuerzas.
 
-$$F_g = mg = 7 \times 10 = 70\ \text{N}$$
+**Ejemplo de p. 301:** un bloque de 7 kg tiene peso de módulo $P=7(10)=70$ N. Si elegimos arriba positivo, $P_y=-70$ N. Son el mismo peso descrito mediante un módulo o mediante una componente.
 
----
+## Elegir el sistema no cambia la interacción
 
-## Campos de fuerza en general
+{{< figura src="/images/diagramas/cap05_gravedad-pelota_pp302.png" width="280" alt="Sistema formado solo por la pelota." caption="Sistema formado solo por la pelota." source="Jeff Bigler, edición octubre de 2025, p. 302. Figura del original; etiquetas en inglés. CC BY-NC-SA 4.0." >}}
 
-Un **campo de fuerza** es una región en la que una fuerza actúa sobre objetos que tienen cierta propiedad:
+Si estudiamos solo la pelota, la Tierra queda fuera del sistema y su fuerza gravitatoria es externa. El campo es una forma de describir esa acción de la Tierra.
 
-| Campo | Actúa sobre |
-|-------|------------|
-| Gravitacional | Objetos con masa |
-| Eléctrico | Objetos con carga eléctrica |
-| Magnético | Objetos con susceptibilidad magnética |
+{{< figura src="/images/diagramas/cap05_gravedad-tierra-pelota_pp302.png" width="280" alt="Sistema Tierra y pelota." caption="Sistema Tierra y pelota." source="Jeff Bigler, edición octubre de 2025, p. 302. Figura del original; etiquetas en inglés. CC BY-NC-SA 4.0." >}}
 
----
+Si incluimos Tierra y pelota, su interacción gravitatoria es interna. Aparecen fuerzas iguales en módulo y opuestas sobre los dos cuerpos; sus aceleraciones son diferentes por la diferencia de masas. Cambiar los límites del sistema no cambia la fuerza física.
 
-## Peso aparente y fuerzas g
+## Peso aparente: qué mide una balanza
 
-> En realidad, **no podés sentir la fuerza de gravedad**. Lo que sentís cuando "pesás" un objeto es la fuerza normal que aplicás para sostenerlo.
+En el caso de una persona apoyada sobre una balanza, la lectura en newtons corresponde al módulo de la normal que la balanza ejerce sobre ella. Se llama **peso aparente** en este contexto; no necesariamente coincide con $mg$.
 
-El **peso aparente** es la magnitud de la fuerza normal sobre un sistema:
+Con arriba positivo, si solo actúan peso y normal:
 
-$$W_{ap} = F_N$$
+$$N-mg=ma_y\quad\Rightarrow\quad N=m(g+a_y)$$
 
-El peso aparente no siempre coincide con el peso real. Ejemplos:
+| Situación del modelo | Lectura de la balanza |
+|---|---|
+| Reposo o velocidad vertical constante | $N=mg$ |
+| Aceleración hacia arriba | $N>mg$ |
+| Aceleración hacia abajo, menor que $g$ en módulo | $0<N<mg$ |
+| Caída libre conjunta, sin contacto que sostenga | $N=0$ |
 
-- En el fondo de una pileta: la fuerza de empuje del agua reduce el peso aparente.
-- En caída libre: el peso aparente es cero (ingravidez aparente).
-- En un ascensor que acelera hacia arriba: el peso aparente aumenta.
-- En un ascensor que frena al bajar: el peso aparente aumenta también.
+El ascensor puede estar subiendo y desacelerando: entonces la aceleración es hacia abajo y la lectura disminuye. Hay que mirar la aceleración, no solamente el sentido de la velocidad.
 
-### Fuerzas g
+**Comprobación propia:** para 60 kg y $a_y=+2\ \mathrm{m/s^2}$, $N=720$ N; para $a_y=-2\ \mathrm{m/s^2}$, $N=480$ N. En ambos casos el peso gravitatorio sigue siendo 600 N con el mismo $g$.
 
-Las **fuerzas g** expresan el peso aparente como múltiplo de $g$:
+## Empuje del agua y aparente ingravidez
 
-$$g\text{-force} = \frac{F_N}{F_g}$$
+Si una persona está quieta apoyada en el fondo de una pileta, el agua también ejerce empuje hacia arriba. El balance vertical es:
 
-| g-force | Situación |
-|---------|-----------|
-| 0 | Órbita o caída libre (ingravidez) |
-| +⅙ | Superficie de la Luna |
-| +1 | Superficie de la Tierra (en reposo) |
-| +4,5 | Montaña rusa, fondo del primer descenso |
-| −1 | Límite de tolerancia humana sostenida |
-| +8 | Límite de tolerancia humana sostenida |
-| +60 | Límite de impacto en accidente automovilístico con airbag |
+$$N+E-mg=0\quad\Rightarrow\quad N=mg-E$$
 
----
+La fuerza neta es cero; la lectura del apoyo no es la resultante. En caída libre, la lectura puede ser cero aunque el peso gravitatorio no lo sea. Lo mismo explica la aparente ingravidez orbital en el modelo correspondiente.
 
-## Para pensar
+## Qué significa expresar una lectura en «g»
 
-1. ¿Por qué los astronautas en la Estación Espacial Internacional parecen "flotar" si la gravedad terrestre llega hasta allí?
-2. ¿Qué sentirías si estuvieras en un ascensor cuyo cable se corta? ¿Podrías distinguirlo de estar en el espacio?
-3. ¿Por qué en la Luna los astronautas podían dar saltos mucho más altos que en la Tierra?
+Para este ejemplo vertical puede compararse la fuerza de apoyo con el peso de referencia mediante $n=N/(mg)$. Es una razón sin unidad: 2 no significa dos campos gravitatorios ni dos fuerzas peso.
+
+{{< nota-adaptacion pagina="304" origen="Tablas fisiológicas y comparación de aceleraciones del original" >}}
+No se trasladan a esta adaptación los límites de tolerancia humana como valores universales: dependen de dirección, duración y condiciones, y no se verificaron aquí con fuentes médicas. La tabla original tampoco permite mezclar sin aclaración aceleración horizontal, lectura de apoyo vertical y campo gravitatorio local. Se conserva la comparación física de fuerzas y el enlace al PDF para consultar su presentación.
+{{< /nota-adaptacion >}}
+
+**Para pensar:** ¿por qué una balanza en un ascensor puede cambiar su lectura sin que cambie la masa? ¿Cómo puede existir peso con lectura cero? Dibujá las fuerzas antes de responder.
 
 ---
 
-*Adaptado de [Jeff Bigler — Physics 1: Mechanics in Plain English](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf), licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Traducción y adaptación: Prof. Ing. Luciano Lamaita, 2026.*
+Traducción y adaptación pedagógica: Prof. Ing. Luciano Lamaita, 2026. Original de Jeff Bigler y adaptación bajo [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Los ejemplos propios y las observaciones en revisión se identifican en el texto.

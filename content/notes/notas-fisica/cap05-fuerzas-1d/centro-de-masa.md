@@ -6,74 +6,86 @@ math = true
 weight = 2
 description = "Definición, cálculo y aplicaciones del centro de masa de un sistema."
 tags = ["cap05", "fuerzas", "centro de masa", "sistemas", "equilibrio"]
+lastmod = "2026-10-21"
+traduccion_estado = "Ampliada"
+cotejo_estado = "Desarrollo cotejado: pp. 286–290"
+figuras_estado = "4 figuras recuperadas en esta tanda; ver fuente de cada figura"
+visual_estado = "Pendiente: revisión en navegador"
+revision_estado = "En revisión: observaciones de adaptación identificadas"
 +++
 
-## Objetivos de aprendizaje
+**Fuente:** Jeff Bigler, *Physics 1: Mechanics in Plain English*, edición octubre de 2025, pp. 286–290. [Consultar el original (PDF)](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf#page=286).
 
-Al finalizar esta sección, vas a poder:
+## Qué representa el centro de masa
 
-- Definir el centro de masa de un sistema.
-- Calcular la posición del centro de masa en una dimensión.
-- Relacionar el centro de masa con las leyes de Newton.
+El **centro de masa** resume cómo está distribuida la masa de un cuerpo o sistema. Su posición es un promedio de posiciones ponderado por masas: las partes más masivas tienen más peso en ese promedio. No tiene por qué coincidir con el centro geométrico ni dividir la masa en dos mitades iguales.
 
----
+{{< nota-adaptacion pagina="286" origen="Definición simplificada del original y del resumen anterior" >}}
+Concentrar toda la masa en un punto permite describir la traslación mediante la fuerza externa resultante. No conserva automáticamente cualquier efecto de las fuerzas: para analizar rotación, torque, deformaciones o campos no uniformes puede ser necesario conocer la distribución de masa. Por eso no se mantiene sin condiciones la frase «sin cambiar el resultado de cualquier fuerza».
+{{< /nota-adaptacion >}}
 
-## Definición
+{{< figura src="/images/diagramas/cap05_centro-martillo_pp287.png" width="440" alt="Centro de masa de un martillo." caption="Centro de masa de un martillo." source="Jeff Bigler, edición octubre de 2025, p. 287. Figura del original; etiquetas en inglés. CC BY-NC-SA 4.0." >}}
 
-El **centro de masa** es el punto en el que toda la masa de un objeto podría concentrarse sin cambiar el resultado de las fuerzas que actúan sobre él.
+La cabeza del martillo concentra más masa que un tramo del mango de la misma longitud. Su centro de masa se encuentra cerca de la cabeza; no se obtiene simplemente tomando la mitad de su longitud.
 
-> El centro de masa de un objeto puede estar **fuera** del objeto mismo. Por ejemplo, el centro de masa de un anillo está en el centro del hueco.
+## Puede cambiar de lugar y quedar fuera del cuerpo
 
----
+En una persona, mover brazos o tronco cambia la distribución de masa respecto de su cuerpo. El centro de masa puede quedar fuera de la materia que lo forma, como en un anillo o en ciertas posturas. Esto no significa que haya masa material acumulada en el hueco: es una posición calculada.
 
-## Cálculo del centro de masa
+{{< figura src="/images/diagramas/cap05_centro-posturas_pp287.png" width="380" alt="El centro de masa cambia con la postura." caption="El centro de masa cambia con la postura." source="Jeff Bigler, edición octubre de 2025, p. 287. Figura del original; etiquetas en inglés. CC BY-NC-SA 4.0." >}}
+
+El dibujo del original ilustra ese cambio con distintas posturas. La línea punteada es una referencia; no representa una fuerza ni una trayectoria obligatoria.
+
+## Cálculo por componentes
+
+Para masas discretas, con masa total $M=\sum_i m_i>0$:
+
+$$\vec r_{\mathrm{CM}}=\frac{\sum_i m_i\vec r_i}{M}$$
 
 En una dimensión:
 
-$$x_{cm} = \frac{\sum m_i x_i}{\sum m_i}$$
+$$x_{\mathrm{CM}}=\frac{m_1x_1+m_2x_2+\cdots}{m_1+m_2+\cdots}$$
 
-donde $m_i$ es la masa de cada parte y $x_i$ es su posición desde un punto de referencia.
+Cada coordenada se mide desde el **mismo origen**, con la misma unidad y convención de signos. El numerador tiene unidad kg·m; al dividir por kg queda una longitud. En dos o tres dimensiones se calcula un promedio análogo para cada componente.
 
-### Ejemplo resuelto (Bigler)
+## Ejemplo del original: sube y baja
 
-Dos personas en los extremos de una sube-y-baja de 3,5 m. Una pesa 59 kg y la otra 71 kg. ¿Dónde está el centro de masa?
+Dos personas de 59 kg y 71 kg se ubican en los extremos de una tabla de 3,5 m cuya masa se desprecia. Elegimos $x_1=0$ para la persona de 59 kg y $x_2=3{,}5$ m para la otra:
 
-Tomando como referencia la persona de 59 kg ($x = 0$):
+$$x_{\mathrm{CM}}=\frac{59(0)+71(3{,}5)}{59+71}=\frac{248{,}5}{130}\ \mathrm m\approx1{,}91\ \mathrm m$$
 
-$$x_{cm} = \frac{(59)(0) + (71)(3{,}5)}{59 + 71} = \frac{248{,}5}{130} = 1{,}91\ \text{m}$$
+Está a 1,91 m del extremo de 59 kg y a 1,59 m del de 71 kg: queda más cerca de la persona más masiva. **Aclaración de la adaptación:** 59 y 71 kg son masas, no pesos. Si la tabla tiene masa apreciable, debe agregarse al promedio con la posición de su propio centro de masa.
 
-El centro de masa está a 1,91 m de la persona más liviana.
+**Comprobación propia:** si la tabla fuera uniforme y de masa $m_t$, su contribución sería $m_t(1{,}75)$ en el numerador y $m_t$ en el denominador. Al aumentar mucho esa masa, el centro de masa total se aproxima al centro de la tabla.
 
----
+## Equilibrio y método de la plomada
 
-## El centro de masa y el equilibrio
+En gravedad aproximadamente uniforme, el centro de gravedad coincide con el centro de masa. Para un cuerpo colgado que llega al reposo, la vertical que pasa por la suspensión también pasa por ese centro. Repitiendo la suspensión desde otro punto se obtiene otra vertical; su intersección permite localizarlo.
 
-Un objeto se equilibra sobre un punto de apoyo si ese punto está en su centro de masa. Por eso el centro de masa también se llama **centro de gravedad**.
+{{< figura src="/images/diagramas/cap05_centro-plomada_pp289.png" width="370" alt="Método de suspensión y plomada." caption="Método de suspensión y plomada." source="Jeff Bigler, edición octubre de 2025, p. 289. Figura del original; etiquetas en inglés. CC BY-NC-SA 4.0." >}}
 
-Para encontrar el centro de masa de un objeto 2D de forma irregular:
+No debe interpretarse «se equilibra en su centro de masa» como una condición suficiente para cualquier apoyo: también hay que revisar fuerzas, torques y estabilidad. En un cuerpo apoyado, la línea vertical del peso debe quedar dentro de la región de apoyo para evitar el vuelco en el modelo estático simple.
 
-1. Colgalo de un punto por un hilo y trazá la vertical (*línea a plomo*).
-2. Repetí desde otro punto.
-3. El cruce de las dos líneas es el centro de masa.
+## Movimiento del sistema
 
----
+Para masa total constante, en un marco inercial:
 
-## Centro de masa y las leyes de Newton
+$$\sum\vec F_{\mathrm{ext}}=M\vec a_{\mathrm{CM}}$$
 
-- **1ª Ley:** si no hay fuerza neta externa, el centro de masa del sistema mantiene su velocidad constante.
-- **2ª Ley:** una fuerza neta externa cambia la velocidad del centro de masa.
-- **3ª Ley:** las fuerzas internas al sistema no afectan el movimiento del centro de masa.
+Las fuerzas internas pueden cambiar la configuración del sistema, pero se cancelan en el balance total de fuerzas del modelo newtoniano. Si la resultante externa es cero, el centro de masa mantiene su velocidad, aunque las partes se muevan entre sí.
 
-**Ejemplo:** si un martillo gira libremente en el aire, su centro de masa describe una parábola (como cualquier proyectil), independientemente de la rotación.
+{{< figura src="/images/diagramas/cap05_centro-trayectoria_pp290.png" width="540" alt="Trayectoria del centro de masa de un objeto que gira." caption="Trayectoria del centro de masa de un objeto que gira." source="Jeff Bigler, edición octubre de 2025, p. 290. Figura del original; etiquetas en inglés. CC BY-NC-SA 4.0." >}}
 
----
+En el martillo lanzado y girando, la trayectoria del centro de masa es parabólica si se desprecia el aire y el campo gravitatorio es uniforme. Los extremos del martillo no recorren esa misma parábola. Para una actividad propia con video, compará el seguimiento del centro de masa con el de un extremo; justificá primero cómo localizaste el centro.
 
-## Para pensar
+## Para comprobar
 
-1. ¿Puede el centro de masa de un objeto estar fuera del objeto? Dá un ejemplo.
-2. Si todos los habitantes de la Tierra saltaran al mismo tiempo, ¿se movería la Tierra? ¿Por qué?
-3. ¿Por qué los equilibristas usan una barra larga y curvada hacia abajo?
+1. ¿Por qué el promedio simple de posiciones no sirve si las masas son distintas?
+2. ¿Qué cambia si se agrega la masa de la tabla al ejemplo?
+3. ¿Puede moverse una parte del sistema si su centro de masa permanece quieto?
+
+**Respuestas orientativas:** se pondera por masa; cambia tanto el numerador como la masa total; sí, las fuerzas internas pueden generar movimiento relativo.
 
 ---
 
-*Adaptado de [Jeff Bigler — Physics 1: Mechanics in Plain English](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf), licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Traducción y adaptación: Prof. Ing. Luciano Lamaita, 2026.*
+Traducción y adaptación pedagógica: Prof. Ing. Luciano Lamaita, 2026. Original de Jeff Bigler y adaptación bajo [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Los ejemplos propios y las observaciones en revisión se identifican en el texto.

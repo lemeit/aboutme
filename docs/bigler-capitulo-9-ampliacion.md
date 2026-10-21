@@ -4,7 +4,7 @@ Fecha: 21/10/2026. Seguimiento interno, fuera de `content/`.
 
 ## Alcance
 
-Ocho notas desarrolladas a partir de las pp. 441–494 de la edición octubre de 2025, con inventario previo de pp. 435–440. No se traducen como contenido de clase los listados curriculares AP/NGSS. Se conserva atribución y licencia CC BY-NC-SA 4.0. La guía de clase es una propuesta propia, identificada como tal y separada del cómputo de secciones traducidas.
+Ocho notas desarrolladas a partir de las pp. 441–494 de la edición octubre de 2025, con inventario previo de pp. 435–440. No se traducen como contenido de clase los listados curriculares AP/NGSS. Se conserva atribución y licencia CC BY-NC-SA 4.0. La guía de clase se trasladó a `content/notes/fisica-4to/u4-energia/guia-clase.md`, dentro de Introducción a la Física. No forma parte de las Notas de Bigler; conserva enlaces al original y a la adaptación. El índice del capítulo conserva únicamente sus metadatos y el listado de secciones.
 
 | Nota | Fuente | Figuras |
 |---|---|---:|
@@ -52,4 +52,4 @@ La guía propia propone un recorrido central adaptable de 80 minutos, un caso in
 - 506 expresiones del capítulo, incluida la guía, procesadas con KaTeX sin errores de sintaxis.
 - 18 controles numéricos representativos, figuras y enlaces internos comprobados.
 - Pendiente: revisión visual real en navegador de escritorio y móvil y revisión editorial integral; no equiparar cobertura temática con edición definitiva.
-- Publicación de esta tanda del capítulo 9 no realizada. Quartz no modificado.
+- Capítulo 9 publicado mediante PR #14. Separación posterior de la guía preparada en local. Quartz no modificado.

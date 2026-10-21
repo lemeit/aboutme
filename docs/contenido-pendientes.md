@@ -4,7 +4,7 @@ Revisión de continuidad: 21/10/2026. Documento interno, fuera de `content/`; no
 
 ## Prioridad vigente
 
-El 21/10/2026 se publicó el capítulo 5 mediante PR #13 y despliegue confirmado `2353b349-5995-43bd-be7e-b9dd1d85e254`. El usuario pidió priorizar directamente el capítulo 9 para sus clases del viernes 23/10: ocho notas desarrolladas, 14 figuras y una guía docente propia, todavía locales. Ver `docs/bigler-capitulo-9-ampliacion.md`. La revisión integral desde el capítulo 1 sigue abierta; ver `docs/bigler-revision-divergencias.md`.
+El 21/10/2026 se publicó el capítulo 5 mediante PR #13 y despliegue confirmado `2353b349-5995-43bd-be7e-b9dd1d85e254`. El usuario pidió priorizar directamente el capítulo 9 para sus clases del viernes 23/10: ocho notas desarrolladas y 14 figuras, publicadas mediante PR #14; la guía docente se ubica en Introducción a la Física. Ver `docs/bigler-capitulo-9-ampliacion.md`. La revisión integral desde el capítulo 1 sigue abierta; ver `docs/bigler-revision-divergencias.md`.
 
 ## Qué ya está publicado
 
@@ -22,7 +22,7 @@ El 21/10/2026 se publicó el capítulo 5 mediante PR #13 y despliegue confirmado
 | Capítulo 4, Cinemática 2D | 5 notas ampliadas con 9 figuras, publicadas mediante PR #11; tablas y avisos posteriores publicados mediante PR #12 | Nueva revisión editorial y visual pendiente |
 | Capítulo 5, Fuerzas 1D | Diez notas ampliadas y publicadas mediante PR #13; nueve desarrolladas en la tanda de pp. 286–357 con 33 figuras nuevas | Revisión visual exhaustiva y cierre de observaciones |
 | Capítulo 6, Fuerzas 2D | 2 notas breves, sin cotejo editorial registrado | Fuerzas en ángulo y plano inclinado; inventariar secciones faltantes del original |
-| Capítulo 9, Energía, trabajo y potencia | Ocho notas desarrolladas en local, 14 figuras y una guía docente propia | Revisión visual/editorial y publicación cuando se autorice |
+| Capítulo 9, Energía, trabajo y potencia | Ocho notas publicadas y 14 figuras; guía docente separada en Introducción a la Física | Revisión visual/editorial y publicación cuando se autorice |
 | Capítulos 7–8 y 10–13 | Solo índices, sin notas desarrolladas | Adaptación por desarrollar |
 
 Antes de ampliar el capítulo 4 había 17 notas breves y 6 marcadores «capturar». La tanda local del capítulo 4 recupera sus cuatro marcadores con figuras cotejadas. Con la tanda local del capítulo 5 quedan **2 notas por ampliar, ambas del capítulo 6**. Se resolvieron los dos marcadores «capturar» de tensión y fricción mediante figuras extraídas y registradas. Ese conteo no representa todas las figuras ni secciones del original que faltan por recuperar.

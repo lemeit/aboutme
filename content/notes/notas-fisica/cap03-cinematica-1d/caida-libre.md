@@ -149,7 +149,7 @@ Los números permiten volver a las series del PDF. En todos se desprecia el aire
 | 1–8 | $h=v_0^2/(2g)$, $T=2v_0/g$ | $45\ \mathrm m$, $6{,}0\ \mathrm s$ |
 | 1–9 | $t=\sqrt{2h/g}$ | $1{,}0\ \mathrm s$ |
 | 1–10 | La misma relación | $5{,}0\ \mathrm s$ |
-| 1–11 | $|v|=\sqrt{2gh}$ | $20\ \mathrm{m/s}$ |
+| 1–11 | $\lvert v\rvert=\sqrt{2gh}$ | $20\ \mathrm{m/s}$ |
 | 1–12 | $h=v_0^2/(2g)$ | $61{,}25\ \mathrm m$ antes del redondeo |
 | 2–8 | $v_0=gT/2=16\ \mathrm{m/s}$, $d=2h$ | $25{,}6\ \mathrm m$ |
 | 2–9 | $T=2\sqrt{2h/g}$ | $1{,}47\ \mathrm s\approx1{,}5\ \mathrm s$ |

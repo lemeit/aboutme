@@ -6,6 +6,8 @@ math = true
 weight = 1
 description = "Descomposición de fuerzas en componentes, suma vectorial y resolución de problemas estáticos en 2D."
 tags = ["cap06", "fuerzas 2D", "componentes", "trigonometría", "vectores", "fuerza neta", "equilibrio"]
+revision_estado = "En revisión: divergencias y notas de adaptación, 21/10/2026"
+lastmod = "2026-10-21"
 +++
 
 ## Objetivos de aprendizaje
@@ -24,7 +26,9 @@ La segunda ley se proyecta sobre cada eje y permite escribir una ecuación para 
 
 $$F_{neta,x} = m\,a_x \qquad F_{neta,y} = m\,a_y$$
 
-> **Aclaración de la adaptación — Bigler, p. 361:** el original describe fuerzas perpendiculares como independientes. Esto permite separar las componentes, pero no garantiza que todo el problema esté desacoplado. Por ejemplo, una fuerza vertical modifica la normal y, mediante el rozamiento, puede modificar la aceleración horizontal.
+{{< nota-adaptacion pagina="361" origen="Texto del original: independencia de componentes" >}}
+El original describe fuerzas perpendiculares como independientes. Esto permite separar las componentes, pero no garantiza que todo el problema esté desacoplado. Por ejemplo, una fuerza vertical modifica la normal y, mediante el rozamiento, puede modificar la aceleración horizontal.
+{{< /nota-adaptacion >}}
 
 ---
 

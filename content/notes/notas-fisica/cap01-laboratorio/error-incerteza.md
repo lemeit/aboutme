@@ -6,11 +6,12 @@ math = true
 weight = 3
 description = "Error aleatorio y sistemático, incerteza absoluta y relativa, propagación de error."
 tags = ["U1", "laboratorio", "error", "incerteza", "error sistemático", "error aleatorio", "cifras significativas"]
-lastmod = "2026-10-13"
+lastmod = "2026-10-21"
 traduccion_estado = "Ampliada"
 cotejo_estado = "Desarrollo y ejercicios cotejados: pp. 54–73"
 figuras_estado = "9 figuras extraídas y revisadas"
-visual_estado = "Verificada: escritorio y móvil"
+visual_estado = "Pendiente: revisar cambios editoriales del 21/10/2026"
+revision_estado = "En revisión: divergencias y notas de adaptación, 21/10/2026"
 +++
 
 **Fuente:** Jeff Bigler, *Physics 1: Mechanics in Plain English*, edición octubre de 2025, pp. 54–73. [Consultar el original (PDF)](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf#page=54). Traducción y adaptación desarrollada; las actividades propias se identifican aparte.
@@ -192,7 +193,9 @@ La incertidumbre estándar de la media, bajo las hipótesis habituales de indepe
 
 $$u_{\bar{x}}=\frac{s}{\sqrt n}$$
 
-**Aclaración de esta adaptación:** $s$ describe la dispersión de observaciones; $s/\sqrt n$ describe la incertidumbre estadística de la media. No son la misma cantidad. La conocida cobertura aproximada del 68 % para una distribución normal se refiere a un intervalo de una desviación estándar de esa distribución. No debe trasladarse automáticamente a cualquier semirrango ni confundirse con un intervalo de confianza de la media.
+{{< nota-adaptacion pagina="63" origen="Texto del original: interpretación estadística" >}}
+$s$ describe la dispersión de observaciones; $s/\sqrt n$ describe la incertidumbre estadística de la media. No son la misma cantidad. La conocida cobertura aproximada del 68 % para una distribución normal se refiere a un intervalo de una desviación estándar de esa distribución. No debe trasladarse automáticamente a cualquier semirrango ni confundirse con un intervalo de confianza de la media.
+{{< /nota-adaptacion >}}
 
 {{< figura src="/images/diagramas/cap01_dispersion-ajuste_pp62.png" alt="Distancias entre puntos medidos y una recta de ajuste." caption="Los residuos muestran la diferencia entre los datos y el modelo ajustado." source="Jeff Bigler, edición octubre de 2025, p. 62. Recorte del original, CC BY-NC-SA 4.0." >}}
 
@@ -200,7 +203,9 @@ $$u_{\bar{x}}=\frac{s}{\sqrt n}$$
 
 El original utiliza diez mediciones como umbral didáctico y, para pocas observaciones, propone una estimación por semirrango. Ese número no es una frontera matemática: con muestras pequeñas también puede hacerse estadística, pero aumentan las limitaciones y deben explicitarse.
 
+{{< nota-adaptacion pagina="64" origen="Texto del original: media aritmética" >}}
 Por ejemplo, para recorridos de 3,1 m, 2,9 m y 3,3 m, la media es 3,1 m y el semirrango es 0,2 m. **Corrección del original:** la página 64 escribe 2,9 m como media en una frase; las operaciones y el resultado correcto son $(3{,}1\pm0{,}2)\ \mathrm{m}$ para esta estimación.
+{{< /nota-adaptacion >}}
 
 ## Sumas y restas: incertidumbres absolutas
 
@@ -254,7 +259,9 @@ $$\frac{u_t}{t}\approx\frac12\left(\frac{0{,}2}{1{,}8}+\frac{0{,}02}{9{,}81}\rig
 
 $$u_t\approx0{,}034\ \mathrm{s}$$
 
+{{< nota-adaptacion pagina="70" origen="Ejemplo numérico del original: cociente invertido" >}}
 Podemos informar $(0{,}61\pm0{,}03)\ \mathrm{s}$. **Corrección del original:** en la p. 70 se invierten distancia y aceleración y se obtiene 3,30 s. La expresión correcta debe tener unidades de tiempo: $d/g$ tiene unidad $\mathrm{s^2}$; $g/d$ no.
+{{< /nota-adaptacion >}}
 
 ## Ejercicios del original: incertidumbre
 

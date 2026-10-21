@@ -6,11 +6,12 @@ math = true
 weight = 4
 description = "Aceleración centrípeta, período, frecuencia y movimiento circular uniforme."
 tags = ["cap04", "cinemática 2D", "movimiento centrípeto", "aceleración centrípeta", "período", "frecuencia", "MCU"]
-lastmod = "2026-10-14"
+lastmod = "2026-10-21"
 traduccion_estado = "Ampliada"
 cotejo_estado = "Desarrollo cotejado: pp. 266–269"
 figuras_estado = "1 figura extraída; ejercicio del balde desarrollado"
-visual_estado = "Pendiente: revisión en navegador"
+visual_estado = "Pendiente: revisar cambios editoriales del 21/10/2026"
+revision_estado = "En revisión: divergencias y notas de adaptación, 21/10/2026"
 +++
 
 **Fuente:** Jeff Bigler, *Physics 1: Mechanics in Plain English*, edición octubre de 2025, pp. 266–269. [Consultar el original (PDF)](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf#page=266).
@@ -43,7 +44,9 @@ $$\boxed{a_c = \frac{v^2}{r} = r\,\omega^2}$$
 
 Unidad: m/s² (igual que cualquier aceleración)
 
-> **Aclaración de la adaptación — Bigler, pp. 266–267:** el original la llama «constante». En el movimiento circular uniforme es constante su **módulo**, pero la dirección del vector cambia al recorrer el círculo. Si la rapidez varía, también hay una componente tangencial y la aceleración total no apunta necesariamente al centro.
+{{< nota-adaptacion pagina="267" origen="Definición del original: módulo y dirección" >}}
+El original la llama «constante». En el movimiento circular uniforme es constante su **módulo**, pero la dirección del vector cambia al recorrer el círculo. Si la rapidez varía, también hay una componente tangencial y la aceleración total no apunta necesariamente al centro.
+{{< /nota-adaptacion >}}
 
 > **Centrípeto** significa "hacia el centro". La aceleración centrípeta no es un nuevo tipo de fuerza — es la dirección de la aceleración resultante de cualquier fuerza que mantenga al objeto en círculo.
 
@@ -110,7 +113,9 @@ Para la pesa de 0,65 m y diez vueltas en 6,5 s, $T=0{,}65\ \mathrm s$, $f\approx
 
 ## Movimiento periódico y movimiento armónico
 
-**Aclaración de la adaptación — Bigler, p. 268:** el original llama al movimiento circular una forma de movimiento armónico simple porque se repite. Repetirse lo hace **periódico**, pero no convierte la trayectoria circular completa en una oscilación rectilínea armónica. La proyección de un MCU sobre un diámetro sí sigue un movimiento armónico simple. Se distingue así la trayectoria de sus proyecciones; el tema de oscilaciones se desarrolla en su capítulo propio.
+{{< nota-adaptacion pagina="268" origen="Clasificación del movimiento en el original" >}}
+El original llama al movimiento circular una forma de movimiento armónico simple porque se repite. Repetirse lo hace **periódico**, pero no convierte la trayectoria circular completa en una oscilación rectilínea armónica. La proyección de un MCU sobre un diámetro sí sigue un movimiento armónico simple. Se distingue así la trayectoria de sus proyecciones; el tema de oscilaciones se desarrolla en su capítulo propio.
+{{< /nota-adaptacion >}}
 
 ## Ejercicio del balde completo, p. 269
 

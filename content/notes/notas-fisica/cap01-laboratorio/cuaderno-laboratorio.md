@@ -6,11 +6,12 @@ math = true
 weight = 7
 description = "Propósito, reglas y uso del cuaderno de laboratorio como registro oficial del trabajo experimental."
 tags = ["U1", "laboratorio", "cuaderno de laboratorio", "registro de datos", "integridad científica"]
-lastmod = "2026-10-13"
+lastmod = "2026-10-21"
 traduccion_estado = "Ampliada"
 cotejo_estado = "Desarrollo cotejado: pp. 92–97"
 figuras_estado = "Sin figuras en estas páginas"
-visual_estado = "Verificada: escritorio y móvil"
+visual_estado = "Pendiente: revisar cambios editoriales del 21/10/2026"
+revision_estado = "En revisión: divergencias y notas de adaptación, 21/10/2026"
 +++
 
 **Fuente:** Jeff Bigler, *Physics 1: Mechanics in Plain English*, edición octubre de 2025, pp. 92–97. [Consultar el original (PDF)](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf#page=92). Traducción y adaptación desarrollada; las actividades propias se identifican aparte.
@@ -29,7 +30,7 @@ Al finalizar esta sección, vas a poder:
 Un **cuaderno de laboratorio** cumple dos funciones fundamentales:
 
 1. **Registro personal:** es un diario exacto de lo que hiciste, para que puedas consultarlo después.
-2. **Registro oficial:** es un documento legal de lo que hiciste y cuándo lo hiciste.
+2. **Registro oficial:** conserva un registro fechado de lo que hiciste; su valor institucional depende del sistema de registro y sus requisitos.
 
 En laboratorios de investigación y empresas de tecnología, el cuaderno de laboratorio es evidencia primaria. Si una empresa necesita probar que un experimento se realizó en una fecha determinada con ciertos resultados, el cuaderno es la prueba principal.
 
@@ -42,7 +43,7 @@ En laboratorios de investigación y empresas de tecnología, el cuaderno de labo
 Estas reglas existen para proteger la integridad del registro:
 
 ### Registro
-- Todo debe escribirse **a mano con tinta** (nunca a lápiz — demuestra que no se borró nada).
+- Todo debe escribirse **a mano con tinta** (evitando lápiz y borrados que oculten el registro).
 - Los datos se registran **directamente** en el cuaderno durante el experimento, no en papel borrador para copiar después.
 - Las páginas deben estar **numeradas consecutivamente** antes de usarlas.
 - Cada experimento empieza en una **página nueva**.
@@ -50,7 +51,7 @@ Estas reglas existen para proteger la integridad del registro:
 ### Correcciones
 - **Nunca uses corrector líquido** (*liquid paper*, *white-out*).
 - Si te equivocás, tachá con **una sola línea** de modo que el original sea legible, y escribí tus iniciales y la fecha al lado.
-- Nunca modifiques datos después de terminado el experimento — eso es fraude.
+- No alteres retroactivamente ni ocultes los datos originales. Una corrección justificada se agrega con fecha, causa y referencia al registro conservado.
 
 ### Datos
 - Registrá **todos los dígitos**, incluyendo los ceros finales.
@@ -85,7 +86,7 @@ Tus datos son tus datos — no los de "la respuesta correcta del libro".
 - Si obtenés un resultado distinto al esperado, **no cambies los datos**.
 - Analizá posibles fuentes de error en tu procedimiento o medición.
 - Comentá las diferencias en la sección de conclusiones del informe.
-- Dos valores *concuerdan razonablemente* si sus rangos de incerteza se superponen. Por ejemplo, $10 \pm 2$ y $11 \pm 2$ concuerdan; $10 \pm 0{,}2$ y $11 \pm 0{,}2$ no.
+- El original propone una comparación introductoria mediante el solapamiento de intervalos; no es un criterio estadístico universal. Por ejemplo, $10 \pm 2$ y $11 \pm 2$ concuerdan; $10 \pm 0{,}2$ y $11 \pm 0{,}2$ no.
 
 > Modificar datos para que coincidan con el valor esperado es **fraude científico** — es más grave que el plagio.
 
@@ -132,3 +133,8 @@ En el ejemplo del original, $10\pm2$ y $11\pm2$ presentan un amplio solapamiento
 Esta entrada comunica una observación verificable y una decisión. No pretende que un ensayo imperfecto haya sido perfecto; permite revisar su efecto sobre el resultado.
 
 *Adaptado de [Jeff Bigler — Physics 1: Mechanics in Plain English](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf), licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Traducción y adaptación: Prof. Ing. Luciano Lamaita, 2026.*
+
+
+{{< nota-adaptacion pagina="96" origen="Recomendaciones del original y generalizaciones de esta adaptación" >}}
+Se distingue corregir un registro con trazabilidad de falsificar o esconder datos. Se mantiene el ejemplo de solapamiento como aproximación introductoria: decidir compatibilidad requiere conocer qué representan las incertidumbres. Las reglas del cuaderno en papel son el formato enseñado por el autor, no una exclusión universal de registros electrónicos.
+{{< /nota-adaptacion >}}

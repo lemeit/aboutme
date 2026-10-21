@@ -6,11 +6,12 @@ math = true
 weight = 8
 description = "Estructura y contenido de informes de laboratorio internos y formales."
 tags = ["U1", "laboratorio", "informe", "redacción científica", "comunicación científica"]
-lastmod = "2026-10-13"
+lastmod = "2026-10-21"
 traduccion_estado = "Ampliada"
 cotejo_estado = "Desarrollo y ejemplo cotejados: pp. 98–109"
 figuras_estado = "Ejemplo y flujo reconstruidos en tablas"
-visual_estado = "Verificada: escritorio y móvil"
+visual_estado = "Pendiente: revisar cambios editoriales del 21/10/2026"
+revision_estado = "En revisión: divergencias y notas de adaptación, 21/10/2026"
 +++
 
 **Fuente:** Jeff Bigler, *Physics 1: Mechanics in Plain English*, edición octubre de 2025, pp. 98–109. [Consultar el original (PDF)](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf#page=98). Traducción y adaptación desarrollada; las actividades propias se identifican aparte.
@@ -157,7 +158,9 @@ La tabla de diseño debe mostrar cómo se encadenan esas relaciones:
 
 El esquema de acciones distingue dar impulso **antes** de la marca inicial, iniciar el tiempo cuando el objeto cruza esa marca y detenerlo cuando queda en reposo. Medir desde el instante del empujón incluiría una etapa con otra fuerza actuando y cambiaría el modelo. Masa, distancia y tiempo deben registrarse con sus incertidumbres.
 
-**Aclaración de esta adaptación:** en la p. 100 el libro llama “ejemplo anterior” a un caso de rozamiento, aunque las pp. 47–52 desarrollan un carro con ventilador. Aquí se trata como un segundo ejemplo, no como si ambos procedimientos fueran iguales.
+{{< nota-adaptacion pagina="100" origen="Referencia interna del original" >}}
+En la p. 100 el libro llama “ejemplo anterior” a un caso de rozamiento, aunque las pp. 47–52 desarrollan un carro con ventilador. Aquí se trata como un segundo ejemplo, no como si ambos procedimientos fueran iguales.
+{{< /nota-adaptacion >}}
 
 ## Qué debe mostrar el procedimiento
 

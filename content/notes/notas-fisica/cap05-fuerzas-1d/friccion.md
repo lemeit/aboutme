@@ -6,6 +6,8 @@ math = true
 weight = 8
 description = "Fricción estática y cinética, coeficiente de fricción, resolución de problemas con fricción."
 tags = ["cap05", "fuerzas", "fricción", "coeficiente de fricción", "fricción estática", "fricción cinética"]
+revision_estado = "En revisión: divergencias y notas de adaptación, 21/10/2026"
+lastmod = "2026-10-21"
 +++
 
 ## Objetivos de aprendizaje
@@ -38,7 +40,9 @@ Características:
 
 > La ecuación de fricción estática es una **desigualdad**: cuando el objeto está en reposo, la fricción se iguala a la fuerza aplicada (no necesariamente al valor máximo $\mu_s F_N$). Recién cuando la fuerza aplicada supera ese máximo, el objeto comienza a moverse.
 
+{{< nota-adaptacion pagina="338" origen="Adaptación anterior: pérdida del matiz del original" >}}
 Habitualmente $\mu_k<\mu_s$: iniciar el deslizamiento requiere más fuerza que mantenerlo. Bigler dice «casi siempre» en la p. 338; el «siempre» del resumen anterior había eliminado ese matiz. Son relaciones de un modelo aproximado de rozamiento seco, no leyes universales para cualquier contacto.
+{{< /nota-adaptacion >}}
 
 ---
 

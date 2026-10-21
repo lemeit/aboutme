@@ -6,11 +6,12 @@ math = true
 weight = 1
 description = "Sistema de coordenadas, posición, distancia escalar y desplazamiento vectorial."
 tags = ["cap03", "cinemática", "posición", "desplazamiento", "distancia", "sistemas de referencia", "vectores"]
-lastmod = "2026-10-14"
+lastmod = "2026-10-21"
 traduccion_estado = "Ampliada"
 cotejo_estado = "Desarrollo cotejado: pp. 182–183"
 figuras_estado = "2 figuras extraídas; ejemplo enlazado a Rapidez y velocidad"
-visual_estado = "Pendiente: inspección visual y auto-render en navegador; LaTeX validado"
+visual_estado = "Pendiente: revisar cambios editoriales del 21/10/2026"
+revision_estado = "En revisión: divergencias y notas de adaptación, 21/10/2026"
 +++
 
 **Fuente:** Jeff Bigler, *Physics 1: Mechanics in Plain English*, edición octubre de 2025, pp. 182–183. [Consultar el original (PDF)](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf#page=182).
@@ -33,7 +34,9 @@ La elección es convencional. Otro observador puede ubicar el origen en otro lug
 
 La posición $x(t)$ indica la ubicación en cada instante. En una recta puede ser positiva, negativa o cero. En dos dimensiones se usan $(x,y)$ o una distancia al origen y un ángulo $(r,\theta)$; consultá [coordenadas polares]({{< ref "/notes/notas-fisica/cap02-matematicas/coordenadas-polares-cilindricas-esfericas.md" >}}).
 
-**Aclaración de la adaptación:** el original denomina a la posición un «vector de dimensión cero». Aquí usamos la formulación habitual: $\vec r$ es el vector posición respecto de un origen y $x$ es su componente en un eje. Un punto geométrico no tiene extensión, pero eso no convierte al vector posición en un vector de dimensión cero.
+{{< nota-adaptacion pagina="183" origen="Terminología del original: vector posición" >}}
+El original denomina a la posición un «vector de dimensión cero». Aquí usamos la formulación habitual: $\vec r$ es el vector posición respecto de un origen y $x$ es su componente en un eje. Un punto geométrico no tiene extensión, pero eso no convierte al vector posición en un vector de dimensión cero.
+{{< /nota-adaptacion >}}
 
 {{< figura src="/images/diagramas/cap03_posicion-eje_pp183.png" alt="Posiciones a ambos lados del origen." width="420" caption="Posiciones a ambos lados del origen." source="Jeff Bigler, edición octubre de 2025, p. 183. Figura del original; etiquetas en inglés. CC BY-NC-SA 4.0." >}}
 
@@ -59,7 +62,7 @@ La **distancia recorrida** $d$ es la longitud total del camino. Es escalar y no 
 |---|---|---|
 | Posición $x$ | Ubicación respecto del origen | Sí |
 | Desplazamiento $\Delta x$ | Cambio neto de posición | Sí, como componente en 1D |
-| Módulo $|\Delta x|$ | Separación entre los extremos | No |
+| Módulo $\lvert\Delta x\rvert$ | Separación entre los extremos | No |
 | Distancia $d$ | Longitud de todo el recorrido | No |
 
 Siempre se cumple $d\ge |\Delta x|$. La igualdad corresponde a un recorrido recto sin retrocesos; si hay cambios de sentido, deben sumarse las longitudes de los tramos.

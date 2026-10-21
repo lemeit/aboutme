@@ -6,11 +6,12 @@ math = true
 weight = 6
 description = "Aceleración constante, ecuaciones de movimiento, tabla de resolución y ejemplos completos."
 tags = ["cap03", "cinemática", "MRUV", "aceleración constante", "ecuaciones de movimiento", "gráficos"]
-lastmod = "2026-10-14"
+lastmod = "2026-10-21"
 traduccion_estado = "Ampliada"
 cotejo_estado = "Desarrollo cotejado: pp. 197–200, 202–206, 209–211"
 figuras_estado = "Sin recortes adicionales; ecuaciones y tablas reconstruidas"
-visual_estado = "Pendiente: inspección visual y auto-render en navegador; LaTeX validado"
+visual_estado = "Pendiente: revisar cambios editoriales del 21/10/2026"
+revision_estado = "En revisión: divergencias y notas de adaptación, 21/10/2026"
 +++
 
 **Fuente:** Jeff Bigler, *Physics 1: Mechanics in Plain English*, edición octubre de 2025, pp. 197–200, 202–206, 209–211. [Consultar el original (PDF)](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf#page=197).
@@ -27,7 +28,9 @@ El **movimiento rectilíneo uniformemente variado** tiene aceleración constante
 
 Las ecuaciones también incluyen el caso límite $a=0$; cuando queremos destacar una variación efectiva de velocidad, hablamos de MRUV con $a\ne0$. Si $a$ cambia, hay que dividir el movimiento en tramos o usar otro método.
 
-**Aclaración respecto del original:** Bigler escribe flechas vectoriales incluso en $v^2$ y $a\Delta x$ y advierte que no son productos vectoriales bien definidos. Aquí escribimos **componentes escalares con signo en un eje fijo**. Así, $v^2$ es el cuadrado de una componente y el producto $a\Delta x$ es un producto de números con sus unidades.
+{{< nota-adaptacion pagina="199" origen="Notación vectorial del original" >}}
+Bigler escribe flechas vectoriales incluso en $v^2$ y $a\Delta x$ y advierte que no son productos vectoriales bien definidos. Aquí escribimos **componentes escalares con signo en un eje fijo**. Así, $v^2$ es el cuadrado de una componente y el producto $a\Delta x$ es un producto de números con sus unidades.
+{{< /nota-adaptacion >}}
 
 ## Derivación paso a paso
 

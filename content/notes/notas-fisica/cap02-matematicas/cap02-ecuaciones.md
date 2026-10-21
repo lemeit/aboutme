@@ -6,11 +6,12 @@ math = true
 weight = 3
 description = "Cómo despejar variables en ecuaciones físicas antes de sustituir números."
 tags = ["cap02", "matemáticas", "álgebra", "despeje", "ecuaciones", "resolución simbólica"]
-lastmod = "2026-10-13"
+lastmod = "2026-10-21"
 traduccion_estado = "Ampliada"
 cotejo_estado = "Desarrollo y ejercicios cotejados: pp. 128–131"
 figuras_estado = "Sin figuras; tablas reconstruidas"
-visual_estado = "Verificada: escritorio y móvil"
+visual_estado = "Pendiente: revisar cambios editoriales del 21/10/2026"
+revision_estado = "En revisión: divergencias y notas de adaptación, 21/10/2026"
 +++
 
 **Fuente:** Jeff Bigler, *Physics 1: Mechanics in Plain English*, edición octubre de 2025, pp. 128–131. [Consultar el original (PDF)](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf#page=128). Traducción y adaptación desarrollada; se señalan las aclaraciones propias.
@@ -49,7 +50,7 @@ Esta expresión vale para *cualquier* problema de este tipo. Además permite ver
 - Si aumenta la masa → aumenta la fuerza.
 - Si aumenta el tiempo → disminuye la fuerza.
 
-> Resolver simbólicamente da una relación universal; resolver numéricamente da un número que responde una sola pregunta.
+> Resolver simbólicamente da una relación válida bajo las hipótesis del modelo; resolver numéricamente evalúa esa relación para un caso concreto.
 
 ---
 
@@ -69,9 +70,9 @@ $$\frac{n}{r} = s \implies n = s \cdot r \qquad \qquad xy = z \implies x = \frac
 
 ### 3. Potencias → raíces (y viceversa)
 
-$$t^2 = 4ab \implies t = \sqrt{4ab} = 2\sqrt{ab}$$
+$$t^2 = 4ab \implies t = \pm 2\sqrt{ab}$$
 
-$$\sqrt{x} = k \implies x = k^2$$
+$$\sqrt{x} = k \implies x = k^2\qquad (x\ge0,\ k\ge0)$$
 
 ### 4. Paréntesis → eliminalos cuando no queda nada afuera
 
@@ -131,7 +132,9 @@ En $n/r=s$, suponiendo $r\ne0$, multiplicá por $r$ y obtené $n=sr$. Si buscás
 
 De $t^2=4ab$ se obtiene algebraicamente $t=\pm2\sqrt{ab}$ cuando el radicando permite una solución real. Si $t$ representa un intervalo de tiempo positivo, la situación física selecciona la raíz positiva. Del mismo modo, al conocer $v_0^2$ se conoce un módulo, no automáticamente el sentido de una velocidad.
 
-**Corrección de notación:** las raíces positivas usadas en los ejemplos no deben interpretarse como si una ecuación cuadrática tuviera siempre una única solución. Primero se resuelve la ecuación y después se selecciona la solución compatible con el problema.
+{{< nota-adaptacion pagina="129" origen="Despeje del original y notación de la adaptación" >}}
+El ejemplo original selecciona una raíz positiva sin discutir la otra rama. El despeje algebraico general de una ecuación cuadrática requiere considerar ambas raíces reales; cuando se calcula un tiempo transcurrido no negativo, la situación física permite elegir la positiva. Se corrigió la presentación inicial de esta nota para no contradecir esa distinción.
+{{< /nota-adaptacion >}}
 
 ## Ejercicios del original
 

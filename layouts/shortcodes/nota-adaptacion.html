@@ -1,0 +1,9 @@
+<aside class="adaptation-note" aria-label="Nota de adaptación en revisión">
+  <p><strong>Nota de adaptación</strong> · <span>En revisión</span></p>
+  <p><strong>Origen del pasaje:</strong> {{ .Get "origen" }}.
+    {{- with .Get "pagina" }}
+    <a href="https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf#page={{ . }}">Consultar Bigler, p. {{ . }}</a>.
+    {{- end }}
+  </p>
+  {{ .Page.RenderString (dict "display" "block") .Inner }}
+</aside>

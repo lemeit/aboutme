@@ -16,8 +16,11 @@ class NoteInspector(HTMLParser):
         self.summary = None
         self.errors = []
         self.images = 0
+        self.cell = None
 
     def handle_starttag(self, tag, attrs):
+        if tag in ('td', 'th'):
+            self.cell = ''
         if re.fullmatch(r'h[1-6]', tag):
             self.heading = True
         if tag == 'figure' and self.heading:
@@ -28,10 +31,16 @@ class NoteInspector(HTMLParser):
             self.images += 1
 
     def handle_data(self, data):
+        if self.cell is not None:
+            self.cell += data
         if self.summary is not None:
             self.summary += data
 
     def handle_endtag(self, tag):
+        if tag in ('td', 'th') and self.cell is not None:
+            if len(re.findall(r'(?<!\\)\$', self.cell)) % 2:
+                self.errors.append('Delimitador matemático sin pareja en una celda; revisar barras verticales de LaTeX.')
+            self.cell = None
         if re.fullmatch(r'h[1-6]', tag):
             self.heading = False
         if tag == 'summary':

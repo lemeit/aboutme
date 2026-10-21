@@ -6,11 +6,12 @@ math = true
 weight = 6
 description = "Las prácticas científicas según los marcos curriculares: crear representaciones, argumentar con evidencia, comunicar resultados."
 tags = ["U1", "laboratorio", "prácticas científicas", "método científico", "argumentación", "evidencia"]
-lastmod = "2026-10-13"
+lastmod = "2026-10-21"
 traduccion_estado = "Ampliada"
 cotejo_estado = "Desarrollo cotejado: pp. 34–40"
 figuras_estado = "Sin figuras en estas páginas"
-visual_estado = "Verificada: escritorio y móvil"
+visual_estado = "Pendiente: revisar cambios editoriales del 21/10/2026"
+revision_estado = "En revisión: divergencias y notas de adaptación, 21/10/2026"
 +++
 
 **Fuente:** Jeff Bigler, *Physics 1: Mechanics in Plain English*, edición octubre de 2025, pp. 34–40. [Consultar el original (PDF)](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf#page=34).
@@ -54,7 +55,9 @@ Describir procedimientos experimentales y sostener afirmaciones con datos y prin
 | 3.B | Aplicar una ley, definición, relación teórica o modelo para formular una afirmación |
 | 3.C | Justificar una afirmación con datos, representaciones o principios físicos |
 
-**Nota sobre la fuente:** el párrafo de la p. 34 conserva una referencia a “siete” prácticas, aunque debajo enumera estos tres grupos. Esta adaptación sigue la lista desarrollada en esas páginas y no arrastra la discrepancia.
+{{< nota-adaptacion pagina="34" origen="Texto del original: recuento de prácticas AP" >}}
+El párrafo de la p. 34 conserva una referencia a “siete” prácticas, aunque debajo enumera estos tres grupos. Esta adaptación sigue la lista desarrollada en esas páginas y no arrastra la discrepancia.
+{{< /nota-adaptacion >}}
 
 ## Las ocho prácticas NGSS
 

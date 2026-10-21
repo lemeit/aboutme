@@ -6,11 +6,12 @@ description = "El Sistema Internacional de Unidades, prefijos métricos, notaci�
 tags = ["U1", "SI", "unidades", "notación científica", "cifras significativas", "medición"]
 math = true
 weight = 9
-lastmod = "2026-10-13"
+lastmod = "2026-10-21"
 traduccion_estado = "Complemento propio"
 cotejo_estado = "No es una sección independiente del capítulo 1"
 figuras_estado = "Sin figuras"
-visual_estado = "Verificada: escritorio y móvil"
+visual_estado = "Pendiente: revisar cambios editoriales del 21/10/2026"
+revision_estado = "En revisión: divergencias y notas de adaptación, 21/10/2026"
 +++
 
 **Material complementario propio:** introducción a unidades y medición para estas clases. El desarrollo del original sobre SI y notación científica pertenece al capítulo 2. [Continuar allí]({{< ref "/notes/notas-fisica/cap02-matematicas/cap02-si-notacion.md" >}}).
@@ -56,9 +57,9 @@ Todas las demás unidades del SI son **unidades derivadas**, combinaciones de es
 
 ### El sistema MKS
 
-En Física usamos el sistema **MKS** (metro-kilogramo-segundo). Esto significa que antes de aplicar cualquier fórmula, hay que asegurarse de que todas las cantidades estén expresadas en estas unidades base.
+En Física usamos el sistema **MKS** (metro-kilogramo-segundo). En los ejercicios de estas notas trabajamos habitualmente en unidades SI. Una ecuación física puede usarse en otros sistemas coherentes de unidades; lo que no se puede hacer es mezclar unidades sin convertirlas.
 
-> ⚠️ **Regla clave:** Si tenés una velocidad en km/h, hay que convertirla a m/s antes de usarla en una ecuación. Si tenés una masa en gramos, hay que convertirla a kilogramos. Esta es una de las fuentes más comunes de errores en Física.
+> ⚠️ **Regla clave:** Si la ecuación se evalúa con metros, segundos y kilogramos, convertí una velocidad en km/h a m/s y una masa en gramos a kilogramos. Esta es una de las fuentes más comunes de errores en Física.
 
 ---
 
@@ -165,7 +166,7 @@ Las **cifras significativas** indican la precisión de una medición. No podemos
 
 ### Operaciones con cifras significativas
 
-**Suma y resta:** el resultado se redondea al mismo decimal que el número con menos decimales.
+**Suma y resta:** el resultado se redondea a la posición decimal menos precisa entre los términos; puede ser una décima, una unidad, una decena o un millar.
 
 $$13{,}6 + 1{,}25 + 0{,}007 = 14{,}857 \rightarrow 14{,}9$$
 
@@ -177,15 +178,15 @@ $$3{,}521 \times 220 = 774{,}62 \rightarrow 770 \quad (2 \text{ cifras})$$
 
 ## Error, exactitud y precisión
 
-> 💡 En ciencia, **"error" no significa equivocación** — significa el rango de incertidumbre de una medición.
+El **error de medición** es la diferencia respecto de un valor de referencia; la **incertidumbre** caracteriza la dispersión de valores atribuibles a la magnitud medida. Ninguno de esos conceptos debe confundirse con una equivocación de cálculo o transcripción.
 
 ### Definiciones
 
-**Error aleatorio:** variaciones impredecibles en una medición. Al repetir la medición, los resultados varían al azar alrededor del valor real. Se reduce tomando más mediciones.
+**Error aleatorio:** variaciones impredecibles en una medición. Las repeticiones presentan dispersión bajo las condiciones del ensayo. Repetir no elimina esa dispersión ni garantiza centrar los datos en el valor verdadero; con observaciones independientes puede disminuir la incertidumbre estadística de su media.
 
-**Error sistemático:** desviación constante en la misma dirección. No se corrige repitiendo mediciones — indica un problema en el instrumento o el método.
+**Error sistemático:** componente del error que permanece constante o varía de manera predecible al repetir mediciones. No se corrige repitiendo mediciones — indica un problema en el instrumento o el método.
 
-**Exactitud:** qué tan cerca está la medición del valor real. Alta exactitud = bajo error sistemático.
+**Exactitud:** qué tan cerca está la medición del valor real. La exactitud no se reduce únicamente al error sistemático: también intervienen los efectos aleatorios.
 
 **Precisión:** qué tan consistentes son mediciones repetidas entre sí. Alta precisión = bajo error aleatorio.
 
@@ -228,4 +229,9 @@ $$\text{E.R.} = \frac{\text{incertidumbre}}{\text{valor medido}} = \frac{0{,}1}{
 
 ---
 
-*Adaptado de [Jeff Bigler — Physics 1: Mechanics in Plain English](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf), licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Traducción y adaptación: Prof. Ing. Luciano Lamaita, 2026.*
+*Complemento propio de Prof. Ing. Luciano Lamaita, 2026, vinculado a las notas de Jeff Bigler. Licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). No corresponde a una sección independiente del capítulo 1 del original.*
+
+
+{{< nota-adaptacion origen="Material complementario propio; no es un error atribuido a Bigler" >}}
+Se revisaron la diferencia entre error e incertidumbre, el efecto de repetir mediciones y la necesidad de usar unidades coherentes. Las versiones anteriores de este complemento simplificaban demasiado esas relaciones. Referencias de contraste: [VIM, error de medición](https://jcgm.bipm.org/vim/en/2.16.html) y [VIM, incertidumbre](https://jcgm.bipm.org/vim/en/2.26.html).
+{{< /nota-adaptacion >}}

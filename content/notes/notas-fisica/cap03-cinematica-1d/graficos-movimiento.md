@@ -6,11 +6,12 @@ math = true
 weight = 8
 description = "Gráficos posición-tiempo y velocidad-tiempo: pendiente, área y su relación con las ecuaciones."
 tags = ["cap03", "cinemática", "gráficos", "x vs t", "v vs t", "pendiente", "área", "análisis gráfico"]
-lastmod = "2026-10-14"
+lastmod = "2026-10-21"
 traduccion_estado = "Ampliada"
 cotejo_estado = "Desarrollo cotejado: pp. 215–227"
 figuras_estado = "10 figuras extraídas; tablas y ejercicios reconstruidos"
-visual_estado = "Pendiente: inspección visual y auto-render en navegador; LaTeX validado"
+visual_estado = "Pendiente: revisar cambios editoriales del 21/10/2026"
+revision_estado = "En revisión: divergencias y notas de adaptación, 21/10/2026"
 +++
 
 **Fuente:** Jeff Bigler, *Physics 1: Mechanics in Plain English*, edición octubre de 2025, pp. 215–227. [Consultar el original (PDF)](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf#page=215).
@@ -33,7 +34,9 @@ Un gráfico de movimiento no es un dibujo del camino. El eje horizontal suele re
 
 La última fila es una extensión de las relaciones usadas en el capítulo. Las unidades ayudan a comprobar: $\mathrm m/\mathrm s$ para la pendiente de $x(t)$, $(\mathrm{m/s})/\mathrm s=\mathrm{m/s^2}$ para la de $v(t)$ y $(\mathrm{m/s})\mathrm s=\mathrm m$ para el área bajo $v(t)$.
 
-**Aclaración del texto de la p. 216:** la pendiente es cambio vertical dividido por cambio horizontal, $\Delta y/\Delta x$. Una frase del original invierte verbalmente los ejes, aunque la fórmula que muestra es correcta.
+{{< nota-adaptacion pagina="216" origen="Texto del original: definición de pendiente" >}}
+La pendiente es cambio vertical dividido por cambio horizontal, $\Delta y/\Delta x$. Una frase del original invierte verbalmente los ejes, aunque la fórmula que muestra es correcta.
+{{< /nota-adaptacion >}}
 
 ## Posición frente a tiempo
 
@@ -147,7 +150,9 @@ El desplazamiento total es $-10\ \mathrm m$ y la distancia 90 m. Al sumar $x_0=1
 
 ## Ejercicio 4: datos de una carrera, p. 223
 
-El libro presenta esta tabla atribuida a la carrera de 100 m de Carl Lewis de 1991, con tiempo final 9,86 s. Conservamos los **datos publicados por Bigler**, sin presentarlos como mediciones propias. Se omite su afirmación histórica de que fue el primer atleta en bajar de 10 s: no es necesaria para el ejercicio y es incorrecta.
+{{< nota-adaptacion pagina="223" origen="Atribución histórica y tabla del original" >}}
+El libro presenta esta tabla atribuida a la carrera de 100 m de Carl Lewis de 1991, con tiempo final 9,86 s. Conservamos los **datos publicados por Bigler**, sin presentarlos como mediciones propias. La afirmación histórica de que fue el primer atleta en bajar de 10 s se deja en revisión y no se usa como dato del ejercicio. Esta revisión no verifica independientemente los parciales de la carrera.
+{{< /nota-adaptacion >}}
 
 | Posición (m) | 0 | 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 | 100 |
 |---|---|---|---|---|---|---|---|---|---|---|---|

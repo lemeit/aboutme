@@ -1,7 +1,7 @@
 +++
 title = "Rapidez y velocidad"
 date = "2026-06-26"
-lastmod = "2026-10-13"
+lastmod = "2026-10-21"
 draft = false
 math = true
 weight = 2
@@ -10,7 +10,8 @@ tags = ["cap03", "cinemática", "velocidad", "rapidez", "velocidad media", "MRU"
 traduccion_estado = "Revisada"
 cotejo_estado = "Revisado: pp. 184–187"
 figuras_estado = "2 extraídas y revisadas"
-visual_estado = "Revisada: escritorio y móvil"
+visual_estado = "Pendiente: revisar cambios editoriales del 21/10/2026"
+revision_estado = "En revisión: divergencias y notas de adaptación, 21/10/2026"
 +++
 
 **Fuente:** Jeff Bigler, *Physics 1: Mechanics in Plain English*, edición de octubre de 2025, sección *Linear Motion, Speed & Velocity*, páginas 184–187. [Consultar el original (PDF)](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf#page=184).
@@ -42,7 +43,9 @@ El desplazamiento apunta desde el punto inicial al final, unos $23^\circ$ al nor
 
 {{< figura src="/images/diagramas/cap03_velocidad_distancia-desplazamiento_pp184.png" alt="Recorrido desde A hasta B: 12 unidades al este y 5 al norte; desplazamiento diagonal de 13 unidades." caption="Distancia recorrida: 17 unidades. Módulo del desplazamiento: 13 unidades. Las etiquetas de la figura se conservan en inglés." source="Jeff Bigler, edición octubre de 2025, p. 184. Recorte del original, CC BY-NC-SA 4.0." >}}
 
-> **Aclaración de esta adaptación:** el original indica $37^\circ$ en esta figura y en el texto, pero para catetos 12 y 5 corresponde $\arctan(5/12) \approx 22{,}6^\circ$. Se conserva la figura original para hacer visible la diferencia y se utiliza el valor correcto en la explicación.
+{{< nota-adaptacion pagina="184" origen="Figura y texto del original: ángulo" >}}
+El original indica $37^\circ$ en esta figura y en el texto, pero para catetos 12 y 5 corresponde $\arctan(5/12) \approx 22{,}6^\circ$. Se conserva la figura original para hacer visible la diferencia y se utiliza el valor correcto en la explicación.
+{{< /nota-adaptacion >}}
 
 Si el movimiento es rectilíneo y no invierte el sentido, distancia y módulo del desplazamiento coinciden. Para otros recorridos, hay que calcular ambas cantidades por separado.
 

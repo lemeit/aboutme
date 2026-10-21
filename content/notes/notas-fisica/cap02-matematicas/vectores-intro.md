@@ -6,11 +6,12 @@ description = "Qué es un vector, diferencia con magnitudes escalares, represent
 tags = ["U1", "vectores", "escalares", "trigonometría"]
 math = true
 weight = 7
-lastmod = "2026-10-13"
+lastmod = "2026-10-21"
 traduccion_estado = "Ampliada"
 cotejo_estado = "Desarrollo y ejercicios cotejados: pp. 155–165"
 figuras_estado = "8 figuras extraídas y revisadas"
-visual_estado = "Verificada: escritorio y móvil"
+visual_estado = "Pendiente: revisar cambios editoriales del 21/10/2026"
+revision_estado = "En revisión: divergencias y notas de adaptación, 21/10/2026"
 +++
 
 **Fuente:** Jeff Bigler, *Physics 1: Mechanics in Plain English*, edición octubre de 2025, pp. 155–165. [Consultar el original (PDF)](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf#page=155). Traducción y adaptación desarrollada; se señalan las aclaraciones propias.
@@ -201,7 +202,9 @@ $$\sin\theta = \frac{\text{cateto opuesto}}{\text{hipotenusa}} \qquad \cos\theta
 
 Para sumar vectores libres, una flecha puede trasladarse sin cambiar su módulo, dirección ni sentido. Las representaciones punta-cola y origen común producen la misma suma. La **resultante** es el vector obtenido, no la suma aritmética de módulos.
 
-**Aclaración de esta adaptación:** el punto de aplicación de una fuerza sí puede importar físicamente. Mover una fuerza a otro lugar del cuerpo puede cambiar su torque. La libertad de trasladar flechas en una suma geométrica no significa que cualquier fuerza aplicada en cualquier punto tenga el mismo efecto sobre un cuerpo rígido.
+{{< nota-adaptacion pagina="157" origen="Alcance físico de la representación vectorial" >}}
+El punto de aplicación de una fuerza sí puede importar físicamente. Mover una fuerza a otro lugar del cuerpo puede cambiar su torque. La libertad de trasladar flechas en una suma geométrica no significa que cualquier fuerza aplicada en cualquier punto tenga el mismo efecto sobre un cuerpo rígido.
+{{< /nota-adaptacion >}}
 
 En el método punta-cola, la segunda flecha comienza donde termina la primera. La resultante une el origen de la primera con el extremo de la última. En origen común se completa el paralelogramo y la diagonal expresa la resultante. Los recorridos sucesivos suelen representarse punta-cola; fuerzas que actúan simultáneamente sobre un mismo punto, con origen común.
 
@@ -223,7 +226,9 @@ El ángulo debe ubicarse en el cuadrante correcto. $\arctan(R_y/R_x)$ por sí so
 
 Una magnitud escalar no se define por ser positiva, sino por no tener dirección vectorial. Trabajo, carga eléctrica, diferencias de volumen y energía potencial respecto de un nivel elegido pueden tener signo. Una diferencia $\Delta V$ escalar puede ser negativa porque disminuye el volumen, sin representar una dirección espacial.
 
+{{< nota-adaptacion pagina="156" origen="Comparación del original: componente y módulo" >}}
 Una componente de velocidad negativa indica sentido según el eje. Comparando componentes, $-10<+5$; comparando rapidez, $|-10|>|+5|$. **Corrección del original:** no se debe cambiar la desigualdad entre números para expresar que un móvil tiene mayor rapidez.
+{{< /nota-adaptacion >}}
 
 ## El mismo movimiento con dos convenciones
 

@@ -4,7 +4,7 @@ Revisión de continuidad: 21/10/2026. Documento interno, fuera de `content/`; no
 
 ## Prioridad vigente
 
-El 21/10/2026 el usuario pidió continuar el capítulo 5 ampliando texto, recuperando imágenes y cotejando discrepancias al mismo tiempo. La revisión integral desde el capítulo 1 sigue abierta; ver `docs/bigler-revision-divergencias.md`. Esta tanda local de fuerzas conserva los avisos «Nota de adaptación · En revisión» y se documenta en `docs/bigler-capitulo-5-ampliacion.md`.
+El 21/10/2026 se publicó el capítulo 5 mediante PR #13 y despliegue confirmado `2353b349-5995-43bd-be7e-b9dd1d85e254`. El usuario pidió priorizar directamente el capítulo 9 para sus clases del viernes 23/10: ocho notas desarrolladas, 14 figuras y una guía docente propia, todavía locales. Ver `docs/bigler-capitulo-9-ampliacion.md`. La revisión integral desde el capítulo 1 sigue abierta; ver `docs/bigler-revision-divergencias.md`.
 
 ## Qué ya está publicado
 
@@ -19,10 +19,11 @@ El 21/10/2026 el usuario pidió continuar el capítulo 5 ampliando texto, recupe
 
 | Parte | Estado | Trabajo siguiente |
 |---|---|---|
-| Capítulo 4, Cinemática 2D | 5 notas ampliadas con 9 figuras, publicadas mediante PR #11; presencia de figuras comprobada online el 21/10/2026 | Correcciones posteriores de tablas y notas editoriales en local; nueva revisión pendiente |
-| Capítulo 5, Fuerzas 1D | Diez notas ampliadas; nueve desarrolladas en la nueva tanda local de pp. 286–357 con 33 figuras nuevas | Revisión visual, cierre de observaciones y publicación cuando se autorice |
+| Capítulo 4, Cinemática 2D | 5 notas ampliadas con 9 figuras, publicadas mediante PR #11; tablas y avisos posteriores publicados mediante PR #12 | Nueva revisión editorial y visual pendiente |
+| Capítulo 5, Fuerzas 1D | Diez notas ampliadas y publicadas mediante PR #13; nueve desarrolladas en la tanda de pp. 286–357 con 33 figuras nuevas | Revisión visual exhaustiva y cierre de observaciones |
 | Capítulo 6, Fuerzas 2D | 2 notas breves, sin cotejo editorial registrado | Fuerzas en ángulo y plano inclinado; inventariar secciones faltantes del original |
-| Capítulos 7–13 | Solo índices, sin notas desarrolladas | Rotación, gravitación, energía/trabajo/potencia, cantidad de movimiento, MAS, fluidos y relatividad especial |
+| Capítulo 9, Energía, trabajo y potencia | Ocho notas desarrolladas en local, 14 figuras y una guía docente propia | Revisión visual/editorial y publicación cuando se autorice |
+| Capítulos 7–8 y 10–13 | Solo índices, sin notas desarrolladas | Adaptación por desarrollar |
 
 Antes de ampliar el capítulo 4 había 17 notas breves y 6 marcadores «capturar». La tanda local del capítulo 4 recupera sus cuatro marcadores con figuras cotejadas. Con la tanda local del capítulo 5 quedan **2 notas por ampliar, ambas del capítulo 6**. Se resolvieron los dos marcadores «capturar» de tensión y fricción mediante figuras extraídas y registradas. Ese conteo no representa todas las figuras ni secciones del original que faltan por recuperar.
 
@@ -49,7 +50,7 @@ El seguimiento conserva descripciones históricas de trabajo local y bloqueos de
 
 La documentación de despliegue describe Quartz como independiente, pero el registro de Cloudflare muestra una compilación conjunta de Hugo y Quartz y copia del resultado a `/conceptos/`. Esa diferencia requiere aclaración documental, sin migrar ni reconfigurar el alojamiento en esta revisión.
 
-## Orden propuesto para continuar
+## Orden histórico propuesto (reemplazado por la prioridad del capítulo 9)
 
 1. Ampliar capítulo 4 con cotejo por páginas: recuperar ejercicios, figuras y condiciones de las ecuaciones. Corregir primero la descripción del vector centrípeto y las convenciones angulares.
 2. Ampliar capítulo 5, priorizando tercera ley, diagramas, normal, tensión/poleas y fricción. Son conceptos que sostienen los problemas del capítulo siguiente.

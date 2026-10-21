@@ -1,6 +1,6 @@
 # Capítulo 5 — ampliación y cotejo del 21/10/2026
 
-Estado: tanda local, sin publicar. La autorización de publicación de las notas de adaptación anteriores no se interpreta como publicación automática de este desarrollo nuevo.
+Estado: publicado el 21/10/2026 con autorización del usuario, PR #13. Despliegue `2353b349-5995-43bd-be7e-b9dd1d85e254` completado; se comprobaron las diez notas en el dominio público, con 35 referencias de figuras y 21 avisos de adaptación. Sigue pendiente la revisión visual exhaustiva de escritorio y móvil.
 
 ## Cobertura
 

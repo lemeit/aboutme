@@ -193,7 +193,7 @@ Las unidades se simplifican a segundos. Separar las operaciones permite seguir e
 
 ## Adaptaciones propias: práctica y comprobación
 
-Este apartado se agregó para las clases de Luciano Lamaita; no forma parte de las páginas 184–187 del original.
+Este apartado se agregó para las clases de Prof. Lamaita; no forma parte de las páginas 184–187 del original.
 
 ### Movimiento uniforme y gráficos
 
@@ -226,4 +226,6 @@ Consultá la [guía de Tracker]({{< ref "/notes/herramientas/tracker.md" >}}). T
 
 ---
 
-*Traducción y adaptación al español de Jeff Bigler, edición octubre de 2025, pp. 184–187. Se reorganizaron las explicaciones, se explicitó el intervalo de tiempo, se adaptó la notación y se agregaron aclaraciones y actividades identificadas. Adaptación para el sitio de Prof. Ing. Luciano Lamaita. Original y adaptación: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).*
+Traducción y adaptación al español: Prof. Lamaita, 2026. Texto original: [Jeff Bigler — *Physics 1: Mechanics in Plain English*](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf), edición de octubre de 2025. Original y adaptación bajo [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Las aclaraciones y actividades propias se identifican en el texto.
+
+Sobre esta adaptación: desarrolla las pp. 184–187; reorganiza las explicaciones, explicita el intervalo de tiempo, adapta la notación e incorpora aclaraciones y actividades identificadas.

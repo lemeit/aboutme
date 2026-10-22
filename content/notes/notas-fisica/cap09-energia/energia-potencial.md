@@ -138,4 +138,4 @@ La energía química no se identifica en general con energía libre ni con ental
 
 ---
 
-Traducción y adaptación al español: Prof. Ing. Luciano Lamaita, 2026. Original y adaptación bajo [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Las ampliaciones y actividades propias se identifican en el contenido.
+Traducción y adaptación al español: Prof. Lamaita, 2026. Texto original: [Jeff Bigler — *Physics 1: Mechanics in Plain English*](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf), edición de octubre de 2025. Original y adaptación bajo [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Las aclaraciones y actividades propias se identifican en el texto.

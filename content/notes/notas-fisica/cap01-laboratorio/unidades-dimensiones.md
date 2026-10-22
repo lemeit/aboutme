@@ -229,7 +229,7 @@ $$\text{E.R.} = \frac{\text{incertidumbre}}{\text{valor medido}} = \frac{0{,}1}{
 
 ---
 
-*Complemento propio de Prof. Ing. Luciano Lamaita, 2026, vinculado a las notas de Jeff Bigler. Licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). No corresponde a una sección independiente del capítulo 1 del original.*
+Material elaborado por Prof. Lamaita, 2026. Licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Complemento propio vinculado a las notas de Jeff Bigler; no corresponde a una sección independiente del capítulo 1 del original.
 
 
 {{< nota-adaptacion origen="Material complementario propio; no es un error atribuido a Bigler" >}}

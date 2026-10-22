@@ -65,4 +65,4 @@ Entonces $c=5$ y el triángulo es equilátero. El ejemplo se agrega como prácti
 
 ---
 
-*Traducción y adaptación desarrollada del original de Jeff Bigler. Se reorganiza el texto para lectura web y se identifican las aclaraciones y ejercicios propios. Original y adaptación: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Adaptación para el sitio de Prof. Ing. Luciano Lamaita.*
+Traducción y adaptación al español: Prof. Lamaita, 2026. Texto original: [Jeff Bigler — *Physics 1: Mechanics in Plain English*](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf), edición de octubre de 2025. Original y adaptación bajo [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Las aclaraciones y actividades propias se identifican en el texto.

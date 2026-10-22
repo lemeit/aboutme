@@ -128,4 +128,6 @@ Tracker y esta actividad son incorporaciones propias para las clases; no aparece
 
 ---
 
-*Traducción y adaptación del desarrollo de las pp. 34–40. Se distingue la organización AP de la NGSS, se conserva la referencia curricular de Massachusetts y se identifica la actividad propia. Original y adaptación: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Jeff Bigler; adaptación para el sitio de Prof. Ing. Luciano Lamaita.*
+Traducción y adaptación al español: Prof. Lamaita, 2026. Texto original: [Jeff Bigler — *Physics 1: Mechanics in Plain English*](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf), edición de octubre de 2025. Original y adaptación bajo [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Las aclaraciones y actividades propias se identifican en el texto.
+
+Sobre esta adaptación: desarrolla las pp. 34–40; distingue la organización AP de la NGSS, conserva la referencia curricular de Massachusetts e identifica la actividad propia.

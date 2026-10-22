@@ -7,7 +7,7 @@ description = 'Traducción y adaptación al español de Physics 1: Mechanics in 
 
 ## Fuente y autoría
 
-Traducción y adaptación al español de [*Physics 1: Mechanics in Plain English* — libro completo en inglés (PDF)](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf), de **Jeff Bigler**, edición de **octubre de 2025**. Trabajo realizado por el **Prof. Ing. Luciano Lamaita, 2026**.
+Traducción y adaptación al español de [*Physics 1: Mechanics in Plain English* — libro completo en inglés (PDF)](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf), de **Jeff Bigler**, edición de **octubre de 2025**. Trabajo realizado por el **Prof. Lamaita, 2026**.
 
 El original y esta adaptación se distribuyen bajo la licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Las actividades y aclaraciones propias se identifican en cada nota.
 

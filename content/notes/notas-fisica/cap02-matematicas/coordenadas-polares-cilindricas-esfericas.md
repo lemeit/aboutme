@@ -1,4 +1,5 @@
 +++
+tags = ["cap02", "matemáticas", "coordenadas", "coordenadas polares", "coordenadas cilíndricas", "coordenadas esféricas"]
 title = "Coordenadas polares, cilíndricas y esféricas"
 date = "2026-10-13"
 draft = false

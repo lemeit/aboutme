@@ -1,4 +1,5 @@
 +++
+tags = ["cap02", "matemáticas", "ángulos", "grados", "radianes"]
 title = "Grados, radianes y vueltas"
 date = "2026-10-13"
 draft = false

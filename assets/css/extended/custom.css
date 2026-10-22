@@ -191,3 +191,19 @@ ul .notes-link { color: var(--content); }
   margin: 0 0 0.65em;
 }
 
+.pdf-download {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  margin: 1.5rem 0;
+}
+.pdf-download a {
+  display: inline-block;
+  padding: 0.6rem 0.85rem;
+  border: 1px solid var(--primary);
+  border-radius: 6px;
+  font-weight: 600;
+}
+.pdf-download a:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; }
+.pdf-download span { font-size: 0.85rem; color: var(--secondary); }

@@ -1,7 +1,6 @@
 // scripts/generate-pdf.mjs
 //
-// Genera un PDF en formato "paper" (dos columnas) para cada nota de
-// content/**/*.md que tenga `pdf = true` en su front matter.
+// Genera un PDF en formato "paper" (dos columnas) para las notas publicadas de /notes/ (excepto pdf = false), desde el manifiesto de Hugo.
 //
 // Se corre en CI (.github/workflows/generate-pdf.yml) contra un build
 // LOCAL y descartable de Hugo -- no toca el build real de Cloudflare
@@ -17,15 +16,17 @@
 // Uso: node scripts/generate-pdf.mjs
 // Requiere que ./public ya exista (correr `hugo` antes).
 
-import { chromium } from 'playwright';
-import { readFileSync, existsSync, mkdirSync, readdirSync, statSync, createReadStream } from 'node:fs';
+import { createRequire } from 'node:module';
+import { createHash } from 'node:crypto';
+import { fileURLToPath } from 'node:url';
+const { chromium } = createRequire(import.meta.url)('playwright');
+import { readFileSync, existsSync, mkdirSync, readdirSync, statSync, createReadStream, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import http from 'node:http';
 
-const CONTENT_DIR = 'content';
-const PUBLIC_DIR = 'public';
-const OUT_DIR = path.join('static', 'files', 'pdf');
-const PORT = 8971;
+const PUBLIC_DIR = process.env.HUGO_PUBLIC_DIR || 'public';
+const OUT_DIR = process.env.PDF_OUT_DIR || path.join('static', 'files', 'pdf');
+let PORT = Number(process.env.PDF_PORT || 8971);
 
 const MIME = {
   '.html': 'text/html; charset=utf-8',
@@ -61,88 +62,79 @@ function startServer() {
   return new Promise((resolve) => server.listen(PORT, () => resolve(server)));
 }
 
-function walk(dir) {
-  const out = [];
-  for (const entry of readdirSync(dir)) {
-    const full = path.join(dir, entry);
-    const st = statSync(full);
-    if (st.isDirectory()) out.push(...walk(full));
-    else if (entry.endsWith('.md')) out.push(full);
-  }
-  return out;
+function filesUnder(dir) {
+  if (!existsSync(dir)) return [];
+  return readdirSync(dir).flatMap(name => {
+    const full = path.join(dir, name);
+    return statSync(full).isDirectory() ? filesUnder(full) : [full];
+  }).sort();
 }
 
-function frontMatterString(fm, key) {
-  const m = fm.match(new RegExp(`^\\s*${key}\\s*=\\s*'([^']*)'`, 'm')) ||
-            fm.match(new RegExp(`^\\s*${key}\\s*=\\s*"([^"]*)"`, 'm'));
-  return m ? m[1] : '';
+function digest(parts) {
+  const hash = createHash('sha256');
+  for (const part of parts) { hash.update(part); hash.update('\0'); }
+  return hash.digest('hex');
 }
 
-const MESES_ES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio',
-  'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
-
-function parseFrontMatter(mdPath) {
-  const text = readFileSync(mdPath, 'utf8');
-  const m = text.match(/^\+\+\+\r?\n([\s\S]*?)\r?\n\+\+\+/);
-  if (!m) return null;
-  const fm = m[1];
-  const pdfMatch = fm.match(/^\s*pdf\s*=\s*true\s*$/m);
-  if (!pdfMatch) return null;
-  const title = frontMatterString(fm, 'title') || path.basename(mdPath, '.md');
-  const materia = frontMatterString(fm, 'materia');
-  const colegio = frontMatterString(fm, 'colegio');
-  const logo = frontMatterString(fm, 'logo');
-  const localidad = frontMatterString(fm, 'localidad');
-  // Logo de la materia (opcional): todavía no existe ninguno, así que esto
-  // queda sin usar por ahora -- el día que haya un logo para "Laboratorio
-  // de Industrias" (o cualquier otra materia), alcanza con agregar este
-  // campo al front matter y el sello de la derecha lo usa en vez del
-  // ícono genérico de engranaje.
-  const materiaLogo = frontMatterString(fm, 'materia_logo');
-  // Fecha sin el día: se calcula acá (no en el navegador) para no
-  // depender del formato que arma el tema para ".post-meta" -- así
-  // queda controlado que solo se muestre "mes año" en español.
-  const dateMatch = fm.match(/^\s*date\s*=\s*(\d{4})-(\d{2})-(\d{2})/m);
-  const dateText = dateMatch ? `${MESES_ES[parseInt(dateMatch[2], 10) - 1]} ${dateMatch[1]}` : '';
-  return { title, materia, colegio, logo, localidad, materiaLogo, dateText };
-}
-
-function slugFromContentPath(mdPath) {
-  const rel = path.relative(CONTENT_DIR, mdPath).replace(/\.md$/, '').replace(/\\/g, '/');
-  return rel;
-}
-
-function builtHtmlPath(slug) {
-  return path.join(PUBLIC_DIR, slug, 'index.html');
+function targetFingerprint(target, sharedHash) {
+  const html = readFileSync(target.htmlPath, 'utf8');
+  const refs = [...html.matchAll(/<img\b[^>]*\bsrc=(?:"([^"]+)"|'([^']+)'|([^\s>]+))/gi)]
+    .map(m => m[1] || m[2] || m[3]);
+  refs.push(target.logo, target.materiaLogo);
+  const images = [...new Set(refs.filter(Boolean))].sort().map(src => {
+    const pathname = decodeURIComponent(new URL(src, 'https://profe.lemeit.ar').pathname);
+    const local = path.join('static', pathname);
+    return existsSync(local) ? digest([pathname, readFileSync(local)]) : src;
+  });
+  const { htmlPath, ...metadata } = target;
+  const printableHtml = html
+    .replace(/<div\b[^>]*class=(?:"pdf-download[^\"]*"|'pdf-download[^']*'|pdf-download[^\s>]*)[^>]*>[\s\S]*?<\/div>/gi, '')
+    .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '')
+    .replace(/<meta\b[^>]*>/gi, '');
+  return digest([sharedHash, JSON.stringify(metadata), printableHtml, ...images]);
 }
 
 async function main() {
-  const mdFiles = walk(CONTENT_DIR);
-  const targets = [];
-  for (const f of mdFiles) {
-    const fm = parseFrontMatter(f);
-    if (!fm) continue;
-    const slug = slugFromContentPath(f);
-    const htmlPath = builtHtmlPath(slug);
-    if (!existsSync(htmlPath)) {
-      console.warn(`[pdf] aviso: ${f} tiene pdf = true pero no encontre ${htmlPath} (¿corriste "hugo" antes?)`);
-      continue;
+  const manifest = JSON.parse(readFileSync(path.join(PUBLIC_DIR, 'pdf-manifest.json'), 'utf8'));
+  if (manifest.version !== 1 || !Array.isArray(manifest.notes)) throw new Error('Manifiesto PDF inválido');
+  const names = new Set();
+  const targets = manifest.notes.map(t => {
+    if (path.basename(t.filename) !== t.filename || t.filename.includes('..') || !t.filename.endsWith('.pdf')) {
+      throw new Error('Nombre PDF inválido: ' + t.filename);
     }
-    targets.push({ mdPath: f, slug, htmlPath, title: fm.title, materia: fm.materia, colegio: fm.colegio, logo: fm.logo, localidad: fm.localidad, materiaLogo: fm.materiaLogo, dateText: fm.dateText });
-  }
+    const name = t.filename.toLowerCase();
+    if (names.has(name)) throw new Error('Colisión de nombres PDF: ' + t.filename);
+    names.add(name);
+    const slug = t.url.replace(/^\//, '').replace(/\/$/, '');
+    const htmlPath = path.join(PUBLIC_DIR, decodeURIComponent(slug), 'index.html');
+    if (!existsSync(htmlPath)) throw new Error('No se encuentra HTML para ' + t.url);
+    return { ...t, slug, htmlPath };
+  }).filter(t => !process.env.PDF_FILTER || new RegExp(process.env.PDF_FILTER).test(t.slug));
 
   if (targets.length === 0) {
-    console.log('[pdf] no hay notas con pdf = true, nada para generar.');
+    console.log('[pdf] no hay notas seleccionadas, nada para generar.');
     return;
   }
 
   mkdirSync(OUT_DIR, { recursive: true });
   const server = await startServer();
-  const browser = await chromium.launch();
+  PORT = server.address().port;
+  const browser = await chromium.launch(process.env.PDF_CHROME_CHANNEL ? { channel: process.env.PDF_CHROME_CHANNEL } : {});
+  const sharedFiles = ['hugo.toml', fileURLToPath(import.meta.url), ...filesUnder('layouts'), ...filesUnder('assets'), ...filesUnder('themes/PaperMod/layouts')];
+  const sharedHash = digest([browser.version(), ...sharedFiles.flatMap(f => [f, readFileSync(f)])]);
+  const cachePath = path.join(OUT_DIR, '.generation-cache.json');
+  const cache = existsSync(cachePath) ? JSON.parse(readFileSync(cachePath, 'utf8')) : {};
+  let generated = 0, skipped = 0;
+  try {
 
   for (const t of targets) {
-    const outName = t.slug.split('/').pop() + '.pdf';
-    const outPath = path.join(OUT_DIR, outName);
+    const outPath = path.join(OUT_DIR, t.filename);
+    const fingerprint = targetFingerprint(t, sharedHash);
+    if (cache[t.filename]?.fingerprint === fingerprint && existsSync(outPath) &&
+        cache[t.filename].pdfHash === digest([readFileSync(outPath)])) {
+      skipped++;
+      continue;
+    }
     console.log(`[pdf] generando ${outPath} desde http://localhost:${PORT}/${t.slug}/ ...`);
 
     const page = await browser.newPage();
@@ -156,15 +148,15 @@ async function main() {
     // La fecha ya viene calculada del front matter (parseFrontMatter),
     // como "mes año" en español y sin el día -- no se scrapea más de
     // ".post-meta" (eso traía el formato con día que no queríamos).
-    await page.evaluate((dateText) => {
+    await page.evaluate(({ dateText, bylineText }) => {
       const title = document.querySelector('.post-title');
       if (title) {
         const byline = document.createElement('div');
         byline.className = 'paper-byline';
-        byline.textContent = `Prof. Luciano Lamaita${dateText ? ' · ' + dateText : ''}`;
+        byline.textContent = `${bylineText}${dateText ? ' · ' + dateText : ''}`;
         title.insertAdjacentElement('afterend', byline);
       }
-    }, t.dateText);
+    }, { dateText: t.dateText, bylineText: t.byline });
 
     // Masthead estilo "paper" de revista científica (Elsevier/ScienceDirect
     // y similares): franja de 3 columnas -- logo+institución a la
@@ -279,21 +271,48 @@ async function main() {
     // Esperar a que las imágenes del masthead (logo del colegio y, si
     // existe, logo de la materia) terminen de cargar antes de seguir --
     // si no, a veces el PDF sale con el hueco del <img> en blanco.
-    await page.waitForFunction(() => {
-      const imgs = document.querySelectorAll('.paper-masthead-logo, .paper-masthead-materia-logo-img');
-      return Array.from(imgs).every((img) => img.complete);
-    }, { timeout: 5000 }).catch(() => {
-      console.warn('[pdf] aviso: timeout esperando el logo institucional, sigo igual.');
+    // No publicar PDFs incompletos si falla una imagen o el renderizado matemático.
+    await page.evaluate(() => document.querySelectorAll('img').forEach(img => img.loading = 'eager'));
+    await page.waitForFunction(() => Array.from(document.images).every(img => img.complete && img.naturalWidth > 0), null, { timeout: 15000 }).catch(async () => {
+      const broken = await page.evaluate(() => Array.from(document.images).filter(img => !img.complete || !img.naturalWidth).map(img => img.src));
+      throw new Error(`Imágenes no disponibles en ${t.slug}: ${JSON.stringify(broken)}`);
     });
-
     await page.waitForFunction(() => {
-      const spans = document.querySelectorAll('.katex, .katex-display');
-      const hasMathSource = document.body.textContent.includes('$');
-      return !hasMathSource || spans.length > 0;
-    }, { timeout: 10000 }).catch(() => {
-      console.warn(`[pdf] aviso: timeout esperando KaTeX en ${t.slug}, sigo igual.`);
+      const content = document.querySelector('.post-content');
+      const walker = document.createTreeWalker(content, NodeFilter.SHOW_TEXT);
+      let node;
+      while ((node = walker.nextNode())) {
+        if (!node.parentElement.closest('.katex, script, style, pre, code') && /\$\$[\s\S]*?\$\$|\$[^$\n]+\$/.test(node.textContent)) return false;
+      }
+      return !content.querySelector('.katex-error');
+    }, null, { timeout: 15000 }).catch(async () => {
+      const diagnostic = await page.evaluate(() => {
+        const content = document.querySelector('.post-content');
+        const walker = document.createTreeWalker(content, NodeFilter.SHOW_TEXT);
+        const raw = [];
+        let node;
+        while ((node = walker.nextNode())) {
+          if (!node.parentElement.closest('.katex, script, style, pre, code') && node.textContent.includes('$')) raw.push(node.textContent.slice(0, 180));
+        }
+        return { rendered: content.querySelectorAll('.katex').length, errors: Array.from(content.querySelectorAll('.katex-error')).map(e => e.textContent), raw };
+      });
+      throw new Error(`Fórmulas pendientes en ${t.slug}: ${JSON.stringify(diagnostic)}`);
     });
-    await page.waitForTimeout(500);
+    await page.evaluate(async () => {
+      document.querySelectorAll('details').forEach(detail => detail.open = true);
+      document.documentElement.setAttribute('data-theme', 'light');
+      const last = document.querySelector('.post-content > p:last-child');
+      if (last && /Prof\. (?:Lamaita|Luciano)|Traducción y adaptación/.test(last.textContent)) {
+        last.classList.add('paper-credit');
+        if (last.previousElementSibling?.tagName === 'HR') last.previousElementSibling.remove();
+        document.querySelector('.post-header').appendChild(last);
+      }
+      document.querySelectorAll('a[href]').forEach(link => {
+        const url = new URL(link.href, location.href);
+        if (url.origin === location.origin) link.href = 'https://profe.lemeit.ar' + url.pathname + url.search + url.hash;
+      });
+      await document.fonts.ready;
+    });
 
     // Acomodar el contenido que es más ancho que una columna de impresión.
     // Las fórmulas de KaTeX YA NO se achican con JS (una versión anterior de
@@ -302,9 +321,8 @@ async function main() {
     // dimensionados para el tamaño ORIGINAL -- desproporcionadamente gruesos,
     // y además el achique variaba fórmula por fórmula así que no quedaban
     // todas del mismo tamaño). En cambio, toda fórmula que no entra en una
-    // columna se resuelve en la fuente (los .md), partiéndola en varias
-    // líneas con \begin{aligned}...\end{aligned} -- así TODAS las fórmulas
-    // del documento quedan al mismo tamaño, sin achique.
+    // columna pasa a ocupar el ancho completo, sin achicar su tipografía.
+    // También se puede partir en varias líneas desde el Markdown.
     // Las tablas sí pueden seguir pasando a ocupar las dos columnas si una
     // celda no entra (una tabla ancha centrada es normal en un paper).
     await page.evaluate(() => {
@@ -323,6 +341,14 @@ async function main() {
       const MM_TO_PX = 96 / 25.4;
       const contentWidthPx = (210 - 2 * 14) * MM_TO_PX;
       container.style.width = contentWidthPx + 'px';
+
+      const columnWidthPx = ((210 - 2 * 14 - 8) / 2) * MM_TO_PX;
+      container.querySelectorAll('.katex-display').forEach(formula => {
+        const math = formula.querySelector('.katex-html');
+        if (math && math.getBoundingClientRect().width > columnWidthPx) {
+          formula.style.columnSpan = 'all';
+        }
+      });
 
       // Tablas: si alguna celda tiene contenido que no entra en el ancho
       // que le tocó (una palabra/número más ancho que la celda, aun
@@ -353,11 +379,17 @@ async function main() {
       `,
     });
     await page.close();
+    cache[t.filename] = { fingerprint, pdfHash: digest([readFileSync(outPath)]) };
+    generated++;
     console.log(`[pdf] listo: ${outPath}`);
   }
 
-  await browser.close();
-  server.close();
+  writeFileSync(cachePath, JSON.stringify(cache, null, 2) + '\n');
+  console.log(`[pdf] ${generated} generados; ${skipped} sin cambios.`);
+  } finally {
+    await browser.close();
+    server.close();
+  }
 }
 
 main().catch((err) => {

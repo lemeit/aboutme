@@ -1,0 +1,7 @@
+{{- $pdf := partial "pdf-config.html" . -}}
+{{- if and $pdf.enabled (fileExists (printf "static/files/pdf/%s" $pdf.filename)) -}}
+<div class="pdf-download no-print">
+  <a href="{{ printf "/files/pdf/%s" $pdf.filename | relURL }}" download>Descargar versión imprimible (PDF)</a>
+  <span>A4 · dos columnas</span>
+</div>
+{{- end -}}

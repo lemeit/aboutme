@@ -7,6 +7,7 @@ proyecto_orden = 1
 draft = false
 math = false
 pdf = true
+pdf_file = 'layout-planta-piloto.pdf'
 materia = 'Laboratorio de Industrias — 7° TQ'
 colegio = 'EEST N°1 "Gral. Savio"'
 logo = '/images/logos/eest1.png'

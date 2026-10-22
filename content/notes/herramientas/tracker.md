@@ -2,6 +2,7 @@
 title = "Tracker — Análisis de video para Física"
 date = "2026-06-27"
 draft = false
+math = true
 weight = 1
 list_icon = "/images/logos/tracker-icon.png"
 description = "Instalación, interfaz y flujo de trabajo completo para analizar movimiento a partir de video."

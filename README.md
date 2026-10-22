@@ -234,6 +234,12 @@ npx quartz build --serve
 
 ---
 
+## PDFs imprimibles
+
+Las notas publicadas generan su versión A4 de dos columnas mediante GitHub Actions y muestran un botón de descarga cuando el archivo está disponible. Se edita únicamente el Markdown; la Action actualiza los PDFs afectados por cambios de texto, imágenes o diseño. Ver [flujo y opciones de PDF](docs/pdfs-imprimibles.md).
+
+---
+
 ## Deploy
 
 Cada `git push` a `main` dispara un build automático en Cloudflare Pages (~1–2 minutos).

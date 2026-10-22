@@ -7,6 +7,7 @@ proyecto_orden = 4
 draft = false
 math = true
 pdf = true
+pdf_file = 'simulacion-dwsim-cerveza.pdf'
 materia = 'Laboratorio de Industrias — 7° TQ'
 colegio = 'EEST N°1 "Gral. Savio"'
 logo = '/images/logos/eest1.png'

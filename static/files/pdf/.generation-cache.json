@@ -60,8 +60,8 @@
     "pdfHash": "8d17da974d620b945ba739c2dfa384ab23d799750cc2a34a5cd079ee28ce970a"
   },
   "notes--notas-fisica--cap01-laboratorio--conocimiento-cientifico.pdf": {
-    "fingerprint": "21b18d84dce4d6c452050f2ad9958543261f43e3797769f44682028774605d41",
-    "pdfHash": "b84f332c0877a1ca900520f1900e2cf51cef33f58246884babbe83d6dbc88ad6"
+    "fingerprint": "031d279252cdb42b95f7b89d7e55382bed843cc266e36c2fb5dac00f63a9284e",
+    "pdfHash": "f6aa661908e3eaef751c485f0d7cc88adb639258e73a74b8b0a6aa891338c9b2"
   },
   "notes--notas-fisica--cap06-fuerzas-2d--fuerza-con-angulo.pdf": {
     "fingerprint": "1f1960605951abe6cc25b3f4414db323c688b62dff5ba2424eff68f6da8ee68e",
@@ -144,8 +144,8 @@
     "pdfHash": "3faa5d900e5d609c1125a1d621bb007a797a200f4eb81c6552b2d7892e49cf8e"
   },
   "notes--notas-fisica--cap01-laboratorio--diseno-experimentos.pdf": {
-    "fingerprint": "2d3eae12a9427114176b9cf73967c592fec6334534f1231e5eefab2afdc9e25a",
-    "pdfHash": "142c2512f1e6092e964bcf170bbc6b4733f980a15807e60281816801f8ee9593"
+    "fingerprint": "523b47aaa53d927c9a49dd8888669348c051cc9ab954ab658bcc046ab8cded09",
+    "pdfHash": "521c7e680a299b132d166a9e46799c329e0d9ce03c8169d342d134a4adfa161d"
   },
   "notes--notas-fisica--cap02-matematicas--cap02-si-notacion.pdf": {
     "fingerprint": "ff6be18f715d511cc676399a2bbe0b41318a9876b4b58fb6090dcb0d46ff3487",
@@ -220,8 +220,8 @@
     "pdfHash": "2d662aafdf9c9057a1f22a24e368382176d3aafd55ed0108be4faff8c6b303a0"
   },
   "notes--notas-fisica--cap01-laboratorio--error-incerteza.pdf": {
-    "fingerprint": "40a2a35df9132848e5d10c7019896d65a8880bd311657a3081dd7bfd5e8729b5",
-    "pdfHash": "4e768b2b1e58b188b19ac9402269345e5e7c130f76da3b063b63b65c3d005a41"
+    "fingerprint": "a01af1ee67dab3f85ba036cab4d6eba835c9a7b3f6a77b881f176dd7632d9dde",
+    "pdfHash": "858d4ff5bbf575cf2faf3dadb5ed32b44a0163d2963abe97f394730dd21dab4a"
   },
   "notes--notas-fisica--cap02-matematicas--cap02-ecuaciones.pdf": {
     "fingerprint": "c813aee1618434bc8a99798a022ad72405d3e2fded08525074f3c907a88ccac7",
@@ -260,8 +260,8 @@
     "pdfHash": "4d0a9f52044bce53b3f7c72cb9577c204091a22f96106f3443c719bd2cb890bc"
   },
   "notes--notas-fisica--cap01-laboratorio--cifras-significativas.pdf": {
-    "fingerprint": "a00f811b36fc67421990b31b877017757abdf6c66e8038a786394f4f31b6cd3b",
-    "pdfHash": "9ac17da50213df02f6d7da919b7460f815867a6b5ca02ab3c572244347f0b11e"
+    "fingerprint": "6fb66aac5b3216888237c4566c0409ebdbca6573aaccc267113b2f2ac8fc1363",
+    "pdfHash": "0d4d9caf00bed708fff2f9aefc579b6bf6a8b6c59d43669566ecd755d2410d0b"
   },
   "notes--notas-fisica--cap03-cinematica-1d--diagramas-puntos.pdf": {
     "fingerprint": "1e145c75a954f74c3df42a26f5da1f765e23f6661000a00c1746608c65bdbdcd",
@@ -300,12 +300,12 @@
     "pdfHash": "d812ce52499f3514ab4db24e6a151ebc927eb85ebbb817f4308cadc42ce15ad5"
   },
   "notes--notas-fisica--cap05-fuerzas-1d--diagramas-cuerpo-libre.pdf": {
-    "fingerprint": "df84785ffb875f96dc288e0abd44a88de3892ab7ec36077e28b8dcd0c5428ce2",
-    "pdfHash": "b754ab8c2c622c3e6729b90061976dbd48f4c310ff82e786a309bdc535494d94"
+    "fingerprint": "3d6263dfcf3b2e26cecb5193c33b1fb52a83829c0ffb5f335b6fe8cb919a6bf1",
+    "pdfHash": "4572600d5e4a7936debdd05a72f4c687d8b84caa5b85f11f211336e29b4b61d1"
   },
   "notes--notas-fisica--cap01-laboratorio--graficos-laboratorio.pdf": {
-    "fingerprint": "06713577a954eb458e7089621a7991556ba8f41c3c1c0dcd9931fef6f9c7aa5b",
-    "pdfHash": "a37a30cc8767aa59e502b34918d1289623574a379422a44534d0fb512c8e52d6"
+    "fingerprint": "b956d8d7d7e640b9632f87f7f91ab967ae95a9ef14d7732194eb0bdc44f1f889",
+    "pdfHash": "1b76a4926fa1194e47b315648370653c7f398011b578d1bc122e7c43fa7647bb"
   },
   "notes--notas-fisica--cap03-cinematica-1d--mru.pdf": {
     "fingerprint": "d44df1099f2aa419b25c0dc30d1367cde845a1f1e172fcc6f045e22da3668edb",
@@ -336,16 +336,16 @@
     "pdfHash": "e3c634e2d43a0d974b0e001cba111e72f25b8fd92b379ebc079199868119f86f"
   },
   "notes--notas-fisica--cap02-matematicas--leyes-senos-cosenos.pdf": {
-    "fingerprint": "5af253a574910bee20124d705298ecc0e34f0e8cbb9c4a333bab150f4514ac07",
-    "pdfHash": "76c1d2acc8155986d8ffa43223afc6dc15e3645f2c42b26f78cb2feadd2b3496"
+    "fingerprint": "d2ac1706ce8696485e4065510e2d78fff663394d7f8e3e500c88740b26c247d6",
+    "pdfHash": "46e29885c23e2fb1b54f05467aab1e0196bc32e03de5901d08f252d00f34e495"
   },
   "notes--notas-fisica--cap03-cinematica-1d--mruv.pdf": {
     "fingerprint": "cb1a112ee3f5fef53a6457cf9010a9fcf1593cd8fc0f18e96b1c3df8ff940bf3",
     "pdfHash": "dbb90447d0b4bb63aa0e4e1038c6b3499916d2147e82ea8cef03c2cbb8a89669"
   },
   "notes--notas-fisica--cap01-laboratorio--practicas-cientificas.pdf": {
-    "fingerprint": "f688759d796c29a462d86e85b4f45e4762a69672f1b9864d66ba6a3de6de44e1",
-    "pdfHash": "c765b310f5b0a51e8b0d6ec1bf92cf1d2dbc6b2b4daa79762ff32a4b86b38962"
+    "fingerprint": "fd1d166bf73d25b83cd542ed52a88d5a93af2d6c9307a264ac3de30259d74e40",
+    "pdfHash": "c481f87f9b2282633253906c429ac4d4cedfb3e133b32a9683fd0b5ce12a5e5b"
   },
   "notes--notas-fisica--cap05-fuerzas-1d--segunda-ley-aplicada.pdf": {
     "fingerprint": "224de828c886541f85ef9930edca9eba60a93cf91f05ac7ff9cc5813c16ac0a4",
@@ -368,24 +368,24 @@
     "pdfHash": "cd7a7fdcf67755114c63e33bd59f9e912115881bc701d33e1c9e6aa1680963cf"
   },
   "notes--notas-fisica--cap01-laboratorio--cuaderno-laboratorio.pdf": {
-    "fingerprint": "990834b8eac55cb7e65acedbcd44dcb057c4342ffb03c40d517f7e704a2c0dd5",
-    "pdfHash": "3d0e107f5f220d2fe748eb3515807531a1bc0fe7187b7808610c3ef431dcfae7"
+    "fingerprint": "6d5ad49eaaa0e96d79eabfa648edb370317bdce2c55b24fd6d95eb38a25e37c6",
+    "pdfHash": "8b6427c63ac3e67ebe3469bb61e2c234be9a205f99c9ad45a919d06b825b1612"
   },
   "notes--notas-fisica--cap05-fuerzas-1d--tension.pdf": {
     "fingerprint": "b4b7972c582512d9968a52161008190c8d52143116393b30f5562a9515028c94",
     "pdfHash": "25492b4cb25d06a41a024167af123cdb51942d7c93baf06efb0fde69a58c9cf1"
   },
   "notes--notas-fisica--cap02-matematicas--vectores-intro.pdf": {
-    "fingerprint": "538e5c430ed1d971cd580c01ae65a241bed9c3ecf772d9b4f4d1d6859c390cbd",
-    "pdfHash": "96b3ef68e7d9b9634ef534ccbf2903e7fa445bcfa6171332ca582b3e9a22cf54"
+    "fingerprint": "a48ae83a1331eb6ac7d130adc0b9bbd1a11b4db9291e0780f41393c08ba78558",
+    "pdfHash": "566a07ece3c5aef7f83de70fb84dc2c39bdfe5b70ea72d8c9bedc125030e58bc"
   },
   "notes--notas-fisica--cap09-energia--potencia.pdf": {
     "fingerprint": "097ae7bdba3664dea63e27512d02cb218b47674901c4e309d8c0aa09e2465ed6",
     "pdfHash": "c6447952e1c53ea70949d03c10a08cc07f2765007ad6470cf70c1a68d5065bf6"
   },
   "notes--notas-fisica--cap02-matematicas--multiplicacion-vectores.pdf": {
-    "fingerprint": "a0774beef0932f2871834ff25c62fc84b68a336f6132096d1121441fdae39bb1",
-    "pdfHash": "8c35863dbaf5c6d73a204a6e12e6808096aae88674f5da2fb8d70acb3b32d1c6"
+    "fingerprint": "83ffeeeb5ff09dad2b27c2e13b9a66228eadb343a33d2cd4cf0abd52e543ad2c",
+    "pdfHash": "eaae720f6eabfb52d71d93e41abed9fa490ba33efdfab909991c950af6bd88b6"
   },
   "notes--notas-fisica--cap05-fuerzas-1d--friccion.pdf": {
     "fingerprint": "f26377a5a0aba96928af9a22fdc9f3231e6d39eeba53d7596ff1b2441811d2a9",
@@ -396,12 +396,12 @@
     "pdfHash": "9594a2dfa1848e507b0d792d6ab7a9e2ddbb9bf30eb66a58a5085c7511f04918"
   },
   "notes--notas-fisica--cap01-laboratorio--informe-laboratorio.pdf": {
-    "fingerprint": "2d2cb6f56bf12bb7a20510ea93ee6983b297617def34e20843116252010490a0",
-    "pdfHash": "b72fc3c5477c70f17880a4a84aedb46116b66c6c9dea7d6587a42147ca6314fd"
+    "fingerprint": "42bc6aa2acf637c67f011a2eff96d3a8f421ef23589f9d2c98766f4ae5f88e5b",
+    "pdfHash": "078b8153dd2005b5c6c4464fab6cdab5395c0394ca8f7c784c4ffc0447a24a31"
   },
   "notes--notas-fisica--cap02-matematicas--grados-radianes-vueltas.pdf": {
-    "fingerprint": "c02d7a63d12f45a18a5a74f8a4d8abab865c321d5d7ee9998d88e57da8773d03",
-    "pdfHash": "0df207b9092aa2ea038ebed074917ed7d60b4527b44b09498de7dde3e4f5e7fb"
+    "fingerprint": "4b3a9e447809e0bbc8d5451adf627f18d49c2f14592cf629e7f7987aeea37a76",
+    "pdfHash": "3849b4216c552c4fa651746f0e48a741eab3cefe46d63f1f8252976e627e50c4"
   },
   "notes--notas-fisica--cap03-cinematica-1d--movimiento-relativo.pdf": {
     "fingerprint": "fbe39e7de7f4dad3c29b22511fa160c0f31b2eb32da17b7ef2eb34ab4e334986",
@@ -412,12 +412,12 @@
     "pdfHash": "89359004c1e32ee0d399258278e9ec3a0a3fb77b4b253adfb3d6fca8216d35ef"
   },
   "notes--notas-fisica--cap01-laboratorio--unidades-dimensiones.pdf": {
-    "fingerprint": "bc10a781be12cbf4e967ae0ded34a8fa243eb2d79af7e1a96245d5ce53ede880",
-    "pdfHash": "ff909ac3bd66a6f5506f0e736b91457fccc0902a5b73eeb5e9f630841c2439f4"
+    "fingerprint": "ba246764d2e503f9785e4ac92a3902b5b4715f866447017d8df2935290cfd014",
+    "pdfHash": "02fccaaa8cc6f1d88693ec79ec21c3c265e181a5ee683681d562f8f035d9d2e1"
   },
   "notes--notas-fisica--cap02-matematicas--coordenadas-polares-cilindricas-esfericas.pdf": {
-    "fingerprint": "8ed3fd707ac9890a5f12c7f1db885e3ad88f3f03c91b3109d73d21727e3cc1f8",
-    "pdfHash": "8ec700be61b64f5e6b2be56f33b425d6d17a6fee3fda13c5390ecaba6d9c73e9"
+    "fingerprint": "a622c3bb1faac8bca87c239e056cb6d5ce22d6b7445a1109a63a15208677caf5",
+    "pdfHash": "78c944f318e972244b1396d935048eaaa01fa450522a44197ffdcfdb9e9f28d7"
   },
   "notes--notas-fisica--cap05-fuerzas-1d--arrastre.pdf": {
     "fingerprint": "91b2c966e193aa1c306ea1935be0fcb1124768a0e9360c7b6f031c74c8620c5d",

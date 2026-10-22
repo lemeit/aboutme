@@ -1,10 +1,12 @@
 # Estado editorial y próximos pasos
 
-Revisión de continuidad: 21/10/2026. Documento interno, fuera de `content/`; no aparece en Hugo.
+Revisión de continuidad: 22/10/2026. Documento interno, fuera de `content/`; no aparece en Hugo.
 
 ## Prioridad vigente
 
-El 21/10/2026 se publicó el capítulo 5 mediante PR #13 y despliegue confirmado `2353b349-5995-43bd-be7e-b9dd1d85e254`. El usuario pidió priorizar directamente el capítulo 9 para sus clases del viernes 23/10: ocho notas desarrolladas y 14 figuras, publicadas mediante PR #14; la guía docente se ubica en Introducción a la Física. Ver `docs/bigler-capitulo-9-ampliacion.md`. La revisión integral desde el capítulo 1 sigue abierta; ver `docs/bigler-revision-divergencias.md`.
+El usuario autorizó continuar los capítulos restantes y publicar siempre los cambios terminados y verificados. La tanda del 22/10/2026 desarrolla los capítulos 6–8 y 10–13: 26 notas (2 ampliadas y 24 nuevas), 70 capturas nuevas del PDF y observaciones visibles sobre discrepancias. Ver `docs/bigler-capitulos-restantes.md`. El capítulo 9 conserva sus ocho notas y su guía de clase permanece separada, en Introducción a la Física.
+
+Todos los capítulos cuentan ahora con notas de sus temas principales. Esto no es una transcripción íntegra de cada recuadro o ejercicio del PDF ni una certificación editorial definitiva. La siguiente prioridad es la revisión transversal, completar el banco de ejercicios e inspeccionar escritorio y móvil. La nueva relectura desde el capítulo 1 sigue abierta.
 
 ## Qué ya está publicado
 
@@ -15,17 +17,23 @@ El 21/10/2026 se publicó el capítulo 5 mediante PR #13 y despliegue confirmado
 - Introducción de Notas de Física: simplificada y publicada mediante PR #3, conservando fuente, edición, autoría, licencia y enlace al original.
 - La corrupción de shortcodes observada en el servidor local se evitó reconstruyendo desde cero y usando `--watch=false` para la revisión. Las futuras ediciones requieren reiniciar ese servidor. Se corrigió el parámetro de cuatro desplegables y se agregó el control `scripts/check-hugo-content.py`.
 
-## Inventario que falta desarrollar
+## Estado por capítulos
 
-| Parte | Estado | Trabajo siguiente |
+| Parte | Estado de contenido | Trabajo siguiente |
 |---|---|---|
-| Capítulo 4, Cinemática 2D | 5 notas ampliadas con 9 figuras, publicadas mediante PR #11; tablas y avisos posteriores publicados mediante PR #12 | Nueva revisión editorial y visual pendiente |
-| Capítulo 5, Fuerzas 1D | Diez notas ampliadas y publicadas mediante PR #13; nueve desarrolladas en la tanda de pp. 286–357 con 33 figuras nuevas | Revisión visual exhaustiva y cierre de observaciones |
-| Capítulo 6, Fuerzas 2D | 2 notas breves, sin cotejo editorial registrado | Fuerzas en ángulo y plano inclinado; inventariar secciones faltantes del original |
-| Capítulo 9, Energía, trabajo y potencia | Ocho notas publicadas y 14 figuras; guía docente separada en Introducción a la Física | Revisión visual/editorial y publicación cuando se autorice |
-| Capítulos 7–8 y 10–13 | Solo índices, sin notas desarrolladas | Adaptación por desarrollar |
+| Capítulos 1–3 | Notas ampliadas; conservar los registros previos de revisión | Nueva relectura editorial integral y completar inspección visual del 3 |
+| Capítulo 4 | Cinco notas ampliadas con figuras | Revisión editorial y visual |
+| Capítulo 5 | Diez notas ampliadas con figuras | Revisión visual exhaustiva y cierre de observaciones |
+| Capítulo 6 | Dos notas ampliadas, 15 figuras (14 nuevas) | Revisión editorial y visual |
+| Capítulo 7 | Cuatro notas nuevas, 17 capturas | Revisión y completar ejercicios gráficos seleccionados de pp. 395–407 |
+| Capítulo 8 | Tres notas nuevas, cuatro capturas | Revisión de fuentes históricas y cierre de observaciones |
+| Capítulo 9 | Ocho notas publicadas; guía de clase fuera de Bigler | Revisión editorial y visual |
+| Capítulo 10 | Cuatro notas nuevas, 11 capturas | Revisión de colisiones y diagramas de barras |
+| Capítulo 11 | Tres notas nuevas, siete capturas | Revisión de oscilaciones y observación sobre fuerzas del péndulo |
+| Capítulo 12 | Siete notas nuevas, 13 capturas | Revisión de modelos de presión, empuje y flujo |
+| Capítulo 13 | Tres notas nuevas, cuatro capturas | Revisión conceptual y editorial de las adaptaciones de relatividad |
 
-Antes de ampliar el capítulo 4 había 17 notas breves y 6 marcadores «capturar». La tanda local del capítulo 4 recupera sus cuatro marcadores con figuras cotejadas. Con la tanda local del capítulo 5 quedan **2 notas por ampliar, ambas del capítulo 6**. Se resolvieron los dos marcadores «capturar» de tensión y fricción mediante figuras extraídas y registradas. Ese conteo no representa todas las figuras ni secciones del original que faltan por recuperar.
+Los 17 resúmenes breves y los seis marcadores «capturar» del inventario inicial ya no describen el estado actual. El seguimiento por nota, con páginas fuente, figuras y revisiones pendientes, está en `docs/bigler-avance.md`. No se asignan porcentajes de cobertura integral del libro por contar notas.
 
 ## Problemas detectados que deben corregirse al ampliar
 
@@ -50,15 +58,14 @@ El seguimiento conserva descripciones históricas de trabajo local y bloqueos de
 
 La documentación de despliegue describe Quartz como independiente, pero el registro de Cloudflare muestra una compilación conjunta de Hugo y Quartz y copia del resultado a `/conceptos/`. Esa diferencia requiere aclaración documental, sin migrar ni reconfigurar el alojamiento en esta revisión.
 
-## Orden histórico propuesto (reemplazado por la prioridad del capítulo 9)
+## Siguiente ronda
 
-1. Ampliar capítulo 4 con cotejo por páginas: recuperar ejercicios, figuras y condiciones de las ecuaciones. Corregir primero la descripción del vector centrípeto y las convenciones angulares.
-2. Ampliar capítulo 5, priorizando tercera ley, diagramas, normal, tensión/poleas y fricción. Son conceptos que sostienen los problemas del capítulo siguiente.
-3. Completar capítulo 6: revisar normal, rozamiento y signos, y comprobar qué apartados originales aún no tienen nota.
-4. Inventariar y desarrollar capítulos 7–13, con alcance por sección antes de asignar porcentajes.
-5. Revisión final transversal: símbolos (`d` distancia frente a `Δx` desplazamiento), g como módulo, supuestos ideales, redondeo, vínculos, atribución y actividades propias.
+1. Relectura editorial transversal desde el capítulo 1, manteniendo los avisos de adaptación en revisión.
+2. Completar ejercicios y figuras de las páginas que aún tengan cobertura selectiva; comprobar atribuciones de terceros antes de reutilizarlas.
+3. Inspección visual en escritorio y móvil: tablas, fórmulas, pies de figura y desplegables.
+4. Cerrar observaciones solo cuando haya evidencia suficiente; conservar trazabilidad al PDF.
 
-Para cada tanda: cotejo de contenido → extracción e inspección de figuras → compilación completa de Hugo → control del HTML → ejecución de KaTeX y revisión de escritorio/móvil → actualización interna → publicación solo cuando esté autorizada.
+Para cada tanda: cotejo → extracción e inspección de figuras → compilación completa de Hugo → control del HTML y KaTeX → actualización interna → publicación autorizada de forma permanente por el usuario. La inspección visual no se da por hecha cuando solo se verificó el HTML.
 
 ## Otros contenidos del portal
 

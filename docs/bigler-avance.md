@@ -78,16 +78,25 @@ Los porcentajes del capítulo completo requieren inventariar todas las secciones
 
 | Nota | Texto | Cotejo | Figuras | Visual Hugo | Revisión de divergencias |
 |---|---|---|---|---|---|
-| [Fuerza aplicada con ángulo](../content/notes/notas-fisica/cap06-fuerzas-2d/fuerza-con-angulo.md) | Por revisar | Pendiente | Por revisar | Pendiente | En revisión: divergencias y notas de adaptación, 21/10/2026 |
-| [Problemas con plano inclinado](../content/notes/notas-fisica/cap06-fuerzas-2d/plano-inclinado.md) | Por revisar | Pendiente | Por revisar | Pendiente | En revisión: divergencias y notas de adaptación, 21/10/2026 |
+| [Fuerza aplicada con ángulo](../content/notes/notas-fisica/cap06-fuerzas-2d/fuerza-con-angulo.md) | Ampliada | Desarrollo cotejado: pp. 361–371 | 9 figuras del original; ver fuente de cada figura | Pendiente: revisión en navegador de escritorio y móvil | En revisión: divergencias y notas de adaptación, 22/10/2026 |
+| [Problemas con plano inclinado](../content/notes/notas-fisica/cap06-fuerzas-2d/plano-inclinado.md) | Ampliada | Desarrollo cotejado: pp. 372–379 | 6 figuras del original; ver fuente de cada figura | Pendiente: revisión en navegador de escritorio y móvil | En revisión: divergencias y notas de adaptación, 22/10/2026 |
 
 ## Capítulo 7 — Rotación
 
-Sin notas desarrolladas.
+| Nota | Texto | Cotejo | Figuras | Visual Hugo | Revisión de divergencias |
+|---|---|---|---|---|---|
+| [Fuerza centrípeta](../content/notes/notas-fisica/cap07-rotacion/fuerza-centripeta.md) | Ampliada | Desarrollo cotejado: pp. 386–390 | 2 figuras recuperadas del original | Pendiente: revisión en navegador de escritorio y móvil | En revisión: observaciones de adaptación identificadas |
+| [Inercia rotacional y momento de inercia](../content/notes/notas-fisica/cap07-rotacion/inercia-rotacional.md) | Ampliada | Desarrollo cotejado: pp. 391–398 | 5 figuras recuperadas del original | Pendiente: revisión en navegador de escritorio y móvil | En revisión: observaciones de adaptación identificadas |
+| [Momento de una fuerza y equilibrio rotacional](../content/notes/notas-fisica/cap07-rotacion/momento-fuerza.md) | Ampliada | Desarrollo cotejado: pp. 399–407 | 4 figuras recuperadas del original | Pendiente: revisión en navegador de escritorio y móvil | En revisión: observaciones de adaptación identificadas |
+| [Problemas de dinámica lineal y rotacional](../content/notes/notas-fisica/cap07-rotacion/dinamica-lineal-rotacional.md) | Ampliada | Desarrollo cotejado: pp. 408–416 | 6 figuras recuperadas del original | Pendiente: revisión en navegador de escritorio y móvil | En revisión: observaciones de adaptación identificadas |
 
 ## Capítulo 8 — Gravitación
 
-Sin notas desarrolladas.
+| Nota | Texto | Cotejo | Figuras | Visual Hugo | Revisión de divergencias |
+|---|---|---|---|---|---|
+| [Primeros modelos del universo](../content/notes/notas-fisica/cap08-gravitacion/modelos-universo.md) | Ampliada | Desarrollo cotejado: pp. 420–422 | 1 figura recuperada del original | Pendiente: revisión en navegador de escritorio y móvil | En revisión: observaciones de adaptación identificadas |
+| [Leyes de Kepler del movimiento planetario](../content/notes/notas-fisica/cap08-gravitacion/leyes-kepler.md) | Ampliada | Desarrollo cotejado: pp. 423–425 | 2 figuras recuperadas del original | Pendiente: revisión en navegador de escritorio y móvil | En revisión: observaciones de adaptación identificadas |
+| [Gravitación universal](../content/notes/notas-fisica/cap08-gravitacion/gravitacion-universal.md) | Ampliada | Desarrollo cotejado: pp. 426–433 | 1 figura recuperada del original | Pendiente: revisión en navegador de escritorio y móvil | En revisión: observaciones de adaptación identificadas |
 
 ## Capítulo 9 — Energía, Trabajo y Potencia
 
@@ -104,16 +113,37 @@ Sin notas desarrolladas.
 
 ## Capítulo 10 — Cantidad de Movimiento
 
-Sin notas desarrolladas.
+| Nota | Texto | Cotejo | Figuras | Visual Hugo | Revisión de divergencias |
+|---|---|---|---|---|---|
+| [Cantidad de movimiento lineal y colisiones](../content/notes/notas-fisica/cap10-momento/cantidad-movimiento.md) | Ampliada | Desarrollo cotejado: pp. 500–506 | 2 figuras recuperadas del original | Pendiente: revisión en navegador de escritorio y móvil | En revisión: observaciones de adaptación identificadas |
+| [Impulso y cambio de cantidad de movimiento](../content/notes/notas-fisica/cap10-momento/impulso.md) | Ampliada | Desarrollo cotejado: pp. 507–513 | 3 figuras recuperadas del original | Pendiente: revisión en navegador de escritorio y móvil | En revisión: observaciones de adaptación identificadas |
+| [Conservación de la cantidad de movimiento](../content/notes/notas-fisica/cap10-momento/conservacion-momento.md) | Ampliada | Desarrollo cotejado: pp. 514–523 | 3 figuras recuperadas del original | Pendiente: revisión en navegador de escritorio y móvil | En revisión: observaciones de adaptación identificadas |
+| [Momento angular y su conservación](../content/notes/notas-fisica/cap10-momento/momento-angular.md) | Ampliada | Desarrollo cotejado: pp. 524–529 | 3 figuras recuperadas del original | Pendiente: revisión en navegador de escritorio y móvil | En revisión: observaciones de adaptación identificadas |
 
 ## Capítulo 11 — Movimiento Armónico Simple
 
-Sin notas desarrolladas.
+| Nota | Texto | Cotejo | Figuras | Visual Hugo | Revisión de divergencias |
+|---|---|---|---|---|---|
+| [Movimiento armónico simple](../content/notes/notas-fisica/cap11-mhs/movimiento-armonico.md) | Ampliada | Desarrollo cotejado: pp. 534–539 | 3 figuras recuperadas del original | Pendiente: revisión en navegador de escritorio y móvil | En revisión: observaciones de adaptación identificadas |
+| [Oscilaciones de un sistema masa–resorte](../content/notes/notas-fisica/cap11-mhs/resortes.md) | Ampliada | Desarrollo cotejado: pp. 540–544 | 2 figuras recuperadas del original | Pendiente: revisión en navegador de escritorio y móvil | En revisión: observaciones de adaptación identificadas |
+| [Péndulos y aproximación de pequeñas oscilaciones](../content/notes/notas-fisica/cap11-mhs/pendulos.md) | Ampliada | Desarrollo cotejado: pp. 545–548 | 2 figuras recuperadas del original | Pendiente: revisión en navegador de escritorio y móvil | En revisión: observaciones de adaptación identificadas |
 
 ## Capítulo 12 — Fluidos y Presión
 
-Sin notas desarrolladas.
+| Nota | Texto | Cotejo | Figuras | Visual Hugo | Revisión de divergencias |
+|---|---|---|---|---|---|
+| [Fluidos, densidad y modelos ideales](../content/notes/notas-fisica/cap12-fluidos/fluidos-densidad.md) | Ampliada | Desarrollo cotejado: pp. 552–553 | Sin figura técnica específica en el pasaje original | Pendiente: revisión en navegador de escritorio y móvil | En revisión: observaciones de adaptación identificadas |
+| [Presión y sus unidades](../content/notes/notas-fisica/cap12-fluidos/presion.md) | Ampliada | Desarrollo cotejado: pp. 554–557 | 1 figura recuperada del original | Pendiente: revisión en navegador de escritorio y móvil | En revisión: observaciones de adaptación identificadas |
+| [Presión hidráulica y principio de Pascal](../content/notes/notas-fisica/cap12-fluidos/presion-hidraulica.md) | Ampliada | Desarrollo cotejado: pp. 558–560 | 1 figura recuperada del original | Pendiente: revisión en navegador de escritorio y móvil | En revisión: observaciones de adaptación identificadas |
+| [Presión hidrostática](../content/notes/notas-fisica/cap12-fluidos/presion-hidrostatica.md) | Ampliada | Desarrollo cotejado: pp. 561–565 | 2 figuras recuperadas del original | Pendiente: revisión en navegador de escritorio y móvil | En revisión: observaciones de adaptación identificadas |
+| [Empuje y principio de Arquímedes](../content/notes/notas-fisica/cap12-fluidos/empuje.md) | Ampliada | Desarrollo cotejado: pp. 566–575 | 3 figuras recuperadas del original | Pendiente: revisión en navegador de escritorio y móvil | En revisión: observaciones de adaptación identificadas |
+| [Caudal y ecuación de continuidad](../content/notes/notas-fisica/cap12-fluidos/caudal-continuidad.md) | Ampliada | Desarrollo cotejado: pp. 576–579 | 2 figuras recuperadas del original | Pendiente: revisión en navegador de escritorio y móvil | En revisión: observaciones de adaptación identificadas |
+| [Movimiento de fluidos y ecuación de Bernoulli](../content/notes/notas-fisica/cap12-fluidos/bernoulli.md) | Ampliada | Desarrollo cotejado: pp. 580–588 | 4 figuras recuperadas del original | Pendiente: revisión en navegador de escritorio y móvil | En revisión: observaciones de adaptación identificadas |
 
 ## Capítulo 13 — Relatividad Especial
 
-Sin notas desarrolladas.
+| Nota | Texto | Cotejo | Figuras | Visual Hugo | Revisión de divergencias |
+|---|---|---|---|---|---|
+| [La rapidez de la luz y el principio de relatividad](../content/notes/notas-fisica/cap13-relatividad/rapidez-luz.md) | Ampliada | Desarrollo cotejado: pp. 590–593 | 1 figura recuperada del original | Pendiente: revisión en navegador de escritorio y móvil | En revisión: observaciones de adaptación identificadas |
+| [Contracción de longitudes y dilatación del tiempo](../content/notes/notas-fisica/cap13-relatividad/longitud-tiempo.md) | Ampliada | Desarrollo cotejado: pp. 594–599 | 3 figuras recuperadas del original | Pendiente: revisión en navegador de escritorio y móvil | En revisión: observaciones de adaptación identificadas |
+| [Relación relativista entre energía y momento](../content/notes/notas-fisica/cap13-relatividad/energia-momento.md) | Ampliada | Desarrollo cotejado: pp. 600–601 | Sin figura técnica específica en el pasaje original | Pendiente: revisión en navegador de escritorio y móvil | En revisión: observaciones de adaptación identificadas |

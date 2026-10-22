@@ -183,6 +183,8 @@ Sin pérdidas ni cambio apreciable de energía cinética, ese trabajo aumenta $U
 
 **Comprobaciones:** $-d(kx^2/2)/dx=-kx$ y $[kx^2]=(\mathrm{N/m})\mathrm{m^2}=\mathrm J$.
 
+{{< figura src="/images/fisica-4to/areas-trabajo.svg" width="700" alt="Áreas rectangular y triangular en gráficos de fuerza aplicada frente a desplazamiento." caption="La fuerza constante da un área rectangular; el resorte ideal deformado lentamente, una triangular." source="Elaboración para Introducción a la Física. Modelos ilustrativos, no mediciones." >}}
+
 ### Resorte vertical: longitud natural y equilibrio
 
 Si $x$ es elongación positiva hacia abajo, el potencial combinado masa–resorte–Tierra, salvo una constante, es:

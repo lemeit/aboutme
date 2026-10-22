@@ -1,6 +1,6 @@
 +++
-title = 'Unidad 5 — Electricidad y Magnetismo'
+title = "Unidad 5 — Energía eléctrica"
 weight = 5
 draft = false
-description = 'Circuitos, ley de Ohm, electromagnetismo.'
+description = "Generación, transporte y distribución, circuitos, ley de Ohm y electromagnetismo."
 +++

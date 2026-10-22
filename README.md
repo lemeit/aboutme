@@ -32,8 +32,14 @@ aboutme/
 │   │   │   ├── cap03-cinematica-1d/    9 notas; primera sección revisada
 │   │   │   ├── cap04-cinematica-2d/    5 notas; revisión pendiente
 │   │   │   ├── cap05-fuerzas-1d/       10 notas; revisión pendiente
-│   │   │   ├── cap06-fuerzas-2d/       2 notas; revisión pendiente
-│   │   │   └── …
+│   │   │   ├── cap06-fuerzas-2d/       2 notas ampliadas; revisión pendiente
+│   │   │   ├── cap07-rotacion/          4 notas ampliadas
+│   │   │   ├── cap08-gravitacion/       3 notas ampliadas
+│   │   │   ├── cap09-energia/           8 notas ampliadas
+│   │   │   ├── cap10-momento/           4 notas ampliadas
+│   │   │   ├── cap11-mhs/               3 notas ampliadas
+│   │   │   ├── cap12-fluidos/           7 notas ampliadas
+│   │   │   └── cap13-relatividad/       3 notas ampliadas
 │   │   ├── herramientas/               ← Herramientas digitales (Tracker, etc.) [weight=2]
 │   │   ├── fisica-4to/                 ← Introducción a la Física 4° año [weight=3]
 │   │   ├── fisica-5to/                 ← Física 5° año — INJ [weight=4]

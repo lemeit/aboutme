@@ -154,3 +154,8 @@ Completar el cotejo de fórmulas, ejemplos, figuras y atribuciones del capítulo
 | cap05-fuerzas-1d/tipos-fuerzas.md | 294 | Texto del original: tensión y tercera ley | En revisión |
 | cap06-fuerzas-2d/fuerza-con-angulo.md | 361 | Texto del original: independencia de componentes | En revisión |
 | cap06-fuerzas-2d/plano-inclinado.md | 372 | Adaptación anterior: generalización del ejemplo de descenso | En revisión |
+
+
+## Actualización del 22/10/2026
+
+La ampliación de capítulos 6–8 y 10–13 incorpora 54 avisos de adaptación en revisión en 26 notas cotejadas por páginas. El detalle de fuentes, figuras, correcciones y controles está en [Ampliación de los capítulos restantes](bigler-capitulos-restantes.md). El inventario anterior conserva el estado histórico de la primera pasada; no representa el número actual de notas. El seguimiento vigente por nota está en [bigler-avance.md](bigler-avance.md). La relectura final desde el capítulo 1 continúa pendiente.

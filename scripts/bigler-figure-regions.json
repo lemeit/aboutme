@@ -1513,5 +1513,914 @@
     ],
     "caption": "Bloque que desciende por una rampa y comprime un resorte.",
     "embedded_image": "/Image3965"
+  },
+  {
+    "name": "cap06_suma-fuerzas_pp362",
+    "pdf_page": 362,
+    "printed_page": 362,
+    "box_pt": [
+      263.15,
+      96.39,
+      404.15,
+      192.39
+    ],
+    "caption": "Fuerzas horizontales y verticales aplicadas al mismo objeto.",
+    "embedded_image": "/Image3176"
+  },
+  {
+    "name": "cap06_resultante_pp362",
+    "pdf_page": 362,
+    "printed_page": 362,
+    "box_pt": [
+      299.15,
+      256.67,
+      368.15,
+      301.67
+    ],
+    "caption": "Resultante de componentes de 12 N y 5 N.",
+    "embedded_image": "/Image3177"
+  },
+  {
+    "name": "cap06_fuerza-oblicua_pp363",
+    "pdf_page": 363,
+    "printed_page": 363,
+    "box_pt": [
+      324.75,
+      330.06,
+      523.2,
+      483.41
+    ],
+    "caption": "Fuerza oblicua combinada con otras dos fuerzas.",
+    "embedded_image": "/Image3179"
+  },
+  {
+    "name": "cap06_descomposicion_pp363",
+    "pdf_page": 363,
+    "printed_page": 363,
+    "box_pt": [
+      402.75,
+      206.88,
+      523.7,
+      303.33
+    ],
+    "caption": "Componentes de una fuerza de 50 N a 35 grados.",
+    "embedded_image": "/Image3180"
+  },
+  {
+    "name": "cap06_equilibrio_pp366",
+    "pdf_page": 366,
+    "printed_page": 366,
+    "box_pt": [
+      268.4,
+      119.68,
+      416.9,
+      205.18
+    ],
+    "caption": "Fuerza desconocida que equilibra 50 N hacia la derecha y 30 N hacia abajo.",
+    "embedded_image": "/Image3225"
+  },
+  {
+    "name": "cap06_equilibrio-75_pp366",
+    "pdf_page": 366,
+    "printed_page": 366,
+    "box_pt": [
+      275.9,
+      409.62,
+      408.65,
+      493.62
+    ],
+    "caption": "Componentes que equilibran una fuerza de 75 N.",
+    "embedded_image": "/Image3226"
+  },
+  {
+    "name": "cap06_ejercicio-bloque_pp367",
+    "pdf_page": 367,
+    "printed_page": 367,
+    "box_pt": [
+      278.15,
+      490.2,
+      387.64,
+      538.23
+    ],
+    "caption": "Dos fuerzas aplicadas a un bloque sobre una superficie sin rozamiento.",
+    "embedded_image": "/Image3230"
+  },
+  {
+    "name": "cap06_ejercicio-resultante_pp369",
+    "pdf_page": 369,
+    "printed_page": 369,
+    "box_pt": [
+      248.15,
+      117.24,
+      418.41,
+      196.74
+    ],
+    "caption": "Tres fuerzas cuya resultante debe calcularse.",
+    "embedded_image": "/Image3240"
+  },
+  {
+    "name": "cap06_normal-traccion_pp370",
+    "pdf_page": 370,
+    "printed_page": 370,
+    "box_pt": [
+      371.8,
+      70.96,
+      523.0,
+      186.16
+    ],
+    "caption": "Tracción oblicua, peso, normal y rozamiento.",
+    "embedded_image": "/Image3255"
+  },
+  {
+    "name": "cap06_rampa-geometria_pp374",
+    "pdf_page": 374,
+    "printed_page": 374,
+    "box_pt": [
+      275.15,
+      129.24,
+      391.75,
+      284.71
+    ],
+    "caption": "Geometría de las componentes del peso en un plano inclinado.",
+    "embedded_image": "/Image3288"
+  },
+  {
+    "name": "cap06_atwood-rampa_pp376",
+    "pdf_page": 376,
+    "printed_page": 376,
+    "box_pt": [
+      396.8,
+      71.46,
+      523.3,
+      173.46
+    ],
+    "caption": "Máquina de Atwood modificada: 24 kg colgantes y 8 kg sobre una rampa.",
+    "embedded_image": "/Image3312"
+  },
+  {
+    "name": "cap06_atwood-componentes_pp376",
+    "pdf_page": 376,
+    "printed_page": 376,
+    "box_pt": [
+      358.42,
+      224.7,
+      493.02,
+      334.83
+    ],
+    "caption": "Fuerzas en la dirección de la cuerda para cada bloque.",
+    "embedded_image": "/Image3311"
+  },
+  {
+    "name": "cap06_ejercicio-atwood_pp378",
+    "pdf_page": 378,
+    "printed_page": 378,
+    "box_pt": [
+      405.95,
+      71.81,
+      521.8,
+      166.12
+    ],
+    "caption": "Ejercicio con 30 kg colgantes y 10 kg sobre una rampa.",
+    "embedded_image": "/Image3322"
+  },
+  {
+    "name": "cap06_dos-rampas_pp379",
+    "pdf_page": 379,
+    "printed_page": 379,
+    "box_pt": [
+      379.05,
+      71.41,
+      521.8,
+      175.06
+    ],
+    "caption": "Dos masas unidas por una cuerda sobre rampas de 45 y 60 grados.",
+    "embedded_image": "/Image3326"
+  },
+  {
+    "name": "cap07_velocidad-circular_pp386",
+    "pdf_page": 386,
+    "printed_page": 386,
+    "box_pt": [
+      352.5,
+      492.92,
+      530.3,
+      610.25
+    ],
+    "caption": "Cambio de dirección de la velocidad en una trayectoria circular.",
+    "embedded_image": "/Image3350"
+  },
+  {
+    "name": "cap07_fuerza-radial_pp387",
+    "pdf_page": 387,
+    "printed_page": 387,
+    "box_pt": [
+      367.3,
+      70.96,
+      522.79,
+      228.61
+    ],
+    "caption": "Velocidad tangente y fuerza dirigida al centro.",
+    "embedded_image": "/Image3357"
+  },
+  {
+    "name": "cap07_ejes-paralelos_pp394",
+    "pdf_page": 394,
+    "printed_page": 394,
+    "box_pt": [
+      277.4,
+      254.69,
+      389.9,
+      404.69
+    ],
+    "caption": "Eje por el centro de masa y eje paralelo desplazado.",
+    "embedded_image": "/Image3404"
+  },
+  {
+    "name": "cap07_cilindro_pp395",
+    "pdf_page": 395,
+    "printed_page": 395,
+    "box_pt": [
+      184.75,
+      530.4,
+      387.75,
+      644.15
+    ],
+    "caption": "Cilindro macizo girando alrededor de su eje longitudinal.",
+    "embedded_image": "/Image3406"
+  },
+  {
+    "name": "cap07_ruedas-eje_pp397",
+    "pdf_page": 397,
+    "printed_page": 397,
+    "box_pt": [
+      177.75,
+      347.56,
+      527.25,
+      559.81
+    ],
+    "caption": "Dos discos y un eje cilíndrico con eje de giro común.",
+    "embedded_image": "/Image3449"
+  },
+  {
+    "name": "cap07_martillo_pp397",
+    "pdf_page": 397,
+    "printed_page": 397,
+    "box_pt": [
+      182.25,
+      132.96,
+      447.75,
+      249.21
+    ],
+    "caption": "Modelo de martillo con cabeza puntual y mango uniforme.",
+    "embedded_image": "/Image3452"
+  },
+  {
+    "name": "cap07_mano-derecha_pp401",
+    "pdf_page": 401,
+    "printed_page": 401,
+    "box_pt": [
+      322.3,
+      91.31,
+      523.3,
+      233.81
+    ],
+    "caption": "Regla de la mano derecha para el momento de una fuerza.",
+    "embedded_image": "/Image3494"
+  },
+  {
+    "name": "cap07_regla-equilibrio_pp402",
+    "pdf_page": 402,
+    "printed_page": 402,
+    "box_pt": [
+      189.65,
+      275.21,
+      493.4,
+      345.73
+    ],
+    "caption": "Regla equilibrada con un peso de 4,5 N.",
+    "embedded_image": "/Image3499"
+  },
+  {
+    "name": "cap07_subibaja_pp403",
+    "pdf_page": 403,
+    "printed_page": 403,
+    "box_pt": [
+      202.25,
+      123.24,
+      464.99,
+      210.34
+    ],
+    "caption": "Tabla sostenida por un apoyo entre dos personas.",
+    "embedded_image": "/Image3503"
+  },
+  {
+    "name": "cap07_palanca-oblicua_pp405",
+    "pdf_page": 405,
+    "printed_page": 405,
+    "box_pt": [
+      226.4,
+      439.42,
+      440.15,
+      516.67
+    ],
+    "caption": "Fuerza horizontal aplicada a una palanca inclinada.",
+    "embedded_image": "/Image3529"
+  },
+  {
+    "name": "cap07_viga_pp411",
+    "pdf_page": 411,
+    "printed_page": 411,
+    "box_pt": [
+      430.0,
+      252.76,
+      523.3,
+      387.36
+    ],
+    "caption": "Viga sostenida por una bisagra y una cuerda.",
+    "embedded_image": "/Image3629"
+  },
+  {
+    "name": "cap07_polea-maciza_pp412",
+    "pdf_page": 412,
+    "printed_page": 412,
+    "box_pt": [
+      436.0,
+      76.56,
+      519.25,
+      267.81
+    ],
+    "caption": "Dos masas unidas por una cuerda sobre una polea con inercia.",
+    "embedded_image": "/Image3631"
+  },
+  {
+    "name": "cap07_viga-carga_pp413",
+    "pdf_page": 413,
+    "printed_page": 413,
+    "box_pt": [
+      404.25,
+      95.24,
+      517.87,
+      208.99
+    ],
+    "caption": "Carga de 25 kg al extremo de una viga uniforme.",
+    "embedded_image": "/Image3644"
+  },
+  {
+    "name": "cap07_viga-cuarto_pp414",
+    "pdf_page": 414,
+    "printed_page": 414,
+    "box_pt": [
+      409.5,
+      71.26,
+      520.93,
+      203.0
+    ],
+    "caption": "Cuerda de soporte fijada a un cuarto de la longitud.",
+    "embedded_image": "/Image3647"
+  },
+  {
+    "name": "cap07_viga-inclinada_pp415",
+    "pdf_page": 415,
+    "printed_page": 415,
+    "box_pt": [
+      407.25,
+      72.86,
+      521.39,
+      186.61
+    ],
+    "caption": "Viga inclinada sostenida por una cuerda horizontal.",
+    "embedded_image": "/Image3650"
+  },
+  {
+    "name": "cap07_polea-doble_pp416",
+    "pdf_page": 416,
+    "printed_page": 416,
+    "box_pt": [
+      447.6,
+      78.01,
+      535.25,
+      242.66
+    ],
+    "caption": "Dos masas con cuerdas enrolladas en radios diferentes.",
+    "embedded_image": "/Image3656"
+  },
+  {
+    "name": "cap08_epiciclos_pp421",
+    "pdf_page": 421,
+    "printed_page": 421,
+    "box_pt": [
+      349.3,
+      126.43,
+      522.8,
+      273.13
+    ],
+    "caption": "Modelo geométrico de deferente, epiciclo y ecuante.",
+    "embedded_image": "/Image3667"
+  },
+  {
+    "name": "cap08_excentricidades_pp424",
+    "pdf_page": 424,
+    "printed_page": 424,
+    "box_pt": [
+      144.6,
+      115.06,
+      356.96,
+      269.11
+    ],
+    "caption": "Elipses de distintas excentricidades y sus focos.",
+    "embedded_image": "/Image3676"
+  },
+  {
+    "name": "cap08_areas-iguales_pp424",
+    "pdf_page": 424,
+    "printed_page": 424,
+    "box_pt": [
+      184.4,
+      404.03,
+      482.9,
+      510.53
+    ],
+    "caption": "Áreas iguales barridas en intervalos de tiempo iguales.",
+    "embedded_image": "/Image3675"
+  },
+  {
+    "name": "cap08_balanza-torsion_pp428",
+    "pdf_page": 428,
+    "printed_page": 428,
+    "box_pt": [
+      346.3,
+      71.41,
+      522.69,
+      203.16
+    ],
+    "caption": "Balanza de torsión para estudiar la atracción entre masas.",
+    "embedded_image": "/Image3706"
+  },
+  {
+    "name": "cap10_choque-camion_pp502",
+    "pdf_page": 502,
+    "printed_page": 502,
+    "box_pt": [
+      144.0,
+      295.05,
+      522.0,
+      372.3
+    ],
+    "caption": "Transferencia de cantidad de movimiento en un choque.",
+    "embedded_image": "/Image4118"
+  },
+  {
+    "name": "cap10_pendulo-newton_pp505",
+    "pdf_page": 505,
+    "printed_page": 505,
+    "box_pt": [
+      148.93,
+      395.33,
+      325.26,
+      490.33
+    ],
+    "caption": "Una bola entra y una bola sale en el modelo del péndulo de Newton.",
+    "embedded_image": "/Image4142"
+  },
+  {
+    "name": "cap10_impulso-area_pp508",
+    "pdf_page": 508,
+    "printed_page": 508,
+    "box_pt": [
+      196.25,
+      103.81,
+      459.01,
+      283.06
+    ],
+    "caption": "Áreas con signo bajo una curva fuerza-tiempo.",
+    "embedded_image": "/Image4167"
+  },
+  {
+    "name": "cap10_beisbol-barras_pp509",
+    "pdf_page": 509,
+    "printed_page": 509,
+    "box_pt": [
+      201.65,
+      223.24,
+      482.97,
+      395.29
+    ],
+    "caption": "Cambio de cantidad de movimiento al invertir la velocidad de una pelota.",
+    "embedded_image": "/Image4178"
+  },
+  {
+    "name": "cap10_fuerza-tiempo_pp511",
+    "pdf_page": 511,
+    "printed_page": 511,
+    "box_pt": [
+      256.4,
+      97.81,
+      446.43,
+      215.86
+    ],
+    "caption": "Gráfico fuerza-tiempo del ejercicio de impulso.",
+    "embedded_image": "/Image4195"
+  },
+  {
+    "name": "cap10_colision-barras_pp516",
+    "pdf_page": 516,
+    "printed_page": 516,
+    "box_pt": [
+      193.4,
+      376.88,
+      473.55,
+      548.21
+    ],
+    "caption": "Balance de cantidad de movimiento para dos cuerpos separados.",
+    "embedded_image": "/Image4245"
+  },
+  {
+    "name": "cap10_choque-unidos_pp518",
+    "pdf_page": 518,
+    "printed_page": 518,
+    "box_pt": [
+      215.9,
+      146.09,
+      451.4,
+      200.09
+    ],
+    "caption": "Choque entre cuerpos de 8 kg y 12 kg que permanecen unidos.",
+    "embedded_image": "/Image4280"
+  },
+  {
+    "name": "cap10_patineta_pp519",
+    "pdf_page": 519,
+    "printed_page": 519,
+    "box_pt": [
+      434.25,
+      71.86,
+      522.8,
+      148.16
+    ],
+    "caption": "Persona sobre patineta que lanza una caja.",
+    "embedded_image": "/Image4294"
+  },
+  {
+    "name": "cap10_rueda-silla_pp526",
+    "pdf_page": 526,
+    "printed_page": 526,
+    "box_pt": [
+      200.9,
+      136.67,
+      466.4,
+      298.67
+    ],
+    "caption": "Cambio de orientación de una rueda y giro de la persona.",
+    "embedded_image": "/Image4352"
+  },
+  {
+    "name": "cap10_bala-puerta_pp528",
+    "pdf_page": 528,
+    "printed_page": 528,
+    "box_pt": [
+      402.0,
+      352.29,
+      519.99,
+      436.48
+    ],
+    "caption": "Impacto de una bala sobre una puerta articulada.",
+    "embedded_image": "/Image4372"
+  },
+  {
+    "name": "cap10_insecto-disco_pp529",
+    "pdf_page": 529,
+    "printed_page": 529,
+    "box_pt": [
+      212.15,
+      90.39,
+      454.72,
+      190.44
+    ],
+    "caption": "Insecto que se desplaza desde el centro al borde de un disco.",
+    "embedded_image": "/Image4380"
+  },
+  {
+    "name": "cap11_resorte-oscilacion_pp535",
+    "pdf_page": 535,
+    "printed_page": 535,
+    "box_pt": [
+      233.57,
+      307.9,
+      433.68,
+      478.5
+    ],
+    "caption": "Posiciones, velocidades y aceleraciones en la oscilación de un resorte.",
+    "embedded_image": "/Image4404"
+  },
+  {
+    "name": "cap11_proyeccion-circular_pp536",
+    "pdf_page": 536,
+    "printed_page": 536,
+    "box_pt": [
+      281.82,
+      298.62,
+      421.46,
+      451.22
+    ],
+    "caption": "Proyección vertical de un movimiento circular.",
+    "embedded_image": "/Image4409"
+  },
+  {
+    "name": "cap11_senoide_pp537",
+    "pdf_page": 537,
+    "printed_page": 537,
+    "box_pt": [
+      209.9,
+      170.25,
+      457.4,
+      281.25
+    ],
+    "caption": "Relación entre ángulo y desplazamiento sinusoidal.",
+    "embedded_image": "/Image4415"
+  },
+  {
+    "name": "cap11_resorte-hooke_pp541",
+    "pdf_page": 541,
+    "printed_page": 541,
+    "box_pt": [
+      209.15,
+      108.77,
+      458.15,
+      278.27
+    ],
+    "caption": "Resorte natural, comprimido y estirado.",
+    "embedded_image": "/Image4446"
+  },
+  {
+    "name": "cap11_balanza-inercial_pp542",
+    "pdf_page": 542,
+    "printed_page": 542,
+    "box_pt": [
+      144.0,
+      448.81,
+      454.8,
+      582.01
+    ],
+    "caption": "Balanza inercial con bandeja y elementos elásticos.",
+    "embedded_image": "/Image4453"
+  },
+  {
+    "name": "cap11_pendulo_pp545",
+    "pdf_page": 545,
+    "printed_page": 545,
+    "box_pt": [
+      229.4,
+      419.65,
+      437.9,
+      595.15
+    ],
+    "caption": "Extremos y posición inferior de un péndulo.",
+    "embedded_image": "/Image4406"
+  },
+  {
+    "name": "cap11_pendulo-fuerzas_pp546",
+    "pdf_page": 546,
+    "printed_page": 546,
+    "box_pt": [
+      253.4,
+      153.2,
+      413.9,
+      340.7
+    ],
+    "caption": "Representación de fuerzas del péndulo en el original, con limitaciones aclaradas en el texto.",
+    "embedded_image": "/Image4464"
+  },
+  {
+    "name": "cap12_presion_pp554",
+    "pdf_page": 554,
+    "printed_page": 554,
+    "box_pt": [
+      371.8,
+      594.0,
+      522.98,
+      678.95
+    ],
+    "caption": "Presión como fuerza normal distribuida sobre un área.",
+    "embedded_image": "/Image4508"
+  },
+  {
+    "name": "cap12_elevador_pp559",
+    "pdf_page": 559,
+    "printed_page": 559,
+    "box_pt": [
+      211.25,
+      184.53,
+      455.98,
+      322.73
+    ],
+    "caption": "Elevador hidráulico de dos pistones.",
+    "embedded_image": "/Image4534"
+  },
+  {
+    "name": "cap12_columna_pp562",
+    "pdf_page": 562,
+    "printed_page": 562,
+    "box_pt": [
+      396.0,
+      73.61,
+      523.4,
+      229.71
+    ],
+    "caption": "Presión en un punto situado bajo una superficie libre.",
+    "embedded_image": "/Image4547"
+  },
+  {
+    "name": "cap12_hemisferios_pp563",
+    "pdf_page": 563,
+    "printed_page": 563,
+    "box_pt": [
+      442.3,
+      292.69,
+      522.9,
+      435.18
+    ],
+    "caption": "Hemisferios de Magdeburgo.",
+    "embedded_image": "/Image4552"
+  },
+  {
+    "name": "cap12_empuje-presiones_pp568",
+    "pdf_page": 568,
+    "printed_page": 568,
+    "box_pt": [
+      230.9,
+      123.24,
+      436.4,
+      292.74
+    ],
+    "caption": "Resultante de presiones sobre un cuerpo sumergido.",
+    "embedded_image": "/Image4575"
+  },
+  {
+    "name": "cap12_volumen-desplazado_pp570",
+    "pdf_page": 570,
+    "printed_page": 570,
+    "box_pt": [
+      149.4,
+      382.34,
+      320.4,
+      496.34
+    ],
+    "caption": "Volumen de líquido desplazado por un cuerpo flotante.",
+    "embedded_image": "/Image4587"
+  },
+  {
+    "name": "cap12_peso-aparente_pp570",
+    "pdf_page": 570,
+    "printed_page": 570,
+    "box_pt": [
+      326.3,
+      337.34,
+      523.55,
+      496.34
+    ],
+    "caption": "Disminución de la lectura de un dinamómetro al sumergir un cuerpo.",
+    "embedded_image": "/Image4588"
+  },
+  {
+    "name": "cap12_continuidad_pp578",
+    "pdf_page": 578,
+    "printed_page": 578,
+    "box_pt": [
+      227.15,
+      96.39,
+      439.48,
+      185.64
+    ],
+    "caption": "Cambios de sección y de rapidez en un conducto.",
+    "embedded_image": "/Image4630"
+  },
+  {
+    "name": "cap12_tubo-ejercicio_pp579",
+    "pdf_page": 579,
+    "printed_page": 579,
+    "box_pt": [
+      180.0,
+      128.47,
+      485.25,
+      222.97
+    ],
+    "caption": "Conducto con radios de entrada y salida diferentes.",
+    "embedded_image": "/Image4635"
+  },
+  {
+    "name": "cap12_bernoulli-altura_pp582",
+    "pdf_page": 582,
+    "printed_page": 582,
+    "box_pt": [
+      224.15,
+      322.93,
+      443.15,
+      459.43
+    ],
+    "caption": "Flujo entre secciones de distinta altura y área.",
+    "embedded_image": "/Image4660"
+  },
+  {
+    "name": "cap12_venturi_pp583",
+    "pdf_page": 583,
+    "printed_page": 583,
+    "box_pt": [
+      209.15,
+      161.88,
+      458.07,
+      314.83
+    ],
+    "caption": "Tubo de Venturi con distintas presiones estáticas.",
+    "embedded_image": "/Image4665"
+  },
+  {
+    "name": "cap12_torricelli_pp585",
+    "pdf_page": 585,
+    "printed_page": 585,
+    "box_pt": [
+      376.3,
+      155.99,
+      522.65,
+      307.04
+    ],
+    "caption": "Chorros que salen por orificios a distintas profundidades.",
+    "embedded_image": "/Image4685"
+  },
+  {
+    "name": "cap12_tubo-descenso_pp588",
+    "pdf_page": 588,
+    "printed_page": 588,
+    "box_pt": [
+      394.3,
+      93.99,
+      523.3,
+      197.49
+    ],
+    "caption": "Conducto que desciende entre A y B.",
+    "embedded_image": "/Image4699"
+  },
+  {
+    "name": "cap13_luz-observadores_pp593",
+    "pdf_page": 593,
+    "printed_page": 593,
+    "box_pt": [
+      229.55,
+      127.67,
+      437.6,
+      259.41
+    ],
+    "caption": "Dos observadores describen la propagación de luz en el vacío.",
+    "embedded_image": "/Image4719"
+  },
+  {
+    "name": "cap13_factor-lorentz_pp595",
+    "pdf_page": 595,
+    "printed_page": 595,
+    "box_pt": [
+      239.0,
+      492.91,
+      428.35,
+      682.26
+    ],
+    "caption": "Factor de Lorentz en función de la velocidad relativa.",
+    "embedded_image": "/Image4726"
+  },
+  {
+    "name": "cap13_reloj-reposo_pp596",
+    "pdf_page": 596,
+    "printed_page": 596,
+    "box_pt": [
+      274.8,
+      183.19,
+      392.55,
+      318.94
+    ],
+    "caption": "Reloj de luz observado desde su marco de reposo.",
+    "embedded_image": "/Image4729"
+  },
+  {
+    "name": "cap13_reloj-movimiento_pp596",
+    "pdf_page": 596,
+    "printed_page": 596,
+    "box_pt": [
+      183.3,
+      377.22,
+      484.05,
+      512.22
+    ],
+    "caption": "Trayectoria de la luz en el marco donde el reloj se mueve.",
+    "embedded_image": "/Image4730"
+  },
+  {
+    "name": "cap07_rueda-rayos_pp398",
+    "pdf_page": 398,
+    "printed_page": 398,
+    "box_pt": [
+      155,
+      73,
+      525,
+      255
+    ],
+    "caption": "Ejercicio de una rueda con aro y ocho rayos; captura renderizada para conservar trazos vectoriales."
   }
 ]

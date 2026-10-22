@@ -179,3 +179,15 @@ ul .notes-link { color: var(--content); }
   }
 }
 
+/* Información editorial secundaria en la portada de las notas de Bigler. */
+.post-content .bigler-source {
+  font-size: 0.85em;
+  line-height: 1.55;
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+}
+
+.post-content .bigler-source p {
+  margin: 0 0 0.65em;
+}
+

@@ -1,4 +1,5 @@
 +++
+tags = ["cap02", "matemáticas", "vectores", "producto escalar", "producto vectorial"]
 title = "Multiplicación de vectores"
 date = "2026-10-13"
 draft = false

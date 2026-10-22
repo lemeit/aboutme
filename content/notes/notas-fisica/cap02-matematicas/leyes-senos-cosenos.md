@@ -1,4 +1,5 @@
 +++
+tags = ["cap02", "matemáticas", "trigonometría", "ley de senos", "ley de cosenos"]
 title = "Leyes de senos y cosenos"
 date = "2026-10-13"
 draft = false

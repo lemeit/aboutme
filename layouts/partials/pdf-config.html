@@ -1,0 +1,28 @@
+{{- $enabled := and .IsPage (eq .Section "notes") (ne .Params.pdf false) -}}
+{{- $filename := .Params.pdf_file | default (printf "%s.pdf" (replace (strings.TrimSuffix "/" (strings.TrimPrefix "/" .RelPermalink)) "/" "--")) -}}
+{{- $materia := .Param "materia" | default .CurrentSection.Title -}}
+{{- $colegio := .Param "colegio" | default "" -}}
+{{- $logo := .Param "logo" | default "" -}}
+{{- $materiaLogo := .Param "materia_logo" | default "" -}}
+{{- $byline := "Prof. Lamaita" -}}
+{{- if strings.HasPrefix .RelPermalink "/notes/notas-fisica/" -}}
+  {{- $materia = "Notas de Física — Jeff Bigler" -}}
+  {{- $materiaLogo = "/images/logos/notas-bigler.svg" -}}
+  {{- $byline = "Traducción y adaptación: Prof. Lamaita" -}}
+{{- else if strings.HasPrefix .RelPermalink "/notes/fisica-4to/" -}}
+  {{- $materia = "Introducción a la Física — 4° año" -}}
+  {{- $colegio = $colegio | default "Colegio Secundario Madre Teresa" -}}
+  {{- $logo = $logo | default "/images/logos/madre-teresa.png" -}}
+  {{- $materiaLogo = $materiaLogo | default "/images/logos/intro-fisica.svg" -}}
+{{- else if strings.HasPrefix .RelPermalink "/notes/lab-industrias-7mo/" -}}
+  {{- $materia = "Laboratorio de Industrias — 7° TQ" -}}
+  {{- $colegio = $colegio | default "EEST N°1 Gral. Savio" -}}
+  {{- $logo = $logo | default "/images/logos/eest1.png" -}}
+  {{- $materiaLogo = $materiaLogo | default "/images/logos/lab-industrias.svg" -}}
+{{- end -}}
+{{- $months := slice "enero" "febrero" "marzo" "abril" "mayo" "junio" "julio" "agosto" "septiembre" "octubre" "noviembre" "diciembre" -}}
+{{- $dateText := "" -}}
+{{- if not .Date.IsZero -}}
+  {{- $dateText = printf "%s %d" (index $months (sub (int .Date.Month) 1)) .Date.Year -}}
+{{- end -}}
+{{- return (dict "enabled" $enabled "filename" $filename "url" .RelPermalink "title" .Title "materia" $materia "colegio" $colegio "logo" $logo "localidad" (.Param "localidad" | default "") "materiaLogo" $materiaLogo "dateText" $dateText "byline" $byline "sourceHash" (sha256 .RawContent)) -}}

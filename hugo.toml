@@ -1,4 +1,5 @@
 baseURL = "https://profe.lemeit.ar/"
+
 defaultContentLanguage = "es"
 languageCode = "es-AR"
 title = "Luciano Lamaita"
@@ -80,3 +81,12 @@ mainSections = []
         [markup.goldmark.extensions.passthrough.delimiters]
           block = [['$$', '$$']]
           inline = [['$', '$']]
+
+[outputFormats.PDFManifest]
+  mediaType = "application/json"
+  baseName = "pdf-manifest"
+  isPlainText = true
+  notAlternative = true
+
+[outputs]
+  home = ["HTML", "RSS", "PDFManifest"]

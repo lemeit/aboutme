@@ -6,9 +6,10 @@ on:
     paths:
       - 'content/**/*.md'
       - 'layouts/**'
-      - 'assets/css/extended/print-paper.css'
+      - 'assets/**'
+      - 'hugo.toml'
       - 'scripts/generate-pdf.mjs'
-      - 'static/images/logos/**'
+      - 'static/images/**'
   workflow_dispatch: {}
 
 # Si se dispara más de una corrida casi al mismo tiempo (dos pushes
@@ -35,6 +36,7 @@ jobs:
           # reintentar el push si choca con otro push en simultáneo,
           # necesita poder ver el historial común con origin/main.
           fetch-depth: 0
+          ref: main
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3

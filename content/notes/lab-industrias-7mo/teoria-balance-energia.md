@@ -7,6 +7,7 @@ proyecto_orden = 3
 draft = false
 math = true
 pdf = true
+pdf_file = 'teoria-balance-energia.pdf'
 materia = 'Laboratorio de Industrias — 7° TQ'
 colegio = 'EEST N°1 "Gral. Savio"'
 logo = '/images/logos/eest1.png'

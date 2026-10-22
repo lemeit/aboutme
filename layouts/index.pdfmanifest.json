@@ -1,0 +1,8 @@
+{{- $notes := slice -}}
+{{- range .Site.RegularPages -}}
+  {{- $config := partial "pdf-config.html" . -}}
+  {{- if $config.enabled -}}
+    {{- $notes = $notes | append $config -}}
+  {{- end -}}
+{{- end -}}
+{{- dict "version" 1 "notes" $notes | jsonify -}}

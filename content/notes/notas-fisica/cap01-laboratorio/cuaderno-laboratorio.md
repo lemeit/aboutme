@@ -132,7 +132,7 @@ En el ejemplo del original, $10\pm2$ y $11\pm2$ presentan un amplio solapamiento
 
 Esta entrada comunica una observación verificable y una decisión. No pretende que un ensayo imperfecto haya sido perfecto; permite revisar su efecto sobre el resultado.
 
-*Adaptado de [Jeff Bigler — Physics 1: Mechanics in Plain English](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf), licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Traducción y adaptación: Prof. Ing. Luciano Lamaita, 2026.*
+Traducción y adaptación al español: Prof. Lamaita, 2026. Texto original: [Jeff Bigler — *Physics 1: Mechanics in Plain English*](https://www.mrbigler.com/Physics-1/Notes-Physics-1.pdf), edición de octubre de 2025. Original y adaptación bajo [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Las aclaraciones y actividades propias se identifican en el texto.
 
 
 {{< nota-adaptacion pagina="96" origen="Recomendaciones del original y generalizaciones de esta adaptación" >}}

@@ -211,4 +211,4 @@ Respondé:
 
 ---
 
-Actividad de Luciano Lamaita para Introducción a la Física, 2026. [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Las tablas se completan con mediciones de la clase; los ejemplos numéricos están identificados como cálculos ilustrativos.
+Material elaborado por Prof. Lamaita, 2026. Licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).

@@ -241,4 +241,4 @@ En la [experiencia de carrera y Tracker](../experiencia-energia-movimiento/) vas
 
 ---
 
-Material de estudio de Luciano Lamaita, 2026, bajo [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Ejemplos y ejercicios desarrollados para la materia; las notas traducidas de Bigler se enlazan como referencia.
+Material elaborado por Prof. Lamaita, 2026. Licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).

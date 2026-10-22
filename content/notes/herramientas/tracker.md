@@ -195,4 +195,6 @@ El archivo tiene columnas `t`, `x`, `y`, `vx`, `vy` que podés abrir en Excel o 
 
 ---
 
-*Guía elaborada por Prof. Ing. Luciano Lamaita, 2026. Tracker es desarrollado por Douglas Brown (Cabrillo College) bajo licencia libre.*
+Material elaborado por Prof. Lamaita, 2026.
+
+Tracker es desarrollado por Douglas Brown (Cabrillo College) bajo licencia libre.

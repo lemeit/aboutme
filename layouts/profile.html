@@ -1,0 +1,19 @@
+{{- define "main" }}
+<article class="post-single profile-page">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+    <h1 class="post-title">{{ .Title }}</h1>
+    {{ with .Params.profileLabel }}<p class="profile-label">{{ . }}</p>{{ end }}
+  </header>
+  <nav class="profile-nav" aria-label="Perfil de Luciano Lamaita">
+    <a href="{{ "about/" | relURL }}"{{ if eq .RelPermalink ("about/" | relURL) }} aria-current="page"{{ end }}>Sobre mí</a>
+    <a href="{{ "cv/" | relURL }}"{{ if eq .RelPermalink ("cv/" | relURL) }} aria-current="page"{{ end }}>Trayectoria</a>
+    <a href="{{ "projects/" | relURL }}">Proyectos</a>
+    <a href="mailto:info@lemeit.ar">Contacto</a>
+  </nav>
+  {{ if .Params.ShowToc }}{{ partial "toc.html" . }}{{ end }}
+  <div class="post-content md-content profile-content">
+    {{ partial "anchored_headings.html" .Content }}
+  </div>
+</article>
+{{- end }}

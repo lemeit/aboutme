@@ -261,6 +261,8 @@ Remove-Item C:\GitHub\aboutme\.git\index.lock -Force
 
 ## Contacto
 
+La portada y las páginas `/about/` y `/cv/` comparten una presentación coherente del perfil personal y profesional. «Sobre mí» desarrolla la biografía y los intereses; «Trayectoria» reúne los antecedentes con navegación por secciones y formación complementaria desplegable. Usan `layouts/profile.html` y estilos acotados en `assets/css/extended/profile.css`. Ver [fuentes y mantenimiento del perfil](docs/perfil-profesional.md). La descarga del CV completo queda para una etapa posterior.
+
 - 🌐 [profe.lemeit.ar](https://profe.lemeit.ar)
 - 💼 [linkedin.com/in/llamaita](https://www.linkedin.com/in/llamaita/)
 - 🐙 [github.com/lemeit](https://github.com/lemeit)

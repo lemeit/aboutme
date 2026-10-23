@@ -1,7 +1,7 @@
 +++
 title = "Diagramas de cuerpo libre y aplicaciones"
 date = "2026-10-21"
-lastmod = "2026-10-21"
+lastmod = "2026-10-23"
 weight = 2
 draft = false
 math = true
@@ -68,10 +68,10 @@ Si obtenés la fuerza únicamente mediante $F=ma$ y luego usás esa misma cuenta
 
 ## Ejemplo y ejercicios
 
-Para $m=2\,\mathrm{kg}$, plano de $30^\circ$ sin rozamiento y $g=10$, $N=10\sqrt3\approx17{,}32\,\mathrm N$ y $a=5\,\mathrm{m/s^2}$ hacia abajo del plano.
+Un bloque de masa $2\,\mathrm{kg}$ está sobre un plano fijo inclinado $30^\circ$ respecto de la horizontal, sin rozamiento. Solo actúan peso y normal, y el bloque mantiene contacto con el plano. **Dibujá su diagrama de cuerpo libre y calculá la normal y la aceleración**, usando $g=10\,\mathrm{m/s^2}$. Resulta $N=10\sqrt3\approx17{,}32\,\mathrm N$ y $a=5\,\mathrm{m/s^2}$ hacia abajo del plano.
 
-1. En ese plano, si el bloque parte del reposo, ¿qué rapidez alcanza luego de $1\,\mathrm m$?
-2. Un carrito de $3\,\mathrm{kg}$ recibe un empuje horizontal de $15\,\mathrm N$ y rozamiento de $6\,\mathrm N$. Hallá aceleración.
+1. Usá el bloque y el plano del ejemplo anterior. Si se libera desde el reposo y recorre $1\,\mathrm m$ medido a lo largo de la rampa, ¿qué rapidez alcanza? Conservá las mismas hipótesis de contacto y ausencia de rozamiento.
+2. Un carrito de masa $3\,\mathrm{kg}$ se mueve hacia la derecha sobre un piso horizontal. Recibe un empuje constante de $15\,\mathrm N$ hacia la derecha y un rozamiento de $6\,\mathrm N$ hacia la izquierda. Peso y normal se equilibran verticalmente. Dibujá las fuerzas y hallá la aceleración horizontal.
 3. ¿Siempre vale $N=mg$? Proponé un contraejemplo usando esta nota.
 
 {{< details title="Resultados" >}}

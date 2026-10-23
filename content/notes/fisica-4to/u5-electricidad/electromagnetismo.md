@@ -1,7 +1,7 @@
 +++
 title = "Electromagnetismo, generación y transporte"
 date = "2026-10-21"
-lastmod = "2026-10-21"
+lastmod = "2026-10-23"
 weight = 3
 draft = false
 math = true
@@ -64,9 +64,9 @@ La distribución adapta niveles de tensión y lleva energía a usuarios. No se m
 
 ## Ejercicios
 
-1. Una espira tiene flujo que disminuye uniformemente de $0{,}08$ a $0{,}02\,\mathrm{Wb}$ en $0{,}30\,\mathrm s$. Hallá el módulo de la fem inducida.
+1. El flujo magnético a través de una sola espira disminuye uniformemente de $0{,}08\,\mathrm{Wb}$ a $0{,}02\,\mathrm{Wb}$ en $0{,}30\,\mathrm s$, para una orientación de la normal elegida y mantenida fija. Hallá el módulo de la fuerza electromotriz inducida usando Faraday; no se pide su sentido.
 2. En el modelo de línea anterior, ¿cómo cambia la pérdida si se duplica $V$ manteniendo potencia y resistencia?
-3. Una línea de $2\,\Omega$ lleva $5\,\mathrm A$. Hallá su potencia térmica.
+3. Una línea tiene resistencia total de $2\,\Omega$ y conduce una corriente continua constante de $5\,\mathrm A$. Calculá la potencia transformada en energía interna por efecto Joule, suponiendo resistencia constante.
 4. ¿Por qué «generar electricidad» no significa crear energía de la nada?
 
 {{< details title="Resultados" >}}

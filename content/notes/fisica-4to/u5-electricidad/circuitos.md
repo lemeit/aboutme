@@ -1,7 +1,7 @@
 +++
 title = "Circuitos: corriente, tensión, serie y paralelo"
 date = "2026-10-21"
-lastmod = "2026-10-21"
+lastmod = "2026-10-23"
 weight = 1
 draft = false
 math = true
@@ -60,16 +60,16 @@ Para exactamente dos resistencias, reordenar fracciones da $R_{\mathrm{eq}}=R_1R
 
 ## Ejemplo resuelto
 
-Dos resistencias de $6\,\Omega$ y $3\,\Omega$ en paralelo tienen $1/R_{\mathrm{eq}}=1/6+1/3=1/2$, de modo que $R_{\mathrm{eq}}=2\,\Omega$. A $6\,\mathrm V$, las corrientes son $1$ y $2\,\mathrm A$, y la total $3\,\mathrm A$.
+Dos resistores óhmicos de $6\,\Omega$ y $3\,\Omega$ se conectan en paralelo a una fuente ideal de $6\,\mathrm V$ de corriente continua, con cables de resistencia despreciable. **Calculá la resistencia equivalente, la corriente en cada rama y la corriente total.** Tienen $1/R_{\mathrm{eq}}=1/6+1/3=1/2$, de modo que $R_{\mathrm{eq}}=2\,\Omega$. A $6\,\mathrm V$, las corrientes son $1$ y $2\,\mathrm A$, y la total $3\,\mathrm A$.
 
 ## Actividad y ejercicios
 
 Armá primero un esquema o simulación. Si se realiza un circuito físico en clase, usá la fuente de baja tensión y los componentes indicados para la experiencia; no se conecta esta práctica a la red domiciliaria. Medí corriente con el amperímetro en serie y tensión con el voltímetro en paralelo, respetando sus rangos y las indicaciones del equipo.
 
-1. Pasan $12\,\mathrm C$ en $4\,\mathrm s$. Hallá corriente media.
-2. Una carga de $2\,\mathrm C$ aumenta su energía potencial $10\,\mathrm J$. Hallá $\Delta V$.
-3. Hallá la equivalente de $4$ y $8\,\Omega$ en serie y en paralelo.
-4. Entran $0{,}30\,\mathrm A$ a un nodo estacionario; una rama lleva $0{,}12\,\mathrm A$. ¿Qué corriente lleva la otra?
+1. Por una sección de un conductor atraviesa una carga neta de $+12\,\mathrm C$ en un mismo sentido durante $4\,\mathrm s$. Hallá el módulo de la corriente media.
+2. Una carga positiva $q=+2\,\mathrm C$ pasa de un punto A a otro B y su energía potencial eléctrica aumenta $\Delta U_e=+10\,\mathrm J$. Hallá $V_B-V_A$, incluyendo el signo.
+3. Dos resistores óhmicos tienen resistencias de $4\,\Omega$ y $8\,\Omega$. Dibujá dos circuitos ideales: uno con ambos en serie y otro con ambos en paralelo. Calculá la resistencia equivalente de cada conexión; despreciá la resistencia de los cables.
+4. En un nodo en régimen estacionario se unen exactamente tres ramas. Por una entran $0{,}30\,\mathrm A$ y por otra salen $0{,}12\,\mathrm A$. Calculá la corriente de la tercera rama e indicá si entra o sale.
 
 {{< details title="Resultados" >}}
 

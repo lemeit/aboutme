@@ -1,7 +1,7 @@
 +++
 title = "Termodinámica, reversibilidad y entropía"
 date = "2026-10-21"
-lastmod = "2026-10-21"
+lastmod = "2026-10-23"
 weight = 3
 draft = false
 math = true
@@ -96,10 +96,10 @@ El tercer principio relaciona la entropía con el límite de temperatura cero pa
 
 ## Ejercicios
 
-1. Un sistema recibe $800\,\mathrm J$ y realiza trabajo de $300\,\mathrm J$. Hallá $\Delta U$.
-2. Una expansión a presión externa constante de $100\,\mathrm{kPa}$ aumenta el volumen $0{,}002\,\mathrm{m^3}$. Hallá $W$.
-3. Una máquina recibe $1000\,\mathrm J$ y entrega $600\,\mathrm J$ a la fuente fría. Hallá trabajo y rendimiento.
-4. Hallá el rendimiento reversible máximo entre $500$ y $300\,\mathrm K$.
+1. Un sistema cerrado recibe $800\,\mathrm J$ por calor y realiza $300\,\mathrm J$ de trabajo sobre el entorno, sin cambios de energía cinética ni potencial macroscópicas. Usá la convención $Q>0$ recibido y $W>0$ realizado por el sistema. Hallá el cambio de energía interna $\Delta U$.
+2. Un gas en un cilindro con pistón se expande contra una presión externa constante de $100\,\mathrm{kPa}$ y su volumen aumenta $0{,}002\,\mathrm{m^3}$. Calculá el trabajo de expansión realizado por el gas, con signo, usando $W=p_{\mathrm{ext}}\Delta V$.
+3. Durante un ciclo completo, una máquina térmica recibe $1000\,\mathrm J$ por calor de la fuente caliente y entrega $600\,\mathrm J$ por calor a la fuente fría. No hay otras transferencias. Calculá el trabajo neto que entrega al entorno y su rendimiento.
+4. Una máquina térmica cíclica opera entre una fuente caliente a $500\,\mathrm K$ y una fría a $300\,\mathrm K$. Calculá el rendimiento máximo reversible como fracción y porcentaje. Explicá si una máquina irreversible entre esas mismas fuentes podría superar ese valor.
 
 {{< details title="Resultados" >}}
 

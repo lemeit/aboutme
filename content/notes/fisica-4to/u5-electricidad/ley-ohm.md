@@ -1,7 +1,7 @@
 +++
 title = "Ley de Ohm, potencia y consumo eléctrico"
 date = "2026-10-21"
-lastmod = "2026-10-21"
+lastmod = "2026-10-23"
 weight = 2
 draft = false
 math = true
@@ -22,7 +22,7 @@ En un gráfico con $I$ horizontal y $V$ vertical, la pendiente de una recta óhm
 
 ## Ejemplo y contraste
 
-Para $R=100\,\Omega$ y $V=5\,\mathrm V$, $I=V/R=0{,}050\,\mathrm A$. Si la tensión se duplica y se conserva $R$, la corriente se duplica.
+Un resistor óhmico de $R=100\,\Omega$ se conecta a una fuente de tensión continua de $V=5\,\mathrm V$. **Calculá la corriente y determiná cuánto valdría si la tensión aumentara a $10\,\mathrm V$, manteniendo la misma resistencia.** Aplicamos $I=V/R$: inicialmente $I=0{,}050\,\mathrm A$ y luego $I=0{,}100\,\mathrm A$. La corriente se duplica.
 
 Para contrastar el modelo, medí varios pares $I,V$ con un resistor adecuado y fuente de baja tensión. Construí el gráfico y evaluá si una recta es compatible con los datos. Cambios de temperatura y resistencias de conexión pueden afectar el resultado. No calcules todos los valores usando $V=RI$ y los presentes como mediciones que verifican esa misma ley.
 
@@ -62,8 +62,8 @@ Para corriente alterna, la potencia media es el promedio temporal del producto $
 
 ## Ejercicios
 
-1. Hallá la corriente en $20\,\Omega$ conectados a $12\,\mathrm V$ y la potencia disipada.
-2. Una recta $V(I)$ pasa por $(0{,}10\,\mathrm A,2\,\mathrm V)$ y $(0{,}30\,\mathrm A,6\,\mathrm V)$. Hallá su pendiente.
+1. Un resistor óhmico de $20\,\Omega$ está conectado a una fuente ideal de $12\,\mathrm V$ de corriente continua. Su resistencia permanece constante. Hallá la corriente que lo atraviesa y la potencia eléctrica que disipa.
+2. Un gráfico tiene corriente $I$ en el eje horizontal y tensión $V$ en el vertical. La recta pasa por $(0{,}10\,\mathrm A,2\,\mathrm V)$ y $(0{,}30\,\mathrm A,6\,\mathrm V)$. Hallá su pendiente con unidades y explicá qué magnitud representa si el elemento es óhmico.
 3. Un equipo de $1{,}2\,\mathrm{kW}$ funciona $30$ minutos a potencia constante. Hallá energía en kWh y J.
 4. ¿Qué sucede con $P=V^2/R$ si se duplica $V$ y se mantiene $R$?
 

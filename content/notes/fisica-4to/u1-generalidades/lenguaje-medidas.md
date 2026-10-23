@@ -1,7 +1,7 @@
 +++
 title = "Variables, gráficos, unidades y notación científica"
 date = "2026-10-21"
-lastmod = "2026-10-21"
+lastmod = "2026-10-23"
 weight = 2
 draft = false
 math = true
@@ -45,7 +45,7 @@ Si reexpresás un gráfico mediante $X=\alpha x$ y $T=\beta t$, la pendiente cam
 1. Convertí $54\,\mathrm{km/h}$ a m/s y $2{,}5\,\mathrm{min}$ a s.
 2. Convertí $350\,\mathrm g$ a kg y $25\,\mathrm{cm^2}$ a m².
 3. Escribí $4\,500\,000$ y $0{,}000081$ en notación científica.
-4. Verificá las dimensiones de $v^2=v_0^2+2a\Delta x$.
+4. Verificá que $v^2=v_0^2+2a\Delta x$ sea dimensionalmente homogénea. Usá $[v]=[v_0]=L/T$, $[a]=L/T^2$ y $[\Delta x]=L$. Indicá la dimensión de cada término y explicá por qué esta comprobación, por sí sola, no demuestra que la ecuación sea físicamente correcta.
 
 {{< details title="Resultados" >}}
 

@@ -1,7 +1,7 @@
 +++
 title = "Tiro oblicuo: ecuaciones y trayectoria"
 date = "2026-10-21"
-lastmod = "2026-10-21"
+lastmod = "2026-10-23"
 weight = 5
 draft = false
 math = true
@@ -10,7 +10,7 @@ description = "Deducciones por componentes, geometría, integración y eliminaci
 
 ## Un movimiento, dos componentes
 
-Modelamos una pelota como partícula, con campo gravitatorio uniforme y sin aire. Elegimos $x$ horizontal, $y$ positivo hacia arriba y lanzamiento en $t=0$. Para rapidez inicial $v_0$ y ángulo $\theta$:
+Modelamos una pelota como partícula, con campo gravitatorio uniforme y sin aire. Elegimos $x$ horizontal, $y$ positivo hacia arriba y lanzamiento en $t=0$. En ejemplos y ejercicios usá $g=10\,\mathrm{m/s^2}$ y medí el ángulo inicial $\theta$ desde la horizontal positiva hacia arriba. Para rapidez inicial $v_0$:
 
 $$v_{0x}=v_0\cos\theta,\qquad v_{0y}=v_0\sin\theta.$$
 
@@ -68,7 +68,7 @@ En el intervalo considerado resulta $\theta=\pi/4$, y la segunda derivada es neg
 
 ## Ejemplo resuelto
 
-Una pelota sale y llega al mismo nivel con $v_0=10\,\mathrm{m/s}$ y $\theta=30^\circ$, usando $g=10\,\mathrm{m/s^2}$. Sus componentes iniciales son $(5\sqrt3,5)\,\mathrm{m/s}$; $T=1\,\mathrm s$, $H=1{,}25\,\mathrm m$ y $R=5\sqrt3\approx8{,}66\,\mathrm m$.
+Una pelota se lanza con rapidez $v_0=10\,\mathrm{m/s}$ y ángulo $\theta=30^\circ$ sobre la horizontal; aterriza al mismo nivel del lanzamiento. **Calculá las componentes iniciales de velocidad, el tiempo de vuelo, la altura máxima ganada y el alcance horizontal**, bajo el modelo ideal de esta nota. Sus componentes iniciales son $(5\sqrt3,5)\,\mathrm{m/s}$; $T=1\,\mathrm s$, $H=1{,}25\,\mathrm m$ y $R=5\sqrt3\approx8{,}66\,\mathrm m$.
 
 ## Experiencia y Tracker
 
@@ -78,15 +78,15 @@ El ajuste evalúa el modelo; no mide una fuerza directamente ni obliga a que sal
 
 ## Ejercicios
 
-1. Se lanza horizontalmente a $5\,\mathrm{m/s}$ desde $20\,\mathrm m$ de altura. Hallá tiempo de caída y alcance.
-2. Con $v_0=20\,\mathrm{m/s}$ y $45^\circ$, aterrizando al mismo nivel, hallá alcance y altura máxima.
-3. ¿Dos ángulos complementarios tienen igual altura máxima? Compará $30^\circ$ y $60^\circ$ con igual rapidez y mismo nivel de llegada.
+1. En $t=0$ se lanza una pelota horizontalmente con rapidez $5\,\mathrm{m/s}$ desde una altura de $20\,\mathrm m$ sobre un suelo horizontal. Hallá el tiempo hasta el impacto y la distancia horizontal desde el punto de lanzamiento hasta el impacto.
+2. Una pelota se lanza a $20\,\mathrm{m/s}$ formando $45^\circ$ sobre la horizontal y aterriza al mismo nivel. Hallá su alcance horizontal y la altura máxima ganada respecto del lanzamiento.
+3. Compará dos lanzamientos con la misma rapidez inicial no nula: uno a $30^\circ$ y otro a $60^\circ$ sobre la horizontal, ambos con llegada al nivel de partida. Determiná si tienen igual alcance y calculá las razones $H_{60}/H_{30}$ y $T_{60}/T_{30}$. No necesitás conocer el valor de la rapidez inicial.
 
 {{< details title="Resultados" >}}
 
 1. $t=2\,\mathrm s$ y $R=10\,\mathrm m$.
 2. $R=40\,\mathrm m$ y $H=10\,\mathrm m$.
-3. Tienen igual alcance en este modelo, pero no igual altura ni tiempo de vuelo: $\sin^2 60^\circ$ es tres veces $\sin^2 30^\circ$.
+3. Tienen igual alcance. $H_{60}/H_{30}=3$ y $T_{60}/T_{30}=\sqrt3$; no tienen igual altura máxima ni tiempo de vuelo.
 
 {{< /details >}}
 

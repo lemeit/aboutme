@@ -1,7 +1,7 @@
 +++
 title = "Naturaleza, ciencia y modelos físicos"
 date = "2026-10-21"
-lastmod = "2026-10-21"
+lastmod = "2026-10-23"
 weight = 1
 draft = false
 math = true
@@ -44,14 +44,14 @@ Cuando uses una herramienta de IA, verificá unidades, supuestos, cuentas y fuen
 
 ## Actividades
 
-1. Escribí una observación y dos hipótesis diferentes sobre una pelota que rebota cada vez menos.
-2. ¿Qué detalles descarta el modelo de partícula al representar a un corredor?
+1. Imaginá una pelota que se suelta y rebota varias veces sobre el mismo piso: cada altura máxima es menor que la anterior. Escribí qué se observa, proponé dos hipótesis diferentes que podrían explicar esa disminución e indicá qué medirías para contrastar cada una. Es una situación propuesta: no la presentes como una medición realizada.
+2. Queremos describir la posición de una persona durante una carrera recta, sin analizar la zancada. ¿Qué detalles del cuerpo descarta el modelo de partícula? Mencioná al menos dos y explicá por qué ese modelo sería insuficiente para estudiar el movimiento de las piernas.
 3. Explicá por qué obtener una parábola con un simulador no demuestra que una pelota real siga exactamente ese modelo.
 4. Clasificá como definición, hipótesis o resultado de medición: «el metro es una unidad de longitud», «el rozamiento es despreciable», «el recorrido medido fue 10,2 m».
 
 {{< details title="Orientaciones" >}}
 
-1. Observación: disminuyeron las alturas máximas registradas. Las hipótesis deben identificar mecanismos que puedan contrastarse, como deformación o resistencia del aire.
+1. Observación: disminuyeron las alturas máximas registradas. Las hipótesis deben identificar mecanismos que puedan contrastarse, como deformación o resistencia del aire. Podés comparar alturas con distintos pisos manteniendo pelota y altura inicial, o estudiar cómo cambia el vuelo con la rapidez y las condiciones del aire; indicá qué controlás y qué medís, sin inventar resultados.
 2. Postura, dimensiones, giro y movimiento relativo de sus partes, entre otros. No siempre se pueden descartar para cualquier pregunta.
 3. El simulador ejecuta ecuaciones con supuestos; la comparación con mediciones evalúa su adecuación al caso real.
 4. Definición, hipótesis del modelo y resultado medido, respectivamente.

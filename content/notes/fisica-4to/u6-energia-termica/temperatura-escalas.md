@@ -1,7 +1,7 @@
 +++
 title = "Temperatura y escalas: deducciones y conversiones"
 date = "2026-10-21"
-lastmod = "2026-10-21"
+lastmod = "2026-10-23"
 weight = 1
 draft = false
 math = true
@@ -48,13 +48,13 @@ La extrapolación lineal de ciertas propiedades de gases diluidos permite motiva
 
 ## Ejemplo resuelto
 
-Para $20\,{}^\circ\mathrm C$, $T=293{,}15\,\mathrm K$ y $t_F=68\,{}^\circ\mathrm F$. Si luego sube a $30\,{}^\circ\mathrm C$, el cambio es $10\,\mathrm K=18\,{}^\circ\mathrm F$, no $50\,{}^\circ\mathrm F$.
+Un cuerpo está inicialmente a $20\,{}^\circ\mathrm C$ y luego alcanza $30\,{}^\circ\mathrm C$. **Expresá la temperatura inicial en kelvin y Fahrenheit, y el aumento de temperatura en ambas escalas.** La temperatura inicial es $293{,}15\,\mathrm K=68\,{}^\circ\mathrm F$. El cambio es $10\,\mathrm K=18\,{}^\circ\mathrm F$, no $50\,{}^\circ\mathrm F$.
 
 ## Ejercicios
 
 1. Convertí $25\,{}^\circ\mathrm C$ a K y °F.
 2. Convertí $300\,\mathrm K$ a °C.
-3. Una temperatura aumenta de $10$ a $35\,{}^\circ\mathrm C$. Expresá el cambio en K y °F.
+3. Un cuerpo pasa de $10\,{}^\circ\mathrm C$ a $35\,{}^\circ\mathrm C$. Expresá el aumento de temperatura, no la temperatura final, en K y °F.
 4. ¿En qué temperatura coinciden los números Celsius y Fahrenheit? Resolvé $t=9t/5+32$.
 
 {{< details title="Resultados" >}}

@@ -1,7 +1,7 @@
 +++
 title = "Leyes de Newton, masa y peso"
 date = "2026-10-21"
-lastmod = "2026-10-21"
+lastmod = "2026-10-23"
 weight = 1
 draft = false
 math = true
@@ -60,14 +60,14 @@ El área bajo un gráfico fuerza–tiempo es **impulso**, en N·s; bajo fuerza�
 
 ## Ejemplo resuelto
 
-Una caja de $4\,\mathrm{kg}$ recibe $20\,\mathrm N$ a la derecha y $8\,\mathrm N$ a la izquierda. La resultante es $12\,\mathrm N$ y $a_x=12/4=3\,\mathrm{m/s^2}$. La aceleración apunta a la derecha, pero la caja podría estar moviéndose hacia la izquierda y frenando en ese instante.
+Una caja de masa $4\,\mathrm{kg}$ sobre un piso horizontal recibe dos fuerzas horizontales: $20\,\mathrm N$ hacia la derecha y $8\,\mathrm N$ hacia la izquierda. Peso y normal se equilibran verticalmente y no hay otras fuerzas. **Calculá la fuerza resultante y la aceleración, tomando la derecha como positiva. ¿Se puede deducir el sentido de la velocidad solo con estos datos?** La resultante es $12\,\mathrm N$ y $a_x=12/4=3\,\mathrm{m/s^2}$. La aceleración apunta a la derecha, pero la caja podría estar moviéndose hacia la izquierda y frenando en ese instante.
 
 ## Ejercicios
 
 1. Un objeto de $2\,\mathrm{kg}$ acelera a $1{,}5\,\mathrm{m/s^2}$. Hallá la resultante.
 2. Una masa de $6\,\mathrm{kg}$ está en reposo sobre una mesa horizontal y solo recibe peso y normal. Hallá ambas fuerzas con $g=10\,\mathrm{m/s^2}$.
 3. Identificá la reacción al peso de un libro ejercido por la Tierra.
-4. Una persona de $60\,\mathrm{kg}$ acelera hacia arriba a $2\,\mathrm{m/s^2}$ en un ascensor. Hallá $N$.
+4. Una persona de masa $60\,\mathrm{kg}$ permanece apoyada en el piso de un ascensor que acelera hacia arriba a $2\,\mathrm{m/s^2}$. Sobre ella solo actúan su peso y la normal del piso. Usá $g=10\,\mathrm{m/s^2}$ y hallá el módulo de la normal.
 
 {{< details title="Resultados" >}}
 

@@ -1,5 +1,6 @@
 +++
 title = 'Experiencia: medir el movimiento y estimar la energía'
+lastmod = "2026-10-23"
 date = '2026-10-21'
 weight = 3
 draft = false
@@ -9,7 +10,7 @@ description = 'Medición con cinta u odómetro, carrera, cronometraje, estadíst
 
 ¿Podés estimar tu energía cinética al correr? Vas a medir masa, distancia y tiempo, comparar intentos y analizar qué información aporta un video. La actividad retoma la unidad de **mediciones**: elegir instrumentos, registrar unidades y resolución, estimar incertidumbres y distinguir datos de resultados calculados.
 
-Usá la [guía de estudio](../guia-clase/) y las [deducciones de las ecuaciones](../deducciones-energia/) para interpretar tus resultados.
+Usá la [guía completa de la unidad](../guia-clase/) y las [deducciones de las ecuaciones](../deducciones-energia/) para interpretar tus resultados.
 
 [**Descargar la planilla de mediciones y video (Excel)**](/files/energia-movimiento.xlsx)
 
@@ -85,7 +86,7 @@ No borres un dato porque sea distinto: primero revisá qué ocurrió. Si excluí
 
 ### Ejemplo de cálculo, no dato experimental
 
-Para $m=60\,\mathrm{kg}$, $d=20\,\mathrm m$ y $\Delta t=5\,\mathrm s$:
+En un caso ilustrativo, una persona de masa $m=60\,\mathrm{kg}$ recorre un tramo recto de longitud $d=20\,\mathrm m$ en $\Delta t=5\,\mathrm s$, sin cambiar de sentido. **Calculá la rapidez media y la energía de traslación estimada a partir de ella**, sin confundirla con la energía del instante final:
 
 $$\overline v=4\,\mathrm{m/s},\qquad K_{\mathrm{est}}=480\,\mathrm J.$$
 
@@ -198,15 +199,15 @@ La energía de traslación sola no tiene por qué igualar $mgh$. Si el modelo no
 
 ## 9. Entrega y discusión
 
-Presentá pregunta, hipótesis, instrumentos, mediciones originales, cálculos, gráficos y conclusiones. Incluí unidades, criterio de incertidumbre, condiciones del movimiento y limitaciones del modelo.
+Presentá pregunta, hipótesis, instrumentos, mediciones originales, cálculos, gráficos y conclusiones. Para cada participante calculá la rapidez media y $K_{\mathrm{est}}$ de cada intento; luego media, mediana y desviación estándar muestral de las rapideces, $\overline K$ y $K(\overline v)$. Si trabajaron en grupo, compará resultados calculados con la masa individual de cada participante. La parte de video y la alternativa con bolita son ampliaciones: indicá cuáles realizaron y cuáles no. Incluí unidades, criterio de incertidumbre, condiciones del movimiento y limitaciones del modelo.
 
 Respondé:
 
-1. ¿Qué aprendiste al medir el tramo con dos procedimientos?
+1. Compará las dos mediciones del tramo: dos personas, dos sentidos de medición o cinta y odómetro, según lo que efectivamente realizaron. Anotá ambos resultados y explicá si su diferencia es compatible con las incertidumbres estimadas. No inventes un segundo procedimiento si no lo usaron.
 2. ¿Qué aporte a la incertidumbre fue más importante y por qué?
-3. ¿Cuál es la diferencia entre media y mediana de tus intentos?
+3. Calculá la media y la mediana de las rapideces medias de tus intentos válidos. Informá ambas en m/s e interpretá cualquier diferencia usando los tiempos originales.
 4. ¿Por qué $\overline K$ y $K(\overline v)$ pueden diferir?
-5. ¿Qué evidencia del video permite aceptar o rechazar rapidez aproximadamente constante?
+5. Si realizaste la parte con Tracker, seleccioná un intervalo del video y usá los gráficos $x(t)$ y $v(t)$ para discutir si la rapidez fue aproximadamente constante, considerando la incertidumbre del marcado. Si no hubo video, explicá por qué distancia y tiempo total no bastan para comprobarlo.
 6. ¿Se puede deducir el gasto alimentario a partir de esta experiencia? Explicá los límites del modelo.
 
 ---

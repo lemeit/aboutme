@@ -1,7 +1,7 @@
 +++
 title = "Caída libre y tiro vertical"
 date = "2026-10-21"
-lastmod = "2026-10-21"
+lastmod = "2026-10-23"
 weight = 4
 draft = false
 math = true
@@ -10,7 +10,7 @@ description = "Modelo de gravedad uniforme: altura, velocidad, tiempo de vuelo y
 
 ## Modelo y referencia
 
-En caída libre ideal solo actúa la gravedad. Cerca de la superficie terrestre tomamos $g$ constante y despreciamos la resistencia del aire. Elegimos $y$ positivo hacia arriba: $a_y=-g$, tanto durante la subida como durante la bajada. En los ejemplos usamos $g=10\,\mathrm{m/s^2}$.
+En caída libre ideal solo actúa la gravedad. Cerca de la superficie terrestre tomamos $g$ constante y despreciamos la resistencia del aire. Elegimos $y$ positivo hacia arriba: $a_y=-g$, tanto durante la subida como durante la bajada. En los ejemplos y ejercicios usamos $g=10\,\mathrm{m/s^2}$ y el suelo como $y=0$. Escribimos $\tau=t-t_0$; si el lanzamiento ocurre en $t_0=0$, entonces $\tau=t$.
 
 ## Recorrido intuitivo
 
@@ -58,7 +58,7 @@ En la cima, velocidad vertical cero no significa aceleración cero. Si $g$ varí
 
 ## Ejemplo resuelto
 
-Una pelota sale desde $y_0=1\,\mathrm m$ con $v_{0y}=10\,\mathrm{m/s}$. Llega a la cima en $1\,\mathrm s$ y a $y_{\max}=6\,\mathrm m$. Para tocar el suelo:
+En $t=0$ se lanza una pelota verticalmente hacia arriba desde $y_0=1\,\mathrm m$ con $v_{0y}=+10\,\mathrm{m/s}$. **Calculá el tiempo de subida, la altura máxima sobre el suelo, el tiempo hasta tocar el suelo y la velocidad justo antes del impacto.** Llega a la cima en $1\,\mathrm s$ y a $y_{\max}=6\,\mathrm m$. Para tocar el suelo:
 
 $$0=1+10t-5t^2\quad\Rightarrow\quad t=\frac{10+\sqrt{120}}{10}\approx2{,}095\,\mathrm s.$$
 
@@ -66,8 +66,8 @@ La otra raíz es negativa y no pertenece al movimiento posterior al lanzamiento.
 
 ## Ejercicios
 
-1. Se suelta una pelota desde $20\,\mathrm m$. Hallá tiempo y rapidez justo antes del suelo.
-2. Un objeto sale hacia arriba a $20\,\mathrm{m/s}$ y vuelve al nivel inicial. Hallá tiempo de subida, altura ganada y tiempo total.
+1. En $t=0$ se suelta una pelota desde el reposo a $20\,\mathrm m$ sobre el suelo. Hallá el tiempo de caída y la rapidez justo antes del impacto, usando el modelo ideal de esta nota.
+2. En $t=0$ se lanza un objeto verticalmente hacia arriba con velocidad inicial $+20\,\mathrm{m/s}$. Hallá el tiempo hasta la cima, la altura ganada respecto del punto de lanzamiento y el tiempo total hasta regresar a ese mismo nivel.
 3. ¿Cuáles son velocidad y aceleración en la cima del ejercicio anterior?
 
 {{< details title="Resultados" >}}

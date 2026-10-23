@@ -1,5 +1,6 @@
 +++
 title = 'De dónde salen las ecuaciones de energía'
+lastmod = "2026-10-23"
 date = '2026-10-21'
 weight = 2
 draft = false
@@ -7,7 +8,7 @@ math = true
 description = 'Deducción paso a paso de la energía cinética, gravitatoria y elástica, con hipótesis y referencias.'
 +++
 
-Las ecuaciones de energía relacionan las leyes de las fuerzas con el trabajo. Vamos a reconstruir sus pasos, explicar los cuadrados y los factores $1/2$, e identificar las condiciones de cada expresión. Esta es una ampliación para la materia. Volvé a la [guía de estudio](../guia-clase/) para practicar.
+Las ecuaciones de energía relacionan las leyes de las fuerzas con el trabajo. Vamos a reconstruir sus pasos, explicar los cuadrados y los factores $1/2$, e identificar las condiciones de cada expresión. Esta es una ampliación para la materia. La [guía completa de la unidad](../guia-clase/) reúne conceptos, ejemplos y ejercicios; esta página profundiza sus deducciones sin repetir ese recorrido.
 
 ## 1. Trabajo y segunda ley
 
@@ -227,7 +228,7 @@ Si además se traslada, la descomposición respecto del centro de masa es $K=mv_
 
 ## Revisá tu comprensión
 
-1. ¿Qué hipótesis permite sacar $m$ fuera de la integral?
+1. En la deducción de energía cinética de la sección 3, ¿qué hipótesis permite sacar $m$ fuera de la integral $\int m\vec v\cdot d\vec v$?
 2. ¿Por qué una fuerza constante produce potencial lineal y una fuerza de Hooke uno cuadrático?
 3. ¿Qué cambia al sumar $100\,\mathrm J$ a todos los valores de un potencial?
 4. ¿Alcanza la rapidez media de una carrera para calcular la energía cinética final?

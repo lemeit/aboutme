@@ -1,7 +1,7 @@
 +++
 title = "Mediciones, referencias y vectores"
 date = "2026-10-21"
-lastmod = "2026-10-21"
+lastmod = "2026-10-23"
 weight = 1
 draft = false
 math = true
@@ -72,17 +72,17 @@ En una dimensión, la distancia recorrida es $L=\int_{t_i}^{t_f}|v_x(t)|\,dt$. E
 
 ## Ejemplo y práctica
 
-Un desplazamiento de componentes $(3,4)\,\mathrm m$ tiene módulo $5\,\mathrm m$. No significa que la trayectoria haya medido 5 m: eso depende del camino.
+Un desplazamiento tiene componentes $\Delta x=3\,\mathrm m$ y $\Delta y=4\,\mathrm m$ sobre ejes perpendiculares. **Calculá su módulo y explicá si ese dato determina la distancia recorrida.** Por Pitágoras, su módulo es $\sqrt{3^2+4^2}=5\,\mathrm m$. No significa que la trayectoria haya medido 5 m: eso depende del camino.
 
-1. Caminás $5\,\mathrm m$ hacia el este y $2\,\mathrm m$ hacia el oeste en $7\,\mathrm s$. Hallá desplazamiento, distancia, velocidad media y rapidez media.
-2. Un vector de módulo $10\,\mathrm m$ forma $30^\circ$ con el eje $x$ positivo. Hallá sus componentes.
-3. Para $\vec r(t)=(2t,t^2)$ con componentes en m y $t$ en s, hallá velocidad y aceleración en $t=2\,\mathrm s$.
+1. Caminás $5\,\mathrm m$ hacia el este y $2\,\mathrm m$ hacia el oeste en un tiempo total de $7\,\mathrm s$. Tomá el este como sentido positivo. Hallá desplazamiento, distancia, velocidad media y rapidez media.
+2. Un vector de módulo $10\,\mathrm m$ forma un ángulo de $30^\circ$ medido desde el eje $x$ positivo hacia el eje $y$ positivo. Hallá sus componentes sobre esos ejes perpendiculares.
+3. La posición de una partícula es $\vec r(t)=(2\,\mathrm{m/s})t\,\hat\imath+(1\,\mathrm{m/s^2})t^2\,\hat\jmath$, para $t\ge0$. Derivá sus componentes para obtener $\vec v(t)$ y $\vec a(t)$; luego evaluá ambos vectores en $t=2\,\mathrm s$, con sus unidades.
 
 {{< details title="Resultados" >}}
 
 1. Desplazamiento $+3\,\mathrm m$, distancia $7\,\mathrm m$, velocidad media $3/7\,\mathrm{m/s}$ y rapidez media $1\,\mathrm{m/s}$.
 2. $(5\sqrt3,5)\,\mathrm m$.
-3. $\vec v=(2,2t)$ y $\vec a=(0,2)$; en $t=2$, $\vec v=(2,4)\,\mathrm{m/s}$ y $\vec a=(0,2)\,\mathrm{m/s^2}$.
+3. $\vec v(t)=(2\,\mathrm{m/s})\hat\imath+(2\,\mathrm{m/s^2})t\,\hat\jmath$ y $\vec a=(2\,\mathrm{m/s^2})\hat\jmath$; en $t=2\,\mathrm s$, $\vec v=(2,4)\,\mathrm{m/s}$ y $\vec a=(0,2)\,\mathrm{m/s^2}$.
 
 {{< /details >}}
 

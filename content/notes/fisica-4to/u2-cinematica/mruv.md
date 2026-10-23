@@ -1,7 +1,7 @@
 +++
 title = "MRUV: deducción de las ecuaciones"
 date = "2026-10-21"
-lastmod = "2026-10-21"
+lastmod = "2026-10-23"
 weight = 3
 draft = false
 math = true
@@ -70,19 +70,19 @@ La forma cuadrática anterior solo aparece cuando $a$ es constante. Derivar $x(t
 
 ## Ejemplo resuelto — frenado
 
-Un móvil lleva $v_0=10\,\mathrm{m/s}$ y acelera a $-2\,\mathrm{m/s^2}$. Se detiene cuando $0=10-2t$: $t=5\,\mathrm s$. Recorre $\Delta x=10(5)-(5)^2=25\,\mathrm m$.
+En $t=0$, un móvil lleva velocidad $v_0=+10\,\mathrm{m/s}$ sobre un eje recto y comienza a frenar con aceleración constante $a=-2\,\mathrm{m/s^2}$. **¿Cuánto tarda en detenerse y qué distancia recorre durante el frenado?** Se detiene cuando $0=10-2t$: $t=5\,\mathrm s$. Recorre $\Delta x=10(5)-(5)^2=25\,\mathrm m$.
 
 Si el mecanismo solo frena hasta detenerlo, no se prolonga la aceleración negativa para inventar un movimiento hacia atrás. Hay que cambiar de tramo y de modelo después de la detención.
 
 ## Distancia frente a desplazamiento
 
-Si $v_0=-4\,\mathrm{m/s}$, $a=2\,\mathrm{m/s^2}$ y pasan $4\,\mathrm s$, el desplazamiento es $-4(4)+(4)^2=0$. Pero la distancia no es cero: el cambio de sentido ocurre en $t=2\,\mathrm s$, y las dos áreas triangulares de $|v|$ suman $4+4=8\,\mathrm m$.
+Otro móvil tiene $v_0=-4\,\mathrm{m/s}$ en $t=0$ y aceleración constante $a=+2\,\mathrm{m/s^2}$ durante $4\,\mathrm s$. **Calculá su desplazamiento y su distancia recorrida en ese intervalo.** El desplazamiento es $-4(4)+(4)^2=0$. Pero la distancia no es cero: el cambio de sentido ocurre en $t=2\,\mathrm s$, y las dos áreas triangulares de $|v|$ suman $4+4=8\,\mathrm m$.
 
 ## Ejercicios
 
-1. Desde reposo, $a=3\,\mathrm{m/s^2}$ durante $4\,\mathrm s$. Hallá $v$ y $\Delta x$.
-2. $v_0=6\,\mathrm{m/s}$ y $a=-1{,}5\,\mathrm{m/s^2}$. Hallá tiempo y distancia hasta detenerse.
-3. Un móvil pasa de $2$ a $8\,\mathrm{m/s}$ en $15\,\mathrm m$ con aceleración constante. Hallá $a$ y tiempo.
+1. Un móvil parte del reposo en $t=0$ y se mueve sobre un eje recto con aceleración constante $a=+3\,\mathrm{m/s^2}$ durante $4\,\mathrm s$. Hallá su velocidad final y su desplazamiento durante ese intervalo.
+2. Un móvil comienza a frenar en $t=0$ con velocidad $v_0=+6\,\mathrm{m/s}$ y aceleración constante $a=-1{,}5\,\mathrm{m/s^2}$. Hallá el tiempo de frenado y la distancia recorrida hasta su primera detención.
+3. Un móvil pasa de velocidad $+2\,\mathrm{m/s}$ a $+8\,\mathrm{m/s}$ mientras se desplaza $+15\,\mathrm m$ sobre un eje recto, con aceleración constante y sin cambiar de sentido. Hallá la aceleración y la duración de ese tramo.
 
 {{< details title="Resultados" >}}
 

@@ -1,7 +1,7 @@
 +++
 title = "MRU: ecuación horaria, gráficos y encuentros"
 date = "2026-10-21"
-lastmod = "2026-10-21"
+lastmod = "2026-10-23"
 weight = 2
 draft = false
 math = true
@@ -54,15 +54,15 @@ Revisá si el resultado pertenece al intervalo físico considerado. Un tiempo ne
 
 ## Ejemplo resuelto
 
-A sale de $x=0$ a $3\,\mathrm{m/s}$; B parte simultáneamente de $x=20\,\mathrm m$ a $-2\,\mathrm{m/s}$. Igualamos $3t=20-2t$, obtenemos $t=4\,\mathrm s$ y $x=12\,\mathrm m$.
+Dos móviles A y B se mueven sobre el mismo eje con velocidades constantes. En $t=0$, A parte de $x=0$ a $+3\,\mathrm{m/s}$ y B de $x=20\,\mathrm m$ a $-2\,\mathrm{m/s}$. **¿En qué instante y posición se encuentran?** Igualamos $3t=20-2t$, obtenemos $t=4\,\mathrm s$ y $x=12\,\mathrm m$.
 
-Si B empieza dos segundos después, su ecuación durante su movimiento es $x_B=20-2(t-2)$, válida desde $t=2\,\mathrm s$. No se omite el retraso ni se usa esa ecuación antes de la salida.
+Como variante, suponé que B permanece en $x=20\,\mathrm m$ hasta $t=2\,\mathrm s$ y recién entonces empieza a moverse a $-2\,\mathrm{m/s}$. **Calculá el nuevo instante y la posición de encuentro.** Su ecuación durante su movimiento es $x_B=20-2(t-2)$, válida desde $t=2\,\mathrm s$. Igualando con $x_A=3t$ resulta $5t=24$: se encuentran en $t=4{,}8\,\mathrm s$, en $x=14{,}4\,\mathrm m$. Se cumple $t\ge2\,\mathrm s$. No se omite el retraso ni se usa esa ecuación antes de la salida.
 
 ## Ejercicios
 
-1. Un móvil parte de $x_0=5\,\mathrm m$ con $v=-2\,\mathrm{m/s}$. Hallá posición y distancia recorrida a los $4\,\mathrm s$.
-2. Dos móviles salen simultáneamente desde $0$ y $100\,\mathrm m$, a $8$ y $-2\,\mathrm{m/s}$. Hallá encuentro.
-3. Un objeto recorre $6\,\mathrm m$ a $2\,\mathrm{m/s}$ y otros $6\,\mathrm m$ a $3\,\mathrm{m/s}$. ¿Su rapidez media es $2{,}5\,\mathrm{m/s}$?
+1. En $t=0$, un móvil está en $x_0=5\,\mathrm m$ y comienza un MRU con velocidad $v=-2\,\mathrm{m/s}$. Hallá su posición en $t=4\,\mathrm s$ y la distancia recorrida desde $t=0$ hasta ese instante.
+2. Dos móviles A y B se mueven en MRU sobre el mismo eje. En $t=0$ están en $x_{A0}=0$ y $x_{B0}=100\,\mathrm m$, con velocidades $v_A=+8\,\mathrm{m/s}$ y $v_B=-2\,\mathrm{m/s}$. Calculá el instante y la posición del encuentro.
+3. Un objeto recorre dos tramos consecutivos de $6\,\mathrm m$ cada uno, el primero a rapidez constante de $2\,\mathrm{m/s}$ y el segundo a $3\,\mathrm{m/s}$, sin pausas entre ambos. Calculá el tiempo total y la rapidez media de los $12\,\mathrm m$. Explicá por qué no corresponde promediar simplemente las dos rapideces.
 
 {{< details title="Resultados" >}}
 

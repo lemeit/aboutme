@@ -1,7 +1,7 @@
 +++
 title = "Calorimetría y balances térmicos"
 date = "2026-10-21"
-lastmod = "2026-10-21"
+lastmod = "2026-10-23"
 weight = 2
 draft = false
 math = true
@@ -54,7 +54,7 @@ Es una media ponderada por capacidades caloríficas. Solo es el promedio simple 
 
 ## Ejemplo resuelto
 
-Se mezclan idealmente $0{,}20\,\mathrm{kg}$ de agua a $80\,{}^\circ\mathrm C$ y $0{,}30\,\mathrm{kg}$ a $20\,{}^\circ\mathrm C$, suponiendo mismo $c$ constante:
+Se mezclan idealmente $0{,}20\,\mathrm{kg}$ de agua a $80\,{}^\circ\mathrm C$ y $0{,}30\,\mathrm{kg}$ a $20\,{}^\circ\mathrm C$, suponiendo el mismo $c$ constante. El conjunto no intercambia energía con el exterior y la capacidad calorífica del recipiente es despreciable; no hay cambios de fase. **¿Cuál es la temperatura final de equilibrio?** Usamos el balance de calor de ambas masas:
 
 $$T_f=\frac{0{,}20(80)+0{,}30(20)}{0{,}50}=44\,{}^\circ\mathrm C.$$
 
@@ -68,12 +68,12 @@ Si hay calentamiento, transición y nuevo calentamiento, se suman los tres aport
 
 ## Ejercicios
 
-Usá $c=4200\,\mathrm{J/(kg\,K)}$ como aproximación para el agua en estos ejercicios.
+Usá $c=4200\,\mathrm{J/(kg\,K)}$ como aproximación para el agua. En los ejercicios 1–3, suponé calor específico constante, ausencia de cambios de fase y de trabajo mecánico apreciable. En la mezcla, despreciá pérdidas al exterior y capacidad calorífica del recipiente.
 
 1. ¿Qué calor recibe $0{,}50\,\mathrm{kg}$ de agua al subir $10\,\mathrm K$?
-2. Un cuerpo de $2\,\mathrm{kg}$ tiene $c=500\,\mathrm{J/(kg\,K)}$. Si recibe $3000\,\mathrm J$ sin otras transformaciones, ¿cuánto aumenta su temperatura?
-3. Mezclá idealmente masas iguales de la misma sustancia a $10$ y $50\,{}^\circ\mathrm C$, sin transición. Hallá temperatura final.
-4. Si un material tiene $L=200\,\mathrm{kJ/kg}$, ¿cuánta energía requiere transformar $0{,}10\,\mathrm{kg}$ en el proceso al que corresponde ese dato?
+2. Un cuerpo de masa $2\,\mathrm{kg}$ y calor específico $c=500\,\mathrm{J/(kg\,K)}$ recibe $3000\,\mathrm J$ por calor. Bajo las hipótesis indicadas, calculá el aumento de su temperatura en K.
+3. Se ponen en contacto dos masas iguales de la misma sustancia, inicialmente a $10\,{}^\circ\mathrm C$ y $50\,{}^\circ\mathrm C$, dentro del recipiente ideal descrito. Calculá la temperatura final de equilibrio y explicá por qué no hace falta conocer el valor numérico de las masas.
+4. Una muestra de masa $0{,}10\,\mathrm{kg}$ está a su temperatura de fusión. Su calor latente específico de fusión es $L_f=200\,\mathrm{kJ/kg}$. Calculá el calor necesario para fundirla por completo a presión constante, sin elevar la temperatura y sin pérdidas al entorno.
 
 {{< details title="Resultados" >}}
 

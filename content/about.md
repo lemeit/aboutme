@@ -22,7 +22,11 @@ Mi recorrido profesional incluye coordinación de laboratorios, control de calid
 
 ## Intereses
 
-Me interesan la calidad del aire, el software libre y las posibilidades de la tecnología para aprender y resolver problemas. Disfruto construir y experimentar con proyectos DIY e IoT, explorar herramientas de inteligencia artificial y seguir aprendiendo sobre ciencias naturales. Fuera de esos ámbitos, practico natación.
+Me interesan la calidad del aire, las ciencias naturales y las posibilidades de la tecnología para aprender y resolver problemas. Disfruto construir y experimentar con proyectos DIY e IoT.
+
+Defiendo el software libre y el conocimiento compartido. Me interesa el uso estratégico y responsable de las nuevas tecnologías, incluida la inteligencia artificial, en la educación, la investigación y el trabajo.
+
+En lo personal, me gusta nadar y escuchar música de los años 70 y 80. También me interesa la alimentación saludable.
 
 ## Curriculum vitae
 

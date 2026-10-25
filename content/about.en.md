@@ -100,10 +100,10 @@ I also received **third prize in the Ecotoxicology and Environmental Chemistry p
 
 ### Education
 
-- **Ingeniero Químico** · Universidad Tecnológica Nacional, Facultad Regional La Plata · 2006–2016 · Completed degree in chemical engineering.
-- **Profesor en Disciplinas Industriales** · Universidad Tecnológica Nacional, Facultad Regional Avellaneda · 2017–2018 · Completed teaching qualification.
-- **Licenciatura en Química** · Universidad Nacional de La Plata · 2000–2005 · Partial university studies; no degree awarded.
-- **Técnico Químico** · EET N°1 «Gral. Savio», Saladillo · Completed in 1999.
+- **Degree in chemical engineering** · Universidad Tecnológica Nacional, Facultad Regional La Plata · 2006–2016 · Completed.
+- **Teaching qualification in industrial disciplines** · Universidad Tecnológica Nacional, Facultad Regional Avellaneda · 2017–2018 · Completed.
+- **Chemistry studies** · Universidad Nacional de La Plata · 2000–2005 · Partial university studies; no degree awarded.
+- **Chemical technician qualification** · EET N°1 «Gral. Savio», Saladillo · Completed in 1999.
 
 {{< details title="Recent training and continuing education" >}}
 - **QGIS Level II: geoprocessing and advanced visualisation tools** · 22 May 2026 · 12 hours.
@@ -123,9 +123,9 @@ Further training includes laboratory auditing and quality management under ISO/I
 
 Research on catalysis and manganese oxide characterisation for environmental applications:
 
-- **L. Lamaita**, M. Andrés Peluso, H. Thomas, J. Sambeth, G. Minelli and P. Porta. “A theoretical and experimental study of manganese oxides used as catalysts for VOCs emission reduction”. *Catalysis Today*, 107–108, p. 133 (2005).
-- S. Figueroa, F. Requejo, E. Lede, **L. Lamaita**, M. Andrés Peluso and J. Sambeth. “XAFS Study of electronic and structural nature of Mn-sites in manganese oxides with catalytic properties”. *Catalysis Today*, 107–108, p. 849 (2005).
-- **L. Lamaita**, M. A. Peluso, J. Sambeth and H. Thomas. “Synthesis and characterization of manganese oxides employed in VOCs abatement”. *Applied Catalysis B: Environmental*, 61, p. 128 (2005).
+- **L. Lamaita**, M. Andrés Peluso, J. E. Sambeth, H. Thomas, G. Mineli, P. Porta. [A theoretical and experimental study of manganese oxides used as catalysts for VOCs emission reduction](https://doi.org/10.1016/j.cattod.2005.07.155). *Catalysis Today*, 107–108, 133–138 (2005).
+- S. J. A. Figueroa, F. G. Requejo, E. J. Lede, **L. Lamaita**, M. Andrés Peluso, J. E. Sambeth. [XANES study of electronic and structural nature of Mn-sites in manganese oxides with catalytic properties](https://doi.org/10.1016/j.cattod.2005.07.156). *Catalysis Today*, 107–108, 849–855 (2005).
+- **L. Lamaita**, M. A. Peluso, J. E. Sambeth, H. J. Thomas. [Synthesis and characterization of manganese oxides employed in VOCs abatement](https://doi.org/10.1016/j.apcatb.2005.03.014). *Applied Catalysis B: Environmental*, 61 (1–2), 114–119 (2005).
 
 I was an **OpenAQ Community Ambassador (2023)** and participated in its training programme from March 2023 to March 2024. I am a member of the **Air Quality Working Group of ECSA (European Citizen Science Association)** and participate in **CanAirIO, AireCiudadano and Sensor.Community**. I represented graduates on UTN La Plata's committee supporting disability inclusion policies (2022–2023).
 

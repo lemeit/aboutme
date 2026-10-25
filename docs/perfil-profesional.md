@@ -1,28 +1,29 @@
-# Perfil personal y trayectoria web
+# Perfil y trayectoria dentro de Sobre mí
 
-## Páginas y diseño
+`content/about.md` reúne presentación, intereses, trayectoria, formación, publicaciones y contacto. Se elimina la pestaña principal Trayectoria y se ofrecen accesos internos en `layouts/profile.html`. `assets/css/extended/profile.css` mantiene los estilos acotados y la paleta del sitio.
 
-- `hugo.toml`: presentación breve de la portada, menú «Trayectoria» y correo del pie.
-- `content/about.md`: biografía, intereses, proyectos e hitos personales.
-- `content/cv.md`: selección de experiencia, docencia, proyectos, formación y producción académica.
-- `layouts/profile.html` y `assets/css/extended/profile.css`: presentación compartida, navegación entre páginas, foco visible, texto justificado en pantallas amplias y alineado al inicio en pantallas angostas. Estilos acotados al perfil; en modo oscuro los enlaces usan un naranja más claro para mejorar el contraste.
+`/cv/` conserva una página de compatibilidad que enlaza y redirige a `/about/#trayectoria`, con canonical hacia `/about/` y exclusión de indexación. Las rutas `/notes/`, `/conceptos/` y los proyectos no cambian. Quartz no se modifica.
 
-La versión web no ofrece descarga de PDF. Se conserva `/about/` y se agrega `/cv/`; los materiales educativos y los proyectos mantienen sus rutas. Quartz no se modifica ni se incluye en la validación de Hugo.
+## Descargas públicas
 
-## Fuentes
+El shortcode `cv-downloads` enlaza `static/cv/luciano-lamaita-resumen-es.pdf` y `static/cv/luciano-lamaita-resumen-en.pdf`. Son resúmenes de dos páginas, derivados de la edición revisada el 25/10/2026. Solo contienen localidad, info@lemeit.ar y enlaces profesionales. No incluyen Gmail personal, teléfono, domicilio, DNI, CUIL, fecha de nacimiento ni fotografía. Las fuentes privadas y los documentos de envío permanecen fuera del repositorio.
 
-Biografía e intereses: contenido del portal. Títulos, cargos, períodos y publicaciones: CV original de Drive consultado el 23/10/2026, sin modificarlo. Premio de octubre de 2026 y capacitaciones recientes: información aportada por Luciano en esta conversación. No se incorporan datos personales privados, números de afiliación, DNI ni CUIL.
+Fuente principal: CV completo revisado por Luciano en Google Docs, https://docs.google.com/document/d/1akqpT3TojpGsIdtbOaJqT8Klwi-D6d8asegzqpbWBMI/edit. Los editables y versiones se mantienen en su carpeta de Drive. Para nuevas ediciones, conservar las rutas de descarga, revisar el PDF completo y comprobar que no se incorporen datos privados.
 
-Se aplicaron las correcciones de Luciano: encabezado centrado en ingeniería y docencia de Física y Química; nombres completos de organismos provinciales; Refinería La Plata separada de YPF SA; Licenciatura en Química como estudios parciales sin graduación. Para contacto público se usa el alias `info@lemeit.ar` y se evita exponer el correo personal. Se omitieron la línea de las nueve capacitaciones y 128 horas y el subtítulo «Geotecnologías y programación». En la web se abreviaron algunos nombres de cursos para facilitar la lectura.
+## Contenido
 
-La organización personal de «Sobre mí» toma como referencia https://olivi-eh.dev/about/: intereses y una cronología breve, sin copiar sus experiencias personales. Para distinguir CV amplio, résumé y perfil académico se consultaron https://capd.mit.edu/resources/cvs/ y perfiles de ingeniería del MIT y Stanford.
+Experiencia en cronología inversa, con énfasis en laboratorios, calidad, aguas, investigación y ambiente. Licenciatura en Química como estudios parciales sin graduación; YPF S.A. separada de la refinería; Instituto Niño Jesús como antecedente docente de Química de 2019. Se incorporan OpenAQ, ECSA, CanAirIO, AireCiudadano y Sensor.Community y la continuidad de Ciencia Ciudadana Ambiental en Aire Escolar, distinguiendo objetivos de resultados.
 
-## Referencias que requieren contraste adicional
+Se conservan atribución, autorización y licencia CC BY-NC-SA 4.0 de Jeff Bigler. Referencias y premios según el CV revisado, sin agregar DOI ni mediciones de impacto.
 
-- La noticia institucional https://www.vialidad.gba.gov.ar/noticias/2572 no pudo consultarse; el premio se incorpora como dato aportado por Luciano.
-- Las tres publicaciones se transcriben según el CV, sin agregar DOI ni rangos de páginas no documentados.
-- La entrada sobre arsénico del CV contiene una discrepancia entre el nombre «COPIME 2009» y la fecha 2010 en la lista de congresos, y una diferencia en la inicial de Ramirez. Se conserva el premio de 2009 de la sección de distinciones y se omite la presentación dudosa.
-- La entrada de 2003 mezcla dos eventos y queda fuera de esta selección.
-- No se asignan fechas de inicio a las materias actuales del Instituto Niño Jesús: el CV no las detalla y el portal documenta las materias.
+## Verificación
 
-Para una futura descarga, generar el CV completo desde una fuente de datos compartida y validar el PDF antes de enlazarlo. No agregar el Word original ni certificados privados al repositorio.
+Ejecutar `hugo --minify`; comprobar navegación, anclas, compatibilidad de `/cv/`, descargas, contacto público, escritorio, móvil y modo oscuro. Compilar Hugo no valida Quartz. Publicar requiere aprobación de Luciano.
+
+## Primera versión bilingüe
+
+- ES: `/`, `/about/`, `/projects/`; EN: `/en/`, `/en/about/`, `/en/projects/`.
+- Trayectoria integrada en Sobre mí; PDF público correspondiente al idioma seleccionado.
+- Apuntes y Quartz en español, sin duplicación automática.
+- Fichas inglesas adaptadas; documentación técnica extensa y controles de aplicaciones identificados como disponibles en español.
+- Selector ES/EN entre páginas equivalentes, con inicio como alternativa cuando no existe traducción.

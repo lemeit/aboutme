@@ -1,0 +1,7 @@
+<div class="profile-downloads" aria-label="{{ if eq .Page.Language.Lang "en" }}Download résumé{{ else }}Descargar resumen profesional{{ end }}">
+  {{ if eq .Page.Language.Lang "en" }}
+  <a href="{{ "cv/luciano-lamaita-resumen-en.pdf" | relURL }}" download lang="en"><strong>Professional résumé</strong><span>English · PDF · 2 pages</span></a>
+  {{ else }}
+  <a href="{{ "cv/luciano-lamaita-resumen-es.pdf" | relURL }}" download lang="es"><strong>Resumen profesional</strong><span>Español · PDF · 2 páginas</span></a>
+  {{ end }}
+</div>

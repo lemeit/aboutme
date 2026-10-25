@@ -6,10 +6,10 @@
     {{ with .Params.profileLabel }}<p class="profile-label">{{ . }}</p>{{ end }}
   </header>
   <nav class="profile-nav" aria-label="Perfil de Luciano Lamaita">
-    <a href="{{ "about/" | relURL }}"{{ if eq .RelPermalink ("about/" | relURL) }} aria-current="page"{{ end }}>Sobre mí</a>
-    <a href="{{ "cv/" | relURL }}"{{ if eq .RelPermalink ("cv/" | relURL) }} aria-current="page"{{ end }}>Trayectoria</a>
-    <a href="{{ "projects/" | relURL }}">Proyectos</a>
-    <a href="mailto:info@lemeit.ar">Contacto</a>
+    <a href="#lo-que-hago">Lo que hago</a>
+    <a href="#curriculum-vitae">CV en español e inglés</a>
+    <a href="#trayectoria">Trayectoria</a>
+    <a href="#conversemos">Contacto</a>
   </nav>
   {{ if .Params.ShowToc }}{{ partial "toc.html" . }}{{ end }}
   <div class="post-content md-content profile-content">

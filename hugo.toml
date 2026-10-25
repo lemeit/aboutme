@@ -68,10 +68,6 @@ mainSections = []
     name = "Sobre mí"
     url = "/about/"
     weight = 3
-  [[menu.main]]
-    name = "Trayectoria"
-    url = "/cv/"
-    weight = 4
 
 [frontmatter]
   lastmod = [":git", "lastmod", ":fileModTime", "date"]

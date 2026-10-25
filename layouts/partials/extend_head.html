@@ -1,4 +1,8 @@
 <!-- Cloudflare Web Analytics -->
+{{ with .Params.redirectTo }}
+<meta http-equiv="refresh" content="0; url={{ . | relURL }}">
+<meta name="robots" content="noindex, follow">
+{{ end }}
 <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "a002d58b9e644adcafca835cb0dbd861"}'></script>
 <!-- End Cloudflare Web Analytics -->
 {{ if or .Params.math .Site.Params.math }}

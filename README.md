@@ -289,3 +289,7 @@ La portada y las páginas `/about/` y `/cv/` comparten una presentación coheren
 Inicio, Sobre mí y las fichas de proyectos tienen versiones ES y EN. El español conserva sus rutas; el inglés usa `/en/`. Las traducciones se emparejan por nombre de archivo (`about.md` / `about.en.md`). El selector conserva la página cuando existe una traducción y vuelve al inicio del otro idioma si no existe.
 
 Los apuntes y el mapa Quartz siguen en español. Las fichas inglesas de proyectos son presentaciones adaptadas, con enlaces a la documentación técnica completa en español; las aplicaciones y simulaciones mantienen sus interfaces originales. Cada perfil muestra solamente el PDF público de su idioma. No publicar documentos con datos personales.
+
+El chino simplificado tiene el mismo alcance que el inglés, bajo `/zh/`, con selector **中文** y resumen público PDF en chino. Los nombres oficiales de instituciones y títulos académicos se conservan en su idioma original. La fuente Noto Sans SC se aloja localmente, con subconjuntos de caracteres para limitar la descarga; su licencia y procedencia están en `static/fonts/noto-sans-sc/`. Al ampliar el contenido chino, regenerar los subconjuntos para cubrir los caracteres nuevos.
+
+Los títulos de pantalla heredan la tipografía del sitio. El formato de impresión de los apuntes conserva sus estilos propios. Las filas de apuntes centran verticalmente el número, los iconos y los enlaces.

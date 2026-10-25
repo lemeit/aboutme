@@ -99,6 +99,33 @@ mainSections = []
     url = "/about/"
     weight = 3
 
+[languages.zh]
+  languageName = "中文"
+  languageCode = "zh-CN"
+  hasCJKLanguage = true
+  weight = 3
+  [languages.zh.params]
+    description = "Luciano Lamaita，阿根廷萨拉迪略的化学工程师及物理、化学教师"
+    [languages.zh.params.footer]
+      text = "[项目维基（西班牙语）](https://wiki.lemeit.ar/)"
+    [languages.zh.params.homeInfoParams]
+      Title = "你好，我是 Luciano 👋"
+      Content = "我是一名化学工程师，也是物理和化学教师，生活在阿根廷布宜诺斯艾利斯省萨拉迪略。在这里，我分享教学资源，以及将技术应用于环境监测、科学模拟和区域管理的项目。"
+  [[languages.zh.menu.main]]
+    name = "项目"
+    url = "/projects/"
+    weight = 1
+  [[languages.zh.menu.main]]
+    name = "课堂笔记（西班牙语）"
+    url = "/notes/"
+    weight = 2
+    [languages.zh.menu.main.params]
+      spanish = true
+  [[languages.zh.menu.main]]
+    name = "关于我"
+    url = "/about/"
+    weight = 3
+
 [frontmatter]
   lastmod = [":git", "lastmod", ":fileModTime", "date"]
 

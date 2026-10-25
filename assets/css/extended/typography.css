@@ -1,0 +1,35 @@
+/* Page and section titles follow the site's screen typeface. */
+@media screen {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+  }
+}
+
+/* These local, licensed subsets are only requested by Chinese pages. */
+@font-face {
+  font-family: "Noto Sans SC";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/noto-sans-sc/noto-sans-sc-regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Noto Sans SC";
+  font-style: normal;
+  font-weight: 600 900;
+  font-display: swap;
+  src: url("/fonts/noto-sans-sc/noto-sans-sc-bold.woff2") format("woff2");
+}
+html:lang(zh) body {
+  font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  line-height: 1.8;
+  word-break: normal;
+  overflow-wrap: anywhere;
+}
+html:lang(zh) .profile-content {
+  text-align: left;
+  hyphens: none;
+}
+.lang-menu a:lang(zh) {
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+}

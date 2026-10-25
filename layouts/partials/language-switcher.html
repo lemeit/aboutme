@@ -9,7 +9,7 @@
       {{- if eq .Language.Lang $lang }}{{ $target = . }}{{ $matched = true }}{{ end }}
     {{- end }}
     <li><a href="{{ $target.RelPermalink }}" lang="{{ $lang }}" hreflang="{{ $lang }}"
-      title="{{ .Language.LanguageName }}{{ if not $matched }} · {{ if eq $lang "en" }}Home (this page is available in Spanish){{ else }}Inicio{{ end }}{{ end }}"
-      {{ if eq $page.Language.Lang $lang }}aria-current="page"{{ end }}>{{ upper $lang }}</a></li>
+      title="{{ .Language.LanguageName }}{{ if not $matched }} · {{ if eq $lang "en" }}Home (this page is available in Spanish){{ else if eq $lang "zh" }}首页（此页面仅提供西班牙语）{{ else }}Inicio{{ end }}{{ end }}"
+      {{ if eq $page.Language.Lang $lang }}aria-current="page"{{ end }}>{{ if eq $lang "zh" }}中文{{ else }}{{ upper $lang }}{{ end }}</a></li>
   {{- end }}
 </ul>

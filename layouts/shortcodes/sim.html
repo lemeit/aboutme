@@ -25,8 +25,8 @@
   <div class="sim-embed-bar">
     <span class="sim-embed-title">{{ $title }}</span>
     <span class="sim-embed-actions">
-      <button class="sim-embed-fs" type="button" title="Pantalla completa">⛶ pantalla completa</button>
-      <a href="{{ $src | relURL }}" target="_blank" rel="noopener">pestaña nueva ↗</a>
+      <button class="sim-embed-fs" type="button" title="{{ if eq .Page.Language.Lang "en" }}Full screen{{ else }}Pantalla completa{{ end }}">⛶ {{ if eq .Page.Language.Lang "en" }}full screen{{ else }}pantalla completa{{ end }}</button>
+      <a href="{{ $src | relURL }}" target="_blank" rel="noopener">{{ if eq .Page.Language.Lang "en" }}new tab{{ else }}pestaña nueva{{ end }} ↗</a>
     </span>
   </div>
   <iframe src="{{ $url }}" title="{{ $title }}" loading="lazy" allow="fullscreen"></iframe>

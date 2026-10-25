@@ -14,6 +14,13 @@
 </article>
 {{- end }}
 
+{{ if eq site.Language.Lang "en" }}
+<section class="home-info">
+  <h2>Explore</h2>
+  <p><a href="{{ "about/" | relLangURL }}">About me and résumé</a> · <a href="{{ "projects/" | relLangURL }}">Projects</a></p>
+  <p>My <a href="{{ "notes/" | relURL }}" lang="es">teaching notes</a> and <a href="{{ "conceptos/" | relURL }}" lang="es">Physics concept map</a> are available in Spanish.</p>
+</section>
+{{ else }}
 {{/* Últimas notas publicadas */}}
 {{- $notas := where site.RegularPages "Section" "notes" }}
 {{- $notas = where $notas "Draft" false }}
@@ -46,3 +53,4 @@
   </p>
 </div>
 {{- end }}
+{{ end }}

@@ -29,3 +29,7 @@
   .profile-nav { gap: .4rem 1rem; }
   .profile-content .doc-details { padding: .8rem; }
 }
+
+.lang-menu a[aria-current="page"] { font-weight: 700; text-decoration: underline; text-underline-offset: .3em; }
+.lang-menu a { padding: .25rem; }
+:root[data-theme="dark"] .header-nav a { color: #F3A66A !important; }

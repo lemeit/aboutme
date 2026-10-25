@@ -266,3 +266,9 @@ La portada y las páginas `/about/` y `/cv/` comparten una presentación coheren
 - 🌐 [profe.lemeit.ar](https://profe.lemeit.ar)
 - 💼 [linkedin.com/in/llamaita](https://www.linkedin.com/in/llamaita/)
 - 🐙 [github.com/lemeit](https://github.com/lemeit)
+
+## Idiomas del portal
+
+Inicio, Sobre mí y las fichas de proyectos tienen versiones ES y EN. El español conserva sus rutas; el inglés usa `/en/`. Las traducciones se emparejan por nombre de archivo (`about.md` / `about.en.md`). El selector conserva la página cuando existe una traducción y vuelve al inicio del otro idioma si no existe.
+
+Los apuntes y el mapa Quartz siguen en español. Las fichas inglesas de proyectos son presentaciones adaptadas, con enlaces a la documentación técnica completa en español; las aplicaciones y simulaciones mantienen sus interfaces originales. Cada perfil muestra solamente el PDF público de su idioma. No publicar documentos con datos personales.

@@ -19,3 +19,11 @@ Se conservan atribución, autorización y licencia CC BY-NC-SA 4.0 de Jeff Bigle
 ## Verificación
 
 Ejecutar `hugo --minify`; comprobar navegación, anclas, compatibilidad de `/cv/`, descargas, contacto público, escritorio, móvil y modo oscuro. Compilar Hugo no valida Quartz. Publicar requiere aprobación de Luciano.
+
+## Primera versión bilingüe
+
+- ES: `/`, `/about/`, `/projects/`; EN: `/en/`, `/en/about/`, `/en/projects/`.
+- Trayectoria integrada en Sobre mí; PDF público correspondiente al idioma seleccionado.
+- Apuntes y Quartz en español, sin duplicación automática.
+- Fichas inglesas adaptadas; documentación técnica extensa y controles de aplicaciones identificados como disponibles en español.
+- Selector ES/EN entre páginas equivalentes, con inicio como alternativa cuando no existe traducción.

@@ -26,7 +26,7 @@ Me interesan la calidad del aire, el software libre y las posibilidades de la te
 
 ## Curriculum vitae
 
-Podés descargar mi resumen profesional actualizado en español o en inglés. Ambos reúnen la experiencia, la formación y los proyectos principales en dos páginas.
+Podés descargar mi resumen profesional actualizado en español: experiencia, formación y proyectos principales en dos páginas. Para leer el perfil y descargar el resumen en inglés, seleccioná **EN** en el encabezado.
 
 {{< cv-downloads >}}
 

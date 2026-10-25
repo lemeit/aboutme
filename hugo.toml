@@ -1,7 +1,8 @@
 baseURL = "https://profe.lemeit.ar/"
 
 defaultContentLanguage = "es"
-languageCode = "es-AR"
+defaultContentLanguageInSubdir = false
+locale = "es-AR"
 title = "Luciano Lamaita"
 copyright = "© 2026 [Luciano Lamaita](mailto:info@lemeit.ar)"
 theme = "PaperMod"
@@ -55,17 +56,46 @@ mainSections = []
     name = "bluesky"
     url = "https://bsky.app/profile/lemeit.bsky.social"
 
-[menu]
-  [[menu.main]]
+[languages.es]
+  label = "Español"
+  locale = "es-AR"
+  weight = 1
+  [[languages.es.menu.main]]
     name = "Proyectos"
     url = "/projects/"
     weight = 1
-  [[menu.main]]
-    name = "Notas"
+  [[languages.es.menu.main]]
+    name = "Apuntes"
     url = "/notes/"
     weight = 2
-  [[menu.main]]
+  [[languages.es.menu.main]]
     name = "Sobre mí"
+    url = "/about/"
+    weight = 3
+
+[languages.en]
+  label = "English"
+  locale = "en-GB"
+  weight = 2
+  [languages.en.params]
+    description = "Chemical engineer and Physics and Chemistry teacher in Saladillo, Argentina"
+    [languages.en.params.footer]
+      text = "[Project wiki](https://wiki.lemeit.ar/en/)"
+    [languages.en.params.homeInfoParams]
+      Title = "Hi, I'm Luciano 👋"
+      Content = "Chemical engineer and Physics and Chemistry teacher in Saladillo, Buenos Aires, Argentina. I share educational resources and projects applying technology to environmental monitoring, scientific simulation and territorial management."
+  [[languages.en.menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 1
+  [[languages.en.menu.main]]
+    name = "Notes (Spanish)"
+    url = "/notes/"
+    weight = 2
+    [languages.en.menu.main.params]
+      spanish = true
+  [[languages.en.menu.main]]
+    name = "About me"
     url = "/about/"
     weight = 3
 

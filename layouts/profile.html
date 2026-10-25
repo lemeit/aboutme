@@ -5,11 +5,12 @@
     <h1 class="post-title">{{ .Title }}</h1>
     {{ with .Params.profileLabel }}<p class="profile-label">{{ . }}</p>{{ end }}
   </header>
-  <nav class="profile-nav" aria-label="Perfil de Luciano Lamaita">
-    <a href="#lo-que-hago">Lo que hago</a>
-    <a href="#curriculum-vitae">CV en español e inglés</a>
-    <a href="#trayectoria">Trayectoria</a>
-    <a href="#conversemos">Contacto</a>
+  <nav class="profile-nav" aria-label="{{ if eq .Language.Lang "en" }}Profile sections{{ else }}Secciones del perfil{{ end }}">
+    {{ if eq .Language.Lang "en" }}
+    <a href="#what-i-do">What I do</a><a href="#curriculum-vitae">Résumé</a><a href="#background">Background</a><a href="#contact">Contact</a>
+    {{ else }}
+    <a href="#lo-que-hago">Lo que hago</a><a href="#curriculum-vitae">CV</a><a href="#trayectoria">Trayectoria</a><a href="#conversemos">Contacto</a>
+    {{ end }}
   </nav>
   {{ if .Params.ShowToc }}{{ partial "toc.html" . }}{{ end }}
   <div class="post-content md-content profile-content">

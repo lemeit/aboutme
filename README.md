@@ -96,7 +96,7 @@ Selector crítico: `:root[data-theme="dark"]` (no `.dark`) — coincide con la e
 ## Quartz — Mapa de conceptos (`/conceptos/`)
 
 El subdirectorio `quartz/` es un sitio Quartz v5 independiente, basado en notas Obsidian.
-Se sirve en `profe.lemeit.ar/conceptos` y tiene su propio deploy en Cloudflare Pages.
+Se compila de forma independiente y se sirve en `profe.lemeit.ar/conceptos/`. En producción se publica **junto con Hugo en el mismo proyecto Cloudflare Pages**: la salida de Quartz se copia dentro de `public/conceptos/`.
 
 ### Configuración relevante (`quartz/quartz.config.yaml`)
 
@@ -243,6 +243,23 @@ Las notas publicadas generan su versión A4 de dos columnas mediante GitHub Acti
 ## Deploy
 
 Cada `git push` a `main` dispara un build automático en Cloudflare Pages (~1–2 minutos).
+
+El build de producción combina ambos generadores:
+
+```sh
+hugo
+cd quartz
+npm ci
+npx quartz plugin install --from-config
+npx quartz build
+cd ..
+mkdir -p public/conceptos
+cp -r quartz/public/* public/conceptos/
+```
+
+**Una publicación manual debe subir el resultado combinado.** Subir solo la salida de Hugo elimina el mapa de conceptos del despliegue. Antes de publicar, comprobar que existen `index.html`, `en/about/index.html`, `conceptos/index.html`, los recursos de Quartz y ambos PDF de `cv/`. Después, verificar `/conceptos/`, una página interna del mapa y sus recursos, además del portal. No confundir que Hugo compile correctamente con la validación del sitio completo.
+
+Ejecutar `python scripts/check-publication.py <directorio-combinado>` antes de subirlo. Este control falla si falta Quartz, una página esencial, un PDF o un recurso CSS/JS de las páginas revisadas.
 
 ```powershell
 cd C:\GitHub\aboutme

@@ -8,7 +8,7 @@ hideMeta = true
 draft = false
 +++
 
-Hola, soy Luciano. Soy ingeniero químico y profesor de física y química en Saladillo, Buenos Aires. Soy padre de dos hijos y me interesan las ciencias naturales, la tecnología y la educación.
+Hola, soy Luciano. Soy ingeniero químico y profesor de física y química en Saladillo, Buenos Aires. También soy padre. Me interesan las ciencias naturales, la tecnología y la educación.
 
 Este sitio reúne mis materiales educativos y proyectos de tecnología aplicada al ambiente, la simulación científica y la gestión territorial. Es un espacio para compartir herramientas, explorar ideas y conectar lo que enseño con los problemas en los que trabajo.
 

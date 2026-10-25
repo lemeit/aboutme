@@ -16,7 +16,7 @@ La edición pública v02 recupera el diseño del resumen original: columna princ
 
 Experiencia en cronología inversa, con énfasis en laboratorios, calidad, aguas, investigación y ambiente. Licenciatura en Química como estudios parciales sin graduación; YPF S.A. separada de la refinería; Instituto Niño Jesús como antecedente docente de Química de 2019. Se incorporan OpenAQ, ECSA, CanAirIO, AireCiudadano y Sensor.Community y la continuidad de Ciencia Ciudadana Ambiental en Aire Escolar, distinguiendo objetivos de resultados.
 
-Se conservan atribución, autorización y licencia CC BY-NC-SA 4.0 de Jeff Bigler. Referencias y premios según el CV revisado, sin agregar DOI ni mediciones de impacto.
+Se conservan atribución, autorización y licencia CC BY-NC-SA 4.0 de Jeff Bigler. Referencias y premios según el CV revisado, con DOI contrastados con Crossref y la editorial, sin agregar mediciones de impacto.
 
 ## Verificación
 
@@ -33,3 +33,7 @@ Ejecutar `hugo --minify`; comprobar navegación, anclas, compatibilidad de `/cv/
 ## Chino simplificado
 
 `/zh/`, `/zh/about/` y `/zh/projects/` ofrecen el mismo alcance de traducción que el inglés. El selector muestra 中文 y mantiene la página equivalente. El perfil enlaza `static/cv/luciano-lamaita-resumen-zh.pdf`, de dos páginas con el mismo diseño lateral. Noto Sans SC mantiene una estética sans serif coherente con el portal y se incrusta en el PDF; la web aloja los subconjuntos y su licencia OFL localmente. El chino no se agrega a los idiomas hablados del CV: el documento es una traducción.
+
+## Revisión v03 — docencia y publicaciones
+
+Los tres resúmenes (ES, EN y ZH) incluyen docencia de física y química en competencias, títulos académicos traducidos y las tres publicaciones científicas completas, con enlaces DOI. Las referencias corrigen XANES, el orden de autoría, Mineli y los rangos de páginas según los registros editoriales. Se mantienen dos páginas, las rutas estables y los datos de contacto públicos.

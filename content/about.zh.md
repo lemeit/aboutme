@@ -100,10 +100,10 @@ draft = false
 
 ### 教育背景
 
-- **Ingeniero Químico** · Universidad Tecnológica Nacional，Facultad Regional La Plata · 2006—2016 年 · 已获得化学工程学位。
-- **Profesor en Disciplinas Industriales** · Universidad Tecnológica Nacional，Facultad Regional Avellaneda · 2017—2018 年 · 已完成教师资格培养。
-- **Licenciatura en Química** · Universidad Nacional de La Plata · 2000—2005 年 · 曾修读部分大学课程，未取得该学位。
-- **Técnico Químico** · EET N°1 «Gral. Savio»，萨拉迪略 · 1999 年毕业。
+- **化学工程学位** · Universidad Tecnológica Nacional，Facultad Regional La Plata · 2006—2016 年 · 已毕业。
+- **工业学科教师资格** · Universidad Tecnológica Nacional，Facultad Regional Avellaneda · 2017—2018 年 · 已完成教师资格培养。
+- **化学专业学习** · Universidad Nacional de La Plata · 2000—2005 年 · 曾修读部分大学课程，未取得该学位。
+- **化学技术员资格** · EET N°1 «Gral. Savio»，萨拉迪略 · 1999 年毕业。
 
 {{< details title="近期培训与继续教育" >}}
 - **QGIS 二级：地理处理与高级可视化工具** · 2026 年 5 月 22 日 · 12 小时。
@@ -123,9 +123,9 @@ draft = false
 
 参与的研究涉及环境应用中的催化作用与锰氧化物表征：
 
-- **L. Lamaita**, M. Andrés Peluso, H. Thomas, J. Sambeth, G. Minelli and P. Porta. “A theoretical and experimental study of manganese oxides used as catalysts for VOCs emission reduction”. *Catalysis Today*, 107–108, p. 133 (2005).
-- S. Figueroa, F. Requejo, E. Lede, **L. Lamaita**, M. Andrés Peluso and J. Sambeth. “XAFS Study of electronic and structural nature of Mn-sites in manganese oxides with catalytic properties”. *Catalysis Today*, 107–108, p. 849 (2005).
-- **L. Lamaita**, M. A. Peluso, J. Sambeth and H. Thomas. “Synthesis and characterization of manganese oxides employed in VOCs abatement”. *Applied Catalysis B: Environmental*, 61, p. 128 (2005).
+- **L. Lamaita**, M. Andrés Peluso, J. E. Sambeth, H. Thomas, G. Mineli, P. Porta. [A theoretical and experimental study of manganese oxides used as catalysts for VOCs emission reduction](https://doi.org/10.1016/j.cattod.2005.07.155). *Catalysis Today*, 107–108, 133–138 (2005).
+- S. J. A. Figueroa, F. G. Requejo, E. J. Lede, **L. Lamaita**, M. Andrés Peluso, J. E. Sambeth. [XANES study of electronic and structural nature of Mn-sites in manganese oxides with catalytic properties](https://doi.org/10.1016/j.cattod.2005.07.156). *Catalysis Today*, 107–108, 849–855 (2005).
+- **L. Lamaita**, M. A. Peluso, J. E. Sambeth, H. J. Thomas. [Synthesis and characterization of manganese oxides employed in VOCs abatement](https://doi.org/10.1016/j.apcatb.2005.03.014). *Applied Catalysis B: Environmental*, 61 (1–2), 114–119 (2005).
 
 我曾担任 **OpenAQ 社区大使（2023 年）**，并于 2023 年 3 月至 2024 年 3 月参加其培训计划。我是 **ECSA（European Citizen Science Association，欧洲公民科学协会）空气质量工作组**成员，并参与 **CanAirIO、AireCiudadano 和 Sensor.Community**。我也曾于 2022—2023 年代表毕业生参与 UTN La Plata 支持残障人士融合政策的相关委员会。
 

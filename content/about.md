@@ -123,9 +123,9 @@ Formación adicional en auditorías y gestión de calidad de laboratorios bajo I
 
 Trabajos en catálisis y caracterización de óxidos de manganeso para aplicaciones ambientales:
 
-- **L. Lamaita**, M. Andrés Peluso, H. Thomas, J. Sambeth, G. Minelli y P. Porta. «A theoretical and experimental study of manganese oxides used as catalysts for VOCs emission reduction». *Catalysis Today*, 107–108, p. 133 (2005).
-- S. Figueroa, F. Requejo, E. Lede, **L. Lamaita**, M. Andrés Peluso y J. Sambeth. «XAFS Study of electronic and structural nature of Mn-sites in manganese oxides with catalytic properties». *Catalysis Today*, 107–108, p. 849 (2005).
-- **L. Lamaita**, M. A. Peluso, J. Sambeth y H. Thomas. «Synthesis and characterization of manganese oxides employed in VOCs abatement». *Applied Catalysis B: Environmental*, 61, p. 128 (2005).
+- **L. Lamaita**, M. Andrés Peluso, J. E. Sambeth, H. Thomas, G. Mineli, P. Porta. [A theoretical and experimental study of manganese oxides used as catalysts for VOCs emission reduction](https://doi.org/10.1016/j.cattod.2005.07.155). *Catalysis Today*, 107–108, 133–138 (2005).
+- S. J. A. Figueroa, F. G. Requejo, E. J. Lede, **L. Lamaita**, M. Andrés Peluso, J. E. Sambeth. [XANES study of electronic and structural nature of Mn-sites in manganese oxides with catalytic properties](https://doi.org/10.1016/j.cattod.2005.07.156). *Catalysis Today*, 107–108, 849–855 (2005).
+- **L. Lamaita**, M. A. Peluso, J. E. Sambeth, H. J. Thomas. [Synthesis and characterization of manganese oxides employed in VOCs abatement](https://doi.org/10.1016/j.apcatb.2005.03.014). *Applied Catalysis B: Environmental*, 61 (1–2), 114–119 (2005).
 
 Fui **Embajador Comunitario de OpenAQ (2023)** y participé de su programa de formación entre marzo de 2023 y marzo de 2024. Integro el **Grupo de Trabajo de Calidad del Aire de ECSA (European Citizen Science Association)** y participo en **CanAirIO, AireCiudadano y Sensor.Community**. Fui representante del claustro de graduados en la Comisión de Acompañamiento y Orientación en Políticas de Inclusión para la Discapacidad de la UTN La Plata (2022–2023).
 

@@ -14,7 +14,13 @@
 </article>
 {{- end }}
 
-{{ if eq site.Language.Lang "en" }}
+{{ if eq site.Language.Lang "zh" }}
+<section class="home-info">
+  <h2>探索</h2>
+  <p><a href="{{ "about/" | relLangURL }}">关于我与简历</a> · <a href="{{ "projects/" | relLangURL }}">项目</a></p>
+  <p><a href="{{ "notes/" | relURL }}" lang="es">课堂笔记</a>和<a href="{{ "conceptos/" | relURL }}" lang="es">物理概念图谱</a>目前提供西班牙语版本。</p>
+</section>
+{{ else if eq site.Language.Lang "en" }}
 <section class="home-info">
   <h2>Explore</h2>
   <p><a href="{{ "about/" | relLangURL }}">About me and résumé</a> · <a href="{{ "projects/" | relLangURL }}">Projects</a></p>

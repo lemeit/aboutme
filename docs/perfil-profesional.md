@@ -29,3 +29,7 @@ Ejecutar `hugo --minify`; comprobar navegación, anclas, compatibilidad de `/cv/
 - Apuntes y Quartz en español, sin duplicación automática.
 - Fichas inglesas adaptadas; documentación técnica extensa y controles de aplicaciones identificados como disponibles en español.
 - Selector ES/EN entre páginas equivalentes, con inicio como alternativa cuando no existe traducción.
+
+## Chino simplificado
+
+`/zh/`, `/zh/about/` y `/zh/projects/` ofrecen el mismo alcance de traducción que el inglés. El selector muestra 中文 y mantiene la página equivalente. El perfil enlaza `static/cv/luciano-lamaita-resumen-zh.pdf`, de dos páginas con el mismo diseño lateral. Noto Sans SC mantiene una estética sans serif coherente con el portal y se incrusta en el PDF; la web aloja los subconjuntos y su licencia OFL localmente. El chino no se agrega a los idiomas hablados del CV: el documento es una traducción.

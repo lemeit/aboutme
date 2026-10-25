@@ -23,9 +23,12 @@ def main():
     parser.add_argument('directory', type=Path, help='Combined Hugo and Quartz output')
     root = parser.parse_args().directory.resolve()
     errors = []
-    for relative in ['index.html', 'about/index.html', 'en/about/index.html',
+    for relative in ['index.html', 'about/index.html', 'en/about/index.html', 'zh/about/index.html',
                      'notes/index.html', 'conceptos/index.html',
-                     'cv/luciano-lamaita-resumen-es.pdf', 'cv/luciano-lamaita-resumen-en.pdf']:
+                     'cv/luciano-lamaita-resumen-es.pdf', 'cv/luciano-lamaita-resumen-en.pdf',
+                     'cv/luciano-lamaita-resumen-zh.pdf',
+                     'fonts/noto-sans-sc/noto-sans-sc-regular.woff2',
+                     'fonts/noto-sans-sc/noto-sans-sc-bold.woff2']:
         path = root / relative
         if not path.is_file():
             errors.append(f'Missing {relative}')
@@ -33,6 +36,8 @@ def main():
         if path.suffix == '.pdf':
             if not path.read_bytes().startswith(b'%PDF-'):
                 errors.append(f'Invalid PDF: {relative}')
+            continue
+        if path.suffix != '.html':
             continue
         assets = Assets()
         assets.feed(path.read_text(encoding='utf-8'))
@@ -47,7 +52,7 @@ def main():
                 errors.append(f'Missing asset in {relative}: {url}')
     if errors:
         raise SystemExit('\n'.join(errors))
-    print('Combined portal verified: Hugo ES/EN, notes, Quartz, page assets and both CV PDFs.')
+    print('Combined portal verified: Hugo ES/EN/ZH, notes, Quartz, page assets, Chinese fonts and three CV PDFs.')
 
 
 if __name__ == '__main__':

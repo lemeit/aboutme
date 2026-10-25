@@ -259,6 +259,8 @@ cp -r quartz/public/* public/conceptos/
 
 **Una publicación manual debe subir el resultado combinado.** Subir solo la salida de Hugo elimina el mapa de conceptos del despliegue. Antes de publicar, comprobar que existen `index.html`, `en/about/index.html`, `conceptos/index.html`, los recursos de Quartz y ambos PDF de `cv/`. Después, verificar `/conceptos/`, una página interna del mapa y sus recursos, además del portal. No confundir que Hugo compile correctamente con la validación del sitio completo.
 
+Ejecutar `python scripts/check-publication.py <directorio-combinado>` antes de subirlo. Este control falla si falta Quartz, una página esencial, un PDF o un recurso CSS/JS de las páginas revisadas.
+
 ```powershell
 cd C:\GitHub\aboutme
 git add .

@@ -22,7 +22,11 @@ My professional experience includes laboratory coordination, quality control, wa
 
 ## Interests
 
-I am interested in air quality, free and open-source software, and ways to use technology to learn and solve problems. I enjoy building DIY and IoT projects, exploring AI tools and learning about the natural sciences. Outside these areas, I swim.
+I am interested in air quality, the natural sciences, and ways to use technology to learn and solve problems. I enjoy building and experimenting with DIY and IoT projects.
+
+I support free software and sharing knowledge. I value the strategic and responsible use of new technologies, including artificial intelligence, in education, research and professional work.
+
+Outside work, I enjoy swimming and listening to music from the 1970s and 1980s. I am also interested in healthy eating.
 
 ## Curriculum vitae
 

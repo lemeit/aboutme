@@ -78,12 +78,12 @@ mainSections = []
   locale = "en-GB"
   weight = 2
   [languages.en.params]
-    description = "Chemical engineer and Physics and Chemistry teacher in Saladillo, Argentina"
+    description = "Chemical engineer and physics and chemistry teacher in Saladillo, Argentina"
     [languages.en.params.footer]
       text = "[Project wiki](https://wiki.lemeit.ar/en/)"
     [languages.en.params.homeInfoParams]
       Title = "Hi, I'm Luciano 👋"
-      Content = "Chemical engineer and Physics and Chemistry teacher in Saladillo, Buenos Aires, Argentina. I share educational resources and projects applying technology to environmental monitoring, scientific simulation and territorial management."
+      Content = "Chemical engineer and physics and chemistry teacher in Saladillo, Buenos Aires, Argentina. I share educational resources and projects applying technology to environmental monitoring, scientific simulation and territorial management."
   [[languages.en.menu.main]]
     name = "Projects"
     url = "/projects/"

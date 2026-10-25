@@ -2,7 +2,7 @@ baseURL = "https://profe.lemeit.ar/"
 
 defaultContentLanguage = "es"
 defaultContentLanguageInSubdir = false
-locale = "es-AR"
+languageCode = "es-AR"
 title = "Luciano Lamaita"
 copyright = "© 2026 [Luciano Lamaita](mailto:info@lemeit.ar)"
 theme = "PaperMod"
@@ -57,8 +57,8 @@ mainSections = []
     url = "https://bsky.app/profile/lemeit.bsky.social"
 
 [languages.es]
-  label = "Español"
-  locale = "es-AR"
+  languageName = "Español"
+  languageCode = "es-AR"
   weight = 1
   [[languages.es.menu.main]]
     name = "Proyectos"
@@ -74,8 +74,8 @@ mainSections = []
     weight = 3
 
 [languages.en]
-  label = "English"
-  locale = "en-GB"
+  languageName = "English"
+  languageCode = "en-GB"
   weight = 2
   [languages.en.params]
     description = "Chemical engineer and physics and chemistry teacher in Saladillo, Argentina"

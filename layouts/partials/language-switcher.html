@@ -1,15 +1,15 @@
 {{- $page := . -}}
 <span class="nav-sep" aria-hidden="true">|</span>
 <ul class="lang-menu" aria-label="Idioma / Language">
-  {{- range hugo.Sites }}
-    {{- $target := .Home }}
+  {{- range $page.Site.Home.AllTranslations }}
+    {{- $target := . }}
     {{- $matched := false }}
     {{- $lang := .Language.Lang }}
     {{- range $page.AllTranslations }}
       {{- if eq .Language.Lang $lang }}{{ $target = . }}{{ $matched = true }}{{ end }}
     {{- end }}
     <li><a href="{{ $target.RelPermalink }}" lang="{{ $lang }}" hreflang="{{ $lang }}"
-      title="{{ .Language.Label }}{{ if not $matched }} · {{ if eq $lang "en" }}Home (this page is available in Spanish){{ else }}Inicio{{ end }}{{ end }}"
+      title="{{ .Language.LanguageName }}{{ if not $matched }} · {{ if eq $lang "en" }}Home (this page is available in Spanish){{ else }}Inicio{{ end }}{{ end }}"
       {{ if eq $page.Language.Lang $lang }}aria-current="page"{{ end }}>{{ upper $lang }}</a></li>
   {{- end }}
 </ul>

@@ -12,6 +12,8 @@ Fuente principal: CV completo revisado por Luciano en Google Docs, https://docs.
 
 ## Contenido
 
+La edición pública v02 recupera el diseño del resumen original: columna principal para perfil y experiencia, y lateral para contacto, enlaces, competencias, herramientas, idiomas, formación y redes. Conserva dos páginas por idioma, tipografía Segoe UI y acentos de la paleta del sitio. El código de versión queda a la izquierda del pie y la paginación a la derecha. No usa escalas gráficas de competencias ni incorpora los datos personales del original.
+
 Experiencia en cronología inversa, con énfasis en laboratorios, calidad, aguas, investigación y ambiente. Licenciatura en Química como estudios parciales sin graduación; YPF S.A. separada de la refinería; Instituto Niño Jesús como antecedente docente de Química de 2019. Se incorporan OpenAQ, ECSA, CanAirIO, AireCiudadano y Sensor.Community y la continuidad de Ciencia Ciudadana Ambiental en Aire Escolar, distinguiendo objetivos de resultados.
 
 Se conservan atribución, autorización y licencia CC BY-NC-SA 4.0 de Jeff Bigler. Referencias y premios según el CV revisado, sin agregar DOI ni mediciones de impacto.

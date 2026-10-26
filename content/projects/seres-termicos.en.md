@@ -2,11 +2,13 @@
 title = "Thermal Beings"
 description = "Literature, heat diffusion and exploratory simulations."
 weight = 5
-lastmod = '2026-10-25'
+lastmod = '2026-10-26'
 draft = false
 +++
 
-The shared narrative uses a Prologue and Acts I–XIV. File names and version codes are technical identifiers; see the [name map](/projects/seres-termicos/denominaciones/). The introductory [visual path](/simus/seres-termicos/termodinamica.html) is currently in Spanish.
+Read the complete [interactive book in Spanish](/projects/seres-termicos/), from the prologue to the advanced models. Technical file names remain available in its version map.
+
+
 
 
 

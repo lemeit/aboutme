@@ -1,0 +1,67 @@
+{{ define "main" }}
+{{ $pages := slice (.Site.GetPage "/projects/seres-termicos") }}
+{{ range .Site.Data.seres_book_chapters }}
+  {{ $chapter := $.Site.GetPage .page }}
+  {{ if not $chapter }}{{ errorf "Falta una página del libro Seres Térmicos: %s" .page }}{{ end }}
+  {{ $pages = $pages | append $chapter }}
+{{ end }}
+{{ $pages = sort $pages "Params.book_order" }}
+{{ $order := int .Params.book_order }}
+{{ $cover := index (where $pages "Params.book_order" 0) 0 }}
+<div class="thermal-book">
+  <aside class="thermal-book-sidebar">
+    <details class="thermal-book-index" open>
+      <summary>Índice de Seres Térmicos</summary>
+      <nav aria-label="Índice del libro">
+        <a class="thermal-book-cover" href="{{ $cover.RelPermalink }}" {{ if eq $order 0 }}aria-current="page"{{ end }}>Portada e índice</a>
+        {{ range .Site.Data.seres_book.parts }}
+        <h2>{{ .title }}</h2>
+        <ol>
+          {{ range where $pages "Params.book_part" .id }}
+          <li><a href="{{ .RelPermalink }}" {{ if eq (int .Params.book_order) $order }}aria-current="page"{{ end }}><span>{{ .Params.book_label }}</span> {{ .Title }}</a></li>
+          {{ end }}
+        </ol>
+        {{ end }}
+      </nav>
+    </details>
+  </aside>
+  <article class="thermal-book-page">
+    <header>
+      <a class="thermal-book-home" href="{{ $cover.RelPermalink }}">Seres Térmicos · Libro interactivo</a>
+      {{ if gt $order 0 }}<p class="thermal-book-position">{{ .Params.book_part_title }} · {{ .Params.book_label }}</p>{{ end }}
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="thermal-book-description">{{ . }}</p>{{ end }}
+    </header>
+    {{ if gt $order 0 }}{{ partial "seres-book-turn.html" (dict "page" . "pages" $pages "order" $order "position" "superior") }}{{ end }}
+    <div class="post-content thermal-book-content">{{ .Content }}</div>
+    {{ if eq $order 0 }}
+    <div class="thermal-book-contents">
+      {{ range .Site.Data.seres_book.parts }}
+      <section aria-labelledby="parte-{{ .id }}">
+        <h2 id="parte-{{ .id }}">{{ .title }}</h2><p>{{ .description }}</p>
+        <ol>
+          {{ range where $pages "Params.book_part" .id }}
+          <li><a href="{{ .RelPermalink }}"><span>{{ .Params.book_label }}</span><strong>{{ .Title }}</strong><span class="thermal-book-chapter-description">{{ .Description }}</span></a></li>
+          {{ end }}
+        </ol>
+      </section>
+      {{ end }}
+    </div>
+    {{ end }}
+    {{ partial "seres-book-turn.html" (dict "page" . "pages" $pages "order" $order "position" "inferior") }}
+    <p class="thermal-book-portal"><a href="{{ "/projects/" | relURL }}">Todos los proyectos</a> · <a href="{{ "/notes/fisica-4to/u6-energia-termica/" | relURL }}">Apuntes de energía térmica</a></p>
+  </article>
+</div>
+<script>
+(() => {
+  const index = document.querySelector('.thermal-book-index');
+  const nav = index.querySelector('nav');
+  const small = window.matchMedia('(max-width: 900px)');
+  function adapt() { index.open = !small.matches; if (small.matches) nav.scrollTop = 0; }
+  adapt();
+  small.addEventListener('change', adapt);
+  const active = nav.querySelector('[aria-current="page"]');
+  if (active && !small.matches) nav.scrollTop = Math.max(0, active.offsetTop - nav.offsetTop - 110);
+})();
+</script>
+{{ end }}

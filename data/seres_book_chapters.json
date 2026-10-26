@@ -1,0 +1,242 @@
+[
+  {
+    "url": "/projects/seres-termicos/libro/prologo/",
+    "label": "Prólogo",
+    "title": "Del relato a la física",
+    "order": 1,
+    "sim": null,
+    "page": "/projects/seres-libro-prologo"
+  },
+  {
+    "url": "/projects/seres-termicos/libro/contacto/",
+    "label": "Capítulo 1",
+    "title": "El primer encuentro",
+    "order": 2,
+    "sim": "v00-contacto-termico.html",
+    "page": "/projects/seres-libro-contacto"
+  },
+  {
+    "url": "/projects/seres-termicos/libro/calor-capacidad/",
+    "label": "Capítulo 2",
+    "title": "El calor deja una huella",
+    "order": 3,
+    "sim": "v01-calor-capacidad.html",
+    "page": "/projects/seres-libro-calor-capacidad"
+  },
+  {
+    "url": "/projects/seres-termicos/libro/primera-ley/",
+    "label": "Capítulo 3",
+    "title": "La energía cruza la frontera",
+    "order": 4,
+    "sim": "v02-primera-ley.html",
+    "page": "/projects/seres-libro-primera-ley"
+  },
+  {
+    "url": "/projects/seres-termicos/libro/entropia/",
+    "label": "Capítulo 4",
+    "title": "La dirección del cambio",
+    "order": 5,
+    "sim": "v03-entropia.html",
+    "page": "/projects/seres-libro-entropia"
+  },
+  {
+    "url": "/projects/seres-termicos/libro/conduccion/",
+    "label": "Capítulo 5",
+    "title": "Una pendiente conduce calor",
+    "order": 6,
+    "sim": "v05-conduccion-fourier.html",
+    "page": "/projects/seres-libro-conduccion"
+  },
+  {
+    "url": "/projects/seres-termicos/libro/difusion-linea/",
+    "label": "Capítulo 6",
+    "title": "El calor recorre una línea",
+    "order": 7,
+    "sim": "v06-difusion-1d.html",
+    "page": "/projects/seres-libro-difusion-linea"
+  },
+  {
+    "url": "/projects/seres-termicos/libro/difusion-superficie/",
+    "label": "Capítulo 7",
+    "title": "La línea se vuelve superficie",
+    "order": 8,
+    "sim": "v07-difusion-2d.html",
+    "page": "/projects/seres-libro-difusion-superficie"
+  },
+  {
+    "url": "/projects/seres-termicos/libro/difusion-volumen/",
+    "label": "Capítulo 8",
+    "title": "El calor habita un volumen",
+    "order": 9,
+    "sim": "v08-difusion-3d.html",
+    "page": "/projects/seres-libro-difusion-volumen"
+  },
+  {
+    "url": "/projects/seres-termicos/libro/campo-fuentes/",
+    "label": "Capítulo 9",
+    "title": "El campo que disuelve",
+    "order": 10,
+    "sim": "v01-campo.html",
+    "page": "/projects/seres-libro-campo-fuentes"
+  },
+  {
+    "url": "/projects/seres-termicos/libro/gradiente/",
+    "label": "Capítulo 10",
+    "title": "Seguir el gradiente",
+    "order": 11,
+    "sim": "v02-gradiente.html",
+    "page": "/projects/seres-libro-gradiente"
+  },
+  {
+    "url": "/projects/seres-termicos/libro/reaccion-difusion/",
+    "label": "Capítulo 11",
+    "title": "Las manchas encuentran una forma",
+    "order": 12,
+    "sim": "v04-grayscott.html",
+    "page": "/projects/seres-libro-reaccion-difusion"
+  },
+  {
+    "url": "/projects/seres-termicos/libro/ondas/",
+    "label": "Capítulo 12",
+    "title": "Las ondas recorren el medio",
+    "order": 13,
+    "sim": "v05-fhn.html",
+    "page": "/projects/seres-libro-ondas"
+  },
+  {
+    "url": "/projects/seres-termicos/libro/individuos/",
+    "label": "Capítulo 13",
+    "title": "Contar a los individuos",
+    "order": 14,
+    "sim": "v06-ciclovida.html",
+    "page": "/projects/seres-libro-individuos"
+  },
+  {
+    "url": "/projects/seres-termicos/libro/anatomia/",
+    "label": "Capítulo 14",
+    "title": "Un bestiario de calor",
+    "order": 15,
+    "sim": "bestiario.html",
+    "page": "/projects/seres-libro-anatomia"
+  },
+  {
+    "url": "/projects/seres-termicos/libro/universo/",
+    "label": "Capítulo 15",
+    "title": "El mundo que los contiene",
+    "order": 16,
+    "sim": "v07-3d.html",
+    "page": "/projects/seres-libro-universo"
+  },
+  {
+    "url": "/projects/seres-termicos/libro/tiempo/",
+    "label": "Capítulo 16",
+    "title": "La huella del tiempo",
+    "order": 17,
+    "sim": "v08-espaciotiempo.html",
+    "page": "/projects/seres-libro-tiempo"
+  },
+  {
+    "url": "/projects/seres-termicos/libro/volumen-inicial/",
+    "label": "Capítulo 17",
+    "title": "El primer volumen térmico",
+    "order": 18,
+    "sim": "seres_termicos_V4_1.html",
+    "page": "/projects/seres-libro-volumen-inicial"
+  },
+  {
+    "url": "/projects/seres-termicos/libro/formas-iniciales/",
+    "label": "Capítulo 18",
+    "title": "Las formas del campo",
+    "order": 19,
+    "sim": "seres_termicos_V4_2.html",
+    "page": "/projects/seres-libro-formas-iniciales"
+  },
+  {
+    "url": "/projects/seres-termicos/libro/ventana/",
+    "label": "Capítulo 19",
+    "title": "Una ventana al campo",
+    "order": 20,
+    "sim": "seres_termicos_V4_2_1.html",
+    "page": "/projects/seres-libro-ventana"
+  },
+  {
+    "url": "/projects/seres-termicos/libro/fuentes-articuladas/",
+    "label": "Capítulo 20",
+    "title": "Frío y fuego articulados",
+    "order": 21,
+    "sim": "seres_termicos_V4_3.html",
+    "page": "/projects/seres-libro-fuentes-articuladas"
+  },
+  {
+    "url": "/projects/seres-termicos/libro/reservas/",
+    "label": "Capítulo 21",
+    "title": "Nacer y extinguirse",
+    "order": 22,
+    "sim": "seres_termicos_V4_4.html",
+    "page": "/projects/seres-libro-reservas"
+  },
+  {
+    "url": "/projects/seres-termicos/libro/puntos/",
+    "label": "Capítulo 22",
+    "title": "Mirar sin halos",
+    "order": 23,
+    "sim": "seres_termicos_V4_5.html",
+    "page": "/projects/seres-libro-puntos"
+  },
+  {
+    "url": "/projects/seres-termicos/libro/defensa/",
+    "label": "Capítulo 23",
+    "title": "Resistir hasta agotarse",
+    "order": 24,
+    "sim": "seres_termicos_V4_6.html",
+    "page": "/projects/seres-libro-defensa"
+  },
+  {
+    "url": "/projects/seres-termicos/libro/limite-frio/",
+    "label": "Anexo A",
+    "title": "El límite del frío",
+    "order": 25,
+    "sim": "v04-tercera-ley.html",
+    "page": "/projects/seres-libro-limite-frio"
+  },
+  {
+    "url": "/projects/seres-termicos/libro/recta-temperaturas/",
+    "label": "Anexo B",
+    "title": "Una recta de temperaturas",
+    "order": 26,
+    "sim": "v00-temperatura.html",
+    "page": "/projects/seres-libro-recta-temperaturas"
+  },
+  {
+    "url": "/projects/seres-termicos/libro/visualizacion/",
+    "label": "Anexo C",
+    "title": "Hacer visible un campo",
+    "order": 27,
+    "sim": null,
+    "page": "/projects/seres-libro-visualizacion"
+  },
+  {
+    "url": "/projects/seres-termicos/guia-fisica/",
+    "label": "Anexo D",
+    "title": "Ecuaciones, balances y límites",
+    "order": 28,
+    "sim": null,
+    "page": "/projects/seres-termicos-guia-fisica"
+  },
+  {
+    "url": "/projects/seres-termicos/libro/memoria/",
+    "label": "Anexo E",
+    "title": "Memoria del desarrollo y referencias",
+    "order": 29,
+    "sim": null,
+    "page": "/projects/seres-libro-memoria"
+  },
+  {
+    "url": "/projects/seres-termicos/libro/versiones/",
+    "label": "Anexo F",
+    "title": "Mapa de archivos y versiones",
+    "order": 30,
+    "sim": null,
+    "page": "/projects/seres-libro-versiones"
+  }
+]

@@ -2,11 +2,13 @@
 title = '热生物'
 description = '文学、热扩散与探索性模拟。'
 weight = 5
-lastmod = '2026-10-25'
+lastmod = '2026-10-26'
 draft = false
 +++
 
-本项目统一采用序章与第一至第十四幕的叙事名称。文件名和版本号仅作技术标识；参见[名称对照表](/projects/seres-termicos/denominaciones/)。入门[可视化课程](/simus/seres-termicos/termodinamica.html)目前使用西班牙语。
+从序言到高级模型，请阅读完整的[西班牙语交互式图书](/projects/seres-termicos/)。技术文件名保留在版本索引中。
+
+
 
 
 

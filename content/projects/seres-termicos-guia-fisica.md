@@ -1,23 +1,21 @@
----
-title: "Guía física y cronológica de Seres Térmicos"
-date: 2026-10-16
-lastmod: 2026-10-26
-url: "/projects/seres-termicos/guia-fisica/"
-description: "Las 52 ecuaciones, los balances y los límites de los modelos hasta V4.6. Documento de profundización del recorrido didáctico."
-draft: false
-math: true
-ShowToc: true
-TocOpen: false
-tags: ["física", "simulación", "Seres Térmicos"]
-build:
-  list: never
----
-
-*Modelos implementados hasta V4.6 y propuesta de una edición visual para redes.*
-
-Documento de trabajo para Luciano Lamaita. Corte de revisión física: 16 de octubre de 2026. Edición para el sitio preparada el 26 de octubre de 2026.
-
-[Volver al recorrido de Seres Térmicos](/projects/seres-termicos/) · [Abrir el Prólogo](/simus/seres-termicos/v00-contacto-termico.html) · [Edición en GitHub](https://github.com/lemeit/simus/blob/main/seres-termicos/guia-fisica-cronologica-seres-termicos.md)
++++
+title = "Ecuaciones, balances y límites"
+description = "La guía técnica de 52 ecuaciones, conservada como anexo de profundización."
+url = "/projects/seres-termicos/guia-fisica/"
+date = "2026-10-26"
+lastmod = "2026-10-26"
+draft = false
+math = true
+ShowToc = false
+layout = "seres-libro"
+book_id = "seres-termicos"
+book_order = 28
+book_part = "anexos"
+book_part_title = "Anexos y taller"
+book_label = "Anexo D"
+[build]
+list = "never"
++++
 
 El proyecto parte de una imagen literaria de Borges y Guerrero y construye distintas maneras de representar cuerpos hechos de diferencias de temperatura. Esta guía explica qué calcula cada simulador, cómo cambió el modelo y qué límites debe tener su interpretación. La versión actual permite observar intercambio térmico, reservas finitas y una respuesta de control ante amenazas externas; esos mecanismos están programados y no constituyen una demostración de vida emergente.
 
@@ -25,39 +23,9 @@ La base documental principal es el README de la raíz del repositorio simus, con
 
 La numeración v01 a v08 y la serie V4.1 a V4.6 pertenecen a etapas y ramas distintas. v04-grayscott no es V4.4. La cronología que sigue respeta el recorrido de versiones recuperado; no atribuye fechas de creación que no puedan confirmarse con un historial de cambios.
 
-## Nombres del relato
+## Identificadores de las versiones
 
-Los nombres públicos siguen un relato. Los nombres de archivo y códigos de versión se conservan como identificadores técnicos: no cambian las rutas, las ecuaciones ni la cronología del desarrollo. Los números de los capítulos de esta guía son secciones técnicas, no actos del relato.
-
-| Lugar en el relato | Nombre público | Archivo técnico |
-| --- | --- | --- |
-| Prólogo | El primer encuentro | `v00-contacto-termico.html` |
-| Acto I | El calor deja una huella | `v01-calor-capacidad.html` |
-| Acto II | La energía cruza la frontera | `v02-primera-ley.html` |
-| Acto III | La dirección del cambio | `v03-entropia.html` |
-| Acto IV | El límite del frío | `v04-tercera-ley.html` |
-| Acto V | Una pendiente conduce calor | `v05-conduccion-fourier.html` |
-| Acto VI | El calor recorre una línea | `v06-difusion-1d.html` |
-| Acto VII | La línea se vuelve superficie | `v07-difusion-2d.html` |
-| Acto VIII | El calor habita un volumen | `v08-difusion-3d.html` |
-| Interludio | Una recta de temperaturas | `v00-temperatura.html` |
-| Acto IX · Escena I | El campo que disuelve | `index.html` |
-| Acto IX · Escena II | Seguir el gradiente | `v02-gradiente.html` |
-| Interludio técnico | Hacer visible un campo | `v03-raymarching.html` |
-| Acto X · Escena I | Las manchas encuentran una forma | `v04-grayscott.html` |
-| Acto X · Escena II | Las ondas recorren el medio | `v05-fhn.html` |
-| Acto XI | Contar a los individuos | `v06-ciclovida.html` |
-| Acto XII | Un bestiario de calor | `bestiario.html` |
-| Acto XIII · Escena I | El mundo que los contiene | `v07-3d.html` |
-| Acto XIII · Escena II | La huella del tiempo | `v08-espaciotiempo.html` |
-| Acto XIV · Escena I | El primer volumen térmico | `seres_termicos_V4_1.html` |
-| Acto XIV · Escena II | Las formas del campo | `seres_termicos_V4_2.html` |
-| Acto XIV · Escena III | Una ventana al campo | `seres_termicos_V4_2_1.html` |
-| Acto XIV · Escena IV | Frío y fuego articulados | `seres_termicos_V4_3.html` |
-| Acto XIV · Escena V | Nacer y extinguirse | `seres_termicos_V4_4.html` |
-| Acto XIV · Escena VI | Mirar sin halos | `seres_termicos_V4_5.html` |
-| Acto XIV · Escena VII | Resistir hasta agotarse | `seres_termicos_V4_6.html` |
-| Taller técnico | Comprobar la ventana tridimensional | `test_3D.html` |
+La numeración de archivos identifica ramas históricas, no los capítulos del libro. El [mapa de versiones](/projects/seres-termicos/libro/versiones/) permite localizar cada archivo dentro del índice. Las secciones numeradas 1–16 que siguen pertenecen a este anexo técnico.
 
 ## Cómo leer la guía
 
@@ -171,7 +139,7 @@ $$
 
 Una gaussiana representa el aporte de un agente. σᵢ controla el ancho y Aᵢ puede ser positivo o negativo. Es una fuente impuesta: no prueba la existencia de un cuerpo material que conserve la energía que emite.
 
-index.html usa una grilla 220 × 160, coeficiente de stencil 0.22, amortiguación multiplicativa 0.994 y tres pasos por cuadro. Sus cinco agentes se trasladan por velocidades prescritas, rebotan y modulan sus fuentes con una sinusoide. La implementación copia celdas vecinas en el borde para aproximar flujo nulo. Las fuentes se acumulan sobre un campo persistente.
+El archivo v01-campo.html (index.html en el repositorio original) usa una grilla 220 × 160, coeficiente de stencil 0.22, amortiguación multiplicativa 0.994 y tres pasos por cuadro. Sus cinco agentes se trasladan por velocidades prescritas, rebotan y modulan sus fuentes con una sinusoide. La implementación copia celdas vecinas en el borde para aproximar flujo nulo. Las fuentes se acumulan sobre un campo persistente.
 
 **Ecuación (09)**
 

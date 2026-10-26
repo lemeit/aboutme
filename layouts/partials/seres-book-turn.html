@@ -1,0 +1,7 @@
+{{ $before := where .pages "Params.book_order" "lt" .order }}
+{{ $after := where .pages "Params.book_order" "gt" .order }}
+<nav class="thermal-book-turn" aria-label="Pasar de página: navegación {{ .position }}">
+  {{ range last 1 $before }}<a class="thermal-book-prev" rel="prev" href="{{ .RelPermalink }}"><span>← Anterior</span>{{ .Title }}</a>{{ end }}
+  <a class="thermal-book-index-link" href="{{ (index .pages 0).RelPermalink }}">Índice</a>
+  {{ range first 1 $after }}<a class="thermal-book-next" rel="next" href="{{ .RelPermalink }}"><span>Siguiente →</span>{{ .Title }}</a>{{ end }}
+</nav>

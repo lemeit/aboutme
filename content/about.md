@@ -2,7 +2,7 @@
 title = 'Sobre mí'
 description = 'Luciano Lamaita: ingeniería química, enseñanza de ciencias y proyectos de tecnología aplicada.'
 layout = 'profile'
-profileLabel = 'Ingeniero químico y profesor de física y química · Saladillo, Buenos Aires'
+profileLabel = 'Ingeniero químico · Profesor de física y química · Saladillo, Buenos Aires'
 lastmod = '2026-10-25'
 hideMeta = true
 draft = false

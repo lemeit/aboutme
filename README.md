@@ -1,6 +1,6 @@
 # profe.lemeit.ar — Sitio personal de Luciano Lamaita
 
-Sitio personal de **Prof. Ing. Luciano Lamaita** — docente de Física en Saladillo, Buenos Aires.
+Sitio personal de **Prof. Ing. Luciano Lamaita** — profesor de física en Saladillo, Buenos Aires.
 Reúne la traducción y adaptación al español de las notas de Jeff Bigler, apuntes de clase y proyectos técnicos.
 
 🌐 **[profe.lemeit.ar](https://profe.lemeit.ar)**

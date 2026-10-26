@@ -189,7 +189,7 @@ La sección **Herramientas Digitales** (`/notes/herramientas/`) incluye guías d
 | `layouts/notes/list.html` | Listado de secciones con logos, weight, bloque Conceptos solo en `/notes/` |
 | `layouts/partials/home_info.html` | Home con últimas 4 notas ordenadas por `lastmod` |
 | `hugo.toml` | Locale `es-AR`, fechas `DD/MM/YYYY`, lastmod desde git |
-| `static/favicon.svg` | Favicon — letra L serif naranja |
+| `static/favicon.svg` | Favicon — L caligráfica naranja; [identidad y variantes](docs/identidad-lemeit.md) |
 | `static/images/logos/` | Logos institucionales |
 | `static/images/diagramas/` | Capturas del libro de Bigler |
 

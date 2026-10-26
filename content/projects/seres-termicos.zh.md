@@ -6,6 +6,10 @@ lastmod = '2026-10-25'
 draft = false
 +++
 
+本项目统一采用序章与第一至第十四幕的叙事名称。文件名和版本号仅作技术标识；参见[名称对照表](/projects/seres-termicos/denominaciones/)。入门[可视化课程](/simus/seres-termicos/termodinamica.html)目前使用西班牙语。
+
+
+
 **热生物（Seres Térmicos）**通过计算模型探索一个文学意象：Jorge Luis Borges 与 Margarita Guerrero 在 *El libro de los seres imaginarios*（1957 年）中描述的热生物。
 
 项目探讨冷热图样如何让人联想到身体、行为及其所处的世界。这些是探索性的数学模型，并不是热生物真实存在的实验证据。

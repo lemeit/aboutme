@@ -1,5 +1,5 @@
 +++
-title = 'v08：时空'
+title = "第十三幕 第二场 — 时间的痕迹"
 description = '将热场的近期历史表示为体积。'
 weight = 0
 lastmod = '2026-10-25'

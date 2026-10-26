@@ -1,5 +1,5 @@
 +++
-title = 'v07：球形宇宙'
+title = "第十三幕 第一场 — 容纳它们的世界"
 description = '具有外部与内部视角的三维热场。'
 weight = 0
 lastmod = '2026-10-25'

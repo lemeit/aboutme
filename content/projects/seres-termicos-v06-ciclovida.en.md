@@ -1,5 +1,5 @@
 +++
-title = "v06 — Life cycle"
+title = "Act XI — Counting individuals"
 description = "Individual energy budgets, births and deaths in a thermal field."
 weight = 0
 lastmod = '2026-10-25'

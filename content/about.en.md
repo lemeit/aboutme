@@ -2,13 +2,13 @@
 title = 'About me'
 description = 'Luciano Lamaita: chemical engineering, science education and applied technology projects.'
 layout = 'profile'
-profileLabel = 'Chemical engineer and physics and chemistry teacher · Saladillo, Argentina'
-lastmod = '2026-10-25'
+profileLabel = 'Chemical engineer · Physics and chemistry teacher · Saladillo, Argentina'
+lastmod = '2026-10-26'
 hideMeta = true
 draft = false
 +++
 
-Hi, I'm Luciano. I am a chemical engineer and physics and chemistry teacher based in Saladillo, Buenos Aires, Argentina. I'm also a father. I am interested in the natural sciences, technology and education.
+Hi, I'm Luciano. I am a chemical engineer and a physics and chemistry teacher. I live with my family in Saladillo, Buenos Aires, Argentina. I am a father with an interest in the natural sciences, technology and education.
 
 This site brings together my educational resources and projects applying technology to environmental monitoring, scientific simulation and territorial management. It is a place to share tools, explore ideas and connect teaching with the problems I work on.
 

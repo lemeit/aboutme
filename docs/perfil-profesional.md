@@ -37,3 +37,7 @@ Ejecutar `hugo --minify`; comprobar navegación, anclas, compatibilidad de `/cv/
 ## Revisión v03 — docencia y publicaciones
 
 Los tres resúmenes (ES, EN y ZH) incluyen docencia de física y química en competencias, títulos académicos traducidos y las tres publicaciones científicas completas, con enlaces DOI. Las referencias corrigen XANES, el orden de autoría, Mineli y los rangos de páginas según los registros editoriales. Se mantienen dos páginas, las rutas estables y los datos de contacto públicos.
+
+## Revisión v04 — jerarquía del lateral
+
+En ES, EN y ZH, la formación académica pasa a la primera página después del contacto y los enlaces. Las competencias se presentan como ítems con viñetas y sangría francesa. Herramientas e idiomas pasan a la segunda página, junto a capacitación y redes. Se mantienen dos páginas, las tres publicaciones y los datos de contacto públicos. El código de descarga y del pie usa v04.

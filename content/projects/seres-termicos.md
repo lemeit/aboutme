@@ -1,14 +1,14 @@
 +++
 title = 'Seres Térmicos'
 date = '2026-09-25'
-lastmod = '2026-09-25'
+lastmod = '2026-10-26'
 weight = 10
 draft = false
 math = true
 ShowToc = true
 TocOpen = true
 tags = ['física', 'simulación', 'WebGL2', 'Canvas2D', 'Borges', 'visualización', 'difusión']
-description = 'Laboratorio de hipótesis físicas inspirado en el texto de Borges: de la ecuación del calor a los organismos articulados y los worldtubes. Nueve simulaciones en cinco líneas, documentadas cronológicamente con toda la física detrás.'
+description = 'Recorrido desde una recta de temperaturas para secundaria hasta campos, patrones y organismos activos. Versión 00 interactiva y distinción entre física, hipótesis y visualización.'
 +++
 
 > "cada hombre, cada ser, era un organismo hecho de temperaturas cambiantes.
@@ -27,8 +27,44 @@ La pregunta que guía este proyecto:
 > ¿Podemos convertir esa metáfora en un sistema dinámico computacional?
 > ¿Qué aspecto tendría un organismo cuya única realidad fuera su estado térmico?
 
-Lo que sigue es el laboratorio en orden cronológico: nueve simulaciones, cinco líneas,
-cada una con su física completa. Cada respuesta dejó abierta la pregunta de la siguiente.
+El proyecto tiene dos recorridos: **el orden para aprender** y **la historia de los modelos**. Para empezar no hace falta saber derivadas ni programar. Primero leemos una temperatura, después estudiamos cómo cambia y recién entonces agregamos campos e individuos. Las versiones históricas se conservan para comparar hipótesis; no son escalones que haya que entender todos a la vez.
+
+## Paso 00 — Dibujar una temperatura
+
+Imaginá una barra homogénea de un metro: mantenemos el extremo izquierdo a 60 °C y el derecho a 20 °C. Una vez estabilizada, ¿qué temperatura hay en el medio?
+
+En la gráfica, **X es la posición en metros** y **Y es la temperatura en grados Celsius**. Y no es otra dirección del espacio. La curva tampoco es la forma de la barra: su altura representa el valor de un termómetro en cada lugar.
+
+La primera ecuación es una recta conocida de matemática:
+
+$$
+T(x)=T_{izq}+\left(T_{der}-T_{izq}\right)\frac{x}{L},\qquad L=1\,\mathrm{m}
+$$
+
+Con los valores iniciales, al escribir x en metros y T en °C, queda **T(x) = 60 − 40x**. En x = 0,5 m obtenemos 40 °C. El coeficiente −40 tiene unidades °C/m: indica cuánto disminuye la temperatura por cada metro.
+
+{{< sim src="/simus/seres-termicos/v00-temperatura.html" title="00 — Una recta de temperaturas" height="1050" >}}
+
+[Abrir la versión 00 en una pestaña propia](/simus/seres-termicos/v00-temperatura.html). En el celular, la pestaña propia facilita ver la gráfica y sus controles.
+
+**Probá:** igualar los extremos, invertirlos y anticipar la temperatura del punto medio antes de consultar la tabla. ¿Cuándo la recta queda horizontal? ¿Hacia qué lado se conduce el calor?
+
+**Supuestos del modelo:** barra homogénea, sección constante, sin fuentes internas ni pérdidas laterales, extremos sostenidos a temperatura fija. Se calcula directamente el perfil estacionario; no se simula cómo llega a él. Si los extremos tienen temperaturas distintas, el calor sigue fluyendo del caliente al frío aunque el perfil permanezca fijo. No es el equilibrio de una barra aislada.
+
+### El camino de aprendizaje
+
+| Paso | Pregunta | Qué se agrega |
+| --- | --- | --- |
+| **00 · disponible** | ¿Cómo leo T en una gráfica? | Posición, temperatura, recta y tabla. |
+| Próxima etapa didáctica · propuesta | ¿Cómo llega la barra a ese perfil? | Tiempo e intercambio entre vecinos en una dimensión. Aún no tiene simulador específico. |
+| Campo en una superficie · rama histórica v01 | ¿Qué temperatura hay en cada lugar de un plano? | Dos coordenadas espaciales; el color representa T. La versión histórica ya incorpora fuentes móviles. |
+| Gradiente · v02 | ¿Cómo responde un agente al campo? | Regla de movimiento elegida por el modelo. |
+| Patrones · v04 y v05 | ¿Qué cambia al acoplar dos campos? | Reacción-difusión o excitación; las variables dejan de ser temperatura. |
+| Individuos y anatomía · v06, B1 y serie V4 | ¿Qué necesita un cuerpo para sostenerse? | Reservas, órganos, reglas de ciclo vital y control. |
+
+La [guía física y cronológica completa](/projects/seres-termicos/guia-fisica/) reúne las 52 ecuaciones y los límites de cada modelo. Podés dejarla para después de explorar los primeros pasos.
+
+El recorrido que sigue documenta esas ramas. **Un patrón no demuestra vida biológica; una regla de conducta programada tampoco se deduce de la ley de Fourier.**
 
 ---
 
@@ -36,19 +72,23 @@ cada una con su física completa. Cada respuesta dejó abierta la pregunta de la
 
 El primer intento usa la **ecuación del calor**:
 
- $$\frac{\partial T}{\partial t} = \alpha \nabla^2 T$$ 
-Esta ecuación describe cómo se difunde el calor en un medio. Es elegante y correcta para
-describir difusión, pero tiene un problema fundamental: **es lineal**. Todo sistema regido
-por ella evoluciona inevitablemente hacia el equilibrio térmico. Las estructuras se
-disuelven. No puede haber organismos, porque no hay nada que los mantenga lejos del
-equilibrio.
 
-**v01 — el campo**: seres como fuentes gaussianas sobre esa ecuación. Nacen, iluminan su
-entorno y se disuelven. La hipótesis mínima, y su respuesta es un no elegante.
+$$
+\frac{\partial T}{\partial t} = \alpha \nabla^2 T
+$$
+
+Esta ecuación describe cómo se difunde el calor en un medio. Es elegante y correcta para
+describir difusión. Sin fuentes y con condiciones de borde adecuadas, las diferencias de temperatura se suavizan. Con bordes aislantes se alcanza una temperatura uniforme; con temperaturas impuestas puede mantenerse un perfil no uniforme, como en la versión 00. La difusión pasiva por sí sola no define metabolismo, reproducción ni organismos.
+
+**v01 — el campo**: seres como fuentes gaussianas sobre esa ecuación. Son agentes y fuentes prescritos: se mueven e intercambian aportes con un campo persistente. Esta versión no implementa un ciclo vital autónomo.
 
 **v02 — gradiente** acopla los seres al campo: leen $\nabla T$ y responden.
 
- $$\vec{F}_i = -\text{type}_i \cdot k \cdot \nabla T(\vec{x}_i)$$ 
+
+$$
+\vec{F}_i = -\text{type}_i \cdot k \cdot \nabla T(\vec{x}_i)
+$$
+
 Los calientes huyen del gradiente, los fríos lo siguen: se persiguen a través del medio
 que ellos mismos calientan y enfrían. El movimiento es más interesante, pero los "seres"
 siguen siendo **objetos programados** en un campo pasivo. No emergen. No se reproducen.
@@ -67,14 +107,14 @@ equilibrio termodinámico pueden **auto-organizarse**: mantener estructuras orde
 consumiendo energía del entorno. Llamó a estas estructuras *disipativas*.
 
 Ejemplos reales: las células de Bénard (convección), el oscilador de Belousov-Zhabotinsky,
-y —en última instancia— los seres vivos. La condición necesaria es:
+y —en última instancia— los seres vivos. Un balance que ayuda a describirlos es:
 
- $$\sigma_{\text{interna}} < \dot{S}_{\text{exportada}}$$ 
-El sistema genera entropía internamente, pero la exporta al entorno más rápido de lo que
-la acumula. Mientras eso ocurra, la estructura existe. Cuando deja de ocurrir, se disuelve.
+$$
+\frac{dS}{dt}=\dot S_e+\dot S_i,\qquad \dot S_i\geq0
+$$
+El término de intercambio con el entorno es $\dot S_e$ y la producción interna es $\dot S_i$. En un estado estacionario la entropía del sistema no cambia: el intercambio compensa la producción interna. Este balance no es un criterio suficiente para identificar vida.
 
-Para modelar esto computacionalmente se necesitan tres ingredientes que la ecuación del
-calor no tiene:
+La rama de reacción-difusión que exploramos a continuación usa tres ingredientes propios de ese modelo; no son requisitos universales para todo sistema abierto:
 
 1. **No linealidad** — términos como $uv^2$ (autocatálisis)
 2. **Dos campos acoplados** — un activador y un inhibidor
@@ -82,27 +122,35 @@ calor no tiene:
 
 ---
 
-## Acto II — La vida que emerge: Gray-Scott (1984)
+## Acto II — Patrones de reacción-difusión: Gray–Scott
 
 Las ecuaciones de reacción-difusión de Gray-Scott son:
 
- $$\frac{\partial u}{\partial t} = D_u \nabla^2 u \;-\; uv^2 \;+\; F(1-u)$$ 
- $$\frac{\partial v}{\partial t} = D_v \nabla^2 v \;+\; uv^2 \;-\; (F+k)\,v$$ 
+
+$$
+\frac{\partial u}{\partial t} = D_u \nabla^2 u \;-\; uv^2 \;+\; F(1-u)
+$$
+
+
+$$
+\frac{\partial v}{\partial t} = D_v \nabla^2 v \;+\; uv^2 \;-\; (F+k)\,v
+$$
+
 ### Variables
 
 | Variable | Interpretación física | Interpretación poética |
 |----------|----------------------|----------------------|
 | $u(x,y,t)$ | Concentración del sustrato (alimento) | El vacío cósmico, fuente de energía |
-| $v(x,y,t)$ | Concentración del producto (organismo) | El ser térmico |
+| $v(x,y,t)$ | Concentración del producto autocatalítico | Analogía visual del ser; no es temperatura |
 
 ### Términos
 
 | Término | Ecuación | Significado |
 |---------|----------|-------------|
 | $D_u \nabla^2 u$ | en $\partial u/\partial t$ | El sustrato difunde en el espacio |
-| $D_v \nabla^2 v$ | en $\partial v/\partial t$ | El organismo difunde (se mueve) |
+| $D_v \nabla^2 v$ | en $\partial v/\partial t$ | La concentración de producto difunde; no es locomoción de un individuo |
 | $-uv^2$ | en $\partial u/\partial t$ | El organismo *consume* sustrato |
-| $+uv^2$ | en $\partial v/\partial t$ | El organismo se *reproduce* usando sustrato (autocatálisis) |
+| $+uv^2$ | en $\partial v/\partial t$ | Se forma producto por autocatálisis; una división de manchas puede aparecer según el régimen |
 | $F(1-u)$ | en $\partial u/\partial t$ | El sustrato se *repone* desde el exterior (feed rate) |
 | $-(F+k)v$ | en $\partial v/\partial t$ | El organismo *muere* a tasa $k$ |
 
@@ -119,22 +167,15 @@ Si no hay alimento, $v$ desaparece. Este es el mecanismo de competencia y extinc
 | 0.037 | 0.060 | Auto-replicación caótica |
 | 0.060 | 0.062 | Laberintos, ondas espirales |
 
-No hay seres "programados". Con la misma ecuación y distintos parámetros emergen organismos
-completamente diferentes.
+Con las mismas ecuaciones y distintos parámetros pueden aparecer manchas, filamentos o colapso. Son patrones de concentración, no organismos biológicos. El resultado depende también de la semilla, la malla y la resolución numérica.
 
 ▶ [correr v04 — Gray-Scott](/simus/seres-termicos/v04-grayscott.html) · [correr v05 — FitzHugh-Nagumo](/simus/seres-termicos/v05-fhn.html)
 
-### Ciclo de vida emergente
+### Crecimiento, división y desaparición de patrones
 
-Con Gray-Scott los seres tienen un ciclo de vida real — **emergente**: ninguna de estas
-etapas está programada, todas salen de $uv^2$ y de la competencia entre difusión y reacción:
+En algunos regímenes, una mancha puede crecer, dividirse o desaparecer. Llamar a esas acciones “nacimiento” o “muerte” es una analogía. No todas las configuraciones recorren ese ciclo ni existe necesariamente una identidad individual de cada mancha.
 
-- **NACIMIENTO** — fluctuación local de $v$ supera un umbral (perturbación inicial o espontánea)
-- **CRECIMIENTO** — $v$ se expande consumiendo $u$ en su entorno; la velocidad depende de la disponibilidad de alimento
-- **REPRODUCCIÓN** — cuando $v$ crece demasiado, la zona central se agota → la mancha se divide en dos (mitosis química)
-- **COMPETENCIA** — dos manchas compiten por el $u$ disponible; si el espacio es limitado, una puede absorber o eliminar a la otra
-- **MUERTE** — cuando el $u$ local cae a cero, $v$ no puede sostenerse; la mancha se disuelve → campo uniforme $u=1,\; v=0$ 
-- **EXTINCIÓN** — si $k$ es demasiado alto o $F$ demasiado bajo, todas las manchas mueren y el sistema llega al equilibrio
+El estado uniforme $u=1$, $v=0$ es una solución exacta. Sin una semilla o perturbación que introduzca producto, la dinámica determinista no lo genera de la nada, porque $uv^2=0$. La difusión redistribuye concentración; la reacción transforma las especies y los términos externos mantienen abierto el sistema.
 
 ### El límite conceptual
 
@@ -152,7 +193,7 @@ Pero tanto Gray-Scott como FitzHugh-Nagumo tienen un problema conceptual respect
 
 - **Gray-Scott** puede estabilizarse. Las manchas alcanzan un estado estático y se detienen.
   El campo es colectivo: no hay individuos distinguibles.
-- **FitzHugh-Nagumo** nunca se detiene, pero produce baldosas infinitas de espirales.
+- **FitzHugh–Nagumo** puede producir ondas y espirales en ciertos parámetros; también admite otros regímenes.
   Tampoco hay individuos: es una *multitud* uniforme, no un conjunto articulado de seres.
 
 Borges no describe una textura. Describe *seres*: entidades que nacen, existen brevemente
@@ -166,18 +207,32 @@ elemento puede *contarse*. Eso requiere un modelo diferente.
 En lugar de una PDE global que genera patrones, cada ser tiene su propia variable interna
 de energía.
 
-**Campo de fondo** (vacío cósmico con seres como fuentes):
+**Campo de fondo** (medio térmico modelado, con agentes como fuentes):
 
- $$\frac{\partial T}{\partial t} = \alpha \nabla^2 T \;-\; \lambda T \;+\; \sum_i S_i(x,y)$$ 
-- $\lambda T$: el vacío vuelve a cero sin seres que lo mantengan
+Aquí T es una variable relativa a la referencia ambiental. La palabra “vacío” pertenece a la metáfora visual: la difusión presupone un medio, no conducción por un vacío material.
+
+
+$$
+\frac{\partial T}{\partial t} = \alpha \nabla^2 T \;-\; \lambda T \;+\; \sum_i S_i(x,y)
+$$
+
+- $-\lambda T$: relajación del campo hacia la referencia por intercambio con un ambiente externo
 - $S_i$: cada ser inyecta calor/frío proporcional a su energía
 
 **Fuente del ser $i$** (su "cuerpo" térmico):
 
- $$S_i(x,y) = \underset{\text{amplitud}}{\frac{E_i}{E_0}} \cdot A \cdot \underset{\text{cuerpo gaussiano}}{e^{-\frac{(x-x_i)^2+(y-y_i)^2}{2\sigma_i^2}}} \cdot \underset{\text{pulso vital}}{\left[1 + a\sin(\omega_i t + \phi_i)\right]}$$ 
+
+$$
+S_i(x,y) = \underset{\text{amplitud}}{\frac{E_i}{E_0}} \cdot A \cdot \underset{\text{cuerpo gaussiano}}{e^{-\frac{(x-x_i)^2+(y-y_i)^2}{2\sigma_i^2}}} \cdot \underset{\text{pulso vital}}{\left[1 + a\sin(\omega_i t + \phi_i)\right]}
+$$
+
 **Drenaje energético** (metabolismo constante):
 
- $$\frac{dE_i}{dt} = -\mu$$ 
+
+$$
+\frac{dE_i}{dt} = -\mu
+$$
+
 La energía se consume simplemente por existir. No hay forma de recargarla desde afuera:
 cada ser tiene un tiempo de vida acotado desde el nacimiento.
 
@@ -186,11 +241,11 @@ cada ser tiene un tiempo de vida acotado desde el nacimiento.
 A diferencia del ciclo emergente de Gray-Scott, estas etapas **están programadas** como
 reglas sobre la energía individual:
 
-- **NACIMIENTO** — fluctuación aleatoria en el vacío → nuevo ser con $E_i = E_0$ 
+- **NACIMIENTO** — evento aleatorio programado → nuevo ser con $E_i = E_0$ 
 - **EXISTENCIA** — el ser inyecta su gaussiana térmica en el campo $T$; su "cuerpo" es visible mientras $E_i > 0$ 
 - **METABOLISMO** — $E_i$ decrece a tasa $\mu$; el ser pulsa, se mueve por deriva + ruido
 - **REPRODUCCIÓN** — si $E_i > 2E_0$ → se divide en dos seres (el campo recibe dos cuerpos más pequeños)
-- **MUERTE** — cuando $E_i \leq 0$ → el ser se elimina; deja de inyectar calor → su cuerpo se disipa (el vacío absorbe el calor residual por $\lambda T$)
+- **MUERTE** — cuando $E_i \leq 0$ → el ser se elimina; deja de inyectar calor → su cuerpo se disipa (el modelo relaja el campo hacia la referencia mediante el término $-\lambda T$)
 
 ### Diferencia fundamental con los enfoques anteriores
 
@@ -198,8 +253,8 @@ reglas sobre la energía individual:
 |-----------|-----------------|-----------|
 | Individuos distinguibles | No | Sí |
 | Ciclo de vida programado | No (emerge) | Sí (explícito) |
-| Puede haber 0 seres | No | Sí (vacío total) |
-| Puede haber 3 seres | No (mínimo una textura) | Sí |
+| Estado sin patrones o individuos | Sí, según régimen e inicialización | Sí, según las reglas de nacimiento |
+| Conteo de individuos | Requiere definir cómo identificar manchas | Explícito por construcción |
 | "Conjunto articulado" de Borges | No | Sí |
 
 La diferencia conceptual: Gray-Scott y FHN producen *campo* que se auto-organiza.
@@ -229,9 +284,13 @@ B1 es la línea que explora esa anatomía.
 
 Cada ser es una cadena de $N$ órganos con temperaturas $T_i$:
 
- $$\frac{dT_i}{dt} = \underset{\text{latido}}{A_i\sin(\omega_i t+\varphi_i)} + \underset{\text{absorción}}{\kappa\,T_{\text{campo}}(x_i,y_i)} + \underset{\text{fuego innato}}{k_r(T_{\text{set}}-T_i)} - \underset{\text{disipación}}{\lambda\,T_i} + \underset{\text{difusión interna}}{D\,(T_{i-1}+T_{i+1}-2T_i)}$$ 
+
+$$
+\frac{dT_i}{dt} = \underset{\text{latido}}{A_i\sin(\omega_i t+\varphi_i)} + \underset{\text{absorción}}{\kappa\,T_{\text{campo}}(x_i,y_i)} + \underset{\text{fuego innato}}{k_r(T_{\text{set}}-T_i)} - \underset{\text{disipación}}{\lambda\,T_i} + \underset{\text{difusión interna}}{D\,(T_{i-1}+T_{i+1}-2T_i)}
+$$
+
 - Las frecuencias $\omega_i$ se sortean en $[0.10, 0.40]$ Hz: casi siempre inconmensurables
-  entre sí → el patrón colectivo es cuasi-periódico (flujo toral) y no se repite nunca.
+  entre sí. La combinación puede dar oscilaciones complejas; con precisión finita y acoplamientos no se justifica afirmar que jamás se repetirá.
 - El término $D$ es el laplaciano 1D: el calor fluye por el cuerpo como por una varilla.
   Una onda térmica nacida en la cabeza recorre hasta la cola: eso es la *articulación*.
 - $\kappa$ acopla el cuerpo al medio y un splat gaussiano devuelve temperatura al campo:
@@ -243,7 +302,11 @@ A diferencia del Enfoque B (drenaje constante $-\mu$), aquí cada ser relaja hac
 naturaleza térmica propia, $T_{\text{set}}$. En campo neutro, la ODE del cuerpo tiene un
 único equilibrio:
 
- $$T^* = \frac{k_r}{k_r+\lambda}\,T_{\text{set}} \approx 0.86\,T_{\text{set}} \qquad (k_r = 0.5,\; \lambda = 0.08)$$ 
+
+$$
+T^* = \frac{k_r}{k_r+\lambda}\,T_{\text{set}} \approx 0.86\,T_{\text{set}} \qquad (k_r = 0.5,\; \lambda = 0.08)
+$$
+
 El nivel del bestiario **no está programado**: se lee de la temperatura media $\bar T$ del cuerpo.
 
 | $\bar T$ | Nivel |
@@ -267,7 +330,11 @@ coreografíe. Solo Fourier.
 
 ### Termotaxis: conducta sin conducta
 
- $$\vec{F} = v\,\sigma(\bar T)\,\nabla T, \qquad \sigma(\bar T) = 1-2\,S(\bar T)$$ 
+
+$$
+\vec{F} = v\,\sigma(\bar T)\,\nabla T, \qquad \sigma(\bar T) = 1-2\,S(\bar T)
+$$
+
 donde $S$ es un smoothstep: frío ($\sigma=+1$) asciende el gradiente térmico; caliente
 ($\sigma=-1$) lo evita. Es la estructura de la quimiotaxis bacteriana (Berg) con temperatura
 en lugar de nutriente. El cursor no existe en el código de los seres: dibujar una brasa
@@ -318,7 +385,11 @@ física, dos ontologías. **Tab** pasa al ser siguiente.
 Esta es la visualización más borgiana: se acumula la **historia completa** del campo 2D
 como si el tiempo fuera una tercera dimensión espacial:
 
- $$\mathcal{T}(x, y, \tau) = T(x, y, t_0 + \tau \cdot \Delta T)$$ 
+
+$$
+\mathcal{T}(x, y, \tau) = T(x, y, t_0 + \tau \cdot \Delta T)
+$$
+
 Un ser que vive $F$ frames no es un punto que se desplaza: es un **tubo** de longitud $F$ en el eje temporal. El nacimiento es el inicio del tubo, la muerte su fin, la reproducción
 una cúspide donde el tubo se bifurca. En esta representación los seres no "se mueven": su
 vida entera es una forma geométrica tridimensional — formas en el tiempo, no en el espacio.
@@ -337,7 +408,7 @@ vida entera es una forma geométrica tridimensional — formas en el tiempo, no 
 | "calores y fríos articulados" | Seres de tipo +1 y -1 con campo $T \in \mathbb{R}$; en B1, cadena articulada de órganos |
 | "ciego y sordo e impalpable" | No hay colisiones sólidas; el ser ES su distribución en el campo |
 | "conjunto" (contable, no textura) | Enfoque B: individuos con índice, $N$ varía entre 0 y $N_{\max}$ |
-| El ser que nace de la nada | $p_{\text{birth}}$ por frame: fluctuación espontánea del vacío |
+| El ser que nace de la nada | $p_{\text{birth}}$ por frame: regla aleatoria de nacimiento; no una fluctuación cuántica |
 | El ser que se disuelve al morir | Cuando $E_i \leq 0$: la gaussiana desaparece, $\lambda T$ absorbe el calor residual |
 | La reproducción como división | $E_i > r \cdot E_0 \Rightarrow$ bifurcación: dos gaussianas a partir de una |
 | "época saturnina" (tiempo primordial) | La simulación corre sin tiempo discreto externo; solo el campo evoluciona |
@@ -354,41 +425,81 @@ vida entera es una forma geométrica tridimensional — formas en el tiempo, no 
 
 ### El laplaciano discreto (stencil de 5 puntos en 2D)
 
- $$\nabla^2 T_{i,j} \approx \frac{T_{i+1,j} + T_{i-1,j} - 2T_{i,j}}{\Delta x^2} + \frac{T_{i,j+1} + T_{i,j-1} - 2T_{i,j}}{\Delta y^2}$$ 
+
+$$
+\nabla^2 T_{i,j} \approx \frac{T_{i+1,j} + T_{i-1,j} - 2T_{i,j}}{\Delta x^2} + \frac{T_{i,j+1} + T_{i,j-1} - 2T_{i,j}}{\Delta y^2}
+$$
+
 Con $\Delta x = \Delta y = 1$ (unidades de grilla):
 
- $$\nabla^2 T_{i,j} = T_{i+1,j} + T_{i-1,j} + T_{i,j+1} + T_{i,j-1} - 4T_{i,j}$$ 
+
+$$
+\nabla^2 T_{i,j} = T_{i+1,j} + T_{i-1,j} + T_{i,j+1} + T_{i,j-1} - 4T_{i,j}
+$$
+
 En 3D el stencil tiene 7 puntos (6 vecinos + centro):
 
- $$\nabla^2 T_{i,j,k} = T_{i\pm1,j,k} + T_{i,j\pm1,k} + T_{i,j,k\pm1} - 6T_{i,j,k}$$ 
+
+$$
+\nabla^2 T_{i,j,k} = T_{i\pm1,j,k} + T_{i,j\pm1,k} + T_{i,j,k\pm1} - 6T_{i,j,k}
+$$
+
 ### El esquema numérico (Euler explícito)
 
- $$T_{i,j}^{n+1} = T_{i,j}^n + k\,\underset{\text{laplaciano discreto}}{\left(T_{i+1,j}^n + T_{i-1,j}^n + T_{i,j+1}^n + T_{i,j-1}^n - 4T_{i,j}^n\right)} - \lambda\,\Delta t \cdot T_{i,j}^n + \Delta t \cdot \sum_i S_i(i,j)$$ 
+
+$$
+T_{i,j}^{n+1} = T_{i,j}^n + k\,\underset{\text{laplaciano discreto}}{\left(T_{i+1,j}^n + T_{i-1,j}^n + T_{i,j+1}^n + T_{i,j-1}^n - 4T_{i,j}^n\right)} - \lambda\,\Delta t \cdot T_{i,j}^n + \Delta t \cdot \sum_i S_i(i,j)
+$$
+
 donde $k = \alpha \cdot \Delta t / \Delta x^2$.
 
 **Condición de estabilidad de von Neumann (2D):**
 
- $$k \leq \frac{1}{4} \quad \Rightarrow \quad \Delta t \leq \frac{\Delta x^2}{4\alpha}$$ 
+
+$$
+k \leq \frac{1}{4} \quad \Rightarrow \quad \Delta t \leq \frac{\Delta x^2}{4\alpha}
+$$
+
 **En 3D** la condición es más estricta:
 
- $$k \leq \frac{1}{6} \quad \Rightarrow \quad \Delta t \leq \frac{\Delta x^2}{6\alpha}$$ 
+
+$$
+k \leq \frac{1}{6} \quad \Rightarrow \quad \Delta t \leq \frac{\Delta x^2}{6\alpha}
+$$
+
 ### Por qué corre todo esto en un HTML
 
 Al discretizar sobre una grilla, la ecuación se convierte en **aritmética pura**. Por celda:
 4 lecturas + 4 sumas + 2 multiplicaciones = **~10 operaciones**. Con una grilla 280×200 =
 56.000 celdas a 120 pasos/segundo:
 
- $$56.000 \times 120 \times 10 \approx 67 \text{ Mflops/s}$$ 
+
+$$
+56.000 \times 120 \times 10 \approx 67 \text{ Mflops/s}
+$$
+
 Un CPU moderno hace **10.000 Mflops/s**: usamos menos del 1% de su capacidad. La dificultad
 de las EDPs vive en el análisis matemático; numéricamente son loops sobre arrays.
 
 ### Discretización de Gray-Scott
 
- $$u_{i,j}^{n+1} = u_{i,j}^n + \Delta t \left[ D_u \nabla^2 u_{i,j}^n - u_{i,j}^n (v_{i,j}^n)^2 + F(1 - u_{i,j}^n) \right]$$ 
- $$v_{i,j}^{n+1} = v_{i,j}^n + \Delta t \left[ D_v \nabla^2 v_{i,j}^n + u_{i,j}^n (v_{i,j}^n)^2 - (F+k) v_{i,j}^n \right]$$ 
+
+$$
+u_{i,j}^{n+1} = u_{i,j}^n + \Delta t \left[ D_u \nabla^2 u_{i,j}^n - u_{i,j}^n (v_{i,j}^n)^2 + F(1 - u_{i,j}^n) \right]
+$$
+
+
+$$
+v_{i,j}^{n+1} = v_{i,j}^n + \Delta t \left[ D_v \nabla^2 v_{i,j}^n + u_{i,j}^n (v_{i,j}^n)^2 - (F+k) v_{i,j}^n \right]
+$$
+
 Condición de estabilidad (von Neumann):
 
- $$\Delta t \leq \frac{\Delta x^2}{4 \max(D_u, D_v)}$$ 
+
+$$
+\Delta t \leq \frac{\Delta x^2}{4 \max(D_u, D_v)}
+$$
+
 Con $\Delta x = 1$, $D_u = 0.21$, $D_v = 0.05$: $\Delta t \leq 1.19$. Se usa $\Delta t = 1$.
 
 ### Colormap
@@ -398,18 +509,58 @@ La concentración $v \in [0, 1]$ se mapea a color: $v \approx 0$ negro/azul prof
 
 ### Ray marching volumétrico (v07)
 
-El campo 3D $T(x,y,z)$ es un objeto 4D (tres espaciales + el valor escalar). Para verlo se
+El campo $T(x,y,z)$ asigna un valor escalar a cada punto del espacio tridimensional. La temperatura no es una cuarta dimensión espacial. En v08, en cambio, el tercer eje visual representa el historial temporal de un campo 2D. Para verlo se
 usa **direct volume rendering**: por cada píxel, un rayo atraviesa el volumen y acumula
 color + opacidad según una función de transferencia, en GPU (WebGL2 fragment shader):
 
- $$T > 0: \text{rojo} \to \text{naranja} \to \text{blanco} \quad (\text{calor})$$ 
- $$T < 0: \text{azul} \to \text{teal} \to \text{cyan} \quad (\text{frío})$$ 
- $$T \approx 0: \text{transparente} \quad (\text{vacío cósmico})$$ 
+
+$$
+T > 0: \text{rojo} \to \text{naranja} \to \text{blanco} \quad (\text{calor})
+$$
+
+
+$$
+T < 0: \text{azul} \to \text{teal} \to \text{cyan} \quad (\text{frío})
+$$
+
+
+$$
+T \approx 0: \text{transparente} \quad (\text{vacío cósmico})
+$$
+
 La composición front-to-back:
 
- $$C_{\text{out}} = C_{\text{in}} + (1-\alpha_{\text{in}}) \cdot \sigma \cdot C_{\text{voxel}}$$ 
- $$\alpha_{\text{out}} = \alpha_{\text{in}} + (1-\alpha_{\text{in}}) \cdot \sigma$$ 
+
+$$
+C_{\text{out}} = C_{\text{in}} + (1-\alpha_{\text{in}}) \cdot \sigma \cdot C_{\text{voxel}}
+$$
+
+
+$$
+\alpha_{\text{out}} = \alpha_{\text{in}} + (1-\alpha_{\text{in}}) \cdot \sigma
+$$
+
 donde $\sigma$ es el coeficiente de extinción, proporcional a $|T|$.
+
+---
+
+## Serie V4 — Del campo pasivo al bestiario activo
+
+Esta serie retoma la visualización volumétrica y luego agrega cuerpos articulados. No se debe confundir **V4.4** con el archivo antiguo **v04-grayscott.html**. Las fuentes de energía, las reservas de trabajo disponible y el calor firmado del campo tienen papeles distintos.
+
+| Versión | Qué cambia | Abrir |
+| --- | --- | --- |
+| V4.1 | Base funcional con textura 3D R8; archivo histórico. | [V4.1](/simus/seres-termicos/seres_termicos_V4_1.html) |
+| V4.2 | Cinco anatomías iniciales y difusión pasiva persistente. | [V4.2](/simus/seres-termicos/seres_termicos_V4_2.html) |
+| V4.2.1 | Vista compacta y calidad automática. | [V4.2.1](/simus/seres-termicos/seres_termicos_V4_2_1.html) |
+| V4.3 | Fuentes articuladas calientes o frías, sostenidas desde el exterior. | [V4.3](/simus/seres-termicos/seres_termicos_V4_3.html) |
+| V4.4 | Intercambio conservativo, reservas individuales, ciclo vital y movimiento 3D. | [V4.4](/simus/seres-termicos/seres_termicos_V4_4.html) |
+| V4.5 | Vista simultánea de centros u órganos sin halos: mismo estado, otra representación. | [V4.5](/simus/seres-termicos/seres_termicos_V4_5.html) |
+| V4.6 | Amenazas externas y respuesta adaptativa con costes explícitos. | [V4.6](/simus/seres-termicos/seres_termicos_V4_6.html) |
+
+La defensa es una hipótesis de control programada: regulación, escape y ahorro. No aparece por aplicar difusión ni constituye una demostración de voluntad o de vida. Los puntos del recuadro representan cuerpos u órganos, no moléculas de un gas. La luminosidad y los halos ayudan a observar el campo; no son radiación térmica calculada.
+
+Para parámetros, ecuaciones y límites, consultar la [guía física y cronológica completa](/projects/seres-termicos/guia-fisica/). La versión 00 agrega ahora el punto de entrada didáctico; la futura edición V4.7 simplificada sigue siendo una propuesta.
 
 ---
 
@@ -417,6 +568,7 @@ donde $\sigma$ es el coeficiente de extinción, proporcional a $|T|$.
 
 | Línea | Archivo | Física | Desarrollo | Documentación |
 |-------|---------|--------|------------|---------------|
+| 00 | `v00-temperatura.html` | Perfil estacionario 1D: recta de temperaturas | Inicio didáctico | [correr →](/simus/seres-termicos/v00-temperatura.html) |
 | I | `v01-campo.html` | Ecuación del calor 2D, seres como fuentes gaussianas | Claude · borrador ChatGPT | [correr →](/simus/seres-termicos/v01-campo.html) |
 | I | `v02-gradiente.html` | Acoplamiento seres↔campo via ∇T | Claude · borrador ChatGPT | [correr →](/simus/seres-termicos/v02-gradiente.html) |
 | V | `v03-raymarching.html` | Ray marching volumétrico 3D (base técnica) | Claude · borrador ChatGPT | [correr →](/simus/seres-termicos/v03-raymarching.html) |

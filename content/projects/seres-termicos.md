@@ -8,7 +8,7 @@ math = true
 ShowToc = true
 TocOpen = true
 tags = ['física', 'simulación', 'WebGL2', 'Canvas2D', 'Borges', 'visualización', 'difusión']
-description = 'Recorrido desde una recta de temperaturas para secundaria hasta campos, patrones y organismos activos. Versión 00 interactiva y distinción entre física, hipótesis y visualización.'
+description = 'Desde dos cuerpos que intercambian calor hasta difusión en 3D y organismos activos: recorrido visual de termodinámica para secundaria, con animación, gráficas y ecuaciones.'
 +++
 
 > "cada hombre, cada ser, era un organismo hecho de temperaturas cambiantes.
@@ -29,38 +29,71 @@ La pregunta que guía este proyecto:
 
 El proyecto tiene dos recorridos: **el orden para aprender** y **la historia de los modelos**. Para empezar no hace falta saber derivadas ni programar. Primero leemos una temperatura, después estudiamos cómo cambia y recién entonces agregamos campos e individuos. Las versiones históricas se conservan para comparar hipótesis; no son escalones que haya que entender todos a la vez.
 
-## Paso 00 — Dibujar una temperatura
+## Paso 00 — Dos cuerpos en contacto
 
-Imaginá una barra homogénea de un metro: mantenemos el extremo izquierdo a 60 °C y el derecho a 20 °C. Una vez estabilizada, ¿qué temperatura hay en el medio?
+Antes de explorar seres y campos, observamos un intercambio de energía entre dos cuerpos. Cada uno tiene una sola temperatura: todavía no necesitamos partículas, moléculas ni coordenadas espaciales.
 
-En la gráfica, **X es la posición en metros** y **Y es la temperatura en grados Celsius**. Y no es otra dirección del espacio. La curva tampoco es la forma de la barra: su altura representa el valor de un termómetro en cada lugar.
+Uno empieza a 80 °C y otro a 20 °C. **¿Cuál se calentará? ¿A qué temperatura se acercarán? ¿Se transfiere calor igual de rápido durante todo el proceso?**
 
-La primera ecuación es una recta conocida de matemática:
+{{< sim src="/simus/seres-termicos/v00-contacto-termico.html" title="00 — Dos cuerpos en contacto: temperatura, calor y tiempo" height="1100" >}}
+
+[Abrir el experimento en una pestaña propia](/simus/seres-termicos/v00-contacto-termico.html). En el celular, la pestaña propia facilita recorrer la escena, la gráfica y los controles.
+
+### Qué muestra cada representación
+
+- **Los bloques:** A y B, con su temperatura actual. El color ayuda a leer, pero no representa radiación ni una estructura microscópica.
+- **La gráfica cartesiana:** X es tiempo en segundos; Y es temperatura en °C. Las curvas son dos termómetros que registran el mismo proceso. La línea punteada indica el equilibrio previsto si se mantiene el contacto.
+- **La flecha:** sentido de la transferencia, del cuerpo más caliente al más frío. Al separarlos se anula el intercambio; no aparece un flujo de “frío” en dirección opuesta.
+- **Los watts y joules:** la potencia indica cuánta energía pasa por segundo; el calor transferido acumula esa energía a lo largo del proceso.
+
+### Dos ecuaciones para empezar
 
 $$
-T(x)=T_{izq}+\left(T_{der}-T_{izq}\right)\frac{x}{L},\qquad L=1\,\mathrm{m}
+Q=C,Delta T,qquad C=m,c
 $$
 
-Con los valores iniciales, al escribir x en metros y T en °C, queda **T(x) = 60 − 40x**. En x = 0,5 m obtenemos 40 °C. El coeficiente −40 tiene unidades °C/m: indica cuánto disminuye la temperatura por cada metro.
+Q es el calor neto recibido, en joules. C es la capacidad térmica: energía necesaria para aumentar un grado la temperatura del cuerpo. En este modelo, sin trabajo ni cambio de fase, el calor recibido es igual al cambio de energía interna. **El cuerpo tiene energía interna; el calor es energía que se transfiere.**
 
-{{< sim src="/simus/seres-termicos/v00-temperatura.html" title="00 — Una recta de temperaturas" height="1050" >}}
+$$
+P=G,(T_A-T_B)
+$$
 
-[Abrir la versión 00 en una pestaña propia](/simus/seres-termicos/v00-temperatura.html). En el celular, la pestaña propia facilita ver la gráfica y sus controles.
+Elegimos una ley de intercambio proporcional a la diferencia de temperatura, con conductancia G constante. P es positiva de A hacia B; si B está más caliente, P es negativa y la flecha cambia de sentido. La unidad W significa J/s. Esta ley de contacto determina la rapidez; no se deduce de la ley cero.
 
-**Probá:** igualar los extremos, invertirlos y anticipar la temperatura del punto medio antes de consultar la tabla. ¿Cuándo la recta queda horizontal? ¿Hacia qué lado se conduce el calor?
+Para cuerpos con la misma capacidad térmica, 80 °C y 20 °C dan un equilibrio de 50 °C. Si B tiene el doble de masa y el mismo material, su temperatura cambia menos: el equilibrio pasa a 40 °C. Cambiar G modifica la rapidez, no ese valor final.
 
-**Supuestos del modelo:** barra homogénea, sección constante, sin fuentes internas ni pérdidas laterales, extremos sostenidos a temperatura fija. Se calcula directamente el perfil estacionario; no se simula cómo llega a él. Si los extremos tienen temperaturas distintas, el calor sigue fluyendo del caliente al frío aunque el perfil permanezca fijo. No es el equilibrio de una barra aislada.
+### Qué estamos suponiendo
+
+La pareja está aislada del ambiente. Cada cuerpo permanece uniforme internamente, con masa y calor específico constantes. No hay trabajo, fuentes externas ni cambios de fase. Lo que pierde A lo gana B: **Q_A + Q_B = 0**. La solución de contacto se calcula con su decaimiento exponencial exacto, no con una animación inventada.
+
+La igualdad exacta se alcanza como límite; el aviso “prácticamente en equilibrio” usa una diferencia menor que 0,1 °C. Los cuerpos y su color son esquemáticos, no una simulación de moléculas.
+
+La experiencia introduce equilibrio térmico y conecta con conservación de energía y dirección espontánea del intercambio. **La ley cero añade transitividad:** si dos cuerpos están, por separado, en equilibrio con un mismo termómetro, tienen la misma temperatura. No afirma qué rápido intercambian calor.
+
+### Probá antes de seguir
+
+1. Anticipá el valor final y después iniciá el contacto.
+2. Separá a los cuerpos a mitad del proceso: ¿cómo siguen las curvas?
+3. Repetí con mayor conductancia: compará el valor final y la rapidez.
+4. Duplicá la masa de B: ¿por qué ya no terminan en el promedio simple?
+5. Probá temperaturas iguales: ¿hay transferencia neta?
 
 ### El camino de aprendizaje
 
-| Paso | Pregunta | Qué se agrega |
+| Etapa | Qué vamos a mirar | Estado |
 | --- | --- | --- |
-| **00 · disponible** | ¿Cómo leo T en una gráfica? | Posición, temperatura, recta y tabla. |
-| Próxima etapa didáctica · propuesta | ¿Cómo llega la barra a ese perfil? | Tiempo e intercambio entre vecinos en una dimensión. Aún no tiene simulador específico. |
-| Campo en una superficie · rama histórica v01 | ¿Qué temperatura hay en cada lugar de un plano? | Dos coordenadas espaciales; el color representa T. La versión histórica ya incorpora fuentes móviles. |
-| Gradiente · v02 | ¿Cómo responde un agente al campo? | Regla de movimiento elegida por el modelo. |
-| Patrones · v04 y v05 | ¿Qué cambia al acoplar dos campos? | Reacción-difusión o excitación; las variables dejan de ser temperatura. |
-| Individuos y anatomía · v06, B1 y serie V4 | ¿Qué necesita un cuerpo para sostenerse? | Reservas, órganos, reglas de ciclo vital y control. |
+| **00 · Contacto y equilibrio** | Animación de dos cuerpos, T(t), calor y potencia. | Disponible arriba. |
+| 01 · Calor y capacidad térmica | Gráfica Q frente a ΔT; efecto de masa y material. | Próxima actividad propuesta. |
+| 02 · Primera ley con trabajo | ΔU = Q − W; entradas y salidas de energía. | Propuesta. |
+| 03 · Segunda ley y entropía | El mismo contacto, ahora con ΔS de cada cuerpo y del conjunto. Temperaturas en kelvin. | Propuesta. |
+| 04 · Tercera ley | Entropía cerca de 0 K, con las condiciones del modelo de material. | Propuesta. |
+| 05 · Conducción y perfiles | Temperatura frente a posición y ley de Fourier. | [Recta estacionaria disponible](/simus/seres-termicos/v00-temperatura.html); desarrollo de Fourier a ampliar. |
+| 06 · Difusión 1D y tiempo | Una barra intercambia energía entre vecinos; T(x,t). | Propuesta. |
+| 07 · Difusión 2D y tiempo | Superficie, cortes y un termómetro temporal. | Propuesta básica; v01 histórico ya añade fuentes móviles. |
+| 08 · Difusión 3D y tiempo | Volumen, cortes y evolución; T(x,y,z,t). | Propuesta básica; existen versiones volumétricas avanzadas. |
+| Puente a los Seres Térmicos | Fuentes, reservas, movimiento y órganos: qué reglas se agregan. | Ramas históricas y serie V4. |
+
+La primera versión de la [recta de temperaturas](/simus/seres-termicos/v00-temperatura.html) conserva su ruta. Es un complemento para el perfil estacionario: allí X es posición; en el contacto animado X es tiempo. Este orden de enseñanza no cambia la numeración histórica de los archivos v01–v08 ni V4.1–V4.6.
 
 La [guía física y cronológica completa](/projects/seres-termicos/guia-fisica/) reúne las 52 ecuaciones y los límites de cada modelo. Podés dejarla para después de explorar los primeros pasos.
 
@@ -568,7 +601,8 @@ Para parámetros, ecuaciones y límites, consultar la [guía física y cronológ
 
 | Línea | Archivo | Física | Desarrollo | Documentación |
 |-------|---------|--------|------------|---------------|
-| 00 | `v00-temperatura.html` | Perfil estacionario 1D: recta de temperaturas | Inicio didáctico | [correr →](/simus/seres-termicos/v00-temperatura.html) |
+| 00 | `v00-contacto-termico.html` | Dos cuerpos uniformes, contacto, equilibrio y conservación | Inicio didáctico animado | [correr →](/simus/seres-termicos/v00-contacto-termico.html) |
+| Complemento | `v00-temperatura.html` | Perfil estacionario 1D: recta de temperaturas | Gráfica T(x) | [correr →](/simus/seres-termicos/v00-temperatura.html) |
 | I | `v01-campo.html` | Ecuación del calor 2D, seres como fuentes gaussianas | Claude · borrador ChatGPT | [correr →](/simus/seres-termicos/v01-campo.html) |
 | I | `v02-gradiente.html` | Acoplamiento seres↔campo via ∇T | Claude · borrador ChatGPT | [correr →](/simus/seres-termicos/v02-gradiente.html) |
 | V | `v03-raymarching.html` | Ray marching volumétrico 3D (base técnica) | Claude · borrador ChatGPT | [correr →](/simus/seres-termicos/v03-raymarching.html) |

@@ -6,13 +6,17 @@ from urllib.parse import unquote,urljoin,urlsplit
 
 class Page(HTMLParser):
     def __init__(self):
-        super().__init__(); self.links=[]; self.assets=[]; self.ids=set(); self.labels=[]
+        super().__init__(); self.links=[]; self.assets=[]; self.ids=set(); self.book_index=False; self.current=0
     def handle_starttag(self,tag,attrs):
         a=dict(attrs)
+        if tag=='nav' and a.get('aria-label')=='Índice del libro':self.book_index=True
+        if tag=='a' and self.book_index and a.get('aria-current')=='page':self.current+=1
         if 'id' in a:self.ids.add(a['id'])
         if tag=='a' and 'href' in a:self.links.append(a['href'])
         if tag in ('script','iframe','img') and a.get('src'):self.assets.append(a['src'])
         if tag=='link' and a.get('rel')=='stylesheet':self.assets.append(a['href'])
+    def handle_endtag(self,tag):
+        if tag=='nav':self.book_index=False
 
 def main():
     ap=argparse.ArgumentParser(description=__doc__)
@@ -44,7 +48,7 @@ def main():
                 other=Page();other.feed(dest.read_text(encoding='utf-8'))
                 if unquote(parts.fragment) not in other.ids:errors.append((url,link,'ancla'))
         if url in ['/projects/seres-termicos/']+[p['url'] for p in inventory]:
-            assert text.count('aria-current=page')==1 or text.count('aria-current="page"')==1,url
+            assert parsed.current==1,url
             assert 'thermal-book-next' in text or url==inventory[-1]['url'],url
     assert not errors,errors
     simulations={p['sim'] for p in inventory if p['sim']}|{'v03-raymarching.html','test_3D.html'}

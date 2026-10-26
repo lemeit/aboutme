@@ -8,8 +8,12 @@ math = true
 ShowToc = true
 TocOpen = true
 tags = ['física', 'simulación', 'WebGL2', 'Canvas2D', 'Borges', 'visualización', 'difusión']
-description = 'Desde dos cuerpos que intercambian calor hasta difusión en 3D y organismos activos: recorrido visual de termodinámica para secundaria, con animación, gráficas y ecuaciones.'
+description = 'Un proyecto que pone en diálogo la literatura de Borges y Margarita Guerrero con la física, a través de simulaciones de sus seres hechos de temperaturas cambiantes.'
 +++
+
+A partir de «Los seres térmicos», de Jorge Luis Borges y Margarita Guerrero, este proyecto explora el encuentro entre literatura, física y simulación. La imagen de seres hechos de temperaturas cambiantes abre una pregunta: ¿cómo representar esas formas y qué leyes o hipótesis podrían sostenerlas?
+
+[Leer «Los seres térmicos» en *El libro de los seres imaginarios* (PDF, página 62)](https://tavapy.gov.py/biblioteca/wp-content/uploads/2023/01/BorgesJ-El-libro-de-los-seres-imaginarios.pdf#page=62). Texto de Borges y Margarita Guerrero, disponible en la biblioteca digital de la Municipalidad de Tavapy.
 
 > "cada hombre, cada ser, era un organismo hecho de temperaturas cambiantes.
 > La humanidad de la época saturnina fue un ciego y sordo e impalpable

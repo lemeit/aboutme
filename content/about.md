@@ -3,12 +3,12 @@ title = 'Sobre mí'
 description = 'Luciano Lamaita: ingeniería química, enseñanza de ciencias y proyectos de tecnología aplicada.'
 layout = 'profile'
 profileLabel = 'Ingeniero químico · Profesor de física y química · Saladillo, Buenos Aires'
-lastmod = '2026-10-25'
+lastmod = '2026-10-26'
 hideMeta = true
 draft = false
 +++
 
-Hola, soy Luciano. Soy ingeniero químico y profesor de física y química en Saladillo, Buenos Aires. También soy padre. Me interesan las ciencias naturales, la tecnología y la educación.
+Hola, soy Luciano. Soy ingeniero químico, profesor de física y química. Vivo en Saladillo, Buenos Aires, donde comparto mi vida en familia. Soy padre y me interesan las ciencias naturales, la tecnología y la educación.
 
 Este sitio reúne mis materiales educativos y proyectos de tecnología aplicada al ambiente, la simulación científica y la gestión territorial. Es un espacio para compartir herramientas, explorar ideas y conectar lo que enseño con los problemas en los que trabajo.
 

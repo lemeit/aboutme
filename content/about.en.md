@@ -28,12 +28,6 @@ I support free software and sharing knowledge. I value the strategic and respons
 
 Outside work, I enjoy swimming and listening to music from the 1970s and 1980s. I am also interested in healthy eating.
 
-## Curriculum vitae
-
-Download my two-page professional résumé in English, covering my main experience, education and projects. Select **ES** in the header to read this profile and download the résumé in Spanish.
-
-{{< cv-downloads >}}
-
 ## Background
 
 ### Professional experience
@@ -130,6 +124,12 @@ Research on catalysis and manganese oxide characterisation for environmental app
 I was an **OpenAQ Community Ambassador (2023)** and participated in its training programme from March 2023 to March 2024. I am a member of the **Air Quality Working Group of ECSA (European Citizen Science Association)** and participate in **CanAirIO, AireCiudadano and Sensor.Community**. I represented graduates on UTN La Plata's committee supporting disability inclusion policies (2022–2023).
 
 Presentations include training on CO₂ monitors and classroom ventilation for Region 24 of the Dirección General de Cultura y Educación de la Provincia de Buenos Aires (2021), and co-authorship of a paper on warm-mix asphalt incorporating RAP, presented at CILA in Medellín (2017).
+
+## Curriculum vitae
+
+Download my two-page professional résumé in English, covering my main experience, education and projects. Select **ES** in the header to read this profile and download the résumé in Spanish.
+
+{{< cv-downloads >}}
 
 ## Contact
 

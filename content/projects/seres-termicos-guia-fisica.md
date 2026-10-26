@@ -17,13 +17,47 @@ build:
 
 Documento de trabajo para Luciano Lamaita. Corte de revisión física: 16 de octubre de 2026. Edición para el sitio preparada el 26 de octubre de 2026.
 
-[Volver al recorrido de Seres Térmicos](/projects/seres-termicos/) · [Abrir la versión 00](/simus/seres-termicos/v00-temperatura.html) · [Edición en GitHub](https://github.com/lemeit/simus/blob/main/seres-termicos/guia-fisica-cronologica-seres-termicos.md)
+[Volver al recorrido de Seres Térmicos](/projects/seres-termicos/) · [Abrir el Prólogo](/simus/seres-termicos/v00-contacto-termico.html) · [Edición en GitHub](https://github.com/lemeit/simus/blob/main/seres-termicos/guia-fisica-cronologica-seres-termicos.md)
 
 El proyecto parte de una imagen literaria de Borges y Guerrero y construye distintas maneras de representar cuerpos hechos de diferencias de temperatura. Esta guía explica qué calcula cada simulador, cómo cambió el modelo y qué límites debe tener su interpretación. La versión actual permite observar intercambio térmico, reservas finitas y una respuesta de control ante amenazas externas; esos mecanismos están programados y no constituyen una demostración de vida emergente.
 
-La base documental principal es el README de la raíz del repositorio simus, contrastado con el código disponible de cada HTML y con las versiones locales recientes. El [índice del repositorio](https://github.com/lemeit/simus/tree/main/seres-termicos) reúne los archivos. Esta edición del sitio conserva las 52 ecuaciones separadas y numeradas. El recorrido introductorio y la versión 00 se añadieron después del corte de revisión física; no se incorporan retrospectivamente a la cronología original.
+La base documental principal es el README de la raíz del repositorio simus, contrastado con el código disponible de cada HTML y con las versiones locales recientes. El [índice del repositorio](https://github.com/lemeit/simus/tree/main/seres-termicos) reúne los archivos. Esta edición del sitio conserva las 52 ecuaciones separadas y numeradas. El recorrido introductorio y el Prólogo se añadieron después del corte de revisión física; no se incorporan retrospectivamente a la cronología original.
 
 La numeración v01 a v08 y la serie V4.1 a V4.6 pertenecen a etapas y ramas distintas. v04-grayscott no es V4.4. La cronología que sigue respeta el recorrido de versiones recuperado; no atribuye fechas de creación que no puedan confirmarse con un historial de cambios.
+
+## Nombres del relato
+
+Los nombres públicos siguen un relato. Los nombres de archivo y códigos de versión se conservan como identificadores técnicos: no cambian las rutas, las ecuaciones ni la cronología del desarrollo. Los números de los capítulos de esta guía son secciones técnicas, no actos del relato.
+
+| Lugar en el relato | Nombre público | Archivo técnico |
+| --- | --- | --- |
+| Prólogo | El primer encuentro | `v00-contacto-termico.html` |
+| Acto I | El calor deja una huella | `v01-calor-capacidad.html` |
+| Acto II | La energía cruza la frontera | `v02-primera-ley.html` |
+| Acto III | La dirección del cambio | `v03-entropia.html` |
+| Acto IV | El límite del frío | `v04-tercera-ley.html` |
+| Acto V | Una pendiente conduce calor | `v05-conduccion-fourier.html` |
+| Acto VI | El calor recorre una línea | `v06-difusion-1d.html` |
+| Acto VII | La línea se vuelve superficie | `v07-difusion-2d.html` |
+| Acto VIII | El calor habita un volumen | `v08-difusion-3d.html` |
+| Interludio | Una recta de temperaturas | `v00-temperatura.html` |
+| Acto IX · Escena I | El campo que disuelve | `index.html` |
+| Acto IX · Escena II | Seguir el gradiente | `v02-gradiente.html` |
+| Interludio técnico | Hacer visible un campo | `v03-raymarching.html` |
+| Acto X · Escena I | Las manchas encuentran una forma | `v04-grayscott.html` |
+| Acto X · Escena II | Las ondas recorren el medio | `v05-fhn.html` |
+| Acto XI | Contar a los individuos | `v06-ciclovida.html` |
+| Acto XII | Un bestiario de calor | `bestiario.html` |
+| Acto XIII · Escena I | El mundo que los contiene | `v07-3d.html` |
+| Acto XIII · Escena II | La huella del tiempo | `v08-espaciotiempo.html` |
+| Acto XIV · Escena I | El primer volumen térmico | `seres_termicos_V4_1.html` |
+| Acto XIV · Escena II | Las formas del campo | `seres_termicos_V4_2.html` |
+| Acto XIV · Escena III | Una ventana al campo | `seres_termicos_V4_2_1.html` |
+| Acto XIV · Escena IV | Frío y fuego articulados | `seres_termicos_V4_3.html` |
+| Acto XIV · Escena V | Nacer y extinguirse | `seres_termicos_V4_4.html` |
+| Acto XIV · Escena VI | Mirar sin halos | `seres_termicos_V4_5.html` |
+| Acto XIV · Escena VII | Resistir hasta agotarse | `seres_termicos_V4_6.html` |
+| Taller técnico | Comprobar la ventana tridimensional | `test_3D.html` |
 
 ## Cómo leer la guía
 
@@ -127,7 +161,7 @@ El stencil usa cuatro vecinos en 2D y seis en 3D, más la celda central. Al camb
 
 ## 4 Primeros campos y movimiento por gradiente
 
-### v01 Difusión con fuentes móviles
+### Acto IX · El campo que disuelve
 
 **Ecuación (08)**
 
@@ -147,7 +181,7 @@ $$
 
 El factor p = 0.994 equivale a una tasa de relajación sólo después de definir Δt. Como varios prototipos avanzan una cantidad fija de pasos por cuadro, su velocidad física puede cambiar con los fps. Esto debe corregirse o declararse al comparar grabaciones.
 
-### v02 Respuesta al gradiente
+### Acto IX · Seguir el gradiente
 
 **Ecuación (10)**
 
@@ -159,13 +193,13 @@ sᵢ es la polaridad del ser. El código añade una atracción débil al centro,
 
 El coeficiente numérico de difusión es α del control multiplicado por 0.14. Las fuentes siguen siendo externas y no se debitan de una reserva individual. El modelo gana interacción aparente porque el campo cambia las trayectorias, pero no incorpora reproducción ni muerte por agotamiento.
 
-### Diagnóstico 3D y v03
+### Interludio técnico · Hacer visible un campo
 
 test_3D verifica la capacidad gráfica. v03 agrega una textura tridimensional y una integración visual a lo largo de rayos. Sin embargo, su bucle vacía field en cada cuadro, vuelve a sumar gaussianas y aplica una difusión. Por lo tanto, no conserva la historia térmica como un solucionador transitorio persistente. Es un antecedente gráfico valioso, pero no debe usarse para validar memoria del calor o conservación temporal.
 
 ## 5 La rama de reacción difusión
 
-### v04 Gray Scott
+### Acto X · Las manchas encuentran una forma
 
 **Ecuación (11)**
 
@@ -187,7 +221,7 @@ Según parámetros y perturbaciones iniciales, pueden aparecer manchas que crece
 
 El estado uniforme u = 1, v = 0 es una solución exacta. Sin semilla, ruido o perturbación que genere v, la ecuación determinista no crea producto de la nada porque uv² = 0 cuando v = 0. La difusión de una concentración tampoco equivale al desplazamiento de un animal entero. Los mapas de parámetros del README sirven como orientación, no como garantía universal de un patrón con cualquier malla e inicialización.
 
-### v05 FitzHugh Nagumo
+### Acto X · Las ondas recorren el medio
 
 **Ecuación (13)**
 
@@ -207,7 +241,7 @@ v05 usa Dᵤ = 0.5, Δt = 0.10 y bordes periódicos. Las perturbaciones iniciale
 
 ## 6 Individuos con presupuesto y memoria temporal
 
-### v06 Presupuesto energético individual
+### Acto XI · Contar a los individuos
 
 **Ecuación (15)**
 
@@ -233,7 +267,7 @@ $$
 
 La condición de reproducción está escrita, pero con E₀ fijo, rrep ≥ 1.2 y un individuo que nace con E ≤ E₀ y sólo pierde energía, no puede alcanzarse. No hay alimentación que eleve E por encima del umbral. Cambiar E₀ durante la ejecución puede alterar esa comparación, pero eso no constituye reproducción emergente. Esta limitación también alcanza a las extensiones que conservan la misma lógica.
 
-### v07 Universo visual esférico
+### Acto XIII · El mundo que los contiene
 
 **Ecuación (18)**
 
@@ -245,7 +279,7 @@ Se usa reflexión especular para orientar al ser hacia el interior cuando supera
 
 El ray marching corta una esfera y muestra una vista exterior y otra interior desde un agente. La esfera del render y el rebote no equivalen a resolver la ecuación del calor sobre una malla esférica con una condición térmica en esa superficie: el solucionador sigue trabajando sobre el volumen rectangular y copia sus caras. La métrica de los índices y el reescalado de cada eje también importan si se quisiera interpretar una esfera física isotrópica.
 
-### v08 El tiempo como eje del volumen
+### Acto XIII · La huella del tiempo
 
 **Ecuación (19)**
 
@@ -257,7 +291,7 @@ El modelo térmico sigue siendo bidimensional. Se guardan cortes sucesivos en un
 
 Un tubo comienza cuando se registra un ser y termina cuando deja de aparecer. La amplitud y el movimiento pueden verse como una geometría de su historia reciente. No se simula un espacio de cuatro dimensiones ni relatividad. La memoria es finita y el archivo organiza los cortes en un búfer circular. La bifurcación visual por reproducción está sujeta a la limitación energética señalada para v06.
 
-## 7 El bestiario de organismos articulados
+## 7 Acto XII · Un bestiario de calor
 
 ### Temperaturas de los órganos
 
@@ -307,21 +341,21 @@ B1 dibuja el campo, suma dos reducciones para producir bloom y añade órganos, 
 
 La ventaja de esta rama es perceptiva: permite reconocer partes, asociarlas a un individuo y leer acontecimientos mediante fichas y crónica. Su límite para el problema de muerte por agotamiento es que el fuego innato puede sostenerse indefinidamente. V4.4 y V4.6 recuperan esa expresividad e incorporan una reserva que sí puede terminarse.
 
-## 8 La serie V4 antes del ciclo de vida actual
+## 8 Acto XIV · Las primeras escenas del volumen
 
-### V4.1 Difusión pasiva funcional
+### Escena I · El primer volumen térmico
 
 El archivo de Descargas usa 48³ celdas y cinco gaussianas positivas como condición inicial. El campo persiste y se actualiza con un stencil de seis vecinos; los bordes permanecen en cero. El control llamado difusión modifica directamente r, inicialmente 0.105 y limitado a 0.16. El tiempo mostrado cuenta pasos, no segundos calibrados.
 
 La textura 3D R8 permite transportar al render un valor normalizado de un solo canal. En esa versión la intensidad relativa se calcula con el máximo instantáneo, lo cual ayuda a ver estructuras mientras se debilitan pero oculta parte del descenso absoluto. También había un doble avance del parámetro del rayo; V4.2 lo corrige.
 
-### V4.2 y V4.2.1 Formas iniciales y observación científica
+### Escenas II y III · Formas del campo y una ventana para observarlas
 
 V4.2 construye cinco anatomías iniciales mediante gaussianas conectadas sobre 56³ celdas. No hay fuentes posteriores: las formas se ensanchan y desaparecen por difusión hacia el borde ambiental. Se fija h = 2/55 y Δt = 0.04 y se subdivide si hace falta para no superar r = 0.15. La escala de color es fija, con corte científico y estadísticas.
 
 V4.2.1 conserva esa física y ajusta la composición a la ventana. Reduce automáticamente resolución de render y muestras del rayo para mejorar fluidez. Cambiar esos controles gráficos no modifica la grilla del campo. Los ensayos por software mostraron una mejora respecto de V4.2, pero esos fps no son una garantía para otra computadora.
 
-### V4.3 Fuentes articuladas sostenidas
+### Escena IV · Frío y fuego articulados
 
 **Ecuación (23)**
 
@@ -333,7 +367,7 @@ Los órganos prescriben fuentes gaussianas calientes o frías. Se añaden latido
 
 Esta versión muestra cinco estructuras articuladas y permite apagar las fuentes para volver a la difusión pura. Las posiciones y articulaciones están prescritas. El render sigue siendo volumétrico por ray marching; el coste gráfico hizo necesaria una reconstrucción más ligera en V4.4.
 
-## 9 Modelo de órganos y medio en V4.4 a V4.6
+## 9 Acto XIV · De nacer a resistir
 
 ### Un solo campo persistente y órganos con capacidad térmica
 
@@ -628,7 +662,7 @@ La vista cinemática lee los mismos cuerpos, posiciones, tiempo y cámara. En ce
 
 La captura PNG integra campo, viñetas, región de amenaza y recuadro. Los colores del frío son una convención: un cuerpo frío no emite luz azul por estar frío. La suma de emisiones por profundidad tampoco permite leer una temperatura puntual directamente del brillo volumétrico; para eso debe usarse el corte científico o la ficha numérica.
 
-## 14 Controles y protocolo de prueba de V4.6
+## 14 Resistir hasta agotarse · Controles y protocolo de prueba
 
 | Acción | Efecto en el modelo |
 | --- | --- |

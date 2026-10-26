@@ -1,5 +1,5 @@
 +++
-title = "v07 — Spherical universe"
+title = "Act XIII · Scene I — The world that contains them"
 description = "A three-dimensional thermal field with external and internal viewpoints."
 weight = 0
 lastmod = '2026-10-25'

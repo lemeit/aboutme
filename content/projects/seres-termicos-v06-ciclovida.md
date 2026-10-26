@@ -1,5 +1,5 @@
 +++
-title = 'v06 — Ciclo de vida'
+title = 'Acto XI — Contar a los individuos'
 date = '2026-09-25'
 lastmod = '2026-09-25'
 draft = false
@@ -15,7 +15,7 @@ list = 'never'
 >
 > — J. L. Borges (con M. Guerrero), *El libro de los seres imaginarios* (1957)
 
-*Esta simulación pertenece a la Línea III — [Los individuos](/projects/seres-termicos/): el conjunto contable de la cita.*
+*Esta simulación pertenece a la Acto XI — [Los individuos](/projects/seres-termicos/): el conjunto contable de la cita.*
 
 La palabra decisiva de la cita es *conjunto*: un conjunto se cuenta. Gray-Scott
 produce texturas —manchas que se dividen pero que no tienen identidad—: no se puede

@@ -29,15 +29,15 @@ La pregunta que guía este proyecto:
 
 El proyecto tiene dos recorridos: **el orden para aprender** y **la historia de los modelos**. Para empezar no hace falta saber derivadas ni programar. Primero leemos una temperatura, después estudiamos cómo cambia y recién entonces agregamos campos e individuos. Las versiones históricas se conservan para comparar hipótesis; no son escalones que haya que entender todos a la vez.
 
-## Paso 00 — Dos cuerpos en contacto
+## Prólogo — El primer encuentro
 
 Antes de explorar seres y campos, observamos un intercambio de energía entre dos cuerpos. Cada uno tiene una sola temperatura: todavía no necesitamos partículas, moléculas ni coordenadas espaciales.
 
 Uno empieza a 80 °C y otro a 20 °C. **¿Cuál se calentará? ¿A qué temperatura se acercarán? ¿Se transfiere calor igual de rápido durante todo el proceso?**
 
-{{< sim src="/simus/seres-termicos/v00-contacto-termico.html" title="00 — Dos cuerpos en contacto: temperatura, calor y tiempo" height="1100" >}}
+{{< sim src="/simus/seres-termicos/v00-contacto-termico.html" title="Prólogo — El primer encuentro" height="1100" >}}
 
-[Abrir el experimento en una pestaña propia](/simus/seres-termicos/v00-contacto-termico.html). En el celular, la pestaña propia facilita recorrer la escena, la gráfica y los controles.
+[Prólogo — El primer encuentro](/simus/seres-termicos/v00-contacto-termico.html). En el celular, la pestaña propia facilita recorrer la escena, la gráfica y los controles.
 
 ### Qué muestra cada representación
 
@@ -78,22 +78,23 @@ La experiencia introduce equilibrio térmico y conecta con conservación de ener
 4. Duplicá la masa de B: ¿por qué ya no terminan en el promedio simple?
 5. Probá temperaturas iguales: ¿hay transferencia neta?
 
-### El camino de aprendizaje
+### El relato continúa
 
-| Etapa | Qué vamos a mirar | Estado |
+[Entrar al recorrido visual completo](/simus/seres-termicos/termodinamica.html). Las nueve actividades están disponibles; los detalles de cada modelo quedan plegados dentro de su página.
+
+| Parte del relato | Abrir actividad | Qué explora |
 | --- | --- | --- |
-| **00 · Contacto y equilibrio** | Animación de dos cuerpos, T(t), calor y potencia. | Disponible arriba. |
-| 01 · Calor y capacidad térmica | Gráfica Q frente a ΔT; efecto de masa y material. | Próxima actividad propuesta. |
-| 02 · Primera ley con trabajo | ΔU = Q − W; entradas y salidas de energía. | Propuesta. |
-| 03 · Segunda ley y entropía | El mismo contacto, ahora con ΔS de cada cuerpo y del conjunto. Temperaturas en kelvin. | Propuesta. |
-| 04 · Tercera ley | Entropía cerca de 0 K, con las condiciones del modelo de material. | Propuesta. |
-| 05 · Conducción y perfiles | Temperatura frente a posición y ley de Fourier. | [Recta estacionaria disponible](/simus/seres-termicos/v00-temperatura.html); desarrollo de Fourier a ampliar. |
-| 06 · Difusión 1D y tiempo | Una barra intercambia energía entre vecinos; T(x,t). | Propuesta. |
-| 07 · Difusión 2D y tiempo | Superficie, cortes y un termómetro temporal. | Propuesta básica; v01 histórico ya añade fuentes móviles. |
-| 08 · Difusión 3D y tiempo | Volumen, cortes y evolución; T(x,y,z,t). | Propuesta básica; existen versiones volumétricas avanzadas. |
-| Puente a los Seres Térmicos | Fuentes, reservas, movimiento y órganos: qué reglas se agregan. | Ramas históricas y serie V4. |
+| Prólogo | [Prólogo — El primer encuentro](/simus/seres-termicos/v00-contacto-termico.html) | Contacto entre cuerpos uniformes |
+| Acto I | [Acto I — El calor deja una huella](/simus/seres-termicos/v01-calor-capacidad.html) | Calorimetría ideal |
+| Acto II | [Acto II — La energía cruza la frontera](/simus/seres-termicos/v02-primera-ley.html) | Balance de energía prescrito |
+| Acto III | [Acto III — La dirección del cambio](/simus/seres-termicos/v03-entropia.html) | Contacto y entropía en kelvin |
+| Acto IV | [Acto IV — El límite del frío](/simus/seres-termicos/v04-tercera-ley.html) | Curva conceptual a baja temperatura |
+| Acto V | [Acto V — Una pendiente conduce calor](/simus/seres-termicos/v05-conduccion-fourier.html) | Conducción estacionaria con reservorios |
+| Acto VI | [Acto VI — El calor recorre una línea](/simus/seres-termicos/v06-difusion-1d.html) | Difusión conservativa en una dimensión |
+| Acto VII | [Acto VII — La línea se vuelve superficie](/simus/seres-termicos/v07-difusion-2d.html) | Difusión conservativa en dos dimensiones |
+| Acto VIII | [Acto VIII — El calor habita un volumen](/simus/seres-termicos/v08-difusion-3d.html) | Difusión conservativa en tres dimensiones |
 
-La primera versión de la [recta de temperaturas](/simus/seres-termicos/v00-temperatura.html) conserva su ruta. Es un complemento para el perfil estacionario: allí X es posición; en el contacto animado X es tiempo. Este orden de enseñanza no cambia la numeración histórica de los archivos v01–v08 ni V4.1–V4.6.
+El Interludio de la [Interludio — Una recta de temperaturas](/simus/seres-termicos/v00-temperatura.html) conserva su ruta. Es un complemento para el perfil estacionario: allí X es posición; en el contacto animado X es tiempo. Este orden de enseñanza no cambia la numeración histórica de los archivos v01–v08 ni V4.1–V4.6.
 
 La [guía física y cronológica completa](/projects/seres-termicos/guia-fisica/) reúne las 52 ecuaciones y los límites de cada modelo. Podés dejarla para después de explorar los primeros pasos.
 
@@ -101,7 +102,7 @@ El recorrido que sigue documenta esas ramas. **Un patrón no demuestra vida biol
 
 ---
 
-## Acto I — El límite de la física lineal
+## Acto IX — El campo que disuelve
 
 El primer intento usa la **ecuación del calor**:
 
@@ -111,7 +112,7 @@ $$
 $$
 
 Esta ecuación describe cómo se difunde el calor en un medio. Es elegante y correcta para
-describir difusión. Sin fuentes y con condiciones de borde adecuadas, las diferencias de temperatura se suavizan. Con bordes aislantes se alcanza una temperatura uniforme; con temperaturas impuestas puede mantenerse un perfil no uniforme, como en la versión 00. La difusión pasiva por sí sola no define metabolismo, reproducción ni organismos.
+describir difusión. Sin fuentes y con condiciones de borde adecuadas, las diferencias de temperatura se suavizan. Con bordes aislantes se alcanza una temperatura uniforme; con temperaturas impuestas puede mantenerse un perfil no uniforme, como en el Interludio de la recta. La difusión pasiva por sí sola no define metabolismo, reproducción ni organismos.
 
 **v01 — el campo**: seres como fuentes gaussianas sobre esa ecuación. Son agentes y fuentes prescritos: se mueven e intercambian aportes con un campo persistente. Esta versión no implementa un ciclo vital autónomo.
 
@@ -127,7 +128,7 @@ que ellos mismos calientan y enfrían. El movimiento es más interesante, pero l
 siguen siendo **objetos programados** en un campo pasivo. No emergen. No se reproducen.
 No mueren espontáneamente.
 
-▶ [correr v01](/simus/seres-termicos/v01-campo.html) · [correr v02](/simus/seres-termicos/v02-gradiente.html)
+▶ [Acto IX · Escena I — El campo que disuelve](/simus/seres-termicos/v01-campo.html) · [Acto IX · Escena II — Seguir el gradiente](/simus/seres-termicos/v02-gradiente.html)
 
 {{< sim src="/simus/seres-termicos/v02-gradiente.html" title="v02 — seres leyendo el gradiente" height="700" >}}
 
@@ -155,7 +156,7 @@ La rama de reacción-difusión que exploramos a continuación usa tres ingredien
 
 ---
 
-## Acto II — Patrones de reacción-difusión: Gray–Scott
+## Acto X — Las formas que aparecen
 
 Las ecuaciones de reacción-difusión de Gray-Scott son:
 
@@ -202,7 +203,7 @@ Si no hay alimento, $v$ desaparece. Este es el mecanismo de competencia y extinc
 
 Con las mismas ecuaciones y distintos parámetros pueden aparecer manchas, filamentos o colapso. Son patrones de concentración, no organismos biológicos. El resultado depende también de la semilla, la malla y la resolución numérica.
 
-▶ [correr v04 — Gray-Scott](/simus/seres-termicos/v04-grayscott.html) · [correr v05 — FitzHugh-Nagumo](/simus/seres-termicos/v05-fhn.html)
+▶ [Acto X · Escena I — Las manchas encuentran una forma](/simus/seres-termicos/v04-grayscott.html) · [Acto X · Escena II — Las ondas recorren el medio](/simus/seres-termicos/v05-fhn.html)
 
 ### Crecimiento, división y desaparición de patrones
 
@@ -235,7 +236,7 @@ elemento puede *contarse*. Eso requiere un modelo diferente.
 
 ---
 
-## Acto III — Los individuos: presupuesto energético (v06)
+## Acto XI — Contar a los individuos
 
 En lugar de una PDE global que genera patrones, cada ser tiene su propia variable interna
 de energía.
@@ -298,7 +299,7 @@ las ecuaciones; las ecuaciones describen cómo cada ser nace y muere.
 
 ---
 
-## Acto IV — La anatomía: organismos articulados (B1)
+## Acto XII — Un bestiario de calor
 
 El Enfoque B resuelve los individuos (presupuesto energético, nacimiento, muerte), pero su
 cuerpo es una gaussiana: un punto con brillo. La cita de Borges dice algo más exigente:
@@ -387,13 +388,13 @@ de Fourier, no una función.
 - **Worldlines**: con persistencia alta ($p \approx 0.999$) y difusión baja, cada ser pinta
   su historia en el plano — el equivalente 2D de los worldtubes de v08.
 
-▶ [abrir el bestiario a pantalla completa](/simus/seres-termicos/bestiario.html)
+▶ [Acto XII — Un bestiario de calor](/simus/seres-termicos/bestiario.html)
 
 {{< sim src="/simus/seres-termicos/bestiario.html" title="B1 — Bestiario: organismos articulados" >}}
 
 ---
 
-## Acto V — El cosmos: esfera y espaciotiempo (v07, v08)
+## Acto XIII — El mundo y la huella del tiempo
 
 Borges describe un cosmos, no una grilla. La geometría rectangular de los primeros modelos
 es una conveniencia numérica, no una decisión física.
@@ -577,41 +578,41 @@ donde $\sigma$ es el coeficiente de extinción, proporcional a $|T|$.
 
 ---
 
-## Serie V4 — Del campo pasivo al bestiario activo
+## Acto XIV — Cuerpos que nacen y resisten
 
 Esta serie retoma la visualización volumétrica y luego agrega cuerpos articulados. No se debe confundir **V4.4** con el archivo antiguo **v04-grayscott.html**. Las fuentes de energía, las reservas de trabajo disponible y el calor firmado del campo tienen papeles distintos.
 
-| Versión | Qué cambia | Abrir |
+| Identificador técnico | Qué cambia | Escena del relato |
 | --- | --- | --- |
-| V4.1 | Base funcional con textura 3D R8; archivo histórico. | [V4.1](/simus/seres-termicos/seres_termicos_V4_1.html) |
-| V4.2 | Cinco anatomías iniciales y difusión pasiva persistente. | [V4.2](/simus/seres-termicos/seres_termicos_V4_2.html) |
-| V4.2.1 | Vista compacta y calidad automática. | [V4.2.1](/simus/seres-termicos/seres_termicos_V4_2_1.html) |
-| V4.3 | Fuentes articuladas calientes o frías, sostenidas desde el exterior. | [V4.3](/simus/seres-termicos/seres_termicos_V4_3.html) |
-| V4.4 | Intercambio conservativo, reservas individuales, ciclo vital y movimiento 3D. | [V4.4](/simus/seres-termicos/seres_termicos_V4_4.html) |
-| V4.5 | Vista simultánea de centros u órganos sin halos: mismo estado, otra representación. | [V4.5](/simus/seres-termicos/seres_termicos_V4_5.html) |
-| V4.6 | Amenazas externas y respuesta adaptativa con costes explícitos. | [V4.6](/simus/seres-termicos/seres_termicos_V4_6.html) |
+| V4.1 | Base funcional con textura 3D R8; archivo histórico. | [Acto XIV · Escena I — El primer volumen térmico](/simus/seres-termicos/seres_termicos_V4_1.html) |
+| V4.2 | Cinco anatomías iniciales y difusión pasiva persistente. | [Acto XIV · Escena II — Las formas del campo](/simus/seres-termicos/seres_termicos_V4_2.html) |
+| V4.2.1 | Vista compacta y calidad automática. | [Acto XIV · Escena III — Una ventana al campo](/simus/seres-termicos/seres_termicos_V4_2_1.html) |
+| V4.3 | Fuentes articuladas calientes o frías, sostenidas desde el exterior. | [Acto XIV · Escena IV — Frío y fuego articulados](/simus/seres-termicos/seres_termicos_V4_3.html) |
+| V4.4 | Intercambio conservativo, reservas individuales, ciclo vital y movimiento 3D. | [Acto XIV · Escena V — Nacer y extinguirse](/simus/seres-termicos/seres_termicos_V4_4.html) |
+| V4.5 | Vista simultánea de centros u órganos sin halos: mismo estado, otra representación. | [Acto XIV · Escena VI — Mirar sin halos](/simus/seres-termicos/seres_termicos_V4_5.html) |
+| V4.6 | Amenazas externas y respuesta adaptativa con costes explícitos. | [Acto XIV · Escena VII — Resistir hasta agotarse](/simus/seres-termicos/seres_termicos_V4_6.html) |
 
 La defensa es una hipótesis de control programada: regulación, escape y ahorro. No aparece por aplicar difusión ni constituye una demostración de voluntad o de vida. Los puntos del recuadro representan cuerpos u órganos, no moléculas de un gas. La luminosidad y los halos ayudan a observar el campo; no son radiación térmica calculada.
 
-Para parámetros, ecuaciones y límites, consultar la [guía física y cronológica completa](/projects/seres-termicos/guia-fisica/). La versión 00 agrega ahora el punto de entrada didáctico; la futura edición V4.7 simplificada sigue siendo una propuesta.
+Para parámetros, ecuaciones y límites, consultar la [guía física y cronológica completa](/projects/seres-termicos/guia-fisica/). El Prólogo agrega el punto de entrada didáctico; la futura edición V4.7 simplificada sigue siendo una propuesta.
 
 ---
 
-## Secuencia de versiones
+## Archivos técnicos del relato
 
 | Línea | Archivo | Física | Desarrollo | Documentación |
 |-------|---------|--------|------------|---------------|
-| 00 | `v00-contacto-termico.html` | Dos cuerpos uniformes, contacto, equilibrio y conservación | Inicio didáctico animado | [correr →](/simus/seres-termicos/v00-contacto-termico.html) |
-| Complemento | `v00-temperatura.html` | Perfil estacionario 1D: recta de temperaturas | Gráfica T(x) | [correr →](/simus/seres-termicos/v00-temperatura.html) |
-| I | `v01-campo.html` | Ecuación del calor 2D, seres como fuentes gaussianas | Claude · borrador ChatGPT | [correr →](/simus/seres-termicos/v01-campo.html) |
-| I | `v02-gradiente.html` | Acoplamiento seres↔campo via ∇T | Claude · borrador ChatGPT | [correr →](/simus/seres-termicos/v02-gradiente.html) |
-| V | `v03-raymarching.html` | Ray marching volumétrico 3D (base técnica) | Claude · borrador ChatGPT | [correr →](/simus/seres-termicos/v03-raymarching.html) |
-| II | `v04-grayscott.html` | Reacción-difusión Gray-Scott 2D | Claude · borrador ChatGPT | [correr →](/simus/seres-termicos/v04-grayscott.html) |
-| II | `v05-fhn.html` | FitzHugh-Nagumo: espirales perpetuas | Claude · borrador ChatGPT | [correr →](/simus/seres-termicos/v05-fhn.html) |
+| 00 | `v00-contacto-termico.html` | Dos cuerpos uniformes, contacto, equilibrio y conservación | Inicio didáctico animado | [Prólogo — El primer encuentro](/simus/seres-termicos/v00-contacto-termico.html) |
+| Complemento | `v00-temperatura.html` | Perfil estacionario 1D: recta de temperaturas | Gráfica T(x) | [Interludio — Una recta de temperaturas](/simus/seres-termicos/v00-temperatura.html) |
+| I | `v01-campo.html` | Ecuación del calor 2D, seres como fuentes gaussianas | Claude · borrador ChatGPT | [Acto IX · Escena I — El campo que disuelve](/simus/seres-termicos/v01-campo.html) |
+| I | `v02-gradiente.html` | Acoplamiento seres↔campo via ∇T | Claude · borrador ChatGPT | [Acto IX · Escena II — Seguir el gradiente](/simus/seres-termicos/v02-gradiente.html) |
+| V | `v03-raymarching.html` | Ray marching volumétrico 3D (base técnica) | Claude · borrador ChatGPT | [Interludio técnico — Hacer visible un campo](/simus/seres-termicos/v03-raymarching.html) |
+| II | `v04-grayscott.html` | Reacción-difusión Gray-Scott 2D | Claude · borrador ChatGPT | [Acto X · Escena I — Las manchas encuentran una forma](/simus/seres-termicos/v04-grayscott.html) |
+| II | `v05-fhn.html` | FitzHugh-Nagumo: espirales perpetuas | Claude · borrador ChatGPT | [Acto X · Escena II — Las ondas recorren el medio](/simus/seres-termicos/v05-fhn.html) |
 | III | `v06-ciclovida.html` | **Enfoque B**: presupuesto energético, ciclo de vida | Claude · borrador ChatGPT | [ficha →](/projects/seres-termicos/v06-ciclovida/) |
 | V | `v07-3d.html` | Campo 3D + esfera volumétrica (WebGL2) + PIP interior | Claude · borrador ChatGPT | [ficha →](/projects/seres-termicos/v07-3d/) |
 | V | `v08-espaciotiempo.html` | Campo 2D × tiempo → volumen 3D de worldtubes | Claude · borrador ChatGPT | [ficha →](/projects/seres-termicos/v08-espaciotiempo/) |
-| IV | `bestiario.html` (B1) | **Línea BESTIARIO**: organismo articulado, taxonomía por equilibrios | GLM (Zhipu AI) | [correr →](/simus/seres-termicos/bestiario.html) |
+| IV | `bestiario.html` (B1) | **Línea BESTIARIO**: organismo articulado, taxonomía por equilibrios | GLM (Zhipu AI) | [Acto XII — Un bestiario de calor](/simus/seres-termicos/bestiario.html) |
 
 Nota sobre la numeración: hasta v08 las versiones son secuenciales (la línea del campo).
 B1 es una **bifurcación**, no una continuación: B de *bestiario*, 1 por ser la primera

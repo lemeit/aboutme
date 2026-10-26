@@ -1,5 +1,5 @@
 +++
-title = 'v08 — Espaciotiempo'
+title = 'Acto XIII · Escena II — La huella del tiempo'
 date = '2026-09-25'
 lastmod = '2026-09-25'
 draft = false
@@ -16,7 +16,7 @@ list = 'never'
 >
 > — paráfrasis de Kurt Vonnegut, *Matadero cinco* (1969)
 
-*Esta simulación pertenece a la Línea V — [El cosmos](/projects/seres-termicos/): dónde viven y cómo se ven en el tiempo.*
+*Esta simulación pertenece a la Acto XIII — [El cosmos](/projects/seres-termicos/): dónde viven y cómo se ven en el tiempo.*
 
 Esta es la visualización más borgiana del proyecto. En lugar de mirar la
 simulación *pasar*, v08 acumula la historia del campo como si el tiempo fuera una

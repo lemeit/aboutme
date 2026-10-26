@@ -1,5 +1,5 @@
 +++
-title = 'v06：生命周期'
+title = "第十一幕 — 可计数的个体"
 description = '热场中的个体能量预算、出生与死亡。'
 weight = 0
 lastmod = '2026-10-25'

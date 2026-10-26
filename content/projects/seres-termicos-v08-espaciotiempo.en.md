@@ -1,5 +1,5 @@
 +++
-title = "v08 — Spacetime"
+title = "Act XIII · Scene II — The trace of time"
 description = "A thermal field’s recent history represented as a volume."
 weight = 0
 lastmod = '2026-10-25'

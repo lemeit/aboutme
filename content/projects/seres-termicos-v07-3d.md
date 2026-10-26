@@ -1,5 +1,5 @@
 +++
-title = 'v07 — Universo esférico'
+title = 'Acto XIII · Escena I — El mundo que los contiene'
 date = '2026-09-25'
 lastmod = '2026-09-25'
 draft = false
@@ -15,7 +15,7 @@ list = 'never'
 >
 > — J. L. Borges (con M. Guerrero), *El libro de los seres imaginarios* (1957)
 
-*Esta simulación pertenece a la Línea V — [El cosmos](/projects/seres-termicos/): dónde viven y cómo se ven en el tiempo.*
+*Esta simulación pertenece a la Acto XIII — [El cosmos](/projects/seres-termicos/): dónde viven y cómo se ven en el tiempo.*
 
 Borges describe un cosmos, no una grilla. El universo rectangular de las versiones
 anteriores era una conveniencia numérica: sus bordes rectos no significaban nada.

@@ -6,6 +6,10 @@ lastmod = '2026-10-25'
 draft = false
 +++
 
+The shared narrative uses a Prologue and Acts I–XIV. File names and version codes are technical identifiers; see the [name map](/projects/seres-termicos/denominaciones/). The introductory [visual path](/simus/seres-termicos/termodinamica.html) is currently in Spanish.
+
+
+
 **Thermal Beings** explores a literary image through computational models: the thermal beings described by Jorge Luis Borges with Margarita Guerrero in *El libro de los seres imaginarios* (1957).
 
 The project asks how patterns of heat and cold might suggest bodies, behaviour and a world of their own. These are exploratory mathematical models, not experimental evidence for living thermal organisms.

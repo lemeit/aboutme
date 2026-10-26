@@ -26,8 +26,6 @@ Me interesan la calidad del aire, las ciencias naturales y las posibilidades de 
 
 Defiendo el software libre y el conocimiento compartido. Me interesa el uso estratégico y responsable de las nuevas tecnologías, incluida la inteligencia artificial, en la educación, la investigación y el trabajo.
 
-En lo personal, me gusta nadar y escuchar música de los años 70 y 80. También me interesa la alimentación saludable.
-
 ## Curriculum vitae
 
 Podés descargar mi resumen profesional actualizado en español: experiencia, formación y proyectos principales en dos páginas. Para leer el perfil y descargar el resumen en inglés, seleccioná **EN** en el encabezado.

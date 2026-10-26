@@ -26,12 +26,6 @@ Me interesan la calidad del aire, las ciencias naturales y las posibilidades de 
 
 Defiendo el software libre y el conocimiento compartido. Me interesa el uso estratégico y responsable de las nuevas tecnologías, incluida la inteligencia artificial, en la educación, la investigación y el trabajo.
 
-## Curriculum vitae
-
-Podés descargar mi resumen profesional actualizado en español: experiencia, formación y proyectos principales en dos páginas. Para leer el perfil y descargar el resumen en inglés, seleccioná **EN** en el encabezado.
-
-{{< cv-downloads >}}
-
 ## Trayectoria
 
 ### Experiencia
@@ -128,6 +122,12 @@ Trabajos en catálisis y caracterización de óxidos de manganeso para aplicacio
 Fui **Embajador Comunitario de OpenAQ (2023)** y participé de su programa de formación entre marzo de 2023 y marzo de 2024. Integro el **Grupo de Trabajo de Calidad del Aire de ECSA (European Citizen Science Association)** y participo en **CanAirIO, AireCiudadano y Sensor.Community**. Fui representante del claustro de graduados en la Comisión de Acompañamiento y Orientación en Políticas de Inclusión para la Discapacidad de la UTN La Plata (2022–2023).
 
 Entre mis presentaciones se encuentran la capacitación sobre medidores de CO₂ y ventilación en aulas para la Región 24 de la Dirección General de Cultura y Educación de la Provincia de Buenos Aires (2021), y la coautoría de un trabajo sobre mezclas asfálticas tibias con incorporación de RAP, presentado en CILA, Medellín (2017).
+
+## Curriculum vitae
+
+Podés descargar mi resumen profesional actualizado en español: experiencia, formación y proyectos principales en dos páginas. Para leer el perfil y descargar el resumen en inglés, seleccioná **EN** en el encabezado.
+
+{{< cv-downloads >}}
 
 ## Conversemos
 

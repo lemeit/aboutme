@@ -28,12 +28,6 @@ draft = false
 
 工作之外，我喜欢游泳，听二十世纪七八十年代的音乐，也关注健康饮食。
 
-## 简历 {#curriculum-vitae}
-
-你可以下载两页的中文职业简历，了解我的主要工作经历、教育背景和项目。通过页首的 **ES** 或 **EN**，也可以阅读其他语言的个人介绍并下载对应语言的简历。
-
-{{< cv-downloads >}}
-
 ## 经历 {#background}
 
 ### 职业经历
@@ -130,6 +124,12 @@ draft = false
 我曾担任 **OpenAQ 社区大使（2023 年）**，并于 2023 年 3 月至 2024 年 3 月参加其培训计划。我是 **ECSA（European Citizen Science Association，欧洲公民科学协会）空气质量工作组**成员，并参与 **CanAirIO、AireCiudadano 和 Sensor.Community**。我也曾于 2022—2023 年代表毕业生参与 UTN La Plata 支持残障人士融合政策的相关委员会。
 
 报告与交流活动包括：2021 年面向 Dirección General de Cultura y Educación de la Provincia de Buenos Aires 第 24 区开展教室 CO₂ 监测仪与通风培训；2017 年共同撰写关于掺入 RAP 的温拌沥青混合料的论文，并在麦德林 CILA 会议上发表。
+
+## 简历 {#curriculum-vitae}
+
+你可以下载两页的中文职业简历，了解我的主要工作经历、教育背景和项目。通过页首的 **ES** 或 **EN**，也可以阅读其他语言的个人介绍并下载对应语言的简历。
+
+{{< cv-downloads >}}
 
 ## 联系 {#contact}
 

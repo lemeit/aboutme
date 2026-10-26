@@ -241,7 +241,7 @@ cada ser tiene un tiempo de vida acotado desde el nacimiento.
 A diferencia del ciclo emergente de Gray-Scott, estas etapas **están programadas** como
 reglas sobre la energía individual:
 
-- **NACIMIENTO** — evento aleatorio programado → nuevo ser con $E_i = E_0$ 
+- **NACIMIENTO** — evento aleatorio programado → nuevo ser con $E_i = E_0$
 - **EXISTENCIA** — el ser inyecta su gaussiana térmica en el campo $T$; su "cuerpo" es visible mientras $E_i > 0$ 
 - **METABOLISMO** — $E_i$ decrece a tasa $\mu$; el ser pulsa, se mueve por deriva + ruido
 - **REPRODUCCIÓN** — si $E_i > 2E_0$ → se divide en dos seres (el campo recibe dos cuerpos más pequeños)

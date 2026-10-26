@@ -127,7 +127,7 @@ Presentations include training on CO₂ monitors and classroom ventilation for R
 
 ## Curriculum vitae
 
-Download my two-page professional résumé in English, covering my main experience, education and projects. Select **ES** in the header to read this profile and download the résumé in Spanish.
+Download my two-page professional résumé in English, covering my main experience, education and projects.
 
 {{< cv-downloads >}}
 

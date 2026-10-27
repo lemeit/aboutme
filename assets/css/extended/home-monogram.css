@@ -1,7 +1,13 @@
 .home-greeting{display:flex;align-items:center;gap:14px}.home-greeting>span{min-width:0}
 .home-monogram{display:block;width:64px;height:59px;flex-shrink:0;overflow:visible;--monogram-ink:#9B3D00}
 .home-monogram>g{stroke:var(--monogram-ink)}
-.home-monogram .monogram-samples{stroke:none;fill:var(--monogram-ink);opacity:.35}
-.home-monogram .monogram-pen{stroke:none;fill:var(--monogram-ink)}
+.home-monogram .monogram-sample{stroke:none;fill:var(--monogram-ink)}
+.home-monogram .monogram-trail,.home-monogram .monogram-glow{fill:none;stroke:var(--monogram-ink);stroke-linecap:round;stroke-linejoin:round}
+.home-monogram .monogram-trail{stroke-width:8}
+.home-monogram .monogram-glow{stroke-width:22;filter:blur(6px)}
+.home-monogram .monogram-spring{stroke:var(--monogram-ink);stroke-width:1.8;stroke-dasharray:3 3;opacity:.55}
+.home-monogram .monogram-target{fill:none;stroke:var(--monogram-ink);stroke-width:1.5}
+.home-monogram .monogram-pen{stroke:var(--monogram-ink);stroke-width:1.2;fill:#FFE6A3}
+.home-monogram .monogram-halo{stroke:none;fill:var(--monogram-ink);filter:blur(4px);opacity:.25}
 :root[data-theme="dark"] .home-monogram{--monogram-ink:#C45A00}
 @media(max-width:480px){.home-greeting{gap:10px}.home-monogram{width:52px;height:48px}}

@@ -13,8 +13,10 @@ const root=path.resolve(process.argv[2]),source=path.resolve(__dirname,'..');
    for(const host of hosts){
     await host.evaluate(e=>e.scrollIntoView({block:'start'}));await page.waitForTimeout(100);const section=host.locator('..'),panel=section.locator('.thermal-ledger');assert.equal(await panel.count(),1,entry.url+' mounted table');
     const api=()=>host.evaluate(e=>e.sceneAPI.readoutPanel.control.count);if(await panel.locator('[data-readout-pause]').isEnabled()){await panel.locator('[data-readout-pause]').click();const frozen=await api();await page.waitForTimeout(180);assert.equal(await api(),frozen,entry.url+' paused');
+    const times=await host.evaluate(e=>Object.entries(e.sceneAPI.thermalReadout.values()).filter(([k])=>/tiempo/i.test(k)).map(([,v])=>v));assert(times.every(v=>v>=0),entry.url+' monotonic initial clock');
     await panel.locator('[data-readout-step]').click();assert((await api())>frozen,entry.url+' manual callback');}
     assert(await panel.locator('tbody tr').count()>0,entry.url+' actual values');assert(!/NaN|undefined|Infinity/.test(await panel.innerText()),entry.url+' finite values');
+    if(entry.sim==='bestiario.html'){const size=await host.evaluate(e=>e.sceneAPI.thermalReadout.size());await host.evaluate(e=>e.style.display='none');await page.waitForTimeout(100);assert.deepEqual(await host.evaluate(e=>e.sceneAPI.thermalReadout.size()),size,'hidden host preserves field size');await host.evaluate(e=>e.style.display='');await page.waitForTimeout(100);}
     const coordinates=panel.locator('input');if(await coordinates.count()){const first=coordinates.first();await first.fill('1');await first.press('Tab');assert.equal(await first.inputValue(),'1');}
     await page.setViewportSize({width:320,height:700});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),entry.url+' mobile width');await page.setViewportSize({width:1440,height:1000});native++;
    }

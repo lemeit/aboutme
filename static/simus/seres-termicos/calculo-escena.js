@@ -8,7 +8,7 @@
     function execute(e,time,manual=false){
       e.native=null;if(paused&&!manual)return;
       queue.delete(e.id);
-      if(!manual){clock+=Math.max(0,time-wall);wall=time;}
+      if(!manual){if(count===0)clock=Math.max(time,performance.now());else clock+=Math.max(0,time-wall);wall=time;}
       e.fn(clock);count++;changed();
     }
     const schedule=e=>{e.native=request(time=>execute(e,time));};
@@ -16,7 +16,7 @@
       request(fn){const e={id:++serial,fn,native:null};queue.set(e.id,e);if(!paused)schedule(e);return e.id;},
       cancel(id){const e=queue.get(id);if(e?.native)cancel(e.native);queue.delete(id);},
       pause(value=true){paused=value;wall=performance.now();for(const e of queue.values()){if(e.native){cancel(e.native);e.native=null;}if(!paused)schedule(e);}changed();},
-      step(){api.pause();clock+=100;const pending=[...queue.values()];for(const e of pending)execute(e,clock,true);},
+      step(){api.pause();if(count===0)clock=Math.max(clock,performance.now());clock+=100;const pending=[...queue.values()];for(const e of pending)execute(e,clock,true);},
       onChange(fn){changed=fn;},get paused(){return paused;},get count(){return count;}
     };return api;
   }
@@ -25,16 +25,18 @@
     const panel=document.createElement('section');panel.className='thermal-ledger';panel.setAttribute('aria-label','Leer los valores del modelo');
     panel.innerHTML='<h3>Leer los valores del modelo</h3><p>Datos de esta ejecución. El avance manual ejecuta un cuadro del programa original: puede incluir varios subpasos, nacimientos o intercambios. No equivale necesariamente a un paso de Euler.</p><div class="thermal-ledger-controls"><button type="button" data-readout-pause>Pausar para leer</button><button type="button" data-readout-step>Avanzar un cuadro</button></div><p data-readout-status></p><div class="thermal-ledger-controls" data-coordinates></div><p data-readout-note></p><div class="thermal-ledger-scroll"><table><thead><tr><th>Magnitud</th><th>Antes del cuadro manual</th><th>Estado actual</th><th>Cambio</th></tr></thead><tbody data-readout-values></tbody></table></div><p>La tabla observa valores almacenados; no calcula el color final del píxel. En un volumen, la imagen combina múltiples vóxeles, luces y capas. Los índices son posiciones de la malla, no distancias en metros.</p>';
     section.append(panel);
-    const $=s=>panel.querySelector(s),inputs=[],cell=[0,0,0];let before=null,coordinates='';
+    const $=s=>panel.querySelector(s),inputs=[],cell=[0,0,0];let before=null,coordinates='',chosen=false;
     labels.meanError='Cambio de la media (K)';labels.excessEnergy='Indicador de energía sobre la referencia';
     function read(){
       const rows=Object.fromEntries(Object.entries(source.values?.()||{}).map(([k,v])=>[source.labels?.[k]||labels[k]||k,v])),size=source.size?.();
-      if(size){
+      if(size&&size.every(n=>Number.isInteger(n)&&n>0)){
         if(coordinates!==size.join(',')){
           coordinates=size.join(',');$('[data-coordinates]').replaceChildren();inputs.length=0;
-          size.forEach((n,k)=>{cell[k]=Math.min(n-1,Math.max(0,cell[k]||Math.floor(n/2)));const label=document.createElement('label');label.textContent=['Columna i','Fila j','Capa k'][k];const input=document.createElement('input');input.type='number';input.min=0;input.max=n-1;input.value=cell[k];input.addEventListener('change',()=>{cell[k]=Math.max(0,Math.min(n-1,Math.round(Number(input.value)||0)));input.value=cell[k];before=null;refresh();});label.append(input);$('[data-coordinates]').append(label);inputs.push(input);});
+          size.forEach((n,k)=>{cell[k]=Math.min(n-1,Math.max(0,cell[k]||Math.floor(n/2)));const label=document.createElement('label');label.textContent=['Columna i','Fila j','Capa k'][k];const input=document.createElement('input');input.type='number';input.min=0;input.max=n-1;input.value=cell[k];input.addEventListener('change',()=>{cell[k]=Math.max(0,Math.min(n-1,Math.round(Number(input.value)||0)));input.value=cell[k];before=null;chosen=true;refresh();});label.append(input);$('[data-coordinates]').append(label);inputs.push(input);});
         }
-        const a=source.field(),[nx,ny=1,nz=1]=size,[x,y=0,z=0]=cell;
+        const a=source.field(),[nx,ny=1,nz=1]=size;
+        if(!chosen){let best=0,index=0;for(let i=0;i<a.length;i++)if(Math.abs(a[i])>best){best=Math.abs(a[i]);index=i;}if(best>0){cell[0]=index%nx;cell[1]=Math.floor(index/nx)%ny;cell[2]=Math.floor(index/(nx*ny));inputs.forEach((input,k)=>input.value=cell[k]);chosen=true;before=null;}}
+        const [x,y=0,z=0]=cell;
         const at=(i,j,k)=>a[i+nx*(j+ny*k)];
         rows['Celda ('+cell.slice(0,size.length).join(', ')+')']=at(x,y,z);
         [['i',x,nx],['j',y,ny],['k',z,nz]].slice(0,size.length).forEach(([name,v,n],axis)=>{for(const d of [-1,1])if(v+d>=0&&v+d<n){const c=[x,y,z];c[axis]+=d;rows['Vecino '+name+(d<0?' −':' +')]=at(...c);}});

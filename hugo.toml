@@ -29,7 +29,7 @@ mainSections = []
     favicon32x32 = "/favicon.svg"
 
   [params.homeInfoParams]
-      Title = "Hola, soy Luciano 👋"
+      Title = "Hola, soy Luciano"
       Content = """
   Ingeniero químico · Profesor de física y química en Saladillo, Buenos Aires.
   Comparto materiales educativos y proyectos de tecnología aplicada al ambiente,
@@ -82,7 +82,7 @@ mainSections = []
     [languages.en.params.footer]
       text = "[Project wiki](https://wiki.lemeit.ar/en/)"
     [languages.en.params.homeInfoParams]
-      Title = "Hi, I'm Luciano 👋"
+      Title = "Hi, I'm Luciano"
       Content = "Chemical engineer and physics and chemistry teacher in Saladillo, Buenos Aires, Argentina. I share educational resources and projects applying technology to environmental monitoring, scientific simulation and territorial management."
   [[languages.en.menu.main]]
     name = "Projects"
@@ -109,7 +109,7 @@ mainSections = []
     [languages.zh.params.footer]
       text = "[项目维基（西班牙语）](https://wiki.lemeit.ar/)"
     [languages.zh.params.homeInfoParams]
-      Title = "你好，我是 Luciano 👋"
+      Title = "你好，我是 Luciano"
       Content = "我是一名化学工程师，也是物理和化学教师，生活在阿根廷布宜诺斯艾利斯省萨拉迪略。在这里，我分享教学资源，以及将技术应用于环境监测、科学模拟和区域管理的项目。"
   [[languages.zh.menu.main]]
     name = "项目"

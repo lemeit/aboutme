@@ -35,6 +35,9 @@
       h1{font-size:1.1rem!important}
       .anim{opacity:1!important;animation:none!important}
       canvas{max-width:100%}
+      fieldset{min-inline-size:0;max-width:100%}
+      select{min-width:0;max-width:100%;box-sizing:border-box}
+      fieldset select{display:block;width:100%}
       .sim-body>main>.layout{grid-template-columns:minmax(0,1fr)}
       .sim-body>main>.layout>aside{min-width:0}
       @container(min-width:760px){.sim-body>main>.layout{grid-template-columns:minmax(0,1fr) 260px}}

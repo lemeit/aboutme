@@ -28,8 +28,11 @@ try{
    const checks=await host.evaluate(el=>{const api=el.sceneAPI;return {gl:api.thermalDiagnostics?.().glError,self:api.thermalSelfTest?.().pass};});
    if(checks.gl!==undefined)assert.equal(checks.gl,0,p.url+' WebGL');
    if(checks.self!==undefined)assert.equal(checks.self,true,p.url+' physics self-test');
+   const controlOverflow=()=>host.evaluate(el=>[...el.shadowRoot.querySelectorAll('select,input,button')].flatMap(control=>{const panel=control.closest('fieldset,.card,.ctrl,.panel,aside');if(!panel||!control.getClientRects().length)return [];const r=control.getBoundingClientRect(),b=panel.getBoundingClientRect();return r.left<b.left-1||r.right>b.right+1?[control.id||control.textContent.trim()]:[];}));
+   assert.deepEqual(await controlOverflow(),[],p.url+' controls inside desktop panels');
    await page.setViewportSize({width:390,height:844});
    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),p.url+' mobile overflow');
+   assert.deepEqual(await controlOverflow(),[],p.url+' controls inside mobile panels');
    await page.setViewportSize({width:1440,height:1000});
   }
   const raw=await page.locator('.thermal-book-content').innerText();assert(!raw.includes('$$'),p.url+' raw math');

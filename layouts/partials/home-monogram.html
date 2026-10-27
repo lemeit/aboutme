@@ -1,0 +1,4 @@
+{{- $logo := readFile "static/images/logos/lemeit.svg" -}}
+{{- $logo = replaceRE `(?s)<title>.*?</title>` "" $logo -}}
+{{- $logo = replace $logo `<svg ` `<svg class="home-monogram" aria-hidden="true" focusable="false" ` -}}
+{{- $logo | safeHTML -}}

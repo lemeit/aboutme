@@ -1,0 +1,7 @@
+.home-greeting{display:flex;align-items:center;gap:14px}.home-greeting>span{min-width:0}
+.home-monogram{display:block;width:64px;height:59px;flex-shrink:0;overflow:visible;--monogram-ink:#9B3D00}
+.home-monogram>g{stroke:var(--monogram-ink)}
+.home-monogram .monogram-samples{stroke:none;fill:var(--monogram-ink);opacity:.35}
+.home-monogram .monogram-pen{stroke:none;fill:var(--monogram-ink)}
+:root[data-theme="dark"] .home-monogram{--monogram-ink:#C45A00}
+@media(max-width:480px){.home-greeting{gap:10px}.home-monogram{width:52px;height:48px}}

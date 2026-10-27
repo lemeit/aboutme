@@ -31,13 +31,14 @@ input[type=range]{flex:1;accent-color:#c87}
 .eq b{color:#adf}
 #fps{position:fixed;right:14px;top:12px;color:#333;font:11px monospace}
 #hint{position:fixed;right:14px;bottom:14px;color:#334;font:10px system-ui}
-</style>
+.row input{min-width:0}</style>
+<script src="/simus/seres-termicos/calculo-campo.js"></script>
 </head>
 <body>
 <canvas id="c"></canvas>
 <div class="panel">
   <h1>Las ondas recorren el medio</h1>
-  <div class="sub">FitzHugh-Nagumo · ondas espirales · nunca se detiene</div>
+  <div class="sub">FitzHugh–Nagumo · activación, recuperación y propagación</div>
 
   <div class="presets" id="presets">
     <button data-e="0.08" data-b="0.30" data-g="0.80" class="active">espirales</button>
@@ -70,6 +71,10 @@ input[type=range]{flex:1;accent-color:#c87}
 <div id="hint">clic en la pantalla → nueva espiral</div>
 
 <script>
+/* ledger:start */
+let evidence=null;
+/* ledger:end */
+
 'use strict';
 
 // ── Grilla ───────────────────────────────────────────────────────────────────
@@ -114,6 +119,9 @@ const px    = img.data;
 // v_alto ≈ +1.5 (variable de recuperación alta → bloquea re-excitación)
 
 function addSpiral(cx, cy, r) {
+/* ledger:start */
+evidence?.reset?.();
+/* ledger:end */
   r = r || 20;
   for (let j = cy-r; j <= cy+r; j++)
     for (let i = cx-r; i <= cx+r; i++) {
@@ -133,6 +141,9 @@ function addSpiral(cx, cy, r) {
 }
 
 function reset() {
+/* ledger:start */
+evidence?.reset?.();
+/* ledger:end */
   // Equilibrio: para β=0.30, γ=0.80 el punto fijo es u*≈-0.8, v*≈-0.625
   // det(J) > 0 y traza > 0 → punto inestable → ciclo límite (oscilación sostenida)
   const beta  = +document.getElementById('bi').value;
@@ -153,6 +164,9 @@ reset();
 
 // ── Paso de integración (Euler explícito) ────────────────────────────────────
 function step(eps, beta, gamma) {
+/* ledger:start */
+evidence?.before?.({du:DU,dt:DT,eps,beta,gamma});
+/* ledger:end */
   for (let j = 0; j < GH; j++) {
     const jm = (j-1+GH) % GH;
     const jp = (j+1) % GH;
@@ -175,6 +189,9 @@ function step(eps, beta, gamma) {
   }
   const tU=U; U=Un; Un=tU;
   const tV=V; V=Vn; Vn=tV;
+/* ledger:start */
+evidence?.after?.();
+/* ledger:end */
 }
 
 // ── Colormap ─────────────────────────────────────────────────────────────────
@@ -262,11 +279,18 @@ canvas.addEventListener('click', e => {
 let fpsF=0, fpsT=performance.now();
 const SPF = 8; // pasos de física por frame
 
-function loop(now) {
+function loop(now/* ledger:start */,manual=false/* ledger:end */) {
   const eps   = +eiEl.value;
   const beta  = +biEl.value;
   const gamma = +giEl.value;
-  for (let s=0; s<SPF; s++) step(eps, beta, gamma);
+/* ledger:start */
+if(evidence.playing||manual){
+/* ledger:end */
+  for (let s=0; s</* ledger:start */(manual?1:/* ledger:end */SPF/* ledger:start */)/* ledger:end */; s++) step(eps, beta, gamma);
+/* ledger:start */
+}
+/* ledger:end */
+
   render();
   fpsF++;
   if (now-fpsT > 1000) {
@@ -274,8 +298,12 @@ function loop(now) {
       `${Math.round(fpsF*1000/(now-fpsT))} fps · ${SPF} steps/frame`;
     fpsF=0; fpsT=now;
   }
-  requestAnimationFrame(loop);
+/* ledger:start */if(!manual)/* ledger:end */  requestAnimationFrame(loop);
 }
+/* ledger:start */
+if(typeof ThermalFieldLedger!=='undefined'){evidence=ThermalFieldLedger.create({kind:'fhn',nx:GW,ny:GH,periodic:true,fields:()=>({u:U,v:V}),probe:fields=>{let index=0;for(let i=1;i<fields.u.length;i++)if(fields.u[i]>fields.u[index])index=i;return [index%GW,Math.floor(index/GW)];},color:v=>uToRGB(v.u),colorInput:v=>(v.u+2)/4,display:'El color representa u; la recuperación v interviene en la ecuación.',advance:()=>loop(performance.now(),true)});window.thermalEvidence=evidence;}else evidence={playing:true};
+/* ledger:end */
+
 requestAnimationFrame(loop);
 </script>
 <script defer src="/simus/seres-termicos/volver-al-libro.js" data-chapter="/projects/seres-termicos/libro/ondas/" data-label="Capítulo 12"></script>

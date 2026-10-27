@@ -26,7 +26,8 @@ input{flex:1;accent-color:#c87}
    font:600 11px monospace;letter-spacing:.12em;text-transform:uppercase;
    transition:border-color .15s,color .15s}
 .panel button:hover{border-color:#c87;color:#ffb}
-</style>
+.row input{min-width:0}</style>
+<script src="/simus/seres-termicos/calculo-campo.js"></script>
 </head>
 <body>
 <canvas id="c"></canvas>
@@ -51,6 +52,10 @@ input{flex:1;accent-color:#c87}
 <div id="fps"></div>
 
 <script>
+/* ledger:start */
+let evidence=null;
+/* ledger:end */
+
 'use strict';
 // ── Canvas y contexto ───────────────────────────────────────────────────────
 const canvas = document.getElementById('c');
@@ -109,6 +114,9 @@ resetBeings();
 
 // ── Física: fuente gaussiana ────────────────────────────────────────────────
 function addGaussian(bx, by, amp, sigma) {
+/* ledger:start */
+evidence?.source?.({x:bx,y:by,amplitude:amp,sigma,cutoff:2.5,rounded:false});
+/* ledger:end */
   const r = Math.ceil(sigma * 2.5) | 0;
   const cx = bx | 0, cy = by | 0;
   const inv2s2 = 1 / (2 * sigma * sigma);
@@ -131,6 +139,9 @@ function gradT(bx, by) {
 
 // ── Física: paso de difusión ────────────────────────────────────────────────
 function diffuseStep(alpha, lambda) {
+/* ledger:start */
+evidence?.before?.({r:alpha*.14,lambda});
+/* ledger:end */
   const k = alpha * 0.14; // α·Δt/Δx² — elegido por estabilidad
   for (let j = 1; j < GH-1; j++)
     for (let i = 1; i < GW-1; i++) {
@@ -149,6 +160,9 @@ function diffuseStep(alpha, lambda) {
     Tnxt[idx(GW-1,j)] = Tnxt[idx(GW-2,j)];
   }
   const tmp = T; T = Tnxt; Tnxt = tmp;
+/* ledger:start */
+evidence?.after?.();
+/* ledger:end */
 }
 
 // ── Colormap divergente ─────────────────────────────────────────────────────
@@ -206,18 +220,24 @@ document.getElementById('kk').oninput = function(){ document.getElementById('kko
 document.getElementById('lm').oninput = function(){ document.getElementById('lmo').textContent=(this.value/1000).toFixed(3); };
 document.getElementById('ns').oninput = function(){ resetBeings(); };
 const rst = document.getElementById('reset');
-if (rst) rst.onclick = function(){ T.fill(0); Tnxt.fill(0); resetBeings(); };
+if (rst) rst.onclick = function(){ T.fill(0); Tnxt.fill(0); resetBeings();/* ledger:start */evidence?.reset?.();/* ledger:end */ };
 
 let tick = 0, fpsFrames = 0, fpsTime = performance.now(), lastTime = performance.now();
 
-function loop(now) {
-  const dt     = Math.min((now - lastTime) / 16.67, 2); lastTime = now;
+function loop(now/* ledger:start */,manual=false/* ledger:end */) {
+  const dt     = /* ledger:start */manual?1:/* ledger:end */Math.min((now - lastTime) / 16.67, 2); lastTime = now;
   const alpha  = +document.getElementById('al').value / 100;
   const kCoup  = +document.getElementById('kk').value / 100 * .04; // escala acoplamiento
   const lambda = +document.getElementById('lm').value / 1000;      // enfriamiento
 
+/* ledger:start */
+if(evidence.playing||manual){
+/* ledger:end */
   // 2 pasos de física por frame para más dinámica
-  for (let s = 0; s < 2; s++) {
+  for (let s = 0; s < /* ledger:start */(manual?1:/* ledger:end */2/* ledger:start */)/* ledger:end */; s++) {
+/* ledger:start */
+evidence?.start?.();
+/* ledger:end */
     // Inyectar cada ser en el campo
     for (const b of beings) {
       const pulse = .70 + .30 * Math.sin(tick * b.freq + b.phase);
@@ -264,6 +284,9 @@ function loop(now) {
     if (b.y > GH - pad) { b.y = GH - pad; b.vy = -Math.abs(b.vy); }
   }
 
+/* ledger:start */
+}
+/* ledger:end */
   render();
 
   fpsFrames++;
@@ -272,8 +295,12 @@ function loop(now) {
       `${Math.round(fpsFrames*1000/(now-fpsTime))} fps · ${GW}×${GH}`;
     fpsFrames = 0; fpsTime = now;
   }
-  requestAnimationFrame(loop);
+/* ledger:start */if(!manual)/* ledger:end */  requestAnimationFrame(loop);
 }
+/* ledger:start */
+if(typeof ThermalFieldLedger!=='undefined'){evidence=ThermalFieldLedger.create({kind:'gradient',nx:GW,ny:GH,periodic:false,fields:()=>({theta:T}),probe:()=>[Math.floor(beings[0]?.x||GW/2),Math.floor(beings[0]?.y||GH/2)],color:v=>tempRGB(Math.max(-1,Math.min(1,v.theta/MAX_T))),colorInput:v=>Math.max(-1,Math.min(1,v.theta/MAX_T)),display:'θ es relativo; el mapa usa θ/120 limitado a [−1,1].',advance:()=>loop(performance.now(),true)});window.thermalEvidence=evidence;}else evidence={playing:true};
+/* ledger:end */
+
 requestAnimationFrame(loop);
 </script>
 <script defer src="/simus/seres-termicos/volver-al-libro.js" data-chapter="/projects/seres-termicos/libro/gradiente/" data-label="Capítulo 10"></script>

@@ -53,6 +53,7 @@
   .dot.hot  { background: radial-gradient(circle, #fff 0%, #ff8c00 60%, #600 100%); }
   .dot.cold { background: radial-gradient(circle, #cff 0%, #0af 60%, #006 100%); }
 </style>
+<script src="/simus/seres-termicos/calculo-campo.js"></script>
 </head>
 <body>
 
@@ -73,6 +74,10 @@
 </div>
 
 <script>
+/* ledger:start */
+let evidence=null;
+/* ledger:end */
+
 // ─── Parámetros de la simulación ───────────────────────────────────────────
 const GW   = 220;   // celdas horizontales
 const GH   = 160;   // celdas verticales
@@ -108,6 +113,9 @@ const beings = [
 
 // ─── Física: agregar fuente gaussiana ──────────────────────────────────────
 function addSource(x, y, amplitude, sigma) {
+/* ledger:start */
+evidence?.source?.({x,y,amplitude,sigma,cutoff:2.8,rounded:true});
+/* ledger:end */
   const x0 = Math.round(x), y0 = Math.round(y);
   const r = Math.ceil(sigma * 2.8);
   const inv2s2 = 1 / (2 * sigma * sigma);
@@ -122,6 +130,9 @@ function addSource(x, y, amplitude, sigma) {
 // ─── Física: un paso de la ecuación del calor (diferencias finitas) ─────────
 let tick = 0;
 function physicsStep() {
+/* ledger:start */
+evidence?.before?.({r:ALPHA,damp:DAMP});
+/* ledger:end */
   // dT/dt = α * laplaciano(T)  →  esquema explícito de Euler
   for (let j = 1; j < GH - 1; j++) {
     for (let i = 1; i < GW - 1; i++) {
@@ -141,6 +152,9 @@ function physicsStep() {
   }
   // Intercambiar buffers
   const tmp = T; T = Tnxt; Tnxt = tmp;
+/* ledger:start */
+evidence?.stage?.();
+/* ledger:end */
 
   // Mover seres y emitir calor/frío
   tick++;
@@ -162,6 +176,9 @@ function physicsStep() {
     const pulse = 0.65 + 0.35 * Math.sin(tick * b.freq + b.phase);
     addSource(b.x, b.y, b.amp * pulse * 0.12, b.sigma);
   }
+/* ledger:start */
+evidence?.after?.();
+/* ledger:end */
 }
 
 // ─── Colormap ──────────────────────────────────────────────────────────────
@@ -229,13 +246,19 @@ function render() {
 
 // ─── Loop principal ────────────────────────────────────────────────────────
 function loop() {
+/* ledger:start */if(evidence.playing){/* ledger:end */
   for (let s = 0; s < STEPS; s++) physicsStep();
+/* ledger:start */}/* ledger:end */
   render();
   requestAnimationFrame(loop);
 }
 
 // Calor inicial: sembrar los seres en sus posiciones de inicio
 for (const b of beings) addSource(b.x, b.y, b.amp * 0.8, b.sigma * 1.5);
+
+/* ledger:start */
+if(typeof ThermalFieldLedger!=='undefined'){evidence=ThermalFieldLedger.create({kind:'field',nx:GW,ny:GH,periodic:false,fields:()=>({theta:T}),probe:()=>[76,50],color:v=>tempToRGB(Math.max(-1,Math.min(1,v.theta/T_MAX))),colorInput:v=>Math.max(-1,Math.min(1,v.theta/T_MAX)),display:'θ es relativo; el mapa usa θ/100 limitado a [−1,1].',advance:()=>{physicsStep();render();}});window.thermalEvidence=evidence;}else evidence={playing:true};
+/* ledger:end */
 
 loop();
 </script>

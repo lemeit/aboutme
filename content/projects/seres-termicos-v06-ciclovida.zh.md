@@ -1,9 +1,10 @@
 +++
+date = "2026-09-25"
 aliases = ["/zh/projects/seres-termicos/v06-ciclovida/"]
-title = "第十一幕 — 可计数的个体"
+title = "第13章 — 统计个体"
 description = '热场中的个体能量预算、出生与死亡。'
 weight = 0
-lastmod = '2026-10-25'
+lastmod = "2026-10-27"
 draft = false
 url = '/zh/projects/simus/bestiario/v06-ciclovida/'
 math = true
@@ -11,33 +12,14 @@ math = true
 list = 'never'
 +++
 
-本模拟属于[热生物](/zh/projects/simus/bestiario/)的**个体**路径。与反应扩散纹理不同，每个生物都有身份、位置和有限的能量预算。
+每个个体都有身份、位置和有限储备。实际离散更新为 $E_i^{n+1}=E_i^n-0.15\mu$：扣减发生在每个模型步，而不是经过实验标定的每一秒。控制参数固定时，初始储备 $E_b$ 在 $\lceil E_b/(0.15\mu)\rceil$ 步后耗尽。
 
-## 模拟
+个体在二维场中留下高斯源，其幅度取决于 $E_i/E_{0,i}$。场中增加的热量并不等于从储备中扣除的同一笔能量。随机出生由外部规则规定。初始储备固定、繁殖阈值高于初值且储备只减不增时，个体无法达到该阈值；不能将外部出生称为涌现出的繁殖。
 
-控件使用西班牙语。
+对应章节提供方程、计算示例和实时数值表，支持暂停及手动推进。每次手动推进运行原程序的一帧，其中包含两个模型步。
 
-{{< sim src="/simus/seres-termicos/v06-ciclovida.html" title="热生物：v06 生命周期" >}}
+完整叙事、方程说明和控件目前使用西班牙语。
 
-## 观察要点
+[打开完整的西班牙语章节](/projects/simus/bestiario/individuos/) · [返回幻想生物志](/zh/projects/simus/bestiario/)
 
-- 随机涨落引入新个体。
-- 每个个体以自己的频率脉动。
-- 源项的幅度随剩余能量下降，身体因此逐渐淡出。
-- 实时图表跟踪出生、死亡和种群变化；种群可能完全消失。
-
-## 模型
-
-场的演化由扩散、线性耗散和各个体源项之和决定：
-
-$$\frac{\partial T}{\partial t}=\alpha\nabla^2T-\lambda T+\sum_i S_i.$$
-
-每个源项具有高斯空间轮廓，并受到剩余能量和振荡的调制。能量以恒定速率下降，$dE_i/dt=-\mu$，因此不受其他规则影响时的寿命为 $E_0/\mu$。出生是随机的，繁殖遵循模型中的能量阈值和分配规则。能量耗尽的个体会被移除。
-
-显式欧拉积分使用五点拉普拉斯差分格式，时间步长满足二维扩散的稳定性限制。
-
-[返回项目](/zh/projects/simus/bestiario/) · [下一项：球形宇宙](/zh/projects/simus/bestiario/v07-3d/)
-
----
-
-本中文概述介绍项目目标与主要功能。[阅读完整的西班牙语项目文档](/projects/simus/bestiario/v06-ciclovida/)。
+{{< sim src="/simus/seres-termicos/v06-ciclovida.html" title="统计个体" >}}

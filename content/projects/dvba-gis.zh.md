@@ -1,8 +1,10 @@
 +++
-title = 'SIG Vial PBA：道路管理'
-description = '省级道路网络的网络地图与现场调查。'
+date = "2026-06-18"
+summary = "为 Dirección de Vialidad（DVBA）开发的布宜诺斯艾利斯省道路网络地图与移动应用。"
+title = "SIG Vial PBA"
+description = "为 Dirección de Vialidad（DVBA）开发的布宜诺斯艾利斯省道路网络地图与移动应用。"
 weight = 20
-lastmod = '2026-10-25'
+lastmod = "2026-10-27"
 draft = false
 +++
 

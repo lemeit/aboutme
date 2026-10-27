@@ -1,9 +1,10 @@
 +++
+date = "2026-09-25"
 aliases = ["/zh/projects/seres-termicos/v07-3d/"]
-title = "第十三幕 第一场 — 容纳它们的世界"
+title = "第15章 — 容纳它们的世界"
 description = '具有外部与内部视角的三维热场。'
 weight = 0
-lastmod = '2026-10-25'
+lastmod = "2026-10-27"
 draft = false
 url = '/zh/projects/simus/bestiario/v07-3d/'
 math = true
@@ -11,30 +12,14 @@ math = true
 list = 'never'
 +++
 
-本模拟属于[热生物](/zh/projects/simus/bestiario/)的**宇宙**路径。球形区域代替了早期版本的矩形网格。
+数值场使用 $64\times48\times32$ 的矩形网格和六邻点扩散更新。先加入源，再计算 $\theta^{n+1}=\theta^n+0.10\alpha L_3\theta^n-\lambda\theta^n$；边界面复制相邻内部单元的值。
 
-## 模拟
+个体的球形活动边界与图像中的球形外观，并不意味着在球形区域上求解热扩散。反射规则反转速度的法向分量：$\mathbf v'=\mathbf v-2(\mathbf v\cdot\mathbf n)\mathbf n$。
 
-控件使用西班牙语。拖动鼠标可旋转外部视角；按 **Tab** 可切换内部视角所跟随的个体。
+外部与内部相机从不同位置观察同一个模型。光线步进会将多个深度的贡献合成为一个像素，因此亮度不是单个体素的直接读数。实时表格按网格索引读取实际场值，暂停和手动推进可用于比较。一帧可能包含多个数值步。
 
-{{< sim src="/simus/seres-termicos/v07-3d.html" title="热生物：v07 球形宇宙" >}}
+完整叙事、方程说明和控件目前使用西班牙语。
 
-## 两种视角
+[打开完整的西班牙语章节](/projects/simus/bestiario/universo/) · [返回幻想生物志](/zh/projects/simus/bestiario/)
 
-外部视角将场显示为发光的体积，具有冷暖颜色和发光边缘。内部小窗从某个个体的位置观察同一个环境：其他个体表现为发光的团块，边界则像模糊的地平线。
-
-## 模型与渲染
-
-在三维网格上，扩散使用七点拉普拉斯差分格式。对均匀网格，显式扩散系数必须满足：
-
-$$\frac{\alpha\Delta t}{\Delta x^2}\leq\frac16.$$
-
-CPU 更新场，再将其作为三维纹理上传，用 WebGL2 渲染。体积光线步进沿每条视线累积发光与不透明度。接近零的值是透明的，正值和负值使用不同的色彩范围。
-
-个体在球形边界处反射。边界和场的规则定义了一个理想化的计算世界，而不是对真实等离子体的建模。
-
-[返回项目](/zh/projects/simus/bestiario/) · [下一项：时空](/zh/projects/simus/bestiario/v08-espaciotiempo/)
-
----
-
-本中文概述介绍项目目标与主要功能。[阅读完整的西班牙语项目文档](/projects/simus/bestiario/v07-3d/)。
+{{< sim src="/simus/seres-termicos/v07-3d.html" title="容纳它们的世界" >}}

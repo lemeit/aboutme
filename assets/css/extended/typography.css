@@ -11,14 +11,14 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("/fonts/noto-sans-sc/noto-sans-sc-regular.woff2") format("woff2");
+  src: url("/fonts/noto-sans-sc/noto-sans-sc-regular.woff2?v=442c9edb01a9") format("woff2");
 }
 @font-face {
   font-family: "Noto Sans SC";
   font-style: normal;
   font-weight: 600 900;
   font-display: swap;
-  src: url("/fonts/noto-sans-sc/noto-sans-sc-bold.woff2") format("woff2");
+  src: url("/fonts/noto-sans-sc/noto-sans-sc-bold.woff2?v=0469a8f6084a") format("woff2");
 }
 html:lang(zh) body {
   font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;

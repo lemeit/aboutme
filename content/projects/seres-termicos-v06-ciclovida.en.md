@@ -1,9 +1,10 @@
 +++
+date = "2026-09-25"
 aliases = ["/en/projects/seres-termicos/v06-ciclovida/"]
-title = "Act XI — Counting individuals"
+title = "Chapter 13 — Counting individuals"
 description = "Individual energy budgets, births and deaths in a thermal field."
 weight = 0
-lastmod = '2026-10-25'
+lastmod = "2026-10-27"
 draft = false
 url = '/en/projects/simus/bestiario/v06-ciclovida/'
 math = true
@@ -11,34 +12,14 @@ math = true
 list = 'never'
 +++
 
-This simulation belongs to the **Individuals** line of [Thermal Beings](/en/projects/simus/bestiario/). Unlike a reaction–diffusion texture, each being has an identity, a position and a finite energy budget.
+Each agent has an identity, position and finite reserve. The actual discrete update is $E_i^{n+1}=E_i^n-0.15\mu$: the decrement is per model step, not per calibrated second. For fixed controls, an initial reserve $E_b$ is exhausted after $\lceil E_b/(0.15\mu)\rceil$ steps.
 
-## Simulation
+Sources leave Gaussian footprints in a two-dimensional field; their amplitude depends on $E_i/E_{0,i}$. The deposited heat is not an exact energy transfer deducted from the reserve. External stochastic births are prescribed. With a fixed initial reserve and a reproduction threshold above it, individuals that only lose energy cannot reach that threshold: births should not be presented as emergent reproduction.
 
-Controls are in Spanish.
+The chapter now includes equations, a worked example and live tables with pause and manual advancement. A manual advance runs one original animation frame, which contains two model steps.
 
-{{< sim src="/simus/seres-termicos/v06-ciclovida.html" title="Thermal Beings — v06, life cycle" >}}
+The full narrative, equations and controls are in Spanish.
 
-## What to observe
+[Open the complete chapter in Spanish](/projects/simus/bestiario/individuos/) · [Back to the Bestiary](/en/projects/simus/bestiario/)
 
-- Random fluctuations introduce new individuals.
-- Each individual pulses at its own frequency.
-- Its source amplitude falls with its remaining energy, so its body fades gradually.
-- Live plots track births, deaths and population changes; extinction is possible.
-
-## Model
-
-The field follows diffusion, linear dissipation and the sum of individual sources:
-
-$$\frac{\partial T}{\partial t}=\alpha\nabla^2T-\lambda T+\sum_i S_i.$$
-
-Each source has a Gaussian spatial profile, modulated by its remaining energy and an oscillation. Energy decreases at a constant rate, $dE_i/dt=-\mu$, giving an unperturbed lifetime $E_0/\mu$. Births are stochastic; reproduction follows the model's energy threshold and allocation rules. Individuals are removed when their energy reaches zero.
-
-Explicit Euler integration uses a five-point Laplacian and a timestep within the two-dimensional diffusion stability limit.
-
-[Back to the project](/en/projects/simus/bestiario/) · [Next: spherical universe](/en/projects/simus/bestiario/v07-3d/)
-
----
-
-This English overview presents the project’s purpose and main features. [Read the full project documentation in Spanish](/projects/simus/bestiario/v06-ciclovida/).
-
+{{< sim src="/simus/seres-termicos/v06-ciclovida.html" title="Counting individuals" >}}

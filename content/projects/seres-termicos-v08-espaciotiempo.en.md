@@ -1,9 +1,10 @@
 +++
+date = "2026-09-25"
 aliases = ["/en/projects/seres-termicos/v08-espaciotiempo/"]
-title = "Act XIII · Scene II — The trace of time"
+title = "Chapter 16 — The trace of time"
 description = "A thermal field’s recent history represented as a volume."
 weight = 0
-lastmod = '2026-10-25'
+lastmod = "2026-10-27"
 draft = false
 url = '/en/projects/simus/bestiario/v08-espaciotiempo/'
 math = true
@@ -11,31 +12,14 @@ math = true
 list = 'never'
 +++
 
-This simulation belongs to the **Cosmos** line of [Thermal Beings](/en/projects/simus/bestiario/). Rather than watching a two-dimensional field evolve only in the present, it stacks recent frames along a third axis representing time.
+The thermal model remains two-dimensional, with $80\times60$ cells. A volume stores 64 historical slices: $\mathcal T(i,j,m)=\theta_{i,j}(n_m)$. The third axis is recorded time, not a third spatial direction for heat diffusion.
 
-## Simulation
+A circular buffer replaces older records when full. The history-speed control affects how cuts are recorded; it does not establish a calibrated time interval in seconds. Moving sources leave visible trajectories through this record. This is not a relativistic or four-dimensional physical simulation.
 
-Controls are in Spanish. **Space** pauses accumulation so the volume can be inspected.
+The reserve and birth rules retain the limitations of Counting individuals. The live table reads the current two-dimensional field and reports stored slices. Pause and manual advancement operate on the original animation; the rendered pixel combines several historical layers.
 
-{{< sim src="/simus/seres-termicos/v08-espaciotiempo.html" title="Thermal Beings — v08, spacetime" >}}
+The full narrative, equations and controls are in Spanish.
 
-## What to observe
+[Open the complete chapter in Spanish](/projects/simus/bestiario/tiempo/) · [Back to the Bestiary](/en/projects/simus/bestiario/)
 
-An individual's history forms a **worldtube**. Birth marks its beginning and death its end. A stationary individual produces a vertical tube; motion produces a slanted or curved one. Changing energy changes its diameter, and reproduction creates a branch.
-
-## Model
-
-The displayed volume is a sequence of samples of the two-dimensional field:
-
-$$\mathcal{T}(x,y,\tau)=T(x,y,t_0+\tau\Delta t).$$
-
-A circular buffer retains recent frames, replacing the oldest as new ones arrive. The third axis is a record of time, not an additional physical spatial dimension. The underlying simulation and the historical volume are two views of the same process.
-
-This differs from retaining traces through weak diffusion: here, memory is stored explicitly in a buffer. The literary framing also draws on the image of lives extended through time in Kurt Vonnegut's *Slaughterhouse-Five* (1969).
-
-[Back to the project](/en/projects/simus/bestiario/) · [Spherical universe](/en/projects/simus/bestiario/v07-3d/)
-
----
-
-This English overview presents the project’s purpose and main features. [Read the full project documentation in Spanish](/projects/simus/bestiario/v08-espaciotiempo/).
-
+{{< sim src="/simus/seres-termicos/v08-espaciotiempo.html" title="The trace of time" >}}

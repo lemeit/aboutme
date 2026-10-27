@@ -1,8 +1,10 @@
 +++
-title = 'EUREKA AI'
-description = '采用苏格拉底式引导的科学学习辅导工具。'
+date = "2026-06-18"
+summary = "面向中学生和大学生、采用苏格拉底式引导的科学学习辅导工具。"
+title = "EUREKA AI"
+description = "面向中学生和大学生、采用苏格拉底式引导的科学学习辅导工具。"
 weight = 10
-lastmod = '2026-10-25'
+lastmod = "2026-10-27"
 draft = false
 +++
 

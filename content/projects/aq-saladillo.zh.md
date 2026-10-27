@@ -1,8 +1,10 @@
 +++
-title = 'Aire Escolar：空气质量'
-description = '校园公民科学与低成本空气质量传感器。'
+date = "2026-08-23"
+summary = "利用 PurpleAir 和 AirGradient 传感器开展校园环境监测，提供颗粒物、CO₂、NOₓ 和实时空气质量数据。"
+title = "Aire Escolar"
+description = "利用 PurpleAir 和 AirGradient 传感器开展校园环境监测，提供颗粒物、CO₂、NOₓ 和实时空气质量数据。"
 weight = 1
-lastmod = '2026-10-25'
+lastmod = "2026-10-27"
 draft = false
 +++
 

@@ -1,12 +1,14 @@
 +++
-title = 'WQ Saladillo：水质'
-description = '通过地图和历史数据查看市政水质分析报告。'
+date = "2026-08-23"
+summary = "整理萨拉迪略供水水质数据，结合市政检测报告、阿根廷及省级参考限值，并自动导入 PDF 报告。"
+title = "Agua Saladillo"
+description = "整理萨拉迪略供水水质数据，结合市政检测报告、阿根廷及省级参考限值，并自动导入 PDF 报告。"
 weight = 3
-lastmod = '2026-10-25'
+lastmod = "2026-10-27"
 draft = false
 +++
 
-WQ Saladillo 整理市政府以 PDF 报告发布的水质分析结果，便于按采样点、参数和日期查询。采样点包括取水井、学校、幼儿园和住宅。
+Agua Saladillo 整理市政府以 PDF 报告发布的水质分析结果，便于按采样点、参数和日期查询。采样点包括取水井、学校、幼儿园和住宅。
 
 ## 提供的信息
 

@@ -1,9 +1,10 @@
 +++
+date = "2026-09-25"
 aliases = ["/en/projects/seres-termicos/v07-3d/"]
-title = "Act XIII · Scene I — The world that contains them"
+title = "Chapter 15 — The world that contains them"
 description = "A three-dimensional thermal field with external and internal viewpoints."
 weight = 0
-lastmod = '2026-10-25'
+lastmod = "2026-10-27"
 draft = false
 url = '/en/projects/simus/bestiario/v07-3d/'
 math = true
@@ -11,31 +12,14 @@ math = true
 list = 'never'
 +++
 
-This simulation belongs to the **Cosmos** line of [Thermal Beings](/en/projects/simus/bestiario/). A spherical domain replaces the rectangular grids of earlier versions.
+The numerical field uses a rectangular $64\times48\times32$ grid and a six-neighbour diffusion update. Sources are added before $\theta^{n+1}=\theta^n+0.10\alpha L_3\theta^n-\lambda\theta^n$; boundary faces copy adjacent interior cells.
 
-## Simulation
+The spherical confinement of the agents and the spherical shape used in rendering do not turn that rectangular solver into diffusion on a spherical domain. Reflection reverses the normal velocity component: $\mathbf v'=\mathbf v-2(\mathbf v\cdot\mathbf n)\mathbf n$.
 
-Controls are in Spanish. Drag to orbit the external camera; **Tab** selects the next individual for the internal view.
+The external and internal cameras show the same model from different positions. Ray marching combines several depths in each pixel, so brightness is not a direct reading of a single voxel. The live table reads actual field values by grid indices; pause and manual advancement allow comparison. A frame may contain several numerical steps.
 
-{{< sim src="/simus/seres-termicos/v07-3d.html" title="Thermal Beings — v07, spherical universe" >}}
+The full narrative, equations and controls are in Spanish.
 
-## Two perspectives
+[Open the complete chapter in Spanish](/projects/simus/bestiario/universo/) · [Back to the Bestiary](/en/projects/simus/bestiario/)
 
-The external view shows the field as a luminous volume, with warm and cool colours and a glowing rim. The internal inset shows the same environment from an individual's position: other beings appear as luminous masses and the boundary as a diffuse horizon.
-
-## Model and rendering
-
-A seven-point Laplacian integrates diffusion on a three-dimensional grid. For uniform spacing, the explicit diffusion coefficient must satisfy:
-
-$$\frac{\alpha\Delta t}{\Delta x^2}\leq\frac16.$$
-
-The CPU updates the field, which is uploaded as a 3D texture for WebGL2 rendering. Volume ray marching accumulates emission and opacity along each viewing ray. Values near zero are transparent; positive and negative values use different colour ranges.
-
-Individuals reflect at the spherical boundary. The boundary and field rules define an idealised computational world, rather than a model of a physical plasma.
-
-[Back to the project](/en/projects/simus/bestiario/) · [Next: spacetime](/en/projects/simus/bestiario/v08-espaciotiempo/)
-
----
-
-This English overview presents the project’s purpose and main features. [Read the full project documentation in Spanish](/projects/simus/bestiario/v07-3d/).
-
+{{< sim src="/simus/seres-termicos/v07-3d.html" title="The world that contains them" >}}

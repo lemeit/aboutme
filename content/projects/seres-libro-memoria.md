@@ -17,7 +17,7 @@ book_label = "Anexo E"
 list = "never"
 +++
 
-Esta memoria conserva el documento extenso anterior para consulta y trazabilidad. Sus «actos» son **rótulos históricos**, no otra navegación del libro. Usá el índice lateral para leer en orden. Las referencias a modelos que siguen no implican que todas las ramas se deduzcan entre sí.
+Esta memoria conserva el documento extenso anterior para consulta y trazabilidad. Sus «actos» son **rótulos históricos**, no otra navegación del relato. Usá el índice lateral para leer en orden. Las referencias a modelos que siguen no implican que todas las ramas se deduzcan entre sí.
 
 El criterio físico de lectura está en el anexo de ecuaciones: separar difusión, fuentes, control y representación. La termotaxis y el ciclo vital son hipótesis programadas.
 

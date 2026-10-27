@@ -1,3 +1,6 @@
+{{- if eq .Page.Params.book_id "seres-termicos" -}}
+{{- partial "sim-native.html" . -}}
+{{- else -}}
 {{- $src := .Get "src" -}}
 {{- $title := .Get "title" | default "Simulación interactiva" -}}
 {{- $h := .Get "height" | default "760" -}}
@@ -55,3 +58,4 @@ document.addEventListener('fullscreenchange',function(){
   });
 });
 </script>
+{{- end -}}

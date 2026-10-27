@@ -1,4 +1,4 @@
-# Seres Térmicos como libro interactivo
+# Seres Térmicos como relato interactivo
 
 Reorganización del 26 de octubre de 2026. Alcance acordado: todo Seres Térmicos y sus accesos desde el portal; no convertir las otras materias o proyectos en este libro.
 
@@ -19,20 +19,20 @@ El orden corresponde a requisitos conceptuales y comparación de modelos, no pre
 
 - Las páginas de lectura tienen `layout = "seres-libro"`, `book_id`, `book_order`, `book_part` y `book_label`.
 - `data/seres_book_chapters.json` registra el inventario y el identificador lógico que permite recuperar cada página con `Site.GetPage`. `build.list = never` mantiene los capítulos fuera del listado general de proyectos; por eso no se usa `Site.RegularPages` para construir el índice.
-- `data/seres_book.json` define las partes; `layouts/_default/seres-libro.html`, su parcial de navegación y `assets/css/extended/seres-book.css` presentan el libro respetando la paleta existente.
+- `data/seres_book.json` define las partes; `layouts/_default/seres-libro.html`, su parcial de navegación y `assets/css/extended/seres-book.css` presentan el relato respetando la paleta existente.
 - Las 27 simulaciones se incorporan sin cambiar sus motores. Se elimina el selector de actividades de los ocho capítulos introductorios y se reemplazan los accesos por enlaces de lectura. Los controles físicos propios de cada simulación siguen disponibles.
-- `volver-al-libro.js` ofrece acceso al capítulo al abrir una escena directamente; dentro del iframe no agrega controles de lectura duplicados.
+- `volver-al-libro.js` ofrece acceso al capítulo al abrir una escena directamente; en las escenas integradas se omite ese script para evitar controles de lectura duplicados.
 - Se reparan `Q=C\,\Delta T`, `C=m\,c` y `P=G\,(T_A-T_B)`.
 - La memoria conserva el documento previo y las referencias. Se aclara allí que la termotaxis no se deduce de Fourier y que un umbral de reproducción no se alcanza en una reserva que solo disminuye desde su valor inicial.
 
 ## Rutas conservadas
 
-- `/simus/seres-termicos/` ahora tiene `index.html` y remite a la portada del libro; antes no existía ese índice y daba 404.
+- `/simus/seres-termicos/` ahora tiene `index.html` y remite a la inicio del relato; antes no existía ese índice y daba 404.
 - `/simus/seres-termicos/termodinamica.html` remite a la misma portada para evitar un segundo índice parcial.
 - Los HTML individuales permanecen en sus rutas anteriores.
 - Las fichas anteriores de ciclo vital, universo y tiempo, y el mapa de denominaciones, remiten al capítulo o anexo correspondiente.
 - La guía de ecuaciones conserva `/projects/seres-termicos/guia-fisica/` y sus 52 ecuaciones.
-- Las presentaciones inglesa y china remiten al libro español sin prometer capítulos traducidos.
+- Las presentaciones inglesa y china remiten al relato en español sin prometer capítulos traducidos.
 
 ## Verificación
 
@@ -50,3 +50,14 @@ El control del libro verifica páginas, enlaces internos y anclas, inventario co
 La prueba de navegador requiere Playwright y Chrome, y usa un servidor local aislado. Se ejecutó con 31 páginas de lectura, 27 simulaciones y 207 fórmulas renderizadas; sin errores de ejecución. Comprueba anterior/siguiente e índice, ausencia del selector antiguo, apertura del índice móvil, ausencia de desbordamiento horizontal, regreso desde los simuladores y conservación de energía en el contacto de prueba.
 
 La revisión visual cubre portada, capítulo de contacto, escritorio, móvil e índice móvil, y modo oscuro. No sustituye una revisión científica integral de todos los modelos históricos.
+
+
+## Integración directa de las escenas · octubre de 2026
+
+El relato incorpora las escenas sin `iframe`. El shortcode `sim` usa `layouts/partials/sim-native.html` solo en las páginas con `book_id = "seres-termicos"`. Hugo toma el cuerpo, estilos y scripts de los HTML autónomos, que siguen siendo la fuente única de cada modelo. El adaptador no ejecuta texto mediante `eval` ni descarga otra página en el navegador.
+
+`relato-simulacion.js` monta los controles y gráficos en el mismo documento, dentro de Shadow DOM para aislar estilos e identificadores. Las consultas del motor se limitan a esa escena. Los tamaños de ventana y las coordenadas absolutas de interacción se adaptan al área disponible; las ecuaciones y los algoritmos de los archivos fuente se conservan. La animación deja de solicitar cuadros cuando la escena queda fuera de vista.
+
+Se eliminan de la vista integrada la cabecera, navegación y pie de la página autónoma. «Ampliar simulación» mueve el mismo componente a un diálogo modal, sin volver a crear el modelo ni perder su estado; Escape o «Volver al relato» lo devuelven a su posición. «Abrir por separado» conserva el acceso al HTML autónomo. Las rutas publicadas con `/libro/` se mantienen por compatibilidad, aunque la presentación visible dice «relato».
+
+Validación actualizada: 31 páginas de lectura, 30 instancias integradas de los 27 modelos (tres reaparecen en la memoria histórica), ausencia de iframes, controles de contacto, apertura/cierre del diálogo, vista de 390 px sin desbordamiento horizontal y pruebas físicas incorporadas de los modelos que las exponen. Se mantienen además los controles de las versiones autónomas y del índice.

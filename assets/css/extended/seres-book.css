@@ -32,3 +32,12 @@
 .thermal-book-portal{font-size:14px;color:var(--secondary);margin:24px 0}
 @media(max-width:900px){.thermal-book{width:100%;margin:0;transform:none;display:block}.thermal-book-sidebar{position:static;border:1px solid var(--border);border-radius:8px;padding:8px 14px;margin-bottom:26px}.thermal-book-index nav{max-height:60vh}.thermal-book-page h1{font-size:30px}.thermal-book-content{font-size:17px}.thermal-book-turn{gap:10px;font-size:12px}.thermal-book-contents li a{grid-template-columns:72px 1fr;gap:3px 10px}}
 @media print{.thermal-book{display:block;width:100%;margin:0;transform:none}.thermal-book-sidebar,.thermal-book-turn,.thermal-book-portal{display:none}.thermal-book-content iframe{display:none}}
+
+.sim-native{margin:24px 0;min-width:0}
+.sim-native-actions{display:flex;justify-content:flex-end;gap:18px;flex-wrap:wrap;margin-bottom:14px;font-size:14px}
+.sim-native-actions button{font:inherit;color:var(--primary);cursor:pointer;text-decoration:underline}
+.sim-native-host{display:block;min-width:0;outline-offset:4px}
+.sim-native-dialog{position:fixed;inset:0;width:100%;height:100%;max-width:none;max-height:none;border:0;background:var(--theme);color:var(--primary);margin:0;padding:24px;overflow:auto}.sim-native-dialog::backdrop{background:#0009}
+.sim-native-dialog .sim-native-actions{position:sticky;top:0;background:var(--theme);padding:12px;z-index:2}
+@media(max-width:600px){.sim-native-dialog{padding:10px}}
+@media print{.sim-native{display:none}}

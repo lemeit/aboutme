@@ -9,7 +9,7 @@ class Page(HTMLParser):
         super().__init__(); self.links=[]; self.assets=[]; self.ids=set(); self.book_index=False; self.current=0
     def handle_starttag(self,tag,attrs):
         a=dict(attrs)
-        if tag=='nav' and a.get('aria-label')=='Índice del libro':self.book_index=True
+        if tag=='nav' and a.get('aria-label')=='Índice del relato':self.book_index=True
         if tag=='a' and self.book_index and a.get('aria-current')=='page':self.current+=1
         if 'id' in a:self.ids.add(a['id'])
         if tag=='a' and 'href' in a:self.links.append(a['href'])

@@ -17,7 +17,7 @@ book_label = "Prólogo"
 list = "never"
 +++
 
-A partir de «Los seres térmicos», de Jorge Luis Borges y Margarita Guerrero, exploramos una imagen literaria: seres cuya forma está hecha de temperaturas cambiantes. La pregunta del libro es cómo construir representaciones de esa imagen y qué leyes o hipótesis sostiene cada una.
+A partir de «Los seres térmicos», de Jorge Luis Borges y Margarita Guerrero, exploramos una imagen literaria: seres cuya forma está hecha de temperaturas cambiantes. La pregunta del relato es cómo construir representaciones de esa imagen y qué leyes o hipótesis sostiene cada una.
 
 [Leer el texto en *El libro de los seres imaginarios* (PDF, página 62)](https://tavapy.gov.py/biblioteca/wp-content/uploads/2023/01/BorgesJ-El-libro-de-los-seres-imaginarios.pdf#page=62).
 

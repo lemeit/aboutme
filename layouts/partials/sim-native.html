@@ -1,0 +1,37 @@
+{{- $src := .Get "src" -}}
+{{- $title := .Get "title" | default "Simulación interactiva" -}}
+{{- $id := printf "sim-%d" .Ordinal -}}
+{{- $source := readFile (printf "static%s" $src) -}}
+{{- $styles := findRE `(?is)<style[^>]*>.*?</style>` $source -}}
+{{- $body := replaceRE `(?is)^.*?<body[^>]*>(.*?)</body>.*$` "$1" $source -}}
+{{- $body = replaceRE `(?is)<script\b[^>]*>.*?</script>` "" $body -}}
+{{- $body = replaceRE `(?is)<style\b[^>]*>.*?</style>` "" $body -}}
+<section class="sim-native" aria-label="{{ $title }}">
+  <div class="sim-native-actions"><button type="button" data-sim-expand aria-expanded="false">Ampliar simulación</button><a href="{{ $src | relURL }}" target="_blank" rel="noopener">Abrir por separado ↗</a></div>
+  <div id="{{ $id }}" class="sim-native-host" tabindex="0" aria-label="{{ $title }}">
+    <template>{{ range $styles }}{{ . | safeHTML }}{{ end }}<div class="sim-root"><div class="sim-body">{{ $body | safeHTML }}</div></div></template>
+  </div>
+  <noscript><p>Activá JavaScript para utilizar la simulación. <a href="{{ $src | relURL }}">Abrir la experiencia por separado</a>.</p></noscript>
+</section>
+{{ if not (.Page.Store.Get "sim-native-runtime") }}
+{{ .Page.Store.Set "sim-native-runtime" true }}
+<script src="{{ "simus/seres-termicos/relato-simulacion.js" | relURL }}"></script>
+{{ end }}
+<script>
+window.mountThermalScene({{ $id }}, function(document, window, addEventListener, requestAnimationFrame, cancelAnimationFrame, viewport, location) {
+{{- range findRE `(?is)<script\b[^>]*>.*?</script>` $source -}}
+  {{- if not (findRE `(?i)^<script[^>]*\bsrc=` .) -}}
+    {{- $code := replaceRE `(?is)^<script[^>]*>(.*?)</script>$` "$1" . -}}
+    {{- $code = replaceRE `\b(window\.)?innerWidth\b` "viewport.width" $code -}}
+    {{- $code = replaceRE `\b(window\.)?innerHeight\b` "viewport.height" $code -}}
+    {{- $code = replaceRE `e\.clientX/viewport\.width` "(e.clientX-viewport.left)/viewport.width" $code -}}
+    {{- $code = replaceRE `e\.clientY/viewport\.height` "(e.clientY-viewport.top)/viewport.height" $code -}}
+    {{- if hasSuffix $src "/bestiario.html" -}}
+      {{- $code = replaceRE `e\.clientX\b` "(e.clientX-viewport.left)" $code -}}
+      {{- $code = replaceRE `e\.clientY\b` "(e.clientY-viewport.top)" $code -}}
+    {{- end -}}
+    {{ $code | safeJS }}
+  {{- end -}}
+{{- end -}}
+});
+</script>

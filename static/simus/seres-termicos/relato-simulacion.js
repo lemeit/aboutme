@@ -52,8 +52,9 @@
       canvas.addEventListener('pointerdown',()=>canvas.focus({preventScroll:true}));
     });
     const resizeListeners = new Set();
-    const viewport = {get width(){return host.clientWidth;},get height(){return Math.max(480, Math.min(720, innerHeight * .8));},get left(){return host.getBoundingClientRect().left;},get top(){return host.getBoundingClientRect().top;}};
-    function resize(){root.style.setProperty('--scene-width',host.clientWidth+'px');root.style.setProperty('--scene-height',viewport.height+'px');resizeListeners.forEach(fn=>fn(new Event('resize')));}
+    let sceneWidth=Math.max(1,host.clientWidth);
+    const viewport = {get width(){return host.clientWidth||sceneWidth;},get height(){return Math.max(480, Math.min(720, innerHeight * .8));},get left(){return host.getBoundingClientRect().left;},get top(){return host.getBoundingClientRect().top;}};
+    function resize(){if(host.clientWidth<=0)return;sceneWidth=host.clientWidth;root.style.setProperty('--scene-width',sceneWidth+'px');root.style.setProperty('--scene-height',viewport.height+'px');resizeListeners.forEach(fn=>fn(new Event('resize')));}
     resize();new ResizeObserver(resize).observe(host);
     const localDocument = {
       body, documentElement: root, get hidden(){return document.hidden;},

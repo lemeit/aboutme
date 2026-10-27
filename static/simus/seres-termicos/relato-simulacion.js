@@ -27,7 +27,7 @@
       .sim-body>main{padding:0;max-width:none;margin:0}
       .sim-body:has(>main){display:block!important}
       .sim-body>main:has(>#stage){height:auto;min-height:0;align-items:start}
-      #stage{height:var(--scene-height)!important;min-height:480px!important;position:sticky;top:0}
+      #stage{height:var(--scene-height)!important;min-height:480px!important;position:sticky;top:var(--site-header-height,0px)}
       #stage>#scene{height:100%;min-height:0}
       .sim-body>header,.sim-body>main>header,.sim-body>footer,
       .sim-body>main>footer,.book-study-links,.story-links,.route,

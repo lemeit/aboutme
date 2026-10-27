@@ -4,6 +4,7 @@
             {{- $label_text := (site.Params.label.text | default site.Title) }}
             {{- if site.Title }}
             <a href="{{ "" | absLangURL }}" accesskey="h" title="{{ $label_text }} (Alt + H)">
+                {{ partial "home-monogram.html" }}
                 {{- if site.Params.label.icon }}
                 {{- $img := resources.Get site.Params.label.icon }}
                 {{- if $img }}
@@ -92,3 +93,6 @@
         </ul>
     </nav>
 </header>
+
+{{- $motion := resources.Get "js/home-monogram.js" | minify | fingerprint }}
+<script defer src="{{ $motion.RelPermalink }}" integrity="{{ $motion.Data.Integrity }}"></script>

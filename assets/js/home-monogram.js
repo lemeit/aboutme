@@ -3,9 +3,14 @@
    Semi-implicit Euler at <=1/120 s; the luminous trail records the pen's
    actual positions. The letter is designed, not an emergent physical shape. */
 (() => {
-  const svg=document.querySelector('.home-monogram');if(!svg)return;
+  const header=document.querySelector('body>.header');
+  if(header){
+    const measure=()=>document.documentElement.style.setProperty('--site-header-height',header.getBoundingClientRect().height+'px');
+    measure();new ResizeObserver(measure).observe(header);
+  }
+  document.querySelectorAll('.home-monogram').forEach(svg=>{
   const motion=matchMedia('(prefers-reduced-motion: reduce)');if(motion.matches)return;
-  const ink=svg.querySelector('#trazo'),nib=svg.querySelector('#pluma'),length=ink.getTotalLength(),ns='http://www.w3.org/2000/svg';
+  const ink=svg.querySelector('[data-monogram=ink]'),nib=svg.querySelector('[data-monogram=nib]'),length=ink.getTotalLength(),ns='http://www.w3.org/2000/svg';
   const layer=document.createElementNS(ns,'g');layer.classList.add('monogram-dynamics');svg.append(layer);
   function node(tag,cls,attrs={}){const el=document.createElementNS(ns,tag);el.setAttribute('class',cls);for(const [k,v] of Object.entries(attrs))el.setAttribute(k,v);layer.append(el);return el;}
   const dots=[];
@@ -30,4 +35,5 @@
   draw();raf=requestAnimationFrame(frame);
   motion.addEventListener('change',event=>{if(event.matches)stop();});
   document.addEventListener('visibilitychange',()=>{last=null;if(document.hidden)cancelAnimationFrame(raf);else if(!motion.matches&&layer.isConnected)raf=requestAnimationFrame(frame);});
+  });
 })();

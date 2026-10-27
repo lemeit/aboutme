@@ -1,12 +1,14 @@
 +++
-title = "EMAS — weather stations"
-description = "An integrated dashboard for local weather-station data."
+date = "2026-06-18"
+summary = "A network of automatic weather stations in Buenos Aires Province, with real-time data."
+title = "EMAS"
+description = "A network of automatic weather stations in Buenos Aires Province, with real-time data."
 weight = 2
-lastmod = '2026-10-25'
+lastmod = "2026-10-27"
 draft = false
 +++
 
-EMAS brings together weather observations from several sources in Saladillo and the surrounding area. A common interface makes it easier to explore local conditions and historical records.
+EMAS brings together weather observations from several sources in Saladillo and 25 de Mayo, Buenos Aires Province. A common interface makes it easier to explore local conditions and historical records.
 
 ## Data sources
 

@@ -1,9 +1,10 @@
 +++
+date = "2026-09-25"
 aliases = ["/zh/projects/seres-termicos/v08-espaciotiempo/"]
-title = "第十三幕 第二场 — 时间的痕迹"
+title = "第16章 — 时间的痕迹"
 description = '将热场的近期历史表示为体积。'
 weight = 0
-lastmod = '2026-10-25'
+lastmod = "2026-10-27"
 draft = false
 url = '/zh/projects/simus/bestiario/v08-espaciotiempo/'
 math = true
@@ -11,30 +12,14 @@ math = true
 list = 'never'
 +++
 
-本模拟属于[热生物](/zh/projects/simus/bestiario/)的**宇宙**路径。它不只是观察二维场的当下演化，而是将近期画面沿代表时间的第三条轴堆叠起来。
+热模型仍是 $80\times60$ 单元的二维场。显示体积保存 64 个历史切片：$\mathcal T(i,j,m)=\theta_{i,j}(n_m)$。第三轴表示记录的时间，而不是热扩散的第三个空间方向。
 
-## 模拟
+循环缓冲区填满后会覆盖最旧的记录。历史速度控件改变切片的记录方式，并不确定以秒计的实验标定时间间隔。移动源在记录中形成可见轨迹；这不是相对论模拟，也不是四维物理空间模拟。
 
-控件使用西班牙语。按**空格键**可暂停累积，以便观察整个体积。
+储备和出生规则仍受“统计个体”章节中所述限制。实时表格读取当前二维场，并显示已经保存的切片数。暂停和手动推进作用于原程序的动画；显示像素会合成多个历史层的贡献。
 
-{{< sim src="/simus/seres-termicos/v08-espaciotiempo.html" title="热生物：v08 时空" >}}
+完整叙事、方程说明和控件目前使用西班牙语。
 
-## 观察要点
+[打开完整的西班牙语章节](/projects/simus/bestiario/tiempo/) · [返回幻想生物志](/zh/projects/simus/bestiario/)
 
-一个个体的历史形成一条**世界管（worldtube）**。出生是起点，死亡是终点。静止个体生成竖直管道，运动个体则生成倾斜或弯曲的管道。能量变化影响直径，繁殖形成分支。
-
-## 模型
-
-显示的体积由二维场的一系列采样构成：
-
-$$\mathcal{T}(x,y,\tau)=T(x,y,t_0+\tau\Delta t).$$
-
-环形缓冲区保存近期画面，每次加入新画面时替换最旧的一帧。第三条轴记录时间，并不代表额外的物理空间维度。底层模拟与历史体积，是同一过程的两种观察方式。
-
-这与通过弱扩散保留轨迹不同：这里通过缓冲区显式存储历史。文学构想也参考了 Kurt Vonnegut 在 *Slaughterhouse-Five*（1969 年）中将生命视为在时间中延展的形象。
-
-[返回项目](/zh/projects/simus/bestiario/) · [球形宇宙](/zh/projects/simus/bestiario/v07-3d/)
-
----
-
-本中文概述介绍项目目标与主要功能。[阅读完整的西班牙语项目文档](/projects/simus/bestiario/v08-espaciotiempo/)。
+{{< sim src="/simus/seres-termicos/v08-espaciotiempo.html" title="时间的痕迹" >}}

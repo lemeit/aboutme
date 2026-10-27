@@ -1,4 +1,5 @@
 +++
+summary = "Tutor de ciencias con método socrático para estudiantes secundarios y universitarios."
 title = 'EUREKA AI'
 date = '2026-06-18'
 lastmod = '2026-08-25'

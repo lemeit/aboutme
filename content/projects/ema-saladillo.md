@@ -1,4 +1,5 @@
 +++
+summary = "Red de estaciones meteorológicas automáticas (EMA) en Buenos Aires, con datos en tiempo real."
 title = 'EMAS'
 date = '2026-06-18'
 lastmod = '2026-09-16'

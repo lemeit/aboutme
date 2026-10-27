@@ -1,4 +1,5 @@
 +++
+summary = "Monitoreo de calidad de agua de red en Saladillo, con protocolos municipales, normativa CAA/PBA e ingesta automática de PDF."
 title = 'Agua Saladillo'
 date = '2026-08-23'
 lastmod = '2026-08-24'

@@ -1,4 +1,5 @@
 +++
+summary = "Mapa web y aplicación móvil de la red vial de la Provincia de Buenos Aires, para la Dirección de Vialidad (DVBA)."
 title = 'SIG Vial PBA'
 date = '2026-06-18'
 lastmod = '2026-08-25'

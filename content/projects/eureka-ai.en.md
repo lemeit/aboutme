@@ -1,8 +1,10 @@
 +++
+date = "2026-06-18"
+summary = "A science tutor using Socratic guidance for secondary-school and university students."
 title = "EUREKA AI"
-description = "A science tutor using Socratic guidance."
+description = "A science tutor using Socratic guidance for secondary-school and university students."
 weight = 10
-lastmod = '2026-10-25'
+lastmod = "2026-10-27"
 draft = false
 +++
 

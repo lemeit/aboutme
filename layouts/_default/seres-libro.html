@@ -31,6 +31,7 @@
       {{ if gt $order 0 }}<p class="thermal-book-position">{{ .Params.book_part_title }} · {{ .Params.book_label }}</p>{{ end }}
       <h1>{{ .Title }}</h1>
       {{ with .Description }}<p class="thermal-book-description">{{ . }}</p>{{ end }}
+      <div class="post-meta">{{ partial "post_meta.html" . }}</div>
     </header>
     {{ if gt $order 0 }}{{ partial "seres-book-turn.html" (dict "page" . "pages" $pages "order" $order "position" "superior") }}{{ end }}
     <div class="post-content thermal-book-content">{{ .Content }}</div>

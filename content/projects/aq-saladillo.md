@@ -1,4 +1,5 @@
 +++
+summary = "Monitoreo ambiental escolar con sensores PurpleAir y AirGradient — PM2.5/PM10, CO2, NOx y AQI en tiempo real."
 title = 'Aire Escolar'
 date = '2026-08-23'
 lastmod = '2026-09-16'

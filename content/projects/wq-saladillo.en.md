@@ -1,12 +1,14 @@
 +++
-title = "WQ Saladillo — water quality"
-description = "Exploring municipal water-analysis reports through maps and historical data."
+date = "2026-08-23"
+summary = "Monitoring drinking-water quality in Saladillo, with municipal reports, Argentine and provincial reference limits, and automated PDF ingestion."
+title = "Agua Saladillo"
+description = "Monitoring drinking-water quality in Saladillo, with municipal reports, Argentine and provincial reference limits, and automated PDF ingestion."
 weight = 3
-lastmod = '2026-10-25'
+lastmod = "2026-10-27"
 draft = false
 +++
 
-WQ Saladillo organises water-analysis results published in municipal PDF reports, making them easier to explore by sampling point, parameter and date. Sampling points include pumping wells, schools, kindergartens and homes.
+Agua Saladillo organises water-analysis results published in municipal PDF reports, making them easier to explore by sampling point, parameter and date. Sampling points include pumping wells, schools, kindergartens and homes.
 
 ## Information available
 

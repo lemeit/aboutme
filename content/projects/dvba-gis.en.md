@@ -1,8 +1,10 @@
 +++
-title = "SIG Vial PBA — road management"
-description = "Web mapping and field surveys for the provincial road network."
+date = "2026-06-18"
+summary = "A web map and mobile application for the Buenos Aires provincial road network, developed for the Dirección de Vialidad (DVBA)."
+title = "SIG Vial PBA"
+description = "A web map and mobile application for the Buenos Aires provincial road network, developed for the Dirección de Vialidad (DVBA)."
 weight = 20
-lastmod = '2026-10-25'
+lastmod = "2026-10-27"
 draft = false
 +++
 

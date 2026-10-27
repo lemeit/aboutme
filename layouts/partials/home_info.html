@@ -13,8 +13,6 @@
   {{- end }}
 </article>
 {{- end }}
-{{- $motion := resources.Get "js/home-monogram.js" | minify | fingerprint }}
-<script defer src="{{ $motion.RelPermalink }}" integrity="{{ $motion.Data.Integrity }}"></script>
 
 {{ if eq site.Language.Lang "zh" }}
 <section class="home-info">

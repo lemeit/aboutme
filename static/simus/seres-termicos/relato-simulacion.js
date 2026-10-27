@@ -37,6 +37,7 @@
       canvas{max-width:100%}
       fieldset{min-inline-size:0;max-width:100%}
       select{min-width:0;max-width:100%;box-sizing:border-box}
+      input{min-width:0;max-width:100%;box-sizing:border-box}
       fieldset select{display:block;width:100%}
       .sim-body>main>.layout{grid-template-columns:minmax(0,1fr)}
       .sim-body>main>.layout>aside{min-width:0}
@@ -78,6 +79,7 @@
     new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;if(visible)frames.forEach(e=>{if(!e.native)schedule(e);});},{rootMargin:'100px'}).observe(host);
     try {
       run(localDocument,localWindow,listen,requestFrame,cancelFrame,viewport,{search:''});
+      if(localWindow.thermalEvidence&&window.ThermalFieldLedger)window.ThermalFieldLedger.mount(section,localWindow.thermalEvidence);
       host.dataset.ready='true';
     } catch(error) {
       host.dataset.ready='error';console.error('Simulation '+id,error);

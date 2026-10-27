@@ -70,3 +70,14 @@ Las ocho primeras experiencias incorporan una presentación común en `fenomeno-
 La difusión ofrece dos condiciones iniciales explícitas. Por defecto, mitades a 80 °C y 20 °C (media 50 °C). La zona caliente localizada original se conserva como opción; tiene otra media y otra energía inicial. Los integradores, sus límites de estabilidad y los balances se conservan.
 
 Los bloques `presentation` e `initial` delimitan los cambios de dibujo y de preparación de las condiciones iniciales. El control contra una referencia Git los omite para comparar el resto del código numérico. La prueba `node scripts/check-thermal-phenomena-browser.cjs DIRECTORIO_HUGO` comprueba evolución visible de las ocho escenas, balances, conservación de ambas condiciones iniciales y vista móvil.
+
+
+## Parte II: trazabilidad de la ecuación al píxel
+
+Los capítulos de campo con fuentes, gradiente, Gray–Scott y FitzHugh–Nagumo desarrollan el cálculo local de cada modelo. `calculo-campo.js` registra la vecindad y los parámetros antes de una actualización y los resultados de los buffers después. No introduce valores de ejemplo ni reinyecta su reconstrucción en el motor.
+
+Las fuentes gaussianas se registran con sus coordenadas, amplitud usada, radio y aporte a la celda seleccionada, incluyendo la truncación espacial original. La reconstrucción sigue el orden del programa y redondea a Float32 donde se almacena el dato; Gray–Scott conserva su recorte a [0,1]. Las tablas comparan el resultado reconstruido con el realmente guardado. La muestra RGB usa la función de color del propio modelo; en el gradiente corresponde al campo base, antes de superponer los agentes.
+
+La interfaz solo se añade al relato integrado. Las versiones independientes conservan su apariencia y exponen la misma API `thermalEvidence` para inspección. Pausar impide nuevas actualizaciones físicas; avanzar ejecuta exactamente un paso y no crea otra cadena de animación. Los registros se descartan al cambiar la celda o reiniciar las semillas. El círculo sobre la imagen indica la celda observada.
+
+Los bloques `ledger` delimitan la instrumentación y las guardas de pausa/avance manual. La comparación con una referencia Git permite omitirlos para comprobar que las fórmulas originales siguen iguales. Ejecutar `node scripts/check-thermal-ledger-browser.cjs DIRECTORIO_HUGO` para comprobar un paso exacto, reconstrucción numérica, inyección gaussiana, coincidencia RGB con el lienzo (excepto las marcas superpuestas de agentes), selección de celda sin alterar el modelo, ancho de 320/390 px, ampliación y versiones independientes. Para verificar producción se puede definir `THERMAL_BASE_URL`.

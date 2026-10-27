@@ -67,7 +67,7 @@ def main():
                     if 'src=' in attr:continue
                     # Drawing hooks and explicit initial-condition choices are
                     # delimited; compare the remaining numerical source unchanged.
-                    body=re.sub(r'/\* (presentation|initial):start \*/.*?/\* \1:end \*/\n?','',body,flags=re.S)
+                    body=re.sub(r'/\* (presentation|initial|ledger):start \*/.*?/\* \1:end \*/\n?','',body,flags=re.S)
                     body=re.sub(r'\n\s*\n','\n',body)
                     body=body.replace("document.getElementById('navigation').addEventListener('change',e=>location.href=e.target.value);",'')
                     out.append(body.strip())

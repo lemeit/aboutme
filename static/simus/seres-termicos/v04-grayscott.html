@@ -29,7 +29,8 @@ input[type=range]{flex:1;accent-color:#c87}
 .eq{color:#6af;font:11px monospace;margin-top:8px;padding:7px 9px;
     background:#050810;border-radius:6px;border:1px solid #1a2030;line-height:1.8}
 #fps{position:fixed;right:14px;top:12px;color:#444;font:11px monospace}
-</style>
+.row input{min-width:0}</style>
+<script src="/simus/seres-termicos/calculo-campo.js"></script>
 </head>
 <body>
 <canvas id="c"></canvas>
@@ -62,6 +63,10 @@ input[type=range]{flex:1;accent-color:#c87}
 <div id="fps"></div>
 
 <script>
+/* ledger:start */
+let evidence=null;
+/* ledger:end */
+
 'use strict';
 
 // ── Grilla ──────────────────────────────────────────────────────────────────
@@ -88,6 +93,9 @@ const px = imgData.data;
 
 // ── Inicialización ──────────────────────────────────────────────────────────
 function seed() {
+/* ledger:start */
+evidence?.reset?.();
+/* ledger:end */
   // Campo base: u=1 (alimento disponible), v=0 (sin organismo)
   U.fill(1);
   V.fill(0);
@@ -113,6 +121,9 @@ seed();
 // ── Un paso Gray-Scott ──────────────────────────────────────────────────────
 // Esquema explícito de Euler, Δt=1, condiciones periódicas
 function step(F, k) {
+/* ledger:start */
+evidence?.before?.({du:DU,dv:DV,dt:1,f:F,k});
+/* ledger:end */
   const dt = 1.0;
   for (let j = 0; j < GH; j++) {
     const jm = (j - 1 + GH) % GH;
@@ -136,6 +147,9 @@ function step(F, k) {
   // Intercambiar buffers
   const tmpU=U; U=Un; Un=tmpU;
   const tmpV=V; V=Vn; Vn=tmpV;
+/* ledger:start */
+evidence?.after?.();
+/* ledger:end */
 }
 
 // ── Colormap ────────────────────────────────────────────────────────────────
@@ -208,14 +222,21 @@ function syncPreset() {
 let fpsFrames=0, fpsTime=performance.now(), lastTime=performance.now();
 
 // Semilla inicial → dar unos frames para ver que arranca
-function loop(now) {
+function loop(now/* ledger:start */,manual=false/* ledger:end */) {
   const dt = Math.min((now-lastTime)/16.67, 3); lastTime = now;
   const F = +fiEl.value;
   const k = +kiEl.value;
 
   // Múltiples pasos por frame para acelerar la evolución
   const stepsPerFrame = 8;
-  for (let s = 0; s < stepsPerFrame; s++) step(F, k);
+/* ledger:start */
+if(evidence.playing||manual){
+/* ledger:end */
+  for (let s = 0; s < /* ledger:start */(manual?1:/* ledger:end */stepsPerFrame/* ledger:start */)/* ledger:end */; s++) step(F, k);
+/* ledger:start */
+}
+/* ledger:end */
+
 
   render();
 
@@ -226,8 +247,12 @@ function loop(now) {
       `${fps} fps · ${stepsPerFrame * fps} steps/s · ${GW}×${GH}`;
     fpsFrames = 0; fpsTime = now;
   }
-  requestAnimationFrame(loop);
+/* ledger:start */if(!manual)/* ledger:end */  requestAnimationFrame(loop);
 }
+/* ledger:start */
+if(typeof ThermalFieldLedger!=='undefined'){evidence=ThermalFieldLedger.create({kind:'gray',nx:GW,ny:GH,periodic:true,fields:()=>({u:U,v:V}),probe:fields=>{let index=0;for(let i=1;i<fields.v.length;i++)if(fields.v[i]>fields.v[index])index=i;return [index%GW,Math.floor(index/GW)];},color:v=>vToRGB(v.v),colorInput:v=>v.v,display:'El color representa v, no temperatura.',advance:()=>loop(performance.now(),true)});window.thermalEvidence=evidence;}else evidence={playing:true};
+/* ledger:end */
+
 requestAnimationFrame(loop);
 </script>
 <script defer src="/simus/seres-termicos/volver-al-libro.js" data-chapter="/projects/seres-termicos/libro/reaccion-difusion/" data-label="Capítulo 11"></script>

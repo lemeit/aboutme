@@ -17,6 +17,10 @@
 {{ .Page.Store.Set "thermal-phenomenon" true }}
 <script src="{{ "simus/seres-termicos/fenomeno-termico.js" | relURL }}"></script>
 {{ end }}
+{{ if and (in $source "/simus/seres-termicos/calculo-campo.js") (not (.Page.Store.Get "thermal-field-ledger")) }}
+{{ .Page.Store.Set "thermal-field-ledger" true }}
+<script src="{{ "simus/seres-termicos/calculo-campo.js" | relURL }}"></script>
+{{ end }}
 {{ if not (.Page.Store.Get "sim-native-runtime") }}
 {{ .Page.Store.Set "sim-native-runtime" true }}
 <script src="{{ "simus/seres-termicos/relato-simulacion.js" | relURL }}"></script>

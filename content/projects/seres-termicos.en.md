@@ -6,7 +6,7 @@ lastmod = '2026-10-26'
 draft = false
 +++
 
-Read the complete [interactive book in Spanish](/projects/seres-termicos/), from the prologue to the advanced models. Technical file names remain available in its version map.
+Read the complete [interactive narrative in Spanish](/projects/seres-termicos/), from the prologue to the advanced models. Technical file names remain available in its version map.
 
 
 

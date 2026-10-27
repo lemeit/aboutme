@@ -25,7 +25,7 @@ La numeración v01 a v08 y la serie V4.1 a V4.6 pertenecen a etapas y ramas dist
 
 ## Identificadores de las versiones
 
-La numeración de archivos identifica ramas históricas, no los capítulos del libro. El [mapa de versiones](/projects/seres-termicos/libro/versiones/) permite localizar cada archivo dentro del índice. Las secciones numeradas 1–16 que siguen pertenecen a este anexo técnico.
+La numeración de archivos identifica ramas históricas, no los capítulos del relato. El [mapa de versiones](/projects/seres-termicos/libro/versiones/) permite localizar cada archivo dentro del índice. Las secciones numeradas 1–16 que siguen pertenecen a este anexo técnico.
 
 ## Cómo leer la guía
 

@@ -1,6 +1,6 @@
 +++
 title = "Seres Térmicos"
-description = "Un libro interactivo: de Borges al contacto térmico, los campos y los cuerpos articulados."
+description = "Un relato interactivo: de Borges al contacto térmico, los campos y los cuerpos articulados."
 date = "2026-09-25"
 lastmod = "2026-10-26"
 weight = 10
@@ -12,7 +12,7 @@ book_id = "seres-termicos"
 book_order = 0
 +++
 
-A partir de «Los seres térmicos», de **Jorge Luis Borges y Margarita Guerrero**, este libro reúne literatura, física y simulación. Cada capítulo propone una pregunta, explica el modelo y permite explorarlo en una escena interactiva.
+A partir de «Los seres térmicos», de **Jorge Luis Borges y Margarita Guerrero**, este relato reúne literatura, física y simulación. Cada capítulo propone una pregunta, explica el modelo y permite explorarlo en una escena interactiva.
 
 **Empezá por el [prólogo](/projects/seres-termicos/libro/prologo/)** y avanzá con anterior/siguiente. El recorrido va desde dos cuerpos con temperatura uniforme hasta campos, patrones e individuos articulados. Los anexos reúnen la profundización física y los prototipos técnicos.
 

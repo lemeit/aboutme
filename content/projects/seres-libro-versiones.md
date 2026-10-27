@@ -17,9 +17,9 @@ book_label = "Anexo F"
 list = "never"
 +++
 
-El orden del libro responde a requisitos conceptuales. Los nombres de archivo se conservan para no romper enlaces ni borrar la historia de los modelos. **V4.4 y v04-grayscott son ramas diferentes.**
+El orden del relato responde a requisitos conceptuales. Los nombres de archivo se conservan para no romper enlaces ni borrar la historia de los modelos. **V4.4 y v04-grayscott son ramas diferentes.**
 
-| Lugar en el libro | Título | Archivo de simulación |
+| Lugar en el relato | Título | Archivo de simulación |
 | --- | --- | --- |
 | Capítulo 1 | [El primer encuentro](/projects/seres-termicos/libro/contacto/) | `v00-contacto-termico.html` |
 | Capítulo 2 | [El calor deja una huella](/projects/seres-termicos/libro/calor-capacidad/) | `v01-calor-capacidad.html` |

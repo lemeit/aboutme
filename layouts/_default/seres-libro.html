@@ -11,9 +11,9 @@
 <div class="thermal-book">
   <aside class="thermal-book-sidebar">
     <details class="thermal-book-index" open>
-      <summary>Índice de Seres Térmicos</summary>
-      <nav aria-label="Índice del libro">
-        <a class="thermal-book-cover" href="{{ $cover.RelPermalink }}" {{ if eq $order 0 }}aria-current="page"{{ end }}>Portada e índice</a>
+      <summary>Recorrido de Seres Térmicos</summary>
+      <nav aria-label="Índice del relato">
+        <a class="thermal-book-cover" href="{{ $cover.RelPermalink }}" {{ if eq $order 0 }}aria-current="page"{{ end }}>Inicio del relato</a>
         {{ range .Site.Data.seres_book.parts }}
         <h2>{{ .title }}</h2>
         <ol>
@@ -27,7 +27,7 @@
   </aside>
   <article class="thermal-book-page">
     <header>
-      <a class="thermal-book-home" href="{{ $cover.RelPermalink }}">Seres Térmicos · Libro interactivo</a>
+      <a class="thermal-book-home" href="{{ $cover.RelPermalink }}">Seres Térmicos · Relato interactivo</a>
       {{ if gt $order 0 }}<p class="thermal-book-position">{{ .Params.book_part_title }} · {{ .Params.book_label }}</p>{{ end }}
       <h1>{{ .Title }}</h1>
       {{ with .Description }}<p class="thermal-book-description">{{ . }}</p>{{ end }}

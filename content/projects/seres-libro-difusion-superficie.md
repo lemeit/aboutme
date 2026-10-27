@@ -3,7 +3,7 @@ title = "La línea se vuelve superficie"
 description = "Pasar de vecinos en una dirección a un campo en dos dimensiones."
 url = "/projects/seres-termicos/libro/difusion-superficie/"
 date = "2026-10-26"
-lastmod = "2026-10-26"
+lastmod = "2026-10-27"
 draft = false
 math = true
 ShowToc = false
@@ -26,6 +26,8 @@ Compará el mapa completo con el corte de temperatura a mitad de altura. Son dos
 ## Modelo y límites
 
 Es difusión conservativa con bordes aislados y sin fuentes. Las celdas son una discretización del medio: no representan moléculas ni seres individuales.
+
+La experiencia comienza con **dos mitades a 80 °C y 20 °C**. Compará las vistas inicial y actual: la frontera térmica se suaviza y la media permanece en 50 °C. En «Condición inicial» también podés elegir la zona caliente localizada del ejemplo original; su media y su energía inicial son diferentes.
 
 ## Explorar la simulación
 

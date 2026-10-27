@@ -61,3 +61,12 @@ El relato incorpora las escenas sin `iframe`. El shortcode `sim` usa `layouts/pa
 Se eliminan de la vista integrada la cabecera, navegación y pie de la página autónoma. «Ampliar simulación» mueve el mismo componente a un diálogo modal, sin volver a crear el modelo ni perder su estado; Escape o «Volver al relato» lo devuelven a su posición. «Abrir por separado» conserva el acceso al HTML autónomo. Las rutas publicadas con `/libro/` se mantienen por compatibilidad, aunque la presentación visible dice «relato».
 
 Validación actualizada: 31 páginas de lectura, 30 instancias integradas de los 27 modelos (tres reaparecen en la memoria histórica), ausencia de iframes, controles de contacto, apertura/cierre del diálogo, vista de 390 px sin desbordamiento horizontal y pruebas físicas incorporadas de los modelos que las exponen. Se mantienen además los controles de las versiones autónomas y del índice.
+
+
+## Fenómenos introductorios visibles
+
+Las ocho primeras experiencias incorporan una presentación común en `fenomeno-termico.js`: sentido del intercambio, termómetro, cambio de energía interna, conducción estacionaria y comparación del campo inicial/actual. Las flechas animadas son símbolos del flujo calculado; su velocidad es ilustrativa y no representa partículas ni una velocidad de propagación del calor. El movimiento decorativo se omite si se solicita movimiento reducido.
+
+La difusión ofrece dos condiciones iniciales explícitas. Por defecto, mitades a 80 °C y 20 °C (media 50 °C). La zona caliente localizada original se conserva como opción; tiene otra media y otra energía inicial. Los integradores, sus límites de estabilidad y los balances se conservan.
+
+Los bloques `presentation` e `initial` delimitan los cambios de dibujo y de preparación de las condiciones iniciales. El control contra una referencia Git los omite para comparar el resto del código numérico. La prueba `node scripts/check-thermal-phenomena-browser.cjs DIRECTORIO_HUGO` comprueba evolución visible de las ocho escenas, balances, conservación de ambas condiciones iniciales y vista móvil.

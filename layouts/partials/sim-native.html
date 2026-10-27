@@ -13,6 +13,10 @@
   </div>
   <noscript><p>Activá JavaScript para utilizar la simulación. <a href="{{ $src | relURL }}">Abrir la experiencia por separado</a>.</p></noscript>
 </section>
+{{ if and (in $source "/simus/seres-termicos/fenomeno-termico.js") (not (.Page.Store.Get "thermal-phenomenon")) }}
+{{ .Page.Store.Set "thermal-phenomenon" true }}
+<script src="{{ "simus/seres-termicos/fenomeno-termico.js" | relURL }}"></script>
+{{ end }}
 {{ if not (.Page.Store.Get "sim-native-runtime") }}
 {{ .Page.Store.Set "sim-native-runtime" true }}
 <script src="{{ "simus/seres-termicos/relato-simulacion.js" | relURL }}"></script>

@@ -3,7 +3,7 @@ title = "El calor recorre una línea"
 description = "Observar cómo se redistribuye una temperatura no uniforme."
 url = "/projects/seres-termicos/libro/difusion-linea/"
 date = "2026-10-26"
-lastmod = "2026-10-26"
+lastmod = "2026-10-27"
 draft = false
 math = true
 ShowToc = false
@@ -28,6 +28,8 @@ Seguí una zona caliente y sus vecinas. Distinguí el perfil espacial en un inst
 ## Modelo y límites
 
 La actividad usa extremos aislados y difusión sin fuentes. La energía se redistribuye: no desaparece al bajar la temperatura máxima. La difusividad $\alpha$ y el tamaño de la malla condicionan la escala temporal y la estabilidad numérica.
+
+La experiencia comienza con **dos mitades a 80 °C y 20 °C**. Compará las vistas inicial y actual: la frontera térmica se suaviza y la media permanece en 50 °C. En «Condición inicial» también podés elegir la zona caliente localizada del ejemplo original; su media y su energía inicial son diferentes.
 
 ## Explorar la simulación
 

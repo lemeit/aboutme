@@ -65,6 +65,10 @@ def main():
                 out=[]
                 for attr,body in re.findall(r'<script\b([^>]*)>(.*?)</script>',s,re.S):
                     if 'src=' in attr:continue
+                    # Drawing hooks and explicit initial-condition choices are
+                    # delimited; compare the remaining numerical source unchanged.
+                    body=re.sub(r'/\* (presentation|initial):start \*/.*?/\* \1:end \*/\n?','',body,flags=re.S)
+                    body=re.sub(r'\n\s*\n','\n',body)
                     body=body.replace("document.getElementById('navigation').addEventListener('change',e=>location.href=e.target.value);",'')
                     out.append(body.strip())
                 return out

@@ -124,7 +124,7 @@
     #ficha{width:216px}
   }
 </style>
-</head>
+<link rel="stylesheet" href="/simus/seres-termicos/calculo-escena.css?v=308bc98f4f602610321440d8e5532cd8"><script src="/simus/seres-termicos/calculo-escena.js?v=7b5739a915049541cc7333f6294d6ec4"></script></head>
 <body>
 
 <canvas id="campo"></canvas>
@@ -807,7 +807,9 @@ requestAnimationFrame(frame);
 if(new URLSearchParams(location.search).has('embed')){
   document.body.classList.add('embed');
 }
-</script>
-<script defer src="/simus/seres-termicos/volver-al-libro.js" data-chapter="/projects/seres-termicos/libro/anatomia/" data-label="Capítulo 14"></script>
+/* ledger:start */
+window.thermalReadout={size:()=>[gw,gh],field:()=>A,enable:()=>{if(pausado)togglePausa()},values:()=>({'Tiempo del modelo':tSim,'Difusión efectiva':Keff,'Iteraciones por cuadro':ITER,'Persistencia':persist,'Seres':seres.length,'Media del primero':seres[0]?.Tm??0,'Primer órgano':seres[0]?.parts[0]?.T??0,'Consigna del primero':seres[0]?.set??0}),note:'El cuadro incluye órganos, depósitos, varias difusiones y persistencia. Las figuras y el brillo se superponen al campo.'};
+/* ledger:end */</script>
+<script defer src="/simus/seres-termicos/volver-al-libro.js" data-chapter="/projects/simus/bestiario/anatomia/" data-label="Capítulo 14"></script>
 </body>
 </html>

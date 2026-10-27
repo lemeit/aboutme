@@ -9,7 +9,7 @@ try{
  const page=await context.newPage();let failures=[];page.on('pageerror',e=>failures.push(e.message));
  await page.route('**/cloudflareinsights.com/**',r=>r.fulfill({status:204,body:''}));
  const inventory=JSON.parse(fs.readFileSync(source+'/data/seres_book_chapters.json','utf8'));
- const pages=[{url:'/projects/seres-termicos/',title:'Seres Térmicos'},...inventory];let formulas=0,nativeScenes=0;
+ const pages=[{url:'/projects/simus/bestiario/',title:'Bestiario · Seres Térmicos'},...inventory];let formulas=0,nativeScenes=0;
  for(let i=0;i<pages.length;i++){
   const p=pages[i];const r=await page.goto(base+p.url,{waitUntil:'load'});assert.equal(r.status(),200,p.url);
   assert.equal(await page.locator('.thermal-book-page>header h1').innerText(),p.title);
@@ -38,7 +38,7 @@ try{
   const raw=await page.locator('.thermal-book-content').innerText();assert(!raw.includes('$$'),p.url+' raw math');
   formulas+=await page.locator('.thermal-book-content .katex').count();
  }
- await page.goto(base+'/projects/seres-termicos/libro/contacto/',{waitUntil:'load'});
+ await page.goto(base+'/projects/simus/bestiario/contacto/',{waitUntil:'load'});
  assert((await page.locator('#bodyA').boundingBox()).height>=96,'contact bodies retain their styling');
  await page.locator('#contact').click();await page.waitForTimeout(200);
  assert.match(await page.locator('#status').innerText(),/En contacto/);
@@ -59,10 +59,10 @@ try{
  const contact=await page.evaluate(()=>{const a=thermalContact.simulate({seconds:60}),b=thermalContact.simulate({seconds:60,cb:200});return {balance:a.qa+a.qb,eq:a.eq,eqB:b.eq}});
  // El modelo expone eq o equilibrium segun su estructura: verificar el balance independiente.
  assert(Math.abs(contact.balance)<1e-8);
- await page.goto(base+'/simus/seres-termicos/');await page.waitForURL('**/projects/seres-termicos/');
+ await page.goto(base+'/simus/seres-termicos/');await page.waitForURL('**/projects/simus/bestiario/');
  assert.deepEqual(failures,[]);
  assert.equal(nativeScenes,30); // 27 modelos; tres reaparecen en la memoria histórica.
- await page.goto(base+'/projects/seres-termicos/libro/defensa/');
+ await page.goto(base+'/projects/simus/bestiario/defensa/');
  const scene=page.locator('.sim-native-host');
  await scene.locator('#scene').click({position:{x:30,y:300}});
  const playing=await scene.evaluate(el=>el.sceneAPI.thermalDiagnostics().playing);

@@ -26,12 +26,12 @@ def main():
     inventory=json.loads(Path('data/seres_book_chapters.json').read_text(encoding='utf-8'))
     assert len(inventory)==30
     assert [p['order'] for p in inventory]==list(range(1,31))
-    urls=['/projects/seres-termicos/']+[p['url'] for p in inventory]
+    urls=['/projects/simus/bestiario/']+[p['url'] for p in inventory]
     urls+=['/','/projects/','/en/projects/','/zh/projects/',
-           '/projects/seres-termicos/denominaciones/',
-           '/projects/seres-termicos/v06-ciclovida/',
-           '/projects/seres-termicos/v07-3d/',
-           '/projects/seres-termicos/v08-espaciotiempo/']
+           '/projects/simus/bestiario/denominaciones/',
+           '/projects/simus/bestiario/v06-ciclovida/',
+           '/projects/simus/bestiario/v07-3d/',
+           '/projects/simus/bestiario/v08-espaciotiempo/']
     errors=[]
     for url in urls:
         target=root/url.strip('/')/'index.html'
@@ -47,7 +47,7 @@ def main():
             elif parts.fragment and dest.suffix=='.html':
                 other=Page();other.feed(dest.read_text(encoding='utf-8'))
                 if unquote(parts.fragment) not in other.ids:errors.append((url,link,'ancla'))
-        if url in ['/projects/seres-termicos/']+[p['url'] for p in inventory]:
+        if url in ['/projects/simus/bestiario/']+[p['url'] for p in inventory]:
             assert parsed.current==1,url
             assert 'thermal-book-next' in text or url==inventory[-1]['url'],url
     assert not errors,errors
@@ -74,8 +74,14 @@ def main():
                 return out
             assert engines(original)==engines(text),f'Cambio inesperado en el motor: {filename}'
     for path in ['simus/seres-termicos/index.html','simus/seres-termicos/termodinamica.html']:
-        assert 'url=/projects/seres-termicos/' in (root/path).read_text(encoding='utf-8')
-    contact=(root/'projects/seres-termicos/libro/contacto/index.html').read_text(encoding='utf-8')
+        assert 'url=/projects/simus/bestiario/' in (root/path).read_text(encoding='utf-8')
+    for chapter in inventory:
+        legacy='/projects/seres-termicos/'+('' if chapter['page'].endswith('guia-fisica') else 'libro/')+chapter['url'].rstrip('/').split('/')[-1]+'/'
+        alias=(root/legacy.strip('/')/'index.html').read_text(encoding='utf-8')
+        assert chapter['url'] in alias,legacy
+    assert '/projects/simus/bestiario/' in (root/'projects/seres-termicos/index.html').read_text(encoding='utf-8')
+    assert (root/'projects/simus/index.html').is_file()
+    contact=(root/'projects/simus/bestiario/contacto/index.html').read_text(encoding='utf-8')
     assert r'\Delta T' in contact and 'Q=C,Delta' not in contact
     guide=Path('content/projects/seres-termicos-guia-fisica.md').read_text(encoding='utf-8')
     assert len(re.findall(r'\*\*Ecuación \(\d+\)\*\*',guide))==52

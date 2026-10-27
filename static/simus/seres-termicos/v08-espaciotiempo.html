@@ -54,7 +54,7 @@ input[type=range]::-moz-range-thumb{width:10px;height:10px;background:var(--acce
 .info-tag{position:fixed;top:14px;left:50%;transform:translateX(-50%);
   color:#3a2a1a;font-size:9px;letter-spacing:.1em;pointer-events:none}
 </style>
-</head>
+<link rel="stylesheet" href="/simus/seres-termicos/calculo-escena.css?v=308bc98f4f602610321440d8e5532cd8"><script src="/simus/seres-termicos/calculo-escena.js?v=7b5739a915049541cc7333f6294d6ec4"></script></head>
 <body>
 <canvas id="c"></canvas>
 
@@ -448,7 +448,9 @@ document.getElementById('e0').oninput=function(){document.getElementById('e0o').
 document.getElementById('re').oninput=function(){document.getElementById('reo').textContent=(+this.value).toFixed(1)+'×E₀';};
 document.getElementById('ts').oninput=function(){document.getElementById('tso').textContent=(+this.value).toFixed(1);};
 document.getElementById('reset').onclick=reset;
-</script>
-<script defer src="/simus/seres-termicos/volver-al-libro.js" data-chapter="/projects/seres-termicos/libro/tiempo/" data-label="Capítulo 16"></script>
+/* ledger:start */
+window.thermalReadout={size:()=>[GW,GH],field:()=>T2,enable:()=>{paused=false},values:()=>({'Paso':tick,'Cortes guardados':sliceCount,'Individuos':beings.length,'Reserva del primero':beings[0]?.E??0}),note:'La celda pertenece al campo 2D actual. La tercera dimensión de la imagen almacena historia, no difusión en profundidad.'};
+/* ledger:end */</script>
+<script defer src="/simus/seres-termicos/volver-al-libro.js" data-chapter="/projects/simus/bestiario/tiempo/" data-label="Capítulo 16"></script>
 </body>
 </html>

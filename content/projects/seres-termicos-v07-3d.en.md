@@ -1,16 +1,17 @@
 +++
+aliases = ["/en/projects/seres-termicos/v07-3d/"]
 title = "Act XIII · Scene I — The world that contains them"
 description = "A three-dimensional thermal field with external and internal viewpoints."
 weight = 0
 lastmod = '2026-10-25'
 draft = false
-url = '/en/projects/seres-termicos/v07-3d/'
+url = '/en/projects/simus/bestiario/v07-3d/'
 math = true
 [build]
 list = 'never'
 +++
 
-This simulation belongs to the **Cosmos** line of [Thermal Beings](/en/projects/seres-termicos/). A spherical domain replaces the rectangular grids of earlier versions.
+This simulation belongs to the **Cosmos** line of [Thermal Beings](/en/projects/simus/bestiario/). A spherical domain replaces the rectangular grids of earlier versions.
 
 ## Simulation
 
@@ -32,9 +33,9 @@ The CPU updates the field, which is uploaded as a 3D texture for WebGL2 renderin
 
 Individuals reflect at the spherical boundary. The boundary and field rules define an idealised computational world, rather than a model of a physical plasma.
 
-[Back to the project](/en/projects/seres-termicos/) · [Next: spacetime](/en/projects/seres-termicos/v08-espaciotiempo/)
+[Back to the project](/en/projects/simus/bestiario/) · [Next: spacetime](/en/projects/simus/bestiario/v08-espaciotiempo/)
 
 ---
 
-This English overview presents the project’s purpose and main features. [Read the full project documentation in Spanish](/projects/seres-termicos/v07-3d/).
+This English overview presents the project’s purpose and main features. [Read the full project documentation in Spanish](/projects/simus/bestiario/v07-3d/).
 

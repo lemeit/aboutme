@@ -1,16 +1,17 @@
 +++
+aliases = ["/en/projects/seres-termicos/v06-ciclovida/"]
 title = "Act XI — Counting individuals"
 description = "Individual energy budgets, births and deaths in a thermal field."
 weight = 0
 lastmod = '2026-10-25'
 draft = false
-url = '/en/projects/seres-termicos/v06-ciclovida/'
+url = '/en/projects/simus/bestiario/v06-ciclovida/'
 math = true
 [build]
 list = 'never'
 +++
 
-This simulation belongs to the **Individuals** line of [Thermal Beings](/en/projects/seres-termicos/). Unlike a reaction–diffusion texture, each being has an identity, a position and a finite energy budget.
+This simulation belongs to the **Individuals** line of [Thermal Beings](/en/projects/simus/bestiario/). Unlike a reaction–diffusion texture, each being has an identity, a position and a finite energy budget.
 
 ## Simulation
 
@@ -35,9 +36,9 @@ Each source has a Gaussian spatial profile, modulated by its remaining energy an
 
 Explicit Euler integration uses a five-point Laplacian and a timestep within the two-dimensional diffusion stability limit.
 
-[Back to the project](/en/projects/seres-termicos/) · [Next: spherical universe](/en/projects/seres-termicos/v07-3d/)
+[Back to the project](/en/projects/simus/bestiario/) · [Next: spherical universe](/en/projects/simus/bestiario/v07-3d/)
 
 ---
 
-This English overview presents the project’s purpose and main features. [Read the full project documentation in Spanish](/projects/seres-termicos/v06-ciclovida/).
+This English overview presents the project’s purpose and main features. [Read the full project documentation in Spanish](/projects/simus/bestiario/v06-ciclovida/).
 

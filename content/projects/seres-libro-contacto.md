@@ -1,7 +1,8 @@
 +++
+aliases = ["/projects/seres-termicos/libro/contacto/"]
 title = "El primer encuentro"
 description = "Dos cuerpos, intercambio de energía y equilibrio térmico."
-url = "/projects/seres-termicos/libro/contacto/"
+url = "/projects/simus/bestiario/contacto/"
 date = "2026-10-26"
 lastmod = "2026-10-27"
 draft = false

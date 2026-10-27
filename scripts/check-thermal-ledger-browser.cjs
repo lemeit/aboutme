@@ -19,7 +19,7 @@ const root=path.resolve(process.argv[2]||'public');
     page.on('pageerror',error=>errors.push(error.message));
     await page.route('**/cloudflareinsights.com/**',route=>route.fulfill({status:204,body:''}));
     for(const [slug,file] of cases){
-      await page.goto(base+'/projects/seres-termicos/libro/'+slug+'/');
+      await page.goto(base+'/projects/simus/bestiario/'+slug+'/');
       const host=page.locator('.sim-native-host');
       await host.evaluate(el=>el.scrollIntoView({block:'start'}));
       await page.waitForFunction(()=>document.querySelector('.sim-native-host').sceneAPI?.thermalEvidence?.getTrace());

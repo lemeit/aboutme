@@ -1,16 +1,17 @@
 +++
+aliases = ["/zh/projects/seres-termicos/v08-espaciotiempo/"]
 title = "第十三幕 第二场 — 时间的痕迹"
 description = '将热场的近期历史表示为体积。'
 weight = 0
 lastmod = '2026-10-25'
 draft = false
-url = '/zh/projects/seres-termicos/v08-espaciotiempo/'
+url = '/zh/projects/simus/bestiario/v08-espaciotiempo/'
 math = true
 [build]
 list = 'never'
 +++
 
-本模拟属于[热生物](/zh/projects/seres-termicos/)的**宇宙**路径。它不只是观察二维场的当下演化，而是将近期画面沿代表时间的第三条轴堆叠起来。
+本模拟属于[热生物](/zh/projects/simus/bestiario/)的**宇宙**路径。它不只是观察二维场的当下演化，而是将近期画面沿代表时间的第三条轴堆叠起来。
 
 ## 模拟
 
@@ -32,8 +33,8 @@ $$\mathcal{T}(x,y,\tau)=T(x,y,t_0+\tau\Delta t).$$
 
 这与通过弱扩散保留轨迹不同：这里通过缓冲区显式存储历史。文学构想也参考了 Kurt Vonnegut 在 *Slaughterhouse-Five*（1969 年）中将生命视为在时间中延展的形象。
 
-[返回项目](/zh/projects/seres-termicos/) · [球形宇宙](/zh/projects/seres-termicos/v07-3d/)
+[返回项目](/zh/projects/simus/bestiario/) · [球形宇宙](/zh/projects/simus/bestiario/v07-3d/)
 
 ---
 
-本中文概述介绍项目目标与主要功能。[阅读完整的西班牙语项目文档](/projects/seres-termicos/v08-espaciotiempo/)。
+本中文概述介绍项目目标与主要功能。[阅读完整的西班牙语项目文档](/projects/simus/bestiario/v08-espaciotiempo/)。

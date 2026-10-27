@@ -1,7 +1,8 @@
 +++
+aliases = ["/projects/seres-termicos/libro/anatomia/"]
 title = "Un bestiario de calor"
 description = "Pasar de una fuente puntual a partes internas acopladas."
-url = "/projects/seres-termicos/libro/anatomia/"
+url = "/projects/simus/bestiario/anatomia/"
 date = "2026-10-26"
 lastmod = "2026-10-27"
 draft = false
@@ -207,6 +208,6 @@ Los estados se calculan; los nombres y los umbrales están elegidos por el autor
 
 ## Explorar la simulación
 
-Usá «PAUSA» para detener la evolución y hacé clic en un ser para abrir su ficha. **Al tocar un cuerpo también se lo perturba**: la selección no es una medición pasiva, incluso en pausa. Compará media, extremos y consigna con las ecuaciones anteriores. Este prototipo tiene su propio botón de pausa y fichas; no incorpora el panel «Del cálculo al color» ni el avance de un paso de las cuatro escenas de la Parte II. La tabla resuelta de este capítulo es un ejemplo didáctico, identificado como tal.
+Usá «PAUSA» para detener la evolución y hacé clic en un ser para abrir su ficha. **Al tocar un cuerpo también se lo perturba**: la selección no es una medición pasiva, incluso en pausa. Compará media, extremos y consigna con las ecuaciones anteriores. La sección «Leer los valores del modelo», debajo de la escena, permite pausar y avanzar un cuadro completo: órganos, depósitos, subpasos de difusión y persistencia. Sus tablas leen esta ejecución; la tabla resuelta del texto es un ejemplo didáctico identificado como tal.
 
 {{< sim src="/simus/seres-termicos/bestiario.html" title="Capítulo 14 — Un bestiario de calor" height="1100" >}}

@@ -1,4 +1,6 @@
 +++
+url = "/en/projects/simus/bestiario/"
+aliases = ["/en/projects/seres-termicos/"]
 title = "Thermal Beings"
 description = "Literature, heat diffusion and exploratory simulations."
 weight = 5
@@ -6,7 +8,7 @@ lastmod = '2026-10-26'
 draft = false
 +++
 
-Read the complete [interactive narrative in Spanish](/projects/seres-termicos/), from the prologue to the advanced models. Technical file names remain available in its version map.
+Read the complete [interactive narrative in Spanish](/projects/simus/bestiario/), from the prologue to the advanced models. Technical file names remain available in its version map.
 
 
 
@@ -26,9 +28,9 @@ The project asks how patterns of heat and cold might suggest bodies, behaviour a
 
 ## Explore the simulations
 
-- **[v06 — Life cycle](/en/projects/seres-termicos/v06-ciclovida/):** individual energy budgets in a two-dimensional thermal field.
-- **[v07 — Spherical universe](/en/projects/seres-termicos/v07-3d/):** a three-dimensional field viewed from outside and from an individual's perspective.
-- **[v08 — Spacetime](/en/projects/seres-termicos/v08-espaciotiempo/):** the recent history of a two-dimensional field becomes a three-dimensional volume.
+- **[v06 — Life cycle](/en/projects/simus/bestiario/v06-ciclovida/):** individual energy budgets in a two-dimensional thermal field.
+- **[v07 — Spherical universe](/en/projects/simus/bestiario/v07-3d/):** a three-dimensional field viewed from outside and from an individual's perspective.
+- **[v08 — Spacetime](/en/projects/simus/bestiario/v08-espaciotiempo/):** the recent history of a two-dimensional field becomes a three-dimensional volume.
 
 The simulation controls are in Spanish. The English pages explain what to observe and link to the complete Spanish technical documentation.
 
@@ -46,5 +48,5 @@ The literary source is credited to Borges and Guerrero. Development of lines I�
 
 ---
 
-This English overview presents the project’s purpose and main features. [Read the full project documentation in Spanish](/projects/seres-termicos/).
+This English overview presents the project’s purpose and main features. [Read the full project documentation in Spanish](/projects/simus/bestiario/).
 

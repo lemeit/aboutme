@@ -1,7 +1,8 @@
 +++
+aliases = ["/projects/seres-termicos/libro/ondas/"]
 title = "Las ondas recorren el medio"
 description = "Explorar activación, recuperación y medios excitables."
-url = "/projects/seres-termicos/libro/ondas/"
+url = "/projects/simus/bestiario/ondas/"
 date = "2026-10-26"
 lastmod = "2026-10-27"
 draft = false

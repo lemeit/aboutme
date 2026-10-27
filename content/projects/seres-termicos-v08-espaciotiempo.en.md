@@ -1,16 +1,17 @@
 +++
+aliases = ["/en/projects/seres-termicos/v08-espaciotiempo/"]
 title = "Act XIII · Scene II — The trace of time"
 description = "A thermal field’s recent history represented as a volume."
 weight = 0
 lastmod = '2026-10-25'
 draft = false
-url = '/en/projects/seres-termicos/v08-espaciotiempo/'
+url = '/en/projects/simus/bestiario/v08-espaciotiempo/'
 math = true
 [build]
 list = 'never'
 +++
 
-This simulation belongs to the **Cosmos** line of [Thermal Beings](/en/projects/seres-termicos/). Rather than watching a two-dimensional field evolve only in the present, it stacks recent frames along a third axis representing time.
+This simulation belongs to the **Cosmos** line of [Thermal Beings](/en/projects/simus/bestiario/). Rather than watching a two-dimensional field evolve only in the present, it stacks recent frames along a third axis representing time.
 
 ## Simulation
 
@@ -32,9 +33,9 @@ A circular buffer retains recent frames, replacing the oldest as new ones arrive
 
 This differs from retaining traces through weak diffusion: here, memory is stored explicitly in a buffer. The literary framing also draws on the image of lives extended through time in Kurt Vonnegut's *Slaughterhouse-Five* (1969).
 
-[Back to the project](/en/projects/seres-termicos/) · [Spherical universe](/en/projects/seres-termicos/v07-3d/)
+[Back to the project](/en/projects/simus/bestiario/) · [Spherical universe](/en/projects/simus/bestiario/v07-3d/)
 
 ---
 
-This English overview presents the project’s purpose and main features. [Read the full project documentation in Spanish](/projects/seres-termicos/v08-espaciotiempo/).
+This English overview presents the project’s purpose and main features. [Read the full project documentation in Spanish](/projects/simus/bestiario/v08-espaciotiempo/).
 

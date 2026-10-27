@@ -1,7 +1,8 @@
 +++
+aliases = ["/projects/seres-termicos/libro/memoria/"]
 title = "Memoria del desarrollo y referencias"
 description = "El documento histórico completo, con sus referencias y numeración original."
-url = "/projects/seres-termicos/libro/memoria/"
+url = "/projects/simus/bestiario/memoria/"
 date = "2026-10-26"
 lastmod = "2026-10-26"
 draft = false
@@ -113,7 +114,7 @@ La experiencia introduce equilibrio térmico y conecta con conservación de ener
 
 El Interludio de la [Interludio — Una recta de temperaturas](/simus/seres-termicos/v00-temperatura.html) conserva su ruta. Es un complemento para el perfil estacionario: allí X es posición; en el contacto animado X es tiempo. Este orden de enseñanza no cambia la numeración histórica de los archivos v01–v08 ni V4.1–V4.6.
 
-La [guía física y cronológica completa](/projects/seres-termicos/guia-fisica/) reúne las 52 ecuaciones y los límites de cada modelo. Podés dejarla para después de explorar los primeros pasos.
+La [guía física y cronológica completa](/projects/simus/bestiario/guia-fisica/) reúne las 52 ecuaciones y los límites de cada modelo. Podés dejarla para después de explorar los primeros pasos.
 
 El recorrido que sigue documenta esas ramas. **Un patrón no demuestra vida biológica; una regla de conducta programada tampoco se deduce de la ley de Fourier.**
 
@@ -312,7 +313,7 @@ La diferencia conceptual: Gray-Scott y FHN producen *campo* que se auto-organiza
 El Enfoque B produce *individuos* que habitan un campo pasivo. Los seres no emergen de
 las ecuaciones; las ecuaciones describen cómo cada ser nace y muere.
 
-▶ [documentación completa de v06 →](/projects/seres-termicos/v06-ciclovida/)
+▶ [documentación completa de v06 →](/projects/simus/bestiario/v06-ciclovida/)
 
 ---
 
@@ -427,7 +428,7 @@ recuadro (PIP) desde adentro de uno de los seres: los otros aparecen como masas 
 flotando en la penumbra; la pared de la esfera es un horizonte difuso de calor. La misma
 física, dos ontologías. **Tab** pasa al ser siguiente.
 
-▶ [documentación completa de v07 →](/projects/seres-termicos/v07-3d/)
+▶ [documentación completa de v07 →](/projects/simus/bestiario/v07-3d/)
 
 ### Espaciotiempo (v08)
 
@@ -445,7 +446,7 @@ vida entera es una forma geométrica tridimensional — formas en el tiempo, no 
 
 **Espacio** pausa la acumulación para mirar el volumen.
 
-▶ [documentación completa de v08 →](/projects/seres-termicos/v08-espaciotiempo/)
+▶ [documentación completa de v08 →](/projects/simus/bestiario/v08-espaciotiempo/)
 
 ---
 
@@ -609,7 +610,7 @@ Esta serie retoma la visualización volumétrica y luego agrega cuerpos articula
 
 La defensa es una hipótesis de control programada: regulación, escape y ahorro. No aparece por aplicar difusión ni constituye una demostración de voluntad o de vida. Los puntos del recuadro representan cuerpos u órganos, no moléculas de un gas. La luminosidad y los halos ayudan a observar el campo; no son radiación térmica calculada.
 
-Para parámetros, ecuaciones y límites, consultar la [guía física y cronológica completa](/projects/seres-termicos/guia-fisica/). El Prólogo agrega el punto de entrada didáctico; la futura edición V4.7 simplificada sigue siendo una propuesta.
+Para parámetros, ecuaciones y límites, consultar la [guía física y cronológica completa](/projects/simus/bestiario/guia-fisica/). El Prólogo agrega el punto de entrada didáctico; la futura edición V4.7 simplificada sigue siendo una propuesta.
 
 ---
 
@@ -624,9 +625,9 @@ Para parámetros, ecuaciones y límites, consultar la [guía física y cronológ
 | V | `v03-raymarching.html` | Ray marching volumétrico 3D (base técnica) | Claude · borrador ChatGPT | [Interludio técnico — Hacer visible un campo](/simus/seres-termicos/v03-raymarching.html) |
 | II | `v04-grayscott.html` | Reacción-difusión Gray-Scott 2D | Claude · borrador ChatGPT | [Acto X · Escena I — Las manchas encuentran una forma](/simus/seres-termicos/v04-grayscott.html) |
 | II | `v05-fhn.html` | FitzHugh-Nagumo: espirales perpetuas | Claude · borrador ChatGPT | [Acto X · Escena II — Las ondas recorren el medio](/simus/seres-termicos/v05-fhn.html) |
-| III | `v06-ciclovida.html` | **Enfoque B**: presupuesto energético, ciclo de vida | Claude · borrador ChatGPT | [ficha →](/projects/seres-termicos/v06-ciclovida/) |
-| V | `v07-3d.html` | Campo 3D + esfera volumétrica (WebGL2) + PIP interior | Claude · borrador ChatGPT | [ficha →](/projects/seres-termicos/v07-3d/) |
-| V | `v08-espaciotiempo.html` | Campo 2D × tiempo → volumen 3D de worldtubes | Claude · borrador ChatGPT | [ficha →](/projects/seres-termicos/v08-espaciotiempo/) |
+| III | `v06-ciclovida.html` | **Enfoque B**: presupuesto energético, ciclo de vida | Claude · borrador ChatGPT | [ficha →](/projects/simus/bestiario/v06-ciclovida/) |
+| V | `v07-3d.html` | Campo 3D + esfera volumétrica (WebGL2) + PIP interior | Claude · borrador ChatGPT | [ficha →](/projects/simus/bestiario/v07-3d/) |
+| V | `v08-espaciotiempo.html` | Campo 2D × tiempo → volumen 3D de worldtubes | Claude · borrador ChatGPT | [ficha →](/projects/simus/bestiario/v08-espaciotiempo/) |
 | IV | `bestiario.html` (B1) | **Línea BESTIARIO**: organismo articulado, taxonomía por equilibrios | GLM (Zhipu AI) | [Acto XII — Un bestiario de calor](/simus/seres-termicos/bestiario.html) |
 
 Nota sobre la numeración: hasta v08 las versiones son secuenciales (la línea del campo).

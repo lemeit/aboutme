@@ -1,7 +1,8 @@
 +++
+aliases = ["/projects/seres-termicos/libro/prologo/"]
 title = "Del relato a la física"
 description = "La imagen de Borges y Margarita Guerrero y las reglas de lectura."
-url = "/projects/seres-termicos/libro/prologo/"
+url = "/projects/simus/bestiario/prologo/"
 date = "2026-10-26"
 lastmod = "2026-10-26"
 draft = false

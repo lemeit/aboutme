@@ -1,16 +1,17 @@
 +++
+aliases = ["/zh/projects/seres-termicos/v06-ciclovida/"]
 title = "第十一幕 — 可计数的个体"
 description = '热场中的个体能量预算、出生与死亡。'
 weight = 0
 lastmod = '2026-10-25'
 draft = false
-url = '/zh/projects/seres-termicos/v06-ciclovida/'
+url = '/zh/projects/simus/bestiario/v06-ciclovida/'
 math = true
 [build]
 list = 'never'
 +++
 
-本模拟属于[热生物](/zh/projects/seres-termicos/)的**个体**路径。与反应扩散纹理不同，每个生物都有身份、位置和有限的能量预算。
+本模拟属于[热生物](/zh/projects/simus/bestiario/)的**个体**路径。与反应扩散纹理不同，每个生物都有身份、位置和有限的能量预算。
 
 ## 模拟
 
@@ -35,8 +36,8 @@ $$\frac{\partial T}{\partial t}=\alpha\nabla^2T-\lambda T+\sum_i S_i.$$
 
 显式欧拉积分使用五点拉普拉斯差分格式，时间步长满足二维扩散的稳定性限制。
 
-[返回项目](/zh/projects/seres-termicos/) · [下一项：球形宇宙](/zh/projects/seres-termicos/v07-3d/)
+[返回项目](/zh/projects/simus/bestiario/) · [下一项：球形宇宙](/zh/projects/simus/bestiario/v07-3d/)
 
 ---
 
-本中文概述介绍项目目标与主要功能。[阅读完整的西班牙语项目文档](/projects/seres-termicos/v06-ciclovida/)。
+本中文概述介绍项目目标与主要功能。[阅读完整的西班牙语项目文档](/projects/simus/bestiario/v06-ciclovida/)。

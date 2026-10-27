@@ -13,7 +13,7 @@ h1{font-size:16px;margin:0}
 .sub{color:#888;margin:4px 0 12px}
 #status{font-family:monospace;color:#aaa}
 </style>
-</head>
+<link rel="stylesheet" href="/simus/seres-termicos/calculo-escena.css?v=308bc98f4f602610321440d8e5532cd8"><script src="/simus/seres-termicos/calculo-escena.js?v=7b5739a915049541cc7333f6294d6ec4"></script></head>
 <body>
 <canvas id="c"></canvas>
 <div id="ui">
@@ -126,7 +126,9 @@ function render() {
   gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
 }
 render();
-</script>
-<script defer src="/simus/seres-termicos/volver-al-libro.js" data-chapter="/projects/seres-termicos/libro/visualizacion/" data-label="Anexo C"></script>
+/* ledger:start */
+window.thermalReadout={static:true,size:()=>[N,N,N],field:()=>field,values:()=>({'Resolución por eje':N}),note:'Prueba estática de textura: no hay evolución temporal que avanzar. Podés examinar sus valores por índices.'};
+/* ledger:end */</script>
+<script defer src="/simus/seres-termicos/volver-al-libro.js" data-chapter="/projects/simus/bestiario/visualizacion/" data-label="Anexo C"></script>
 </body>
 </html>

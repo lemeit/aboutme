@@ -1,7 +1,8 @@
 +++
+aliases = ["/projects/seres-termicos/libro/gradiente/"]
 title = "Seguir el gradiente"
 description = "Acoplar el movimiento de agentes a las diferencias del campo."
-url = "/projects/seres-termicos/libro/gradiente/"
+url = "/projects/simus/bestiario/gradiente/"
 date = "2026-10-26"
 lastmod = "2026-10-27"
 draft = false

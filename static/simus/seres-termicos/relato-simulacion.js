@@ -76,10 +76,12 @@
     function schedule(entry){entry.native=requestAnimationFrame(time=>{entry.native=null;if(!visible)return;frames.delete(entry.id);entry.fn(time);});}
     const requestFrame = fn => {const entry={id:++serial,fn,native:null};frames.set(entry.id,entry);if(visible)schedule(entry);return entry.id;};
     const cancelFrame = id => {const e=frames.get(id);if(e?.native)cancelAnimationFrame(e.native);frames.delete(id);};
+    const readoutControl=section.dataset.readout==='true'?window.ThermalSceneReadout?.controller(requestFrame,cancelFrame):null;
     new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;if(visible)frames.forEach(e=>{if(!e.native)schedule(e);});},{rootMargin:'100px'}).observe(section);
     try {
-      run(localDocument,localWindow,listen,requestFrame,cancelFrame,viewport,{search:''});
+      run(localDocument,localWindow,listen,readoutControl?.request||requestFrame,readoutControl?.cancel||cancelFrame,viewport,{search:''});
       if(localWindow.thermalEvidence&&window.ThermalFieldLedger)window.ThermalFieldLedger.mount(section,localWindow.thermalEvidence);
+      if(localWindow.thermalReadout&&readoutControl)localWindow.readoutPanel=window.ThermalSceneReadout.mount(section,localWindow.thermalReadout,readoutControl);
       host.dataset.ready='true';
     } catch(error) {
       host.dataset.ready='error';console.error('Simulation '+id,error);

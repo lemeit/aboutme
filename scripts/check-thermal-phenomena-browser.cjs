@@ -21,7 +21,7 @@ const root=path.resolve(process.argv[2]||'public');
     const snapshot=host=>host.evaluate(el=>el.sceneAPI.thermalCourse?.snapshot()||el.sceneAPI.thermalContact.snapshot());
     const slugs=['contacto','calor-capacidad','primera-ley','entropia','conduccion','difusion-linea','difusion-superficie','difusion-volumen'];
     for(const slug of slugs){
-      await page.goto(base+'/projects/seres-termicos/libro/'+slug+'/');
+      await page.goto(base+'/projects/simus/bestiario/'+slug+'/');
       const host=page.locator('.sim-native-host');
       await host.evaluate(el=>el.scrollIntoView({block:'start'}));
       await page.clock.runFor(100);

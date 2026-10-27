@@ -22,7 +22,7 @@ button{margin-top:8px;background:#0f1219;color:#ccc;border:1px solid #2e3340;
   border-radius:6px;padding:5px 9px;cursor:pointer;font-size:11px}
 #fps{position:fixed;right:16px;top:14px;color:#555;font:11px monospace}
 </style>
-</head>
+<link rel="stylesheet" href="/simus/seres-termicos/calculo-escena.css?v=308bc98f4f602610321440d8e5532cd8"><script src="/simus/seres-termicos/calculo-escena.js?v=7b5739a915049541cc7333f6294d6ec4"></script></head>
 <body>
 <canvas id="c"></canvas>
 <div class="panel">
@@ -322,7 +322,9 @@ function loop(now) {
   requestAnimationFrame(loop);
 }
 requestAnimationFrame(loop);
-</script>
-<script defer src="/simus/seres-termicos/volver-al-libro.js" data-chapter="/projects/seres-termicos/libro/visualizacion/" data-label="Anexo C"></script>
+/* ledger:start */
+window.thermalReadout={size:()=>[N,N,N],field:()=>field,values:()=>({'Cuadros del modelo':frameCount,'Fuentes':beings.length,'x de la primera':beings[0]?.x??0,'y de la primera':beings[0]?.y??0,'z de la primera':beings[0]?.z??0,'Estado de la primera':beings[0]?.T??0}),note:'Campo persistente de 64³ celdas: fuentes, difusión y persistencia. El píxel volumétrico combina varias muestras.'};
+/* ledger:end */</script>
+<script defer src="/simus/seres-termicos/volver-al-libro.js" data-chapter="/projects/simus/bestiario/visualizacion/" data-label="Anexo C"></script>
 </body>
 </html>

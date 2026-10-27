@@ -82,7 +82,7 @@ canvas.graph{display:block;width:100%;border-radius:4px;background:var(--surface
 #hint{position:fixed;left:50%;transform:translateX(-50%);bottom:10px;
   color:#2a1e14;font-size:9px;pointer-events:none}
 </style>
-</head>
+<link rel="stylesheet" href="/simus/seres-termicos/calculo-escena.css?v=308bc98f4f602610321440d8e5532cd8"><script src="/simus/seres-termicos/calculo-escena.js?v=7b5739a915049541cc7333f6294d6ec4"></script></head>
 <body>
 <canvas id="c"></canvas>
 
@@ -599,7 +599,9 @@ canvas.addEventListener('click', e=>{
   const E0=+document.getElementById('e0').value;
   beings.push(new Ser(cx,cy,null,E0));
 });
-</script>
-<script defer src="/simus/seres-termicos/volver-al-libro.js" data-chapter="/projects/seres-termicos/libro/individuos/" data-label="Capítulo 13"></script>
+/* ledger:start */
+window.thermalReadout={size:()=>[GW,GH],field:()=>T,values:()=>({'Paso':tick,'Individuos':beings.length,'Reserva del primero':beings[0]?.E??0,'Edad del primero (pasos)':beings[0]?.age??0}),note:'Dos pasos del modelo por cuadro; reserva y campo son magnitudes distintas.'};
+/* ledger:end */</script>
+<script defer src="/simus/seres-termicos/volver-al-libro.js" data-chapter="/projects/simus/bestiario/individuos/" data-label="Capítulo 13"></script>
 </body>
 </html>

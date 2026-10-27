@@ -11,7 +11,7 @@
 <div class="thermal-book">
   <aside class="thermal-book-sidebar">
     <details class="thermal-book-index" open>
-      <summary>Recorrido de Seres Térmicos</summary>
+      <summary>Recorrido del Bestiario</summary>
       <nav aria-label="Índice del relato">
         <a class="thermal-book-cover" href="{{ $cover.RelPermalink }}" {{ if eq $order 0 }}aria-current="page"{{ end }}>Inicio del relato</a>
         {{ range .Site.Data.seres_book.parts }}
@@ -27,7 +27,7 @@
   </aside>
   <article class="thermal-book-page">
     <header>
-      <a class="thermal-book-home" href="{{ $cover.RelPermalink }}">Seres Térmicos · Relato interactivo</a>
+      <a class="thermal-book-home" href="{{ $cover.RelPermalink }}">Bestiario · Seres Térmicos</a>
       {{ if gt $order 0 }}<p class="thermal-book-position">{{ .Params.book_part_title }} · {{ .Params.book_label }}</p>{{ end }}
       <h1>{{ .Title }}</h1>
       {{ with .Description }}<p class="thermal-book-description">{{ . }}</p>{{ end }}
@@ -49,7 +49,7 @@
     </div>
     {{ end }}
     {{ partial "seres-book-turn.html" (dict "page" . "pages" $pages "order" $order "position" "inferior") }}
-    <p class="thermal-book-portal"><a href="{{ "/projects/" | relURL }}">Todos los proyectos</a> · <a href="{{ "/notes/fisica-4to/u6-energia-termica/" | relURL }}">Apuntes de energía térmica</a></p>
+    <p class="thermal-book-portal"><a href="{{ "/projects/simus/" | relURL }}">Simulaciones</a> · <a href="{{ "/projects/" | relURL }}">Todos los proyectos</a> · <a href="{{ "/notes/fisica-4to/u6-energia-termica/" | relURL }}">Apuntes de energía térmica</a></p>
   </article>
 </div>
 <script>

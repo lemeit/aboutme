@@ -1,7 +1,8 @@
 +++
+aliases = ["/projects/seres-termicos/libro/campo-fuentes/"]
 title = "El campo que disuelve"
 description = "Agregar fuentes prescritas a un campo que difunde."
-url = "/projects/seres-termicos/libro/campo-fuentes/"
+url = "/projects/simus/bestiario/campo-fuentes/"
 date = "2026-10-26"
 lastmod = "2026-10-27"
 draft = false

@@ -1,7 +1,8 @@
 +++
+aliases = ["/projects/seres-termicos/guia-fisica/"]
 title = "Ecuaciones, balances y límites"
 description = "La guía técnica de 52 ecuaciones, conservada como anexo de profundización."
-url = "/projects/seres-termicos/guia-fisica/"
+url = "/projects/simus/bestiario/guia-fisica/"
 date = "2026-10-26"
 lastmod = "2026-10-26"
 draft = false
@@ -25,7 +26,7 @@ La numeración v01 a v08 y la serie V4.1 a V4.6 pertenecen a etapas y ramas dist
 
 ## Identificadores de las versiones
 
-La numeración de archivos identifica ramas históricas, no los capítulos del relato. El [mapa de versiones](/projects/seres-termicos/libro/versiones/) permite localizar cada archivo dentro del índice. Las secciones numeradas 1–16 que siguen pertenecen a este anexo técnico.
+La numeración de archivos identifica ramas históricas, no los capítulos del relato. El [mapa de versiones](/projects/simus/bestiario/versiones/) permite localizar cada archivo dentro del índice. Las secciones numeradas 1–16 que siguen pertenecen a este anexo técnico.
 
 ## Cómo leer la guía
 
@@ -753,7 +754,7 @@ La grabación de video necesitaría una función de captura del canvas y composi
 
 **P3.** Archivo `seres_termicos_V4_1.html` aportado para la revisión y versiones locales V4.2, V4.2.1, V4.3, V4.4, V4.5 y V4.6. Se contrastaron ecuaciones, parámetros, balances y cambios de render. Los ensayos de desarrollo de las versiones recientes respaldan las verificaciones descritas. Estas versiones aún eran locales durante la preparación original de la guía. Desde el 19 de octubre de 2026 están disponibles en el [índice de simulaciones](https://github.com/lemeit/simus/tree/main/seres-termicos).
 
-**P4.** [Sitio de Seres Térmicos](https://profe.lemeit.ar/projects/seres-termicos/) y [repositorio público indicado por el autor](https://github.com/lemeit/simus). La documentación literaria se conserva como referencia del README; no se cotejaron en esta revisión las ediciones originales ni todas las atribuciones bibliográficas a Steiner.
+**P4.** [Sitio de Seres Térmicos](https://profe.lemeit.ar/projects/simus/bestiario/) y [repositorio público indicado por el autor](https://github.com/lemeit/simus). La documentación literaria se conserva como referencia del README; no se cotejaron en esta revisión las ediciones originales ni todas las atribuciones bibliográficas a Steiner.
 
 ### Referencias de contraste científico
 

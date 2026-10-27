@@ -1,7 +1,8 @@
 +++
+aliases = ["/projects/seres-termicos/libro/reaccion-difusion/"]
 title = "Las manchas encuentran una forma"
 description = "Explorar la rama Gray–Scott y sus campos de concentración."
-url = "/projects/seres-termicos/libro/reaccion-difusion/"
+url = "/projects/simus/bestiario/reaccion-difusion/"
 date = "2026-10-26"
 lastmod = "2026-10-27"
 draft = false

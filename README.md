@@ -22,6 +22,20 @@ Reúne la traducción y adaptación al español de las notas de Jeff Bigler, apu
 
 ## Estructura del proyecto
 
+Las experiencias interactivas se reúnen en `/projects/simus/`. El primer recorrido es
+`/projects/simus/bestiario/` (Bestiario · Seres Térmicos); sus capítulos cuelgan
+directamente de esa ruta, sin el nivel `/libro/`. Hugo conserva las direcciones
+anteriores mediante `aliases`. Los HTML autónomos mantienen sus rutas técnicas en
+`/simus/seres-termicos/` para no romper enlaces y descargas existentes.
+
+Los paneles de lectura observan los valores de los modelos. Las cuatro escenas de
+la Parte II usan `calculo-campo.js` para reconstruir un subpaso. Las otras escenas
+dinámicas usan `calculo-escena.js`: el avance manual ejecuta un cuadro original,
+que puede incluir varios subpasos. Las pruebas estáticas no inventan evolución.
+Los bloques `ledger` de cada HTML exponen lecturas sin cambiar sus fórmulas.
+El integrador nativo añade una versión derivada del contenido a las URLs de sus
+scripts para evitar mezclar controles antiguos con páginas nuevas.
+
 ```
 aboutme/
 ├── content/                            ← Contenido Hugo

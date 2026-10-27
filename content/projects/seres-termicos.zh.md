@@ -1,4 +1,6 @@
 +++
+url = "/zh/projects/simus/bestiario/"
+aliases = ["/zh/projects/seres-termicos/"]
 title = '热生物'
 description = '文学、热扩散与探索性模拟。'
 weight = 5
@@ -6,7 +8,7 @@ lastmod = '2026-10-26'
 draft = false
 +++
 
-从序言到高级模型，请阅读完整的[西班牙语交互式图书](/projects/seres-termicos/)。技术文件名保留在版本索引中。
+从序言到高级模型，请阅读完整的[西班牙语交互式图书](/projects/simus/bestiario/)。技术文件名保留在版本索引中。
 
 
 
@@ -26,9 +28,9 @@ draft = false
 
 ## 探索模拟
 
-- **[v06：生命周期](/zh/projects/seres-termicos/v06-ciclovida/)**：二维热场中的个体能量预算。
-- **[v07：球形宇宙](/zh/projects/seres-termicos/v07-3d/)**：从外部与个体视角观察三维场。
-- **[v08：时空](/zh/projects/seres-termicos/v08-espaciotiempo/)**：将二维场的近期历史表示为三维体积。
+- **[v06：生命周期](/zh/projects/simus/bestiario/v06-ciclovida/)**：二维热场中的个体能量预算。
+- **[v07：球形宇宙](/zh/projects/simus/bestiario/v07-3d/)**：从外部与个体视角观察三维场。
+- **[v08：时空](/zh/projects/simus/bestiario/v08-espaciotiempo/)**：将二维场的近期历史表示为三维体积。
 
 模拟控件使用西班牙语。中文页面解释观察要点，并链接到完整的西班牙语技术文档。
 
@@ -46,4 +48,4 @@ draft = false
 
 ---
 
-本中文概述介绍项目目标与主要功能。[阅读完整的西班牙语项目文档](/projects/seres-termicos/)。
+本中文概述介绍项目目标与主要功能。[阅读完整的西班牙语项目文档](/projects/simus/bestiario/)。

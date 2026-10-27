@@ -16,7 +16,7 @@ Este sitio reúne mis materiales educativos y proyectos de tecnología aplicada 
 
 En el aula, enseño ciencias y desarrollo [apuntes, actividades y recursos digitales](/notes/). Me interesa que los conceptos se puedan explorar con experiencias, datos y simulaciones. También mantengo un [mapa de conceptos de Física](/conceptos/) para recorrer las relaciones entre los temas.
 
-En mis proyectos, trabajo con sensores, datos ambientales, cartografía web e inteligencia artificial. [Aire Escolar](/projects/aq-saladillo/) y [EMAS](/projects/ema-saladillo/) acercan información del ambiente; [Seres Térmicos](/projects/seres-termicos/) explora modelos mediante simulaciones; [SIG Vial PBA](/projects/dvba-gis/) vincula información territorial y gestión vial.
+En mis proyectos, trabajo con sensores, datos ambientales, cartografía web e inteligencia artificial. [Aire Escolar](/projects/aq-saladillo/) y [EMAS](/projects/ema-saladillo/) acercan información del ambiente; [Seres Térmicos](/projects/simus/bestiario/) explora modelos mediante simulaciones; [SIG Vial PBA](/projects/dvba-gis/) vincula información territorial y gestión vial.
 
 Mi recorrido profesional incluye coordinación de laboratorios, control de calidad, análisis de aguas, investigación y desarrollo, fiscalización industrial y gestión ambiental. También trabajo con sistemas de gestión ISO/IEC 17025 e ISO 9001 y asistencia técnica a la producción.
 
@@ -81,7 +81,7 @@ Elaboro [materiales de clase](/notes/) y un [mapa de conceptos de Física](/conc
 - **[SIG Vial PBA](/projects/dvba-gis/)** · Información territorial, cartografía web y relevamientos para la gestión vial.
 - **[Aire Escolar](/projects/aq-saladillo/)** · Continúa la iniciativa *Ciencia Ciudadana Ambiental: Escuelas de Saladillo en Acción por un Aire Limpio*. Busca desplegar sensores de bajo costo en instituciones educativas urbanas y rurales de la Provincia de Buenos Aires, con participación estudiantil, análisis de datos y concientización comunitaria.
 - **[EMAS](/projects/ema-saladillo/)** · Integración y consulta de datos de estaciones meteorológicas.
-- **[Seres Térmicos](/projects/seres-termicos/)** · Exploración de modelos mediante simulaciones.
+- **[Seres Térmicos](/projects/simus/bestiario/)** · Exploración de modelos mediante simulaciones.
 - **[EUREKA AI](/projects/eureka-ai/)** · Tutor de ciencias con acompañamiento socrático.
 
 ### Reconocimientos

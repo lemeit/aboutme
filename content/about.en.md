@@ -16,7 +16,7 @@ This site brings together my educational resources and projects applying technol
 
 I teach science and develop [teaching notes, activities and digital resources](/notes/) in Spanish. I want students to explore concepts through experiments, data and simulations. I also maintain a [Physics concept map](/conceptos/), in Spanish, to explore connections between topics.
 
-My projects involve sensors, environmental data, web mapping and artificial intelligence. [Aire Escolar](/en/projects/aq-saladillo/) and [EMAS](/en/projects/ema-saladillo/) make environmental information accessible; [Thermal Beings](/en/projects/seres-termicos/) explores models through simulation; [SIG Vial PBA](/en/projects/dvba-gis/) connects territorial information with road management.
+My projects involve sensors, environmental data, web mapping and artificial intelligence. [Aire Escolar](/en/projects/aq-saladillo/) and [EMAS](/en/projects/ema-saladillo/) make environmental information accessible; [Thermal Beings](/en/projects/simus/bestiario/) explores models through simulation; [SIG Vial PBA](/en/projects/dvba-gis/) connects territorial information with road management.
 
 My professional experience includes laboratory coordination, quality control, water analysis, research and development, industrial inspection and environmental management. I have also worked with ISO/IEC 17025 and ISO 9001 management systems and technical support for production.
 
@@ -83,7 +83,7 @@ I develop [classroom materials](/notes/) and a [Physics concept map](/conceptos/
 - **[SIG Vial PBA](/en/projects/dvba-gis/)** · Territorial information, web mapping and surveys for road management.
 - **[Aire Escolar](/en/projects/aq-saladillo/)** · Continues *Ciencia Ciudadana Ambiental: Escuelas de Saladillo en Acción por un Aire Limpio*. It aims to deploy low-cost sensors in urban and rural educational institutions across Buenos Aires Province, involving students in monitoring, data analysis and community awareness.
 - **[EMAS](/en/projects/ema-saladillo/)** · Integration and exploration of weather-station data.
-- **[Thermal Beings](/en/projects/seres-termicos/)** · Exploring models through simulations.
+- **[Thermal Beings](/en/projects/simus/bestiario/)** · Exploring models through simulations.
 - **[EUREKA AI](/en/projects/eureka-ai/)** · A science tutor using Socratic guidance.
 
 ### Recognition

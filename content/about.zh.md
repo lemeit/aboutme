@@ -16,7 +16,7 @@ draft = false
 
 我教授科学课程，并编写西班牙语的[课堂笔记、活动和数字教学资源](/notes/)。我希望学生能够通过实验、数据和模拟来探索概念。我还维护一份西班牙语[物理概念图谱](/conceptos/)，帮助读者了解不同主题之间的联系。
 
-我的项目涉及传感器、环境数据、网络地图和人工智能。[Aire Escolar](/zh/projects/aq-saladillo/) 和 [EMAS](/zh/projects/ema-saladillo/) 让环境信息更便于获取；[热生物](/zh/projects/seres-termicos/)通过模拟探索模型；[SIG Vial PBA](/zh/projects/dvba-gis/) 将区域信息与道路管理相结合。
+我的项目涉及传感器、环境数据、网络地图和人工智能。[Aire Escolar](/zh/projects/aq-saladillo/) 和 [EMAS](/zh/projects/ema-saladillo/) 让环境信息更便于获取；[热生物](/zh/projects/simus/bestiario/)通过模拟探索模型；[SIG Vial PBA](/zh/projects/dvba-gis/) 将区域信息与道路管理相结合。
 
 我的职业经历包括实验室协调、质量控制、水质分析、研发、工业检查和环境管理。我也曾参与 ISO/IEC 17025 和 ISO 9001 管理体系相关工作，并为生产提供技术支持。
 
@@ -83,7 +83,7 @@ draft = false
 - **[SIG Vial PBA](/zh/projects/dvba-gis/)** · 用于道路管理的区域信息、网络地图和现场调查。
 - **[Aire Escolar](/zh/projects/aq-saladillo/)** · 延续 *Ciencia Ciudadana Ambiental: Escuelas de Saladillo en Acción por un Aire Limpio* 倡议。计划在布宜诺斯艾利斯省城乡教育机构部署低成本传感器，让学生参与监测、数据分析和社区宣传。
 - **[EMAS](/zh/projects/ema-saladillo/)** · 整合和查询气象站数据。
-- **[热生物](/zh/projects/seres-termicos/)** · 通过模拟探索数学模型。
+- **[热生物](/zh/projects/simus/bestiario/)** · 通过模拟探索数学模型。
 - **[EUREKA AI](/zh/projects/eureka-ai/)** · 使用苏格拉底式引导的科学学习辅导工具。
 
 ### 获奖与认可

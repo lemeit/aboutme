@@ -1,16 +1,17 @@
 +++
+aliases = ["/zh/projects/seres-termicos/v07-3d/"]
 title = "第十三幕 第一场 — 容纳它们的世界"
 description = '具有外部与内部视角的三维热场。'
 weight = 0
 lastmod = '2026-10-25'
 draft = false
-url = '/zh/projects/seres-termicos/v07-3d/'
+url = '/zh/projects/simus/bestiario/v07-3d/'
 math = true
 [build]
 list = 'never'
 +++
 
-本模拟属于[热生物](/zh/projects/seres-termicos/)的**宇宙**路径。球形区域代替了早期版本的矩形网格。
+本模拟属于[热生物](/zh/projects/simus/bestiario/)的**宇宙**路径。球形区域代替了早期版本的矩形网格。
 
 ## 模拟
 
@@ -32,8 +33,8 @@ CPU 更新场，再将其作为三维纹理上传，用 WebGL2 渲染。体积�
 
 个体在球形边界处反射。边界和场的规则定义了一个理想化的计算世界，而不是对真实等离子体的建模。
 
-[返回项目](/zh/projects/seres-termicos/) · [下一项：时空](/zh/projects/seres-termicos/v08-espaciotiempo/)
+[返回项目](/zh/projects/simus/bestiario/) · [下一项：时空](/zh/projects/simus/bestiario/v08-espaciotiempo/)
 
 ---
 
-本中文概述介绍项目目标与主要功能。[阅读完整的西班牙语项目文档](/projects/seres-termicos/v07-3d/)。
+本中文概述介绍项目目标与主要功能。[阅读完整的西班牙语项目文档](/projects/simus/bestiario/v07-3d/)。

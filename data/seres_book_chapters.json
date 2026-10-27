@@ -1,6 +1,6 @@
 [
   {
-    "url": "/projects/seres-termicos/libro/prologo/",
+    "url": "/projects/simus/bestiario/prologo/",
     "label": "Prólogo",
     "title": "Del relato a la física",
     "order": 1,
@@ -8,7 +8,7 @@
     "page": "/projects/seres-libro-prologo"
   },
   {
-    "url": "/projects/seres-termicos/libro/contacto/",
+    "url": "/projects/simus/bestiario/contacto/",
     "label": "Capítulo 1",
     "title": "El primer encuentro",
     "order": 2,
@@ -16,7 +16,7 @@
     "page": "/projects/seres-libro-contacto"
   },
   {
-    "url": "/projects/seres-termicos/libro/calor-capacidad/",
+    "url": "/projects/simus/bestiario/calor-capacidad/",
     "label": "Capítulo 2",
     "title": "El calor deja una huella",
     "order": 3,
@@ -24,7 +24,7 @@
     "page": "/projects/seres-libro-calor-capacidad"
   },
   {
-    "url": "/projects/seres-termicos/libro/primera-ley/",
+    "url": "/projects/simus/bestiario/primera-ley/",
     "label": "Capítulo 3",
     "title": "La energía cruza la frontera",
     "order": 4,
@@ -32,7 +32,7 @@
     "page": "/projects/seres-libro-primera-ley"
   },
   {
-    "url": "/projects/seres-termicos/libro/entropia/",
+    "url": "/projects/simus/bestiario/entropia/",
     "label": "Capítulo 4",
     "title": "La dirección del cambio",
     "order": 5,
@@ -40,7 +40,7 @@
     "page": "/projects/seres-libro-entropia"
   },
   {
-    "url": "/projects/seres-termicos/libro/conduccion/",
+    "url": "/projects/simus/bestiario/conduccion/",
     "label": "Capítulo 5",
     "title": "Una pendiente conduce calor",
     "order": 6,
@@ -48,7 +48,7 @@
     "page": "/projects/seres-libro-conduccion"
   },
   {
-    "url": "/projects/seres-termicos/libro/difusion-linea/",
+    "url": "/projects/simus/bestiario/difusion-linea/",
     "label": "Capítulo 6",
     "title": "El calor recorre una línea",
     "order": 7,
@@ -56,7 +56,7 @@
     "page": "/projects/seres-libro-difusion-linea"
   },
   {
-    "url": "/projects/seres-termicos/libro/difusion-superficie/",
+    "url": "/projects/simus/bestiario/difusion-superficie/",
     "label": "Capítulo 7",
     "title": "La línea se vuelve superficie",
     "order": 8,
@@ -64,7 +64,7 @@
     "page": "/projects/seres-libro-difusion-superficie"
   },
   {
-    "url": "/projects/seres-termicos/libro/difusion-volumen/",
+    "url": "/projects/simus/bestiario/difusion-volumen/",
     "label": "Capítulo 8",
     "title": "El calor habita un volumen",
     "order": 9,
@@ -72,7 +72,7 @@
     "page": "/projects/seres-libro-difusion-volumen"
   },
   {
-    "url": "/projects/seres-termicos/libro/campo-fuentes/",
+    "url": "/projects/simus/bestiario/campo-fuentes/",
     "label": "Capítulo 9",
     "title": "El campo que disuelve",
     "order": 10,
@@ -80,7 +80,7 @@
     "page": "/projects/seres-libro-campo-fuentes"
   },
   {
-    "url": "/projects/seres-termicos/libro/gradiente/",
+    "url": "/projects/simus/bestiario/gradiente/",
     "label": "Capítulo 10",
     "title": "Seguir el gradiente",
     "order": 11,
@@ -88,7 +88,7 @@
     "page": "/projects/seres-libro-gradiente"
   },
   {
-    "url": "/projects/seres-termicos/libro/reaccion-difusion/",
+    "url": "/projects/simus/bestiario/reaccion-difusion/",
     "label": "Capítulo 11",
     "title": "Las manchas encuentran una forma",
     "order": 12,
@@ -96,7 +96,7 @@
     "page": "/projects/seres-libro-reaccion-difusion"
   },
   {
-    "url": "/projects/seres-termicos/libro/ondas/",
+    "url": "/projects/simus/bestiario/ondas/",
     "label": "Capítulo 12",
     "title": "Las ondas recorren el medio",
     "order": 13,
@@ -104,7 +104,7 @@
     "page": "/projects/seres-libro-ondas"
   },
   {
-    "url": "/projects/seres-termicos/libro/individuos/",
+    "url": "/projects/simus/bestiario/individuos/",
     "label": "Capítulo 13",
     "title": "Contar a los individuos",
     "order": 14,
@@ -112,7 +112,7 @@
     "page": "/projects/seres-libro-individuos"
   },
   {
-    "url": "/projects/seres-termicos/libro/anatomia/",
+    "url": "/projects/simus/bestiario/anatomia/",
     "label": "Capítulo 14",
     "title": "Un bestiario de calor",
     "order": 15,
@@ -120,7 +120,7 @@
     "page": "/projects/seres-libro-anatomia"
   },
   {
-    "url": "/projects/seres-termicos/libro/universo/",
+    "url": "/projects/simus/bestiario/universo/",
     "label": "Capítulo 15",
     "title": "El mundo que los contiene",
     "order": 16,
@@ -128,7 +128,7 @@
     "page": "/projects/seres-libro-universo"
   },
   {
-    "url": "/projects/seres-termicos/libro/tiempo/",
+    "url": "/projects/simus/bestiario/tiempo/",
     "label": "Capítulo 16",
     "title": "La huella del tiempo",
     "order": 17,
@@ -136,7 +136,7 @@
     "page": "/projects/seres-libro-tiempo"
   },
   {
-    "url": "/projects/seres-termicos/libro/volumen-inicial/",
+    "url": "/projects/simus/bestiario/volumen-inicial/",
     "label": "Capítulo 17",
     "title": "El primer volumen térmico",
     "order": 18,
@@ -144,7 +144,7 @@
     "page": "/projects/seres-libro-volumen-inicial"
   },
   {
-    "url": "/projects/seres-termicos/libro/formas-iniciales/",
+    "url": "/projects/simus/bestiario/formas-iniciales/",
     "label": "Capítulo 18",
     "title": "Las formas del campo",
     "order": 19,
@@ -152,7 +152,7 @@
     "page": "/projects/seres-libro-formas-iniciales"
   },
   {
-    "url": "/projects/seres-termicos/libro/ventana/",
+    "url": "/projects/simus/bestiario/ventana/",
     "label": "Capítulo 19",
     "title": "Una ventana al campo",
     "order": 20,
@@ -160,7 +160,7 @@
     "page": "/projects/seres-libro-ventana"
   },
   {
-    "url": "/projects/seres-termicos/libro/fuentes-articuladas/",
+    "url": "/projects/simus/bestiario/fuentes-articuladas/",
     "label": "Capítulo 20",
     "title": "Frío y fuego articulados",
     "order": 21,
@@ -168,7 +168,7 @@
     "page": "/projects/seres-libro-fuentes-articuladas"
   },
   {
-    "url": "/projects/seres-termicos/libro/reservas/",
+    "url": "/projects/simus/bestiario/reservas/",
     "label": "Capítulo 21",
     "title": "Nacer y extinguirse",
     "order": 22,
@@ -176,7 +176,7 @@
     "page": "/projects/seres-libro-reservas"
   },
   {
-    "url": "/projects/seres-termicos/libro/puntos/",
+    "url": "/projects/simus/bestiario/puntos/",
     "label": "Capítulo 22",
     "title": "Mirar sin halos",
     "order": 23,
@@ -184,7 +184,7 @@
     "page": "/projects/seres-libro-puntos"
   },
   {
-    "url": "/projects/seres-termicos/libro/defensa/",
+    "url": "/projects/simus/bestiario/defensa/",
     "label": "Capítulo 23",
     "title": "Resistir hasta agotarse",
     "order": 24,
@@ -192,7 +192,7 @@
     "page": "/projects/seres-libro-defensa"
   },
   {
-    "url": "/projects/seres-termicos/libro/limite-frio/",
+    "url": "/projects/simus/bestiario/limite-frio/",
     "label": "Anexo A",
     "title": "El límite del frío",
     "order": 25,
@@ -200,7 +200,7 @@
     "page": "/projects/seres-libro-limite-frio"
   },
   {
-    "url": "/projects/seres-termicos/libro/recta-temperaturas/",
+    "url": "/projects/simus/bestiario/recta-temperaturas/",
     "label": "Anexo B",
     "title": "Una recta de temperaturas",
     "order": 26,
@@ -208,7 +208,7 @@
     "page": "/projects/seres-libro-recta-temperaturas"
   },
   {
-    "url": "/projects/seres-termicos/libro/visualizacion/",
+    "url": "/projects/simus/bestiario/visualizacion/",
     "label": "Anexo C",
     "title": "Hacer visible un campo",
     "order": 27,
@@ -216,7 +216,7 @@
     "page": "/projects/seres-libro-visualizacion"
   },
   {
-    "url": "/projects/seres-termicos/guia-fisica/",
+    "url": "/projects/simus/bestiario/guia-fisica/",
     "label": "Anexo D",
     "title": "Ecuaciones, balances y límites",
     "order": 28,
@@ -224,7 +224,7 @@
     "page": "/projects/seres-termicos-guia-fisica"
   },
   {
-    "url": "/projects/seres-termicos/libro/memoria/",
+    "url": "/projects/simus/bestiario/memoria/",
     "label": "Anexo E",
     "title": "Memoria del desarrollo y referencias",
     "order": 29,
@@ -232,7 +232,7 @@
     "page": "/projects/seres-libro-memoria"
   },
   {
-    "url": "/projects/seres-termicos/libro/versiones/",
+    "url": "/projects/simus/bestiario/versiones/",
     "label": "Anexo F",
     "title": "Mapa de archivos y versiones",
     "order": 30,

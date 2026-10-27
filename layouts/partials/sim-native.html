@@ -6,7 +6,7 @@
 {{- $body := replaceRE `(?is)^.*?<body[^>]*>(.*?)</body>.*$` "$1" $source -}}
 {{- $body = replaceRE `(?is)<script\b[^>]*>.*?</script>` "" $body -}}
 {{- $body = replaceRE `(?is)<style\b[^>]*>.*?</style>` "" $body -}}
-<section class="sim-native" aria-label="{{ $title }}">
+<section class="sim-native" aria-label="{{ $title }}"{{ if in $source "/simus/seres-termicos/calculo-escena.js" }} data-readout="true"{{ end }}>
   <div class="sim-native-actions"><button type="button" data-sim-expand aria-expanded="false">Ampliar simulación</button><a href="{{ $src | relURL }}" target="_blank" rel="noopener">Abrir por separado ↗</a></div>
   <div id="{{ $id }}" class="sim-native-host" tabindex="0" aria-label="{{ $title }}">
     <template>{{ range $styles }}{{ . | safeHTML }}{{ end }}<div class="sim-root"><div class="sim-body">{{ $body | safeHTML }}</div></div></template>
@@ -15,15 +15,19 @@
 </section>
 {{ if and (in $source "/simus/seres-termicos/fenomeno-termico.js") (not (.Page.Store.Get "thermal-phenomenon")) }}
 {{ .Page.Store.Set "thermal-phenomenon" true }}
-<script src="{{ "simus/seres-termicos/fenomeno-termico.js" | relURL }}"></script>
+<script src="{{ "simus/seres-termicos/fenomeno-termico.js" | relURL }}?v={{ readFile "static/simus/seres-termicos/fenomeno-termico.js" | md5 }}"></script>
 {{ end }}
 {{ if and (in $source "/simus/seres-termicos/calculo-campo.js") (not (.Page.Store.Get "thermal-field-ledger")) }}
 {{ .Page.Store.Set "thermal-field-ledger" true }}
-<script src="{{ "simus/seres-termicos/calculo-campo.js" | relURL }}"></script>
+<script src="{{ "simus/seres-termicos/calculo-campo.js" | relURL }}?v={{ readFile "static/simus/seres-termicos/calculo-campo.js" | md5 }}"></script>
+{{ end }}
+{{ if and (in $source "/simus/seres-termicos/calculo-escena.js") (not (.Page.Store.Get "thermal-scene-readout")) }}
+{{ .Page.Store.Set "thermal-scene-readout" true }}
+<script data-native src="{{ "simus/seres-termicos/calculo-escena.js" | relURL }}?v={{ readFile "static/simus/seres-termicos/calculo-escena.js" | md5 }}"></script>
 {{ end }}
 {{ if not (.Page.Store.Get "sim-native-runtime") }}
 {{ .Page.Store.Set "sim-native-runtime" true }}
-<script src="{{ "simus/seres-termicos/relato-simulacion.js" | relURL }}"></script>
+<script src="{{ "simus/seres-termicos/relato-simulacion.js" | relURL }}?v={{ readFile "static/simus/seres-termicos/relato-simulacion.js" | md5 }}"></script>
 {{ end }}
 <script>
 window.mountThermalScene({{ $id }}, function(document, window, addEventListener, requestAnimationFrame, cancelAnimationFrame, viewport, location) {

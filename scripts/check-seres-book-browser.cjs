@@ -24,6 +24,7 @@ try{
    nativeScenes++;assert.equal(await host.getAttribute('data-ready'),'true',p.url);
    await host.evaluate(el=>el.scrollIntoView({block:'start'}));await page.waitForTimeout(120);
    const canvas=host.locator('canvas').first();if(await canvas.count()){const size=await canvas.boundingBox();assert(size.width>0&&size.height>0,p.url+' empty canvas');}
+   const stage=host.locator('#stage');if(await stage.count())assert((await stage.boundingBox()).height>=480,p.url+' 3D scene height');
    const checks=await host.evaluate(el=>{const api=el.sceneAPI;return {gl:api.thermalDiagnostics?.().glError,self:api.thermalSelfTest?.().pass};});
    if(checks.gl!==undefined)assert.equal(checks.gl,0,p.url+' WebGL');
    if(checks.self!==undefined)assert.equal(checks.self,true,p.url+' physics self-test');
@@ -58,6 +59,12 @@ try{
  await page.goto(base+'/simus/seres-termicos/');await page.waitForURL('**/projects/seres-termicos/');
  assert.deepEqual(failures,[]);
  assert.equal(nativeScenes,30); // 27 modelos; tres reaparecen en la memoria histórica.
+ await page.goto(base+'/projects/seres-termicos/libro/defensa/');
+ const scene=page.locator('.sim-native-host');
+ await scene.locator('#scene').click({position:{x:30,y:300}});
+ const playing=await scene.evaluate(el=>el.sceneAPI.thermalDiagnostics().playing);
+ await page.keyboard.press('Space');
+ assert.equal(await scene.evaluate(el=>el.sceneAPI.thermalDiagnostics().playing),!playing,'canvas keyboard pause');
  console.log(JSON.stringify({readerPages:pages.length,simulations:sims.length,nativeScenes,formulas,mobile:'OK',thermalBalance:'OK',runtimeErrors:failures.length}));
 }finally{await browser.close();server.close()}
 })().catch(e=>{console.error(e);process.exit(1)});

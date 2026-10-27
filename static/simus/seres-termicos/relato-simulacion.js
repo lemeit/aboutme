@@ -25,6 +25,10 @@
       .sim-body{position:relative;min-height:0!important;height:auto;overflow:visible!important}
       .scene-fixed .sim-body{min-height:var(--scene-height)!important}
       .sim-body>main{padding:0;max-width:none;margin:0}
+      .sim-body:has(>main){display:block!important}
+      .sim-body>main:has(>#stage){height:auto;min-height:0;align-items:start}
+      #stage{height:var(--scene-height)!important;min-height:480px!important;position:sticky;top:0}
+      #stage>#scene{height:100%;min-height:0}
       .sim-body>header,.sim-body>main>header,.sim-body>footer,
       .sim-body>main>footer,.book-study-links,.story-links,.route,
       .sim-body>main>.intro,.sim-body>.title,.sim-body>.quote{display:none!important}
@@ -34,9 +38,15 @@
       .sim-body>main>.layout{grid-template-columns:minmax(0,1fr)}
       .sim-body>main>.layout>aside{min-width:0}
       @container(min-width:760px){.sim-body>main>.layout{grid-template-columns:minmax(0,1fr) 260px}}
+      @container(max-width:760px){.sim-body>main:has(>#stage){grid-template-columns:1fr}#stage{position:relative}}
       @container(max-width:600px){.below,.metrics{grid-template-columns:1fr!important}.card{padding:12px!important}#cronica{display:none}#panel{max-width:calc(100% - 24px);left:12px;right:12px;bottom:12px}#info{max-width:55%;font-size:12px}#stats{font-size:11px;right:8px}}
     `;
     shadow.append(style);
+    // Canvas clicks must focus the scene so its keyboard shortcuts stay local.
+    shadow.querySelectorAll('canvas').forEach(canvas => {
+      if(!canvas.hasAttribute('tabindex'))canvas.tabIndex=0;
+      canvas.addEventListener('pointerdown',()=>canvas.focus({preventScroll:true}));
+    });
     const resizeListeners = new Set();
     const viewport = {get width(){return host.clientWidth;},get height(){return Math.max(480, Math.min(720, innerHeight * .8));},get left(){return host.getBoundingClientRect().left;},get top(){return host.getBoundingClientRect().top;}};
     function resize(){root.style.setProperty('--scene-width',host.clientWidth+'px');root.style.setProperty('--scene-height',viewport.height+'px');resizeListeners.forEach(fn=>fn(new Event('resize')));}

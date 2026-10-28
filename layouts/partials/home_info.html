@@ -1,7 +1,7 @@
 {{- with site.Params.homeInfoParams }}
 <article class="first-entry home-info">
   <header class="entry-header">
-    <h1 class="home-greeting" style="font-family:inherit;"><span>{{ .Title | markdownify }}</span>{{ partial "home-monogram.html" }}</h1>
+    <h1 class="home-greeting" style="font-family:inherit;"><span>{{ .Title | markdownify }}</span></h1>
   </header>
   <section class="entry-content" style="font-family:inherit;">
     <p>{{ .Content | markdownify }}</p>

@@ -13,7 +13,7 @@ mainSections = []
   author = "Luciano Lamaita"
 
   [params.footer]
-    text = "[Wiki de proyectos](https://wiki.lemeit.ar/)"
+    text = "[Wiki de proyectos](https://wiki.lemeit.ar/) · [Identidad visual](/identidad-visual/)"
   description = "Ingeniero | Profesor | Saladillo, Buenos Aires"
   dateFormat = "02/01/2006"
   ShowReadingTime = true
@@ -80,7 +80,7 @@ mainSections = []
   [languages.en.params]
     description = "Chemical engineer and physics and chemistry teacher in Saladillo, Argentina"
     [languages.en.params.footer]
-      text = "[Project wiki](https://wiki.lemeit.ar/en/)"
+      text = "[Project wiki](https://wiki.lemeit.ar/en/) · [Visual identity (Spanish)](/identidad-visual/)"
     [languages.en.params.homeInfoParams]
       Title = "Hi, I'm Luciano"
       Content = "Chemical engineer and physics and chemistry teacher in Saladillo, Buenos Aires, Argentina. I share educational resources and projects applying technology to environmental monitoring, scientific simulation and territorial management."
@@ -107,7 +107,7 @@ mainSections = []
   [languages.zh.params]
     description = "Luciano Lamaita，阿根廷萨拉迪略的化学工程师及物理、化学教师"
     [languages.zh.params.footer]
-      text = "[项目维基（西班牙语）](https://wiki.lemeit.ar/)"
+      text = "[项目维基（西班牙语）](https://wiki.lemeit.ar/) · [Identidad visual (ES)](/identidad-visual/)"
     [languages.zh.params.homeInfoParams]
       Title = "你好，我是 Luciano"
       Content = "我是一名化学工程师，也是物理和化学教师，生活在阿根廷布宜诺斯艾利斯省萨拉迪略。在这里，我分享教学资源，以及将技术应用于环境监测、科学模拟和区域管理的项目。"

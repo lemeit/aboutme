@@ -307,3 +307,9 @@ Los apuntes y el mapa Quartz siguen en español. Las fichas inglesas de proyecto
 El chino simplificado tiene el mismo alcance que el inglés, bajo `/zh/`, con selector **中文** y resumen público PDF en chino. Los nombres oficiales de instituciones y títulos académicos se conservan en su idioma original. La fuente Noto Sans SC se aloja localmente, con subconjuntos de caracteres para limitar la descarga; su licencia y procedencia están en `static/fonts/noto-sans-sc/`. Al ampliar el contenido chino, regenerar los subconjuntos para cubrir los caracteres nuevos.
 
 Los títulos de pantalla heredan la tipografía del sitio. El formato de impresión de los apuntes conserva sus estilos propios. Las filas de apuntes centran verticalmente el número, los iconos y los enlaces.
+
+## Relación con la portada Lemeit — 28/10/2026
+
+[lemeit.ar](https://lemeit.ar/) es el portal común de proyectos y se publica desde `landing/` del repositorio `lemeit/eureka`, en el proyecto Pages `lemeit-landing`. No se genera con Hugo ni Quartz de este repositorio. Enlaza a Aire Escolar, a los materiales de `/notes/` y a [la presentación de Eureka AI](https://tutor.lemeit.ar/presentacion/), que ofrece acceso al tutor actual.
+
+La L caligráfica de este portal identifica personalmente a Luciano Lamaita y no se utiliza en la portada de marca Lemeit. El favicon de esa marca es **Encuentro**, con crema, naranja óxido y verde azulado. El respaldo **Interacción** se conserva en el repositorio Eureka. Los estilos de Hugo/Quartz y sus rutas no cambiaron en esta tarea. Ver [portadas e identidad en la wiki](https://wiki.lemeit.ar/portal-lemeit/).

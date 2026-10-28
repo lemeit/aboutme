@@ -15,3 +15,7 @@ La ruta del favicon permanece igual para conservar las referencias existentes. U
 Idea acordada para explorar más adelante: una secuencia de puntos sugiere una curva, se convierte en un trazo continuo y termina formando la L. Es una metáfora visual, no una deducción ni una definición formal de línea a partir de puntos.
 
 El camino principal tiene identificador `trazo` y el refuerzo de pluma `pluma`, para poder animar el recorrido cuando se solicite. Mantener una versión estática y respetar `prefers-reduced-motion` en esa implementación futura. Esta versión no incorpora animación.
+
+## Alcance de la identidad personal
+
+La L caligráfica identifica a **Luciano Lamaita**, no a la marca paraguas **Lemeit**. La portada `lemeit.ar` utiliza el favicon **Encuentro**, inspirado en el lenguaje de diagramas de Feynman, con líneas finas naranjas y ondulación verde sobre crema. Su fuente está en `landing/favicon.svg` del repositorio `lemeit/eureka`; la variante **Interacción** queda reservada allí en `docs/identidad-lemeit/`. No sustituir estos símbolos entre portales. Registro actualizado el 28/10/2026; [documentación pública](https://wiki.lemeit.ar/portal-lemeit/).

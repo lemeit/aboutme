@@ -34,3 +34,25 @@
   .header .lang-menu{display:flex;white-space:nowrap}
   .header .lang-menu a{white-space:nowrap;line-height:var(--header-height)}
 }
+@media screen{
+  :root{--header-height:48px;--site-header-height:50px}
+  body>.header{border-bottom:1px solid var(--border)!important}
+  .header .logo>a{font-size:20px;color:var(--content)!important}
+  .header .home-monogram{width:30px;height:28px}
+  .header .menu a{font-size:14px}
+  .header .logo-switches{font-weight:400}
+  @media(max-width:600px){
+    :root{--header-height:40px;--site-header-height:78px}
+    .header .logo>a{font-size:18px}
+    .header .menu{line-height:36px}
+  }
+  @media(max-width:380px){.header .logo>a{font-size:16px}}
+}
+.brand-demo{margin:2rem 0;padding:1.5rem 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.brand-demo .home-monogram{width:180px;height:165px;margin:0 auto 1rem}
+.brand-demo button{font:inherit;font-size:14px;color:var(--primary);text-decoration:underline;cursor:pointer}
+.brand-demo .brand-equation{overflow-x:auto}
+@media screen and (prefers-reduced-motion:no-preference){
+  .brand-demo.is-animating:not(.is-complete) .brand-equation{opacity:0}
+  .brand-demo .brand-equation{transition:opacity 1.5s ease}
+}

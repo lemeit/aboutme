@@ -9,7 +9,11 @@
     measure();new ResizeObserver(measure).observe(header);
   }
   document.querySelectorAll('.home-monogram').forEach(svg=>{
+  const demo=svg.closest('.brand-demo');
   const motion=matchMedia('(prefers-reduced-motion: reduce)');if(motion.matches)return;
+  if(demo)demo.classList.add('is-animating');
+  let visible=!demo;
+  if(demo)new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;last=null;}).observe(svg);
   const ink=svg.querySelector('[data-monogram=ink]'),nib=svg.querySelector('[data-monogram=nib]'),length=ink.getTotalLength(),ns='http://www.w3.org/2000/svg';
   const layer=document.createElementNS(ns,'g');layer.classList.add('monogram-dynamics');svg.append(layer);
   function node(tag,cls,attrs={}){const el=document.createElementNS(ns,tag);el.setAttribute('class',cls);for(const [k,v] of Object.entries(attrs))el.setAttribute(k,v);layer.append(el);return el;}
@@ -18,9 +22,9 @@
   const glow=node('polyline','monogram-glow'),trail=node('polyline','monogram-trail'),spring=node('line','monogram-spring'),targetDot=node('circle','monogram-target',{r:3.5}),halo=node('circle','monogram-halo',{r:12}),pen=node('circle','monogram-pen',{r:4.5});
   const start=ink.getPointAtLength(0);let x=start.x,y=start.y,vx=0,vy=0,t=0,last=null,raf=null,sampled=-1,points=[];
   function reset(){x=start.x;y=start.y;vx=vy=0;points=[];sampled=-1;}
-  function step(dt){t+=dt;if(t>=12){t-=12;reset();}const p=ink.getPointAtLength(length*Math.min(1,t/8));vx+=(144*(p.x-x)-18*vx)*dt;vy+=(144*(p.y-y)-18*vy)*dt;x+=vx*dt;y+=vy*dt;}
+  function step(dt){t=Math.min(10,t+dt);const p=ink.getPointAtLength(length*Math.min(1,t/8));vx+=(144*(p.x-x)-18*vx)*dt;vy+=(144*(p.y-y)-18*vy)*dt;x+=vx*dt;y+=vy*dt;}
   function draw(){
-    const progress=Math.min(1,t/8),p=ink.getPointAtLength(length*progress),fade=t<10.2?1:(12-t)/1.8,settled=Math.max(0,Math.min(1,(t-8)/.7));
+    const progress=Math.min(1,t/8),p=ink.getPointAtLength(length*progress),fade=1,settled=Math.max(0,Math.min(1,(t-8)/.7));
     if(t-sampled>=1/60){points.push(x.toFixed(2)+','+y.toFixed(2));sampled=t;}
     const line=points.join(' ');trail.setAttribute('points',line);glow.setAttribute('points',line);
     layer.style.opacity=String(fade);ink.style.opacity=String(.10+.9*settled*fade);nib.style.opacity=String(settled*fade);
@@ -28,12 +32,14 @@
     for(const el of [pen,halo]){el.setAttribute('cx',x);el.setAttribute('cy',y);el.style.opacity=String(1-settled);}
     targetDot.setAttribute('cx',p.x);targetDot.setAttribute('cy',p.y);targetDot.style.opacity=String(1-settled);
     spring.setAttribute('x1',x);spring.setAttribute('y1',y);spring.setAttribute('x2',p.x);spring.setAttribute('y2',p.y);spring.style.opacity=String(1-settled);
-    glow.style.opacity=String(.25+.06*Math.sin(t*3));svg.dataset.state=t<8?'drawing':t<10.2?'glowing':'fading';
+    glow.style.opacity=String(.25+.06*Math.sin(t*3));svg.dataset.state=t<8?'drawing':t<8.7?'glowing':'complete';
+    if(demo&&t>=8.7)demo.classList.add('is-complete');
   }
-  function frame(time){const dt=last===null?0:Math.min(.05,Math.max(0,(time-last)/1000));last=time;const n=Math.max(1,Math.ceil(dt*120));for(let i=0;i<n;i++)step(dt/n);draw();raf=requestAnimationFrame(frame);}
-  function stop(){cancelAnimationFrame(raf);layer.remove();ink.style.removeProperty('opacity');nib.style.removeProperty('opacity');svg.dataset.state='static';}
+  function frame(time){const dt=last===null||!visible?0:Math.min(.05,Math.max(0,(time-last)/1000));last=time;const n=Math.max(1,Math.ceil(dt*120));for(let i=0;i<n;i++)step(dt/n);draw();if(t<10)raf=requestAnimationFrame(frame);}
+  function stop(){cancelAnimationFrame(raf);layer.remove();ink.style.removeProperty('opacity');nib.style.removeProperty('opacity');svg.dataset.state='static';if(demo)demo.classList.add('is-complete');}
+  if(demo){const replay=demo.querySelector('button');replay.hidden=false;replay.addEventListener('click',()=>{cancelAnimationFrame(raf);t=0;last=null;reset();demo.classList.remove('is-complete');raf=requestAnimationFrame(frame);});}
   draw();raf=requestAnimationFrame(frame);
   motion.addEventListener('change',event=>{if(event.matches)stop();});
-  document.addEventListener('visibilitychange',()=>{last=null;if(document.hidden)cancelAnimationFrame(raf);else if(!motion.matches&&layer.isConnected)raf=requestAnimationFrame(frame);});
+  document.addEventListener('visibilitychange',()=>{last=null;if(document.hidden)cancelAnimationFrame(raf);else if(!motion.matches&&layer.isConnected&&t<10)raf=requestAnimationFrame(frame);});
   });
 })();

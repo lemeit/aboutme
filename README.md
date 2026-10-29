@@ -1,5 +1,9 @@
 # profe.lemeit.ar — Sitio personal de Luciano Lamaita
 
+[![sitio: profe.lemeit.ar](https://img.shields.io/badge/sitio-profe.lemeit.ar-009688?style=flat-square&labelColor=555555)](https://profe.lemeit.ar/)
+[![docs: wiki.lemeit.ar](https://img.shields.io/badge/docs-wiki.lemeit.ar-009688?style=flat-square&labelColor=555555)](https://wiki.lemeit.ar/profe-lemeit/)
+[![diseño: lemeit-design](https://img.shields.io/badge/dise%C3%B1o-lemeit--design-009688?style=flat-square&labelColor=555555)](https://github.com/lemeit/lemeit-design/blob/main/docs/badges.md)
+
 Sitio personal de **Prof. Ing. Luciano Lamaita** — profesor de física en Saladillo, Buenos Aires.
 Reúne la traducción y adaptación al español de las notas de Jeff Bigler, apuntes de clase y proyectos técnicos.
 
@@ -12,7 +16,7 @@ Reúne la traducción y adaptación al español de las notas de Jeff Bigler, apu
 
 | Componente | Tecnología |
 |-----------|------------|
-| Generador estático (portal) | [Hugo](https://gohugo.io/) v0.163+ con tema [PaperMod](https://github.com/adityatelange/hugo-PaperMod) |
+| Generador estático (portal) | [Hugo](https://gohugo.io/) +extended con tema [PaperMod](https://github.com/adityatelange/hugo-PaperMod) |
 | Mapa de conceptos | [Quartz v5](https://quartz.jzhao.xyz/) (Obsidian) en `quartz/` |
 | Deploy | [Cloudflare Pages](https://pages.cloudflare.com/) — auto-deploy en push a `main` |
 | Repositorio | GitHub — `lemeit/aboutme` |
@@ -43,7 +47,7 @@ aboutme/
 │   │   ├── notas-fisica/               ← Traducción de Bigler (Physics 1)
 │   │   │   ├── cap01-laboratorio/      8 notas ampliadas + complemento propio
 │   │   │   ├── cap02-matematicas/      10 notas ampliadas y cotejadas
-│   │   │   ├── cap03-cinematica-1d/    9 notas; primera sección revisada
+│   │   │   ├── cap03-cinematica-1d/    9 notas ampliadas; revisión editorial abierta
 │   │   │   ├── cap04-cinematica-2d/    5 notas; revisión pendiente
 │   │   │   ├── cap05-fuerzas-1d/       10 notas; revisión pendiente
 │   │   │   ├── cap06-fuerzas-2d/       2 notas ampliadas; revisión pendiente
@@ -77,12 +81,18 @@ aboutme/
 ├── assets/css/extended/custom.css      ← Paleta X-Wing + dark mode
 ├── layouts/notes/list.html             ← Listado de secciones con logos y orden por weight
 ├── layouts/partials/home_info.html     ← Home con últimas notas (orden por lastmod)
+├── assets/js/home-monogram.js          ← Dinámica de la firma caligráfica
+├── content/identidad-visual.md         ← Diseño, animación y modelo físico
 └── hugo.toml                           ← Configuración Hugo (locale es-AR, fechas DD/MM/YYYY)
 ```
 
 ---
 
 ## Diseño y paleta
+
+Los badges de este README siguen [lemeit-design: tags y badges](https://github.com/lemeit/lemeit-design/blob/main/docs/badges.md): `flat-square`, etiqueta `#555555` y valor `#009688`; el naranja `#FF5722` se reserva para datos destacados. En GitHub se usan imágenes de Shields.io, no el CSS del portal. Se conserva la identidad propia de Hugo y Quartz.
+
+La firma personal es una **L caligráfica**; su animación sigue una trayectoria diseñada mediante un modelo de masa, resorte y amortiguamiento. El encabezado es compacto y persistente. La explicación, demostración y ecuaciones están en [Identidad visual](https://profe.lemeit.ar/identidad-visual/) y el registro técnico en [identidad Lemeit](docs/identidad-lemeit.md).
 
 ### Paleta X-Wing Poe Dameron (modo claro)
 
@@ -101,7 +111,7 @@ aboutme/
 | `--entry` | `#221E18` | Tarjetas |
 | `--primary` | `#F2ECE4` | Texto principal — crema cálido |
 | `--content` | `#E8DFD6` | Cuerpo de texto |
-| Links en dark | `#B84800 !important` | Naranja idéntico al Quartz |
+| Links en dark | `#B84800` general; `#F3A66A` en perfiles y navegación | Ajustes por componente |
 
 Selector crítico: `:root[data-theme="dark"]` (no `.dark`) — coincide con la especificidad de PaperMod v8+.
 
@@ -158,13 +168,13 @@ Las notas son una **traducción y adaptación al español** de:
 > Licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 Adaptación al español con autorización del autor.
-Traducción, adaptación pedagógica e integración con actividades de campo: **Prof. Ing. Luciano Lamaita**, Saladillo, Buenos Aires, 2026.
+Traducción y adaptación al español: **Prof. Lamaita**, Saladillo, Buenos Aires, 2026.
 
 ### Revisión editorial y figuras
 
 La revisión iniciada el 13/10/2026 usa el PDF de octubre de 2025. El índice público incluye el enlace al original; cada capítulo muestra un estado sencillo de traducción/adaptación. El detalle técnico permanece en `docs/bigler-avance.md`, fuera del contenido Hugo. Regenerarlo con `python scripts/bigler-progress.py`. Las notas existentes no se consideran traducciones completas hasta cotejarlas. Los estados `traduccion_estado`, `cotejo_estado`, `figuras_estado` y `visual_estado` se guardan en el front matter y quedan pendientes si no están definidos.
 
-La primera sección revisada fue **Rapidez y velocidad**, pp. 184–187. Los capítulos 1–3 ya tienen una adaptación ampliada publicada. El capítulo 3 incorporó 24 figuras adicionales y se verificaron online 497 expresiones KaTeX, carga de imágenes y estructura; la revisión visual exhaustiva sigue pendiente. El registro de correspondencias está en `docs/bigler-revision.md`; el estado actual y los problemas pendientes, en `docs/contenido-pendientes.md`.
+Los 13 capítulos cuentan con notas desarrolladas de sus temas principales y figuras extraídas del PDF cuando corresponden. Esto no equivale a una traducción íntegra de todos los recuadros y ejercicios ni al cierre de la revisión editorial. Continúan la revisión transversal, el banco de ejercicios y la inspección visual exhaustiva. El registro de correspondencias está en [revisión de Bigler](docs/bigler-revision.md); el estado por nota, en [avance](docs/bigler-avance.md), y los pendientes, en [continuidad editorial](docs/contenido-pendientes.md). Las guías propias para alumnos permanecen en las materias, separadas de la adaptación de Bigler.
 
 `scripts/extract-bigler-figures.py` automatiza la extracción de figuras registradas del PDF: usa Poppler para regiones con texto y trazos, o pypdf/Pillow para imágenes bitmap completas sin texto adyacente. Las regiones e identificadores adicionales están en `scripts/bigler-figure-regions.json`. Se inspecciona cada resultado; los PNG y su procedencia, página, coordenadas o identificador y hash de la fuente quedan en `static/images/diagramas/`.
 
@@ -210,7 +220,7 @@ La sección **Herramientas Digitales** (`/notes/herramientas/`) incluye guías d
 ### Notas de implementación críticas
 
 - **Dark mode**: usar `:root[data-theme="dark"]` (especificidad 0,2,0) para igualar a PaperMod; `.dark` no funciona
-- **Links en dark mode**: requieren `color: #B84800 !important` para ganar la especificidad de los selectores de PaperMod
+- **Links en dark mode**: revisar las reglas específicas de `custom.css`, `profile.css` y `site-header.css`; el perfil y la navegación tienen ajustes propios.
 - **Secciones de notas**: cada `_index.md` tiene un `weight` único (1–6) para evitar orden indeterminado
 - **Bloque "Conceptos de Física"**: solo aparece en `/notes/` gracias a `{{ if .Parent.IsHome }}`
 
@@ -256,7 +266,7 @@ Las notas publicadas generan su versión A4 de dos columnas mediante GitHub Acti
 
 ## Deploy
 
-Cada `git push` a `main` dispara un build automático en Cloudflare Pages (~1–2 minutos).
+Los cambios en `main` activan la publicación automática de Cloudflare Pages. La cola y la compilación pueden demorar; confirmar el despliegue antes de afirmar que un cambio está online. Trabajar en una rama por tarea y revisar mediante PR. El workflow `generate-pdf.yml` actualiza los PDFs cuando cambian sus fuentes; un cambio exclusivo del README no activa ese workflow.
 
 El build de producción combina ambos generadores:
 
@@ -275,24 +285,13 @@ cp -r quartz/public/* public/conceptos/
 
 Ejecutar `python scripts/check-publication.py <directorio-combinado>` antes de subirlo. Este control falla si falta Quartz, una página esencial, un PDF o un recurso CSS/JS de las páginas revisadas.
 
-```powershell
-cd C:\GitHub\aboutme
-git add .
-git commit -m "descripción del cambio"
-git push
-```
-
-Si git falla por `index.lock` (problema de Windows):
-
-```powershell
-Remove-Item C:\GitHub\aboutme\.git\index.lock -Force
-```
+Antes de enviar cambios, revisar `git status` y el diff, seleccionar solamente los archivos de la tarea y abrir un PR hacia `main`. No incluir salidas generadas manualmente ni cambios ajenos. Si Windows mantiene un PDF abierto, cerrar el visor y reintentar la sincronización; no descartar cambios locales para resolverlo.
 
 ---
 
 ## Contacto
 
-La portada y las páginas `/about/` y `/cv/` comparten una presentación coherente del perfil personal y profesional. «Sobre mí» desarrolla la biografía y los intereses; «Trayectoria» reúne los antecedentes con navegación por secciones y formación complementaria desplegable. Usan `layouts/profile.html` y estilos acotados en `assets/css/extended/profile.css`. Ver [fuentes y mantenimiento del perfil](docs/perfil-profesional.md). La descarga del CV completo queda para una etapa posterior.
+«Sobre mí» (`/about/`) reúne la biografía, trayectoria, formación y descargas de resúmenes profesionales. `/cv/` conserva un acceso de redirección a la trayectoria. La presentación utiliza `layouts/profile.html` y estilos acotados en `assets/css/extended/profile.css`. Ver [fuentes y mantenimiento del perfil](docs/perfil-profesional.md). La explicación del logotipo está separada en `/identidad-visual/`, con enlace en el pie del sitio.
 
 - 🌐 [profe.lemeit.ar](https://profe.lemeit.ar)
 - 💼 [linkedin.com/in/llamaita](https://www.linkedin.com/in/llamaita/)
@@ -300,9 +299,9 @@ La portada y las páginas `/about/` y `/cv/` comparten una presentación coheren
 
 ## Idiomas del portal
 
-Inicio, Sobre mí y las fichas de proyectos tienen versiones ES y EN. El español conserva sus rutas; el inglés usa `/en/`. Las traducciones se emparejan por nombre de archivo (`about.md` / `about.en.md`). El selector conserva la página cuando existe una traducción y vuelve al inicio del otro idioma si no existe.
+Inicio, Sobre mí y las fichas de proyectos tienen versiones ES, EN y chino simplificado. El español conserva sus rutas; el inglés usa `/en/` y el chino `/zh/`. Las traducciones se emparejan por nombre de archivo (`about.md` / `about.en.md`). El selector conserva la página cuando existe una traducción y vuelve al inicio del otro idioma si no existe.
 
-Los apuntes y el mapa Quartz siguen en español. Las fichas inglesas de proyectos son presentaciones adaptadas, con enlaces a la documentación técnica completa en español; las aplicaciones y simulaciones mantienen sus interfaces originales. Cada perfil muestra solamente el PDF público de su idioma. No publicar documentos con datos personales.
+Los apuntes y el mapa Quartz siguen en español. Las fichas inglesas de proyectos son presentaciones adaptadas, con enlaces a la documentación técnica completa en español; las aplicaciones y simulaciones mantienen sus interfaces originales. Cada perfil enlaza los resúmenes públicos disponibles para su idioma. No publicar documentos con datos personales.
 
 El chino simplificado tiene el mismo alcance que el inglés, bajo `/zh/`, con selector **中文** y resumen público PDF en chino. Los nombres oficiales de instituciones y títulos académicos se conservan en su idioma original. La fuente Noto Sans SC se aloja localmente, con subconjuntos de caracteres para limitar la descarga; su licencia y procedencia están en `static/fonts/noto-sans-sc/`. Al ampliar el contenido chino, regenerar los subconjuntos para cubrir los caracteres nuevos.
 

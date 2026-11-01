@@ -22,6 +22,6 @@ $$y = r\sin\theta$$
 
 ## Relacionado con
 
-- [[conceptos/coordenadas-cartesianas|Coordenadas cartesianas]]
-- [[conceptos/movimiento-circular|Movimiento circular]]
+- [[coordenadas-cartesianas|Coordenadas cartesianas]]
+- [[movimiento-circular|Movimiento circular]]
 - [[mcu|MCU]]

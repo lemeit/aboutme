@@ -18,9 +18,9 @@ La **notación científica** expresa números como $a \times 10^n$, donde $1 \le
 ## Ventajas
 
 - Facilita operaciones con números muy grandes o muy pequeños
-- Clarifica las [[conceptos/cifras-significativas|cifras significativas]]
+- Clarifica las [[cifras-significativas|cifras significativas]]
 
 ## Relacionado con
 
-- [[conceptos/cifras-significativas|Cifras significativas]]
-- [[conceptos/orden-magnitud|Orden de magnitud]]
+- [[cifras-significativas|Cifras significativas]]
+- [[orden-magnitud|Orden de magnitud]]

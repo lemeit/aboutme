@@ -26,4 +26,4 @@ El **análisis dimensional** verifica la consistencia de las ecuaciones físicas
 
 - Verificar ecuaciones
 - Deducir relaciones entre magnitudes
-- [[conceptos/orden-magnitud|Estimaciones de orden de magnitud]]
+- [[orden-magnitud|Estimaciones de orden de magnitud]]

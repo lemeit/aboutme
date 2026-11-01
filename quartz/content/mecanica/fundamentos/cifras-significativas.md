@@ -21,6 +21,6 @@ Las **cifras significativas** son los dígitos de un número que tienen signific
 
 ## Relacionado con
 
-- [[conceptos/notacion-cientifica|Notación científica]]
-- [[conceptos/orden-magnitud|Orden de magnitud]]
-- [[conceptos/incertidumbre|Incertidumbre]]
+- [[notacion-cientifica|Notación científica]]
+- [[orden-magnitud|Orden de magnitud]]
+- Incertidumbre

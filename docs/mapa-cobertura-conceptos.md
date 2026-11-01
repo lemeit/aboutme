@@ -7,10 +7,10 @@ Generado automáticamente por `scripts/mapa-cobertura.py` a partir del estado re
 | Unidad | Capítulos | Notas en disco | Declarados | Existen | Faltan |
 |---|---|---:|---:|---:|---:|
 | Mecánica › Fundamentos | cap. 1, 3 | 15 | 15 | 15 | 0 |
-| Mecánica › Cinemática | cap. 2, 3 | 10 | 17 | 10 | 7 |
+| Mecánica › Cinemática | cap. 2, 3 | 17 | 17 | 17 | 0 |
 | Mecánica › Dinámica | cap. 4, 6, 7 | 15 | 29 | 16 | 13 |
-| Mecánica › Estática | cap. 8 | 0 | 3 | 1 | 2 |
-| Mecánica › Energía | cap. 5, 8 | 7 | 13 | 7 | 6 |
+| Mecánica › Estática | cap. 8 | 2 | 3 | 3 | 0 |
+| Mecánica › Energía | cap. 5, 8 | 13 | 13 | 13 | 0 |
 | Gravitación | cap. 7 | 1 | 4 | 1 | 3 |
 | Materia | cap. 9 | 12 | 12 | 12 | 0 |
 | Termodinámica | cap. 10, 11, 12 | 7 | 27 | 9 | 18 |
@@ -19,21 +19,11 @@ Generado automáticamente por `scripts/mapa-cobertura.py` a partir del estado re
 | Ondas › EM y luz · Óptica | cap. 21, 22–25 | 1 | 43 | 3 | 40 |
 | Electricidad y magnetismo | cap. 15–20 | 10 | 70 | 11 | 59 |
 | Física moderna | cap. 26–30 | 7 | 74 | 7 | 67 |
-| **Total** |  | | **342** | **98** | **244** |
+| **Total** |  | | **342** | **113** | **229** |
 
-Cobertura de lo declarado: **29%**. Los 244 conceptos sin nota son los que hoy producen los enlaces roto del grafo.
+Cobertura de lo declarado: **33%**. Los 229 conceptos sin nota son los que hoy producen los enlaces roto del grafo.
 
 ## Conceptos que faltan, unidad por unidad
-
-### Mecánica › Cinemática — cap. 2, 3 (7)
-
-- `aceleracion-angular`
-- `aceleracion-centripeta`
-- `movimiento-circular`
-- `posicion-angular`
-- `tiro-oblicuo`
-- `velocidad-angular`
-- `velocidad-relativa`
 
 ### Mecánica › Dinámica — cap. 4, 6, 7 (13)
 
@@ -50,20 +40,6 @@ Cobertura de lo declarado: **29%**. Los 244 conceptos sin nota son los que hoy p
 - `rodadura`
 - `segunda-ley-newton-rotacional`
 - `sistemas-de-cuerdas`
-
-### Mecánica › Estática — cap. 8 (2)
-
-- `equilibrio-rotacional`
-- `equilibrio-traslacional`
-
-### Mecánica › Energía — cap. 5, 8 (6)
-
-- `energia-cinetica-rotacional`
-- `fuerzas-conservativas`
-- `fuerzas-no-conservativas`
-- `teorema-trabajo-energia`
-- `trabajo-fuerza-variable`
-- `trabajo-rotacional`
 
 ### Gravitación — cap. 7 (3)
 

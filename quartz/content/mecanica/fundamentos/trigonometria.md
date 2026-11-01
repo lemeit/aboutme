@@ -22,7 +22,7 @@ $$\sin^2\theta + \cos^2\theta = 1$$
 
 ## Aplicaciones en física
 
-- [[conceptos/componentes-vector|Componentes de vectores]]
-- [[conceptos/movimiento-circular|Movimiento circular]]
-- [[conceptos/ondas|Ondas]] — Funciones sinusoidales
-- [[conceptos/interferencia|Interferencia]]
+- [[componentes-vector|Componentes de vectores]]
+- [[movimiento-circular|Movimiento circular]]
+- [[ondas|Ondas]] — Funciones sinusoidales
+- [[interferencia|Interferencia]]

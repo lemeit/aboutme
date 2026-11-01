@@ -304,9 +304,16 @@ npm ci
 npx quartz plugin install --from-config
 npx quartz build
 cd ..
+node scripts/fix-graph-slugs.mjs quartz/public/static/contentIndex.json
 mkdir -p public/conceptos
 cp -r quartz/public/* public/conceptos/
 ```
+
+### El paso `fix-graph-slugs.mjs`
+
+Es un arreglo del grafo, no del contenido. Las páginas de carpeta se indexan como `mecanica/index`, pero el plugin del grafo deduce la página actual desde la URL y la deja como `mecanica` (sin barra). Al no coincidir, el grafo local de un área mostraba **un solo punto** en lugar de sus subtemas; en el home y en las notas no se notaba.
+
+El script lleva claves y enlaces del índice a la misma forma (verificado: de 1 nodo a 119 en la página de Mecánica). Si el archivo no existe, avisa y sigue: es cosmético y no debe tumbar un deploy.
 
 **Una publicación manual debe subir el resultado combinado.** Subir solo la salida de Hugo elimina el mapa de conceptos del despliegue. Antes de publicar, comprobar que existen `index.html`, `en/about/index.html`, `conceptos/index.html`, los recursos de Quartz y ambos PDF de `cv/`. Después, verificar `/conceptos/`, una página interna del mapa y sus recursos, además del portal. No confundir que Hugo compile correctamente con la validación del sitio completo.
 

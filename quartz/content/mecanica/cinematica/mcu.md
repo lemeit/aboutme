@@ -32,5 +32,5 @@ $$v = \omega r = \frac{2\pi r}{T}$$
 ## Ejemplo
 
 Una piedra en una honda de 1 m a 2 vueltas/s:
-$$v = 2\pi \cdot 1 \cdot 2 = 12,6 	ext{ m/s}$$
-$$a_c = \frac{(12,6)^2}{1} = 158,7 	ext{ m/s}^2$$
+$$v = 2\pi \cdot 1 \cdot 2 = 12,6 \text{ m/s}$$
+$$a_c = \frac{(12,6)^2}{1} = 158,7 \text{ m/s}^2$$

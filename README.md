@@ -156,6 +156,24 @@ ExternalPlugin.Explorer({
 })
 ```
 
+### Salud del vault (`scripts/`)
+
+Los índices de área prometen conceptos que todavía no tienen nota. Mientras falten, el enlace devuelve 404 y el nodo no aparece en el grafo. Para medirlo antes de publicar:
+
+```powershell
+python scripts/check-vault-conceptos.py                      # informe + detalle
+python scripts/check-vault-conceptos.py --json informe.json  # para el mapa
+python scripts/mapa-cobertura.py informe.json docs/mapa-cobertura-conceptos.md
+```
+
+`check-vault-conceptos.py` sale con código 1 si hay enlaces roto, así que sirve como paso de CI. `mapa-cobertura.py` cruza lo que declara cada índice con los capítulos de Serway & Vuille y reescribe el [mapa de cobertura](docs/mapa-cobertura-conceptos.md).
+
+### Plantilla de concepto
+
+`quartz/content/templates/concepto.md` fija la estructura de una nota: en una frase, definición, fórmula, cuándo vale y cuándo no, error típico, ejemplo y relaciones. La carpeta `templates` está en `ignorePatterns`, así que Quartz no la publica.
+
+Las relaciones se escriben con el nombre del archivo y sin carpeta (`[[velocidad]]`): Quartz resuelve por nombre, así que mover una nota de carpeta no rompe los enlaces.
+
 ### Grafo — conexiones
 
 El `index.md` raíz tiene wikilinks a las 7 áreas con ruta explícita:

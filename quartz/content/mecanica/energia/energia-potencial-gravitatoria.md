@@ -33,5 +33,5 @@ Donde $h$ es la altura respecto a un nivel de referencia.
 ## Ejemplo
 
 Una pelota de 0,5 kg a 20 m de altura:
-$$E_p = 0,5 \cdot 9,8 \cdot 20 = 98 	ext{ J}$$
+$$E_p = 0,5 \cdot 9,8 \cdot 20 = 98 \text{ J}$$
 Al caer, toda esa energía potencial se convierte en cinética.

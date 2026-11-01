@@ -10,7 +10,7 @@ Movimiento de un cuerpo bajo la única acción de la gravedad. Es un [[mruv|MRUV
 
 ## Valor de g
 
-$$g = 9,8 	ext{ m/s}^2 pprox 10 	ext{ m/s}^2$$
+$$g = 9,8 \text{ m/s}^2 \approx 10 \text{ m/s}^2$$
 
 (dirección: hacia abajo, sentido negativo si el eje y apunta arriba)
 
@@ -32,4 +32,4 @@ $$y(t) = y_0 + v_0 t - \frac{1}{2} g t^2$$
 
 Una pelota cae desde 20 m de altura. ¿Cuánto tarda en llegar al suelo?
 $$0 = 20 - \frac{1}{2} \cdot 9,8 \cdot t^2$$
-$$t = \sqrt{\frac{40}{9,8}} = 2,02 	ext{ s}$$
+$$t = \sqrt{\frac{40}{9,8}} = 2,02 \text{ s}$$

@@ -34,4 +34,4 @@ $$W_{neto} = \Delta E_c = \frac{1}{2}mv_f^2 - \frac{1}{2}mv_i^2$$
 ## Ejemplo
 
 Un auto de 1000 kg a 30 m/s (108 km/h):
-$$E_c = \frac{1}{2} \cdot 1000 \cdot 900 = 450.000 	ext{ J} = 450 	ext{ kJ}$$
+$$E_c = \frac{1}{2} \cdot 1000 \cdot 900 = 450.000 \text{ J} = 450 \text{ kJ}$$

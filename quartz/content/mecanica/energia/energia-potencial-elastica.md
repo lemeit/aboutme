@@ -27,4 +27,4 @@ Donde:
 ## Ejemplo
 
 Un resorte con $k = 200$ N/m comprimido 0,1 m:
-$$E_{p,el} = \frac{1}{2} \cdot 200 \cdot (0,1)^2 = 1 	ext{ J}$$
+$$E_{p,el} = \frac{1}{2} \cdot 200 \cdot (0,1)^2 = 1 \text{ J}$$

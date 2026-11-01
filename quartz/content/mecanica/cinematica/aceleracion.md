@@ -29,4 +29,4 @@ $$\vec{a} = \frac{\Delta \vec{v}}{\Delta t} = \frac{\vec{v}_f - \vec{v}_i}{t_f -
 ## Ejemplo
 
 Un auto que pasa de 0 a 100 km/h en 10 s:
-$$a = \frac{27,8 	ext{ m/s}}{10 	ext{ s}} = 2,78 	ext{ m/s}^2$$
+$$a = \frac{27,8 \text{ m/s}}{10 \text{ s}} = 2,78 \text{ m/s}^2$$

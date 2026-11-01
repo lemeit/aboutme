@@ -30,5 +30,5 @@ Fuerza de contacto que se opone al movimiento relativo entre dos superficies.
 ## Ejemplo
 
 Un bloque de 10 kg sobre una superficie con $\mu_e = 0,5$:
-$$f_{r,max} = 0,5 \cdot 10 \cdot 9,8 = 49 	ext{ N}$$
+$$f_{r,max} = 0,5 \cdot 10 \cdot 9,8 = 49 \text{ N}$$
 Para moverlo necesitás aplicar más de 49 N.

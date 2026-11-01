@@ -1,3 +1,40 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+
+// ---------------------------------------------------------------------------
+// Logo del mapa de conceptos, junto al título de la barra lateral.
+//
+// Se usa el mismo símbolo de red que el botón del grafo global. Va como
+// máscara (mask-image) y no como imagen de fondo, para que tome el color
+// de var(--secondary) y se adapte solo a modo claro y oscuro.
+// ---------------------------------------------------------------------------
+
+.page-title {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.page-title::before {
+  content: "";
+  flex: 0 0 auto;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--secondary);
+  -webkit-mask-image: url("static/logo-grafo.svg");
+  mask-image: url("static/logo-grafo.svg");
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+
+@media all and (max-width: 800px) {
+  .page-title::before {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+}

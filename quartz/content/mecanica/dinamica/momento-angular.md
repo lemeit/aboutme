@@ -2,6 +2,9 @@
 title: "Momento angular"
 materia: "Física"
 tema: "Mecánica"
+tags:
+  - mecanica
+  - dinamica
 ---
 
 # Momento angular

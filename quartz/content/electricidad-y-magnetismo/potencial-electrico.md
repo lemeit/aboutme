@@ -2,6 +2,8 @@
 title: "Potencial eléctrico"
 materia: "Física"
 tema: "Electricidad y Magnetismo"
+tags:
+  - electricidad
 ---
 
 # Potencial eléctrico

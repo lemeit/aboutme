@@ -2,6 +2,9 @@
 title: "Suma de vectores"
 materia: "Física"
 tema: "Mecánica"
+tags:
+  - mecanica
+  - fundamentos
 ---
 
 # Suma de vectores

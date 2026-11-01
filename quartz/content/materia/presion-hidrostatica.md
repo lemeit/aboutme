@@ -3,6 +3,8 @@ title: "Presión hidrostática"
 description: "La presión que ejerce un líquido en reposo depende de la profundidad, no de la forma del recipiente."
 materia: "Física"
 tema: "Materia"
+tags:
+  - materia
 ---
 
 # Presión hidrostática

@@ -2,6 +2,9 @@
 title: "Aceleración"
 materia: "Física"
 tema: "Cinemática"
+tags:
+  - mecanica
+  - cinematica
 ---
 
 # Aceleración

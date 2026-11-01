@@ -3,6 +3,9 @@ title: "Velocidad angular"
 description: "A qué ritmo gira un cuerpo: radianes por segundo."
 materia: "Física"
 tema: "Cinemática"
+tags:
+  - mecanica
+  - cinematica
 ---
 
 # Velocidad angular

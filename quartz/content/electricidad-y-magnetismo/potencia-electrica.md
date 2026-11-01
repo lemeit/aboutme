@@ -2,6 +2,8 @@
 title: "Potencia eléctrica"
 materia: "Física"
 tema: "Electricidad y Magnetismo"
+tags:
+  - electricidad
 ---
 
 # Potencia eléctrica

@@ -2,6 +2,9 @@
 title: "Gas ideal"
 materia: "Física"
 tema: "Termodinámica"
+tags:
+  - termodinamica
+  - gases
 ---
 
 # Gas ideal

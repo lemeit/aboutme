@@ -2,6 +2,8 @@
 title: "Resistencia eléctrica"
 materia: "Física"
 tema: "Electricidad y Magnetismo"
+tags:
+  - electricidad
 ---
 
 # Resistencia eléctrica

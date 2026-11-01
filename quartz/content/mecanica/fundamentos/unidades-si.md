@@ -2,6 +2,9 @@
 title: "Unidades del SI"
 materia: "Física"
 tema: "Mecánica"
+tags:
+  - mecanica
+  - fundamentos
 ---
 
 # Unidades del Sistema Internacional (SI)

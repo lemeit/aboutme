@@ -2,6 +2,8 @@
 title: "Núcleo atómico"
 materia: "Física"
 tema: "Física Moderna"
+tags:
+  - moderna
 ---
 
 # Núcleo atómico

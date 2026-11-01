@@ -2,6 +2,8 @@
 title: "Carga eléctrica"
 materia: "Física"
 tema: "Electricidad y Magnetismo"
+tags:
+  - electricidad
 ---
 
 # Carga eléctrica

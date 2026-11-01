@@ -2,6 +2,9 @@
 title: "Coordenadas polares"
 materia: "Física"
 tema: "Mecánica"
+tags:
+  - mecanica
+  - fundamentos
 ---
 
 # Coordenadas polares

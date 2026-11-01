@@ -2,6 +2,8 @@
 title: "Efecto Doppler"
 materia: "Física"
 tema: "Ondas"
+tags:
+  - ondas
 ---
 
 # Efecto Doppler

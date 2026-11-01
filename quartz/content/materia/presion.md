@@ -3,6 +3,8 @@ title: "Presión"
 description: "Fuerza repartida sobre un área: por qué un clavo entra y una tabla no."
 materia: "Física"
 tema: "Materia"
+tags:
+  - materia
 ---
 
 # Presión

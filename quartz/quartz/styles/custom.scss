@@ -1,3 +1,78 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+
+// ---------------------------------------------------------------------------
+// Logo del mapa de conceptos, junto al título de la barra lateral.
+//
+// Se usa el mismo símbolo de red que el botón del grafo global. Va como
+// máscara (mask-image) y no como imagen de fondo, para que tome el color
+// de var(--secondary) y se adapte solo a modo claro y oscuro.
+// ---------------------------------------------------------------------------
+
+.page-title {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.page-title::before {
+  content: "";
+  flex: 0 0 auto;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--secondary);
+  -webkit-mask-image: url("static/logo-grafo.svg");
+  mask-image: url("static/logo-grafo.svg");
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+
+@media all and (max-width: 800px) {
+  .page-title::before {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Sin listado automático de artículos en las páginas de carpeta.
+//
+// El plugin folder-page agrega, debajo del índice escrito a mano, un bloque
+// con "N artículos en esta carpeta" y una lista con fechas. Duplica el índice
+// y agrega ruido: cada carpeta ya tiene su lista de conceptos redactada.
+//
+// Se limita a las páginas de carpeta (data-slug termina en /index) para no
+// vaciar las páginas de etiqueta, que usan el mismo bloque.
+// ---------------------------------------------------------------------------
+
+body[data-slug$="/index"] .page-listing {
+  display: none;
+}
+
+// ---------------------------------------------------------------------------
+// "Retroenlaces" -> "Conceptos relacionados".
+//
+// El plugin de backlinks trae su propio i18n y no se puede reescribir desde
+// quartz.config.yaml. Se conserva la métrica del h3 y se reemplaza el texto
+// visualmente con un pseudo-elemento.
+// ---------------------------------------------------------------------------
+
+.backlinks h3 {
+  position: relative;
+  color: transparent;
+}
+
+.backlinks h3::after {
+  content: "Conceptos relacionados";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--dark);
+  white-space: nowrap;
+}
+

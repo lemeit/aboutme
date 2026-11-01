@@ -2,6 +2,8 @@
 title: "Cambio de fase"
 materia: "Física"
 tema: "Termodinámica"
+tags:
+  - termodinamica
 ---
 
 # Cambio de fase

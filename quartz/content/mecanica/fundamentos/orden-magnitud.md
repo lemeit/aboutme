@@ -2,6 +2,9 @@
 title: "Orden de magnitud"
 materia: "Física"
 tema: "Mecánica"
+tags:
+  - mecanica
+  - fundamentos
 ---
 
 # Orden de magnitud

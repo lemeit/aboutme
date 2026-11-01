@@ -3,6 +3,9 @@ title: "Trabajo rotacional"
 description: "El trabajo de un torque: cuánta energía se transfiere al girar un cuerpo."
 materia: "Física"
 tema: "Energía"
+tags:
+  - mecanica
+  - energia
 ---
 
 # Trabajo rotacional

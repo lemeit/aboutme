@@ -2,6 +2,9 @@
 title: "Cifras significativas"
 materia: "Física"
 tema: "Mecánica"
+tags:
+  - mecanica
+  - fundamentos
 ---
 
 # Cifras significativas

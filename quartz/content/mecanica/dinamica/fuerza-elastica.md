@@ -2,6 +2,9 @@
 title: "Fuerza elástica"
 materia: "Física"
 tema: "Dinámica"
+tags:
+  - mecanica
+  - dinamica
 ---
 
 # Fuerza elástica

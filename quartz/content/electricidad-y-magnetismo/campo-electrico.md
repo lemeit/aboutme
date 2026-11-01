@@ -2,6 +2,8 @@
 title: "Campo eléctrico"
 materia: "Física"
 tema: "Electricidad y Magnetismo"
+tags:
+  - electricidad
 ---
 
 # Campo eléctrico

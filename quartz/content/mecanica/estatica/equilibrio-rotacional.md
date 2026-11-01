@@ -3,6 +3,9 @@ title: "Equilibrio rotacional"
 description: "Un cuerpo no gira: los torques que actúan sobre él se cancelan."
 materia: "Física"
 tema: "Estática"
+tags:
+  - mecanica
+  - estatica
 ---
 
 # Equilibrio rotacional

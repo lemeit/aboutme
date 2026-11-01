@@ -3,6 +3,8 @@ title: "Caudal"
 description: "Qué volumen de fluido pasa por una sección en un segundo, y a qué velocidad viaja."
 materia: "Física"
 tema: "Materia"
+tags:
+  - materia
 ---
 
 # Caudal

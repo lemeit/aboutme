@@ -3,6 +3,9 @@ title: "Fuerzas no conservativas"
 description: "El rozamiento y otras fuerzas que disipan energía mecánica: el trabajo depende del camino."
 materia: "Física"
 tema: "Energía"
+tags:
+  - mecanica
+  - energia
 ---
 
 # Fuerzas no conservativas

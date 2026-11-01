@@ -2,6 +2,8 @@
 title: "Sonido"
 materia: "Física"
 tema: "Ondas"
+tags:
+  - ondas
 ---
 
 # Sonido

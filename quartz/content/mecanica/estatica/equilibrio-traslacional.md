@@ -3,6 +3,9 @@ title: "Equilibrio traslacional"
 description: "Un cuerpo no se desplaza: las fuerzas que actúan sobre él se cancelan."
 materia: "Física"
 tema: "Estática"
+tags:
+  - mecanica
+  - estatica
 ---
 
 # Equilibrio traslacional

@@ -2,6 +2,9 @@
 title: "Peso"
 materia: "Física"
 tema: "Dinámica"
+tags:
+  - mecanica
+  - dinamica
 ---
 
 # Peso

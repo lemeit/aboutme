@@ -2,6 +2,8 @@
 title: "Radiactividad"
 materia: "Física"
 tema: "Física Moderna"
+tags:
+  - moderna
 ---
 
 # Radiactividad

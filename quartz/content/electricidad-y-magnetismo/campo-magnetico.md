@@ -2,6 +2,8 @@
 title: "Campo magnético"
 materia: "Física"
 tema: "Electricidad y Magnetismo"
+tags:
+  - electricidad
 ---
 
 # Campo magnético

@@ -2,6 +2,9 @@
 title: "Velocidad"
 materia: "Física"
 tema: "Cinemática"
+tags:
+  - mecanica
+  - cinematica
 ---
 
 # Velocidad

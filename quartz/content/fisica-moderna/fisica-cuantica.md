@@ -2,6 +2,8 @@
 title: "Física cuántica"
 materia: "Física"
 tema: "Física Moderna"
+tags:
+  - moderna
 ---
 
 # Física cuántica

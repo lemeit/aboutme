@@ -3,6 +3,8 @@ title: "Teorema de Bernoulli"
 description: "Dónde el fluido va rápido, la presión baja: el principio detrás del Venturi y del rociador."
 materia: "Física"
 tema: "Materia"
+tags:
+  - materia
 ---
 
 # Teorema de Bernoulli

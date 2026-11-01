@@ -2,6 +2,9 @@
 title: "Energía potencial gravitatoria"
 materia: "Física"
 tema: "Energía"
+tags:
+  - mecanica
+  - energia
 ---
 
 # Energía potencial gravitatoria

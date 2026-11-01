@@ -2,6 +2,8 @@
 title: "Efecto fotoeléctrico"
 materia: "Física"
 tema: "Física Moderna"
+tags:
+  - moderna
 ---
 
 # Efecto fotoeléctrico

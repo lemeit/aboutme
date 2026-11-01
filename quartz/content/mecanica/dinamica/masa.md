@@ -2,6 +2,9 @@
 title: "Masa"
 materia: "Física"
 tema: "Dinámica"
+tags:
+  - mecanica
+  - dinamica
 ---
 
 # Masa

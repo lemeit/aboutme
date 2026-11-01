@@ -2,6 +2,8 @@
 title: "Corriente eléctrica"
 materia: "Física"
 tema: "Electricidad y Magnetismo"
+tags:
+  - electricidad
 ---
 
 # Corriente eléctrica

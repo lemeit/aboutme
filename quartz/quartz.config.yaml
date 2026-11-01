@@ -160,7 +160,7 @@ plugins:
   - source: github:quartz-community/folder-page
     enabled: true
   - source: github:quartz-community/tag-page
-    enabled: false # sin etiquetas en uso; evita el nodo aislado "Índice de etiquetas" en el grafo
+    enabled: true # cada etiqueta tiene su página con los conceptos que la usan
   - source: github:quartz-community/explorer
     enabled: true
     layout:
@@ -206,10 +206,10 @@ plugins:
       position: beforeBody
       priority: 20
   - source: github:quartz-community/tag-list
-    enabled: false
+    enabled: true
     layout:
       position: beforeBody
-      priority: 30
+      priority: 15
   - source: github:quartz-community/page-title
     enabled: true
     layout:

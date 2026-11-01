@@ -3,6 +3,9 @@ title: "Energía cinética rotacional"
 description: "La energía de un cuerpo que gira: media masa por radio al cuadrado por omega al cuadrado."
 materia: "Física"
 tema: "Energía"
+tags:
+  - mecanica
+  - energia
 ---
 
 # Energía cinética rotacional

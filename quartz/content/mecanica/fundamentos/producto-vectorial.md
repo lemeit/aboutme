@@ -2,6 +2,9 @@
 title: "Producto vectorial"
 materia: "Física"
 tema: "Mecánica"
+tags:
+  - mecanica
+  - fundamentos
 ---
 
 # Producto vectorial

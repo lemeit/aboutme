@@ -2,6 +2,9 @@
 title: "Trigonometría"
 materia: "Física"
 tema: "Mecánica"
+tags:
+  - mecanica
+  - fundamentos
 ---
 
 # Trigonometría

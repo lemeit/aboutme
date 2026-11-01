@@ -3,6 +3,8 @@ title: "Peso específico"
 description: "Cuánto pesa cada metro cúbico de una sustancia: la densidad multiplicada por g."
 materia: "Física"
 tema: "Materia"
+tags:
+  - materia
 ---
 
 # Peso específico

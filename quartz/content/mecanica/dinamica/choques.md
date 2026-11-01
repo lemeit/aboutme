@@ -2,6 +2,9 @@
 title: "Choques"
 materia: "Física"
 tema: "Mecánica"
+tags:
+  - mecanica
+  - dinamica
 ---
 
 # Choques

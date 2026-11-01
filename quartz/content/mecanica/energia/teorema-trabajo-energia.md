@@ -3,6 +3,9 @@ title: "Teorema trabajo-energía"
 description: "El trabajo neto sobre un cuerpo es igual al cambio de su energía cinética."
 materia: "Física"
 tema: "Energía"
+tags:
+  - mecanica
+  - energia
 ---
 
 # Teorema trabajo-energía

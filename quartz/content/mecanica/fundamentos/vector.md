@@ -2,6 +2,9 @@
 title: "Vector"
 materia: "Física"
 tema: "Mecánica"
+tags:
+  - mecanica
+  - fundamentos
 ---
 
 # Vector

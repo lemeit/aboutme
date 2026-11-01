@@ -2,6 +2,9 @@
 title: "Potencia"
 materia: "Física"
 tema: "Energía"
+tags:
+  - mecanica
+  - energia
 ---
 
 # Potencia

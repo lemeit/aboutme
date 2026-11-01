@@ -3,6 +3,8 @@ title: "Densidad"
 description: "Cuánta masa entra en un volumen: la propiedad que decide si un cuerpo flota."
 materia: "Física"
 tema: "Materia"
+tags:
+  - materia
 ---
 
 # Densidad

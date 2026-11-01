@@ -2,6 +2,9 @@
 title: "Producto escalar"
 materia: "Física"
 tema: "Mecánica"
+tags:
+  - mecanica
+  - fundamentos
 ---
 
 # Producto escalar

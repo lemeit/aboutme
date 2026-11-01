@@ -2,6 +2,9 @@
 title: "Momentum lineal"
 materia: "Física"
 tema: "Mecánica"
+tags:
+  - mecanica
+  - dinamica
 ---
 
 # Momentum lineal

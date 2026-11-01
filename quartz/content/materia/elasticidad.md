@@ -3,6 +3,8 @@ title: "Elasticidad"
 description: "Cuánto se deforma un sólido cuando lo estiras o lo comprimís, y hasta dónde vuelve."
 materia: "Física"
 tema: "Materia"
+tags:
+  - materia
 ---
 
 # Elasticidad

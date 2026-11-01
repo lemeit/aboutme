@@ -2,6 +2,9 @@
 title: "Rendimiento"
 materia: "Física"
 tema: "Energía"
+tags:
+  - mecanica
+  - energia
 ---
 
 # Rendimiento

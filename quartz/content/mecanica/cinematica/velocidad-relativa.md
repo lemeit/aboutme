@@ -3,6 +3,9 @@ title: "Velocidad relativa"
 description: "Lo que se mueve depende de quién mira: cómo se suman y restan velocidades."
 materia: "Física"
 tema: "Cinemática"
+tags:
+  - mecanica
+  - cinematica
 ---
 
 # Velocidad relativa

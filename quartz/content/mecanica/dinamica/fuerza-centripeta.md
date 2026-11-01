@@ -2,6 +2,9 @@
 title: "Fuerza centrípeta"
 materia: "Física"
 tema: "Dinámica"
+tags:
+  - mecanica
+  - dinamica
 ---
 
 # Fuerza centrípeta

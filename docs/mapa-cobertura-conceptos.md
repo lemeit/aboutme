@@ -12,16 +12,16 @@ Generado automáticamente por `scripts/mapa-cobertura.py` a partir del estado re
 | Mecánica › Estática | cap. 8 | 0 | 3 | 1 | 2 |
 | Mecánica › Energía | cap. 5, 8 | 7 | 13 | 7 | 6 |
 | Gravitación | cap. 7 | 1 | 4 | 1 | 3 |
-| Materia | cap. 9 | 0 | 12 | 0 | 12 |
+| Materia | cap. 9 | 12 | 12 | 12 | 0 |
 | Termodinámica | cap. 10, 11, 12 | 7 | 27 | 9 | 18 |
 | Termodinámica › Gases | cap. 11 | 1 | 9 | 1 | 8 |
 | Ondas | cap. 13, 14 | 5 | 26 | 5 | 21 |
 | Ondas › EM y luz · Óptica | cap. 21, 22–25 | 1 | 43 | 3 | 40 |
 | Electricidad y magnetismo | cap. 15–20 | 10 | 70 | 11 | 59 |
 | Física moderna | cap. 26–30 | 7 | 74 | 7 | 67 |
-| **Total** |  | | **342** | **86** | **256** |
+| **Total** |  | | **342** | **98** | **244** |
 
-Cobertura de lo declarado: **25%**. Los 256 conceptos sin nota son los que hoy producen los enlaces roto del grafo.
+Cobertura de lo declarado: **29%**. Los 244 conceptos sin nota son los que hoy producen los enlaces roto del grafo.
 
 ## Conceptos que faltan, unidad por unidad
 
@@ -70,21 +70,6 @@ Cobertura de lo declarado: **25%**. Los 256 conceptos sin nota son los que hoy p
 - `campo-gravitatorio`
 - `energia-potencial-gravitatoria-general`
 - `leyes-kepler`
-
-### Materia — cap. 9 (12)
-
-- `caudal`
-- `densidad`
-- `ecuacion-continuidad`
-- `elasticidad`
-- `estados-de-la-materia`
-- `peso-especifico`
-- `presion`
-- `presion-hidrostatica`
-- `principio-arquimedes`
-- `principio-pascal`
-- `teorema-bernoulli`
-- `viscosidad`
 
 ### Termodinámica — cap. 10, 11, 12 (18)
 

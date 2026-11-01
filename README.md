@@ -295,7 +295,16 @@ Las notas publicadas generan su versión A4 de dos columnas mediante GitHub Acti
 
 Los cambios en `main` activan la publicación automática de Cloudflare Pages. La cola y la compilación pueden demorar; confirmar el despliegue antes de afirmar que un cambio está online. Trabajar en una rama por tarea y revisar mediante PR. El workflow `generate-pdf.yml` actualiza los PDFs cuando cambian sus fuentes; un cambio exclusivo del README no activa ese workflow.
 
-El build de producción combina ambos generadores:
+El build de producción combina ambos generadores. Está en [`build.sh`](build.sh) y el panel de Cloudflare sólo ejecuta:
+
+```sh
+bash build.sh
+```
+
+> [!warning] El campo del panel no acepta multilínea
+> Si se pega el bloque completo con saltos de línea, Cloudflare lo colapsa en una sola y termina corriendo `hugo cd quartz ...`, que falla con `unknown command "cd" for "hugo"`. Por eso el build vive en el script y el panel tiene una sola instrucción.
+
+El script hace, en orden:
 
 ```sh
 hugo
@@ -308,6 +317,8 @@ node scripts/fix-graph-slugs.mjs quartz/public/static/contentIndex.json
 mkdir -p public/conceptos
 cp -r quartz/public/* public/conceptos/
 ```
+
+Si hiciera falta configurarlo sin el script, tiene que ser **una sola línea** unida con `&&`.
 
 ### El paso `fix-graph-slugs.mjs`
 

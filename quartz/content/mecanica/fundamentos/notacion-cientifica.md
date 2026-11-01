@@ -2,6 +2,9 @@
 title: "Notación científica"
 materia: "Física"
 tema: "Mecánica"
+tags:
+  - mecanica
+  - fundamentos
 ---
 
 # Notación científica

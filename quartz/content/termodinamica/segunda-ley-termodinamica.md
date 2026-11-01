@@ -2,6 +2,8 @@
 title: "Segunda ley de la termodinámica"
 materia: "Física"
 tema: "Termodinámica"
+tags:
+  - termodinamica
 ---
 
 # Segunda ley de la termodinámica

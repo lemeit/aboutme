@@ -2,6 +2,9 @@
 title: "MRUV"
 materia: "Física"
 tema: "Cinemática"
+tags:
+  - mecanica
+  - cinematica
 ---
 
 # MRUV — Movimiento Rectilíneo Uniformemente Variado

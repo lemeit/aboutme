@@ -2,6 +2,9 @@
 title: "Rapidez"
 materia: "Física"
 tema: "Cinemática"
+tags:
+  - mecanica
+  - cinematica
 ---
 
 # Rapidez

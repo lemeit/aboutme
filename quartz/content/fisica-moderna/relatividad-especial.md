@@ -2,6 +2,8 @@
 title: "Relatividad especial"
 materia: "Física"
 tema: "Física Moderna"
+tags:
+  - moderna
 ---
 
 # Relatividad especial

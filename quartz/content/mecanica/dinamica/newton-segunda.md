@@ -2,6 +2,9 @@
 title: "Segunda ley de Newton"
 materia: "Física"
 tema: "Dinámica"
+tags:
+  - mecanica
+  - dinamica
 ---
 
 # Segunda ley de Newton

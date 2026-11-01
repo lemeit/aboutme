@@ -3,6 +3,9 @@ title: "Movimiento circular"
 description: "Un cuerpo que gira: por qué tiene aceleración aunque la rapidez no cambie."
 materia: "Física"
 tema: "Cinemática"
+tags:
+  - mecanica
+  - cinematica
 ---
 
 # Movimiento circular

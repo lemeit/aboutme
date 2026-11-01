@@ -2,6 +2,8 @@
 title: "Ley de Coulomb"
 materia: "Física"
 tema: "Electricidad y Magnetismo"
+tags:
+  - electricidad
 ---
 
 # Ley de Coulomb

@@ -2,6 +2,9 @@
 title: "Escalar"
 materia: "Física"
 tema: "Mecánica"
+tags:
+  - mecanica
+  - fundamentos
 ---
 
 # Escalar

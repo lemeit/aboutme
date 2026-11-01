@@ -3,6 +3,8 @@ title: "Viscosidad"
 description: "La resistencia interna de un fluido a fluir: por qué la miel tarda y el agua no."
 materia: "Física"
 tema: "Materia"
+tags:
+  - materia
 ---
 
 # Viscosidad

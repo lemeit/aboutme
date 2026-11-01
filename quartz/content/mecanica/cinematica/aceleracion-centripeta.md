@@ -3,6 +3,9 @@ title: "Aceleración centrípeta"
 description: "La aceleración que apunta al centro y obliga al cuerpo a doblar."
 materia: "Física"
 tema: "Cinemática"
+tags:
+  - mecanica
+  - cinematica
 ---
 
 # Aceleración centrípeta

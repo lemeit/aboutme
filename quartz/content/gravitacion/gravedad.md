@@ -2,6 +2,8 @@
 title: "Gravedad"
 materia: "Física"
 tema: "Gravitación"
+tags:
+  - gravitacion
 ---
 
 # Gravedad

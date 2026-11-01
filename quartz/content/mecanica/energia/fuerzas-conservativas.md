@@ -3,6 +3,9 @@ title: "Fuerzas conservativas"
 description: "Fuerzas cuyo trabajo no depende del camino: permiten definir energía potencial."
 materia: "Física"
 tema: "Energía"
+tags:
+  - mecanica
+  - energia
 ---
 
 # Fuerzas conservativas

@@ -2,6 +2,9 @@
 title: "MRU"
 materia: "Física"
 tema: "Cinemática"
+tags:
+  - mecanica
+  - cinematica
 ---
 
 # MRU — Movimiento Rectilíneo Uniforme

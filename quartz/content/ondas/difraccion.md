@@ -2,6 +2,8 @@
 title: "Difracción"
 materia: "Física"
 tema: "Ondas"
+tags:
+  - ondas
 ---
 
 # Difracción

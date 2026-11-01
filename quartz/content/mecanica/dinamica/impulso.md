@@ -2,6 +2,9 @@
 title: "Impulso"
 materia: "Física"
 tema: "Mecánica"
+tags:
+  - mecanica
+  - dinamica
 ---
 
 # Impulso

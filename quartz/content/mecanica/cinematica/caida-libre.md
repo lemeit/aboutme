@@ -2,6 +2,9 @@
 title: "Caída libre"
 materia: "Física"
 tema: "Cinemática"
+tags:
+  - mecanica
+  - cinematica
 ---
 
 # Caída libre

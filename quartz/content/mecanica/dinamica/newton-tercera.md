@@ -2,6 +2,9 @@
 title: "Tercera ley de Newton"
 materia: "Física"
 tema: "Dinámica"
+tags:
+  - mecanica
+  - dinamica
 ---
 
 # Tercera ley de Newton (Acción y Reacción)

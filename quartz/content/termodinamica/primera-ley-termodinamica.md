@@ -2,6 +2,8 @@
 title: "Primera ley de la termodinámica"
 materia: "Física"
 tema: "Termodinámica"
+tags:
+  - termodinamica
 ---
 
 # Primera ley de la termodinámica

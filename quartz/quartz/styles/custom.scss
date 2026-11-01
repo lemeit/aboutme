@@ -45,9 +45,12 @@
 // El plugin folder-page agrega, debajo del índice escrito a mano, un bloque
 // con "N artículos en esta carpeta" y una lista con fechas. Duplica el índice
 // y agrega ruido: cada carpeta ya tiene su lista de conceptos redactada.
+//
+// Se limita a las páginas de carpeta (data-slug termina en /index) para no
+// vaciar las páginas de etiqueta, que usan el mismo bloque.
 // ---------------------------------------------------------------------------
 
-.page-listing {
+body[data-slug$="/index"] .page-listing {
   display: none;
 }
 

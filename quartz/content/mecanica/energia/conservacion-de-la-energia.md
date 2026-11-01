@@ -2,6 +2,9 @@
 title: "Conservación de la energía mecánica"
 materia: "Física"
 tema: "Energía"
+tags:
+  - mecanica
+  - energia
 ---
 
 # Conservación de la energía mecánica

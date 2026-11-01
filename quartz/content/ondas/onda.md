@@ -2,6 +2,8 @@
 title: "Onda"
 materia: "Física"
 tema: "Ondas"
+tags:
+  - ondas
 ---
 
 # Onda

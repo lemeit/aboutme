@@ -2,6 +2,8 @@
 title: "Temperatura"
 materia: "Física"
 tema: "Termodinámica"
+tags:
+  - termodinamica
 ---
 
 # Temperatura

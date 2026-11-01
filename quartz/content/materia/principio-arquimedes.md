@@ -3,6 +3,8 @@ title: "Principio de Arquímedes"
 description: "Todo cuerpo sumergido recibe un empuje igual al peso del líquido que desaloja."
 materia: "Física"
 tema: "Materia"
+tags:
+  - materia
 ---
 
 # Principio de Arquímedes

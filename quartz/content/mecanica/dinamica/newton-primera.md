@@ -2,6 +2,9 @@
 title: "Primera ley de Newton"
 materia: "Física"
 tema: "Dinámica"
+tags:
+  - mecanica
+  - dinamica
 ---
 
 # Primera ley de Newton (Ley de la Inercia)

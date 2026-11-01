@@ -2,6 +2,8 @@
 title: "Interferencia"
 materia: "Física"
 tema: "Ondas"
+tags:
+  - ondas
 ---
 
 # Interferencia

@@ -3,6 +3,9 @@ title: "Posición angular"
 description: "Dónde está un cuerpo que gira: el ángulo medido en radianes."
 materia: "Física"
 tema: "Cinemática"
+tags:
+  - mecanica
+  - cinematica
 ---
 
 # Posición angular

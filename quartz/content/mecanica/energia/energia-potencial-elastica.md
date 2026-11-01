@@ -2,6 +2,9 @@
 title: "Energía potencial elástica"
 materia: "Física"
 tema: "Energía"
+tags:
+  - mecanica
+  - energia
 ---
 
 # Energía potencial elástica

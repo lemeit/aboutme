@@ -2,6 +2,8 @@
 title: "Ley de Ohm"
 materia: "Física"
 tema: "Electricidad y Magnetismo"
+tags:
+  - electricidad
 ---
 
 # Ley de Ohm

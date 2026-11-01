@@ -2,6 +2,9 @@
 title: "Coordenadas cartesianas"
 materia: "Física"
 tema: "Mecánica"
+tags:
+  - mecanica
+  - fundamentos
 ---
 
 # Coordenadas cartesianas

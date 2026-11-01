@@ -2,6 +2,9 @@
 title: "Análisis dimensional"
 materia: "Física"
 tema: "Mecánica"
+tags:
+  - mecanica
+  - fundamentos
 ---
 
 # Análisis dimensional

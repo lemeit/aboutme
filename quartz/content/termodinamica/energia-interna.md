@@ -2,6 +2,8 @@
 title: "Energía interna"
 materia: "Física"
 tema: "Termodinámica"
+tags:
+  - termodinamica
 ---
 
 # Energía interna

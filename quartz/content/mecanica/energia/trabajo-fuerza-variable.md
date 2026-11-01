@@ -3,6 +3,9 @@ title: "Trabajo de una fuerza variable"
 description: "Cuando la fuerza cambia a lo largo del camino, el trabajo es el área bajo la gráfica."
 materia: "Física"
 tema: "Energía"
+tags:
+  - mecanica
+  - energia
 ---
 
 # Trabajo de una fuerza variable

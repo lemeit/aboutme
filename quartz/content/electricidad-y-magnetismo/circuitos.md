@@ -2,6 +2,8 @@
 title: "Circuitos eléctricos"
 materia: "Física"
 tema: "Electricidad y Magnetismo"
+tags:
+  - electricidad
 ---
 
 # Circuitos eléctricos

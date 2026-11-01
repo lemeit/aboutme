@@ -2,6 +2,9 @@
 title: "Rozamiento"
 materia: "Física"
 tema: "Dinámica"
+tags:
+  - mecanica
+  - dinamica
 ---
 
 # Rozamiento

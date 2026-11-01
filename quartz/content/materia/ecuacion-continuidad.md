@@ -3,6 +3,8 @@ title: "Ecuación de continuidad"
 description: "Lo que entra a un caño es lo que sale: si el caño se angosta, el fluido se acelera."
 materia: "Física"
 tema: "Materia"
+tags:
+  - materia
 ---
 
 # Ecuación de continuidad

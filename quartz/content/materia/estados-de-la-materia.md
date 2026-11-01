@@ -3,6 +3,8 @@ title: "Estados de la materia"
 description: "Sólido, líquido, gas y plasma: qué cambia entre uno y otro a escala de partículas."
 materia: "Física"
 tema: "Materia"
+tags:
+  - materia
 ---
 
 # Estados de la materia

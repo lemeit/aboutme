@@ -3,6 +3,9 @@ title: "Tiro oblicuo"
 description: "Un cuerpo lanzado en ángulo: movimiento rectilíneo uniforme en horizontal y caída libre en vertical."
 materia: "Física"
 tema: "Cinemática"
+tags:
+  - mecanica
+  - cinematica
 ---
 
 # Tiro oblicuo

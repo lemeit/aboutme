@@ -2,6 +2,9 @@
 title: "Torque"
 materia: "Física"
 tema: "Mecánica"
+tags:
+  - mecanica
+  - dinamica
 ---
 
 # Torque

@@ -3,6 +3,9 @@ title: "Aceleración angular"
 description: "A qué ritmo cambia el giro: la versión angular de la aceleración."
 materia: "Física"
 tema: "Cinemática"
+tags:
+  - mecanica
+  - cinematica
 ---
 
 # Aceleración angular

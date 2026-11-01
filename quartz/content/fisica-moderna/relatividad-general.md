@@ -2,6 +2,8 @@
 title: "Relatividad general"
 materia: "Física"
 tema: "Física Moderna"
+tags:
+  - moderna
 ---
 
 # Relatividad general

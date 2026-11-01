@@ -2,6 +2,8 @@
 title: "Entropía"
 materia: "Física"
 tema: "Termodinámica"
+tags:
+  - termodinamica
 ---
 
 # Entropía

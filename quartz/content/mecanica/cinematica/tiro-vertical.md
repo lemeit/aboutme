@@ -2,6 +2,9 @@
 title: "Tiro vertical"
 materia: "Física"
 tema: "Cinemática"
+tags:
+  - mecanica
+  - cinematica
 ---
 
 # Tiro vertical

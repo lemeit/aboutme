@@ -2,6 +2,9 @@
 title: "Fuerza normal"
 materia: "Física"
 tema: "Dinámica"
+tags:
+  - mecanica
+  - dinamica
 ---
 
 # Fuerza normal

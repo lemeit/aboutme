@@ -2,6 +2,9 @@
 title: "Luz"
 materia: "Física"
 tema: "Ondas"
+tags:
+  - ondas
+  - optica
 ---
 
 # Luz

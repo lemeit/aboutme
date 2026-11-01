@@ -2,6 +2,9 @@
 title: "Sistema de referencia"
 materia: "Física"
 tema: "Mecánica"
+tags:
+  - mecanica
+  - fundamentos
 ---
 
 # Sistema de referencia

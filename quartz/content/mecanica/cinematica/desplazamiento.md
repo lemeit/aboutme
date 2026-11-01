@@ -2,6 +2,9 @@
 title: "Desplazamiento"
 materia: "Física"
 tema: "Cinemática"
+tags:
+  - mecanica
+  - cinematica
 ---
 
 # Desplazamiento

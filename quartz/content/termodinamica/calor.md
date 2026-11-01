@@ -2,6 +2,8 @@
 title: "Calor"
 materia: "Física"
 tema: "Termodinámica"
+tags:
+  - termodinamica
 ---
 
 # Calor

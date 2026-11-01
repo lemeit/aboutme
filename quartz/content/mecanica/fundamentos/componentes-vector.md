@@ -2,6 +2,9 @@
 title: "Componentes de un vector"
 materia: "Física"
 tema: "Mecánica"
+tags:
+  - mecanica
+  - fundamentos
 ---
 
 # Componentes de un vector

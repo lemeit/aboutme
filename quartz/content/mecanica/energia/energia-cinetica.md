@@ -2,6 +2,9 @@
 title: "Energía cinética"
 materia: "Física"
 tema: "Energía"
+tags:
+  - mecanica
+  - energia
 ---
 
 # Energía cinética

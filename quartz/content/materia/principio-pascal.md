@@ -3,6 +3,8 @@ title: "Principio de Pascal"
 description: "Un cambio de presión en un líquido encerrado se transmite igual a todo el fluido."
 materia: "Física"
 tema: "Materia"
+tags:
+  - materia
 ---
 
 # Principio de Pascal

@@ -12,13 +12,13 @@ Fuerza de atracción entre dos cuerpos con [[masa]].
 
 $$F = G \frac{m_1 m_2}{r^2}$$
 
-Donde $G = 6,67 \times 10^{-11} 	ext{ N·m}^2/	ext{kg}^2$
+Donde $G = 6,67 \times 10^{-11} \text{ N·m}^2/\text{kg}^2$
 
 ## Campo gravitatorio
 
 $$g = G \frac{M}{r^2}$$
 
-En la superficie de la Tierra: $g \approx 9,8 	ext{ m/s}^2$
+En la superficie de la Tierra: $g \approx 9,8 \text{ m/s}^2$
 
 ## Relacionado con
 

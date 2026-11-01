@@ -18,6 +18,6 @@ $$\vec{r} = x\hat{i} + y\hat{j} + z\hat{k}$$
 
 ## Relacionado con
 
-- [[conceptos/sistema-de-referencia|Sistema de referencia]]
+- [[sistema-de-referencia|Sistema de referencia]]
 - [[vector]] — Representación vectorial
-- [[conceptos/coordenadas-polares|Coordenadas polares]] — Alternativa
+- [[coordenadas-polares|Coordenadas polares]] — Alternativa

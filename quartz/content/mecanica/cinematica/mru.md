@@ -33,4 +33,4 @@ $$a = 0$$
 ## Ejemplo
 
 Un auto a 90 km/h (25 m/s) que parte del km 50:
-$$x(t) = 50.000 + 25t \quad 	ext{(en metros y segundos)}$$
+$$x(t) = 50.000 + 25t \quad \text{(en metros y segundos)}$$

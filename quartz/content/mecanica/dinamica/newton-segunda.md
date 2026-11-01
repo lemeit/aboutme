@@ -33,4 +33,4 @@ $$\vec{F} = \frac{d\vec{p}}{dt}$$
 ## Ejemplo
 
 Una fuerza de 10 N sobre un cuerpo de 2 kg:
-$$a = \frac{F}{m} = \frac{10}{2} = 5 	ext{ m/s}^2$$
+$$a = \frac{F}{m} = \frac{10}{2} = 5 \text{ m/s}^2$$

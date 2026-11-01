@@ -34,5 +34,5 @@ $$v^2 = v_0^2 + 2a(x - x_0)$$
 ## Ejemplo
 
 Un auto que acelera desde el reposo a 2 m/s²:
-$$v(5) = 0 + 2 \cdot 5 = 10 	ext{ m/s}$$
-$$x(5) = 0 + 0 + \frac{1}{2} \cdot 2 \cdot 25 = 25 	ext{ m}$$
+$$v(5) = 0 + 2 \cdot 5 = 10 \text{ m/s}$$
+$$x(5) = 0 + 0 + \frac{1}{2} \cdot 2 \cdot 25 = 25 \text{ m}$$

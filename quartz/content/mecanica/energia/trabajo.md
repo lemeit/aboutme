@@ -36,4 +36,4 @@ Julio (J) = N·m = kg·m²/s²
 ## Ejemplo
 
 Empujar un carrito con 50 N a lo largo de 10 m:
-$$W = 50 \cdot 10 = 500 	ext{ J}$$
+$$W = 50 \cdot 10 = 500 \text{ J}$$

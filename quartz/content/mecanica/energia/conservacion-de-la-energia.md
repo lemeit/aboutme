@@ -34,4 +34,4 @@ $$E_m = E_c + E_p = \text{constante}$$
 
 Una pelota que cae desde 10 m. ¿Velocidad al llegar al suelo?
 $$mgh = \frac{1}{2}mv^2$$
-$$v = \sqrt{2gh} = \sqrt{2 \cdot 9,8 \cdot 10} = 14 	ext{ m/s}$$
+$$v = \sqrt{2gh} = \sqrt{2 \cdot 9,8 \cdot 10} = 14 \text{ m/s}$$

@@ -37,4 +37,4 @@ Watt (W) = J/s = kg·m²/s³
 ## Ejemplo
 
 Una grúa levanta 500 kg a 2 m/s:
-$$P = Fv = mgv = 500 \cdot 9,8 \cdot 2 = 9800 	ext{ W} = 9,8 	ext{ kW}$$
+$$P = Fv = mgv = 500 \cdot 9,8 \cdot 2 = 9800 \text{ W} = 9,8 \text{ kW}$$

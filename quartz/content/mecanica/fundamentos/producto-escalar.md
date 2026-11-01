@@ -20,9 +20,9 @@ $$\vec{A} \cdot \vec{B} = A_xB_x + A_yB_y + A_zB_z$$
 
 - [[trabajo]] — $W = \vec{F} \cdot \Delta \vec{r}$
 - [[potencia]] — $P = \vec{F} \cdot \vec{v}$
-- [[conceptos/flujo-magnetico|Flujo magnético]] — $\Phi_B = \vec{B} \cdot \vec{A}$
+- [[flujo-magnetico|Flujo magnético]] — $\Phi_B = \vec{B} \cdot \vec{A}$
 
 ## Relacionado con
 
 - [[vector]]
-- [[conceptos/producto-vectorial|Producto vectorial]]
+- [[producto-vectorial|Producto vectorial]]

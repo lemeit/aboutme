@@ -19,6 +19,6 @@ El **orden de magnitud** de un número es la potencia de 10 más cercana.
 
 ## Relacionado con
 
-- [[conceptos/notacion-cientifica|Notación científica]]
-- [[conceptos/cifras-significativas|Cifras significativas]]
-- [[conceptos/analisis-dimensional|Análisis dimensional]]
+- [[notacion-cientifica|Notación científica]]
+- [[cifras-significativas|Cifras significativas]]
+- [[analisis-dimensional|Análisis dimensional]]

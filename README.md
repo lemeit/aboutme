@@ -130,6 +130,15 @@ Se compila de forma independiente y se sirve en `profe.lemeit.ar/conceptos/`. En
 - **Grafo local**: `depth: 2` — desde la home muestra áreas + sus conceptos directos
 - **Grafo global**: disponible con el toggle del widget (ícono de red en el panel derecho)
 
+### Favicon compartido con el portal
+
+`/conceptos/` usa el mismo favicon que el resto de `profe.lemeit.ar`, para que cualquier pestaña abierta en una subcarpeta muestre el símbolo actual:
+
+- `quartz/quartz/static/favicon.svg` — copia exacta de `static/favicon.svg`. `quartz/quartz/components/Head.tsx` lo emite como `rel="icon" type="image/svg+xml"`.
+- `quartz/quartz/static/icon.png` (512 px) e `icon_2.png` (200 px) — rasterizados desde ese SVG. Se mantienen porque el plugin `favicon` de Quartz arma el `.ico` a partir de `icon.png` y porque son el respaldo para navegadores sin soporte de SVG.
+
+Si cambia el símbolo: actualizar `static/favicon.svg`, copiarlo a `quartz/quartz/static/favicon.svg` y regenerar los dos PNG desde ese SVG.
+
 ### Ordenamiento del Explorer (`quartz/quartz.ts`)
 
 El Explorer usa `slugSegment` (nombre de carpeta, ya limpio: `mecanica`, `gravitacion`, etc.)
@@ -146,6 +155,24 @@ ExternalPlugin.Explorer({
   }
 })
 ```
+
+### Salud del vault (`scripts/`)
+
+Los índices de área prometen conceptos que todavía no tienen nota. Mientras falten, el enlace devuelve 404 y el nodo no aparece en el grafo. Para medirlo antes de publicar:
+
+```powershell
+python scripts/check-vault-conceptos.py                      # informe + detalle
+python scripts/check-vault-conceptos.py --json informe.json  # para el mapa
+python scripts/mapa-cobertura.py informe.json docs/mapa-cobertura-conceptos.md
+```
+
+`check-vault-conceptos.py` sale con código 1 si hay enlaces roto, así que sirve como paso de CI. `mapa-cobertura.py` cruza lo que declara cada índice con los capítulos de Serway & Vuille y reescribe el [mapa de cobertura](docs/mapa-cobertura-conceptos.md).
+
+### Plantilla de concepto
+
+`quartz/content/templates/concepto.md` fija la estructura de una nota: en una frase, definición, fórmula, cuándo vale y cuándo no, error típico, ejemplo y relaciones. La carpeta `templates` está en `ignorePatterns`, así que Quartz no la publica.
+
+Las relaciones se escriben con el nombre del archivo y sin carpeta (`[[velocidad]]`): Quartz resuelve por nombre, así que mover una nota de carpeta no rompe los enlaces.
 
 ### Grafo — conexiones
 

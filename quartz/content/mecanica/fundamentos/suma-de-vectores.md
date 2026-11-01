@@ -15,5 +15,5 @@ $$\vec{A} + \vec{B} = (A_x + B_x)\hat{i} + (A_y + B_y)\hat{j} + (A_z + B_z)\hat{
 ## Relacionado con
 
 - [[vector]]
-- [[conceptos/componentes-vector|Componentes]]
+- [[componentes-vector|Componentes]]
 - [[fuerza]] — Suma de fuerzas

@@ -8,7 +8,17 @@ Variante B «Pluma», elegida por Luciano Lamaita el 26 de octubre de 2026 a par
 - `static/images/logos/lemeit-oscuro.svg`: símbolo naranja `#C45A00` para fondos oscuros, transparente.
 - `static/favicon.svg`: adaptación óptica con trazo reforzado y fondo carbón `#1A1612`, diseñada para tamaños pequeños.
 
-La ruta del favicon permanece igual para conservar las referencias existentes. Una aplicación externa que use esa URL podrá mostrar el símbolo nuevo cuando renueve su caché; no se modifica desde este repositorio la configuración de la wiki de proyectos. El logotipo de Conceptos/Quartz y los logos de materias mantienen sus identidades actuales.
+La ruta del favicon permanece igual para conservar las referencias existentes. Una aplicación externa que use esa URL podrá mostrar el símbolo nuevo cuando renueve su caché; no se modifica desde este repositorio la configuración de la wiki de proyectos.
+
+## Alcance en los subsitios
+
+Desde el 1 de noviembre de 2026, el mapa de conceptos publicado en `/conceptos/` (Quartz) usa el mismo favicon que el portal. La razón es de reconocimiento: una pestaña abierta en cualquier subcarpeta de `profe.lemeit.ar` debe mostrar el símbolo actual, no una versión anterior.
+
+- `quartz/quartz/static/favicon.svg` es una copia exacta de `static/favicon.svg`; `Head.tsx` lo emite como `rel="icon" type="image/svg+xml"`.
+- `quartz/quartz/static/icon.png` (512 px) y `icon_2.png` (200 px) se rasterizaron desde ese mismo SVG. Se mantienen porque el plugin `favicon` de Quartz genera el `.ico` a partir de `icon.png` y porque los navegadores sin soporte de SVG usan el PNG.
+- Quartz conserva su propia tipografía (Inter) y su paleta; el fondo carbón `#1A1612` del favicon coincide con el `darkMode.light` de `quartz.config.yaml`.
+
+Los logos de materias mantienen sus identidades actuales.
 
 ## Animación futura
 

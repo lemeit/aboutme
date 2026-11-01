@@ -23,5 +23,5 @@ $$\theta = \arctan\frac{A_y}{A_x}$$
 ## Relacionado con
 
 - [[vector]]
-- [[conceptos/trigonometria|Trigonometría]]
-- [[conceptos/suma-de-vectores|Suma de vectores]]
+- [[trigonometria|Trigonometría]]
+- [[suma-de-vectores|Suma de vectores]]

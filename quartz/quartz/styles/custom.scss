@@ -38,3 +38,38 @@
     height: 1.6rem;
   }
 }
+
+// ---------------------------------------------------------------------------
+// Sin listado automático de artículos en las páginas de carpeta.
+//
+// El plugin folder-page agrega, debajo del índice escrito a mano, un bloque
+// con "N artículos en esta carpeta" y una lista con fechas. Duplica el índice
+// y agrega ruido: cada carpeta ya tiene su lista de conceptos redactada.
+// ---------------------------------------------------------------------------
+
+.page-listing {
+  display: none;
+}
+
+// ---------------------------------------------------------------------------
+// "Retroenlaces" -> "Conceptos relacionados".
+//
+// El plugin de backlinks trae su propio i18n y no se puede reescribir desde
+// quartz.config.yaml. Se conserva la métrica del h3 y se reemplaza el texto
+// visualmente con un pseudo-elemento.
+// ---------------------------------------------------------------------------
+
+.backlinks h3 {
+  position: relative;
+  color: transparent;
+}
+
+.backlinks h3::after {
+  content: "Conceptos relacionados";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--dark);
+  white-space: nowrap;
+}
+

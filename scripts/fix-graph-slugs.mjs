@@ -7,11 +7,16 @@
  * "mecanica" (sin barra). Al no coincidir, el grafo local de un área muestra un
  * solo punto en lugar de la red de subtemas.
  *
- * Qué hace: lleva claves y enlaces a la misma forma que usa el grafo al leer la
- * URL: sin "/index" final y sin barra final.
- *   "mecanica/index" -> "mecanica"
- *   "mecanica/"      -> "mecanica"
- * La raíz queda intacta: la clave "index" se normaliza a "/" en el navegador.
+ * Qué hace: lleva las CLAVES y los ENLACES a la misma forma que usa el grafo al
+ * leer la URL (sin "/index" final y sin barra final), pero deja intacto el campo
+ * "slug" de cada entrada.
+ *
+ * Por qué esa distinción: el grafo indexa por clave, y el Explorador arma el
+ * árbol con el campo "slug". Si se toca el slug, las páginas de carpeta se
+ * dibujan dos veces en el Explorador (como carpeta y como archivo suelto).
+ *
+ *   clave "mecanica/index" -> "mecanica"     (grafo)
+ *   slug  "mecanica/index" -> se conserva    (Explorador)
  *
  * Uso (después de `npx quartz build`, antes de copiar a public/conceptos):
  *   node scripts/fix-graph-slugs.mjs quartz/public/static/contentIndex.json
@@ -59,7 +64,7 @@ for (const [clave, valor] of Object.entries(indice)) {
     continue
   }
 
-  salida[nuevaClave] = { ...valor, slug: nuevaClave, links: nuevosEnlaces }
+  salida[nuevaClave] = { ...valor, links: nuevosEnlaces }
 }
 
 writeFileSync(RUTA, JSON.stringify(salida), "utf8")

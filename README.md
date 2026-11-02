@@ -120,6 +120,8 @@ Selector crítico: `:root[data-theme="dark"]` (no `.dark`) — coincide con la e
 ## Quartz — Mapa de conceptos (`/conceptos/`)
 
 El subdirectorio `quartz/` es un sitio Quartz v5 independiente, basado en notas Obsidian.
+
+Conceptos conserva el encabezado persistente del portal con «Prof. Luciano Lamaita», idiomas y enlaces a Proyectos, Apuntes y Sobre mí. El componente `quartz/quartz/components/PortalHeader.tsx` se monta fuera de la raíz de navegación SPA; los enlaces al portal usan navegación normal. Su hoja `quartz/quartz/static/portal-header.css` ajusta los paneles laterales al espacio del encabezado sin modificar las notas ni sus rutas.
 Se compila de forma independiente y se sirve en `profe.lemeit.ar/conceptos/`. En producción se publica **junto con Hugo en el mismo proyecto Cloudflare Pages**: la salida de Quartz se copia dentro de `public/conceptos/`.
 
 ### Configuración relevante (`quartz/quartz.config.yaml`)

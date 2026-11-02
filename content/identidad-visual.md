@@ -5,7 +5,7 @@ date = '2026-10-28'
 lastmod = '2026-10-28'
 author = 'Prof. Lamaita'
 math = true
-ShowToc = true
+ShowToc = false
 [build]
   list = 'never'
 +++

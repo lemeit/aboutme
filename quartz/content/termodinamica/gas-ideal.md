@@ -4,7 +4,6 @@ materia: "Física"
 tema: "Termodinámica"
 tags:
   - termodinamica
-  - gases
 ---
 
 # Gas ideal

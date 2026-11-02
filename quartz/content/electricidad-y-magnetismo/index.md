@@ -99,4 +99,4 @@ description: "Carga y campo eléctrico, potencial, capacitores, corriente, circu
 - [[resonancia-electrica|Resonancia]] — $\omega_0 = 1/\sqrt{LC}$
 - [[factor-potencia|Factor de potencia]]
 
-*Basado en Serway & Vuille, cap. 15–20. Las ondas electromagnéticas propiamente dichas están en [[ondas/ondas-electromagneticas-y-luz/index|Ondas Electromagnéticas y Luz]].*
+*Basado en Serway & Vuille, cap. 15–20. Las ondas electromagnéticas propiamente dichas están en [[ondas/index|Ondas]], sección «Ondas electromagnéticas y luz».*

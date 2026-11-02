@@ -53,5 +53,5 @@ Confundir el aumento con la potencia en dioptrías. La potencia es $1/f$; el aum
 ## Relaciones
 
 - **Necesitás antes:** [[ecuacion-lentes]]
-- **Esto te habilita:** lupa · microscopio compuesto
+- **Esto te habilita:** [[lupa]] · [[microscopio-compuesto]]
 - **Se aplica en:** [[lente-convergente]] · [[aumento-espejos]]

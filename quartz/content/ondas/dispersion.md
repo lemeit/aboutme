@@ -50,5 +50,5 @@ Decir que el prisma "pinta" la luz. Los colores ya estaban ahí; el prisma solo 
 ## Relaciones
 
 - **Necesitás antes:** [[refraccion]] · [[indice-refraccion]]
-- **Esto te habilita:** aberracion cromatica · [[espectro-electromagnetico]]
+- **Esto te habilita:** [[aberracion-cromatica]] · [[espectro-electromagnetico]]
 - **Se aplica en:** [[lente-convergente]] · arcoiris

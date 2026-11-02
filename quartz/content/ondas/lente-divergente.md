@@ -58,4 +58,4 @@ Pensar que no sirve porque "no forma imagen". Forma imagen virtual, y eso es exa
 
 - **Necesitás antes:** [[lente-convergente]]
 - **Esto te habilita:** [[ecuacion-lentes]]
-- **Se aplica en:** vision · [[aumento-lentes]]
+- **Se aplica en:** [[vision]] · [[aumento-lentes]]

@@ -14,37 +14,14 @@ Generado automáticamente por `scripts/mapa-cobertura.py` a partir del estado re
 | Gravitación | cap. 7 | 4 | 4 | 4 | 0 |
 | Materia | cap. 9 | 12 | 12 | 12 | 0 |
 | Termodinámica | cap. 10, 11, 12 | 34 | 35 | 35 | 0 |
-| Ondas | cap. 13, 14, 21–25 | 47 | 67 | 48 | 20 |
+| Ondas | cap. 13, 14, 21–25 | 67 | 67 | 68 | 0 |
 | Electricidad y magnetismo | cap. 15–20 | 11 | 70 | 11 | 59 |
-| Física moderna | cap. 26–30 | 7 | 74 | 7 | 67 |
-| **Total** |  | | **339** | **194** | **146** |
+| Física moderna | cap. 26–30 | 7 | 74 | 8 | 66 |
+| **Total** |  | | **339** | **215** | **125** |
 
-Cobertura de lo declarado: **57%**. Los 146 conceptos sin nota son los que hoy producen los enlaces roto del grafo.
+Cobertura de lo declarado: **63%**. Los 125 conceptos sin nota son los que hoy producen los enlaces roto del grafo.
 
 ## Conceptos que faltan, unidad por unidad
-
-### Ondas — cap. 13, 14, 21–25 (20)
-
-- `aberracion-cromatica`
-- `aberracion-esferica`
-- `anillos-newton`
-- `camara-fotografica`
-- `coherencia`
-- `diferencia-caminos`
-- `difraccion-rendija-simple`
-- `experimento-young`
-- `franjas-interferencia`
-- `holografia`
-- `laser`
-- `lupa`
-- `microscopio-compuesto`
-- `ojo-humano`
-- `pelicula-delgada`
-- `poder-resolucion`
-- `red-difraccion`
-- `telescopio-astronomico`
-- `telescopio-terrestre`
-- `vision`
 
 ### Electricidad y magnetismo — cap. 15–20 (59)
 
@@ -108,7 +85,7 @@ Cobertura de lo declarado: **57%**. Los 146 conceptos sin nota son los que hoy p
 - `velocidad-arrastre`
 - `voltimetro`
 
-### Física moderna — cap. 26–30 (67)
+### Física moderna — cap. 26–30 (66)
 
 - `agujeros-negros`
 - `antimateria`
@@ -151,7 +128,6 @@ Cobertura de lo declarado: **57%**. Los 146 conceptos sin nota son los que hoy p
 - `interaccion-gravitatoria`
 - `inversion-poblacional`
 - `isotopos`
-- `laser`
 - `leptones`
 - `ley-desintegracion`
 - `ley-stefan-boltzmann`

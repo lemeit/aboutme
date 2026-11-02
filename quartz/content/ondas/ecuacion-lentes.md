@@ -71,4 +71,4 @@ Imagen real a 15 cm del otro lado, con $M = -0{,}5$: invertida y a la mitad.
 
 - **Necesitás antes:** [[lente-convergente]] · [[espejo-esferico]]
 - **Esto te habilita:** [[aumento-lentes]]
-- **Se aplica en:** [[lente-divergente]] · microscopio compuesto
+- **Se aplica en:** [[lente-divergente]] · [[microscopio-compuesto]]

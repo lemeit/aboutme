@@ -6,7 +6,7 @@ Variante B «Pluma», elegida por Luciano Lamaita el 26 de octubre de 2026 a par
 
 - `static/images/logos/lemeit.svg`: símbolo naranja oscuro `#9B3D00` para fondos claros, transparente.
 - `static/images/logos/lemeit-oscuro.svg`: símbolo naranja `#C45A00` para fondos oscuros, transparente.
-- `static/favicon.svg`: adaptación óptica con trazo reforzado y fondo carbón `#1A1612`, diseñada para tamaños pequeños.
+- `static/favicon.svg`: adaptación óptica con trazo reforzado y fondo crema `#FAF7F2` y trazo naranja `#9B3D00`, diseñada para tamaños pequeños.
 
 La ruta del favicon permanece igual para conservar las referencias existentes. Una aplicación externa que use esa URL podrá mostrar el símbolo nuevo cuando renueve su caché; no se modifica desde este repositorio la configuración de la wiki de proyectos.
 
@@ -16,7 +16,7 @@ Desde el 1 de noviembre de 2026, el mapa de conceptos publicado en `/conceptos/`
 
 - `quartz/quartz/static/favicon.svg` es una copia exacta de `static/favicon.svg`; `Head.tsx` lo emite como `rel="icon" type="image/svg+xml"`.
 - `quartz/quartz/static/icon.png` (512 px) y `icon_2.png` (200 px) se rasterizaron desde ese mismo SVG. Se mantienen porque el plugin `favicon` de Quartz genera el `.ico` a partir de `icon.png` y porque los navegadores sin soporte de SVG usan el PNG.
-- Quartz conserva su propia tipografía (Inter) y su paleta; el fondo carbón `#1A1612` del favicon coincide con el `darkMode.light` de `quartz.config.yaml`.
+- Quartz conserva su propia tipografía (Inter) y su paleta. Desde el 2 de noviembre de 2026, el favicon utiliza la variante clara: fondo crema `#FAF7F2` y trazo naranja `#9B3D00`, independientemente del tema de la página. Los PNG de respaldo y el icono de Apple se actualizan desde el mismo SVG.
 
 Los logos de materias mantienen sus identidades actuales.
 

@@ -1,50 +1,42 @@
 import { loadQuartzConfig, loadQuartzLayout } from "./quartz/plugins/loader/config-loader"
 import * as ExternalPlugin from "./.quartz/plugins"
 
-// Orden lógico de aprendizaje (como en Serway & Vuille).
-// Usamos slugSegment (nombre de carpeta, ya limpio) en lugar de displayName
-// para evitar problemas de normalización de acentos.
-// slugSegment: "mecanica", "gravitacion", etc.
-
-const areaOrder = [
-  "mecanica",
-  "gravitacion",
-  "materia",
-  "termodinamica",
-  "ondas",
-  "electricidad-y-magnetismo",
-  "fisica-moderna",
-]
-
-const mecanicaOrder = ["fundamentos", "cinematica", "dinamica", "estatica", "energia"]
-
-const ondasOrder = ["ondas-electromagneticas-y-luz"]
-
-function priorityOf(slugSegment: string): number {
-  let idx = areaOrder.indexOf(slugSegment)
-  if (idx !== -1) return idx
-
-  idx = mecanicaOrder.indexOf(slugSegment)
-  if (idx !== -1) return 100 + idx
-
-  idx = ondasOrder.indexOf(slugSegment)
-  if (idx !== -1) return 200 + idx
-
-  return 9999
-}
+// Orden de lectura del portal (no alfabético): Mecánica, Gravitación, Materia,
+// Termodinámica, Ondas, Electricidad y Magnetismo, Física Moderna.
+//
+// La función de orden se serializa a texto y se evalúa en el navegador, así que
+// no puede referenciar nada de este módulo: el orden va declarado adentro.
 
 ExternalPlugin.Explorer({
   sortFn: (a: any, b: any) => {
-    // carpetas antes que notas
     if (a.isFolder && !b.isFolder) return -1
     if (!a.isFolder && b.isFolder) return 1
 
-    // slugSegment: nombre de carpeta limpio sin acentos (mecanica, gravitacion…)
-    const pa = priorityOf(a.slugSegment ?? "")
-    const pb = priorityOf(b.slugSegment ?? "")
-    if (pa !== pb) return pa - pb
+    const areas = [
+      "mecanica",
+      "gravitacion",
+      "materia",
+      "termodinamica",
+      "ondas",
+      "electricidad-y-magnetismo",
+      "fisica-moderna",
+    ]
+    const subareas: Record<string, number> = {
+      fundamentos: 0,
+      cinematica: 1,
+      dinamica: 2,
+      estatica: 3,
+      energia: 4,
+    }
 
-    // fallback: alfabético por displayName
+    const ia = areas.indexOf(a.slugSegment ?? "")
+    const ib = areas.indexOf(b.slugSegment ?? "")
+    if (ia !== -1 || ib !== -1) return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib)
+
+    const sa = subareas[a.slugSegment ?? ""]
+    const sb = subareas[b.slugSegment ?? ""]
+    if (sa !== undefined || sb !== undefined) return (sa ?? 99) - (sb ?? 99)
+
     return (a.displayName ?? "").localeCompare(b.displayName ?? "", "es", {
       numeric: true,
       sensitivity: "base",

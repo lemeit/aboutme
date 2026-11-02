@@ -47,8 +47,18 @@ try {
 const salida = {}
 let clavesCambiadas = 0
 let enlacesCambiados = 0
+let tagsDescartados = 0
 
 for (const [clave, valor] of Object.entries(indice)) {
+  // Las páginas de etiqueta no aportan al grafo: no tienen enlaces entrantes
+  // (los chips de etiqueta los genera un componente, no enlaces de markdown),
+  // así que quedaban como puntos sueltos rotulados "#…". Se dejan fuera del
+  // índice; las páginas siguen existiendo y funcionando.
+  if (clave.startsWith("tags/")) {
+    tagsDescartados += 1
+    continue
+  }
+
   const nuevaClave = normalizar(clave)
   if (nuevaClave !== clave) clavesCambiadas += 1
 
@@ -70,5 +80,6 @@ for (const [clave, valor] of Object.entries(indice)) {
 writeFileSync(RUTA, JSON.stringify(salida), "utf8")
 
 console.log(
-  `[fix-graph-slugs] ${clavesCambiadas} claves y ${enlacesCambiados} enlaces normalizados en ${RUTA}`,
+  `[fix-graph-slugs] ${clavesCambiadas} claves y ${enlacesCambiados} enlaces normalizados, ` +
+    `${tagsDescartados} páginas de etiqueta fuera del grafo, en ${RUTA}`,
 )

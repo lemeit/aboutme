@@ -13,13 +13,11 @@ Generado automáticamente por `scripts/mapa-cobertura.py` a partir del estado re
 | Mecánica › Energía | cap. 5, 8 | 13 | 13 | 13 | 0 |
 | Gravitación | cap. 7 | 1 | 4 | 1 | 3 |
 | Materia | cap. 9 | 12 | 12 | 12 | 0 |
-| Termodinámica | cap. 10, 11, 12 | 7 | 27 | 9 | 18 |
-| Termodinámica › Gases | cap. 11 | 1 | 9 | 1 | 8 |
-| Ondas | cap. 13, 14 | 5 | 26 | 5 | 21 |
-| Ondas › EM y luz · Óptica | cap. 21, 22–25 | 1 | 43 | 3 | 40 |
+| Termodinámica | cap. 10, 11, 12 | 8 | 35 | 9 | 26 |
+| Ondas | cap. 13, 14, 21–25 | 6 | 67 | 7 | 61 |
 | Electricidad y magnetismo | cap. 15–20 | 10 | 70 | 11 | 59 |
 | Física moderna | cap. 26–30 | 7 | 74 | 7 | 67 |
-| **Total** |  | | **342** | **113** | **229** |
+| **Total** |  | | **339** | **111** | **229** |
 
 Cobertura de lo declarado: **33%**. Los 229 conceptos sin nota son los que hoy producen los enlaces roto del grafo.
 
@@ -47,7 +45,7 @@ Cobertura de lo declarado: **33%**. Los 229 conceptos sin nota son los que hoy p
 - `energia-potencial-gravitatoria-general`
 - `leyes-kepler`
 
-### Termodinámica — cap. 10, 11, 12 (18)
+### Termodinámica — cap. 10, 11, 12 (26)
 
 - `calor-especifico`
 - `calor-latente`
@@ -57,56 +55,30 @@ Cobertura de lo declarado: **33%**. Los 229 conceptos sin nota son los que hoy p
 - `conduccion`
 - `conveccion`
 - `dilatacion`
+- `energia-interna-gas-ideal`
 - `escalas-temperatura`
 - `fusion`
-- `maquina-termica`
-- `proceso-irreversible`
-- `proceso-reversible`
-- `radiacion`
-- `refrigerador`
-- `sublimacion`
-- `tercera-ley-termodinamica`
-- `vaporizacion`
-
-### Termodinámica › Gases — cap. 11 (8)
-
-- `energia-interna-gas-ideal`
 - `ley-boyle`
 - `ley-charles`
 - `ley-gay-lussac`
+- `maquina-termica`
+- `proceso-irreversible`
+- `proceso-reversible`
 - `proceso-termodinamico`
+- `radiacion`
+- `refrigerador`
 - `sistema-termodinamico`
+- `sublimacion`
+- `tercera-ley-termodinamica`
 - `trabajo-gas`
+- `vaporizacion`
 - `variables-estado`
 
-### Ondas — cap. 13, 14 (21)
-
-- `amplitud`
-- `ecuacion-onda`
-- `energia-total-mas`
-- `frecuencia`
-- `frecuencia-angular`
-- `infrasonido`
-- `intensidad-sonora`
-- `longitud-de-onda`
-- `movimiento-armonico-simple`
-- `nivel-intensidad`
-- `numero-onda`
-- `onda-longitudinal`
-- `onda-transversal`
-- `ondas-estacionarias`
-- `pendulo-fisico`
-- `pendulo-simple`
-- `periodo`
-- `resonancia`
-- `ultrasonido`
-- `velocidad-onda`
-- `velocidad-sonido`
-
-### Ondas › EM y luz · Óptica — cap. 21, 22–25 (40)
+### Ondas — cap. 13, 14, 21–25 (61)
 
 - `aberracion-cromatica`
 - `aberracion-esferica`
+- `amplitud`
 - `anillos-newton`
 - `aumento-espejos`
 - `aumento-lentes`
@@ -117,7 +89,9 @@ Cobertura de lo declarado: **33%**. Los 229 conceptos sin nota son los que hoy p
 - `dispersion`
 - `ecuacion-espejos`
 - `ecuacion-lentes`
+- `ecuacion-onda`
 - `energia-onda-em`
+- `energia-total-mas`
 - `espectro-electromagnetico`
 - `espejo-concavo`
 - `espejo-convexo`
@@ -125,25 +99,43 @@ Cobertura de lo declarado: **33%**. Los 229 conceptos sin nota son los que hoy p
 - `espejo-plano`
 - `experimento-young`
 - `franjas-interferencia`
+- `frecuencia`
+- `frecuencia-angular`
 - `holografia`
 - `indice-refraccion`
+- `infrasonido`
+- `intensidad-sonora`
 - `laser`
 - `lente-convergente`
 - `lente-divergente`
+- `longitud-de-onda`
 - `lupa`
 - `microscopio-compuesto`
+- `movimiento-armonico-simple`
 - `naturaleza-luz`
+- `nivel-intensidad`
+- `numero-onda`
 - `ojo-humano`
+- `onda-longitudinal`
+- `onda-transversal`
 - `ondas-electromagneticas`
+- `ondas-estacionarias`
 - `pelicula-delgada`
+- `pendulo-fisico`
+- `pendulo-simple`
+- `periodo`
 - `poder-resolucion`
 - `red-difraccion`
 - `reflexion`
 - `reflexion-total-interna`
 - `refraccion`
+- `resonancia`
 - `telescopio-astronomico`
 - `telescopio-terrestre`
+- `ultrasonido`
 - `velocidad-luz`
+- `velocidad-onda`
+- `velocidad-sonido`
 - `vision`
 
 ### Electricidad y magnetismo — cap. 15–20 (59)

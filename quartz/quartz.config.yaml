@@ -163,6 +163,24 @@ plugins:
     enabled: true # cada etiqueta tiene su página con los conceptos que la usan
   - source: github:quartz-community/explorer
     enabled: true
+    options:
+      # Orden de lectura del portal, no alfabético. Se pasa como texto porque
+      # el plugin lo serializa y lo evalúa en el navegador; tiene que ser
+      # autocontenido. Es el mismo criterio que quartz.ts.
+      sortFn: |
+        (a, b) => {
+          if (a.isFolder && !b.isFolder) return -1
+          if (!a.isFolder && b.isFolder) return 1
+          const areas = ["mecanica", "gravitacion", "materia", "termodinamica", "ondas", "electricidad-y-magnetismo", "fisica-moderna"]
+          const subareas = { fundamentos: 0, cinematica: 1, dinamica: 2, estatica: 3, energia: 4 }
+          const ia = areas.indexOf(a.slugSegment || "")
+          const ib = areas.indexOf(b.slugSegment || "")
+          if (ia !== -1 || ib !== -1) return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib)
+          const sa = subareas[a.slugSegment]
+          const sb = subareas[b.slugSegment]
+          if (sa !== undefined || sb !== undefined) return (sa === undefined ? 99 : sa) - (sb === undefined ? 99 : sb)
+          return (a.displayName || "").localeCompare(b.displayName || "", "es", { numeric: true, sensitivity: "base" })
+        }
     layout:
       position: left
       priority: 50

@@ -29,9 +29,17 @@ description: "Temperatura, calor, gases y las leyes de la termodinámica."
 - [[conveccion|Convección]]
 - [[radiacion|Radiación]]
 
-## Gases
+## Sistemas y gases
 
-- [[termodinamica/gases/index|Gases]] — gas ideal, leyes de los gases
+- [[sistema-termodinamico|Sistema termodinámico]]
+- [[variables-estado|Variables de estado]] — $P$, $V$, $T$
+- [[proceso-termodinamico|Proceso termodinámico]]
+- [[gas-ideal|Gas ideal]] — $PV = nRT$
+- [[ley-boyle|Ley de Boyle]] — $PV = \text{cte}$ (T cte)
+- [[ley-charles|Ley de Charles]] — $V/T = \text{cte}$ (P cte)
+- [[ley-gay-lussac|Ley de Gay-Lussac]] — $P/T = \text{cte}$ (V cte)
+- [[trabajo-gas|Trabajo realizado por un gas]] — $W = \int P\,dV$
+- [[energia-interna-gas-ideal|Energía interna de un gas ideal]]
 
 ## Energía interna
 

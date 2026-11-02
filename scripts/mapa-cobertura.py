@@ -73,7 +73,7 @@ def capitulos(index_md: Path) -> str:
             continue
         segmento = m.group(0)
         corte = segmento.lower().index("cap.") + 4
-        segmento = segmento[corte:].split(".")[0]
+        segmento = segmento[corte:]
         tokens = []
         for trozo in TOKEN.finditer(segmento):
             ini = int(trozo.group(1))

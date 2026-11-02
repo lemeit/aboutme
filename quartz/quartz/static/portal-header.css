@@ -1,0 +1,28 @@
+:root{--portal-header-height:49px}
+html{scroll-padding-top:calc(var(--portal-header-height) + 16px)}
+.portal-header{position:sticky;top:0;z-index:20;background:var(--light);border-bottom:1px solid var(--lightgray);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.portal-header .portal-nav{max-width:1024px;margin:auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:48px}
+.portal-header a{color:var(--dark);text-decoration:none;background:none;white-space:nowrap}
+.portal-header a:hover{text-decoration:underline}
+.portal-identity,.portal-brand,.portal-languages{display:flex;align-items:center}
+.portal-brand{gap:9px;font-size:20px;font-weight:700}
+.portal-brand img{margin:0;width:30px;height:28px}
+.portal-languages{gap:8px;margin-left:12px;padding-left:12px;border-left:1px solid var(--gray);font-size:14px}
+.portal-languages a,.portal-menu a{color:var(--secondary);font-weight:400}
+.portal-menu{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-size:14px}
+#quartz-root .sidebar{top:var(--portal-header-height);height:calc(100dvh - var(--portal-header-height))}
+@media(max-width:800px){#quartz-root .sidebar.left{height:auto;position:static}}
+@media(max-width:1200px){#quartz-root .sidebar.right{height:auto;position:static}}
+@media(max-width:600px){
+ :root{--portal-header-height:77px}
+ .portal-header .portal-nav{flex-direction:column;align-items:stretch;gap:0;padding:0 12px}
+ .portal-identity{justify-content:space-between;min-height:40px}
+ .portal-brand{font-size:16px;gap:6px}
+ .portal-brand img{width:28px;height:27px}
+ .portal-languages{margin-left:4px;padding-left:6px;gap:7px;font-size:13px}
+ .portal-menu{justify-content:space-between;min-height:36px;align-items:center;gap:16px}
+}
+@media(max-width:380px){.portal-brand{font-size:14px}}
+@media print{.portal-header{display:none}}
+@media(max-width:800px){#quartz-root .sidebar.left{flex-wrap:wrap;row-gap:12px;min-width:0}}
+.portal-header a,.portal-header span{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}

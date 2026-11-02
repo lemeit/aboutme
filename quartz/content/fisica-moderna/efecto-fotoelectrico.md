@@ -29,6 +29,6 @@ Donde:
 ## Relacionado con
 
 - [[luz]] — Estímulo del efecto
-- [[fotón]] — Interpretación cuántica
+- [[foton]] — Interpretación cuántica
 - [[fisica-cuantica]] — Evidencia de la naturaleza cuántica
 - [[energia]] — Conservación de la energía

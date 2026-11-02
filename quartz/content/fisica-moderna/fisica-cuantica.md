@@ -19,6 +19,6 @@ Teoría que describe el comportamiento de la materia y la energía a escala ató
 ## Relacionado con
 
 - [[atomo]] — Estructura atómica
-- [[fotón]] — Partícula de luz
+- [[foton]] — Partícula de luz
 - [[efecto-fotoelectrico]] — Evidencia experimental
 - [[relatividad-especial]] — Combinada da la física de partículas

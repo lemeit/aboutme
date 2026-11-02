@@ -33,5 +33,5 @@ Si el torque neto externo es cero, el momento angular se conserva.
 
 - [[momentum-lineal]] — Análogo lineal
 - [[torque]] — Cambio de momento angular: $\vec{\tau} = \frac{d\vec{L}}{dt}$
-- [[mcp]] — Movimiento circular
+- [[mcu]] — Movimiento circular
 - [[planetas]] — Conservación del momento angular orbital

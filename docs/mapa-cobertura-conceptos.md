@@ -11,52 +11,17 @@ Generado automáticamente por `scripts/mapa-cobertura.py` a partir del estado re
 | Mecánica › Dinámica | cap. 4, 6, 7 | 28 | 29 | 29 | 0 |
 | Mecánica › Estática | cap. 8 | 2 | 3 | 3 | 0 |
 | Mecánica › Energía | cap. 5, 8 | 14 | 13 | 13 | 0 |
-| Gravitación | cap. 7 | 1 | 4 | 1 | 3 |
+| Gravitación | cap. 7 | 4 | 4 | 4 | 0 |
 | Materia | cap. 9 | 12 | 12 | 12 | 0 |
-| Termodinámica | cap. 10, 11, 12 | 8 | 35 | 9 | 26 |
+| Termodinámica | cap. 10, 11, 12 | 34 | 35 | 35 | 0 |
 | Ondas | cap. 13, 14, 21–25 | 7 | 67 | 8 | 60 |
 | Electricidad y magnetismo | cap. 15–20 | 11 | 70 | 11 | 59 |
 | Física moderna | cap. 26–30 | 7 | 74 | 7 | 67 |
-| **Total** |  | | **339** | **125** | **215** |
+| **Total** |  | | **339** | **154** | **186** |
 
-Cobertura de lo declarado: **37%**. Los 215 conceptos sin nota son los que hoy producen los enlaces roto del grafo.
+Cobertura de lo declarado: **45%**. Los 186 conceptos sin nota son los que hoy producen los enlaces roto del grafo.
 
 ## Conceptos que faltan, unidad por unidad
-
-### Gravitación — cap. 7 (3)
-
-- `campo-gravitatorio`
-- `energia-potencial-gravitatoria-general`
-- `leyes-kepler`
-
-### Termodinámica — cap. 10, 11, 12 (26)
-
-- `calor-especifico`
-- `calor-latente`
-- `capacidad-calorifica`
-- `ciclo-carnot`
-- `ciclo-termodinamico`
-- `conduccion`
-- `conveccion`
-- `dilatacion`
-- `energia-interna-gas-ideal`
-- `escalas-temperatura`
-- `fusion`
-- `ley-boyle`
-- `ley-charles`
-- `ley-gay-lussac`
-- `maquina-termica`
-- `proceso-irreversible`
-- `proceso-reversible`
-- `proceso-termodinamico`
-- `radiacion`
-- `refrigerador`
-- `sistema-termodinamico`
-- `sublimacion`
-- `tercera-ley-termodinamica`
-- `trabajo-gas`
-- `vaporizacion`
-- `variables-estado`
 
 ### Ondas — cap. 13, 14, 21–25 (60)
 

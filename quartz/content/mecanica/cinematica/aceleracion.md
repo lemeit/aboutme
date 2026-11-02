@@ -27,7 +27,7 @@ $$\vec{a} = \frac{\Delta \vec{v}}{\Delta t} = \frac{\vec{v}_f - \vec{v}_i}{t_f -
 - [[fuerza]] — Segunda ley de Newton: $\vec{F} = m\vec{a}$
 - [[mruv]] — Aceleración constante
 - [[caida-libre]] — $a = g = 9,8$ m/s²
-- [[mcp]] — Aceleración centrípeta: $a_c = \frac{v^2}{r}$
+- [[mcu]] — Aceleración centrípeta: $a_c = \frac{v^2}{r}$
 
 ## Ejemplo
 

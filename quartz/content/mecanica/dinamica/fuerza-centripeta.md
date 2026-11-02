@@ -9,7 +9,7 @@ tags:
 
 # Fuerza centrípeta
 
-Fuerza necesaria para mantener un cuerpo en [[mcp|movimiento circular]].
+Fuerza necesaria para mantener un cuerpo en [[mcu|movimiento circular]].
 
 ## Fórmula
 
@@ -29,7 +29,7 @@ $$F_c = m \frac{v^2}{r} = m\omega^2 r$$
 
 ## Relacionado con
 
-- [[mcp]] — Movimiento que requiere esta fuerza
+- [[mcu]] — Movimiento que requiere esta fuerza
 - [[aceleracion]] — $a_c = v^2/r$
 - [[gravedad]] — Fuerza centrípeta en órbitas
 - [[rozamiento]] — Fuerza centrípeta en curvas

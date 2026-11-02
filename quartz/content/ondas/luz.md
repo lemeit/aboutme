@@ -14,7 +14,7 @@ tags:
 
 - Velocidad en el vacío: $c = 3 \times 10^8$ m/s
 - Es un espectro: desde radio hasta rayos gamma
-- Comportamiento dual: onda y partícula ([[fotón]])
+- Comportamiento dual: onda y partícula ([[foton]])
 
 ## Espectro visible
 
@@ -28,7 +28,7 @@ tags:
 ## Relacionado con
 
 - [[onda]] — Comportamiento ondulatorio
-- [[fotón]] — Comportamiento corpuscular
+- [[foton]] — Comportamiento corpuscular
 - [[interferencia]] — Experimento de doble rendija
 - [[efecto-fotoelectrico]] — Comportamiento cuántico
 - [[relatividad-especial]] — Velocidad constante $c$

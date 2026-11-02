@@ -14,57 +14,14 @@ Generado automáticamente por `scripts/mapa-cobertura.py` a partir del estado re
 | Gravitación | cap. 7 | 4 | 4 | 4 | 0 |
 | Materia | cap. 9 | 12 | 12 | 12 | 0 |
 | Termodinámica | cap. 10, 11, 12 | 34 | 35 | 35 | 0 |
-| Ondas | cap. 13, 14, 21–25 | 27 | 67 | 28 | 40 |
+| Ondas | cap. 13, 14, 21–25 | 67 | 67 | 68 | 0 |
 | Electricidad y magnetismo | cap. 15–20 | 11 | 70 | 11 | 59 |
-| Física moderna | cap. 26–30 | 7 | 74 | 7 | 67 |
-| **Total** |  | | **339** | **174** | **166** |
+| Física moderna | cap. 26–30 | 7 | 74 | 8 | 66 |
+| **Total** |  | | **339** | **215** | **125** |
 
-Cobertura de lo declarado: **51%**. Los 166 conceptos sin nota son los que hoy producen los enlaces roto del grafo.
+Cobertura de lo declarado: **63%**. Los 125 conceptos sin nota son los que hoy producen los enlaces roto del grafo.
 
 ## Conceptos que faltan, unidad por unidad
-
-### Ondas — cap. 13, 14, 21–25 (40)
-
-- `aberracion-cromatica`
-- `aberracion-esferica`
-- `anillos-newton`
-- `aumento-espejos`
-- `aumento-lentes`
-- `camara-fotografica`
-- `coherencia`
-- `diferencia-caminos`
-- `difraccion-rendija-simple`
-- `dispersion`
-- `ecuacion-espejos`
-- `ecuacion-lentes`
-- `energia-onda-em`
-- `espectro-electromagnetico`
-- `espejo-concavo`
-- `espejo-convexo`
-- `espejo-esferico`
-- `espejo-plano`
-- `experimento-young`
-- `franjas-interferencia`
-- `holografia`
-- `indice-refraccion`
-- `laser`
-- `lente-convergente`
-- `lente-divergente`
-- `lupa`
-- `microscopio-compuesto`
-- `naturaleza-luz`
-- `ojo-humano`
-- `ondas-electromagneticas`
-- `pelicula-delgada`
-- `poder-resolucion`
-- `red-difraccion`
-- `reflexion`
-- `reflexion-total-interna`
-- `refraccion`
-- `telescopio-astronomico`
-- `telescopio-terrestre`
-- `velocidad-luz`
-- `vision`
 
 ### Electricidad y magnetismo — cap. 15–20 (59)
 
@@ -128,7 +85,7 @@ Cobertura de lo declarado: **51%**. Los 166 conceptos sin nota son los que hoy p
 - `velocidad-arrastre`
 - `voltimetro`
 
-### Física moderna — cap. 26–30 (67)
+### Física moderna — cap. 26–30 (66)
 
 - `agujeros-negros`
 - `antimateria`
@@ -171,7 +128,6 @@ Cobertura de lo declarado: **51%**. Los 166 conceptos sin nota son los que hoy p
 - `interaccion-gravitatoria`
 - `inversion-poblacional`
 - `isotopos`
-- `laser`
 - `leptones`
 - `ley-desintegracion`
 - `ley-stefan-boltzmann`

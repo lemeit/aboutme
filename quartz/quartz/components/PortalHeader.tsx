@@ -10,7 +10,7 @@ export default function PortalHeader() {
             <span>Prof. Luciano Lamaita</span>
           </a>
           <div class="portal-languages" aria-label="Idioma / Language">
-            <a href="/" lang="es" hreflang="es" data-router-ignore>ES</a>
+            <a href="/" lang="es" hreflang="es" aria-current="true" title="Español · idioma actual" data-router-ignore>ES</a>
             <a href="/en/" lang="en" hreflang="en" data-router-ignore>EN</a>
             <a href="/zh/" lang="zh" hreflang="zh" data-router-ignore>中文</a>
           </div>

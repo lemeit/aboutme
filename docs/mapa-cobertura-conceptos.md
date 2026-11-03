@@ -15,75 +15,43 @@ Generado automáticamente por `scripts/mapa-cobertura.py` a partir del estado re
 | Materia | cap. 9 | 12 | 12 | 12 | 0 |
 | Termodinámica | cap. 10, 11, 12 | 34 | 35 | 35 | 0 |
 | Ondas | cap. 13, 14, 21–25 | 67 | 67 | 68 | 0 |
-| Electricidad y magnetismo | cap. 15–20 | 11 | 70 | 11 | 59 |
+| Electricidad y magnetismo | cap. 15–20 | 43 | 70 | 43 | 27 |
 | Física moderna | cap. 26–30 | 7 | 74 | 8 | 66 |
-| **Total** |  | | **339** | **215** | **125** |
+| **Total** |  | | **339** | **247** | **93** |
 
-Cobertura de lo declarado: **63%**. Los 125 conceptos sin nota son los que hoy producen los enlaces roto del grafo.
+Cobertura de lo declarado: **73%**. Los 93 conceptos sin nota son los que hoy producen los enlaces roto del grafo.
 
 ## Conceptos que faltan, unidad por unidad
 
-### Electricidad y magnetismo — cap. 15–20 (59)
+### Electricidad y magnetismo — cap. 15–20 (27)
 
-- `amperimetro`
 - `autoinductancia`
-- `campo-carga-puntual`
-- `campo-disco-cargado`
-- `campo-hilo-cargado`
 - `campo-hilo-corrriente`
-- `capacitancia`
-- `capacitor`
 - `capacitor-ca`
-- `capacitor-placas-paralelas`
-- `capacitores-paralelo`
-- `capacitores-serie`
 - `circuito-rl`
 - `circuito-rlc`
-- `conductividad`
-- `conductores-aislantes`
-- `constante-coulomb`
 - `constante-tiempo-rl`
 - `corriente-alterna`
-- `densidad-corriente`
 - `diamagnetismo`
-- `diferencia-potencial`
-- `dipolo-electrico`
-- `energia-almacenada-capacitor`
-- `energia-electrica`
 - `energia-inductor`
-- `energia-potencial-electrica`
 - `factor-potencia`
 - `ferromagnetismo`
 - `flujo-magnetico`
 - `fuerza-conductor`
-- `fuerza-electromotriz`
 - `fuerza-magnetica`
 - `inductor`
 - `inductor-ca`
 - `ley-ampere`
 - `ley-biot-savart`
-- `ley-conservacion-carga`
 - `ley-faraday`
-- `ley-kirchhoff-mallas`
-- `ley-kirchhoff-nodos`
 - `ley-lenz`
-- `lineas-campo-electrico`
 - `lineas-campo-magnetico`
 - `par-fuerzas`
 - `paramagnetismo`
-- `puente-wheatstone`
 - `resistencia-ca`
-- `resistencia-interna`
-- `resistencias-paralelo`
-- `resistencias-serie`
-- `resistividad`
 - `resonancia-electrica`
 - `solenide`
-- `superficie-equipotencial`
-- `trabajo-campo-electrico`
 - `unidad-campo-magnetico`
-- `velocidad-arrastre`
-- `voltimetro`
 
 ### Física moderna — cap. 26–30 (66)
 

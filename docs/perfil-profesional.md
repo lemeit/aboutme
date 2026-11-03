@@ -41,3 +41,7 @@ Los tres resúmenes (ES, EN y ZH) incluyen docencia de física y química en com
 ## Revisión v04 — jerarquía del lateral
 
 En ES, EN y ZH, la formación académica pasa a la primera página después del contacto y los enlaces. Las competencias se presentan como ítems con viñetas y sangría francesa. Herramientas e idiomas pasan a la segunda página, junto a capacitación y redes. Se mantienen dos páginas, las tres publicaciones y los datos de contacto públicos. El código de descarga y del pie usa v04.
+
+## Visor del resumen
+
+El shortcode `cv-downloads` muestra el PDF correspondiente al idioma dentro de un iframe con título accesible y carga diferida. Debajo quedan Descargar CV (nombre versionado) y Abrir PDF en otra pestaña, disponibles también en navegadores móviles sin visor integrado. Se conservan las rutas de los tres PDF. Los estilos del visor se limitan al perfil; no se modifica el contenido de los PDF ni Quartz.

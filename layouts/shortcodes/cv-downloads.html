@@ -1,9 +1,15 @@
-<div class="profile-downloads" aria-label="{{ if eq .Page.Language.Lang "zh" }}下载简历{{ else if eq .Page.Language.Lang "en" }}Download résumé{{ else }}Descargar resumen profesional{{ end }}">
-  {{ if eq .Page.Language.Lang "zh" }}
-  <a href="{{ "cv/luciano-lamaita-resumen-zh.pdf" | relURL }}" download="CV-LL-26-RES-ZH-v04.pdf" lang="zh-CN"><strong>职业简历</strong><span>简体中文 · PDF · 2 页</span></a>
-  {{ else if eq .Page.Language.Lang "en" }}
-  <a href="{{ "cv/luciano-lamaita-resumen-en.pdf" | relURL }}" download="CV-LL-26-RES-EN-v04.pdf" lang="en"><strong>Professional résumé</strong><span>English · PDF · 2 pages</span></a>
-  {{ else }}
-  <a href="{{ "cv/luciano-lamaita-resumen-es.pdf" | relURL }}" download="CV-LL-26-RES-ES-v04.pdf" lang="es"><strong>Resumen profesional</strong><span>Español · PDF · 2 páginas</span></a>
-  {{ end }}
+{{- $lang := .Page.Language.Lang -}}
+{{- $labels := dict "title" "Resumen profesional en español" "download" "Descargar CV" "open" "Abrir PDF" "meta" "Español · PDF · 2 páginas" -}}
+{{- if eq $lang "en" -}}
+  {{- $labels = dict "title" "Professional résumé in English" "download" "Download CV" "open" "Open PDF" "meta" "English · PDF · 2 pages" -}}
+{{- else if eq $lang "zh" -}}
+  {{- $labels = dict "title" "中文职业简历" "download" "下载简历" "open" "打开 PDF" "meta" "简体中文 · PDF · 2 页" -}}
+{{- end -}}
+{{- $pdf := printf "cv/luciano-lamaita-resumen-%s.pdf" $lang | relURL -}}
+<div class="profile-cv" aria-label="{{ $labels.title }}">
+  <iframe class="profile-cv-viewer" src="{{ $pdf }}#view=FitH" title="{{ $labels.title }}" loading="lazy"></iframe>
+  <div class="profile-downloads">
+    <a href="{{ $pdf }}" download="CV-LL-26-RES-{{ upper $lang }}-v04.pdf"><strong>{{ $labels.download }}</strong><span>{{ $labels.meta }}</span></a>
+    <a href="{{ $pdf }}" target="_blank" rel="noopener"><strong>{{ $labels.open }}</strong><span>{{ $labels.meta }}</span></a>
+  </div>
 </div>

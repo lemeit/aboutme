@@ -33,3 +33,14 @@
 .lang-menu a[aria-current="page"] { font-weight: 700; text-decoration: underline; text-underline-offset: .3em; }
 .lang-menu a { padding: .25rem; }
 :root[data-theme="dark"] .header-nav a { color: #F3A66A !important; }
+
+/* Visor nativo del resumen, con acciones siempre disponibles como alternativa. */
+.profile-cv { margin-top: 1.2rem; }
+.profile-cv-viewer { display: block; width: 100%; height: 780px; height: min(85vh, 900px); min-height: 480px; border: 1px solid var(--border); border-radius: 8px; background: var(--code-bg); }
+.profile-cv .profile-downloads { margin-top: .8rem; }
+@media (max-width: 599px) {
+  .profile-cv-viewer { height: 65vh; min-height: 360px; }
+}
+@media print {
+  .profile-cv-viewer { display: none; }
+}

@@ -1,6 +1,6 @@
 ---
 title: "Velocidad de arrastre"
-description: "Los electrones avanzan lentísimo por el cable, aunque la luz se encienda al instante."
+description: "Los electrones avanzan lentísimo por el cable, aunque la señal eléctrica se propague mucho más rápido."
 materia: "Física"
 tema: "Electricidad y Magnetismo"
 tags:
@@ -14,18 +14,18 @@ tags:
 ## Fórmula
 
 $$
-v_d = \frac{I}{n\,q\,A}
+v_d = \frac{I}{n\,|q|\,A}
 $$
 
 - $n$: número de portadores libres por m³
-- $q$: carga de cada portador ($1{,}6\times10^{-19}$ C para el electrón)
+- $|q|$: módulo de la carga de cada portador ($1{,}6\times10^{-19}$ C para el electrón). La carga del electrón es negativa; estas expresiones relacionan módulos.
 - $A$: sección del conductor
 
 ## El dato que sorprende
 
 En un cable de cobre típico, la velocidad de arrastre es de **décimas de milímetro por segundo**. Un electrón tarda horas en recorrer un metro.
 
-Entonces, ¿por qué la luz se enciende al instante? Porque lo que se propaga casi a la velocidad de la luz es el **campo eléctrico**, no los electrones. El campo pone en movimiento a todos los portadores del cable a la vez.
+Entonces, ¿por qué la luz se enciende al instante? Porque una perturbación electromagnética se propaga por el circuito mucho más rápido que la deriva de los electrones. Su velocidad depende de la geometría y los materiales del circuito: no actúa instantáneamente ni pone a todos los portadores en movimiento a la vez.
 
 ## Por qué es tan lenta
 
@@ -36,7 +36,7 @@ Es como gente caminando en una multitud: cada uno se mueve rápido, pero el grup
 ## Relación con la densidad de corriente
 
 $$
-J = n\,q\,v_d
+J = n\,|q|\,v_d
 $$
 
 Si la sección se reduce, la densidad de corriente sube y con ella la velocidad de arrastre: en un cable más fino, los electrones avanzan más rápido.

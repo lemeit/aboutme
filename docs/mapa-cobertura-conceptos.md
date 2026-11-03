@@ -14,12 +14,12 @@ Generado automáticamente por `scripts/mapa-cobertura.py` a partir del estado re
 | Gravitación | cap. 7 | 4 | 4 | 4 | 0 |
 | Materia | cap. 9 | 12 | 12 | 12 | 0 |
 | Termodinámica | cap. 10, 11, 12 | 34 | 35 | 35 | 0 |
-| Ondas | cap. 13, 14, 21–25 | 67 | 67 | 68 | 0 |
+| Ondas | cap. 13, 14, 21–25 | 67 | 67 | 67 | 0 |
 | Electricidad y magnetismo | cap. 15–20 | 43 | 70 | 43 | 27 |
 | Física moderna | cap. 26–30 | 7 | 74 | 8 | 66 |
-| **Total** |  | | **339** | **247** | **93** |
+| **Total** |  | | **339** | **246** | **93** |
 
-Cobertura de lo declarado: **73%**. Los 93 conceptos sin nota son los que hoy producen los enlaces roto del grafo.
+Cobertura de lo declarado: **73%**. Quedan **93 entradas planificadas sin nota**. La auditoría de enlaces también puede detectar referencias fuera de esos índices.
 
 ## Conceptos que faltan, unidad por unidad
 

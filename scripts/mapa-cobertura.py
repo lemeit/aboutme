@@ -109,7 +109,7 @@ def main() -> int:
         declarados = {}
         for e in enlaces:
             declarados.setdefault(e["destino"], e["existe"])
-        existentes = len([e for e in enlaces if e["existe"]])
+        existentes = sum(1 for existe in declarados.values() if existe)
         faltantes = sorted(d for d, ok in declarados.items() if not ok)
         filas.append(
             {
@@ -155,7 +155,7 @@ def main() -> int:
     cobertura = (total_exist / total_decl * 100) if total_decl else 0
     lineas.append(
         f"Cobertura de lo declarado: **{cobertura:.0f}%**. "
-        f"Los {total_falt} conceptos sin nota son los que hoy producen los enlaces roto del grafo.\n"
+        f"Quedan **{total_falt} entradas planificadas sin nota**. La auditoría de enlaces también puede detectar referencias fuera de esos índices.\n"
     )
 
     lineas.append("## Conceptos que faltan, unidad por unidad\n")

@@ -13,6 +13,8 @@ tags:
 
 ## Fórmula
 
+Se desprecia el efecto de borde: la separación es mucho menor que las dimensiones laterales de las placas.
+
 $$
 C = \frac{\varepsilon_0\, A}{d}
 $$
@@ -35,11 +37,13 @@ $$
 
 ## El campo entre las placas
 
-Lejos de los bordes, el campo es **uniforme**:
+En vacío (aproximadamente en aire), lejos de los bordes, el campo es **uniforme**:
 
 $$
 E = \frac{V}{d} = \frac{\sigma}{\varepsilon_0}
 $$
+
+Aquí $\sigma$ es el módulo de la carga libre por unidad de área. Con un dieléctrico lineal que llena el espacio, se reemplaza $\varepsilon_0$ por $\varepsilon_r\varepsilon_0$.
 
 Es el caso práctico de campo uniforme que se usa en todos los problemas de partículas cargadas entre placas.
 

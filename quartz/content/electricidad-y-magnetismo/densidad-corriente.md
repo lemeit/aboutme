@@ -21,21 +21,21 @@ $$
 - $I$: corriente, en A
 - $A$: sección transversal, en m²
 
-Es vectorial y apunta en el sentido de la corriente convencional.
+La densidad de corriente es vectorial; $J=I/A$ expresa su módulo si el flujo es uniforme y perpendicular a la sección. Apunta en el sentido de la corriente convencional.
 
 ## Por qué es útil
 
 Dos cables pueden llevar la misma corriente con secciones muy distintas. La densidad dice cuál está más exigido: es la que decide si un conductor se calienta demasiado.
 
-Un cable de 1 mm² con 10 A va a 10 A/mm² = $10^7$ A/m², que ya es mucho para uso continuo.
+Un cable de 1 mm² con 10 A va a 10 A/mm² = $10^7$ A/m², sin que ese cálculo determine por sí solo una corriente admisible: también intervienen el material, la aislación y las condiciones térmicas.
 
 ## La forma microscópica
 
 $$
-J = n\,q\,v_d
+\vec{J} = n\,q\,\vec{v}_d
 $$
 
-con $n$ la densidad de portadores, $q$ la carga de cada uno y $v_d$ la [[velocidad-arrastre]]. Ahí se ve el vínculo entre la descripción macroscópica y el movimiento de los electrones.
+con $n$ la densidad de portadores, $q$ su carga con signo y $\vec{v}_d$ su velocidad media vectorial de [[velocidad-arrastre]]. Para electrones, la corriente convencional y la deriva tienen sentidos opuestos; en módulos, $J=n|q|v_d$. Ahí se ve el vínculo entre la descripción macroscópica y el movimiento de los electrones.
 
 ## La ley de Ohm microscópica
 

@@ -21,7 +21,7 @@ Las tres son la misma cosa, con $Q = CV$. Se elige la que convenga según qué d
 
 ## Dónde está la energía
 
-No está "en las placas" sino en el **campo eléctrico** entre ellas. Se puede calcular a partir del campo:
+No está "en las placas" sino en el **campo eléctrico** entre ellas. Para un campo uniforme en el vacío, se puede calcular a partir del campo:
 
 $$
 U = \tfrac{1}{2}\varepsilon_0 E^2 \cdot \text{volumen}
@@ -35,7 +35,7 @@ El capacitor guarda energía lentamente (segundos) y la entrega de golpe (milise
 
 ## Comparación con una batería
 
-Un capacitor guarda mucha menos energía por kilo, pero la entrega **muy rápido** y sin desgastarse. Por eso se usa en flashes, desfibriladores y sistemas que necesitan picos de potencia.
+Un capacitor convencional suele guardar menos energía por kilo que una batería, pero puede entregarla **muy rápido**. Tiene pérdidas y una vida útil finita. Por eso se usa en flashes, desfibriladores y sistemas que necesitan picos de potencia.
 
 ## La fórmula del $\tfrac{1}{2}$
 

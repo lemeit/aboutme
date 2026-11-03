@@ -13,16 +13,18 @@ tags:
 
 ## Fórmula
 
+Para un campo electrostático y con $\Delta V=V_B-V_A$:
+
 $$
-W = q\,\Delta V = -\Delta E_p
+W_{\text{campo}} = -q\,\Delta V = -\Delta E_p
 $$
 
-- Si $W > 0$: el campo entrega energía a la carga (la acelera).
-- Si $W < 0$: hay que hacer trabajo externo contra el campo.
+- Si $W > 0$: el campo aporta energía cinética a la carga. El cambio total también depende del trabajo de otras fuerzas.
+- Si $W < 0$: el campo resta energía cinética. Para realizar ese desplazamiento sin cambiar la energía cinética, un agente externo debe aportar trabajo positivo.
 
 ## No depende del camino
 
-El campo eléctrico es **conservativo**: el trabajo entre dos puntos es el mismo por cualquier trayectoria. Por eso se puede definir una [[energia-potencial-electrica]] y hablar de "potencial" en cada punto.
+El campo electrostático es **conservativo**: el trabajo entre dos puntos es el mismo por cualquier trayectoria. Por eso se puede definir una [[energia-potencial-electrica]] y hablar de "potencial" en cada punto.
 
 Si se va y se vuelve al mismo punto, el trabajo neto del campo es cero.
 

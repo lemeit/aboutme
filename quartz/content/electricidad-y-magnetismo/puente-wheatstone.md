@@ -21,9 +21,11 @@ Dos ramas en paralelo, cada una con dos resistencias, y un galvanómetro entre l
              |
            (G)
              |
-  D --/\/\--E--/\/\-- C
+  A --/\/\--E--/\/\-- C
       R3        Rx
 ```
+
+La fuente se conecta entre los nodos $A$ y $C$; los dos extremos izquierdos del dibujo representan el mismo nodo $A$.
 
 ## La condición de equilibrio
 
@@ -43,7 +45,7 @@ Como no circula corriente por el galvanómetro, no hay error de carga: el métod
 
 ## Por qué es tan preciso
 
-No depende de la exactitud del galvanómetro ni del voltaje de la fuente: solo de la relación entre resistencias. Por eso sirve para medir con precisión de décimas de por mil.
+La condición ideal de equilibrio depende de la relación entre resistencias, no del voltaje de la fuente. La precisión real depende de las tolerancias y la estabilidad térmica de las resistencias, las conexiones y la sensibilidad del detector de cero.
 
 ## Aplicaciones
 

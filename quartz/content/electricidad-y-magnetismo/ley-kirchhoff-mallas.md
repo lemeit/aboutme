@@ -17,7 +17,7 @@ $$
 \sum \Delta V = 0
 $$
 
-a lo largo de cualquier lazo cerrado.
+a lo largo de una malla en el modelo de circuito concentrado de corriente continua. Se supone que no hay un flujo magnético variable enlazando la malla; si lo hay, debe incluirse la fem inducida.
 
 ## De dónde sale
 

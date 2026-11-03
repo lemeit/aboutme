@@ -17,10 +17,10 @@ $$
 \Delta V = V_B - V_A = -\int_A^B \vec{E}\cdot d\vec{r}
 $$
 
-Para un campo uniforme (como entre placas paralelas), se simplifica:
+Para un campo electrostático uniforme y un desplazamiento de longitud $d$ **en el sentido del campo**, se simplifica:
 
 $$
-\Delta V = E\,d
+\Delta V = -E\,d
 $$
 
 - $\Delta V$: diferencia de potencial, en volt (V) = J/C
@@ -28,7 +28,7 @@ $$
 
 ## Qué significa el signo
 
-El campo apunta siempre hacia donde el potencial **baja**. Una carga positiva se mueve espontáneamente hacia potenciales menores, y una negativa al revés.
+El campo electrostático apunta hacia donde el potencial **baja**. Una carga positiva inicialmente en reposo acelera en ese sentido; una negativa, en el contrario. Si la carga ya tiene velocidad u otras fuerzas actúan, su trayectoria no tiene por qué seguir una línea de campo.
 
 $$
 E = -\frac{\Delta V}{d}

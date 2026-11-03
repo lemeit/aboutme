@@ -13,7 +13,7 @@ tags:
 
 ## El resultado
 
-Para un disco de radio $R$ con densidad superficial $\sigma$, sobre su eje a distancia $x$:
+Para un disco de radio $R$ con densidad superficial $\sigma$, sobre su eje a distancia $x>0$ sobre uno de sus lados. Se toma $\sigma>0$; la expresión da la componente axial saliente:
 
 $$
 E = \frac{\sigma}{2\varepsilon_0}\left(1 - \frac{x}{\sqrt{x^2 + R^2}}\right)
@@ -31,7 +31,7 @@ $$
 E \approx \frac{\sigma}{2\varepsilon_0}
 $$
 
-Es el campo de una **lámina infinita**: constante, no depende de la distancia. Es el caso del campo entre las placas de un capacitor.
+Es el campo de una **lámina infinita**: constante, no depende de la distancia. En un capacitor ideal, dos placas opuestas aportan cada una ese módulo: entre ellas los campos se suman y resulta $E=\sigma/\varepsilon_0$ en el vacío.
 
 **Muy lejos** ($x \gg R$): el campo se comporta como el de una carga puntual con la carga total del disco.
 

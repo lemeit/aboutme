@@ -37,10 +37,10 @@ Porque tienen electrones libres: en el cobre hay uno por átomo que puede movers
 La conductividad depende de cuántos portadores hay y de cuán seguido chocan:
 
 $$
-\sigma = n\,q\,\mu
+\sigma = n\,|q|\,\mu
 $$
 
-con $\mu$ la movilidad.
+con $\mu$ la movilidad positiva y $|q|$ el módulo de la carga, para un solo tipo de portador.
 
 ## Semiconductores
 

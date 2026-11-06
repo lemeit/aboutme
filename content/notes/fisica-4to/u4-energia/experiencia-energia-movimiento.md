@@ -1,6 +1,6 @@
 +++
 title = 'Experiencia: medir el movimiento y estimar la energía'
-lastmod = "2026-10-23"
+lastmod = "2026-11-06"
 date = '2026-10-21'
 weight = 3
 draft = false
@@ -11,6 +11,18 @@ description = 'Medición con cinta u odómetro, carrera, cronometraje, estadíst
 ¿Podés estimar tu energía cinética al correr? Vas a medir masa, distancia y tiempo, comparar intentos y analizar qué información aporta un video. La actividad retoma la unidad de **mediciones**: elegir instrumentos, registrar unidades y resolución, estimar incertidumbres y distinguir datos de resultados calculados.
 
 Usá la [guía completa de la unidad](../guia-clase/) y las [deducciones de las ecuaciones](../deducciones-energia/) para interpretar tus resultados.
+
+### Para empezar: correr, registrar y calcular en grupos
+
+[**Descargar la planilla sencilla para 30 participantes (Excel)**](/files/energia-cinetica-grupos.xlsx)
+
+Primero corran y registren los datos de la clase en **1 Registrar**: distancia común del tramo, masa de cada participante, hasta tres tiempos por persona y el grupo que analizará sus datos. Pueden usar cronómetro y guardar la filmación para más adelante: no necesitan manejar Tracker para empezar.
+
+Después, cada grupo busca sus participantes en **2 Calcular en grupo**. La hoja trae los datos y muestra las cuentas paso a paso: distancia dividida por tiempo, rapidez al cuadrado y energía cinética estimada. Las celdas amarillas se completan; las verdes calculan solas. Desarrollen al menos una cuenta a mano, con unidades, para comprobar el resultado. Incluye un ejemplo inventado y pautas para filmar.
+
+Para estimar la energía con la rapidez media, entren al tramo ya en movimiento e intenten mantener el ritmo. Si aceleran mucho, el resultado no representa la energía del instante final.
+
+### Planilla completa: mediciones, estadística y Tracker
 
 [**Descargar la planilla de mediciones y video (Excel)**](/files/energia-movimiento.xlsx)
 

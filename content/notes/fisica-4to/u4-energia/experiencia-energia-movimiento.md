@@ -14,7 +14,7 @@ Usá la [guía completa de la unidad](../guia-clase/) y las [deducciones de las 
 
 ### Para empezar: correr, registrar y calcular en grupos
 
-[**Descargar la planilla sencilla para 30 participantes (Excel)**](/files/energia-cinetica-grupos.xlsx)
+[**Descargar la planilla sencilla para 10 participantes (Excel)**](/files/energia-cinetica-grupos.xlsx)
 
 Primero corran y registren los datos de la clase en **1 Registrar**: distancia común del tramo, masa de cada participante, hasta tres tiempos por persona y el grupo que analizará sus datos. Pueden usar cronómetro y guardar la filmación para más adelante: no necesitan manejar Tracker para empezar.
 

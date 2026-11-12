@@ -4,7 +4,7 @@ summary = "利用 PurpleAir 和 AirGradient 传感器开展校园环境监测，
 title = "Aire Escolar"
 description = "利用 PurpleAir 和 AirGradient 传感器开展校园环境监测，提供颗粒物、CO₂、NOₓ 和实时空气质量数据。"
 weight = 1
-lastmod = "2026-10-27"
+lastmod = "2026-11-12"
 draft = false
 +++
 
@@ -37,3 +37,9 @@ PurpleAir 设备通过 2024 年 PurpleAir Collective 计划获赠。项目既包
 ---
 
 本中文概述介绍项目目标与主要功能。[阅读完整的西班牙语项目文档](/projects/aq-saladillo/)。
+
+## 2026年11月12日状态
+
+AE-00 至 AE-04 共五台 PurpleAir 已注册并纳入 LEMEIT 采集配置。负责人确认 AE-02 已安装在学校；面向 Esc. Agraria C.M. Casares (EAS Del Valle) 的 AE-04（298873）仍在测试，尚未安装在学校。AE-04 的 PurpleAir 注册日期为 **2026年11月12日**，不能视为现场安装日期。当天已核实 AE-02 和 AE-04 的新读数及地图显示。
+
+PurpleAir 维持每 **30分钟（每小时 :27/:57）**采集一次，不增加调用频率。Worker Cron 和 GitHub Actions 定时采集保持暂停。前端拟将读数新鲜度阈值从25分钟改为 **40分钟**，尚待发布；这表示读数时间，不代表设备的物理开关状态。AirGradient 历史读数不能证明当前在线。[技术记录](https://github.com/lemeit/lemeit-aq/pull/32)。

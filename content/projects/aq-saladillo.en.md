@@ -4,7 +4,7 @@ summary = "School environmental monitoring with PurpleAir and AirGradient sensor
 title = "Aire Escolar"
 description = "School environmental monitoring with PurpleAir and AirGradient sensors: particulate matter, CO₂, NOₓ and real-time air-quality data."
 weight = 1
-lastmod = "2026-10-27"
+lastmod = "2026-11-12"
 draft = false
 +++
 
@@ -38,3 +38,9 @@ Related projects: [weather stations](/en/projects/ema-saladillo/) and [water qua
 
 This English overview presents the project’s purpose and main features. [Read the full project documentation in Spanish](/projects/aq-saladillo/).
 
+
+## Status on 12 November 2026
+
+Five PurpleAir devices (AE-00 through AE-04) are registered and configured for LEMEIT ingestion. The owner confirms AE-02 is installed at its school; AE-04 (298873), assigned to Esc. Agraria C.M. Casares (EAS Del Valle), is still undergoing testing and is not installed there. AE-04 was registered with PurpleAir on **12 November 2026**; physical installation is a separate event. New readings and map entries for AE-02 and AE-04 were verified that day.
+
+PurpleAir ingestion remains every **30 minutes (:27/:57)** through cron-job.org. Worker cron and GitHub Actions scheduling are paused. The owner authorized a **40-minute freshness limit** for the frontend, replacing the incompatible 25-minute limit. This does not increase polling and does not diagnose physical power status. AirGradient connectivity is not established by its retained historical readings. [Technical record](https://github.com/lemeit/lemeit-aq/pull/32).

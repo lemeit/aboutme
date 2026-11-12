@@ -2,20 +2,20 @@
 summary = "Monitoreo ambiental escolar con sensores PurpleAir y AirGradient — PM2.5/PM10, CO2, NOx y AQI en tiempo real."
 title = 'Aire Escolar'
 date = '2026-08-23'
-lastmod = '2026-09-16'
+lastmod = "2026-11-12"
 weight = 1
 draft = false
 tags = ['calidad de aire', 'PurpleAir', 'AirGradient', 'IoT', 'Cloudflare D1', 'GitHub Actions']
 description = 'Monitoreo ambiental escolar con sensores PurpleAir y AirGradient — PM2.5/PM10, CO2, NOx y AQI en tiempo real.'
 +++
 
-Red de sensores [PurpleAir](https://www.purpleair.com) y [AirGradient](https://www.airgradient.com/) instalada en instituciones educativas de la Provincia de Buenos Aires para la determinación de material particulado (PM1.0/PM2.5/PM10), temperatura, humedad, presión, VOC, CO2 y NOx en tiempo real. Publicado en [app.lemeit.ar/aq](https://app.lemeit.ar/aq).
+Red de sensores [PurpleAir](https://www.purpleair.com) y [AirGradient](https://www.airgradient.com/) destinada a instituciones educativas de la Provincia de Buenos Aires, con equipos instalados y otros todavía en pruebas, para la determinación de material particulado (PM1.0/PM2.5/PM10), temperatura, humedad, presión, VOC, CO2 y NOx en tiempo real. Publicado en [app.lemeit.ar/aq](https://app.lemeit.ar/aq).
 
 ## Sensores
 
-**Flota PurpleAir**: 5 unidades Flex (sensor de gas BME688 incluido, reporta PM, temperatura, humedad, presión y VOC). Una instalada y activa; las otras 4 pendientes de instalación en distintas instituciones. Las unidades fueron una donación de [PurpleAir Collective](https://community.purpleair.com/t/purpleair-collective-june-july-2024/8771) (convocatoria de mediados de 2024, propuesta presentada por el autor — 2° puesto de esa ronda).
+**Flota PurpleAir**: 5 unidades Flex (sensor de gas BME688 incluido, reporta PM, temperatura, humedad, presión y VOC). Las cinco están registradas en PurpleAir y configuradas en LEMEIT. Al 12/11/2026, el titular confirma AE-02 instalado en su escuela y AE-04 (298873), destinado a Esc. Agraria C.M. Casares (EAS Del Valle), todavía en pruebas. AE-04 fue dado de alta en PurpleAir el 12/11/2026; esa fecha no es su instalación escolar. Las unidades nuevas fueron una donación de [PurpleAir Collective](https://community.purpleair.com/t/purpleair-collective-june-july-2024/8771) (convocatoria de mediados de 2024, propuesta presentada por el autor — 2° puesto de esa ronda).
 
-**Flota AirGradient**: 3 unidades en total; 2 corresponden a la red de Saladillo (una en interior, ya reportando; una kit DIY pendiente de instalación definitiva). La tercera está en la UTN La Plata y queda excluida del dashboard. A diferencia de PurpleAir, AirGradient suma **CO2** (sensor NDIR) y **NOx** (índice SGP41) como parámetros nuevos en tarjetas, gráfico, mapa e historial.
+**Flota AirGradient**: 3 unidades en total; 2 corresponden a la red de Saladillo y conservan lecturas históricas. Su conectividad actual e instalación definitiva no están verificadas en el corte del 12/11/2026. La tercera está en la UTN La Plata y queda excluida del dashboard. A diferencia de PurpleAir, AirGradient suma **CO2** (sensor NDIR) y **NOx** (índice SGP41) como parámetros nuevos en tarjetas, gráfico, mapa e historial.
 
 ## Funcionalidad
 
@@ -26,8 +26,8 @@ Red de sensores [PurpleAir](https://www.purpleair.com) y [AirGradient](https://w
 
 ## Stack
 
-- Ingesta programada contra las APIs de PurpleAir y AirGradient cada 15 min vía cron-job.org (disparador activo desde septiembre 2026); Worker de Cloudflare con Cron Trigger registrado pero pendiente de un bug de Cloudflare; GitHub Actions pausado para no duplicar el gasto de puntos de la API
-- Base de datos en Cloudflare D1, con deduplación automática (`INSERT OR IGNORE` + índice `UNIQUE(sensor_index, timestamp)`) para que varios disparadores puedan convivir sin generar filas repetidas
+- Ingesta PurpleAir cada **30 minutos** vía cron-job.org (:27/:57). GitHub Actions sigue pausado y el cron del Worker está vacío; no se duplican disparadores. La ingesta automática de AirGradient no está acreditada.
+- Base de datos en Cloudflare D1, con deduplación automática (`INSERT OR IGNORE` + índice `UNIQUE(sensor_index, timestamp)`) para evitar filas repetidas; esto no evita gastar puntos si se duplican llamadas al proveedor
 - Worker propio que expone la API REST y actúa de proxy para los tiles del mapa (CARTO Basemaps, sin exponer la key en el HTML público)
 - Dashboard HTML/CSS/JS vanilla con Chart.js y Leaflet
 - Hosting en Cloudflare Pages
@@ -54,3 +54,7 @@ Este es uno de tres proyectos ambientales hermanos que comparten la misma infrae
 - [Sitio en vivo](https://app.lemeit.ar/aq)
 - [API pública](https://app.lemeit.ar/aq/api.html)
 - [Documentación técnica](https://wiki.lemeit.ar/red-ambiental/01-aire-saladillo/)
+
+## Estado y frescura
+
+El 12/11/2026 se verificaron en LEMEIT nuevas lecturas y presencia en el mapa de AE-02 y AE-04. El color refleja la frescura de la última lectura, no si el equipo está físicamente encendido. El límite de frescura se amplía de 25 a **40 minutos** para cubrir el intervalo de ingesta de 30 minutos y su margen de actualización, sin aumentar consultas al proveedor; su publicación fue autorizada por el titular. La red conserva datos de sensores sin conexión reciente. [Registro técnico y validaciones](https://github.com/lemeit/lemeit-aq/pull/32).

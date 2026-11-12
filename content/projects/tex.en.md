@@ -3,7 +3,7 @@ title = "TeX · LaTeX documents"
 description = "Browser-based LaTeX editor with PDF preview, templates and locally stored projects."
 summary = "Browser-based LaTeX editor with PDF preview, templates and locally stored projects."
 date = "2026-11-05"
-lastmod = "2026-11-05"
+lastmod = "2026-11-12"
 weight = 15
 draft = false
 +++
@@ -40,4 +40,4 @@ The editor is under development and its interface is in Spanish. It does not run
 - [Documentation](https://wiki.lemeit.ar/en/tex/).
 - [lemeit-tex repository (restricted access)](https://github.com/lemeit/lemeit-tex).
 
-GitHub stores the code and runs checks, Cloudflare serves the application, and the browser compiles LaTeX. **Deployment is explicit:** pushing to GitHub does not automatically update the live site.
+GitHub stores the code and runs checks, Cloudflare serves the application, and the browser compiles LaTeX. **Current deployment:** GitHub Actions validates; Cloudflare Workers Builds is connected to `main` and deploys after an authorized merge. Merging a PR and completing deployment are separate steps.

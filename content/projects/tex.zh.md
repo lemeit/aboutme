@@ -3,7 +3,7 @@ title = "TeX · LaTeX 文档"
 description = "在浏览器中编辑 LaTeX 文档，预览 PDF，使用模板并在本地保存项目。"
 summary = "在浏览器中编辑 LaTeX 文档，预览 PDF，使用模板并在本地保存项目。"
 date = "2026-11-05"
-lastmod = "2026-11-05"
+lastmod = "2026-11-12"
 weight = 15
 draft = false
 +++
@@ -38,4 +38,4 @@ LaTeX 引擎在浏览器中运行，不使用编译服务器。项目保存在�
 - [英文文档](https://wiki.lemeit.ar/en/tex/)。
 - [lemeit-tex 代码仓库（受限访问）](https://github.com/lemeit/lemeit-tex)。
 
-GitHub 保存代码并运行测试，Cloudflare 提供应用文件，浏览器编译 LaTeX。发布需要明确执行；推送到 GitHub 不会自动更新网站。
+GitHub 保存代码并运行测试，Cloudflare 提供应用文件，浏览器编译 LaTeX。GitHub Actions 负责验证；Cloudflare Workers Builds 已连接 `main`，经授权合并后自动发布。合并与部署完成是不同的步骤。

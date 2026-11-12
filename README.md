@@ -359,3 +359,20 @@ Los títulos de pantalla heredan la tipografía del sitio. El formato de impresi
 [lemeit.ar](https://lemeit.ar/) es el portal común de proyectos y se publica desde `landing/` del repositorio `lemeit/eureka`, en el proyecto Pages `lemeit-landing`. No se genera con Hugo ni Quartz de este repositorio. Enlaza a Aire Escolar, a los materiales de `/notes/` y a [la presentación de Eureka AI](https://tutor.lemeit.ar/presentacion/), que ofrece acceso al tutor actual.
 
 La L caligráfica de este portal identifica personalmente a Luciano Lamaita y no se utiliza en la portada de marca Lemeit. El favicon de esa marca es **Encuentro**, con crema, naranja óxido y verde azulado. El respaldo **Interacción** se conserva en el repositorio Eureka. Los estilos de Hugo/Quartz y sus rutas no cambiaron en esta tarea. Ver [portadas e identidad en la wiki](https://wiki.lemeit.ar/portal-lemeit/).
+
+
+## Proyectos Lemeit y documentación — 12/11/2026
+
+El [portal Lemeit](https://lemeit.ar/) presenta los proyectos; sus fichas docentes están en [Proyectos](https://profe.lemeit.ar/projects/) y la documentación común en [la wiki](https://wiki.lemeit.ar/).
+
+| Proyecto | Aplicación o contenido | Documentación |
+|---|---|---|
+| Aire Escolar · AQ | https://app.lemeit.ar/aq/ | https://wiki.lemeit.ar/red-ambiental/01-aire-saladillo/ |
+| EMAS | https://app.lemeit.ar/emas/ | https://wiki.lemeit.ar/red-ambiental/02-ema-saladillo/ |
+| Calidad del Agua · WQ | https://app.lemeit.ar/wq/ | https://wiki.lemeit.ar/red-ambiental/03-agua-saladillo/ |
+| Eureka AI | https://tutor.lemeit.ar/presentacion/ | https://wiki.lemeit.ar/eureka-tutor/ |
+| TeX | https://tex.lemeit.ar/ | https://wiki.lemeit.ar/tex/ |
+| ΣIM · Simulación de procesos | https://sim.lemeit.ar/ | https://wiki.lemeit.ar/sim/ |
+| Bestiario · Seres Térmicos | https://profe.lemeit.ar/projects/simus/bestiario/ | https://github.com/lemeit/simus |
+
+TeX y ΣIM son aplicaciones independientes con repositorios propios (`lemeit/lemeit-tex`, privado, y `lemeit/lemeit-sim`, público). No se editan ni se publican desde la antigua copia `apps/tex/` ni desde los HTML de Bestiario. TeX compila documentos en el navegador; ΣIM calcula mediante un motor DWSIM externo. Bestiario es otro recorrido de simulaciones físicas y relato. Las identidades de las aplicaciones se conservan; las fichas y la portada comparten su propio estilo.

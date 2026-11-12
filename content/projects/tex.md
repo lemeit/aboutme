@@ -3,7 +3,7 @@ title = "TeX · Documentos en LaTeX"
 description = "Editor de LaTeX en el navegador, con vista previa de PDF, plantillas y proyectos guardados localmente."
 summary = "Editor de LaTeX en el navegador, con vista previa de PDF, plantillas y proyectos guardados localmente."
 date = "2026-11-05"
-lastmod = "2026-11-05"
+lastmod = "2026-11-12"
 weight = 15
 draft = false
 +++
@@ -42,4 +42,4 @@ La identidad combina una marca TeX geométrica, naranja y verde azulado, con el 
 - [Wiki técnica y de uso](https://wiki.lemeit.ar/tex/).
 - [Repositorio lemeit-tex (acceso restringido)](https://github.com/lemeit/lemeit-tex).
 
-GitHub conserva el código y ejecuta las pruebas. Cloudflare sirve la aplicación y el navegador compila LaTeX. **La publicación es explícita:** subir cambios a GitHub no actualiza automáticamente el sitio.
+GitHub conserva el código y ejecuta las pruebas. Cloudflare sirve la aplicación y el navegador compila LaTeX. **Publicación actual:** GitHub Actions valida; Cloudflare Workers Builds está conectado a `main` y publica después de una integración autorizada. Fusionar un PR y completar el despliegue son pasos distintos.

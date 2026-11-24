@@ -2,7 +2,7 @@
 summary = "Monitoreo ambiental escolar con sensores PurpleAir y AirGradient — PM2.5/PM10, CO2, NOx y AQI en tiempo real."
 title = 'Aire Escolar'
 date = '2026-08-23'
-lastmod = "2026-11-12"
+lastmod = "2026-11-24"
 weight = 1
 draft = false
 tags = ['calidad de aire', 'PurpleAir', 'AirGradient', 'IoT', 'Cloudflare D1', 'GitHub Actions']
@@ -13,9 +13,9 @@ Red de sensores [PurpleAir](https://www.purpleair.com) y [AirGradient](https://w
 
 ## Sensores
 
-**Flota PurpleAir**: 5 unidades Flex (sensor de gas BME688 incluido, reporta PM, temperatura, humedad, presión y VOC). Las cinco están registradas en PurpleAir y configuradas en LEMEIT. Al 12/11/2026, el titular confirma AE-02 instalado en su escuela y AE-04 (298873), destinado a Esc. Agraria C.M. Casares (EAS Del Valle), todavía en pruebas. AE-04 fue dado de alta en PurpleAir el 12/11/2026; esa fecha no es su instalación escolar. Las unidades nuevas fueron una donación de [PurpleAir Collective](https://community.purpleair.com/t/purpleair-collective-june-july-2024/8771) (convocatoria de mediados de 2024, propuesta presentada por el autor — 2° puesto de esa ronda).
+**Flota PurpleAir**: 5 unidades Flex (sensor de gas BME688 incluido, reporta PM, temperatura, humedad, presión y VOC). Las cinco están registradas en PurpleAir y configuradas para la ingesta de Aire Escolar. AE-02 está instalado en la Escuela de Educación Secundaria N°2 Manuel Pardal (Saladillo). El 13/11/2026 se instalaron AE-01 en la Escuela de Educación Artística Lola Mora (25 de Mayo) y AE-04 en la Escuela de Educación Agropecuaria de Carlos Casares (Del Valle, partido de 25 de Mayo). Ambos quedaron conectados al Wi-Fi escolar y transmitiendo al portal según el reporte de instalación. El alta de AE-04 en PurpleAir fue el 12/11/2026, distinta de su instalación física. Las unidades nuevas fueron una donación de [PurpleAir Collective](https://community.purpleair.com/t/purpleair-collective-june-july-2024/8771) (convocatoria de mediados de 2024, propuesta presentada por el autor — 2° puesto de esa ronda).
 
-**Flota AirGradient**: 3 unidades en total; 2 corresponden a la red de Saladillo y conservan lecturas históricas. Su conectividad actual e instalación definitiva no están verificadas en el corte del 12/11/2026. La tercera está en la UTN La Plata y queda excluida del dashboard. A diferencia de PurpleAir, AirGradient suma **CO2** (sensor NDIR) y **NOx** (índice SGP41) como parámetros nuevos en tarjetas, gráfico, mapa e historial.
+**Flota AirGradient**: 3 unidades en total; 2 corresponden a la red de Aire Escolar y conservan lecturas históricas. Su conectividad actual e instalación definitiva no están verificadas en el corte del 12/11/2026. La tercera está en la UTN La Plata y queda excluida del dashboard. A diferencia de PurpleAir, AirGradient suma **CO2** (sensor NDIR) y **NOx** (índice SGP41) como parámetros nuevos en tarjetas, gráfico, mapa e historial.
 
 ## Funcionalidad
 
